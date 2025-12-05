@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="Портал" id="25">
+			<DataPath>Запись.Портал</DataPath>
+			<DropListButton>true</DropListButton>
+			<TextEdit>false</TextEdit>
+			<ContextMenu name="ПорталКонтекстноеМеню" id="26"/>
+			<ExtendedTooltip name="ПорталРасширеннаяПодсказка" id="27"/>
+		</InputField>
+		<InputField name="ТипОбъекта" id="30">
+			<DataPath>Запись.ТипОбъекта</DataPath>
+			<ContextMenu name="ТипОбъектаКонтекстноеМеню" id="31"/>
+			<ExtendedTooltip name="ТипОбъектаРасширеннаяПодсказка" id="32"/>
+		</InputField>
+		<InputField name="ИдентификаторОбъекта" id="33">
+			<DataPath>Запись.ИдентификаторОбъекта</DataPath>
+			<ContextMenu name="ИдентификаторОбъектаКонтекстноеМеню" id="34"/>
+			<ExtendedTooltip name="ИдентификаторОбъектаРасширеннаяПодсказка" id="35"/>
+		</InputField>
+		<InputField name="ТипДанных" id="16">
+			<DataPath>Запись.ТипДанных</DataPath>
+			<ContextMenu name="ТипДанныхКонтекстноеМеню" id="17"/>
+			<ExtendedTooltip name="ТипДанныхРасширеннаяПодсказка" id="18"/>
+		</InputField>
+		<InputField name="Идентификатор" id="7">
+			<DataPath>Запись.Идентификатор</DataPath>
+			<ContextMenu name="ИдентификаторКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="ИдентификаторРасширеннаяПодсказка" id="9"/>
+		</InputField>
+		<InputField name="ДополнительныйИдентификатор" id="19">
+			<DataPath>Запись.ДополнительныйИдентификатор</DataPath>
+			<ContextMenu name="ДополнительныйИдентификаторКонтекстноеМеню" id="20"/>
+			<ExtendedTooltip name="ДополнительныйИдентификаторРасширеннаяПодсказка" id="21"/>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Запись" id="1">
+			<Type>
+				<v8:Type>cfg:InformationRegisterRecordManager.Б24_К_ИдентификаторыДел</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

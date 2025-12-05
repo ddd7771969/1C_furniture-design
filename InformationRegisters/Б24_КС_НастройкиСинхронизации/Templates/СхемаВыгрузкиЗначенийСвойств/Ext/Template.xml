@@ -1,0 +1,312 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<DataCompositionSchema xmlns="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcscom="http://v8.1c.ru/8.1/data-composition-system/common" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<dataSource>
+		<name>ИсточникДанных1</name>
+		<dataSourceType>Local</dataSourceType>
+	</dataSource>
+	<dataSet xsi:type="DataSetQuery">
+		<name>ОсновнойНаборДанных</name>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>Объект</dataPath>
+			<field>Объект</field>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ТипДанных</dataPath>
+			<field>ТипДанных</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тип данных</v8:content>
+				</v8:item>
+			</title>
+			<useRestriction>
+				<condition>true</condition>
+			</useRestriction>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>НастройкаПодключения</dataPath>
+			<field>НастройкаПодключения</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройка синхронизации</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<field xsi:type="DataSetFieldField">
+			<dataPath>ПодчиненныйОбъект</dataPath>
+			<field>ПодчиненныйОбъект</field>
+			<title xsi:type="v8:LocalStringType">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подчиненный объект</v8:content>
+				</v8:item>
+			</title>
+		</field>
+		<dataSource>ИсточникДанных1</dataSource>
+		<query>ВЫБРАТЬ РАЗРЕШЕННЫЕ
+	ЗначенияСвойствОбъектов.Ссылка КАК Ссылка
+ПОМЕСТИТЬ ВТ_ЗначенияСвойствСправочник
+ИЗ
+	Справочник.ЗначенияСвойствОбъектов КАК ЗначенияСвойствОбъектов
+
+ИНДЕКСИРОВАТЬ ПО
+	Ссылка
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ВТ_ЗначенияСвойствСправочник.Ссылка КАК Объект
+ПОМЕСТИТЬ ВТ_ВсеЗначенияСвойств
+ИЗ
+	ВТ_ЗначенияСвойствСправочник КАК ВТ_ЗначенияСвойствСправочник
+ГДЕ
+	&amp;ПолнаяВыгрузка = ИСТИНА
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	ВТ_ЗначенияСвойствСправочник.Ссылка
+ИЗ
+	РегистрСведений.Б24_КС_ТаблицаИзменений КАК Б24_КС_ТаблицаИзменений
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ ВТ_ЗначенияСвойствСправочник КАК ВТ_ЗначенияСвойствСправочник
+		ПО Б24_КС_ТаблицаИзменений.Объект = ВТ_ЗначенияСвойствСправочник.Ссылка
+ГДЕ
+	&amp;ПолнаяВыгрузка = ЛОЖЬ
+	И Б24_КС_ТаблицаИзменений.ТипДанных = &amp;ТипДанных
+	И Б24_КС_ТаблицаИзменений.НастройкаПодключения = &amp;НастройкаПодключения
+	И Б24_КС_ТаблицаИзменений.ВремяЗаписиВМиллисекундах &lt;= &amp;ВремяЗапускаВМиллисекундах
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	ВТ_ЗначенияСвойствСправочник.Ссылка
+ИЗ
+	РегистрСведений.Б24_КС_ПакетыВыгрузки КАК Б24_КС_ПакетыВыгрузки
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ ВТ_ЗначенияСвойствСправочник КАК ВТ_ЗначенияСвойствСправочник
+		ПО Б24_КС_ПакетыВыгрузки.Объект = ВТ_ЗначенияСвойствСправочник.Ссылка
+ГДЕ
+	&amp;ПолнаяВыгрузка = ЛОЖЬ
+	И Б24_КС_ПакетыВыгрузки.ТипДанных = &amp;ТипДанных
+	И Б24_КС_ПакетыВыгрузки.НастройкаПодключения = &amp;НастройкаПодключения
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ВТ_ВсеЗначенияСвойств.Объект КАК ЗначениеСвойства,
+	ЗначенияСвойствОбъектов.Владелец КАК Владелец
+ПОМЕСТИТЬ ВТ_ЗначенияСвойств
+ИЗ
+	ВТ_ВсеЗначенияСвойств КАК ВТ_ВсеЗначенияСвойств
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ Справочник.ЗначенияСвойствОбъектов КАК ЗначенияСвойствОбъектов
+		ПО ВТ_ВсеЗначенияСвойств.Объект = ЗначенияСвойствОбъектов.Ссылка
+ГДЕ
+	ЗначенияСвойствОбъектов.ЭтоГруппа = ЛОЖЬ
+
+СГРУППИРОВАТЬ ПО
+	ВТ_ВсеЗначенияСвойств.Объект,
+	ЗначенияСвойствОбъектов.Владелец
+;
+
+////////////////////////////////////////////////////////////////////////////////
+УНИЧТОЖИТЬ ВТ_ЗначенияСвойствСправочник
+;
+
+////////////////////////////////////////////////////////////////////////////////
+УНИЧТОЖИТЬ ВТ_ВсеЗначенияСвойств
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	Б24_К_ИдентификаторыОбъектов.Объект КАК Объект,
+	Б24_К_ИдентификаторыОбъектов.Идентификатор КАК Идентификатор,
+	ДополнительныеРеквизитыИСведения.ВладелецДополнительныхЗначений КАК ВладелецДополнительныхЗначений
+ПОМЕСТИТЬ ВТ_Свойства
+ИЗ
+	РегистрСведений.Б24_К_ИдентификаторыОбъектов КАК Б24_К_ИдентификаторыОбъектов
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ ПланВидовХарактеристик.ДополнительныеРеквизитыИСведения КАК ДополнительныеРеквизитыИСведения
+		ПО Б24_К_ИдентификаторыОбъектов.Объект = ДополнительныеРеквизитыИСведения.Ссылка
+ГДЕ
+	Б24_К_ИдентификаторыОбъектов.Портал = &amp;Портал
+	И Б24_К_ИдентификаторыОбъектов.ТипДанных = &amp;ТипДанныхСвойство
+	И (ДополнительныеРеквизитыИСведения.ВладелецДополнительныхЗначений В
+				(ВЫБРАТЬ
+					ВТ_ЗначенияСвойств.Владелец
+				ИЗ
+					ВТ_ЗначенияСвойств)
+			ИЛИ ДополнительныеРеквизитыИСведения.Ссылка В
+				(ВЫБРАТЬ
+					ВТ_ЗначенияСвойств.Владелец
+				ИЗ
+					ВТ_ЗначенияСвойств))
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ВТ_Свойства.Объект КАК Свойство,
+	ВТ_Свойства.Идентификатор КАК ПодчиненныйОбъект,
+	ВТ_ЗначенияСвойств.ЗначениеСвойства КАК Объект
+ПОМЕСТИТЬ ВТ_ЗначенияСвойствСвойства
+ИЗ
+	ВТ_Свойства КАК ВТ_Свойства
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ ВТ_ЗначенияСвойств КАК ВТ_ЗначенияСвойств
+		ПО (ВТ_Свойства.Объект = ВТ_ЗначенияСвойств.Владелец
+				ИЛИ ВТ_Свойства.ВладелецДополнительныхЗначений = ВТ_ЗначенияСвойств.Владелец)
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ РАЗЛИЧНЫЕ
+	ВТ_ЗначенияСвойствСвойства.Объект КАК Объект,
+	ВТ_ЗначенияСвойствСвойства.ПодчиненныйОбъект КАК ПодчиненныйОбъект,
+	&amp;ТипДанных КАК ТипДанных,
+	&amp;НастройкаПодключения КАК НастройкаПодключения
+ИЗ
+	ВТ_ЗначенияСвойствСвойства КАК ВТ_ЗначенияСвойствСвойства
+</query>
+	</dataSet>
+	<parameter>
+		<name>ПолнаяВыгрузка</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Полная выгрузка</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:boolean</v8:Type>
+		</valueType>
+		<value xsi:type="xs:boolean">false</value>
+		<useRestriction>true</useRestriction>
+		<availableAsField>false</availableAsField>
+	</parameter>
+	<parameter>
+		<name>ТипДанных</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Тип данных</v8:content>
+			</v8:item>
+		</title>
+		<value xsi:nil="true"/>
+		<useRestriction>true</useRestriction>
+		<availableAsField>false</availableAsField>
+	</parameter>
+	<parameter>
+		<name>НастройкаПодключения</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Настройка синхронизации</v8:content>
+			</v8:item>
+		</title>
+		<value xsi:nil="true"/>
+		<useRestriction>true</useRestriction>
+		<availableAsField>false</availableAsField>
+	</parameter>
+	<parameter>
+		<name>ВремяЗапускаВМиллисекундах</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Время запуска в миллисекундах</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:decimal</v8:Type>
+			<v8:NumberQualifiers>
+				<v8:Digits>0</v8:Digits>
+				<v8:FractionDigits>0</v8:FractionDigits>
+				<v8:AllowedSign>Any</v8:AllowedSign>
+			</v8:NumberQualifiers>
+		</valueType>
+		<value xsi:type="xs:decimal">0</value>
+		<useRestriction>true</useRestriction>
+		<availableAsField>false</availableAsField>
+	</parameter>
+	<parameter>
+		<name>Портал</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Портал</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type>xs:string</v8:Type>
+			<v8:StringQualifiers>
+				<v8:Length>0</v8:Length>
+				<v8:AllowedLength>Variable</v8:AllowedLength>
+			</v8:StringQualifiers>
+		</valueType>
+		<value xsi:type="xs:string"/>
+		<useRestriction>true</useRestriction>
+		<availableAsField>false</availableAsField>
+	</parameter>
+	<parameter>
+		<name>ТипДанныхСвойство</name>
+		<title xsi:type="v8:LocalStringType">
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>Тип данных свойство</v8:content>
+			</v8:item>
+		</title>
+		<valueType>
+			<v8:Type xmlns:d4p1="http://v8.1c.ru/8.1/data/enterprise/current-config">d4p1:EnumRef.Б24_К_ТипыДанныхДляОбменаСПорталом</v8:Type>
+		</valueType>
+		<value xsi:nil="true"/>
+		<useRestriction>true</useRestriction>
+		<availableAsField>false</availableAsField>
+	</parameter>
+	<settingsVariant>
+		<dcsset:name>Основной</dcsset:name>
+		<dcsset:presentation xsi:type="xs:string">Основной</dcsset:presentation>
+		<dcsset:settings xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows">
+			<dcsset:selection>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>Объект</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ТипДанных</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>НастройкаПодключения</dcsset:field>
+				</dcsset:item>
+				<dcsset:item xsi:type="dcsset:SelectedItemField">
+					<dcsset:field>ПодчиненныйОбъект</dcsset:field>
+				</dcsset:item>
+			</dcsset:selection>
+			<dcsset:filter>
+				<dcsset:viewMode>Normal</dcsset:viewMode>
+				<dcsset:userSettingID>fbb967c1-2f89-40b1-ae39-9a6bf34a7b84</dcsset:userSettingID>
+				<dcsset:userSettingPresentation xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Отбор</v8:content>
+					</v8:item>
+				</dcsset:userSettingPresentation>
+			</dcsset:filter>
+			<dcsset:order>
+				<dcsset:viewMode>Normal</dcsset:viewMode>
+				<dcsset:userSettingPresentation xsi:type="v8:LocalStringType">
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Сортировка</v8:content>
+					</v8:item>
+				</dcsset:userSettingPresentation>
+			</dcsset:order>
+			<dcsset:item xsi:type="dcsset:StructureItemTable">
+				<dcsset:row>
+					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemAuto"/>
+					</dcsset:order>
+					<dcsset:selection>
+						<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+					</dcsset:selection>
+				</dcsset:row>
+				<dcsset:selection>
+					<dcsset:item xsi:type="dcsset:SelectedItemAuto"/>
+				</dcsset:selection>
+			</dcsset:item>
+		</dcsset:settings>
+	</settingsVariant>
+</DataCompositionSchema>

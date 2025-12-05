@@ -1,0 +1,1068 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Width>50</Width>
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoTitle>false</AutoTitle>
+	<CommandBarLocation>None</CommandBarLocation>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="BeforeClose">ПередЗакрытием</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="КнопкиШапки" id="266">
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Кнопки шапки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Behavior>Usual</Behavior>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="КнопкиШапкиРасширеннаяПодсказка" id="267"/>
+			<ChildItems>
+				<CommandBar name="ФормаГруппаЗапись" id="262">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Форма группа запись</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Форма группа запись</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Width>39</Width>
+					<ExtendedTooltip name="ФормаГруппаЗаписьРасширеннаяПодсказка" id="263"/>
+					<ChildItems>
+						<Button name="ФормаЗаписатьИЗакрыть" id="1">
+							<Type>CommandBarButton</Type>
+							<DefaultButton>true</DefaultButton>
+							<CommandName>Form.Command.ЗаписатьИЗакрыть</CommandName>
+							<ExtendedTooltip name="ФормаЗаписатьИЗакрытьРасширеннаяПодсказка" id="2"/>
+						</Button>
+						<Button name="ФормаЗаписать" id="3">
+							<Type>CommandBarButton</Type>
+							<CommandName>Form.Command.Записать</CommandName>
+							<ExtendedTooltip name="ФормаЗаписатьРасширеннаяПодсказка" id="4"/>
+						</Button>
+					</ChildItems>
+				</CommandBar>
+				<Button name="ФормаКнопкаУдалить" id="260">
+					<Type>UsualButton</Type>
+					<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+					<CommandName>Form.Command.УдалитьНастройку</CommandName>
+					<ExtendedTooltip name="ФормаКнопкаУдалитьРасширеннаяПодсказка" id="261"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+		<LabelDecoration name="ДекорацияРазделение1" id="324">
+			<Font ref="style:NormalTextFont" height="3" kind="StyleItem"/>
+			<ContextMenu name="ДекорацияРазделение1КонтекстноеМеню" id="325"/>
+			<ExtendedTooltip name="ДекорацияРазделение1РасширеннаяПодсказка" id="326"/>
+		</LabelDecoration>
+		<UsualGroup name="ГруппаСмартПроцессы" id="270">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Смарт-процессы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа смарт процессы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Behavior>Usual</Behavior>
+			<ExtendedTooltip name="ГруппаСмартПроцессыРасширеннаяПодсказка" id="271"/>
+			<ChildItems>
+				<Table name="СмартПроцессы" id="272">
+					<Representation>List</Representation>
+					<CommandBarLocation>None</CommandBarLocation>
+					<ChangeRowSet>false</ChangeRowSet>
+					<ChangeRowOrder>false</ChangeRowOrder>
+					<RowSelectionMode>Row</RowSelectionMode>
+					<Header>false</Header>
+					<AutoInsertNewRow>true</AutoInsertNewRow>
+					<EnableStartDrag>true</EnableStartDrag>
+					<EnableDrag>true</EnableDrag>
+					<DataPath>СмартПроцессы</DataPath>
+					<CommandSet>
+						<ExcludedCommand>Add</ExcludedCommand>
+						<ExcludedCommand>CancelSearch</ExcludedCommand>
+						<ExcludedCommand>Change</ExcludedCommand>
+						<ExcludedCommand>Copy</ExcludedCommand>
+						<ExcludedCommand>CopyToClipboard</ExcludedCommand>
+						<ExcludedCommand>Delete</ExcludedCommand>
+						<ExcludedCommand>EndEdit</ExcludedCommand>
+						<ExcludedCommand>Find</ExcludedCommand>
+						<ExcludedCommand>FindByCurrentValue</ExcludedCommand>
+						<ExcludedCommand>MoveDown</ExcludedCommand>
+						<ExcludedCommand>MoveUp</ExcludedCommand>
+						<ExcludedCommand>OutputList</ExcludedCommand>
+						<ExcludedCommand>SearchEverywhere</ExcludedCommand>
+						<ExcludedCommand>SearchHistory</ExcludedCommand>
+						<ExcludedCommand>SelectAll</ExcludedCommand>
+						<ExcludedCommand>ShowMultipleSelection</ExcludedCommand>
+						<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
+						<ExcludedCommand>SortListAsc</ExcludedCommand>
+						<ExcludedCommand>SortListDesc</ExcludedCommand>
+					</CommandSet>
+					<RowFilter xsi:nil="true"/>
+					<ContextMenu name="СмартПроцессыКонтекстноеМеню" id="273"/>
+					<AutoCommandBar name="СмартПроцессыКоманднаяПанель" id="274"/>
+					<ExtendedTooltip name="СмартПроцессыРасширеннаяПодсказка" id="275"/>
+					<SearchStringAddition name="СмартПроцессыСтрокаПоиска" id="276">
+						<AdditionSource>
+							<Item>СмартПроцессы</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="СмартПроцессыСтрокаПоискаКонтекстноеМеню" id="277"/>
+						<ExtendedTooltip name="СмартПроцессыСтрокаПоискаРасширеннаяПодсказка" id="278"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="СмартПроцессыСостояниеПросмотра" id="279">
+						<AdditionSource>
+							<Item>СмартПроцессы</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="СмартПроцессыСостояниеПросмотраКонтекстноеМеню" id="280"/>
+						<ExtendedTooltip name="СмартПроцессыСостояниеПросмотраРасширеннаяПодсказка" id="281"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="СмартПроцессыУправлениеПоиском" id="282">
+						<AdditionSource>
+							<Item>СмартПроцессы</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="СмартПроцессыУправлениеПоискомКонтекстноеМеню" id="283"/>
+						<ExtendedTooltip name="СмартПроцессыУправлениеПоискомРасширеннаяПодсказка" id="284"/>
+					</SearchControlAddition>
+					<Events>
+						<Event name="Selection">СмартПроцессыВыбор</Event>
+					</Events>
+					<ChildItems>
+						<InputField name="СмартПроцессыИд" id="285">
+							<DataPath>СмартПроцессы.Ид</DataPath>
+							<Visible>false</Visible>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="СмартПроцессыИдКонтекстноеМеню" id="286"/>
+							<ExtendedTooltip name="СмартПроцессыИдРасширеннаяПодсказка" id="287"/>
+						</InputField>
+						<InputField name="СмартПроцессыНаименование" id="288">
+							<DataPath>СмартПроцессы.Наименование</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="СмартПроцессыНаименованиеКонтекстноеМеню" id="289"/>
+							<ExtendedTooltip name="СмартПроцессыНаименованиеРасширеннаяПодсказка" id="290"/>
+						</InputField>
+						<InputField name="СмартПроцессыТипВладельца" id="291">
+							<DataPath>СмартПроцессы.ТипВладельца</DataPath>
+							<Visible>false</Visible>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="СмартПроцессыТипВладельцаКонтекстноеМеню" id="292"/>
+							<ExtendedTooltip name="СмартПроцессыТипВладельцаРасширеннаяПодсказка" id="293"/>
+						</InputField>
+						<CheckBoxField name="СмартПроцессыУказываетсяИсточник" id="294">
+							<DataPath>СмартПроцессы.УказываетсяИсточник</DataPath>
+							<Visible>false</Visible>
+							<EditMode>EnterOnInput</EditMode>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="СмартПроцессыУказываетсяИсточникКонтекстноеМеню" id="295"/>
+							<ExtendedTooltip name="СмартПроцессыУказываетсяИсточникРасширеннаяПодсказка" id="296"/>
+						</CheckBoxField>
+						<CheckBoxField name="СмартПроцессыУказываютсяТовары" id="297">
+							<DataPath>СмартПроцессы.УказываютсяТовары</DataPath>
+							<Visible>false</Visible>
+							<EditMode>EnterOnInput</EditMode>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="СмартПроцессыУказываютсяТоварыКонтекстноеМеню" id="298"/>
+							<ExtendedTooltip name="СмартПроцессыУказываютсяТоварыРасширеннаяПодсказка" id="299"/>
+						</CheckBoxField>
+						<CheckBoxField name="СмартПроцессыИспользуютсяСтадии" id="300">
+							<DataPath>СмартПроцессы.ИспользуютсяСтадии</DataPath>
+							<Visible>false</Visible>
+							<EditMode>EnterOnInput</EditMode>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="СмартПроцессыИспользуютсяСтадииКонтекстноеМеню" id="301"/>
+							<ExtendedTooltip name="СмартПроцессыИспользуютсяСтадииРасширеннаяПодсказка" id="302"/>
+						</CheckBoxField>
+						<CheckBoxField name="СмартПроцессыИспользуютсяНаправления" id="303">
+							<DataPath>СмартПроцессы.ИспользуютсяНаправления</DataPath>
+							<Visible>false</Visible>
+							<EditMode>EnterOnInput</EditMode>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="СмартПроцессыИспользуютсяНаправленияКонтекстноеМеню" id="304"/>
+							<ExtendedTooltip name="СмартПроцессыИспользуютсяНаправленияРасширеннаяПодсказка" id="305"/>
+						</CheckBoxField>
+						<CheckBoxField name="СмартПроцессыЕстьНастройки" id="306">
+							<DataPath>СмартПроцессы.ЕстьНастройки</DataPath>
+							<Visible>false</Visible>
+							<EditMode>EnterOnInput</EditMode>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="СмартПроцессыЕстьНастройкиКонтекстноеМеню" id="307"/>
+							<ExtendedTooltip name="СмартПроцессыЕстьНастройкиРасширеннаяПодсказка" id="308"/>
+						</CheckBoxField>
+						<CheckBoxField name="СмартПроцессыУказываетсяОрганизация" id="309">
+							<DataPath>СмартПроцессы.УказываетсяОрганизация</DataPath>
+							<Visible>false</Visible>
+							<EditMode>EnterOnInput</EditMode>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="СмартПроцессыУказываетсяОрганизацияКонтекстноеМеню" id="310"/>
+							<ExtendedTooltip name="СмартПроцессыУказываетсяОрганизацияРасширеннаяПодсказка" id="311"/>
+						</CheckBoxField>
+						<CheckBoxField name="СмартПроцессыУказываетсяКлиент" id="312">
+							<DataPath>СмартПроцессы.УказываетсяКлиент</DataPath>
+							<Visible>false</Visible>
+							<EditMode>EnterOnInput</EditMode>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="СмартПроцессыУказываетсяКлиентКонтекстноеМеню" id="313"/>
+							<ExtendedTooltip name="СмартПроцессыУказываетсяКлиентРасширеннаяПодсказка" id="314"/>
+						</CheckBoxField>
+						<LabelField name="СмартПроцессыСсылкаНастроить" id="315">
+							<DataPath>СмартПроцессы.СсылкаНастроить</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Настроить</v8:content>
+								</v8:item>
+							</Title>
+							<EditMode>EnterOnInput</EditMode>
+							<CellHyperlink>true</CellHyperlink>
+							<Width>5</Width>
+							<ContextMenu name="СмартПроцессыСсылкаНастроитьКонтекстноеМеню" id="316"/>
+							<ExtendedTooltip name="СмартПроцессыСсылкаНастроитьРасширеннаяПодсказка" id="317"/>
+						</LabelField>
+						<InputField name="СмартПроцессыВременныйАдресНастроекСмартПроцесса" id="318">
+							<DataPath>СмартПроцессы.ВременныйАдресНастроекСмартПроцесса</DataPath>
+							<Visible>false</Visible>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="СмартПроцессыВременныйАдресНастроекСмартПроцессаКонтекстноеМеню" id="319"/>
+							<ExtendedTooltip name="СмартПроцессыВременныйАдресНастроекСмартПроцессаРасширеннаяПодсказка" id="320"/>
+						</InputField>
+						<PictureField name="СмартПроцессыОчиститьСмартПроцесс" id="321">
+							<DataPath>СмартПроцессы.ОчиститьСмартПроцесс</DataPath>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Удалить настройки смарт-процесса</v8:content>
+								</v8:item>
+							</ToolTip>
+							<EditMode>EnterOnInput</EditMode>
+							<CellHyperlink>true</CellHyperlink>
+							<Zoomable>true</Zoomable>
+							<Hyperlink>true</Hyperlink>
+							<ContextMenu name="СмартПроцессыОчиститьСмартПроцессКонтекстноеМеню" id="322"/>
+							<ExtendedTooltip name="СмартПроцессыОчиститьСмартПроцессРасширеннаяПодсказка" id="323"/>
+						</PictureField>
+					</ChildItems>
+				</Table>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаСпособСинхронизации" id="75">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Способ синхронизации смарт-процессов</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
+			<ExtendedTooltip name="ГруппаСпособСинхронизацииРасширеннаяПодсказка" id="76"/>
+			<ChildItems>
+				<RadioButtonField name="СпособСинхронизацииДанных" id="77">
+					<DataPath>СпособСинхронизацииДанных</DataPath>
+					<TitleLocation>None</TitleLocation>
+					<RadioButtonType>Tumbler</RadioButtonType>
+					<ChoiceList>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>В режиме реального времени</v8:content>
+									</v8:item>
+								</Presentation>
+								<Value xsi:type="xs:string">ВРежимеРеальногоВремени</Value>
+							</xr:Value>
+						</xr:Item>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>По расписанию</v8:content>
+									</v8:item>
+								</Presentation>
+								<Value xsi:type="xs:string">ПоРасписанию</Value>
+							</xr:Value>
+						</xr:Item>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation>
+									<v8:item>
+										<v8:lang>ru</v8:lang>
+										<v8:content>Только ручной режим</v8:content>
+									</v8:item>
+								</Presentation>
+								<Value xsi:type="xs:string">Только ручной режим</Value>
+							</xr:Value>
+						</xr:Item>
+					</ChoiceList>
+					<ContextMenu name="СпособСинхронизацииДанныхКонтекстноеМеню" id="78"/>
+					<ExtendedTooltip name="СпособСинхронизацииДанныхРасширеннаяПодсказка" id="79"/>
+					<Events>
+						<Event name="OnChange">СпособСинхронизацииДанныхПриИзменении</Event>
+					</Events>
+				</RadioButtonField>
+				<UsualGroup name="ГруппаНастройкаОбменаПоРасписанию" id="80">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа настройка обмена по расписанию</v8:content>
+						</v8:item>
+					</Title>
+					<Behavior>Usual</Behavior>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаНастройкаОбменаПоРасписаниюРасширеннаяПодсказка" id="81"/>
+					<ChildItems>
+						<Button name="НастроитьРасписаниеОбмена" id="82">
+							<Type>Hyperlink</Type>
+							<CommandName>Form.Command.НастроитьРасписаниеОбмена</CommandName>
+							<ExtendedTooltip name="НастроитьРасписаниеОбменаРасширеннаяПодсказка" id="83"/>
+						</Button>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<LabelDecoration name="ДекорацияРазделение" id="84">
+			<Font ref="style:NormalTextFont" height="3" kind="StyleItem"/>
+			<ContextMenu name="ДекорацияРазделениеКонтекстноеМеню" id="85"/>
+			<ExtendedTooltip name="ДекорацияРазделениеРасширеннаяПодсказка" id="86"/>
+		</LabelDecoration>
+		<UsualGroup name="ГруппаПрочее" id="87">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Прочие настройки</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Vertical</Group>
+			<Behavior>Collapsible</Behavior>
+			<Collapsed>true</Collapsed>
+			<ExtendedTooltip name="ГруппаПрочееРасширеннаяПодсказка" id="88"/>
+			<ChildItems>
+				<UsualGroup name="СопоставлениеПользователей1СИПортала" id="147">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сопоставление пользователей 1С и Битрикс24</v8:content>
+						</v8:item>
+					</Title>
+					<Width>60</Width>
+					<HorizontalStretch>false</HorizontalStretch>
+					<Group>Vertical</Group>
+					<Behavior>Collapsible</Behavior>
+					<Collapsed>true</Collapsed>
+					<Representation>NormalSeparation</Representation>
+					<ExtendedTooltip name="СопоставлениеПользователей1СИПорталаРасширеннаяПодсказка" id="148"/>
+					<ChildItems>
+						<Table name="СписокПользователей" id="235">
+							<Height>7</Height>
+							<AutoMaxHeight>false</AutoMaxHeight>
+							<UseAlternationRowColor>true</UseAlternationRowColor>
+							<VerticalStretch>false</VerticalStretch>
+							<EnableStartDrag>true</EnableStartDrag>
+							<DataPath>СписокПользователей</DataPath>
+							<RowPictureDataPath>СписокПользователей.DefaultPicture</RowPictureDataPath>
+							<CommandSet>
+								<ExcludedCommand>CancelSearch</ExcludedCommand>
+								<ExcludedCommand>ChangeHistory</ExcludedCommand>
+								<ExcludedCommand>Copy</ExcludedCommand>
+								<ExcludedCommand>CopyToClipboard</ExcludedCommand>
+								<ExcludedCommand>Create</ExcludedCommand>
+								<ExcludedCommand>DynamicListStandardSettings</ExcludedCommand>
+								<ExcludedCommand>Find</ExcludedCommand>
+								<ExcludedCommand>FindByCurrentValue</ExcludedCommand>
+								<ExcludedCommand>ListSettings</ExcludedCommand>
+								<ExcludedCommand>LoadDynamicListSettings</ExcludedCommand>
+								<ExcludedCommand>OutputList</ExcludedCommand>
+								<ExcludedCommand>Refresh</ExcludedCommand>
+								<ExcludedCommand>SaveDynamicListSettings</ExcludedCommand>
+								<ExcludedCommand>SearchEverywhere</ExcludedCommand>
+								<ExcludedCommand>SearchHistory</ExcludedCommand>
+								<ExcludedCommand>ShowMultipleSelection</ExcludedCommand>
+							</CommandSet>
+							<AutoRefresh>false</AutoRefresh>
+							<AutoRefreshPeriod>60</AutoRefreshPeriod>
+							<Period>
+								<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+								<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+								<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+							</Period>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<RestoreCurrentRow>false</RestoreCurrentRow>
+							<TopLevelParent xsi:nil="true"/>
+							<ShowRoot>true</ShowRoot>
+							<AllowRootChoice>false</AllowRootChoice>
+							<UpdateOnDataChange>Auto</UpdateOnDataChange>
+							<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
+							<ContextMenu name="СписокПользователейКонтекстноеМеню" id="236"/>
+							<AutoCommandBar name="СписокПользователейКоманднаяПанель" id="237">
+								<Autofill>false</Autofill>
+								<ChildItems>
+									<Button name="СписокПользователейЗагрузитьПользователейСПортала" id="268">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ЗагрузитьПользователейСПортала</CommandName>
+										<ExtendedTooltip name="СписокПользователейЗагрузитьПользователейСПорталаРасширеннаяПодсказка" id="269"/>
+									</Button>
+								</ChildItems>
+							</AutoCommandBar>
+							<ExtendedTooltip name="СписокПользователейРасширеннаяПодсказка" id="238"/>
+							<SearchStringAddition name="СписокПользователейСтрокаПоиска" id="239">
+								<AdditionSource>
+									<Item>СписокПользователей</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СписокПользователейСтрокаПоискаКонтекстноеМеню" id="240"/>
+								<ExtendedTooltip name="СписокПользователейСтрокаПоискаРасширеннаяПодсказка" id="241"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="СписокПользователейСостояниеПросмотра" id="242">
+								<AdditionSource>
+									<Item>СписокПользователей</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СписокПользователейСостояниеПросмотраКонтекстноеМеню" id="243"/>
+								<ExtendedTooltip name="СписокПользователейСостояниеПросмотраРасширеннаяПодсказка" id="244"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="СписокПользователейУправлениеПоиском" id="245">
+								<AdditionSource>
+									<Item>СписокПользователей</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="СписокПользователейУправлениеПоискомКонтекстноеМеню" id="246"/>
+								<ExtendedTooltip name="СписокПользователейУправлениеПоискомРасширеннаяПодсказка" id="247"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="СписокПользователейНаименование" id="257">
+									<DataPath>СписокПользователей.Наименование</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>ФИО</v8:content>
+										</v8:item>
+									</Title>
+									<Width>2</Width>
+									<ContextMenu name="СписокПользователейНаименованиеКонтекстноеМеню" id="258"/>
+									<ExtendedTooltip name="СписокПользователейНаименованиеРасширеннаяПодсказка" id="259"/>
+								</LabelField>
+								<LabelField name="СписокПользователейПортал" id="248">
+									<DataPath>СписокПользователей.Портал</DataPath>
+									<Visible>false</Visible>
+									<ContextMenu name="СписокПользователейПорталКонтекстноеМеню" id="249"/>
+									<ExtendedTooltip name="СписокПользователейПорталРасширеннаяПодсказка" id="250"/>
+								</LabelField>
+								<LabelField name="СписокПользователейИдентификатор" id="251">
+									<DataPath>СписокПользователей.Идентификатор</DataPath>
+									<Visible>false</Visible>
+									<ContextMenu name="СписокПользователейИдентификаторКонтекстноеМеню" id="252"/>
+									<ExtendedTooltip name="СписокПользователейИдентификаторРасширеннаяПодсказка" id="253"/>
+								</LabelField>
+								<LabelField name="СписокПользователейПользователь1С" id="254">
+									<DataPath>СписокПользователей.Пользователь1С</DataPath>
+									<ContextMenu name="СписокПользователейПользователь1СКонтекстноеМеню" id="255"/>
+									<ExtendedTooltip name="СписокПользователейПользователь1СРасширеннаяПодсказка" id="256"/>
+								</LabelField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</UsualGroup>
+				<InputField name="КоличествоПовторенийПриОшибках" id="192">
+					<DataPath>КоличествоПовторенийПриОшибках</DataPath>
+					<Visible>false</Visible>
+					<ContextMenu name="КоличествоПовторенийПриОшибкахКонтекстноеМеню" id="193"/>
+					<ExtendedTooltip name="КоличествоПовторенийПриОшибкахРасширеннаяПодсказка" id="194"/>
+				</InputField>
+				<UsualGroup name="ГруппаПорядокСинхронизации" id="195">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа порядок синхронизации</v8:content>
+						</v8:item>
+					</Title>
+					<Behavior>Usual</Behavior>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаПорядокСинхронизацииРасширеннаяПодсказка" id="196"/>
+					<ChildItems>
+						<InputField name="ПорядокВыполненияСинхронизации" id="197">
+							<DataPath>ПорядокВыполненияСинхронизации</DataPath>
+							<Width>18</Width>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<HorizontalStretch>false</HorizontalStretch>
+							<ListChoiceMode>true</ListChoiceMode>
+							<ChoiceList>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation/>
+										<Value xsi:type="xs:string">Сперва Битрикс24, затем 1С</Value>
+									</xr:Value>
+								</xr:Item>
+								<xr:Item>
+									<xr:Presentation/>
+									<xr:CheckState>0</xr:CheckState>
+									<xr:Value xsi:type="FormChoiceListDesTimeValue">
+										<Presentation/>
+										<Value xsi:type="xs:string">Сперва 1С, затем Битрикс24</Value>
+									</xr:Value>
+								</xr:Item>
+							</ChoiceList>
+							<ContextMenu name="ПорядокВыполненияСинхронизацииКонтекстноеМеню" id="198"/>
+							<ExtendedTooltip name="ПорядокВыполненияСинхронизацииРасширеннаяПодсказка" id="199"/>
+						</InputField>
+						<CheckBoxField name="ИгнорироватьОшибкиВоВремяСинхронизации" id="200">
+							<DataPath>ИгнорироватьОшибкиВоВремяСинхронизации</DataPath>
+							<TitleLocation>Right</TitleLocation>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ИгнорироватьОшибкиВоВремяСинхронизацииКонтекстноеМеню" id="201"/>
+							<ExtendedTooltip name="ИгнорироватьОшибкиВоВремяСинхронизацииРасширеннаяПодсказка" id="202"/>
+						</CheckBoxField>
+					</ChildItems>
+				</UsualGroup>
+				<CheckBoxField name="НеРегистрироватьИзмененияАвтоматически" id="203">
+					<DataPath>НеРегистрироватьИзмененияАвтоматически</DataPath>
+					<TitleLocation>Right</TitleLocation>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="НеРегистрироватьИзмененияАвтоматическиКонтекстноеМеню" id="204"/>
+					<ExtendedTooltip name="НеРегистрироватьИзмененияАвтоматическиРасширеннаяПодсказка" id="205"/>
+				</CheckBoxField>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="ВыгружатьНастройкиНаПортал" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выгружать настройки на портал</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="НастройкаПодключения" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройка подключения</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Б24_К_НастройкиПодключения</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="НужноЗакрытьОкно" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Нужно закрыть окно</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ИгнорироватьОшибкиВоВремяСинхронизации" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Игнорировать ошибки</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="ИдентификаторРегламентногоЗадания" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Идентификатор регламентного задания</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:UUID</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="КоличествоПовторенийПриОшибках" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество повторений при ошибках</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>1</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="Наименование" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Наименование</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>100</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="НеРегистрироватьИзмененияАвтоматически" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Не регистрировать изменения</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="Портал" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Портал</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>200</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="ПорядокВыполненияСинхронизации" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Порядок выполнения синхронизации</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="РасписаниеРегламентногоЗадания" id="15">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Расписание регламентного задания</v8:content>
+				</v8:item>
+			</Title>
+			<Type/>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="СпособСинхронизацииДанных" id="21">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Способ синхронизации данных</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>30</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="СписокПользователей" id="25">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список пользователей</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	РегистрСведенийБ24_К_ПользователиБитрикс24.Портал КАК Портал,
+	РегистрСведенийБ24_К_ПользователиБитрикс24.Идентификатор КАК Идентификатор,
+	РегистрСведенийБ24_К_ПользователиБитрикс24.Пользователь1С КАК Пользователь1С,
+	РегистрСведенийБ24_К_ПользователиБитрикс24.Наименование КАК Наименование
+ИЗ
+	РегистрСведений.Б24_К_ПользователиБитрикс24 КАК РегистрСведенийБ24_К_ПользователиБитрикс24
+ГДЕ
+	РегистрСведенийБ24_К_ПользователиБитрикс24.Портал = &amp;Портал</QueryText>
+				<MainTable>InformationRegister.Б24_К_ПользователиБитрикс24</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="СмартПроцессы" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Смарт процессы</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Ид" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ид</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Наименование" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Наименование</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ТипВладельца" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Тип владельца</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="УказываетсяИсточник" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Указывается источник</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="УказываютсяТовары" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Указываются товары</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ИспользуютсяСтадии" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Используются стадии</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ИспользуютсяНаправления" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Используются направления</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ЕстьНастройки" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Есть настройки</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="УказываетсяОрганизация" id="9">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Указывается организация</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="УказываетсяКлиент" id="10">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Указывается клиент</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="СсылкаНастроить" id="11">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content> </v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ВременныйАдресНастроекСмартПроцесса" id="12">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Временный адрес настроек смарт процесса</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ОчиститьСмартПроцесс" id="13">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Очистить смарт процесс</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>v8ui:Picture</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<ConditionalAppearance>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>СмартПроцессыСсылкаНастроить</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">СмартПроцессы.ВременныйАдресНастроекСмартПроцесса</dcsset:left>
+						<dcsset:comparisonType>Filled</dcsset:comparisonType>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Текст</dcscor:parameter>
+						<dcscor:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Изменить</v8:content>
+							</v8:item>
+						</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>СмартПроцессыСсылкаНастроить</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">СмартПроцессы.ВременныйАдресНастроекСмартПроцесса</dcsset:left>
+						<dcsset:comparisonType>NotFilled</dcsset:comparisonType>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:use>false</dcscor:use>
+						<dcscor:parameter>ЦветФона</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">#FF0000</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">style:SpecialTextColor</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Текст</dcscor:parameter>
+						<dcscor:value xsi:type="v8:LocalStringType">
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Не настроен</v8:content>
+							</v8:item>
+						</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+		</ConditionalAppearance>
+	</Attributes>
+	<Commands>
+		<Command name="Записать" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Записать</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Записать</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Записать</Action>
+		</Command>
+		<Command name="ЗаписатьИЗакрыть" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Записать и закрыть</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Записать и закрыть</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗаписатьИЗакрыть</Action>
+		</Command>
+		<Command name="НастроитьРасписаниеОбмена" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настроить расписание обмена</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настроить расписание обмена</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>НастроитьРасписаниеОбмена</Action>
+		</Command>
+		<Command name="УдалитьНастройку" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить настройку синхронизации</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.AppearanceCross</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>УдалитьНастройку</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="ЗагрузитьПользователейСПортала" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить пользователей</v8:content>
+				</v8:item>
+			</Title>
+			<Action>ЗагрузитьПользователейСПортала</Action>
+		</Command>
+	</Commands>
+</Form>

@@ -1,0 +1,198 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="AfterWrite">ПослеЗаписи</Event>
+		<Event name="OnOpen">ПриОткрытии</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Группа1" id="22">
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="23"/>
+			<ChildItems>
+				<InputField name="Номер" id="24">
+					<DataPath>Объект.Number</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="НомерКонтекстноеМеню" id="25"/>
+					<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="26"/>
+				</InputField>
+				<LabelField name="Дата" id="27">
+					<DataPath>Объект.Date</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ДатаКонтекстноеМеню" id="28"/>
+					<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="29"/>
+				</LabelField>
+				<LabelField name="КрайняяДатаИсполнения" id="50">
+					<DataPath>Объект.КрайняяДатаИсполнения</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Крайняя дата</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="КрайняяДатаИсполненияКонтекстноеМеню" id="51"/>
+					<ExtendedTooltip name="КрайняяДатаИсполненияРасширеннаяПодсказка" id="52"/>
+				</LabelField>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="Наименование" id="4">
+			<DataPath>Объект.Description</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
+		</InputField>
+		<InputField name="Исполнитель" id="19">
+			<DataPath>Объект.Исполнитель</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ИсполнительКонтекстноеМеню" id="20"/>
+			<ExtendedTooltip name="ИсполнительРасширеннаяПодсказка" id="21"/>
+		</InputField>
+		<InputField name="Проект" id="38">
+			<DataPath>Объект.Проект</DataPath>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ПроектКонтекстноеМеню" id="39"/>
+			<ExtendedTooltip name="ПроектРасширеннаяПодсказка" id="40"/>
+		</InputField>
+		<InputField name="ИзделиеКомплект" id="41">
+			<DataPath>Объект.ИзделиеКомплект</DataPath>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ИзделиеКомплектКонтекстноеМеню" id="42"/>
+			<ExtendedTooltip name="ИзделиеКомплектРасширеннаяПодсказка" id="43"/>
+		</InputField>
+		<InputField name="ЗадачаПроверкиГабаритногоЧертежа" id="10">
+			<DataPath>Объект.ЗадачаПроверкиГабаритногоЧертежа</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ЗадачаПроверкиГабаритногоЧертежаКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="ЗадачаПроверкиГабаритногоЧертежаРасширеннаяПодсказка" id="12"/>
+		</InputField>
+		<LabelField name="СостояниеГабаритногоЧертежа" id="47">
+			<DataPath>СостояниеГабаритногоЧертежа</DataPath>
+			<TitleLocation>None</TitleLocation>
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<ContextMenu name="СостояниеГабаритногоЧертежаКонтекстноеМеню" id="48"/>
+			<ExtendedTooltip name="СостояниеГабаритногоЧертежаРасширеннаяПодсказка" id="49"/>
+		</LabelField>
+		<LabelField name="КоментарийОснования" id="44">
+			<DataPath>КоментарийОснования</DataPath>
+			<TitleLocation>None</TitleLocation>
+			<ContextMenu name="КоментарийОснованияКонтекстноеМеню" id="45"/>
+			<ExtendedTooltip name="КоментарийОснованияРасширеннаяПодсказка" id="46"/>
+		</LabelField>
+		<UsualGroup name="ГруппаПроверки" id="30">
+			<ReadOnly>true</ReadOnly>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверил</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа проверки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>AlwaysHorizontal</Group>
+			<Representation>StrongSeparation</Representation>
+			<ExtendedTooltip name="ГруппаПроверкиРасширеннаяПодсказка" id="31"/>
+			<ChildItems>
+				<InputField name="ДатаПроверки" id="32">
+					<DataPath>Объект.ДатаПроверки</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ДатаПроверкиКонтекстноеМеню" id="33"/>
+					<ExtendedTooltip name="ДатаПроверкиРасширеннаяПодсказка" id="34"/>
+				</InputField>
+				<InputField name="АвторПроверки" id="35">
+					<DataPath>Объект.АвторПроверки</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Автор</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="АвторПроверкиКонтекстноеМеню" id="36"/>
+					<ExtendedTooltip name="АвторПроверкиРасширеннаяПодсказка" id="37"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:TaskObject.ВыполнитьКорректировкуИзделияКомплект</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="КоментарийОснования" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Коментарий основания</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>100</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="СостояниеГабаритногоЧертежа" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Состояние габаритного чертежа</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<CommandInterface>
+		<NavigationPanel>
+			<Item>
+				<Command>InformationRegister.ОбщиеКомментарии.StandardCommand.OpenByValue.Ссылка</Command>
+				<Type>Auto</Type>
+				<CommandGroup>FormNavigationPanelGoTo</CommandGroup>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>InformationRegister.СостояниеЗамера.StandardCommand.OpenByValue.ОбъектИзменения</Command>
+				<Type>Auto</Type>
+				<CommandGroup>FormNavigationPanelGoTo</CommandGroup>
+				<Index>1</Index>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+		</NavigationPanel>
+	</CommandInterface>
+</Form>

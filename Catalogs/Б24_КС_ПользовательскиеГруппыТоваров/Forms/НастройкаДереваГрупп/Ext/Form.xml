@@ -1,0 +1,719 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+		<ChildItems>
+			<Button name="ФормаКомандаЭкспортВФайл" id="1">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.КомандаЭкспортВФайл</CommandName>
+				<ExtendedTooltip name="ФормаКомандаЭкспортВФайлРасширеннаяПодсказка" id="2"/>
+			</Button>
+			<Button name="ФормаКомандаИмпортИзФайла" id="3">
+				<Type>CommandBarButton</Type>
+				<Representation>PictureAndText</Representation>
+				<CommandName>Form.Command.КомандаИмпортИзФайла</CommandName>
+				<ExtendedTooltip name="ФормаКомандаИмпортИзФайлаРасширеннаяПодсказка" id="4"/>
+			</Button>
+			<Popup name="ПодменюИерархии1С" id="142">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Импорт иерархии из 1С</v8:content>
+					</v8:item>
+				</Title>
+				<Picture>
+					<xr:Ref>StdPicture.MoveItem</xr:Ref>
+					<xr:LoadTransparent>true</xr:LoadTransparent>
+				</Picture>
+				<ExtendedTooltip name="ПодменюИерархии1СРасширеннаяПодсказка" id="143"/>
+				<ChildItems>
+					<Button name="ФормаКомандаИмпортИерархииГрупп1С" id="144">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.КомандаИмпортИерархииГрупп1С</CommandName>
+						<ExtendedTooltip name="ФормаКомандаИмпортИерархииГрупп1СРасширеннаяПодсказка" id="145"/>
+					</Button>
+					<Button name="ФормаКомандаИмпортИерархииВидов1С" id="146">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.КомандаИмпортИерархииВидов1С</CommandName>
+						<ExtendedTooltip name="ФормаКомандаИмпортИерархииВидов1СРасширеннаяПодсказка" id="147"/>
+					</Button>
+				</ChildItems>
+			</Popup>
+			<Button name="ФормаКомандаВывестиНоменклатуруВОтчет" id="5">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.КомандаВывестиНоменклатуруВОтчет</CommandName>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Отчет по выбранной номенклатуре</v8:content>
+					</v8:item>
+				</Title>
+				<ExtendedTooltip name="ФормаКомандаВывестиНоменклатуруВОтчетРасширеннаяПодсказка" id="6"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаРазделенияФормыНаЧасти" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа разделения формы на части</v8:content>
+				</v8:item>
+			</Title>
+			<Group>Horizontal</Group>
+			<Behavior>Usual</Behavior>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаРазделенияФормыНаЧастиРасширеннаяПодсказка" id="8"/>
+			<ChildItems>
+				<UsualGroup name="ГруппаРазделенияЧастиНаЧасти" id="9">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа разделения части на части</v8:content>
+						</v8:item>
+					</Title>
+					<Group>Vertical</Group>
+					<Behavior>Usual</Behavior>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаРазделенияЧастиНаЧастиРасширеннаяПодсказка" id="10"/>
+					<ChildItems>
+						<Table name="ПользовательскоеДерево" id="11">
+							<Representation>Tree</Representation>
+							<UseAlternationRowColor>true</UseAlternationRowColor>
+							<InitialTreeView>ExpandTopLevel</InitialTreeView>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<FileDragMode>AsFile</FileDragMode>
+							<DataPath>ПользовательскоеДерево</DataPath>
+							<RowPictureDataPath>ПользовательскоеДерево.DefaultPicture</RowPictureDataPath>
+							<CommandSet>
+								<ExcludedCommand>ChangeHistory</ExcludedCommand>
+								<ExcludedCommand>Copy</ExcludedCommand>
+								<ExcludedCommand>CopyToClipboard</ExcludedCommand>
+								<ExcludedCommand>DynamicListStandardSettings</ExcludedCommand>
+								<ExcludedCommand>FindByCurrentValue</ExcludedCommand>
+								<ExcludedCommand>HierarchicalList</ExcludedCommand>
+								<ExcludedCommand>List</ExcludedCommand>
+								<ExcludedCommand>ListSettings</ExcludedCommand>
+								<ExcludedCommand>LoadDynamicListSettings</ExcludedCommand>
+								<ExcludedCommand>Refresh</ExcludedCommand>
+								<ExcludedCommand>SaveDynamicListSettings</ExcludedCommand>
+								<ExcludedCommand>SearchHistory</ExcludedCommand>
+								<ExcludedCommand>SetDeletionMark</ExcludedCommand>
+								<ExcludedCommand>ShowMultipleSelection</ExcludedCommand>
+								<ExcludedCommand>Tree</ExcludedCommand>
+							</CommandSet>
+							<AutoRefresh>false</AutoRefresh>
+							<AutoRefreshPeriod>60</AutoRefreshPeriod>
+							<Period>
+								<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+								<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+								<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+							</Period>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<RestoreCurrentRow>false</RestoreCurrentRow>
+							<TopLevelParent xsi:nil="true"/>
+							<ShowRoot>false</ShowRoot>
+							<AllowRootChoice>false</AllowRootChoice>
+							<UpdateOnDataChange>Auto</UpdateOnDataChange>
+							<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
+							<ContextMenu name="ПользовательскоеДеревоКонтекстноеМеню" id="12">
+								<ChildItems>
+									<Button name="ПользовательскоеДеревоКонтекстноеМенюУдалить" id="13">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.Удалить</CommandName>
+										<ExtendedTooltip name="ПользовательскоеДеревоКонтекстноеМенюУдалитьРасширеннаяПодсказка" id="14"/>
+									</Button>
+								</ChildItems>
+							</ContextMenu>
+							<AutoCommandBar name="ПользовательскоеДеревоКоманднаяПанель" id="15">
+								<ChildItems>
+									<Button name="Удалить" id="16">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.Удалить</CommandName>
+										<ExtendedTooltip name="УдалитьРасширеннаяПодсказка" id="17"/>
+									</Button>
+								</ChildItems>
+							</AutoCommandBar>
+							<ExtendedTooltip name="ПользовательскоеДеревоРасширеннаяПодсказка" id="18"/>
+							<SearchStringAddition name="ПользовательскоеДеревоСтрокаПоиска" id="19">
+								<AdditionSource>
+									<Item>ПользовательскоеДерево</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ПользовательскоеДеревоСтрокаПоискаКонтекстноеМеню" id="20"/>
+								<ExtendedTooltip name="ПользовательскоеДеревоСтрокаПоискаРасширеннаяПодсказка" id="21"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ПользовательскоеДеревоСостояниеПросмотра" id="22">
+								<AdditionSource>
+									<Item>ПользовательскоеДерево</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ПользовательскоеДеревоСостояниеПросмотраКонтекстноеМеню" id="23"/>
+								<ExtendedTooltip name="ПользовательскоеДеревоСостояниеПросмотраРасширеннаяПодсказка" id="24"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ПользовательскоеДеревоУправлениеПоиском" id="25">
+								<AdditionSource>
+									<Item>ПользовательскоеДерево</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ПользовательскоеДеревоУправлениеПоискомКонтекстноеМеню" id="26"/>
+								<ExtendedTooltip name="ПользовательскоеДеревоУправлениеПоискомРасширеннаяПодсказка" id="27"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="BeforeRowChange">ПользовательскоеДеревоПередНачаломИзменения</Event>
+							</Events>
+							<ChildItems>
+								<CheckBoxField name="Инфоблок" id="128">
+									<DataPath>ПользовательскоеДерево.Инфоблок</DataPath>
+									<Visible>false</Visible>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ИнфоблокКонтекстноеМеню" id="129"/>
+									<ExtendedTooltip name="ИнфоблокРасширеннаяПодсказка" id="130"/>
+								</CheckBoxField>
+								<InputField name="Наименование" id="125">
+									<DataPath>ПользовательскоеДерево.Наименование</DataPath>
+									<Visible>false</Visible>
+									<ContextMenu name="НаименованиеКонтекстноеМеню" id="126"/>
+									<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="127"/>
+								</InputField>
+								<InputField name="Ссылка" id="116">
+									<DataPath>ПользовательскоеДерево.Ссылка</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Разделы инфоблока</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="СсылкаКонтекстноеМеню" id="117"/>
+									<ExtendedTooltip name="СсылкаРасширеннаяПодсказка" id="118"/>
+								</InputField>
+								<InputField name="ИдентификаторРаздела" id="113">
+									<DataPath>ПользовательскоеДерево.ИдентификаторРаздела</DataPath>
+									<Visible>false</Visible>
+									<ContextMenu name="ИдентификаторРазделаКонтекстноеМеню" id="114"/>
+									<ExtendedTooltip name="ИдентификаторРазделаРасширеннаяПодсказка" id="115"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+						<Table name="Товары" id="40">
+							<Representation>List</Representation>
+							<Header>false</Header>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<FileDragMode>AsFile</FileDragMode>
+							<DataPath>Items.ПользовательскоеДерево.CurrentData.Товары</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ТоварыКонтекстноеМеню" id="41"/>
+							<AutoCommandBar name="ТоварыКоманднаяПанель" id="42"/>
+							<ExtendedTooltip name="ТоварыРасширеннаяПодсказка" id="43"/>
+							<SearchStringAddition name="ТоварыСтрокаПоиска" id="44">
+								<AdditionSource>
+									<Item>Товары</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ТоварыСтрокаПоискаКонтекстноеМеню" id="45"/>
+								<ExtendedTooltip name="ТоварыСтрокаПоискаРасширеннаяПодсказка" id="46"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ТоварыСостояниеПросмотра" id="47">
+								<AdditionSource>
+									<Item>Товары</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ТоварыСостояниеПросмотраКонтекстноеМеню" id="48"/>
+								<ExtendedTooltip name="ТоварыСостояниеПросмотраРасширеннаяПодсказка" id="49"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ТоварыУправлениеПоиском" id="50">
+								<AdditionSource>
+									<Item>Товары</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ТоварыУправлениеПоискомКонтекстноеМеню" id="51"/>
+								<ExtendedTooltip name="ТоварыУправлениеПоискомРасширеннаяПодсказка" id="52"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<InputField name="ТоварыТовар" id="134">
+									<DataPath>Items.ПользовательскоеДерево.CurrentData.Товары.Товар</DataPath>
+									<ContextMenu name="ТоварыТоварКонтекстноеМеню" id="135"/>
+									<ExtendedTooltip name="ТоварыТоварРасширеннаяПодсказка" id="136"/>
+								</InputField>
+								<CheckBoxField name="ТоварыЭтоГруппа" id="137">
+									<DataPath>Items.ПользовательскоеДерево.CurrentData.Товары.ЭтоГруппа</DataPath>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ТоварыЭтоГруппаКонтекстноеМеню" id="138"/>
+									<ExtendedTooltip name="ТоварыЭтоГруппаРасширеннаяПодсказка" id="139"/>
+								</CheckBoxField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаКнопкиПеремещения" id="59">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа кнопки перемещения</v8:content>
+						</v8:item>
+					</Title>
+					<VerticalStretch>true</VerticalStretch>
+					<Group>Vertical</Group>
+					<VerticalAlign>Center</VerticalAlign>
+					<Behavior>Usual</Behavior>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаКнопкиПеремещенияРасширеннаяПодсказка" id="60"/>
+					<ChildItems>
+						<Button name="КомандаДобавитьВДерево" id="61">
+							<Type>UsualButton</Type>
+							<Width>6</Width>
+							<Height>10</Height>
+							<CommandName>Form.Command.КомандаДобавитьВДерево</CommandName>
+							<ExtendedTooltip name="КомандаДобавитьВДеревоРасширеннаяПодсказка" id="62"/>
+						</Button>
+						<Button name="КомандаУдалитьИзДерева" id="63">
+							<Type>UsualButton</Type>
+							<Width>6</Width>
+							<Height>10</Height>
+							<CommandName>Form.Command.КомандаУдалитьИзДерева</CommandName>
+							<ExtendedTooltip name="КомандаУдалитьИзДереваРасширеннаяПодсказка" id="64"/>
+						</Button>
+						<LabelDecoration name="Декорация1" id="65">
+							<Font ref="style:NormalTextFont" height="48" kind="StyleItem"/>
+							<ContextMenu name="Декорация1КонтекстноеМеню" id="66"/>
+							<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="67"/>
+						</LabelDecoration>
+					</ChildItems>
+				</UsualGroup>
+				<Table name="Номенклатура" id="68">
+					<ChangeRowSet>false</ChangeRowSet>
+					<UseAlternationRowColor>true</UseAlternationRowColor>
+					<EnableStartDrag>true</EnableStartDrag>
+					<EnableDrag>true</EnableDrag>
+					<FileDragMode>AsFile</FileDragMode>
+					<DataPath>Номенклатура</DataPath>
+					<RowPictureDataPath>Номенклатура.DefaultPicture</RowPictureDataPath>
+					<CommandSet>
+						<ExcludedCommand>ShowMultipleSelection</ExcludedCommand>
+					</CommandSet>
+					<AutoRefresh>false</AutoRefresh>
+					<AutoRefreshPeriod>60</AutoRefreshPeriod>
+					<Period>
+						<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+						<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+						<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+					</Period>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<RestoreCurrentRow>false</RestoreCurrentRow>
+					<TopLevelParent xsi:nil="true"/>
+					<ShowRoot>false</ShowRoot>
+					<AllowRootChoice>false</AllowRootChoice>
+					<UpdateOnDataChange>Auto</UpdateOnDataChange>
+					<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
+					<ContextMenu name="НоменклатураКонтекстноеМеню" id="69">
+						<ChildItems>
+							<Button name="НоменклатураКонтекстноеМенюПоказатьВхождениеВГруппы" id="70">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.ПоказатьВхождениеВРазделы</CommandName>
+								<ExtendedTooltip name="НоменклатураКонтекстноеМенюПоказатьВхождениеВГруппыРасширеннаяПодсказка" id="71"/>
+							</Button>
+						</ChildItems>
+					</ContextMenu>
+					<AutoCommandBar name="НоменклатураКоманднаяПанель" id="72">
+						<ChildItems>
+							<Button name="НоменклатураОтмечатьВыделенныеТовары" id="73">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.ОтмечатьВыделенныеТовары</CommandName>
+								<ExtendedTooltip name="НоменклатураОтмечатьВыделенныеТоварыРасширеннаяПодсказка" id="74"/>
+							</Button>
+							<Button name="НоменклатураПоказатьВхождениеВГруппы" id="75">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.ПоказатьВхождениеВРазделы</CommandName>
+								<ExtendedTooltip name="НоменклатураПоказатьВхождениеВГруппыРасширеннаяПодсказка" id="76"/>
+							</Button>
+						</ChildItems>
+					</AutoCommandBar>
+					<ExtendedTooltip name="НоменклатураРасширеннаяПодсказка" id="77"/>
+					<SearchStringAddition name="НоменклатураСтрокаПоиска" id="78">
+						<AdditionSource>
+							<Item>Номенклатура</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="НоменклатураСтрокаПоискаКонтекстноеМеню" id="79"/>
+						<ExtendedTooltip name="НоменклатураСтрокаПоискаРасширеннаяПодсказка" id="80"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="НоменклатураСостояниеПросмотра" id="81">
+						<AdditionSource>
+							<Item>Номенклатура</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="НоменклатураСостояниеПросмотраКонтекстноеМеню" id="82"/>
+						<ExtendedTooltip name="НоменклатураСостояниеПросмотраРасширеннаяПодсказка" id="83"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="НоменклатураУправлениеПоиском" id="84">
+						<AdditionSource>
+							<Item>Номенклатура</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="НоменклатураУправлениеПоискомКонтекстноеМеню" id="85"/>
+						<ExtendedTooltip name="НоменклатураУправлениеПоискомРасширеннаяПодсказка" id="86"/>
+					</SearchControlAddition>
+					<ChildItems>
+						<InputField name="НоменклатураСсылка" id="98">
+							<DataPath>Номенклатура.Ссылка</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Номенклатура</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="НоменклатураСсылкаКонтекстноеМеню" id="99"/>
+							<ExtendedTooltip name="НоменклатураСсылкаРасширеннаяПодсказка" id="100"/>
+						</InputField>
+						<InputField name="НоменклатураАртикул" id="95">
+							<DataPath>Номенклатура.Артикул</DataPath>
+							<ContextMenu name="НоменклатураАртикулКонтекстноеМеню" id="96"/>
+							<ExtendedTooltip name="НоменклатураАртикулРасширеннаяПодсказка" id="97"/>
+						</InputField>
+					</ChildItems>
+				</Table>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="ПользовательскоеДерево" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пользовательское дерево</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<UseAlways>
+				<Field>ПользовательскоеДерево.Ссылка</Field>
+			</UseAlways>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>false</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	Б24_КС_ПользовательскиеГруппыТоваров.Ссылка КАК Ссылка,
+	Б24_КС_ПользовательскиеГруппыТоваров.ПометкаУдаления КАК ПометкаУдаления,
+	Б24_КС_ПользовательскиеГруппыТоваров.Родитель КАК Родитель,
+	Б24_КС_ПользовательскиеГруппыТоваров.Наименование КАК Наименование,
+	Б24_КС_ПользовательскиеГруппыТоваров.Товары.(
+		Номенклатура КАК Товар,
+		Номенклатура.ЭтоГруппа КАК ЭтоГруппа
+	) КАК Товары,
+	Б24_КС_ПользовательскиеГруппыТоваров.ИдентификаторРаздела КАК ИдентификаторРаздела,
+	Б24_КС_ПользовательскиеГруппыТоваров.Инфоблок КАК Инфоблок
+ИЗ
+	Справочник.Б24_КС_ПользовательскиеГруппыТоваров КАК Б24_КС_ПользовательскиеГруппыТоваров
+ГДЕ
+	Б24_КС_ПользовательскиеГруппыТоваров.Ссылка В ИЕРАРХИИ(&amp;НашаГруппа)</QueryText>
+				<MainTable>Catalog.Б24_КС_ПользовательскиеГруппыТоваров</MainTable>
+				<ListSettings/>
+			</Settings>
+		</Attribute>
+		<Attribute name="ИдентификаторКаталога" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Идентификатор каталога</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Инфоблок" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Инфоблок</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Б24_КС_ПользовательскиеГруппыТоваров</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Номенклатура" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Номенклатура</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<UseAlways>
+				<Field>Номенклатура.Ссылка</Field>
+			</UseAlways>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	Б24_КС_ПользовательскиеГруппыТоваров.Номенклатура КАК Номенклатура
+ПОМЕСТИТЬ ВТ_НоменклатураИнфоблоков
+ИЗ
+	Справочник.Б24_КС_ПользовательскиеГруппыТоваров.Товары КАК Б24_КС_ПользовательскиеГруппыТоваров
+ГДЕ
+	ВЫБОР
+			КОГДА &amp;НеОтображать = ИСТИНА
+				Тогда ЛОЖЬ
+			ИНАЧЕ Б24_КС_ПользовательскиеГруппыТоваров.Ссылка В ИЕРАРХИИ (&amp;НашаГруппа)
+		КОНЕЦ
+
+ИНДЕКСИРОВАТЬ ПО
+	Номенклатура
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	СправочникНоменклатура.Ссылка КАК Ссылка,
+	СправочникНоменклатура.Артикул КАК Артикул,
+	ВЫБОР
+		КОГДА &amp;НеОтображать = ИСТИНА
+			Тогда 0
+		ИНАЧЕ ВЫБОР
+				КОГДА СправочникНоменклатура.Ссылка В ИЕРАРХИИ
+						(ВЫБРАТЬ
+							ВТ_НоменклатураИнфоблоков.Номенклатура
+						ИЗ
+							ВТ_НоменклатураИнфоблоков)
+					Тогда 1
+				ИНАЧЕ 0
+			КОНЕЦ
+	КОНЕЦ КАК Используется
+ИЗ
+	Справочник.Номенклатура КАК СправочникНоменклатура</QueryText>
+				<MainTable>Catalog.Номенклатура</MainTable>
+				<ListSettings>
+					<dcsset:conditionalAppearance>
+						<dcsset:item>
+							<dcsset:selection/>
+							<dcsset:filter>
+								<dcsset:item xsi:type="dcsset:FilterItemComparison">
+									<dcsset:left xsi:type="dcscor:Field">Используется</dcsset:left>
+									<dcsset:comparisonType>Equal</dcsset:comparisonType>
+									<dcsset:right xsi:type="xs:decimal">1</dcsset:right>
+								</dcsset:item>
+							</dcsset:filter>
+							<dcsset:appearance>
+								<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+									<dcscor:parameter>ЦветФона</dcscor:parameter>
+									<dcscor:value xsi:type="v8ui:Color">web:PowderBlue</dcscor:value>
+								</dcscor:item>
+							</dcsset:appearance>
+						</dcsset:item>
+					</dcsset:conditionalAppearance>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="НоменклатураОтбор" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Номенклатура отбор</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+			<Settings xsi:type="v8:TypeDescription"/>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="КомандаДобавитьВДерево" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить номенклатуру в дерево</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.MoveLeft</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>КомандаДобавитьВДерево</Action>
+			<Representation>Picture</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="КомандаУдалитьИзДерева" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить номенклатуру Из дерева</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.MoveRight</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>КомандаУдалитьИзДерева</Action>
+			<Representation>Picture</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ПоказатьВхождениеВРазделы" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать вхождение в разделы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать вхождение в разделы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПоказатьВхождениеВГруппы</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="КомандаЭкспортВФайл" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Экспорт в файл...</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить дерево в файл</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.SaveFile</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>КомандаЭкспортВФайл</Action>
+			<Representation>TextPicture</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="КомандаИмпортИзФайла" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Импорт из файла...</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить дерево Из файла</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.OpenFile</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>КомандаИмпортИзФайла</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="КомандаВывестиНоменклатуруВОтчет" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда вывести номенклатуру в отчет</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда вывести номенклатуру в отчет</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Report</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>КомандаВывестиНоменклатуруВОтчет</Action>
+			<Representation>TextPicture</Representation>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="ОтмечатьВыделенныеТовары" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отмечать выбранные товары</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отмечать выделенные товары</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОтмечатьВыделенныеТовары</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="Удалить" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>StdPicture.Delete</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>Удалить</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="КомандаИмпортИерархииГрупп1С" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Иерархия групп</v8:content>
+				</v8:item>
+			</Title>
+			<Action>КомандаИмпортИерархииГрупп1С</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+		<Command name="КомандаИмпортИерархииВидов1С" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Иерархия видов</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Команда импорт иерархии видов</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КомандаИмпортИерархииВидов1С</Action>
+			<Representation>TextPicture</Representation>
+		</Command>
+	</Commands>
+</Form>

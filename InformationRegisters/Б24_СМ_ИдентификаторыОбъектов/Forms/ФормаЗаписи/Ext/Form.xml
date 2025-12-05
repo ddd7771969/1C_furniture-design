@@ -1,0 +1,135 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="Портал" id="25">
+			<DataPath>Запись.Портал</DataPath>
+			<Width>13</Width>
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<HorizontalStretch>false</HorizontalStretch>
+			<DropListButton>true</DropListButton>
+			<TextEdit>false</TextEdit>
+			<ContextMenu name="ПорталКонтекстноеМеню" id="26"/>
+			<ExtendedTooltip name="ПорталРасширеннаяПодсказка" id="27"/>
+		</InputField>
+		<UsualGroup name="ГруппаИнформацияСмартПроцесса" id="42">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Информация о смарт-процессе</v8:content>
+				</v8:item>
+			</Title>
+			<Behavior>Usual</Behavior>
+			<Representation>StrongSeparation</Representation>
+			<ExtendedTooltip name="ГруппаИнформацияСмартПроцессаРасширеннаяПодсказка" id="43"/>
+			<ChildItems>
+				<InputField name="ТипВладельцаСмартПроцесса" id="30">
+					<DataPath>Запись.ТипВладельцаСмартПроцесса</DataPath>
+					<Width>5</Width>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<HorizontalStretch>false</HorizontalStretch>
+					<ContextMenu name="ТипВладельцаСмартПроцессаКонтекстноеМеню" id="31"/>
+					<ExtendedTooltip name="ТипВладельцаСмартПроцессаРасширеннаяПодсказка" id="32"/>
+				</InputField>
+				<InputField name="ИдСмартПроцесса" id="33">
+					<DataPath>Запись.ИдСмартПроцесса</DataPath>
+					<Width>12</Width>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<HorizontalStretch>false</HorizontalStretch>
+					<ContextMenu name="ИдСмартПроцессаКонтекстноеМеню" id="34"/>
+					<ExtendedTooltip name="ИдСмартПроцессаРасширеннаяПодсказка" id="35"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаИнформацияСущности1С" id="44">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Информация о сущности 1С</v8:content>
+				</v8:item>
+			</Title>
+			<Group>AlwaysHorizontal</Group>
+			<Behavior>Usual</Behavior>
+			<Representation>StrongSeparation</Representation>
+			<ExtendedTooltip name="ГруппаИнформацияСущности1СРасширеннаяПодсказка" id="45"/>
+			<ChildItems>
+				<InputField name="ТипСущности1С" id="36">
+					<DataPath>Запись.ТипСущности1С</DataPath>
+					<Width>11</Width>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<HorizontalStretch>false</HorizontalStretch>
+					<ListChoiceMode>true</ListChoiceMode>
+					<ChoiceList>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation/>
+								<Value xsi:type="xs:string">Справочник</Value>
+							</xr:Value>
+						</xr:Item>
+						<xr:Item>
+							<xr:Presentation/>
+							<xr:CheckState>0</xr:CheckState>
+							<xr:Value xsi:type="FormChoiceListDesTimeValue">
+								<Presentation/>
+								<Value xsi:type="xs:string">Документ</Value>
+							</xr:Value>
+						</xr:Item>
+					</ChoiceList>
+					<ContextMenu name="ТипСущности1СКонтекстноеМеню" id="37"/>
+					<ExtendedTooltip name="ТипСущности1СРасширеннаяПодсказка" id="38"/>
+				</InputField>
+				<InputField name="Сущность1С" id="39">
+					<DataPath>Запись.Сущность1С</DataPath>
+					<Width>16</Width>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<HorizontalStretch>false</HorizontalStretch>
+					<ContextMenu name="Сущность1СКонтекстноеМеню" id="40"/>
+					<ExtendedTooltip name="Сущность1СРасширеннаяПодсказка" id="41"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="ИдентификаторОбъекта" id="46">
+			<DataPath>Запись.ИдентификаторОбъекта</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Идентификатор объекта 1С</v8:content>
+				</v8:item>
+			</Title>
+			<Width>35</Width>
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<HorizontalStretch>false</HorizontalStretch>
+			<ContextMenu name="ИдентификаторОбъектаКонтекстноеМеню" id="47"/>
+			<ExtendedTooltip name="ИдентификаторОбъектаРасширеннаяПодсказка" id="48"/>
+		</InputField>
+		<InputField name="Идентификатор" id="7">
+			<DataPath>Запись.Идентификатор</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Идентификатор Битрикс24</v8:content>
+				</v8:item>
+			</Title>
+			<Width>35</Width>
+			<AutoMaxWidth>false</AutoMaxWidth>
+			<HorizontalStretch>false</HorizontalStretch>
+			<ContextMenu name="ИдентификаторКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="ИдентификаторРасширеннаяПодсказка" id="9"/>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Запись" id="1">
+			<Type>
+				<v8:Type>cfg:InformationRegisterRecordManager.Б24_СМ_ИдентификаторыОбъектов</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+		</Attribute>
+	</Attributes>
+</Form>

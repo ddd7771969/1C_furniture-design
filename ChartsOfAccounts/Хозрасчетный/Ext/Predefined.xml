@@ -1,0 +1,350 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<PredefinedData xmlns="http://v8.1c.ru/8.3/xcf/predef" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:type="ChartOfAccountsPredefinedItems" version="2.20">
+	<Item id="4de7f753-a396-4dd9-86a0-215be267dc84">
+		<Name>Материалы</Name>
+		<Code>10</Code>
+		<Description>Материалы</Description>
+		<AccountType>Active</AccountType>
+		<OffBalance>false</OffBalance>
+		<Order> 10</Order>
+		<AccountingFlags>
+			<Flag ref="ChartOfAccounts.Хозрасчетный.AccountingFlag.Валютный">false</Flag>
+			<Flag ref="ChartOfAccounts.Хозрасчетный.AccountingFlag.Количественный">true</Flag>
+			<Flag ref="ChartOfAccounts.Хозрасчетный.AccountingFlag.УчетПоПодразделениям">true</Flag>
+			<Flag ref="ChartOfAccounts.Хозрасчетный.AccountingFlag.УчетПоНаправлениямДеятельности">true</Flag>
+			<Flag ref="ChartOfAccounts.Хозрасчетный.AccountingFlag.НалоговыйУчет">true</Flag>
+		</AccountingFlags>
+		<ExtDimensionTypes/>
+		<ChildItems>
+			<Item id="d2f69b00-161d-4128-b15a-57b38560654b">
+				<Name>ПлитныеМатериалы</Name>
+				<Code>10.01</Code>
+				<Description>Плитные материалы</Description>
+				<AccountType>Active</AccountType>
+				<OffBalance>false</OffBalance>
+				<Order> 10.01</Order>
+				<AccountingFlags>
+					<Flag ref="ChartOfAccounts.Хозрасчетный.AccountingFlag.Валютный">false</Flag>
+					<Flag ref="ChartOfAccounts.Хозрасчетный.AccountingFlag.Количественный">true</Flag>
+					<Flag ref="ChartOfAccounts.Хозрасчетный.AccountingFlag.УчетПоПодразделениям">false</Flag>
+					<Flag ref="ChartOfAccounts.Хозрасчетный.AccountingFlag.УчетПоНаправлениямДеятельности">false</Flag>
+					<Flag ref="ChartOfAccounts.Хозрасчетный.AccountingFlag.НалоговыйУчет">false</Flag>
+				</AccountingFlags>
+				<ExtDimensionTypes>
+					<ExtDimensionType name="ChartOfCharacteristicTypes.ВидыСубконтоХозрасчетные.Номенклатура">
+						<Turnover>false</Turnover>
+						<AccountingFlags>
+							<Flag ref="ChartOfAccounts.Хозрасчетный.ExtDimensionAccountingFlag.Суммовой">true</Flag>
+							<Flag ref="ChartOfAccounts.Хозрасчетный.ExtDimensionAccountingFlag.Валютный">false</Flag>
+							<Flag ref="ChartOfAccounts.Хозрасчетный.ExtDimensionAccountingFlag.Количественный">true</Flag>
+						</AccountingFlags>
+					</ExtDimensionType>
+				</ExtDimensionTypes>
+			</Item>
+			<Item id="4f41b7e5-ba74-45be-9c26-c669e114dab9">
+				<Name>МатериалыШпонированные</Name>
+				<Code>10.02</Code>
+				<Description>Материалы шпонированные</Description>
+				<AccountType>Active</AccountType>
+				<OffBalance>false</OffBalance>
+				<Order> 10.02</Order>
+				<AccountingFlags>
+					<Flag ref="ChartOfAccounts.Хозрасчетный.AccountingFlag.Валютный">false</Flag>
+					<Flag ref="ChartOfAccounts.Хозрасчетный.AccountingFlag.Количественный">true</Flag>
+					<Flag ref="ChartOfAccounts.Хозрасчетный.AccountingFlag.УчетПоПодразделениям">false</Flag>
+					<Flag ref="ChartOfAccounts.Хозрасчетный.AccountingFlag.УчетПоНаправлениямДеятельности">false</Flag>
+					<Flag ref="ChartOfAccounts.Хозрасчетный.AccountingFlag.НалоговыйУчет">false</Flag>
+				</AccountingFlags>
+				<ExtDimensionTypes>
+					<ExtDimensionType name="ChartOfCharacteristicTypes.ВидыСубконтоХозрасчетные.Номенклатура">
+						<Turnover>false</Turnover>
+						<AccountingFlags>
+							<Flag ref="ChartOfAccounts.Хозрасчетный.ExtDimensionAccountingFlag.Суммовой">true</Flag>
+							<Flag ref="ChartOfAccounts.Хозрасчетный.ExtDimensionAccountingFlag.Валютный">false</Flag>
+							<Flag ref="ChartOfAccounts.Хозрасчетный.ExtDimensionAccountingFlag.Количественный">true</Flag>
+						</AccountingFlags>
+					</ExtDimensionType>
+				</ExtDimensionTypes>
+			</Item>
+			<Item id="2c8499af-accf-48f4-979d-819ad631e315">
+				<Name>Фурнитура</Name>
+				<Code>10.03</Code>
+				<Description>Фурнитура</Description>
+				<AccountType>Active</AccountType>
+				<OffBalance>false</OffBalance>
+				<Order> 10.03</Order>
+				<AccountingFlags>
+					<Flag ref="ChartOfAccounts.Хозрасчетный.AccountingFlag.Валютный">false</Flag>
+					<Flag ref="ChartOfAccounts.Хозрасчетный.AccountingFlag.Количественный">true</Flag>
+					<Flag ref="ChartOfAccounts.Хозрасчетный.AccountingFlag.УчетПоПодразделениям">false</Flag>
+					<Flag ref="ChartOfAccounts.Хозрасчетный.AccountingFlag.УчетПоНаправлениямДеятельности">false</Flag>
+					<Flag ref="ChartOfAccounts.Хозрасчетный.AccountingFlag.НалоговыйУчет">false</Flag>
+				</AccountingFlags>
+				<ExtDimensionTypes>
+					<ExtDimensionType name="ChartOfCharacteristicTypes.ВидыСубконтоХозрасчетные.Номенклатура">
+						<Turnover>false</Turnover>
+						<AccountingFlags>
+							<Flag ref="ChartOfAccounts.Хозрасчетный.ExtDimensionAccountingFlag.Суммовой">true</Flag>
+							<Flag ref="ChartOfAccounts.Хозрасчетный.ExtDimensionAccountingFlag.Валютный">false</Flag>
+							<Flag ref="ChartOfAccounts.Хозрасчетный.ExtDimensionAccountingFlag.Количественный">true</Flag>
+						</AccountingFlags>
+					</ExtDimensionType>
+				</ExtDimensionTypes>
+			</Item>
+			<Item id="e7827782-f46f-4a40-b969-f3150fc4530c">
+				<Name>Лакокраска</Name>
+				<Code>10.04</Code>
+				<Description>Лако-краска</Description>
+				<AccountType>Active</AccountType>
+				<OffBalance>false</OffBalance>
+				<Order> 10.04</Order>
+				<AccountingFlags>
+					<Flag ref="ChartOfAccounts.Хозрасчетный.AccountingFlag.Валютный">false</Flag>
+					<Flag ref="ChartOfAccounts.Хозрасчетный.AccountingFlag.Количественный">true</Flag>
+					<Flag ref="ChartOfAccounts.Хозрасчетный.AccountingFlag.УчетПоПодразделениям">false</Flag>
+					<Flag ref="ChartOfAccounts.Хозрасчетный.AccountingFlag.УчетПоНаправлениямДеятельности">false</Flag>
+					<Flag ref="ChartOfAccounts.Хозрасчетный.AccountingFlag.НалоговыйУчет">false</Flag>
+				</AccountingFlags>
+				<ExtDimensionTypes>
+					<ExtDimensionType name="ChartOfCharacteristicTypes.ВидыСубконтоХозрасчетные.Номенклатура">
+						<Turnover>false</Turnover>
+						<AccountingFlags>
+							<Flag ref="ChartOfAccounts.Хозрасчетный.ExtDimensionAccountingFlag.Суммовой">true</Flag>
+							<Flag ref="ChartOfAccounts.Хозрасчетный.ExtDimensionAccountingFlag.Валютный">false</Flag>
+							<Flag ref="ChartOfAccounts.Хозрасчетный.ExtDimensionAccountingFlag.Количественный">true</Flag>
+						</AccountingFlags>
+					</ExtDimensionType>
+				</ExtDimensionTypes>
+			</Item>
+			<Item id="4aeec200-8f9d-4567-87d1-0e41e7335b18">
+				<Name>РасходныеМатериалы</Name>
+				<Code>10.09</Code>
+				<Description>Расходные материалы</Description>
+				<AccountType>Active</AccountType>
+				<OffBalance>false</OffBalance>
+				<Order> 10.09</Order>
+				<AccountingFlags>
+					<Flag ref="ChartOfAccounts.Хозрасчетный.AccountingFlag.Валютный">false</Flag>
+					<Flag ref="ChartOfAccounts.Хозрасчетный.AccountingFlag.Количественный">true</Flag>
+					<Flag ref="ChartOfAccounts.Хозрасчетный.AccountingFlag.УчетПоПодразделениям">false</Flag>
+					<Flag ref="ChartOfAccounts.Хозрасчетный.AccountingFlag.УчетПоНаправлениямДеятельности">false</Flag>
+					<Flag ref="ChartOfAccounts.Хозрасчетный.AccountingFlag.НалоговыйУчет">false</Flag>
+				</AccountingFlags>
+				<ExtDimensionTypes>
+					<ExtDimensionType name="ChartOfCharacteristicTypes.ВидыСубконтоХозрасчетные.Номенклатура">
+						<Turnover>false</Turnover>
+						<AccountingFlags>
+							<Flag ref="ChartOfAccounts.Хозрасчетный.ExtDimensionAccountingFlag.Суммовой">true</Flag>
+							<Flag ref="ChartOfAccounts.Хозрасчетный.ExtDimensionAccountingFlag.Валютный">false</Flag>
+							<Flag ref="ChartOfAccounts.Хозрасчетный.ExtDimensionAccountingFlag.Количественный">true</Flag>
+						</AccountingFlags>
+					</ExtDimensionType>
+				</ExtDimensionTypes>
+			</Item>
+		</ChildItems>
+	</Item>
+	<Item id="21946e5a-c7fc-4863-939c-f85306df436b">
+		<Name>ТранспортныеЗатраты</Name>
+		<Code>15</Code>
+		<Description>Транспортные затраты</Description>
+		<AccountType>Active</AccountType>
+		<OffBalance>false</OffBalance>
+		<Order> 15</Order>
+		<AccountingFlags>
+			<Flag ref="ChartOfAccounts.Хозрасчетный.AccountingFlag.Валютный">false</Flag>
+			<Flag ref="ChartOfAccounts.Хозрасчетный.AccountingFlag.Количественный">false</Flag>
+			<Flag ref="ChartOfAccounts.Хозрасчетный.AccountingFlag.УчетПоПодразделениям">true</Flag>
+			<Flag ref="ChartOfAccounts.Хозрасчетный.AccountingFlag.УчетПоНаправлениямДеятельности">true</Flag>
+			<Flag ref="ChartOfAccounts.Хозрасчетный.AccountingFlag.НалоговыйУчет">true</Flag>
+		</AccountingFlags>
+		<ExtDimensionTypes/>
+		<ChildItems>
+			<Item id="a7b84d80-d9a2-445f-923f-3409174eac63">
+				<Name>ЗаготовлениеИПриобретениеМатериалов</Name>
+				<Code>15.01</Code>
+				<Description>Заготовление и приобретение материалов</Description>
+				<AccountType>Active</AccountType>
+				<OffBalance>false</OffBalance>
+				<Order> 15.01</Order>
+				<AccountingFlags>
+					<Flag ref="ChartOfAccounts.Хозрасчетный.AccountingFlag.Валютный">false</Flag>
+					<Flag ref="ChartOfAccounts.Хозрасчетный.AccountingFlag.Количественный">false</Flag>
+					<Flag ref="ChartOfAccounts.Хозрасчетный.AccountingFlag.УчетПоПодразделениям">true</Flag>
+					<Flag ref="ChartOfAccounts.Хозрасчетный.AccountingFlag.УчетПоНаправлениямДеятельности">true</Flag>
+					<Flag ref="ChartOfAccounts.Хозрасчетный.AccountingFlag.НалоговыйУчет">true</Flag>
+				</AccountingFlags>
+				<ExtDimensionTypes/>
+			</Item>
+		</ChildItems>
+	</Item>
+	<Item id="f938d496-6a35-4f7c-8f0b-05cf448f9988">
+		<Name>ОсновноеПроизводство</Name>
+		<Code>20</Code>
+		<Description>Основное производство</Description>
+		<AccountType>Active</AccountType>
+		<OffBalance>false</OffBalance>
+		<Order> 20</Order>
+		<AccountingFlags>
+			<Flag ref="ChartOfAccounts.Хозрасчетный.AccountingFlag.Валютный">false</Flag>
+			<Flag ref="ChartOfAccounts.Хозрасчетный.AccountingFlag.Количественный">false</Flag>
+			<Flag ref="ChartOfAccounts.Хозрасчетный.AccountingFlag.УчетПоПодразделениям">true</Flag>
+			<Flag ref="ChartOfAccounts.Хозрасчетный.AccountingFlag.УчетПоНаправлениямДеятельности">true</Flag>
+			<Flag ref="ChartOfAccounts.Хозрасчетный.AccountingFlag.НалоговыйУчет">true</Flag>
+		</AccountingFlags>
+		<ExtDimensionTypes>
+			<ExtDimensionType name="ChartOfCharacteristicTypes.ВидыСубконтоХозрасчетные.СтатьиЗатрат">
+				<Turnover>false</Turnover>
+				<AccountingFlags>
+					<Flag ref="ChartOfAccounts.Хозрасчетный.ExtDimensionAccountingFlag.Суммовой">true</Flag>
+					<Flag ref="ChartOfAccounts.Хозрасчетный.ExtDimensionAccountingFlag.Валютный">false</Flag>
+					<Flag ref="ChartOfAccounts.Хозрасчетный.ExtDimensionAccountingFlag.Количественный">true</Flag>
+				</AccountingFlags>
+			</ExtDimensionType>
+		</ExtDimensionTypes>
+		<ChildItems>
+			<Item id="e97a2f2d-ff1e-454f-ad83-e8bacaa85459">
+				<Name>ОсновнаяПродукция</Name>
+				<Code>20.01</Code>
+				<Description>Основная продукция</Description>
+				<AccountType>ActivePassive</AccountType>
+				<OffBalance>false</OffBalance>
+				<Order> 20.01</Order>
+				<AccountingFlags>
+					<Flag ref="ChartOfAccounts.Хозрасчетный.AccountingFlag.Валютный">false</Flag>
+					<Flag ref="ChartOfAccounts.Хозрасчетный.AccountingFlag.Количественный">true</Flag>
+					<Flag ref="ChartOfAccounts.Хозрасчетный.AccountingFlag.УчетПоПодразделениям">false</Flag>
+					<Flag ref="ChartOfAccounts.Хозрасчетный.AccountingFlag.УчетПоНаправлениямДеятельности">false</Flag>
+					<Flag ref="ChartOfAccounts.Хозрасчетный.AccountingFlag.НалоговыйУчет">false</Flag>
+				</AccountingFlags>
+				<ExtDimensionTypes>
+					<ExtDimensionType name="ChartOfCharacteristicTypes.ВидыСубконтоХозрасчетные.ИзделиеКомплект">
+						<Turnover>false</Turnover>
+						<AccountingFlags>
+							<Flag ref="ChartOfAccounts.Хозрасчетный.ExtDimensionAccountingFlag.Суммовой">true</Flag>
+							<Flag ref="ChartOfAccounts.Хозрасчетный.ExtDimensionAccountingFlag.Валютный">false</Flag>
+							<Flag ref="ChartOfAccounts.Хозрасчетный.ExtDimensionAccountingFlag.Количественный">true</Flag>
+						</AccountingFlags>
+					</ExtDimensionType>
+					<ExtDimensionType name="ChartOfCharacteristicTypes.ВидыСубконтоХозрасчетные.СтатьиЗатрат">
+						<Turnover>false</Turnover>
+						<AccountingFlags>
+							<Flag ref="ChartOfAccounts.Хозрасчетный.ExtDimensionAccountingFlag.Суммовой">true</Flag>
+							<Flag ref="ChartOfAccounts.Хозрасчетный.ExtDimensionAccountingFlag.Валютный">false</Flag>
+							<Flag ref="ChartOfAccounts.Хозрасчетный.ExtDimensionAccountingFlag.Количественный">true</Flag>
+						</AccountingFlags>
+					</ExtDimensionType>
+				</ExtDimensionTypes>
+			</Item>
+			<Item id="5eee1ddf-7e73-4fb5-bdca-7e3f31010d63">
+				<Name>Неликвид</Name>
+				<Code>20.02</Code>
+				<Description>Неликвид</Description>
+				<AccountType>ActivePassive</AccountType>
+				<OffBalance>false</OffBalance>
+				<Order> 20.02</Order>
+				<AccountingFlags>
+					<Flag ref="ChartOfAccounts.Хозрасчетный.AccountingFlag.Валютный">false</Flag>
+					<Flag ref="ChartOfAccounts.Хозрасчетный.AccountingFlag.Количественный">true</Flag>
+					<Flag ref="ChartOfAccounts.Хозрасчетный.AccountingFlag.УчетПоПодразделениям">false</Flag>
+					<Flag ref="ChartOfAccounts.Хозрасчетный.AccountingFlag.УчетПоНаправлениямДеятельности">false</Flag>
+					<Flag ref="ChartOfAccounts.Хозрасчетный.AccountingFlag.НалоговыйУчет">false</Flag>
+				</AccountingFlags>
+				<ExtDimensionTypes>
+					<ExtDimensionType name="ChartOfCharacteristicTypes.ВидыСубконтоХозрасчетные.СтатьиЗатрат">
+						<Turnover>false</Turnover>
+						<AccountingFlags>
+							<Flag ref="ChartOfAccounts.Хозрасчетный.ExtDimensionAccountingFlag.Суммовой">true</Flag>
+							<Flag ref="ChartOfAccounts.Хозрасчетный.ExtDimensionAccountingFlag.Валютный">false</Flag>
+							<Flag ref="ChartOfAccounts.Хозрасчетный.ExtDimensionAccountingFlag.Количественный">true</Flag>
+						</AccountingFlags>
+					</ExtDimensionType>
+				</ExtDimensionTypes>
+			</Item>
+		</ChildItems>
+	</Item>
+	<Item id="6ddb4928-3fc8-4244-94d5-52749aba3e8f">
+		<Name>РасчетыСПоставщикамиИПодрядчиками</Name>
+		<Code>60</Code>
+		<Description>Расчеты с поставщиками и подрядчиками</Description>
+		<AccountType>ActivePassive</AccountType>
+		<OffBalance>false</OffBalance>
+		<Order> 60</Order>
+		<AccountingFlags>
+			<Flag ref="ChartOfAccounts.Хозрасчетный.AccountingFlag.Валютный">false</Flag>
+			<Flag ref="ChartOfAccounts.Хозрасчетный.AccountingFlag.Количественный">false</Flag>
+			<Flag ref="ChartOfAccounts.Хозрасчетный.AccountingFlag.УчетПоПодразделениям">true</Flag>
+			<Flag ref="ChartOfAccounts.Хозрасчетный.AccountingFlag.УчетПоНаправлениямДеятельности">true</Flag>
+			<Flag ref="ChartOfAccounts.Хозрасчетный.AccountingFlag.НалоговыйУчет">true</Flag>
+		</AccountingFlags>
+		<ExtDimensionTypes>
+			<ExtDimensionType name="ChartOfCharacteristicTypes.ВидыСубконтоХозрасчетные.Контрагенты">
+				<Turnover>false</Turnover>
+				<AccountingFlags>
+					<Flag ref="ChartOfAccounts.Хозрасчетный.ExtDimensionAccountingFlag.Суммовой">true</Flag>
+					<Flag ref="ChartOfAccounts.Хозрасчетный.ExtDimensionAccountingFlag.Валютный">true</Flag>
+					<Flag ref="ChartOfAccounts.Хозрасчетный.ExtDimensionAccountingFlag.Количественный">true</Flag>
+				</AccountingFlags>
+			</ExtDimensionType>
+			<ExtDimensionType name="80d1631b-cf44-4aaa-9efe-a4e4fe521319">
+				<Turnover>false</Turnover>
+				<AccountingFlags>
+					<Flag ref="ChartOfAccounts.Хозрасчетный.ExtDimensionAccountingFlag.Суммовой">true</Flag>
+					<Flag ref="ChartOfAccounts.Хозрасчетный.ExtDimensionAccountingFlag.Валютный">true</Flag>
+					<Flag ref="ChartOfAccounts.Хозрасчетный.ExtDimensionAccountingFlag.Количественный">true</Flag>
+				</AccountingFlags>
+			</ExtDimensionType>
+		</ExtDimensionTypes>
+		<ChildItems>
+			<Item id="a2912351-d8b0-4471-8bb7-faa192adf582">
+				<Name>РасчетыСПоставщиками</Name>
+				<Code>60.01</Code>
+				<Description>Расчеты с поставщиками и подрядчиками</Description>
+				<AccountType>Passive</AccountType>
+				<OffBalance>false</OffBalance>
+				<Order> 60.01</Order>
+				<AccountingFlags>
+					<Flag ref="ChartOfAccounts.Хозрасчетный.AccountingFlag.Валютный">false</Flag>
+					<Flag ref="ChartOfAccounts.Хозрасчетный.AccountingFlag.Количественный">false</Flag>
+					<Flag ref="ChartOfAccounts.Хозрасчетный.AccountingFlag.УчетПоПодразделениям">false</Flag>
+					<Flag ref="ChartOfAccounts.Хозрасчетный.AccountingFlag.УчетПоНаправлениямДеятельности">false</Flag>
+					<Flag ref="ChartOfAccounts.Хозрасчетный.AccountingFlag.НалоговыйУчет">false</Flag>
+				</AccountingFlags>
+				<ExtDimensionTypes>
+					<ExtDimensionType name="ChartOfCharacteristicTypes.ВидыСубконтоХозрасчетные.Контрагенты">
+						<Turnover>false</Turnover>
+						<AccountingFlags>
+							<Flag ref="ChartOfAccounts.Хозрасчетный.ExtDimensionAccountingFlag.Суммовой">true</Flag>
+							<Flag ref="ChartOfAccounts.Хозрасчетный.ExtDimensionAccountingFlag.Валютный">false</Flag>
+							<Flag ref="ChartOfAccounts.Хозрасчетный.ExtDimensionAccountingFlag.Количественный">true</Flag>
+						</AccountingFlags>
+					</ExtDimensionType>
+				</ExtDimensionTypes>
+			</Item>
+			<Item id="821358d4-6d13-40c0-aa96-a1a619a1f966">
+				<Name>РасчетыПоАвансамВыданным</Name>
+				<Code>60.02</Code>
+				<Description>Расчеты по авансам выданным</Description>
+				<AccountType>Active</AccountType>
+				<OffBalance>false</OffBalance>
+				<Order> 60.02</Order>
+				<AccountingFlags>
+					<Flag ref="ChartOfAccounts.Хозрасчетный.AccountingFlag.Валютный">false</Flag>
+					<Flag ref="ChartOfAccounts.Хозрасчетный.AccountingFlag.Количественный">true</Flag>
+					<Flag ref="ChartOfAccounts.Хозрасчетный.AccountingFlag.УчетПоПодразделениям">false</Flag>
+					<Flag ref="ChartOfAccounts.Хозрасчетный.AccountingFlag.УчетПоНаправлениямДеятельности">false</Flag>
+					<Flag ref="ChartOfAccounts.Хозрасчетный.AccountingFlag.НалоговыйУчет">false</Flag>
+				</AccountingFlags>
+				<ExtDimensionTypes>
+					<ExtDimensionType name="ChartOfCharacteristicTypes.ВидыСубконтоХозрасчетные.Контрагенты">
+						<Turnover>false</Turnover>
+						<AccountingFlags>
+							<Flag ref="ChartOfAccounts.Хозрасчетный.ExtDimensionAccountingFlag.Суммовой">true</Flag>
+							<Flag ref="ChartOfAccounts.Хозрасчетный.ExtDimensionAccountingFlag.Валютный">false</Flag>
+							<Flag ref="ChartOfAccounts.Хозрасчетный.ExtDimensionAccountingFlag.Количественный">true</Flag>
+						</AccountingFlags>
+					</ExtDimensionType>
+				</ExtDimensionTypes>
+			</Item>
+		</ChildItems>
+	</Item>
+</PredefinedData>

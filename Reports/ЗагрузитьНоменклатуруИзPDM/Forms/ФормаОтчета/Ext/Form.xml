@@ -1,0 +1,400 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<ReportFormType>Main</ReportFormType>
+	<AutoShowState>Auto</AutoShowState>
+	<ReportResultViewMode>Auto</ReportResultViewMode>
+	<ViewModeApplicationOnSetReportResult>Auto</ViewModeApplicationOnSetReportResult>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Группа3" id="50">
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="51"/>
+			<ChildItems>
+				<UsualGroup name="Группа4" id="52">
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа4РасширеннаяПодсказка" id="53"/>
+					<ChildItems>
+						<UsualGroup name="Группа2" id="46">
+							<Group>AlwaysHorizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="47"/>
+							<ChildItems>
+								<Button name="СоздатьПотребность" id="48">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.СоздатьПотребность</CommandName>
+									<ExtendedTooltip name="СоздатьПотребностьРасширеннаяПодсказка" id="49"/>
+								</Button>
+								<InputField name="ИзделиеКомплект" id="43">
+									<DataPath>ИзделиеКомплект</DataPath>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ИзделиеКомплектКонтекстноеМеню" id="44"/>
+									<ExtendedTooltip name="ИзделиеКомплектРасширеннаяПодсказка" id="45"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="Группа1" id="38">
+							<Group>AlwaysHorizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="39"/>
+							<ChildItems>
+								<InputField name="ПолноеИмяФайла" id="1">
+									<DataPath>ПолноеИмяФайла</DataPath>
+									<ChoiceButton>true</ChoiceButton>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ПолноеИмяФайлаКонтекстноеМеню" id="2"/>
+									<ExtendedTooltip name="ПолноеИмяФайлаРасширеннаяПодсказка" id="3"/>
+									<Events>
+										<Event name="StartChoice">ИмяФайлаЗагрузкиНачалоВыбора</Event>
+									</Events>
+								</InputField>
+								<CheckBoxField name="ЕстьЗаголовок" id="40">
+									<DataPath>ЕстьЗаголовок</DataPath>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ЕстьЗаголовокКонтекстноеМеню" id="41"/>
+									<ExtendedTooltip name="ЕстьЗаголовокРасширеннаяПодсказка" id="42"/>
+								</CheckBoxField>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="Группа5" id="54">
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа5РасширеннаяПодсказка" id="55"/>
+					<ChildItems>
+						<InputField name="Комментарий" id="56">
+							<DataPath>Комментарий</DataPath>
+							<MultiLine>true</MultiLine>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="КомментарийКонтекстноеМеню" id="57"/>
+							<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="58"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+		<Table name="тзДанныеФайла" id="4">
+			<Representation>List</Representation>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>тзДанныеФайла</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="тзДанныеФайлаКонтекстноеМеню" id="5"/>
+			<AutoCommandBar name="тзДанныеФайлаКоманднаяПанель" id="6">
+				<Autofill>false</Autofill>
+			</AutoCommandBar>
+			<ExtendedTooltip name="тзДанныеФайлаРасширеннаяПодсказка" id="7"/>
+			<SearchStringAddition name="тзДанныеФайлаСтрокаПоиска" id="8">
+				<AdditionSource>
+					<Item>тзДанныеФайла</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="тзДанныеФайлаСтрокаПоискаКонтекстноеМеню" id="9"/>
+				<ExtendedTooltip name="тзДанныеФайлаСтрокаПоискаРасширеннаяПодсказка" id="10"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="тзДанныеФайлаСостояниеПросмотра" id="11">
+				<AdditionSource>
+					<Item>тзДанныеФайла</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="тзДанныеФайлаСостояниеПросмотраКонтекстноеМеню" id="12"/>
+				<ExtendedTooltip name="тзДанныеФайлаСостояниеПросмотраРасширеннаяПодсказка" id="13"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="тзДанныеФайлаУправлениеПоиском" id="14">
+				<AdditionSource>
+					<Item>тзДанныеФайла</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="тзДанныеФайлаУправлениеПоискомКонтекстноеМеню" id="15"/>
+				<ExtendedTooltip name="тзДанныеФайлаУправлениеПоискомРасширеннаяПодсказка" id="16"/>
+			</SearchControlAddition>
+			<Events>
+				<Event name="BeforeAddRow">тзДанныеФайлаПередНачаломДобавления</Event>
+				<Event name="BeforeDeleteRow">тзДанныеФайлаПередУдалением</Event>
+				<Event name="BeforeRowChange">тзДанныеФайлаПередНачаломИзменения</Event>
+			</Events>
+			<ChildItems>
+				<InputField name="тзДанныеФайлаАртикул" id="17">
+					<DataPath>тзДанныеФайла.Артикул</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="тзДанныеФайлаАртикулКонтекстноеМеню" id="18"/>
+					<ExtendedTooltip name="тзДанныеФайлаАртикулРасширеннаяПодсказка" id="19"/>
+				</InputField>
+				<InputField name="тзДанныеФайлаНаименование" id="20">
+					<DataPath>тзДанныеФайла.Наименование</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="тзДанныеФайлаНаименованиеКонтекстноеМеню" id="21"/>
+					<ExtendedTooltip name="тзДанныеФайлаНаименованиеРасширеннаяПодсказка" id="22"/>
+				</InputField>
+				<InputField name="тзДанныеФайлаКоличество" id="23">
+					<DataPath>тзДанныеФайла.Количество</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="тзДанныеФайлаКоличествоКонтекстноеМеню" id="24"/>
+					<ExtendedTooltip name="тзДанныеФайлаКоличествоРасширеннаяПодсказка" id="25"/>
+				</InputField>
+				<CheckBoxField name="тзДанныеФайлаОпределённый" id="26">
+					<DataPath>тзДанныеФайла.Определённый</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="тзДанныеФайлаОпределённыйКонтекстноеМеню" id="27"/>
+					<ExtendedTooltip name="тзДанныеФайлаОпределённыйРасширеннаяПодсказка" id="28"/>
+				</CheckBoxField>
+				<InputField name="тзДанныеФайлаНоменклатура" id="32">
+					<DataPath>тзДанныеФайла.Номенклатура</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="тзДанныеФайлаНоменклатураКонтекстноеМеню" id="33"/>
+					<ExtendedTooltip name="тзДанныеФайлаНоменклатураРасширеннаяПодсказка" id="34"/>
+				</InputField>
+				<InputField name="тзДанныеФайлаПредварительнаяНоменклатура" id="35">
+					<DataPath>тзДанныеФайла.ПредварительнаяНоменклатура</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="тзДанныеФайлаПредварительнаяНоменклатураКонтекстноеМеню" id="36"/>
+					<ExtendedTooltip name="тзДанныеФайлаПредварительнаяНоменклатураРасширеннаяПодсказка" id="37"/>
+				</InputField>
+				<InputField name="тзДанныеФайлаКомментарий" id="59">
+					<DataPath>тзДанныеФайла.Комментарий</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="тзДанныеФайлаКомментарийКонтекстноеМеню" id="60"/>
+					<ExtendedTooltip name="тзДанныеФайлаКомментарийРасширеннаяПодсказка" id="61"/>
+				</InputField>
+				<InputField name="тзДанныеФайлаСсылка" id="29">
+					<DataPath>тзДанныеФайла.Ссылка</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>URL</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="тзДанныеФайлаСсылкаКонтекстноеМеню" id="30"/>
+					<ExtendedTooltip name="тзДанныеФайлаСсылкаРасширеннаяПодсказка" id="31"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Отчет" id="1">
+			<Type>
+				<v8:Type>cfg:ReportObject.ЗагрузитьНоменклатуруИзPDM</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="ПолноеИмяФайла" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Полное имя файла</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="тзДанныеФайла" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тз данные файла</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Артикул" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Артикул</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Наименование" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Наименование</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Количество" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Количество</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>3</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="Определённый" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Определённый</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Ссылка" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ссылка</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Номенклатура" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Номенклатура</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Номенклатура</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ПредварительнаяНоменклатура" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Предварительная номенклатура</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ПредварительнаяНоменклатура</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Комментарий" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Комментарий</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>150</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ЕстьЗаголовок" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Есть заголовок</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ИзделиеКомплект" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Изделие комплект</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.ИзделияКомплект</v8:Type>
+			</Type>
+			<FillCheck>ShowError</FillCheck>
+		</Attribute>
+		<Attribute name="Комментарий" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Комментарий</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="СоздатьПотребность" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать потребность</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать потребность</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СоздатьПотребность</Action>
+		</Command>
+	</Commands>
+</Form>

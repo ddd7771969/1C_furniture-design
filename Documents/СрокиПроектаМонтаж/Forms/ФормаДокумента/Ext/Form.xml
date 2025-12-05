@@ -1,0 +1,409 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<AutoTime>CurrentOrLast</AutoTime>
+	<UsePostingMode>Auto</UsePostingMode>
+	<RepostOnWrite>true</RepostOnWrite>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="AfterWrite">ПослеЗаписи</Event>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="BeforeWrite">ПередЗаписью</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Группа3" id="71">
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="72"/>
+			<ChildItems>
+				<UsualGroup name="Группа4" id="73">
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа4РасширеннаяПодсказка" id="74"/>
+					<ChildItems>
+						<UsualGroup name="Группа1" id="35">
+							<Group>AlwaysHorizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="36"/>
+							<ChildItems>
+								<InputField name="Номер" id="37">
+									<DataPath>Объект.Number</DataPath>
+									<ContextMenu name="НомерКонтекстноеМеню" id="38"/>
+									<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="39"/>
+								</InputField>
+								<InputField name="Дата" id="40">
+									<DataPath>Объект.Date</DataPath>
+									<ContextMenu name="ДатаКонтекстноеМеню" id="41"/>
+									<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="42"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<InputField name="Сделка" id="7">
+							<DataPath>Объект.Проект</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<DropListButton>false</DropListButton>
+							<ChoiceButton>true</ChoiceButton>
+							<ChoiceButtonRepresentation>ShowInInputField</ChoiceButtonRepresentation>
+							<ClearButton>false</ClearButton>
+							<OpenButton>true</OpenButton>
+							<CreateButton>false</CreateButton>
+							<TextEdit>false</TextEdit>
+							<ChoiceHistoryOnInput>DontUse</ChoiceHistoryOnInput>
+							<ContextMenu name="СделкаКонтекстноеМеню" id="8"/>
+							<ExtendedTooltip name="СделкаРасширеннаяПодсказка" id="9"/>
+							<Events>
+								<Event name="StartChoice">СделкаНачалоВыбора</Event>
+								<Event name="Clearing">СделкаОчистка</Event>
+							</Events>
+						</InputField>
+						<UsualGroup name="Группа2" id="43">
+							<Group>AlwaysHorizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="44"/>
+							<ChildItems>
+								<LabelField name="ДатаПодписи" id="48">
+									<DataPath>ДатаПодписи</DataPath>
+									<ContextMenu name="ДатаПодписиКонтекстноеМеню" id="49"/>
+									<ExtendedTooltip name="ДатаПодписиРасширеннаяПодсказка" id="50"/>
+								</LabelField>
+								<LabelField name="АвторПодписи" id="51">
+									<DataPath>АвторПодписи</DataPath>
+									<ContextMenu name="АвторПодписиКонтекстноеМеню" id="52"/>
+									<ExtendedTooltip name="АвторПодписиРасширеннаяПодсказка" id="53"/>
+								</LabelField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="Группа5" id="78">
+							<Group>AlwaysHorizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа5РасширеннаяПодсказка" id="79"/>
+							<ChildItems>
+								<LabelField name="КрайМонтажа" id="80">
+									<DataPath>Объект.КрайМонтажа</DataPath>
+									<ContextMenu name="КрайМонтажаКонтекстноеМеню" id="81"/>
+									<ExtendedTooltip name="КрайМонтажаРасширеннаяПодсказка" id="82"/>
+								</LabelField>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+				<InputField name="Комментарий" id="75">
+					<DataPath>Объект.Комментарий</DataPath>
+					<Height>3</Height>
+					<AutoMaxHeight>false</AutoMaxHeight>
+					<VerticalStretch>false</VerticalStretch>
+					<MultiLine>true</MultiLine>
+					<ContextMenu name="КомментарийКонтекстноеМеню" id="76"/>
+					<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="77"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<Table name="Комплекты" id="16">
+			<Representation>List</Representation>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Объект.Комплекты</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="КомплектыКонтекстноеМеню" id="17"/>
+			<AutoCommandBar name="КомплектыКоманднаяПанель" id="18">
+				<ChildItems>
+					<Button name="КомплектыЗаполнитьКомплекты" id="54">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ЗаполнитьКомплекты</CommandName>
+						<ExtendedTooltip name="КомплектыЗаполнитьКомплектыРасширеннаяПодсказка" id="55"/>
+					</Button>
+				</ChildItems>
+			</AutoCommandBar>
+			<ExtendedTooltip name="КомплектыРасширеннаяПодсказка" id="19"/>
+			<SearchStringAddition name="КомплектыСтрокаПоиска" id="20">
+				<AdditionSource>
+					<Item>Комплекты</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="КомплектыСтрокаПоискаКонтекстноеМеню" id="21"/>
+				<ExtendedTooltip name="КомплектыСтрокаПоискаРасширеннаяПодсказка" id="22"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="КомплектыСостояниеПросмотра" id="23">
+				<AdditionSource>
+					<Item>Комплекты</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="КомплектыСостояниеПросмотраКонтекстноеМеню" id="24"/>
+				<ExtendedTooltip name="КомплектыСостояниеПросмотраРасширеннаяПодсказка" id="25"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="КомплектыУправлениеПоиском" id="26">
+				<AdditionSource>
+					<Item>Комплекты</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="КомплектыУправлениеПоискомКонтекстноеМеню" id="27"/>
+				<ExtendedTooltip name="КомплектыУправлениеПоискомРасширеннаяПодсказка" id="28"/>
+			</SearchControlAddition>
+			<Events>
+				<Event name="BeforeAddRow">КомплектыПередНачаломДобавления</Event>
+				<Event name="BeforeDeleteRow">КомплектыПередУдалением</Event>
+				<Event name="OnChange">КомплектыПриИзменении</Event>
+			</Events>
+			<ChildItems>
+				<LabelField name="КомплектыНомерСтроки" id="29">
+					<DataPath>Объект.Комплекты.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="КомплектыНомерСтрокиКонтекстноеМеню" id="30"/>
+					<ExtendedTooltip name="КомплектыНомерСтрокиРасширеннаяПодсказка" id="31"/>
+				</LabelField>
+				<InputField name="КомплектыКомплект" id="106">
+					<DataPath>Объект.Комплекты.Комплект</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="КомплектыКомплектКонтекстноеМеню" id="107"/>
+					<ExtendedTooltip name="КомплектыКомплектРасширеннаяПодсказка" id="108"/>
+				</InputField>
+				<InputField name="КомплектыКрайМонтажа" id="86">
+					<DataPath>Объект.Комплекты.КрайМонтажа</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="КомплектыКрайМонтажаКонтекстноеМеню" id="87"/>
+					<ExtendedTooltip name="КомплектыКрайМонтажаРасширеннаяПодсказка" id="88"/>
+					<Events>
+						<Event name="OnChange">КомплектыКрайМонтажаПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="КомплектыЧеловекоДнейМонтаж" id="100">
+					<DataPath>Объект.Комплекты.ЧеловекоДнейМонтаж</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Чел*Дней</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="КомплектыЧеловекоДнейМонтажКонтекстноеМеню" id="101"/>
+					<ExtendedTooltip name="КомплектыЧеловекоДнейМонтажРасширеннаяПодсказка" id="102"/>
+				</InputField>
+				<InputField name="КомплектыНормаВремени_Монтажа" id="83">
+					<DataPath>Объект.Комплекты.НормаВремениМонтажа</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Норма времени (дн)</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="КомплектыНормаВремени_МонтажаКонтекстноеМеню" id="84"/>
+					<ExtendedTooltip name="КомплектыНормаВремени_МонтажаРасширеннаяПодсказка" id="85"/>
+					<Events>
+						<Event name="OnChange">КомплектыНормаВремени_МонтажаПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="КомплектыКоличествоСотрудниковМонтаж" id="95">
+					<DataPath>Объект.Комплекты.КоличествоСотрудниковМонтаж</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Кол-во сотрудников</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="КомплектыКоличествоСотрудниковМонтажКонтекстноеМеню" id="96"/>
+					<ExtendedTooltip name="КомплектыКоличествоСотрудниковМонтажРасширеннаяПодсказка" id="97"/>
+					<Events>
+						<Event name="OnChange">КомплектыКоличествоСотрудниковМонтажПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="КомплектыНачалоМонтажа" id="92">
+					<DataPath>Объект.Комплекты.НачалоМонтажа</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Начало</v8:content>
+						</v8:item>
+					</Title>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="КомплектыНачалоМонтажаКонтекстноеМеню" id="93"/>
+					<ExtendedTooltip name="КомплектыНачалоМонтажаРасширеннаяПодсказка" id="94"/>
+				</InputField>
+				<InputField name="КомплектыКомментарий" id="89">
+					<DataPath>Объект.Комплекты.Комментарий</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="КомплектыКомментарийКонтекстноеМеню" id="90"/>
+					<ExtendedTooltip name="КомплектыКомментарийРасширеннаяПодсказка" id="91"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DocumentObject.СрокиПроектаМонтаж</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>Объект.RegisterRecords</Field>
+			</UseAlways>
+			<Columns>
+				<AdditionalColumns table="Объект.Комплекты">
+					<Column name="Изменен" id="6">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Изменен</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:boolean</v8:Type>
+						</Type>
+					</Column>
+					<Column name="КрайМонтажа" id="1">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Край монтажа</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:dateTime</v8:Type>
+							<v8:DateQualifiers>
+								<v8:DateFractions>Date</v8:DateFractions>
+							</v8:DateQualifiers>
+						</Type>
+					</Column>
+					<Column name="НачалоМонтажа" id="3">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Начало монтажа</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:dateTime</v8:Type>
+							<v8:DateQualifiers>
+								<v8:DateFractions>Date</v8:DateFractions>
+							</v8:DateQualifiers>
+						</Type>
+					</Column>
+					<Column name="ЧеловекоДнейМонтаж" id="2">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Человеко дней монтаж</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:decimal</v8:Type>
+							<v8:NumberQualifiers>
+								<v8:Digits>4</v8:Digits>
+								<v8:FractionDigits>0</v8:FractionDigits>
+								<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+							</v8:NumberQualifiers>
+						</Type>
+					</Column>
+					<Column name="НормаВремениМонтажа" id="5">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Норма времени монтажа</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:decimal</v8:Type>
+							<v8:NumberQualifiers>
+								<v8:Digits>3</v8:Digits>
+								<v8:FractionDigits>0</v8:FractionDigits>
+								<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+							</v8:NumberQualifiers>
+						</Type>
+					</Column>
+					<Column name="КоличествоСотрудниковМонтаж" id="4">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Количество сотрудников монтаж</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:decimal</v8:Type>
+							<v8:NumberQualifiers>
+								<v8:Digits>3</v8:Digits>
+								<v8:FractionDigits>0</v8:FractionDigits>
+								<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+							</v8:NumberQualifiers>
+						</Type>
+					</Column>
+				</AdditionalColumns>
+			</Columns>
+		</Attribute>
+		<Attribute name="ДатаПодписи" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата подписи</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>Date</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="АвторПодписи" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Автор подписи</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Пользователи</v8:Type>
+			</Type>
+		</Attribute>
+		<ConditionalAppearance>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>Комплекты</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Объект.Комплекты.Изменен</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветФона</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">#EBFFEB</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+		</ConditionalAppearance>
+	</Attributes>
+	<Commands>
+		<Command name="ЗаполнитьКомплекты" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить комплекты</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить комплекты</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗаполнитьКомплекты</Action>
+		</Command>
+	</Commands>
+</Form>

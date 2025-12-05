@@ -1,0 +1,713 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<Table name="ТаблицаСопоставлений" id="1">
+			<Representation>List</Representation>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>ТаблицаСопоставлений</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ТаблицаСопоставленийКонтекстноеМеню" id="2"/>
+			<AutoCommandBar name="ТаблицаСопоставленийКоманднаяПанель" id="3">
+				<Autofill>false</Autofill>
+			</AutoCommandBar>
+			<ExtendedTooltip name="ТаблицаСопоставленийРасширеннаяПодсказка" id="4"/>
+			<SearchStringAddition name="ТаблицаСопоставленийСтрокаПоиска" id="5">
+				<AdditionSource>
+					<Item>ТаблицаСопоставлений</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицаСопоставленийСтрокаПоискаКонтекстноеМеню" id="6"/>
+				<ExtendedTooltip name="ТаблицаСопоставленийСтрокаПоискаРасширеннаяПодсказка" id="7"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ТаблицаСопоставленийСостояниеПросмотра" id="8">
+				<AdditionSource>
+					<Item>ТаблицаСопоставлений</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицаСопоставленийСостояниеПросмотраКонтекстноеМеню" id="9"/>
+				<ExtendedTooltip name="ТаблицаСопоставленийСостояниеПросмотраРасширеннаяПодсказка" id="10"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ТаблицаСопоставленийУправлениеПоиском" id="11">
+				<AdditionSource>
+					<Item>ТаблицаСопоставлений</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицаСопоставленийУправлениеПоискомКонтекстноеМеню" id="12"/>
+				<ExtendedTooltip name="ТаблицаСопоставленийУправлениеПоискомРасширеннаяПодсказка" id="13"/>
+			</SearchControlAddition>
+			<Events>
+				<Event name="BeforeAddRow">ТаблицаСопоставленийПередНачаломДобавления</Event>
+				<Event name="BeforeDeleteRow">ТаблицаСопоставленийПередУдалением</Event>
+			</Events>
+			<ChildItems>
+				<InputField name="ТаблицаСопоставленийНаименованиеВ1С" id="32">
+					<DataPath>ТаблицаСопоставлений.НаименованиеВ1С</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ТаблицаСопоставленийНаименованиеВ1СКонтекстноеМеню" id="33"/>
+					<ExtendedTooltip name="ТаблицаСопоставленийНаименованиеВ1СРасширеннаяПодсказка" id="34"/>
+				</InputField>
+				<InputField name="ТаблицаСопоставленийРодительВ1С1Наименование" id="35">
+					<DataPath>ТаблицаСопоставлений.РодительВ1С1Наименование</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ТаблицаСопоставленийРодительВ1С1НаименованиеКонтекстноеМеню" id="36"/>
+					<ExtendedTooltip name="ТаблицаСопоставленийРодительВ1С1НаименованиеРасширеннаяПодсказка" id="37"/>
+				</InputField>
+				<InputField name="ТаблицаСопоставленийid1С" id="29">
+					<DataPath>ТаблицаСопоставлений.id1С</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ТаблицаСопоставленийid1СКонтекстноеМеню" id="30"/>
+					<ExtendedTooltip name="ТаблицаСопоставленийid1СРасширеннаяПодсказка" id="31"/>
+				</InputField>
+				<InputField name="ТаблицаСопоставленийidБитрикс" id="17">
+					<DataPath>ТаблицаСопоставлений.idБитрикс</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ТаблицаСопоставленийidБитриксКонтекстноеМеню" id="18"/>
+					<ExtendedTooltip name="ТаблицаСопоставленийidБитриксРасширеннаяПодсказка" id="19"/>
+				</InputField>
+				<InputField name="ТаблицаСопоставленийНаименованиеВБитрикс" id="20">
+					<DataPath>ТаблицаСопоставлений.НаименованиеВБитрикс</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ТаблицаСопоставленийНаименованиеВБитриксКонтекстноеМеню" id="21"/>
+					<ExtendedTooltip name="ТаблицаСопоставленийНаименованиеВБитриксРасширеннаяПодсказка" id="22"/>
+				</InputField>
+				<InputField name="ТаблицаСопоставленийРодительВБитрекс" id="23">
+					<DataPath>ТаблицаСопоставлений.РодительВ1С</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ТаблицаСопоставленийРодительВБитрексКонтекстноеМеню" id="24"/>
+					<ExtendedTooltip name="ТаблицаСопоставленийРодительВБитрексРасширеннаяПодсказка" id="25"/>
+				</InputField>
+				<InputField name="ТаблицаСопоставленийidБитриксРодитель" id="26">
+					<DataPath>ТаблицаСопоставлений.idБитриксРодитель</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ТаблицаСопоставленийidБитриксРодительКонтекстноеМеню" id="27"/>
+					<ExtendedTooltip name="ТаблицаСопоставленийidБитриксРодительРасширеннаяПодсказка" id="28"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+		<UsualGroup name="Группа1" id="38">
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="39"/>
+			<ChildItems>
+				<Table name="Подразделения1С" id="40">
+					<Representation>List</Representation>
+					<TitleLocation>Top</TitleLocation>
+					<AutoInsertNewRow>true</AutoInsertNewRow>
+					<EnableStartDrag>true</EnableStartDrag>
+					<EnableDrag>true</EnableDrag>
+					<DataPath>Подразделения1С</DataPath>
+					<RowFilter xsi:nil="true"/>
+					<ContextMenu name="Подразделения1СКонтекстноеМеню" id="41"/>
+					<AutoCommandBar name="Подразделения1СКоманднаяПанель" id="42">
+						<Autofill>false</Autofill>
+					</AutoCommandBar>
+					<ExtendedTooltip name="Подразделения1СРасширеннаяПодсказка" id="43"/>
+					<SearchStringAddition name="Подразделения1ССтрокаПоиска" id="44">
+						<AdditionSource>
+							<Item>Подразделения1С</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="Подразделения1ССтрокаПоискаКонтекстноеМеню" id="45"/>
+						<ExtendedTooltip name="Подразделения1ССтрокаПоискаРасширеннаяПодсказка" id="46"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="Подразделения1ССостояниеПросмотра" id="47">
+						<AdditionSource>
+							<Item>Подразделения1С</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="Подразделения1ССостояниеПросмотраКонтекстноеМеню" id="48"/>
+						<ExtendedTooltip name="Подразделения1ССостояниеПросмотраРасширеннаяПодсказка" id="49"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="Подразделения1СУправлениеПоиском" id="50">
+						<AdditionSource>
+							<Item>Подразделения1С</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="Подразделения1СУправлениеПоискомКонтекстноеМеню" id="51"/>
+						<ExtendedTooltip name="Подразделения1СУправлениеПоискомРасширеннаяПодсказка" id="52"/>
+					</SearchControlAddition>
+					<Events>
+						<Event name="BeforeAddRow">Пдразделения1СПередНачаломДобавления</Event>
+						<Event name="BeforeDeleteRow">Пдразделения1СПередУдалением</Event>
+						<Event name="BeforeRowChange">Пдразделения1СПередНачаломИзменения</Event>
+					</Events>
+					<ChildItems>
+						<InputField name="Подразделения1СНаименованиеВ1С" id="62">
+							<DataPath>Подразделения1С.НаименованиеВ1С</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="Подразделения1СНаименованиеВ1СКонтекстноеМеню" id="63"/>
+							<ExtendedTooltip name="Подразделения1СНаименованиеВ1СРасширеннаяПодсказка" id="64"/>
+						</InputField>
+						<InputField name="Подразделения1СРодительВ1С1Наименование" id="59">
+							<DataPath>Подразделения1С.РодительВ1С1Наименование</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="Подразделения1СРодительВ1С1НаименованиеКонтекстноеМеню" id="60"/>
+							<ExtendedTooltip name="Подразделения1СРодительВ1С1НаименованиеРасширеннаяПодсказка" id="61"/>
+						</InputField>
+					</ChildItems>
+				</Table>
+				<Table name="ПодразделенияБитрикс" id="65">
+					<Representation>List</Representation>
+					<TitleLocation>Top</TitleLocation>
+					<AutoInsertNewRow>true</AutoInsertNewRow>
+					<EnableStartDrag>true</EnableStartDrag>
+					<EnableDrag>true</EnableDrag>
+					<DataPath>ПодразделенияБитрикс</DataPath>
+					<RowFilter xsi:nil="true"/>
+					<ContextMenu name="ПодразделенияБитриксКонтекстноеМеню" id="66"/>
+					<AutoCommandBar name="ПодразделенияБитриксКоманднаяПанель" id="67">
+						<Autofill>false</Autofill>
+					</AutoCommandBar>
+					<ExtendedTooltip name="ПодразделенияБитриксРасширеннаяПодсказка" id="68"/>
+					<SearchStringAddition name="ПодразделенияБитриксСтрокаПоиска" id="69">
+						<AdditionSource>
+							<Item>ПодразделенияБитрикс</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ПодразделенияБитриксСтрокаПоискаКонтекстноеМеню" id="70"/>
+						<ExtendedTooltip name="ПодразделенияБитриксСтрокаПоискаРасширеннаяПодсказка" id="71"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="ПодразделенияБитриксСостояниеПросмотра" id="72">
+						<AdditionSource>
+							<Item>ПодразделенияБитрикс</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ПодразделенияБитриксСостояниеПросмотраКонтекстноеМеню" id="73"/>
+						<ExtendedTooltip name="ПодразделенияБитриксСостояниеПросмотраРасширеннаяПодсказка" id="74"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="ПодразделенияБитриксУправлениеПоиском" id="75">
+						<AdditionSource>
+							<Item>ПодразделенияБитрикс</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="ПодразделенияБитриксУправлениеПоискомКонтекстноеМеню" id="76"/>
+						<ExtendedTooltip name="ПодразделенияБитриксУправлениеПоискомРасширеннаяПодсказка" id="77"/>
+					</SearchControlAddition>
+					<Events>
+						<Event name="BeforeAddRow">ПодразделенияБитриксПередНачаломДобавления</Event>
+						<Event name="BeforeDeleteRow">ПодразделенияБитриксПередУдалением</Event>
+						<Event name="BeforeRowChange">ПодразделенияБитриксПередНачаломИзменения</Event>
+					</Events>
+					<ChildItems>
+						<InputField name="ПодразделенияБитриксidБитрикс" id="78">
+							<DataPath>ПодразделенияБитрикс.idБитрикс</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ПодразделенияБитриксidБитриксКонтекстноеМеню" id="79"/>
+							<ExtendedTooltip name="ПодразделенияБитриксidБитриксРасширеннаяПодсказка" id="80"/>
+						</InputField>
+						<InputField name="ПодразделенияБитриксНаименованиеВБитрикс" id="81">
+							<DataPath>ПодразделенияБитрикс.НаименованиеВБитрикс</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ПодразделенияБитриксНаименованиеВБитриксКонтекстноеМеню" id="82"/>
+							<ExtendedTooltip name="ПодразделенияБитриксНаименованиеВБитриксРасширеннаяПодсказка" id="83"/>
+						</InputField>
+						<InputField name="ПодразделенияБитриксidБитриксРодитель" id="84">
+							<DataPath>ПодразделенияБитрикс.idБитриксРодитель</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ПодразделенияБитриксidБитриксРодительКонтекстноеМеню" id="85"/>
+							<ExtendedTooltip name="ПодразделенияБитриксidБитриксРодительРасширеннаяПодсказка" id="86"/>
+						</InputField>
+					</ChildItems>
+				</Table>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Группа2" id="87">
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="88"/>
+			<ChildItems>
+				<UsualGroup name="Группа3" id="89">
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="90"/>
+					<ChildItems>
+						<UsualGroup name="Группа5" id="96">
+							<Group>AlwaysHorizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа5РасширеннаяПодсказка" id="97"/>
+							<ChildItems>
+								<LabelField name="Позиция1С" id="93">
+									<DataPath>Позиция1С</DataPath>
+									<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+									<ContextMenu name="Позиция1СКонтекстноеМеню" id="94"/>
+									<ExtendedTooltip name="Позиция1СРасширеннаяПодсказка" id="95"/>
+								</LabelField>
+								<Button name="ОчиститьПозицию1С" id="98">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.ОчиститьПозицию1С</CommandName>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Х</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="ОчиститьПозицию1СРасширеннаяПодсказка" id="99"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="Группа6" id="102">
+							<Group>AlwaysHorizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа6РасширеннаяПодсказка" id="103"/>
+							<ChildItems>
+								<LabelField name="ПозицияБитрикс" id="104">
+									<DataPath>ПозицияБитрикс</DataPath>
+									<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+									<ContextMenu name="ПозицияБитриксКонтекстноеМеню" id="105"/>
+									<ExtendedTooltip name="ПозицияБитриксРасширеннаяПодсказка" id="106"/>
+								</LabelField>
+								<Button name="ОчиститьПозициюБитрикс" id="100">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.ОчиститьПозициюБитрикс</CommandName>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Х</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="ОчиститьПозициюБитриксРасширеннаяПодсказка" id="101"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="Группа4" id="91">
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа4РасширеннаяПодсказка" id="92"/>
+					<ChildItems>
+						<Button name="СопоставитьПодразделения" id="107">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.СопоставитьПодразделения</CommandName>
+							<ExtendedTooltip name="СопоставитьПодразделенияРасширеннаяПодсказка" id="108"/>
+						</Button>
+						<Button name="СоздатьВБитрикс" id="109">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.СоздатьВБитрикс</CommandName>
+							<ExtendedTooltip name="СоздатьВБитриксРасширеннаяПодсказка" id="110"/>
+						</Button>
+						<Button name="СоздатьВ1С" id="111">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.СоздатьВ1С</CommandName>
+							<ExtendedTooltip name="СоздатьВ1СРасширеннаяПодсказка" id="112"/>
+						</Button>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="ТаблицаСопоставлений" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Таблица сопоставлений</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Подразделение" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Подразделение</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Подразделения</v8:Type>
+					</Type>
+				</Column>
+				<Column name="idБитрикс" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Id Битрикс</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="НаименованиеВБитрикс" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Наименование в битрикс</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="РодительВ1С" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Родитель в 1С</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Подразделения</v8:Type>
+					</Type>
+				</Column>
+				<Column name="idБитриксРодитель" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Id Битрикс Родитель</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="id1С" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Id 1С</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="НаименованиеВ1С" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Наименование в1С</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="РодительВ1С1Наименование" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Наименование родитель в 1С</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="Подразделения1С" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пдразделения1С</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Подразделение" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Подразделение</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Подразделения</v8:Type>
+					</Type>
+				</Column>
+				<Column name="РодительВ1С" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Родитель в1С</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Подразделения</v8:Type>
+					</Type>
+				</Column>
+				<Column name="РодительВ1С1Наименование" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Наименование родитель в1С</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="НаименованиеВ1С" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Наименование в1С</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="id1С" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Id 1С</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="idРодителя1С" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Id родителя 1С</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ПодразделенияБитрикс" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подразделения Битрикс</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="idБитрикс" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Id Битрикс</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="НаименованиеВБитрикс" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Наименование в битрикс</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="idБитриксРодитель" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Id Битрикс Родитель</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="Позиция1С" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Позиция 1С</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПозицияБитрикс" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Позиция Битрикс</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ОчиститьПозицию1С" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Очистить позицию1 С</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Очистить позицию1 С</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОчиститьПозицию1С</Action>
+		</Command>
+		<Command name="ОчиститьПозициюБитрикс" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Очистить позицию Битрикс</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Очистить позицию1 С</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОчиститьПозициюБитрикс</Action>
+		</Command>
+		<Command name="СопоставитьПодразделения" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сопоставить подразделения</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сопоставить подразделения</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СопоставитьПодразделения</Action>
+		</Command>
+		<Command name="СоздатьВБитрикс" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать в битрикс</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать в битрикс</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СоздатьВБитрикс</Action>
+		</Command>
+		<Command name="СоздатьВ1С" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать в 1С</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать в1 С</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СоздатьВ1С</Action>
+		</Command>
+	</Commands>
+</Form>

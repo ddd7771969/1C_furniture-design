@@ -1,0 +1,121 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<CommandInterface xmlns="http://v8.1c.ru/8.3/xcf/extrnprops" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<CommandsVisibility>
+		<Command name="Document.ПлановаяГотовностьПомещений.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Document.ОзнакомительныйВыезд.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Document.ЗаявкаНаЗамер.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Document.ВыездНаЗамер.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Document.АктПриемкиПомещения.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Document.АктПриемкиГабаритныхЧертежей.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Catalog.НазначениеАвтораДляЗадачи.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Catalog.Помещения.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+		<Command name="Catalog.ГабаритныеЧертежи.StandardCommand.OpenList">
+			<Visibility>
+				<xr:Common>true</xr:Common>
+			</Visibility>
+		</Command>
+	</CommandsVisibility>
+	<CommandsPlacement>
+		<Command name="Document.ПлановаяГотовностьПомещений.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.ЗамерыДокументы</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Document.ОзнакомительныйВыезд.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.ЗамерыДокументы</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Document.ЗаявкаНаЗамер.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.ЗамерыДокументы</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Document.ВыездНаЗамер.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.ЗамерыДокументы</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Document.АктПриемкиПомещения.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.ЗамерыДокументы</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Document.АктПриемкиГабаритныхЧертежей.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.ЗамерыДокументы</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Catalog.НазначениеАвтораДляЗадачи.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.ЗамерыСправочники</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Catalog.Помещения.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.ЗамерыСправочники</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+		<Command name="Catalog.ГабаритныеЧертежи.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.ЗамерыСправочники</CommandGroup>
+			<Placement>Auto</Placement>
+		</Command>
+	</CommandsPlacement>
+	<CommandsOrder>
+		<Command name="Document.ПлановаяГотовностьПомещений.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.ЗамерыДокументы</CommandGroup>
+		</Command>
+		<Command name="Document.ОзнакомительныйВыезд.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.ЗамерыДокументы</CommandGroup>
+		</Command>
+		<Command name="Document.ЗаявкаНаЗамер.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.ЗамерыДокументы</CommandGroup>
+		</Command>
+		<Command name="Document.ВыездНаЗамер.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.ЗамерыДокументы</CommandGroup>
+		</Command>
+		<Command name="Document.АктПриемкиПомещения.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.ЗамерыДокументы</CommandGroup>
+		</Command>
+		<Command name="Document.АктПриемкиГабаритныхЧертежей.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.ЗамерыДокументы</CommandGroup>
+		</Command>
+		<Command name="Catalog.НазначениеАвтораДляЗадачи.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.ЗамерыСправочники</CommandGroup>
+		</Command>
+		<Command name="Catalog.Помещения.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.ЗамерыСправочники</CommandGroup>
+		</Command>
+		<Command name="Catalog.ГабаритныеЧертежи.StandardCommand.OpenList">
+			<CommandGroup>CommandGroup.ЗамерыСправочники</CommandGroup>
+		</Command>
+	</CommandsOrder>
+	<GroupsOrder>
+		<Group>CommandGroup.ЗамерыДокументы</Group>
+		<Group>CommandGroup.ЗамерыСправочники</Group>
+	</GroupsOrder>
+</CommandInterface>

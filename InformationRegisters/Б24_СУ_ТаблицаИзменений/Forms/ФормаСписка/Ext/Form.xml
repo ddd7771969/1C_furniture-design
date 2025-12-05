@@ -1,0 +1,503 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<ChildItems>
+		<UsualGroup name="СписокКомпоновщикНастроекПользовательскиеНастройки" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа пользовательских настроек</v8:content>
+				</v8:item>
+			</Title>
+			<VerticalStretch>false</VerticalStretch>
+			<Group>Vertical</Group>
+			<Behavior>Usual</Behavior>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="СписокКомпоновщикНастроекПользовательскиеНастройкиРасширеннаяПодсказка" id="2"/>
+		</UsualGroup>
+		<Pages name="ГруппаСтраница" id="28">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа страница</v8:content>
+				</v8:item>
+			</Title>
+			<PagesRepresentation>TabsOnTop</PagesRepresentation>
+			<ExtendedTooltip name="ГруппаСтраницаРасширеннаяПодсказка" id="29"/>
+			<ChildItems>
+				<Page name="СтраницаИзменения" id="30">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Зарегистрированные изменения</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="СтраницаИзмененияРасширеннаяПодсказка" id="31"/>
+					<ChildItems>
+						<Table name="Список" id="3">
+							<Representation>Tree</Representation>
+							<CommandBarLocation>Top</CommandBarLocation>
+							<Header>false</Header>
+							<UseAlternationRowColor>true</UseAlternationRowColor>
+							<InitialTreeView>ExpandTopLevel</InitialTreeView>
+							<EnableStartDrag>true</EnableStartDrag>
+							<FileDragMode>AsFile</FileDragMode>
+							<DataPath>Список</DataPath>
+							<RowPictureDataPath>Список.DefaultPicture</RowPictureDataPath>
+							<CommandSet>
+								<ExcludedCommand>CancelSearch</ExcludedCommand>
+								<ExcludedCommand>Change</ExcludedCommand>
+								<ExcludedCommand>ChangeHistory</ExcludedCommand>
+								<ExcludedCommand>Copy</ExcludedCommand>
+								<ExcludedCommand>CopyToClipboard</ExcludedCommand>
+								<ExcludedCommand>Create</ExcludedCommand>
+								<ExcludedCommand>Delete</ExcludedCommand>
+								<ExcludedCommand>DynamicListStandardSettings</ExcludedCommand>
+								<ExcludedCommand>Find</ExcludedCommand>
+								<ExcludedCommand>FindByCurrentValue</ExcludedCommand>
+								<ExcludedCommand>ListSettings</ExcludedCommand>
+								<ExcludedCommand>LoadDynamicListSettings</ExcludedCommand>
+								<ExcludedCommand>OutputList</ExcludedCommand>
+								<ExcludedCommand>SaveDynamicListSettings</ExcludedCommand>
+								<ExcludedCommand>SearchHistory</ExcludedCommand>
+								<ExcludedCommand>ShowMultipleSelection</ExcludedCommand>
+							</CommandSet>
+							<AutoRefresh>true</AutoRefresh>
+							<AutoRefreshPeriod>30</AutoRefreshPeriod>
+							<Period>
+								<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+								<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+								<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+							</Period>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<RestoreCurrentRow>false</RestoreCurrentRow>
+							<TopLevelParent xsi:nil="true"/>
+							<ShowRoot>true</ShowRoot>
+							<AllowRootChoice>false</AllowRootChoice>
+							<UpdateOnDataChange>Auto</UpdateOnDataChange>
+							<UserSettingsGroup>СписокКомпоновщикНастроекПользовательскиеНастройки</UserSettingsGroup>
+							<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
+							<ContextMenu name="СписокКонтекстноеМеню" id="4"/>
+							<AutoCommandBar name="СписокКоманднаяПанель" id="5">
+								<HorizontalAlign>Right</HorizontalAlign>
+								<Autofill>false</Autofill>
+								<ChildItems>
+									<Button name="СписокКнопкаОбновить" id="63">
+										<Type>CommandBarButton</Type>
+										<Representation>PictureAndText</Representation>
+										<CommandName>Form.Item.Список.StandardCommand.Refresh</CommandName>
+										<Picture>
+											<xr:Ref>StdPicture.Refresh</xr:Ref>
+											<xr:LoadTransparent>true</xr:LoadTransparent>
+										</Picture>
+										<LocationInCommandBar>InCommandBarAndInAdditionalSubmenu</LocationInCommandBar>
+										<ExtendedTooltip name="СписокКнопкаОбновитьРасширеннаяПодсказка" id="64"/>
+									</Button>
+									<Button name="СписокУдалитьВсеИзменения" id="65">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.УдалитьВсеИзменения</CommandName>
+										<ExtendedTooltip name="СписокУдалитьВсеИзмененияРасширеннаяПодсказка" id="66"/>
+									</Button>
+								</ChildItems>
+							</AutoCommandBar>
+							<ExtendedTooltip name="СписокРасширеннаяПодсказка" id="6"/>
+							<SearchStringAddition name="СписокСтрокаПоиска" id="7">
+								<AdditionSource>
+									<Item>Список</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СписокСтрокаПоискаКонтекстноеМеню" id="8"/>
+								<ExtendedTooltip name="СписокСтрокаПоискаРасширеннаяПодсказка" id="9"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="СписокСостояниеПросмотра" id="10">
+								<AdditionSource>
+									<Item>Список</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СписокСостояниеПросмотраКонтекстноеМеню" id="11"/>
+								<ExtendedTooltip name="СписокСостояниеПросмотраРасширеннаяПодсказка" id="12"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="СписокУправлениеПоиском" id="13">
+								<AdditionSource>
+									<Item>Список</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="СписокУправлениеПоискомКонтекстноеМеню" id="14"/>
+								<ExtendedTooltip name="СписокУправлениеПоискомРасширеннаяПодсказка" id="15"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="Объект" id="19">
+									<DataPath>Список.Объект</DataPath>
+									<DefaultItem>true</DefaultItem>
+									<ContextMenu name="ОбъектКонтекстноеМеню" id="20"/>
+									<ExtendedTooltip name="ОбъектРасширеннаяПодсказка" id="21"/>
+								</LabelField>
+								<LabelField name="ПодчиненныйОбъект" id="25">
+									<DataPath>Список.ПодчиненныйОбъект</DataPath>
+									<ContextMenu name="ПодчиненныйОбъектКонтекстноеМеню" id="26"/>
+									<ExtendedTooltip name="ПодчиненныйОбъектРасширеннаяПодсказка" id="27"/>
+								</LabelField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="СтраницаНеотправленныеПакеты" id="32">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Неотправленные пакеты данных</v8:content>
+						</v8:item>
+					</Title>
+					<Group>HorizontalIfPossible</Group>
+					<ExtendedTooltip name="СтраницаНеотправленныеПакетыРасширеннаяПодсказка" id="33"/>
+					<ChildItems>
+						<Table name="СписокНеотправленныеПакеты" id="34">
+							<Header>false</Header>
+							<UseAlternationRowColor>true</UseAlternationRowColor>
+							<EnableStartDrag>true</EnableStartDrag>
+							<FileDragMode>AsFile</FileDragMode>
+							<DataPath>СписокНеотправленныеПакеты</DataPath>
+							<RowPictureDataPath>~СписокНеотправленныеПакеты.DefaultPicture</RowPictureDataPath>
+							<AutoRefresh>true</AutoRefresh>
+							<AutoRefreshPeriod>30</AutoRefreshPeriod>
+							<Period>
+								<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+								<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+								<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+							</Period>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<RestoreCurrentRow>false</RestoreCurrentRow>
+							<TopLevelParent xsi:nil="true"/>
+							<ShowRoot>true</ShowRoot>
+							<AllowRootChoice>false</AllowRootChoice>
+							<UpdateOnDataChange>Auto</UpdateOnDataChange>
+							<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
+							<ContextMenu name="СписокНеотправленныеПакетыКонтекстноеМеню" id="35"/>
+							<AutoCommandBar name="СписокНеотправленныеПакетыКоманднаяПанель" id="36">
+								<HorizontalAlign>Right</HorizontalAlign>
+								<Autofill>false</Autofill>
+								<ChildItems>
+									<Button name="СписокНеотправленныеПакетыУдалитьВсеЗаписи" id="59">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.УдалитьВсеЗаписи</CommandName>
+										<ExtendedTooltip name="СписокНеотправленныеПакетыУдалитьВсеЗаписиРасширеннаяПодсказка" id="60"/>
+									</Button>
+								</ChildItems>
+							</AutoCommandBar>
+							<ExtendedTooltip name="СписокНеотправленныеПакетыРасширеннаяПодсказка" id="37"/>
+							<SearchStringAddition name="СписокНеотправленныеПакетыСтрокаПоиска" id="38">
+								<AdditionSource>
+									<Item>СписокНеотправленныеПакеты</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СписокНеотправленныеПакетыСтрокаПоискаКонтекстноеМеню" id="39"/>
+								<ExtendedTooltip name="СписокНеотправленныеПакетыСтрокаПоискаРасширеннаяПодсказка" id="40"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="СписокНеотправленныеПакетыСостояниеПросмотра" id="41">
+								<AdditionSource>
+									<Item>СписокНеотправленныеПакеты</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СписокНеотправленныеПакетыСостояниеПросмотраКонтекстноеМеню" id="42"/>
+								<ExtendedTooltip name="СписокНеотправленныеПакетыСостояниеПросмотраРасширеннаяПодсказка" id="43"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="СписокНеотправленныеПакетыУправлениеПоиском" id="44">
+								<AdditionSource>
+									<Item>СписокНеотправленныеПакеты</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="СписокНеотправленныеПакетыУправлениеПоискомКонтекстноеМеню" id="45"/>
+								<ExtendedTooltip name="СписокНеотправленныеПакетыУправлениеПоискомРасширеннаяПодсказка" id="46"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="СписокНеотправленныеПакетыТипДанных" id="47">
+									<DataPath>СписокНеотправленныеПакеты.ТипДанных</DataPath>
+									<Visible>false</Visible>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Тип данных</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="СписокНеотправленныеПакетыТипДанныхКонтекстноеМеню" id="48"/>
+									<ExtendedTooltip name="СписокНеотправленныеПакетыТипДанныхРасширеннаяПодсказка" id="49"/>
+								</LabelField>
+								<LabelField name="СписокНеотправленныеПакетыОбъект" id="50">
+									<DataPath>СписокНеотправленныеПакеты.Объект</DataPath>
+									<ContextMenu name="СписокНеотправленныеПакетыОбъектКонтекстноеМеню" id="51"/>
+									<ExtendedTooltip name="СписокНеотправленныеПакетыОбъектРасширеннаяПодсказка" id="52"/>
+								</LabelField>
+								<LabelField name="СписокНеотправленныеПакетыПодчиненныйОбъект" id="53">
+									<DataPath>СписокНеотправленныеПакеты.ПодчиненныйОбъект</DataPath>
+									<ContextMenu name="СписокНеотправленныеПакетыПодчиненныйОбъектКонтекстноеМеню" id="54"/>
+									<ExtendedTooltip name="СписокНеотправленныеПакетыПодчиненныйОбъектРасширеннаяПодсказка" id="55"/>
+								</LabelField>
+								<LabelField name="СписокНеотправленныеПакетыПакет" id="56">
+									<DataPath>СписокНеотправленныеПакеты.Пакет</DataPath>
+									<Visible>false</Visible>
+									<ContextMenu name="СписокНеотправленныеПакетыПакетКонтекстноеМеню" id="57"/>
+									<ExtendedTooltip name="СписокНеотправленныеПакетыПакетРасширеннаяПодсказка" id="58"/>
+								</LabelField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+			</ChildItems>
+		</Pages>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Список" id="1">
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>false</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	Б24_СУ_ТаблицаИзменений.НастройкаПодключения КАК НастройкаПодключения,
+	ВЫБОР
+		КОГДА Б24_СУ_ТаблицаИзменений.ТипДанных = ЗНАЧЕНИЕ(Перечисление.Б24_К_ТипыДанныхДляОбменаСПорталом.Прайс)
+			ТОГДА "Прайс"
+		КОГДА Б24_СУ_ТаблицаИзменений.ТипДанных = ЗНАЧЕНИЕ(Перечисление.Б24_К_ТипыДанныхДляОбменаСПорталом.Склад)
+			ТОГДА "Склад"
+		КОГДА Б24_СУ_ТаблицаИзменений.ТипДанных = ЗНАЧЕНИЕ(Перечисление.Б24_К_ТипыДанныхДляОбменаСПорталом.ГруппаТовара2)
+			ТОГДА "Группа товаров"
+		КОГДА Б24_СУ_ТаблицаИзменений.ТипДанных = ЗНАЧЕНИЕ(Перечисление.Б24_К_ТипыДанныхДляОбменаСПорталом.ЕдиницаИзмерения2)
+			ТОГДА "Единица измерения"
+		КОГДА Б24_СУ_ТаблицаИзменений.ТипДанных = ЗНАЧЕНИЕ(Перечисление.Б24_К_ТипыДанныхДляОбменаСПорталом.Товар2)
+			ТОГДА "Товар"
+		КОГДА Б24_СУ_ТаблицаИзменений.ТипДанных = ЗНАЧЕНИЕ(Перечисление.Б24_К_ТипыДанныхДляОбменаСПорталом.Предложение)
+			ТОГДА "Предложение"
+		КОГДА Б24_СУ_ТаблицаИзменений.ТипДанных = ЗНАЧЕНИЕ(Перечисление.Б24_К_ТипыДанныхДляОбменаСПорталом.Цена)
+			ТОГДА "Цена"
+		КОГДА Б24_СУ_ТаблицаИзменений.ТипДанных = ЗНАЧЕНИЕ(Перечисление.Б24_К_ТипыДанныхДляОбменаСПорталом.Остаток)
+			ТОГДА "Остаток"
+		КОГДА Б24_СУ_ТаблицаИзменений.ТипДанных = ЗНАЧЕНИЕ(Перечисление.Б24_К_ТипыДанныхДляОбменаСПорталом.КартинкаФайлТовара2)
+			ТОГДА "Картинка файл товара"
+		КОГДА Б24_СУ_ТаблицаИзменений.ТипДанных = ЗНАЧЕНИЕ(Перечисление.Б24_К_ТипыДанныхДляОбменаСПорталом.КартинкаФайлПредложения)
+			ТОГДА "Картинка файл предложения"
+		КОГДА Б24_СУ_ТаблицаИзменений.ТипДанных = ЗНАЧЕНИЕ(Перечисление.Б24_К_ТипыДанныхДляОбменаСПорталом.Отгрузка)
+			ТОГДА "Отгрузка"
+		ИНАЧЕ ""
+	КОНЕЦ КАК ТипДанных,
+	Б24_СУ_ТаблицаИзменений.Объект КАК Объект,
+	Б24_СУ_ТаблицаИзменений.ПодчиненныйОбъект КАК ПодчиненныйОбъект,
+	Б24_СУ_ТаблицаИзменений.ВремяЗаписиВМиллисекундах КАК ВремяЗаписиВМиллисекундах
+ИЗ
+	РегистрСведений.Б24_СУ_ТаблицаИзменений КАК Б24_СУ_ТаблицаИзменений</QueryText>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ТипДанных1</dcssch:dataPath>
+					<dcssch:field>ТипДанных1</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Тип данных1</v8:content>
+						</v8:item>
+					</dcssch:title>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>НастройкаПодключения</dcssch:dataPath>
+					<dcssch:field>НастройкаПодключения</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ТипДанных</dcssch:dataPath>
+					<dcssch:field>ТипДанных</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Тип данных</v8:content>
+						</v8:item>
+					</dcssch:title>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Ключ</dcssch:dataPath>
+					<dcssch:field>Ключ</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ПодчиненныйОбъект</dcssch:dataPath>
+					<dcssch:field>ПодчиненныйОбъект</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Объект</dcssch:dataPath>
+					<dcssch:field>Объект</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ВремяЗаписиВМиллисекундах</dcssch:dataPath>
+					<dcssch:field>ВремяЗаписиВМиллисекундах</dcssch:field>
+				</Field>
+				<MainTable>InformationRegister.Б24_СУ_ТаблицаИзменений</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:item xsi:type="dcsset:StructureItemGroup">
+						<dcsset:groupItems>
+							<dcsset:item xsi:type="dcsset:GroupItemField">
+								<dcsset:field>НастройкаПодключения</dcsset:field>
+								<dcsset:groupType>Items</dcsset:groupType>
+								<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+								<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+								<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+							</dcsset:item>
+						</dcsset:groupItems>
+						<dcsset:item xsi:type="dcsset:StructureItemGroup">
+							<dcsset:groupItems>
+								<dcsset:item xsi:type="dcsset:GroupItemField">
+									<dcsset:field>ТипДанных</dcsset:field>
+									<dcsset:groupType>Items</dcsset:groupType>
+									<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+									<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+									<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+								</dcsset:item>
+							</dcsset:groupItems>
+						</dcsset:item>
+					</dcsset:item>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+		<Attribute name="СписокНеотправленныеПакеты" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список Неотправленные пакеты</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>false</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	Б24_СУ_ПакетыВыгрузки.НастройкаПодключения КАК НастройкаПодключения,
+	ВЫБОР
+		КОГДА Б24_СУ_ПакетыВыгрузки.ТипДанных = ЗНАЧЕНИЕ(Перечисление.Б24_К_ТипыДанныхДляОбменаСПорталом.Прайс)
+			ТОГДА "Прайс"                         
+		КОГДА Б24_СУ_ПакетыВыгрузки.ТипДанных = ЗНАЧЕНИЕ(Перечисление.Б24_К_ТипыДанныхДляОбменаСПорталом.Склад)
+			ТОГДА "Склад"                         
+		КОГДА Б24_СУ_ПакетыВыгрузки.ТипДанных = ЗНАЧЕНИЕ(Перечисление.Б24_К_ТипыДанныхДляОбменаСПорталом.ГруппаТовара2)
+			ТОГДА "Группа товаров"     
+		КОГДА Б24_СУ_ПакетыВыгрузки.ТипДанных = ЗНАЧЕНИЕ(Перечисление.Б24_К_ТипыДанныхДляОбменаСПорталом.ЕдиницаИзмерения2)
+			ТОГДА "Единица измерения"  
+		КОГДА Б24_СУ_ПакетыВыгрузки.ТипДанных = ЗНАЧЕНИЕ(Перечисление.Б24_К_ТипыДанныхДляОбменаСПорталом.Товар2)
+			ТОГДА "Товар"  
+		КОГДА Б24_СУ_ПакетыВыгрузки.ТипДанных = ЗНАЧЕНИЕ(Перечисление.Б24_К_ТипыДанныхДляОбменаСПорталом.Предложение)
+			ТОГДА "Предложение"
+		КОГДА Б24_СУ_ПакетыВыгрузки.ТипДанных = ЗНАЧЕНИЕ(Перечисление.Б24_К_ТипыДанныхДляОбменаСПорталом.Цена)
+			ТОГДА "Цена"
+		КОГДА Б24_СУ_ПакетыВыгрузки.ТипДанных = ЗНАЧЕНИЕ(Перечисление.Б24_К_ТипыДанныхДляОбменаСПорталом.Остаток)
+			ТОГДА "Остаток"
+		КОГДА Б24_СУ_ПакетыВыгрузки.ТипДанных = ЗНАЧЕНИЕ(Перечисление.Б24_К_ТипыДанныхДляОбменаСПорталом.КартинкаФайлТовара2)
+			ТОГДА "Картинка файл товара"      
+		КОГДА Б24_СУ_ПакетыВыгрузки.ТипДанных = ЗНАЧЕНИЕ(Перечисление.Б24_К_ТипыДанныхДляОбменаСПорталом.КартинкаФайлПредложения)
+			ТОГДА "Картинка файл предложения"  
+		КОГДА Б24_СУ_ПакетыВыгрузки.ТипДанных = ЗНАЧЕНИЕ(Перечисление.Б24_К_ТипыДанныхДляОбменаСПорталом.Отгрузка)
+			ТОГДА "Отгрузка"
+		ИНАЧЕ ""
+	КОНЕЦ КАК ТипДанных,
+	Б24_СУ_ПакетыВыгрузки.Объект КАК Объект,
+	Б24_СУ_ПакетыВыгрузки.ПодчиненныйОбъект КАК ПодчиненныйОбъект,
+	Б24_СУ_ПакетыВыгрузки.Пакет КАК Пакет
+ИЗ
+	РегистрСведений.Б24_СУ_ПакетыВыгрузки КАК Б24_СУ_ПакетыВыгрузки</QueryText>
+				<MainTable>1:c2c2c450-3d3a-4a71-af62-ae546a15f957</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:item xsi:type="dcsset:StructureItemGroup">
+						<dcsset:groupItems>
+							<dcsset:item xsi:type="dcsset:GroupItemField">
+								<dcsset:field>НастройкаПодключения</dcsset:field>
+								<dcsset:groupType>Items</dcsset:groupType>
+								<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+								<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+								<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+							</dcsset:item>
+						</dcsset:groupItems>
+						<dcsset:item xsi:type="dcsset:StructureItemGroup">
+							<dcsset:groupItems>
+								<dcsset:item xsi:type="dcsset:GroupItemField">
+									<dcsset:field>ТипДанных</dcsset:field>
+									<dcsset:groupType>Items</dcsset:groupType>
+									<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+									<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+									<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+								</dcsset:item>
+							</dcsset:groupItems>
+							<dcsset:item xsi:type="dcsset:StructureItemGroup">
+								<dcsset:groupItems>
+									<dcsset:item xsi:type="dcsset:GroupItemField">
+										<dcsset:field>Пакет</dcsset:field>
+										<dcsset:groupType>Items</dcsset:groupType>
+										<dcsset:periodAdditionType>None</dcsset:periodAdditionType>
+										<dcsset:periodAdditionBegin xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionBegin>
+										<dcsset:periodAdditionEnd xsi:type="xs:dateTime">0001-01-01T00:00:00</dcsset:periodAdditionEnd>
+									</dcsset:item>
+								</dcsset:groupItems>
+							</dcsset:item>
+						</dcsset:item>
+					</dcsset:item>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="УдалитьВсеЗаписи" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить все пакеты</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить все записи</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>УдалитьВсеЗаписи</Action>
+			<CurrentRowUse>DontUse</CurrentRowUse>
+		</Command>
+		<Command name="УдалитьВсеИзменения" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить все изменения</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить все изменения</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>УдалитьВсеИзменения</Action>
+		</Command>
+	</Commands>
+</Form>

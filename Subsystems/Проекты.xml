@@ -1,0 +1,159 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Subsystem uuid="757fa6e2-b4ca-4280-8df7-c38ca5ccc49c">
+		<Properties>
+			<Name>Проекты</Name>
+			<Synonym>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проекты</v8:content>
+				</v8:item>
+			</Synonym>
+			<Comment/>
+			<IncludeHelpInContents>true</IncludeHelpInContents>
+			<IncludeInCommandInterface>true</IncludeInCommandInterface>
+			<UseOneCommand>false</UseOneCommand>
+			<Explanation/>
+			<Picture>
+				<xr:Ref>StdPicture.BusinessProcess</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Content>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Проекты</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ИзделияКомплект</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ИзделияЭлемент</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Помещения</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Номенклатура</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.КартинкиНоменклатуры</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">FilterCriterion.ОтборДеталировокИзделия</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">FilterCriterion.ДокументыЗаказа</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.ВалютаУчета</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Constant.ДобавитьНаКрая</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ВидыДенежныхСредств</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ВидыНоменклатуры</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ОстаткиДенеженыхСредств</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.омПодписки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.СтатусыНаборовИзделийЭлемент</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.Подразделения</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.омЕдиницыИзмерения</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ШаблоныИзделия</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.РасписаниеПлан</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">InformationRegister.ЦеныНоменклатурыДокументов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.СпособыЗаполненияЦен</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.омЗаполнениеРеквизиов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Оборудование</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.Смета</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.омРаботаССтроками</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.омНоменклатура</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.омДляОтчетов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.ОпределитьФормуПрисоединенногоФайла</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ПредварительнаяСмета</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ВидыПредварительнойНоменклатуры</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ПредварительнаяНоменклатура</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ТипыНоменклатуры</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.омНормыРасхода</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.НоменклатураПроекта</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.СметаПредварительная</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.омЦеныНаСервере</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.ЦеныЗакупки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.ПредварительныеДанные</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.КонсольЗапросов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.омИзделиеЭлемент</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.омИзделиеКомплект</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.омИзделиеЭлементНаКлиентеСервере</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.омИзделиеКомплектНаКлиентеСервере</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.омИзделияЗаказчикаКлиент</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.ЦенаВДоговоре</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.омИзделиеЗаказчика</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ИзделияЗаказчика</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.омПомещениеКлиент</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.омИзделиеЭлементКлиент</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ИзделияПроекта</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.Логотип</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.омТабличныйДокументКлиентСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.омТабличныйДокументСерверПовтор</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.КонтрольПроекта</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.омДиаграммаГанта</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.омКонтрольПапки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.омКомплекты</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">EventSubscription.ПриУдаленииПриложенияКДоговору</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommandGroup.СправочникиКонструирования</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommandGroup.ДокументыКонструирования</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.омДиаграммаГантаКлиентСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ЗапускВРаботу</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.УслугиПриложенияДоговора</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.омПроекты</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Document.ПотребностьВМатериалах</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.омОформлениеФормы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.ФинансовыйДиректор</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.Финансист</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.Сметчик</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.Снабженец</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.Технолог</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.Менеджер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.НачальникМонтажа</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.НачальникПроизводства</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.НачальникСклада</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.Замерщик</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.Дизайнер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.Директор</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.ГлавныйКонструктор</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.омГантСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.омЦвет</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.омГантНаСервере</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.омГантНастройкиКлиентСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.ГабаритныеЧертежи</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.КорректировкаНормПроектирования</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.КорректировкаНормПроизводсва</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Role.КорректировкаНормМонажа</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.омГабаритныйЧертежНаСервере</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.СтатусыЗамера</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ТипыСобытияЗамеров</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.ОжидаемыеДатыГотовностиПомещений</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.омИзделиеЗаказчикаКлиент</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.омПодрядчики</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.Софт</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.Композиции</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.омКомпозицииСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.омСтроки</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonForm.ИзменениеКонструктора</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Task.ВыполнитьКорректировкуИзделияКомплект</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.омГабаритныйЧертежНаКлиенте</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.омПомещения</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.омДоплнительныеДанные</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.Интервалы</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.КомплектыПоПомещениям</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Catalog.НазначениеАвтораДляЗадачи</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ОбъектыЗадач</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Report.СостояниеПроектов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.омСериализацияКлиентСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.омНастройкиПолучитьЗаписать</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.НазначениеСотрудника</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.Пауза50х50</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.Стоп50х50</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.Пуск50х50</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.История50х50</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.СостоянияЗадач</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.омКонструктор</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">DataProcessor.ГантКонструкторов</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonPicture.Отложить50х50</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.омЗадачиПКДСервер</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.омЗадачиПКДПовтор</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.СобытиеКомплекта</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.омСотрудники</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.ТипыЗадачКонструирования</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">Enum.СтатусыЗадач</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.омЗадачиОбщие</xr:Item>
+				<xr:Item xsi:type="xr:MDObjectRef">CommonModule.омФайлы</xr:Item>
+			</Content>
+		</Properties>
+		<ChildObjects>
+			<Subsystem>Договора</Subsystem>
+			<Subsystem>Документы</Subsystem>
+			<Subsystem>Настройки</Subsystem>
+			<Subsystem>НеПоказывать</Subsystem>
+			<Subsystem>Задачи</Subsystem>
+			<Subsystem>ПредварительныйРасчет</Subsystem>
+		</ChildObjects>
+	</Subsystem>
+</MetaDataObject>

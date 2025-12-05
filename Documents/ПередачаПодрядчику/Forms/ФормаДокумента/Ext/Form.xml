@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<AutoTime>CurrentOrLast</AutoTime>
+	<UsePostingMode>Auto</UsePostingMode>
+	<RepostOnWrite>true</RepostOnWrite>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<UsualGroup name="Группа1" id="35">
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="36"/>
+			<ChildItems>
+				<InputField name="Номер" id="1">
+					<DataPath>Объект.Number</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="НомерКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="3"/>
+				</InputField>
+				<InputField name="Дата" id="4">
+					<DataPath>Объект.Date</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ДатаКонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="6"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<InputField name="Подрядчик" id="7">
+			<DataPath>Объект.Подрядчик</DataPath>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ПодрядчикКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="ПодрядчикРасширеннаяПодсказка" id="9"/>
+		</InputField>
+		<Table name="ИзделияЗаказчика" id="10">
+			<Representation>List</Representation>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Объект.ИзделияЭлемент</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ИзделияЗаказчикаКонтекстноеМеню" id="11"/>
+			<AutoCommandBar name="ИзделияЗаказчикаКоманднаяПанель" id="12"/>
+			<ExtendedTooltip name="ИзделияЗаказчикаРасширеннаяПодсказка" id="13"/>
+			<SearchStringAddition name="ИзделияЗаказчикаСтрокаПоиска" id="14">
+				<AdditionSource>
+					<Item>ИзделияЗаказчика</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ИзделияЗаказчикаСтрокаПоискаКонтекстноеМеню" id="15"/>
+				<ExtendedTooltip name="ИзделияЗаказчикаСтрокаПоискаРасширеннаяПодсказка" id="16"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ИзделияЗаказчикаСостояниеПросмотра" id="17">
+				<AdditionSource>
+					<Item>ИзделияЗаказчика</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ИзделияЗаказчикаСостояниеПросмотраКонтекстноеМеню" id="18"/>
+				<ExtendedTooltip name="ИзделияЗаказчикаСостояниеПросмотраРасширеннаяПодсказка" id="19"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ИзделияЗаказчикаУправлениеПоиском" id="20">
+				<AdditionSource>
+					<Item>ИзделияЗаказчика</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ИзделияЗаказчикаУправлениеПоискомКонтекстноеМеню" id="21"/>
+				<ExtendedTooltip name="ИзделияЗаказчикаУправлениеПоискомРасширеннаяПодсказка" id="22"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="ИзделияЗаказчикаНомерСтроки" id="23">
+					<DataPath>Объект.ИзделияЭлемент.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="ИзделияЗаказчикаНомерСтрокиКонтекстноеМеню" id="24"/>
+					<ExtendedTooltip name="ИзделияЗаказчикаНомерСтрокиРасширеннаяПодсказка" id="25"/>
+				</LabelField>
+				<InputField name="ИзделияЗаказчикаИзделиеЗаказчика" id="26">
+					<DataPath>Объект.ИзделияЭлемент.ИзделиеЭлемент</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ИзделияЗаказчикаИзделиеЗаказчикаКонтекстноеМеню" id="27"/>
+					<ExtendedTooltip name="ИзделияЗаказчикаИзделиеЗаказчикаРасширеннаяПодсказка" id="28"/>
+				</InputField>
+				<InputField name="ИзделияЗаказчикаОжидаемаяДатаВозврата" id="29">
+					<DataPath>Объект.ИзделияЭлемент.ОжидаемаяДатаВозврата</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ИзделияЗаказчикаОжидаемаяДатаВозвратаКонтекстноеМеню" id="30"/>
+					<ExtendedTooltip name="ИзделияЗаказчикаОжидаемаяДатаВозвратаРасширеннаяПодсказка" id="31"/>
+				</InputField>
+				<InputField name="ИзделияЗаказчикаРасходыНаПодряд" id="32">
+					<DataPath>Объект.ИзделияЭлемент.РасходыНаПодряд</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ИзделияЗаказчикаРасходыНаПодрядКонтекстноеМеню" id="33"/>
+					<ExtendedTooltip name="ИзделияЗаказчикаРасходыНаПодрядРасширеннаяПодсказка" id="34"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DocumentObject.ПередачаПодрядчику</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<SavedData>true</SavedData>
+			<UseAlways>
+				<Field>Объект.RegisterRecords</Field>
+			</UseAlways>
+		</Attribute>
+	</Attributes>
+</Form>
