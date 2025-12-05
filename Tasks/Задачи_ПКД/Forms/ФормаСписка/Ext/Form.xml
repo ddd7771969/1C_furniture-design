@@ -195,7 +195,7 @@
 	) КАК Наблюдатели,
 	ТаймингЗадачСрезПоследних.Состояние КАК Состояние,
 	ЗадачаЗадачи_ПКД.ОбобщеннаяЗадача КАК ОбобщеннаяЗадача,
-	ЕСТЬNULL(ДанныеКомплектаСрезПоследних.ТекущаяСтадия, ДанныеКомпозицииСрезПервых.ТекущаяСтадия) КАК ТекущаяСтадия,
+	ДанныеКомплектаСрезПоследних.ТекущаяСтадия КАК ТекущаяСтадия,
 	ЗадачаЗадачи_ПКД.СтатусЗадачи КАК СтатусЗадачи
 ИЗ
 	Задача.Задачи_ПКД КАК ЗадачаЗадачи_ПКД
@@ -203,8 +203,6 @@
 		ПО ЗадачаЗадачи_ПКД.Ссылка = ТаймингЗадачСрезПоследних.Задача
 		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ДанныеКомплекта.СрезПоследних КАК ДанныеКомплектаСрезПоследних
 		ПО ЗадачаЗадачи_ПКД.ОбъектТЗ = ДанныеКомплектаСрезПоследних.Комплект
-		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ДанныеКомпозиции.СрезПервых КАК ДанныеКомпозицииСрезПервых
-		ПО ЗадачаЗадачи_ПКД.ОбъектТЗ = ДанныеКомпозицииСрезПервых.Композиция
 ГДЕ
 	ВЫБОР
 			КОГДА &amp;НеВыполнена
@@ -217,32 +215,24 @@
 			ИНАЧЕ ИСТИНА
 		КОНЕЦ</QueryText>
 				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>Комментарий</dcssch:dataPath>
-					<dcssch:field>Комментарий</dcssch:field>
+					<dcssch:dataPath>Дата</dcssch:dataPath>
+					<dcssch:field>Дата</dcssch:field>
 				</Field>
 				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>Ссылка</dcssch:dataPath>
-					<dcssch:field>Ссылка</dcssch:field>
-				</Field>
-				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>Номер</dcssch:dataPath>
-					<dcssch:field>Номер</dcssch:field>
-				</Field>
-				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>ПометкаУдаления</dcssch:dataPath>
-					<dcssch:field>ПометкаУдаления</dcssch:field>
+					<dcssch:dataPath>ДополнительноеСвойство</dcssch:dataPath>
+					<dcssch:field>ДополнительноеСвойство</dcssch:field>
 				</Field>
 				<Field xsi:type="dcssch:DataSetFieldField">
 					<dcssch:dataPath>Выполнена</dcssch:dataPath>
 					<dcssch:field>Выполнена</dcssch:field>
 				</Field>
 				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>Дата</dcssch:dataPath>
-					<dcssch:field>Дата</dcssch:field>
+					<dcssch:dataPath>Номер</dcssch:dataPath>
+					<dcssch:field>Номер</dcssch:field>
 				</Field>
 				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>Наименование</dcssch:dataPath>
-					<dcssch:field>Наименование</dcssch:field>
+					<dcssch:dataPath>Изменение</dcssch:dataPath>
+					<dcssch:field>Изменение</dcssch:field>
 				</Field>
 				<Field xsi:type="dcssch:DataSetFieldField">
 					<dcssch:dataPath>Проект</dcssch:dataPath>
@@ -253,16 +243,44 @@
 					<dcssch:field>Автор</dcssch:field>
 				</Field>
 				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Ссылка</dcssch:dataPath>
+					<dcssch:field>Ссылка</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ПометкаУдаления</dcssch:dataPath>
+					<dcssch:field>ПометкаУдаления</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Наименование</dcssch:dataPath>
+					<dcssch:field>Наименование</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Комментарий</dcssch:dataPath>
+					<dcssch:field>Комментарий</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
 					<dcssch:dataPath>Композиция</dcssch:dataPath>
 					<dcssch:field>Композиция</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Комплект</dcssch:dataPath>
+					<dcssch:field>Комплект</dcssch:field>
 				</Field>
 				<Field xsi:type="dcssch:DataSetFieldField">
 					<dcssch:dataPath>ОбъектТЗ</dcssch:dataPath>
 					<dcssch:field>ОбъектТЗ</dcssch:field>
 				</Field>
 				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Наблюдатели.НомерСтроки</dcssch:dataPath>
+					<dcssch:field>Наблюдатели.НомерСтроки</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
 					<dcssch:dataPath>Основание</dcssch:dataPath>
 					<dcssch:field>Основание</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>СтатусЗадачи</dcssch:dataPath>
+					<dcssch:field>СтатусЗадачи</dcssch:field>
 				</Field>
 				<Field xsi:type="dcssch:DataSetFieldField">
 					<dcssch:dataPath>ТипЗадачи</dcssch:dataPath>
@@ -273,16 +291,12 @@
 					<dcssch:field>Исполнитель</dcssch:field>
 				</Field>
 				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>Наблюдатели.Наблюдатель</dcssch:dataPath>
-					<dcssch:field>Наблюдатели.Наблюдатель</dcssch:field>
-				</Field>
-				<Field xsi:type="dcssch:DataSetFieldField">
 					<dcssch:dataPath>Наблюдатели.Ссылка</dcssch:dataPath>
 					<dcssch:field>Наблюдатели.Ссылка</dcssch:field>
 				</Field>
 				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>Наблюдатели.НомерСтроки</dcssch:dataPath>
-					<dcssch:field>Наблюдатели.НомерСтроки</dcssch:field>
+					<dcssch:dataPath>Наблюдатели.Наблюдатель</dcssch:dataPath>
+					<dcssch:field>Наблюдатели.Наблюдатель</dcssch:field>
 				</Field>
 				<Field xsi:type="dcssch:DataSetFieldNestedDataSet">
 					<dcssch:dataPath>Наблюдатели</dcssch:dataPath>
@@ -293,32 +307,16 @@
 					<dcssch:field>Состояние</dcssch:field>
 				</Field>
 				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>ДополнительноеСвойство</dcssch:dataPath>
-					<dcssch:field>ДополнительноеСвойство</dcssch:field>
-				</Field>
-				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>Задача</dcssch:dataPath>
-					<dcssch:field>Задача</dcssch:field>
-				</Field>
-				<Field xsi:type="dcssch:DataSetFieldField">
 					<dcssch:dataPath>ОбобщеннаяЗадача</dcssch:dataPath>
 					<dcssch:field>ОбобщеннаяЗадача</dcssch:field>
 				</Field>
 				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>Изменение</dcssch:dataPath>
-					<dcssch:field>Изменение</dcssch:field>
-				</Field>
-				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>СтатусЗадачи</dcssch:dataPath>
-					<dcssch:field>СтатусЗадачи</dcssch:field>
-				</Field>
-				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>Комплект</dcssch:dataPath>
-					<dcssch:field>Комплект</dcssch:field>
-				</Field>
-				<Field xsi:type="dcssch:DataSetFieldField">
 					<dcssch:dataPath>ТекущаяСтадия</dcssch:dataPath>
 					<dcssch:field>ТекущаяСтадия</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Задача</dcssch:dataPath>
+					<dcssch:field>Задача</dcssch:field>
 				</Field>
 				<Parameter>
 					<dcssch:name>Период</dcssch:name>
