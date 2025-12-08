@@ -14,6 +14,11 @@
 				</Picture>
 				<ExtendedTooltip name="ФормаСохранитьРасширеннаяПодсказка" id="70"/>
 			</Button>
+			<Button name="ФормаЗаполнитьПустыеДаты" id="71">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ЗаполнитьПустыеДаты</CommandName>
+				<ExtendedTooltip name="ФормаЗаполнитьПустыеДатыРасширеннаяПодсказка" id="72"/>
+			</Button>
 		</ChildItems>
 	</AutoCommandBar>
 	<Events>
@@ -69,6 +74,7 @@
 				<ExtendedTooltip name="ТаблицаДанныхУправлениеПоискомРасширеннаяПодсказка" id="16"/>
 			</SearchControlAddition>
 			<Events>
+				<Event name="BeforeRowChange">ТаблицаДанныхПередНачаломИзменения</Event>
 				<Event name="OnChange">ТаблицаДанныхПриИзменении</Event>
 			</Events>
 			<ChildItems>
@@ -104,19 +110,10 @@
 					<ChildItems>
 						<InputField name="ТаблицаДанныхОбъект" id="17">
 							<DataPath>ТаблицаДанных.Объект</DataPath>
-							<ReadOnly>true</ReadOnly>
 							<EditMode>EnterOnInput</EditMode>
 							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 							<ContextMenu name="ТаблицаДанныхОбъектКонтекстноеМеню" id="18"/>
 							<ExtendedTooltip name="ТаблицаДанныхОбъектРасширеннаяПодсказка" id="19"/>
-						</InputField>
-						<InputField name="ТаблицаДанныхКомпозиция" id="34">
-							<DataPath>ТаблицаДанных.Композиция</DataPath>
-							<ReadOnly>true</ReadOnly>
-							<EditMode>EnterOnInput</EditMode>
-							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-							<ContextMenu name="ТаблицаДанныхКомпозицияКонтекстноеМеню" id="35"/>
-							<ExtendedTooltip name="ТаблицаДанныхКомпозицияРасширеннаяПодсказка" id="36"/>
 						</InputField>
 					</ChildItems>
 				</ColumnGroup>
@@ -659,6 +656,21 @@
 				</v8:item>
 			</ToolTip>
 			<Action>Сохранить</Action>
+		</Command>
+		<Command name="ЗаполнитьПустыеДаты" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить пустые даты</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить пустые даты</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗаполнитьПустыеДаты</Action>
 		</Command>
 	</Commands>
 </Form>
