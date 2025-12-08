@@ -126,7 +126,7 @@
 			<MainAttribute>true</MainAttribute>
 			<Settings xsi:type="DynamicList">
 				<ManualQuery>true</ManualQuery>
-				<DynamicDataRead>true</DynamicDataRead>
+				<DynamicDataRead>false</DynamicDataRead>
 				<QueryText>ВЫБРАТЬ
 	СправочникКомпозиции.Ссылка КАК Ссылка,
 	СправочникКомпозиции.ПометкаУдаления КАК ПометкаУдаления,
@@ -143,12 +143,12 @@
 			ТОГДА СправочникКомпозиции.Проект.Номер
 		ИНАЧЕ 0
 	КОНЕЦ КАК СделкаНомер,
-	ДатыКомпозиций.Код_в_PDM КАК Код_в_PDM,
+	ДатыКомплекта.Код_в_PDM КАК Код_в_PDM,
 	СправочникКомпозиции.Конструктор КАК Конструктор
 ИЗ
 	Справочник.Композиции КАК СправочникКомпозиции
-		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ДатыКомпозиций КАК ДатыКомпозиций
-		ПО (ДатыКомпозиций.Композиция = СправочникКомпозиции.Ссылка)</QueryText>
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ДатыКомплекта КАК ДатыКомплекта
+		ПО (ДатыКомплекта.Комплект = СправочникКомпозиции.Ссылка)</QueryText>
 				<Field xsi:type="dcssch:DataSetFieldField">
 					<dcssch:dataPath>ИмяПредопределенныхДанных</dcssch:dataPath>
 					<dcssch:field>ИмяПредопределенныхДанных</dcssch:field>
@@ -206,10 +206,6 @@
 				<Field xsi:type="dcssch:DataSetFieldField">
 					<dcssch:dataPath>Конструктор</dcssch:dataPath>
 					<dcssch:field>Конструктор</dcssch:field>
-				</Field>
-				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>ПутьКПапкеPDM</dcssch:dataPath>
-					<dcssch:field>ПутьКПапкеPDM</dcssch:field>
 				</Field>
 				<MainTable>Catalog.Композиции</MainTable>
 				<ListSettings>
