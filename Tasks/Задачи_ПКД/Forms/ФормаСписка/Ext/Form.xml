@@ -98,15 +98,16 @@
 				<ExtendedTooltip name="СписокУправлениеПоискомРасширеннаяПодсказка" id="15"/>
 			</SearchControlAddition>
 			<ChildItems>
-				<LabelField name="Наименование" id="19">
-					<DataPath>Список.Наименование</DataPath>
-					<ContextMenu name="НаименованиеКонтекстноеМеню" id="20"/>
-					<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="21"/>
-				</LabelField>
-				<LabelField name="Дата" id="22">
-					<DataPath>Список.Дата</DataPath>
-					<ContextMenu name="ДатаКонтекстноеМеню" id="23"/>
-					<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="24"/>
+				<LabelField name="Заголовок" id="63">
+					<DataPath>Список.Заголовок</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Задача ПКД</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ЗаголовокКонтекстноеМеню" id="64"/>
+					<ExtendedTooltip name="ЗаголовокРасширеннаяПодсказка" id="65"/>
 				</LabelField>
 				<LabelField name="Исполнитель" id="28">
 					<DataPath>Список.Исполнитель</DataPath>
@@ -127,6 +128,11 @@
 					<DataPath>Список.ТипЗадачи</DataPath>
 					<ContextMenu name="ТипЗадачиКонтекстноеМеню" id="38"/>
 					<ExtendedTooltip name="ТипЗадачиРасширеннаяПодсказка" id="39"/>
+				</LabelField>
+				<LabelField name="Дата" id="22">
+					<DataPath>Список.Дата</DataPath>
+					<ContextMenu name="ДатаКонтекстноеМеню" id="23"/>
+					<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="24"/>
 				</LabelField>
 				<LabelField name="Состояние" id="40">
 					<DataPath>Список.Состояние</DataPath>
@@ -196,7 +202,8 @@
 	ТаймингЗадачСрезПоследних.Состояние КАК Состояние,
 	ЗадачаЗадачи_ПКД.ОбобщеннаяЗадача КАК ОбобщеннаяЗадача,
 	ДанныеКомплектаСрезПоследних.ТекущаяСтадия КАК ТекущаяСтадия,
-	ЗадачаЗадачи_ПКД.СтатусЗадачи КАК СтатусЗадачи
+	ЗадачаЗадачи_ПКД.СтатусЗадачи КАК СтатусЗадачи,
+	ЗадачаЗадачи_ПКД.Заголовок КАК Заголовок
 ИЗ
 	Задача.Задачи_ПКД КАК ЗадачаЗадачи_ПКД
 		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ТаймингЗадач.СрезПоследних КАК ТаймингЗадачСрезПоследних
@@ -317,6 +324,10 @@
 				<Field xsi:type="dcssch:DataSetFieldField">
 					<dcssch:dataPath>Задача</dcssch:dataPath>
 					<dcssch:field>Задача</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Заголовок</dcssch:dataPath>
+					<dcssch:field>Заголовок</dcssch:field>
 				</Field>
 				<Parameter>
 					<dcssch:name>Период</dcssch:name>

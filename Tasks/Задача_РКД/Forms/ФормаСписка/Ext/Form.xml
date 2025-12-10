@@ -68,10 +68,16 @@
 				<ExtendedTooltip name="СписокУправлениеПоискомРасширеннаяПодсказка" id="15"/>
 			</SearchControlAddition>
 			<ChildItems>
-				<LabelField name="Наименование" id="19">
-					<DataPath>Список.Наименование</DataPath>
-					<ContextMenu name="НаименованиеКонтекстноеМеню" id="20"/>
-					<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="21"/>
+				<LabelField name="Заголовок" id="31">
+					<DataPath>Список.Заголовок</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Задача РКД</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ЗаголовокКонтекстноеМеню" id="32"/>
+					<ExtendedTooltip name="ЗаголовокРасширеннаяПодсказка" id="33"/>
 				</LabelField>
 				<LabelField name="ТекущаяСтадия" id="28">
 					<DataPath>Список.ТекущаяСтадия</DataPath>
@@ -121,7 +127,8 @@
 	ЗадачаЗадача_РКД.СтатусЗадачи КАК СтатусЗадачи,
 	ЗадачаЗадача_РКД.ТипЗадачи КАК ТипЗадачи,
 	ЗадачаЗадача_РКД.Исполнитель КАК Исполнитель,
-	ДанныеКомплектаСрезПоследних.ТекущаяСтадия КАК ТекущаяСтадия
+	ДанныеКомплектаСрезПоследних.ТекущаяСтадия КАК ТекущаяСтадия,
+	ЗадачаЗадача_РКД.Заголовок КАК Заголовок
 ИЗ
 	Задача.Задача_РКД КАК ЗадачаЗадача_РКД
 		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ДанныеКомплекта.СрезПоследних КАК ДанныеКомплектаСрезПоследних
@@ -185,6 +192,10 @@
 				<Field xsi:type="dcssch:DataSetFieldField">
 					<dcssch:dataPath>ТекущаяСтадия</dcssch:dataPath>
 					<dcssch:field>ТекущаяСтадия</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Заголовок</dcssch:dataPath>
+					<dcssch:field>Заголовок</dcssch:field>
 				</Field>
 				<Parameter>
 					<dcssch:name>Период</dcssch:name>
