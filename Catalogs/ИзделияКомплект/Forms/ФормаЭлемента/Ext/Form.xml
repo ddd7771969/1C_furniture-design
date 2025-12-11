@@ -209,6 +209,15 @@
 							<ContextMenu name="КомпозицияКонтекстноеМеню" id="405"/>
 							<ExtendedTooltip name="КомпозицияРасширеннаяПодсказка" id="406"/>
 						</InputField>
+						<InputField name="ЗадачаВРаботе" id="439">
+							<DataPath>ЗадачаВРаботе</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<ChoiceButton>false</ChoiceButton>
+							<OpenButton>true</OpenButton>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ЗадачаВРаботеКонтекстноеМеню" id="440"/>
+							<ExtendedTooltip name="ЗадачаВРаботеРасширеннаяПодсказка" id="441"/>
+						</InputField>
 					</ChildItems>
 				</UsualGroup>
 			</ChildItems>
@@ -1384,6 +1393,18 @@
 			</Title>
 			<Type>
 				<v8:Type>cfg:CatalogRef.СтадииКомплекта</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ЗадачаВРаботе" id="29">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Задача в работе</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:TaskRef.Задачи_ПКД</v8:Type>
+				<v8:Type>cfg:TaskRef.Задача_РКД</v8:Type>
 			</Type>
 		</Attribute>
 	</Attributes>
