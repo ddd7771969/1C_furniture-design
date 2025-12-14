@@ -909,6 +909,17 @@
 										<ExtendedTooltip name="ПодтверждениеПКДУправлениеПоискомРасширеннаяПодсказка" id="440"/>
 									</SearchControlAddition>
 									<ChildItems>
+										<LabelField name="ПодтверждениеПКДПереходПредставление" id="1086">
+											<DataPath>ПодтверждениеПКД.ПереходПредставление</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Д.И.Ред.Рек</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="ПодтверждениеПКДПереходПредставлениеКонтекстноеМеню" id="1087"/>
+											<ExtendedTooltip name="ПодтверждениеПКДПереходПредставлениеРасширеннаяПодсказка" id="1088"/>
+										</LabelField>
 										<LabelField name="ПодтверждениеПКДНаименование" id="462">
 											<DataPath>ПодтверждениеПКД.Заголовок</DataPath>
 											<Title>
@@ -925,6 +936,11 @@
 											<ContextMenu name="ПодтверждениеПКДИсполнительКонтекстноеМеню" id="451"/>
 											<ExtendedTooltip name="ПодтверждениеПКДИсполнительРасширеннаяПодсказка" id="452"/>
 										</LabelField>
+										<LabelField name="ПодтверждениеПКДКрайПКД" id="1083">
+											<DataPath>ПодтверждениеПКД.КрайПКД</DataPath>
+											<ContextMenu name="ПодтверждениеПКДКрайПКДКонтекстноеМеню" id="1084"/>
+											<ExtendedTooltip name="ПодтверждениеПКДКрайПКДРасширеннаяПодсказка" id="1085"/>
+										</LabelField>
 										<LabelField name="ПодтверждениеПКДКомпозиция" id="456">
 											<DataPath>ПодтверждениеПКД.Композиция</DataPath>
 											<ContextMenu name="ПодтверждениеПКДКомпозицияКонтекстноеМеню" id="457"/>
@@ -940,6 +956,101 @@
 											</Format>
 											<ContextMenu name="ПодтверждениеПКДДатаКонтекстноеМеню" id="448"/>
 											<ExtendedTooltip name="ПодтверждениеПКДДатаРасширеннаяПодсказка" id="449"/>
+										</LabelField>
+									</ChildItems>
+								</Table>
+								<Table name="ПодтверждениеРКД" id="1089">
+									<TitleLocation>Top</TitleLocation>
+									<UseAlternationRowColor>true</UseAlternationRowColor>
+									<EnableStartDrag>true</EnableStartDrag>
+									<DataPath>ПодтверждениеРКД</DataPath>
+									<RowPictureDataPath>ПодтверждениеРКД.DefaultPicture</RowPictureDataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Проверка.РКД</v8:content>
+										</v8:item>
+									</Title>
+									<AutoRefresh>false</AutoRefresh>
+									<AutoRefreshPeriod>60</AutoRefreshPeriod>
+									<Period>
+										<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+										<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+										<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+									</Period>
+									<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+									<RestoreCurrentRow>false</RestoreCurrentRow>
+									<TopLevelParent xsi:nil="true"/>
+									<ShowRoot>true</ShowRoot>
+									<AllowRootChoice>false</AllowRootChoice>
+									<UpdateOnDataChange>Auto</UpdateOnDataChange>
+									<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
+									<ContextMenu name="ПодтверждениеРКДКонтекстноеМеню" id="1090"/>
+									<AutoCommandBar name="ПодтверждениеРКДКоманднаяПанель" id="1091">
+										<Autofill>false</Autofill>
+									</AutoCommandBar>
+									<ExtendedTooltip name="ПодтверждениеРКДРасширеннаяПодсказка" id="1092"/>
+									<SearchStringAddition name="ПодтверждениеРКДСтрокаПоиска" id="1093">
+										<AdditionSource>
+											<Item>ПодтверждениеРКД</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ПодтверждениеРКДСтрокаПоискаКонтекстноеМеню" id="1094"/>
+										<ExtendedTooltip name="ПодтверждениеРКДСтрокаПоискаРасширеннаяПодсказка" id="1095"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="ПодтверждениеРКДСостояниеПросмотра" id="1096">
+										<AdditionSource>
+											<Item>ПодтверждениеРКД</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ПодтверждениеРКДСостояниеПросмотраКонтекстноеМеню" id="1097"/>
+										<ExtendedTooltip name="ПодтверждениеРКДСостояниеПросмотраРасширеннаяПодсказка" id="1098"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="ПодтверждениеРКДУправлениеПоиском" id="1099">
+										<AdditionSource>
+											<Item>ПодтверждениеРКД</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="ПодтверждениеРКДУправлениеПоискомКонтекстноеМеню" id="1100"/>
+										<ExtendedTooltip name="ПодтверждениеРКДУправлениеПоискомРасширеннаяПодсказка" id="1101"/>
+									</SearchControlAddition>
+									<ChildItems>
+										<LabelField name="ПодтверждениеРКДПереходПредставление" id="1114">
+											<DataPath>ПодтверждениеРКД.ПереходПредставление</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Д.И.Ред.Рек</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="ПодтверждениеРКДПереходПредставлениеКонтекстноеМеню" id="1115"/>
+											<ExtendedTooltip name="ПодтверждениеРКДПереходПредставлениеРасширеннаяПодсказка" id="1116"/>
+										</LabelField>
+										<LabelField name="ПодтверждениеРКДНаименование" id="1111">
+											<DataPath>ПодтверждениеРКД.Наименование</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Задача</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="ПодтверждениеРКДНаименованиеКонтекстноеМеню" id="1112"/>
+											<ExtendedTooltip name="ПодтверждениеРКДНаименованиеРасширеннаяПодсказка" id="1113"/>
+										</LabelField>
+										<LabelField name="ПодтверждениеРКДИсполнитель" id="1105">
+											<DataPath>ПодтверждениеРКД.Исполнитель</DataPath>
+											<ContextMenu name="ПодтверждениеРКДИсполнительКонтекстноеМеню" id="1106"/>
+											<ExtendedTooltip name="ПодтверждениеРКДИсполнительРасширеннаяПодсказка" id="1107"/>
+										</LabelField>
+										<LabelField name="ПодтверждениеРКДКрайРКД" id="1117">
+											<DataPath>ПодтверждениеРКД.КрайРКД</DataPath>
+											<ContextMenu name="ПодтверждениеРКДКрайРКДКонтекстноеМеню" id="1118"/>
+											<ExtendedTooltip name="ПодтверждениеРКДКрайРКДРасширеннаяПодсказка" id="1119"/>
+										</LabelField>
+										<LabelField name="ПодтверждениеРКДДата" id="1102">
+											<DataPath>ПодтверждениеРКД.Дата</DataPath>
+											<ContextMenu name="ПодтверждениеРКДДатаКонтекстноеМеню" id="1103"/>
+											<ExtendedTooltip name="ПодтверждениеРКДДатаРасширеннаяПодсказка" id="1104"/>
 										</LabelField>
 									</ChildItems>
 								</Table>
@@ -2313,9 +2424,13 @@
 		НомерСтроки КАК НомерСтроки,
 		Наблюдатель КАК Наблюдатель
 	) КАК Наблюдатели,
-	ЗадачаЗадачи_ПКД.Заголовок КАК Заголовок
+	ЗадачаЗадачи_ПКД.Заголовок КАК Заголовок,
+	ЕСТЬNULL(ДатыКомплекта.КрайПКД, ДАТАВРЕМЯ(1, 1, 1)) КАК КрайПКД,
+	ЕСТЬNULL(ДатыКомплекта.ПереходПредставление, "") КАК ПереходПредставление
 ИЗ
 	Задача.Задачи_ПКД КАК ЗадачаЗадачи_ПКД
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ДатыКомплекта КАК ДатыКомплекта
+		ПО ЗадачаЗадачи_ПКД.ОбъектТЗ = ДатыКомплекта.Комплект
 ГДЕ
 	ВЫБОР
 			КОГДА &amp;Проект = ЗНАЧЕНИЕ(Справочник.Проекты.ПустаяСсылка)
@@ -2420,6 +2535,14 @@
 				<Field xsi:type="dcssch:DataSetFieldField">
 					<dcssch:dataPath>Заголовок</dcssch:dataPath>
 					<dcssch:field>Заголовок</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>КрайПКД</dcssch:dataPath>
+					<dcssch:field>КрайПКД</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ПереходПредставление</dcssch:dataPath>
+					<dcssch:field>ПереходПредставление</dcssch:field>
 				</Field>
 				<Parameter>
 					<dcssch:name>Проект</dcssch:name>
@@ -3077,6 +3200,173 @@
 					</Type>
 				</Column>
 			</Columns>
+		</Attribute>
+		<Attribute name="ПодтверждениеРКД" id="18">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подтверждение РКД</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	ЕСТЬNULL(ДатыКомплекта.КрайРКД, ДАТАВРЕМЯ(1, 1, 1)) КАК КрайРКД,
+	ЕСТЬNULL(ДатыКомплекта.ПереходПредставление, "") КАК ПереходПредставление,
+	Задачи_РКД.Ссылка КАК Ссылка,
+	Задачи_РКД.Наименование КАК Наименование,
+	Задачи_РКД.Исполнитель КАК Исполнитель
+ИЗ
+	Задача.Задачи_РКД КАК Задачи_РКД
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ДатыКомплекта КАК ДатыКомплекта
+		ПО Задачи_РКД.ОбъектТЗ = ДатыКомплекта.Комплект
+ГДЕ
+	НЕ Задачи_РКД.Выполнена   и 	ВЫБОР
+			КОГДА &amp;Проект = ЗНАЧЕНИЕ(Справочник.Проекты.ПустаяСсылка)
+				ТОГДА ИСТИНА
+			ИНАЧЕ Задачи_РКД.ОбъектТЗ.Проект = &amp;Проект
+		КОНЕЦ
+	И Задачи_РКД.ТипЗадачи В(&amp;ТипыЗадачКонструирования)
+	И ВЫБОР
+			КОГДА &amp;Исполнитель = ЗНАЧЕНИЕ(Справочник.Пользователи.ПустаяСсылка)
+				ТОГДА ИСТИНА
+			ИНАЧЕ Задачи_РКД.Исполнитель = &amp;Исполнитель
+		КОНЕЦ</QueryText>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Комментарий</dcssch:dataPath>
+					<dcssch:field>Комментарий</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Ссылка</dcssch:dataPath>
+					<dcssch:field>Ссылка</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Номер</dcssch:dataPath>
+					<dcssch:field>Номер</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ПометкаУдаления</dcssch:dataPath>
+					<dcssch:field>ПометкаУдаления</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Выполнена</dcssch:dataPath>
+					<dcssch:field>Выполнена</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Дата</dcssch:dataPath>
+					<dcssch:field>Дата</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Наименование</dcssch:dataPath>
+					<dcssch:field>Наименование</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Проект</dcssch:dataPath>
+					<dcssch:field>Проект</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ОбъектТЗ</dcssch:dataPath>
+					<dcssch:field>ОбъектТЗ</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Основание</dcssch:dataPath>
+					<dcssch:field>Основание</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ТипЗадачи</dcssch:dataPath>
+					<dcssch:field>ТипЗадачи</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Исполнитель</dcssch:dataPath>
+					<dcssch:field>Исполнитель</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>СтатусЗадачи</dcssch:dataPath>
+					<dcssch:field>СтатусЗадачи</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Заголовок</dcssch:dataPath>
+					<dcssch:field>Заголовок</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ПереходПредставление</dcssch:dataPath>
+					<dcssch:field>ПереходПредставление</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>КрайРКД</dcssch:dataPath>
+					<dcssch:field>КрайРКД</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Край РКД</v8:content>
+						</v8:item>
+					</dcssch:title>
+				</Field>
+				<Parameter>
+					<dcssch:name>Исполнитель</dcssch:name>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Исполнитель</v8:content>
+						</v8:item>
+					</dcssch:title>
+					<dcssch:valueType>
+						<v8:Type>cfg:CatalogRef.Пользователи</v8:Type>
+					</dcssch:valueType>
+					<dcssch:value xsi:nil="true"/>
+					<dcssch:useRestriction>true</dcssch:useRestriction>
+				</Parameter>
+				<Parameter>
+					<dcssch:name>Проект</dcssch:name>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Проект</v8:content>
+						</v8:item>
+					</dcssch:title>
+					<dcssch:valueType>
+						<v8:Type>cfg:CatalogRef.Проекты</v8:Type>
+					</dcssch:valueType>
+					<dcssch:value xsi:nil="true"/>
+					<dcssch:useRestriction>true</dcssch:useRestriction>
+				</Parameter>
+				<Parameter>
+					<dcssch:name>ТипыЗадачКонструирования</dcssch:name>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Типы задач конструирования</v8:content>
+						</v8:item>
+					</dcssch:title>
+					<dcssch:valueType>
+						<v8:Type>cfg:EnumRef.ТипыЗадачКонструирования</v8:Type>
+					</dcssch:valueType>
+					<dcssch:value xsi:nil="true"/>
+					<dcssch:useRestriction>true</dcssch:useRestriction>
+					<dcssch:valueListAllowed>true</dcssch:valueListAllowed>
+				</Parameter>
+				<MainTable>Task.Задачи_РКД</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
 		</Attribute>
 		<ConditionalAppearance>
 			<dcsset:item>
