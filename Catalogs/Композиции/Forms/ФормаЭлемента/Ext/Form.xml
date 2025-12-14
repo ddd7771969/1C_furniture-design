@@ -105,6 +105,7 @@
 				</InputField>
 				<InputField name="ТекущаяСтадия" id="94">
 					<DataPath>ТекущаяСтадия</DataPath>
+					<ReadOnly>true</ReadOnly>
 					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 					<ContextMenu name="ТекущаяСтадияКонтекстноеМеню" id="95"/>
 					<ExtendedTooltip name="ТекущаяСтадияРасширеннаяПодсказка" id="96"/>
@@ -114,15 +115,30 @@
 				</InputField>
 			</ChildItems>
 		</UsualGroup>
-		<InputField name="Конструктор" id="91">
-			<DataPath>Конструктор</DataPath>
-			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-			<ContextMenu name="КонструкторКонтекстноеМеню" id="92"/>
-			<ExtendedTooltip name="КонструкторРасширеннаяПодсказка" id="93"/>
-			<Events>
-				<Event name="OnChange">КонструкторПриИзменении</Event>
-			</Events>
-		</InputField>
+		<UsualGroup name="Группа3" id="101">
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="102"/>
+			<ChildItems>
+				<InputField name="Конструктор" id="91">
+					<DataPath>Конструктор</DataPath>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="КонструкторКонтекстноеМеню" id="92"/>
+					<ExtendedTooltip name="КонструкторРасширеннаяПодсказка" id="93"/>
+					<Events>
+						<Event name="OnChange">КонструкторПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="ЗадачаВРаботе" id="103">
+					<DataPath>ЗадачаВРаботе</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ЗадачаВРаботеКонтекстноеМеню" id="104"/>
+					<ExtendedTooltip name="ЗадачаВРаботеРасширеннаяПодсказка" id="105"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
 		<Button name="ОткрытьФайлПДМ" id="99">
 			<Type>UsualButton</Type>
 			<Representation>PictureAndText</Representation>
@@ -406,6 +422,18 @@
 				<v8:Type>cfg:CatalogRef.Сотрудники</v8:Type>
 			</Type>
 		</Attribute>
+		<Attribute name="ЗадачаВРаботе" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Задача в работе</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:TaskRef.Задачи_ПКД</v8:Type>
+				<v8:Type>cfg:TaskRef.Задачи_РКД</v8:Type>
+			</Type>
+		</Attribute>
 	</Attributes>
 	<Commands>
 		<Command name="ВыгрузитьВPDM" id="1">
@@ -540,6 +568,16 @@
 				<Type>Auto</Type>
 				<CommandGroup>FormNavigationPanelGoTo</CommandGroup>
 				<Index>5</Index>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>InformationRegister.ДанныеКомплекта.StandardCommand.OpenByValue.Комплект</Command>
+				<Type>Auto</Type>
+				<CommandGroup>FormNavigationPanelGoTo</CommandGroup>
+				<Index>6</Index>
 				<DefaultVisible>false</DefaultVisible>
 				<Visible>
 					<xr:Common>false</xr:Common>
