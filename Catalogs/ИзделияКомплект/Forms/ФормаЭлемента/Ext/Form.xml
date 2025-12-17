@@ -196,12 +196,11 @@
 							<ContextMenu name="НаправлениеКонтекстноеМеню" id="353"/>
 							<ExtendedTooltip name="НаправлениеРасширеннаяПодсказка" id="354"/>
 						</InputField>
-						<InputField name="ТекущаяСтадия" id="355">
+						<LabelField name="ТекущаяСтадия" id="355">
 							<DataPath>ТекущаяСтадия</DataPath>
-							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 							<ContextMenu name="ТекущаяСтадияКонтекстноеМеню" id="356"/>
 							<ExtendedTooltip name="ТекущаяСтадияРасширеннаяПодсказка" id="357"/>
-						</InputField>
+						</LabelField>
 						<InputField name="Композиция" id="404">
 							<DataPath>Композиция</DataPath>
 							<ReadOnly>true</ReadOnly>
@@ -209,15 +208,70 @@
 							<ContextMenu name="КомпозицияКонтекстноеМеню" id="405"/>
 							<ExtendedTooltip name="КомпозицияРасширеннаяПодсказка" id="406"/>
 						</InputField>
-						<InputField name="ЗадачаВРаботе" id="439">
-							<DataPath>ЗадачаВРаботе</DataPath>
-							<ReadOnly>true</ReadOnly>
-							<ChoiceButton>false</ChoiceButton>
-							<OpenButton>true</OpenButton>
-							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-							<ContextMenu name="ЗадачаВРаботеКонтекстноеМеню" id="440"/>
-							<ExtendedTooltip name="ЗадачаВРаботеРасширеннаяПодсказка" id="441"/>
-						</InputField>
+						<UsualGroup name="Группа16" id="445">
+							<Group>AlwaysHorizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа16РасширеннаяПодсказка" id="446"/>
+							<ChildItems>
+								<InputField name="ЗадачаПКД" id="439">
+									<DataPath>ЗадачаПКД</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<ChoiceButton>false</ChoiceButton>
+									<OpenButton>true</OpenButton>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ЗадачаПКДКонтекстноеМеню" id="440"/>
+									<ExtendedTooltip name="ЗадачаПКДРасширеннаяПодсказка" id="441"/>
+								</InputField>
+								<PictureDecoration name="ДекорацияЗадачаПКД" id="449">
+									<Visible>false</Visible>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Декорация задача ПКД</v8:content>
+										</v8:item>
+									</Title>
+									<Picture>
+										<xr:Ref>CommonPicture.ДокументПроведенКоннекторВерх</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ContextMenu name="ДекорацияЗадачаПКДКонтекстноеМеню" id="450"/>
+									<ExtendedTooltip name="ДекорацияЗадачаПКДРасширеннаяПодсказка" id="451"/>
+								</PictureDecoration>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="Группа17" id="447">
+							<Group>AlwaysHorizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа17РасширеннаяПодсказка" id="448"/>
+							<ChildItems>
+								<InputField name="ЗадачаРКД" id="442">
+									<DataPath>ЗадачаРКД</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ЗадачаРКДКонтекстноеМеню" id="443"/>
+									<ExtendedTooltip name="ЗадачаРКДРасширеннаяПодсказка" id="444"/>
+								</InputField>
+								<PictureDecoration name="ДекорацияЗадачаРКД" id="452">
+									<Visible>false</Visible>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<AutoMaxHeight>false</AutoMaxHeight>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Декорация задача РКД</v8:content>
+										</v8:item>
+									</Title>
+									<Picture>
+										<xr:Ref>CommonPicture.ДокументПроведенКоннекторВерх</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ContextMenu name="ДекорацияЗадачаРКДКонтекстноеМеню" id="453"/>
+									<ExtendedTooltip name="ДекорацияЗадачаРКДРасширеннаяПодсказка" id="454"/>
+								</PictureDecoration>
+							</ChildItems>
+						</UsualGroup>
 					</ChildItems>
 				</UsualGroup>
 			</ChildItems>
@@ -1395,15 +1449,25 @@
 				<v8:Type>cfg:CatalogRef.СтадииКомплекта</v8:Type>
 			</Type>
 		</Attribute>
-		<Attribute name="ЗадачаВРаботе" id="29">
+		<Attribute name="ЗадачаПКД" id="29">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Задача в работе</v8:content>
+					<v8:content>Задача ПКД</v8:content>
 				</v8:item>
 			</Title>
 			<Type>
 				<v8:Type>cfg:TaskRef.Задачи_ПКД</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ЗадачаРКД" id="30">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Задача РКД</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
 				<v8:Type>cfg:TaskRef.Задачи_РКД</v8:Type>
 			</Type>
 		</Attribute>

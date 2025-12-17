@@ -145,6 +145,7 @@
 						<InputField name="Исполнитель" id="28">
 							<DataPath>Объект.Исполнитель</DataPath>
 							<EditMode>EnterOnInput</EditMode>
+							<CreateButton>false</CreateButton>
 							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 							<ContextMenu name="ИсполнительКонтекстноеМеню" id="29"/>
 							<ExtendedTooltip name="ИсполнительРасширеннаяПодсказка" id="30"/>
@@ -610,6 +611,11 @@
 										<Event name="OnChange">СостояниеПриИзменении</Event>
 									</Events>
 								</InputField>
+								<Button name="СнятьСВыполнения" id="192">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.СнятьСВыполнения</CommandName>
+									<ExtendedTooltip name="СнятьСВыполненияРасширеннаяПодсказка" id="193"/>
+								</Button>
 							</ChildItems>
 						</UsualGroup>
 					</ChildItems>
@@ -1157,6 +1163,21 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ОтменаИзделия</Action>
+		</Command>
+		<Command name="СнятьСВыполнения" id="26">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Снять с выполнения</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Снять с выполнения</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СнятьСВыполнения</Action>
 		</Command>
 	</Commands>
 	<CommandInterface>

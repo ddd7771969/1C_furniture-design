@@ -93,7 +93,7 @@
 					<ExtendedTooltip name="ГабаритныйЧертежРасширеннаяПодсказка" id="87"/>
 				</LabelField>
 				<LabelField name="ТекущаяСтадия" id="70">
-					<DataPath>~Список.ТекущаяСтадия</DataPath>
+					<DataPath>Список.ТекущаяСтадия</DataPath>
 					<ContextMenu name="ТекущаяСтадияКонтекстноеМеню" id="71"/>
 					<ExtendedTooltip name="ТекущаяСтадияРасширеннаяПодсказка" id="72"/>
 				</LabelField>
@@ -190,13 +190,14 @@
 			ТОГДА СправочникИзделияКомплект.Композиция.ГабаритныйЧертеж
 		ИНАЧЕ СправочникИзделияКомплект.ГабаритныйЧертеж
 	КОНЕЦ КАК ГабаритныйЧертеж,
-	ДанныеКомплектаСрезПоследних.Конструктор КАК Конструктор
+	ДанныеКомплектаСрезПоследних.Конструктор КАК Конструктор,
+	ДанныеКомплектаСрезПоследних.ТекущаяСтадия КАК ТекущаяСтадия
 ИЗ
 	Справочник.ИзделияКомплект КАК СправочникИзделияКомплект
 		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ДатыКомплекта КАК ДатыКомплекта
 		ПО (ДатыКомплекта.Комплект = СправочникИзделияКомплект.Ссылка)
 		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ДанныеКомплекта.СрезПоследних КАК ДанныеКомплектаСрезПоследних
-		ПО ДанныеКомплектаСрезПоследних.Комплект = СправочникИзделияКомплект.Ссылка</QueryText>
+		ПО (ДанныеКомплектаСрезПоследних.Комплект = СправочникИзделияКомплект.Ссылка)</QueryText>
 				<Field xsi:type="dcssch:DataSetFieldField">
 					<dcssch:dataPath>НормаВремени_РКД</dcssch:dataPath>
 					<dcssch:field>НормаВремени_РКД</dcssch:field>
@@ -300,10 +301,6 @@
 					<dcssch:field>ДатаВнешнегоСоглосования</dcssch:field>
 				</Field>
 				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>ПутьКПапкеPDM</dcssch:dataPath>
-					<dcssch:field>ПутьКПапкеPDM</dcssch:field>
-				</Field>
-				<Field xsi:type="dcssch:DataSetFieldField">
 					<dcssch:dataPath>ДатаОкончания</dcssch:dataPath>
 					<dcssch:field>ДатаОкончания</dcssch:field>
 				</Field>
@@ -364,10 +361,6 @@
 					<dcssch:field>ПланСтолярка</dcssch:field>
 				</Field>
 				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>СтадияКомплекта</dcssch:dataPath>
-					<dcssch:field>СтадияКомплекта</dcssch:field>
-				</Field>
-				<Field xsi:type="dcssch:DataSetFieldField">
 					<dcssch:dataPath>Производство</dcssch:dataPath>
 					<dcssch:field>Производство</dcssch:field>
 				</Field>
@@ -378,6 +371,10 @@
 				<Field xsi:type="dcssch:DataSetFieldField">
 					<dcssch:dataPath>Приоритеты</dcssch:dataPath>
 					<dcssch:field>Приоритеты</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ТекущаяСтадия</dcssch:dataPath>
+					<dcssch:field>ТекущаяСтадия</dcssch:field>
 				</Field>
 				<Parameter>
 					<dcssch:name>Период</dcssch:name>
