@@ -265,6 +265,94 @@
 								</Table>
 							</ChildItems>
 						</UsualGroup>
+						<UsualGroup name="ГруппаЧекЛист" id="194">
+							<Visible>false</Visible>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Чек лист</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа чек лист</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаЧекЛистРасширеннаяПодсказка" id="195"/>
+							<ChildItems>
+								<Table name="ЧекЛист" id="196">
+									<AutoInsertNewRow>true</AutoInsertNewRow>
+									<EnableStartDrag>true</EnableStartDrag>
+									<EnableDrag>true</EnableDrag>
+									<DataPath>Объект.ЧекЛист</DataPath>
+									<RowFilter xsi:nil="true"/>
+									<ContextMenu name="ЧекЛистКонтекстноеМеню" id="197"/>
+									<AutoCommandBar name="ЧекЛистКоманднаяПанель" id="198"/>
+									<ExtendedTooltip name="ЧекЛистРасширеннаяПодсказка" id="199"/>
+									<SearchStringAddition name="ЧекЛистСтрокаПоиска" id="200">
+										<AdditionSource>
+											<Item>ЧекЛист</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ЧекЛистСтрокаПоискаКонтекстноеМеню" id="201"/>
+										<ExtendedTooltip name="ЧекЛистСтрокаПоискаРасширеннаяПодсказка" id="202"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="ЧекЛистСостояниеПросмотра" id="203">
+										<AdditionSource>
+											<Item>ЧекЛист</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ЧекЛистСостояниеПросмотраКонтекстноеМеню" id="204"/>
+										<ExtendedTooltip name="ЧекЛистСостояниеПросмотраРасширеннаяПодсказка" id="205"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="ЧекЛистУправлениеПоиском" id="206">
+										<AdditionSource>
+											<Item>ЧекЛист</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="ЧекЛистУправлениеПоискомКонтекстноеМеню" id="207"/>
+										<ExtendedTooltip name="ЧекЛистУправлениеПоискомРасширеннаяПодсказка" id="208"/>
+									</SearchControlAddition>
+									<ChildItems>
+										<LabelField name="ЧекЛистНомерСтроки" id="209">
+											<DataPath>Объект.ЧекЛист.LineNumber</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ЧекЛистНомерСтрокиКонтекстноеМеню" id="210"/>
+											<ExtendedTooltip name="ЧекЛистНомерСтрокиРасширеннаяПодсказка" id="211"/>
+										</LabelField>
+										<InputField name="ЧекЛистВопрос" id="212">
+											<DataPath>Объект.ЧекЛист.Вопрос</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="ЧекЛистВопросКонтекстноеМеню" id="213"/>
+											<ExtendedTooltip name="ЧекЛистВопросРасширеннаяПодсказка" id="214"/>
+										</InputField>
+										<CheckBoxField name="ЧекЛистВыполнение" id="215">
+											<DataPath>Объект.ЧекЛист.Выполнение</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="ЧекЛистВыполнениеКонтекстноеМеню" id="216"/>
+											<ExtendedTooltip name="ЧекЛистВыполнениеРасширеннаяПодсказка" id="217"/>
+										</CheckBoxField>
+										<LabelField name="ЧекЛистДатаВыполнения" id="218">
+											<DataPath>Объект.ЧекЛист.ДатаВыполнения</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ЧекЛистДатаВыполненияКонтекстноеМеню" id="219"/>
+											<ExtendedTooltip name="ЧекЛистДатаВыполненияРасширеннаяПодсказка" id="220"/>
+										</LabelField>
+										<LabelField name="ЧекЛистАвторВыполнения" id="221">
+											<DataPath>Объект.ЧекЛист.АвторВыполнения</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="ЧекЛистАвторВыполненияКонтекстноеМеню" id="222"/>
+											<ExtendedTooltip name="ЧекЛистАвторВыполненияРасширеннаяПодсказка" id="223"/>
+										</LabelField>
+									</ChildItems>
+								</Table>
+							</ChildItems>
+						</UsualGroup>
 						<UsualGroup name="Группа2" id="162">
 							<Group>AlwaysHorizontal</Group>
 							<Representation>None</Representation>
@@ -334,6 +422,11 @@
 											<Type>UsualButton</Type>
 											<CommandName>Form.Command.КонтрольКП</CommandName>
 											<ExtendedTooltip name="КонтрольКПРасширеннаяПодсказка" id="179"/>
+										</Button>
+										<Button name="СоздатьЧекЛист" id="224">
+											<Type>UsualButton</Type>
+											<CommandName>Form.Command.СоздатьЧекЛист</CommandName>
+											<ExtendedTooltip name="СоздатьЧекЛистРасширеннаяПодсказка" id="225"/>
 										</Button>
 									</ChildItems>
 								</UsualGroup>
@@ -1179,6 +1272,21 @@
 				</v8:item>
 			</ToolTip>
 			<Action>СнятьСВыполнения</Action>
+		</Command>
+		<Command name="СоздатьЧекЛист" id="27">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать чек лист</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать чек лист</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СоздатьЧекЛист</Action>
 		</Command>
 	</Commands>
 	<CommandInterface>
