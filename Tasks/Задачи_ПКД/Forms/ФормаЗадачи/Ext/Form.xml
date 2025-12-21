@@ -316,6 +316,10 @@
 										<ContextMenu name="ЧекЛистУправлениеПоискомКонтекстноеМеню" id="207"/>
 										<ExtendedTooltip name="ЧекЛистУправлениеПоискомРасширеннаяПодсказка" id="208"/>
 									</SearchControlAddition>
+									<Events>
+										<Event name="BeforeRowChange">ЧекЛистПередНачаломИзменения</Event>
+										<Event name="OnChange">ЧекЛистПриИзменении</Event>
+									</Events>
 									<ChildItems>
 										<LabelField name="ЧекЛистНомерСтроки" id="209">
 											<DataPath>Объект.ЧекЛист.LineNumber</DataPath>

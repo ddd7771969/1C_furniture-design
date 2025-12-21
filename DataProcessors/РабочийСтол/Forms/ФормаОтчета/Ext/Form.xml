@@ -675,6 +675,34 @@
 						<ExtendedTooltip name="ПодтверждениеПКД1УправлениеПоискомРасширеннаяПодсказка" id="501"/>
 					</SearchControlAddition>
 					<ChildItems>
+						<PictureField name="ЕстьФайлы" id="1132">
+							<DataPath>ПодтверждениеПКД.ЕстьФайлы</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<FooterPicture>
+								<xr:Ref>CommonPicture.Скрепка</xr:Ref>
+								<xr:LoadTransparent>true</xr:LoadTransparent>
+							</FooterPicture>
+							<ValuesPicture>
+								<xr:Ref>CommonPicture.Скрепка</xr:Ref>
+								<xr:LoadTransparent>true</xr:LoadTransparent>
+							</ValuesPicture>
+							<ContextMenu name="ЕстьФайлыКонтекстноеМеню" id="1133"/>
+							<ExtendedTooltip name="ЕстьФайлыРасширеннаяПодсказка" id="1134"/>
+						</PictureField>
+						<PictureField name="ПодтверждениеПКД1ЕстьФайлы" id="1135">
+							<DataPath>ПодтверждениеПКД.ЕстьФайлы</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<FooterPicture>
+								<xr:Ref>CommonPicture.Скрепка</xr:Ref>
+								<xr:LoadTransparent>true</xr:LoadTransparent>
+							</FooterPicture>
+							<ValuesPicture>
+								<xr:Ref>CommonPicture.Скрепка</xr:Ref>
+								<xr:LoadTransparent>true</xr:LoadTransparent>
+							</ValuesPicture>
+							<ContextMenu name="ПодтверждениеПКД1ЕстьФайлыКонтекстноеМеню" id="1136"/>
+							<ExtendedTooltip name="ПодтверждениеПКД1ЕстьФайлыРасширеннаяПодсказка" id="1137"/>
+						</PictureField>
 						<LabelField name="ПодтверждениеПКД1Заголовок" id="1077">
 							<DataPath>ПодтверждениеПКД.Заголовок</DataPath>
 							<Title>
@@ -902,6 +930,20 @@
 										<ExtendedTooltip name="ПодтверждениеПКДУправлениеПоискомРасширеннаяПодсказка" id="440"/>
 									</SearchControlAddition>
 									<ChildItems>
+										<PictureField name="ПодтверждениеПКДЕстьФайлы" id="1138">
+											<DataPath>ПодтверждениеПКД.ЕстьФайлы</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<FooterPicture>
+												<xr:Ref>CommonPicture.Скрепка</xr:Ref>
+												<xr:LoadTransparent>true</xr:LoadTransparent>
+											</FooterPicture>
+											<ValuesPicture>
+												<xr:Ref>CommonPicture.Скрепка</xr:Ref>
+												<xr:LoadTransparent>true</xr:LoadTransparent>
+											</ValuesPicture>
+											<ContextMenu name="ПодтверждениеПКДЕстьФайлыКонтекстноеМеню" id="1139"/>
+											<ExtendedTooltip name="ПодтверждениеПКДЕстьФайлыРасширеннаяПодсказка" id="1140"/>
+										</PictureField>
 										<LabelField name="ПодтверждениеПКДПереходПредставление" id="1086">
 											<DataPath>ПодтверждениеПКД.ПереходПредставление</DataPath>
 											<Title>
@@ -2428,11 +2470,14 @@
 	) КАК Наблюдатели,
 	ЗадачаЗадачи_ПКД.Заголовок КАК Заголовок,
 	ЕСТЬNULL(ДатыКомплекта.КрайПКД, ДАТАВРЕМЯ(1, 1, 1)) КАК КрайПКД,
-	ЕСТЬNULL(ДатыКомплекта.ПереходПредставление, "") КАК ПереходПредставление
+	ЕСТЬNULL(ДатыКомплекта.ПереходПредставление, "") КАК ПереходПредставление,
+	НаличиеФайлов.ЕстьФайлы КАК ЕстьФайлы
 ИЗ
 	Задача.Задачи_ПКД КАК ЗадачаЗадачи_ПКД
 		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ДатыКомплекта КАК ДатыКомплекта
 		ПО ЗадачаЗадачи_ПКД.ОбъектТЗ = ДатыКомплекта.Комплект
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.НаличиеФайлов КАК НаличиеФайлов
+		ПО ЗадачаЗадачи_ПКД.Ссылка = НаличиеФайлов.ОбъектСФайлами
 ГДЕ
 	ВЫБОР
 			КОГДА &amp;Проект = ЗНАЧЕНИЕ(Справочник.Проекты.ПустаяСсылка)
@@ -2546,6 +2591,18 @@
 				<Field xsi:type="dcssch:DataSetFieldField">
 					<dcssch:dataPath>ПереходПредставление</dcssch:dataPath>
 					<dcssch:field>ПереходПредставление</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ЧекЛист</dcssch:dataPath>
+					<dcssch:field>ЧекЛист</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>КоличествоНеВыполненыхВопросовЧекЛиста</dcssch:dataPath>
+					<dcssch:field>КоличествоНеВыполненыхВопросовЧекЛиста</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ЕстьФайлы</dcssch:dataPath>
+					<dcssch:field>ЕстьФайлы</dcssch:field>
 				</Field>
 				<Parameter>
 					<dcssch:name>Проект</dcssch:name>

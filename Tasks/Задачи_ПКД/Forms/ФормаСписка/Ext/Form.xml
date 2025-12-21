@@ -98,6 +98,20 @@
 				<ExtendedTooltip name="СписокУправлениеПоискомРасширеннаяПодсказка" id="15"/>
 			</SearchControlAddition>
 			<ChildItems>
+				<PictureField name="ЕстьФайлы" id="66">
+					<DataPath>Список.ЕстьФайлы</DataPath>
+					<TitleLocation>None</TitleLocation>
+					<HeaderPicture>
+						<xr:Ref>CommonPicture.Скрепка</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</HeaderPicture>
+					<ValuesPicture>
+						<xr:Ref>CommonPicture.Скрепка</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</ValuesPicture>
+					<ContextMenu name="ЕстьФайлыКонтекстноеМеню" id="67"/>
+					<ExtendedTooltip name="ЕстьФайлыРасширеннаяПодсказка" id="68"/>
+				</PictureField>
 				<LabelField name="Заголовок" id="63">
 					<DataPath>Список.Заголовок</DataPath>
 					<Title>
@@ -203,13 +217,16 @@
 	ЗадачаЗадачи_ПКД.ОбобщеннаяЗадача КАК ОбобщеннаяЗадача,
 	ДанныеКомплектаСрезПоследних.ТекущаяСтадия КАК ТекущаяСтадия,
 	ЗадачаЗадачи_ПКД.СтатусЗадачи КАК СтатусЗадачи,
-	ЗадачаЗадачи_ПКД.Заголовок КАК Заголовок
+	ЗадачаЗадачи_ПКД.Заголовок КАК Заголовок,
+	НаличиеФайлов.ЕстьФайлы КАК ЕстьФайлы
 ИЗ
 	Задача.Задачи_ПКД КАК ЗадачаЗадачи_ПКД
 		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ТаймингЗадач.СрезПоследних КАК ТаймингЗадачСрезПоследних
 		ПО ЗадачаЗадачи_ПКД.Ссылка = ТаймингЗадачСрезПоследних.Задача
 		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ДанныеКомплекта.СрезПоследних КАК ДанныеКомплектаСрезПоследних
 		ПО ЗадачаЗадачи_ПКД.ОбъектТЗ = ДанныеКомплектаСрезПоследних.Комплект
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.НаличиеФайлов КАК НаличиеФайлов
+		ПО ЗадачаЗадачи_ПКД.Ссылка = НаличиеФайлов.ОбъектСФайлами
 ГДЕ
 	ВЫБОР
 			КОГДА &amp;НеВыполнена
@@ -328,6 +345,18 @@
 				<Field xsi:type="dcssch:DataSetFieldField">
 					<dcssch:dataPath>Заголовок</dcssch:dataPath>
 					<dcssch:field>Заголовок</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ЧекЛист</dcssch:dataPath>
+					<dcssch:field>ЧекЛист</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>КоличествоНеВыполненыхВопросовЧекЛиста</dcssch:dataPath>
+					<dcssch:field>КоличествоНеВыполненыхВопросовЧекЛиста</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ЕстьФайлы</dcssch:dataPath>
+					<dcssch:field>ЕстьФайлы</dcssch:field>
 				</Field>
 				<Parameter>
 					<dcssch:name>Период</dcssch:name>
