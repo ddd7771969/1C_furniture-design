@@ -3,6 +3,10 @@
 	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
 	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="AfterWrite">ПослеЗаписи</Event>
+		<Event name="OnOpen">ПриОткрытии</Event>
+	</Events>
 	<ChildItems>
 		<InputField name="Код" id="1">
 			<DataPath>Объект.Code</DataPath>
@@ -18,6 +22,11 @@
 			<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
 			<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
 		</InputField>
+		<LabelField name="ПолноеНаименование" id="50">
+			<DataPath>Объект.ПолноеНаименование</DataPath>
+			<ContextMenu name="ПолноеНаименованиеКонтекстноеМеню" id="51"/>
+			<ExtendedTooltip name="ПолноеНаименованиеРасширеннаяПодсказка" id="52"/>
+		</LabelField>
 		<InputField name="Родитель" id="7">
 			<DataPath>Объект.Parent</DataPath>
 			<EditMode>EnterOnInput</EditMode>
