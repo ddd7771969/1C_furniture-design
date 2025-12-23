@@ -100,14 +100,36 @@
 				<Event name="StartChoice">ПутьКФайлуEXEИзменениеСтатусаГЧНачалоВыбора</Event>
 			</Events>
 		</InputField>
-		<InputField name="ПутьКФайлуЗагрузки" id="4">
-			<DataPath>ПутьКФайлуЗагрузки</DataPath>
+		<InputField name="ПутьКФайлуEXEРаздатьПрава" id="33">
+			<DataPath>ПутьКФайлуEXEРаздатьПрава</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Путь к файлу EXE раздать права</v8:content>
+				</v8:item>
+			</Title>
 			<ChoiceButton>true</ChoiceButton>
 			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-			<ContextMenu name="ПутьКФайлуЗагрузкиКонтекстноеМеню" id="5"/>
-			<ExtendedTooltip name="ПутьКФайлуЗагрузкиРасширеннаяПодсказка" id="6"/>
+			<ContextMenu name="ПутьКФайлуEXEРаздатьПраваКонтекстноеМеню" id="34"/>
+			<ExtendedTooltip name="ПутьКФайлуEXEРаздатьПраваРасширеннаяПодсказка" id="35"/>
 			<Events>
-				<Event name="StartChoice">ПутьКФайлуЗагрузкиНачалоВыбора</Event>
+				<Event name="StartChoice">ПутьКФайлуEXEРаздатьПраваНачалоВыбора</Event>
+			</Events>
+		</InputField>
+		<InputField name="ПутьКФайлуEXEЗабратьПрава" id="36">
+			<DataPath>ПутьКФайлуEXEЗабратьПрава</DataPath>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Путь к файлу EXE забрать права</v8:content>
+				</v8:item>
+			</Title>
+			<ChoiceButton>true</ChoiceButton>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ПутьКФайлуEXEЗабратьПраваКонтекстноеМеню" id="37"/>
+			<ExtendedTooltip name="ПутьКФайлуEXEЗабратьПраваРасширеннаяПодсказка" id="38"/>
+			<Events>
+				<Event name="StartChoice">ПутьКФайлуEXEЗабратьПраваНачалоВыбора</Event>
 			</Events>
 		</InputField>
 		<InputField name="ПутьКФайлуEXEЗагрузкаТЗ" id="30">
@@ -118,6 +140,16 @@
 			<ExtendedTooltip name="ПутьКФайлуEXEЗагрузкаТЗРасширеннаяПодсказка" id="32"/>
 			<Events>
 				<Event name="StartChoice">ПутьКФайлуEXEЗагрузкаТЗНачалоВыбора</Event>
+			</Events>
+		</InputField>
+		<InputField name="ПутьКФайлуЗагрузки" id="4">
+			<DataPath>ПутьКФайлуЗагрузки</DataPath>
+			<ChoiceButton>true</ChoiceButton>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ПутьКФайлуЗагрузкиКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="ПутьКФайлуЗагрузкиРасширеннаяПодсказка" id="6"/>
+			<Events>
+				<Event name="StartChoice">ПутьКФайлуЗагрузкиНачалоВыбора</Event>
 			</Events>
 		</InputField>
 	</ChildItems>
@@ -259,6 +291,36 @@
 				<v8:item>
 					<v8:lang>ru</v8:lang>
 					<v8:content>Путь к файлу EXEЗагрузка ТЗ</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПутьКФайлуEXEРаздатьПрава" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Путь к файлу EXEРаздать права</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПутьКФайлуEXEЗабратьПрава" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Путь к файлу EXEЗабрать права</v8:content>
 				</v8:item>
 			</Title>
 			<Type>
