@@ -1671,10 +1671,16 @@
 							<ContextMenu name="ЗадачиМенеджераИсполнительКонтекстноеМеню" id="1017"/>
 							<ExtendedTooltip name="ЗадачиМенеджераИсполнительРасширеннаяПодсказка" id="1018"/>
 						</LabelField>
-						<LabelField name="ЗадачиМенеджераТекущаяСтадия" id="1123">
-							<DataPath>ЗадачиМенеджера.ТекущаяСтадия</DataPath>
-							<ContextMenu name="ЗадачиМенеджераТекущаяСтадияКонтекстноеМеню" id="1124"/>
-							<ExtendedTooltip name="ЗадачиМенеджераТекущаяСтадияРасширеннаяПодсказка" id="1125"/>
+						<LabelField name="ЗадачиМенеджераТекущаяСтадияПолноеНаименование" id="1141">
+							<DataPath>ЗадачиМенеджера.ТекущаяСтадияПолноеНаименование</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Текущая стадия</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ЗадачиМенеджераТекущаяСтадияПолноеНаименованиеКонтекстноеМеню" id="1142"/>
+							<ExtendedTooltip name="ЗадачиМенеджераТекущаяСтадияПолноеНаименованиеРасширеннаяПодсказка" id="1143"/>
 						</LabelField>
 						<LabelField name="ЗадачиМенеджераПроект" id="1126">
 							<DataPath>ЗадачиМенеджера.Проект</DataPath>
@@ -2797,8 +2803,8 @@
 ИЗ
 	Задача.Задачи_ПКД КАК Задачи_ПКД
 ГДЕ
-	Задачи_ПКД.ТипЗадачи = значение(Перечисление.ТипыЗадачКонструирования.ОжиданиеФиндиректором)    
-	и	ВЫБОР
+	Задачи_ПКД.ТипЗадачи = ЗНАЧЕНИЕ(Перечисление.ТипыЗадачКонструирования.ОжиданиеФиндиректором)
+	И ВЫБОР
 			КОГДА &amp;Исполнитель = ЗНАЧЕНИЕ(Справочник.Пользователи.ПустаяСсылка)
 				ТОГДА ИСТИНА
 			ИНАЧЕ Задачи_ПКД.Исполнитель = &amp;Исполнитель
@@ -2808,7 +2814,8 @@
 				ТОГДА ИСТИНА
 			ИНАЧЕ Задачи_ПКД.Проект = &amp;Проект
 		КОНЕЦ
-	И НЕ Задачи_ПКД.Выполнена</QueryText>
+	И НЕ Задачи_ПКД.Выполнена
+	И НЕ Задачи_ПКД.ОбобщеннаяЗадача</QueryText>
 				<Field xsi:type="dcssch:DataSetFieldField">
 					<dcssch:dataPath>Проект</dcssch:dataPath>
 					<dcssch:field>Проект</dcssch:field>
@@ -2897,6 +2904,22 @@
 					<dcssch:dataPath>Наблюдатели</dcssch:dataPath>
 					<dcssch:field>Наблюдатели</dcssch:field>
 				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Заголовок</dcssch:dataPath>
+					<dcssch:field>Заголовок</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ЧекЛист</dcssch:dataPath>
+					<dcssch:field>ЧекЛист</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Изменение</dcssch:dataPath>
+					<dcssch:field>Изменение</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>КоличествоНеВыполненыхВопросовЧекЛиста</dcssch:dataPath>
+					<dcssch:field>КоличествоНеВыполненыхВопросовЧекЛиста</dcssch:field>
+				</Field>
 				<Parameter>
 					<dcssch:name>Исполнитель</dcssch:name>
 					<dcssch:title xsi:type="v8:LocalStringType">
@@ -2981,7 +3004,8 @@
 		НомерСтроки КАК НомерСтроки,
 		Наблюдатель КАК Наблюдатель
 	) КАК Наблюдатели,
-	ДанныеКомплектаСрезПоследних.ТекущаяСтадия КАК ТекущаяСтадия
+	ДанныеКомплектаСрезПоследних.ТекущаяСтадия КАК ТекущаяСтадия,
+	ДанныеКомплектаСрезПоследних.ТекущаяСтадия.ПолноеНаименование КАК ТекущаяСтадияПолноеНаименование
 ИЗ
 	Задача.Задачи_ПКД КАК Задачи_ПКД
 		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ДанныеКомплекта.СрезПоследних КАК ДанныеКомплектаСрезПоследних
@@ -3103,6 +3127,18 @@
 				<Field xsi:type="dcssch:DataSetFieldField">
 					<dcssch:dataPath>ТекущаяСтадия</dcssch:dataPath>
 					<dcssch:field>ТекущаяСтадия</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ЧекЛист</dcssch:dataPath>
+					<dcssch:field>ЧекЛист</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>КоличествоНеВыполненыхВопросовЧекЛиста</dcssch:dataPath>
+					<dcssch:field>КоличествоНеВыполненыхВопросовЧекЛиста</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ТекущаяСтадияПолноеНаименование</dcssch:dataPath>
+					<dcssch:field>ТекущаяСтадияПолноеНаименование</dcssch:field>
 				</Field>
 				<Parameter>
 					<dcssch:name>Исполнитель</dcssch:name>
@@ -3235,7 +3271,11 @@
 						</v8:item>
 					</Title>
 					<Type>
-						<v8:Type>cfg:CatalogRef.СтадииКомплекта</v8:Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
 					</Type>
 				</Column>
 				<Column name="Заголовок" id="6">
@@ -3337,7 +3377,8 @@
 		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ДатыКомплекта КАК ДатыКомплекта
 		ПО Задачи_РКД.ОбъектТЗ = ДатыКомплекта.Комплект
 ГДЕ
-	НЕ Задачи_РКД.Выполнена   и 	ВЫБОР
+	НЕ Задачи_РКД.Выполнена
+	И ВЫБОР
 			КОГДА &amp;Проект = ЗНАЧЕНИЕ(Справочник.Проекты.ПустаяСсылка)
 				ТОГДА ИСТИНА
 			ИНАЧЕ Задачи_РКД.ОбъектТЗ.Проект = &amp;Проект

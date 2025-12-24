@@ -682,15 +682,6 @@
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="ГруппаСлужебнаяРасширеннаяПодсказка" id="165"/>
 							<ChildItems>
-								<InputField name="ТипЗадачи" id="95">
-									<DataPath>Объект.ТипЗадачи</DataPath>
-									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-									<ContextMenu name="ТипЗадачиКонтекстноеМеню" id="96"/>
-									<ExtendedTooltip name="ТипЗадачиРасширеннаяПодсказка" id="97"/>
-									<Events>
-										<Event name="OnChange">ТипЗадачиПриИзменении</Event>
-									</Events>
-								</InputField>
 								<InputField name="СтатусЗадачи" id="169">
 									<DataPath>Объект.СтатусЗадачи</DataPath>
 									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
@@ -698,6 +689,15 @@
 									<ExtendedTooltip name="СтатусЗадачиРасширеннаяПодсказка" id="171"/>
 									<Events>
 										<Event name="OnChange">СтатусЗадачиПриИзменении</Event>
+									</Events>
+								</InputField>
+								<InputField name="ТипЗадачи" id="95">
+									<DataPath>Объект.ТипЗадачи</DataPath>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ТипЗадачиКонтекстноеМеню" id="96"/>
+									<ExtendedTooltip name="ТипЗадачиРасширеннаяПодсказка" id="97"/>
+									<Events>
+										<Event name="OnChange">ТипЗадачиПриИзменении</Event>
 									</Events>
 								</InputField>
 								<InputField name="Состояние" id="166">
