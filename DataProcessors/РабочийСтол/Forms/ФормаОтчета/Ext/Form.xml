@@ -540,85 +540,6 @@
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГруппаДизайнерРасширеннаяПодсказка" id="293"/>
 			<ChildItems>
-				<Table name="тзЗадачиДизайнера" id="294">
-					<Representation>List</Representation>
-					<TitleLocation>Top</TitleLocation>
-					<AutoInsertNewRow>true</AutoInsertNewRow>
-					<EnableStartDrag>true</EnableStartDrag>
-					<EnableDrag>true</EnableDrag>
-					<DataPath>тзЗадачиДизайнера</DataPath>
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Задачи Прочие</v8:content>
-						</v8:item>
-					</Title>
-					<RowFilter xsi:nil="true"/>
-					<ContextMenu name="тзЗадачиДизайнераКонтекстноеМеню" id="295"/>
-					<AutoCommandBar name="тзЗадачиДизайнераКоманднаяПанель" id="296">
-						<Autofill>false</Autofill>
-						<ChildItems>
-							<Button name="ОткрытьКанбанТЗ" id="325">
-								<Type>CommandBarButton</Type>
-								<CommandName>Form.Command.ОткрытьКанбанТЗ</CommandName>
-								<ExtendedTooltip name="ОткрытьКанбанТЗРасширеннаяПодсказка" id="326"/>
-							</Button>
-						</ChildItems>
-					</AutoCommandBar>
-					<ExtendedTooltip name="тзЗадачиДизайнераРасширеннаяПодсказка" id="297"/>
-					<SearchStringAddition name="тзЗадачиДизайнераСтрокаПоиска" id="298">
-						<AdditionSource>
-							<Item>тзЗадачиДизайнера</Item>
-							<Type>SearchStringRepresentation</Type>
-						</AdditionSource>
-						<ContextMenu name="тзЗадачиДизайнераСтрокаПоискаКонтекстноеМеню" id="299"/>
-						<ExtendedTooltip name="тзЗадачиДизайнераСтрокаПоискаРасширеннаяПодсказка" id="300"/>
-					</SearchStringAddition>
-					<ViewStatusAddition name="тзЗадачиДизайнераСостояниеПросмотра" id="301">
-						<AdditionSource>
-							<Item>тзЗадачиДизайнера</Item>
-							<Type>ViewStatusRepresentation</Type>
-						</AdditionSource>
-						<ContextMenu name="тзЗадачиДизайнераСостояниеПросмотраКонтекстноеМеню" id="302"/>
-						<ExtendedTooltip name="тзЗадачиДизайнераСостояниеПросмотраРасширеннаяПодсказка" id="303"/>
-					</ViewStatusAddition>
-					<SearchControlAddition name="тзЗадачиДизайнераУправлениеПоиском" id="304">
-						<AdditionSource>
-							<Item>тзЗадачиДизайнера</Item>
-							<Type>SearchControl</Type>
-						</AdditionSource>
-						<ContextMenu name="тзЗадачиДизайнераУправлениеПоискомКонтекстноеМеню" id="305"/>
-						<ExtendedTooltip name="тзЗадачиДизайнераУправлениеПоискомРасширеннаяПодсказка" id="306"/>
-					</SearchControlAddition>
-					<Events>
-						<Event name="BeforeAddRow">тзЗадачиДизайнераПередНачаломДобавления</Event>
-						<Event name="BeforeDeleteRow">тзЗадачиДизайнераПередУдалением</Event>
-						<Event name="BeforeRowChange">тзЗадачиДизайнераПередНачаломИзменения</Event>
-					</Events>
-					<ChildItems>
-						<InputField name="тзЗадачиДизайнераПредставлениеЗадача" id="322">
-							<DataPath>тзЗадачиДизайнера.ПредставлениеЗадача</DataPath>
-							<EditMode>EnterOnInput</EditMode>
-							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-							<ContextMenu name="тзЗадачиДизайнераПредставлениеЗадачаКонтекстноеМеню" id="323"/>
-							<ExtendedTooltip name="тзЗадачиДизайнераПредставлениеЗадачаРасширеннаяПодсказка" id="324"/>
-						</InputField>
-						<InputField name="тзЗадачиДизайнераИсполнитель" id="310">
-							<DataPath>тзЗадачиДизайнера.Исполнитель</DataPath>
-							<EditMode>EnterOnInput</EditMode>
-							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-							<ContextMenu name="тзЗадачиДизайнераИсполнительКонтекстноеМеню" id="311"/>
-							<ExtendedTooltip name="тзЗадачиДизайнераИсполнительРасширеннаяПодсказка" id="312"/>
-						</InputField>
-						<InputField name="тзЗадачиДизайнераКрайняяДата" id="316">
-							<DataPath>тзЗадачиДизайнера.КрайняяДата</DataPath>
-							<EditMode>EnterOnInput</EditMode>
-							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-							<ContextMenu name="тзЗадачиДизайнераКрайняяДатаКонтекстноеМеню" id="317"/>
-							<ExtendedTooltip name="тзЗадачиДизайнераКрайняяДатаРасширеннаяПодсказка" id="318"/>
-						</InputField>
-					</ChildItems>
-				</Table>
 				<Table name="ПодтверждениеПКД1" id="489">
 					<TitleLocation>Top</TitleLocation>
 					<UseAlternationRowColor>true</UseAlternationRowColor>
@@ -735,6 +656,85 @@
 							<ContextMenu name="ПодтверждениеПКДДата1КонтекстноеМеню" id="506"/>
 							<ExtendedTooltip name="ПодтверждениеПКДДата1РасширеннаяПодсказка" id="507"/>
 						</LabelField>
+					</ChildItems>
+				</Table>
+				<Table name="тзЗадачиДизайнера" id="294">
+					<Representation>List</Representation>
+					<TitleLocation>Top</TitleLocation>
+					<AutoInsertNewRow>true</AutoInsertNewRow>
+					<EnableStartDrag>true</EnableStartDrag>
+					<EnableDrag>true</EnableDrag>
+					<DataPath>тзЗадачиДизайнера</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Задачи Прочие</v8:content>
+						</v8:item>
+					</Title>
+					<RowFilter xsi:nil="true"/>
+					<ContextMenu name="тзЗадачиДизайнераКонтекстноеМеню" id="295"/>
+					<AutoCommandBar name="тзЗадачиДизайнераКоманднаяПанель" id="296">
+						<Autofill>false</Autofill>
+						<ChildItems>
+							<Button name="ОткрытьКанбанТЗ" id="325">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.ОткрытьКанбанТЗ</CommandName>
+								<ExtendedTooltip name="ОткрытьКанбанТЗРасширеннаяПодсказка" id="326"/>
+							</Button>
+						</ChildItems>
+					</AutoCommandBar>
+					<ExtendedTooltip name="тзЗадачиДизайнераРасширеннаяПодсказка" id="297"/>
+					<SearchStringAddition name="тзЗадачиДизайнераСтрокаПоиска" id="298">
+						<AdditionSource>
+							<Item>тзЗадачиДизайнера</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="тзЗадачиДизайнераСтрокаПоискаКонтекстноеМеню" id="299"/>
+						<ExtendedTooltip name="тзЗадачиДизайнераСтрокаПоискаРасширеннаяПодсказка" id="300"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="тзЗадачиДизайнераСостояниеПросмотра" id="301">
+						<AdditionSource>
+							<Item>тзЗадачиДизайнера</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="тзЗадачиДизайнераСостояниеПросмотраКонтекстноеМеню" id="302"/>
+						<ExtendedTooltip name="тзЗадачиДизайнераСостояниеПросмотраРасширеннаяПодсказка" id="303"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="тзЗадачиДизайнераУправлениеПоиском" id="304">
+						<AdditionSource>
+							<Item>тзЗадачиДизайнера</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="тзЗадачиДизайнераУправлениеПоискомКонтекстноеМеню" id="305"/>
+						<ExtendedTooltip name="тзЗадачиДизайнераУправлениеПоискомРасширеннаяПодсказка" id="306"/>
+					</SearchControlAddition>
+					<Events>
+						<Event name="BeforeAddRow">тзЗадачиДизайнераПередНачаломДобавления</Event>
+						<Event name="BeforeDeleteRow">тзЗадачиДизайнераПередУдалением</Event>
+						<Event name="BeforeRowChange">тзЗадачиДизайнераПередНачаломИзменения</Event>
+					</Events>
+					<ChildItems>
+						<InputField name="тзЗадачиДизайнераПредставлениеЗадача" id="322">
+							<DataPath>тзЗадачиДизайнера.ПредставлениеЗадача</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="тзЗадачиДизайнераПредставлениеЗадачаКонтекстноеМеню" id="323"/>
+							<ExtendedTooltip name="тзЗадачиДизайнераПредставлениеЗадачаРасширеннаяПодсказка" id="324"/>
+						</InputField>
+						<InputField name="тзЗадачиДизайнераИсполнитель" id="310">
+							<DataPath>тзЗадачиДизайнера.Исполнитель</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="тзЗадачиДизайнераИсполнительКонтекстноеМеню" id="311"/>
+							<ExtendedTooltip name="тзЗадачиДизайнераИсполнительРасширеннаяПодсказка" id="312"/>
+						</InputField>
+						<InputField name="тзЗадачиДизайнераКрайняяДата" id="316">
+							<DataPath>тзЗадачиДизайнера.КрайняяДата</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="тзЗадачиДизайнераКрайняяДатаКонтекстноеМеню" id="317"/>
+							<ExtendedTooltip name="тзЗадачиДизайнераКрайняяДатаРасширеннаяПодсказка" id="318"/>
+						</InputField>
 					</ChildItems>
 				</Table>
 			</ChildItems>

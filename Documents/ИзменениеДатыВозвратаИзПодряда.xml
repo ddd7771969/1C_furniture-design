@@ -2,33 +2,33 @@
 <MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
 	<Document uuid="9a91f0ad-d585-487c-897d-56860bbaa093">
 		<InternalInfo>
-			<xr:GeneratedType name="DocumentObject.ИзменениеДатыВозвратаизПодряда" category="Object">
+			<xr:GeneratedType name="DocumentObject.ИзменениеДатыВозвратаИзПодряда" category="Object">
 				<xr:TypeId>77b13759-e95f-4ba5-8294-b4ab8ca278ff</xr:TypeId>
 				<xr:ValueId>132c609b-3d33-4b20-aae3-082d181d9d6c</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="DocumentRef.ИзменениеДатыВозвратаизПодряда" category="Ref">
+			<xr:GeneratedType name="DocumentRef.ИзменениеДатыВозвратаИзПодряда" category="Ref">
 				<xr:TypeId>fa52ed94-c446-4891-8cd2-64c49b73a610</xr:TypeId>
 				<xr:ValueId>16af4d34-329b-4be2-9688-0cdc7f011423</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="DocumentSelection.ИзменениеДатыВозвратаизПодряда" category="Selection">
+			<xr:GeneratedType name="DocumentSelection.ИзменениеДатыВозвратаИзПодряда" category="Selection">
 				<xr:TypeId>d64dab58-d672-4265-9035-cd3622d7293e</xr:TypeId>
 				<xr:ValueId>5a2b8b55-053e-4bc3-a1be-280cbbcaab25</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="DocumentList.ИзменениеДатыВозвратаизПодряда" category="List">
+			<xr:GeneratedType name="DocumentList.ИзменениеДатыВозвратаИзПодряда" category="List">
 				<xr:TypeId>4b1fadb1-e625-4771-a2d4-ba5f30433542</xr:TypeId>
 				<xr:ValueId>b3a8ce5c-9a6c-4458-8800-db8823a1c709</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="DocumentManager.ИзменениеДатыВозвратаизПодряда" category="Manager">
+			<xr:GeneratedType name="DocumentManager.ИзменениеДатыВозвратаИзПодряда" category="Manager">
 				<xr:TypeId>0b5b4136-ce15-4088-a2aa-537cda929f81</xr:TypeId>
 				<xr:ValueId>e5d6fbf0-4988-4bbc-8fd3-3eb3347a6133</xr:ValueId>
 			</xr:GeneratedType>
 		</InternalInfo>
 		<Properties>
-			<Name>ИзменениеДатыВозвратаизПодряда</Name>
+			<Name>ИзменениеДатыВозвратаИзПодряда</Name>
 			<Synonym>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Изменение даты возвратаиз подряда</v8:content>
+					<v8:content>Изменение даты возврата из подряда</v8:content>
 				</v8:item>
 			</Synonym>
 			<Comment/>
@@ -43,13 +43,13 @@
 			<Characteristics/>
 			<BasedOn/>
 			<InputByString>
-				<xr:Field>Document.ИзменениеДатыВозвратаизПодряда.StandardAttribute.Number</xr:Field>
+				<xr:Field>Document.ИзменениеДатыВозвратаИзПодряда.StandardAttribute.Number</xr:Field>
 			</InputByString>
 			<CreateOnInput>Use</CreateOnInput>
 			<SearchStringModeOnInputByString>Begin</SearchStringModeOnInputByString>
 			<FullTextSearchOnInputByString>DontUse</FullTextSearchOnInputByString>
 			<ChoiceDataGetModeOnInputByString>Directly</ChoiceDataGetModeOnInputByString>
-			<DefaultObjectForm>Document.ИзменениеДатыВозвратаизПодряда.Form.ФормаДокумента</DefaultObjectForm>
+			<DefaultObjectForm>Document.ИзменениеДатыВозвратаИзПодряда.Form.ФормаДокумента</DefaultObjectForm>
 			<DefaultListForm/>
 			<DefaultChoiceForm/>
 			<AuxiliaryObjectForm/>
@@ -204,11 +204,11 @@
 			<Form>ФормаДокумента</Form>
 			<TabularSection uuid="9d3fd8c1-2177-4281-bb9c-53d398490920">
 				<InternalInfo>
-					<xr:GeneratedType name="DocumentTabularSection.ИзменениеДатыВозвратаизПодряда.ИзделияКомплекты" category="TabularSection">
+					<xr:GeneratedType name="DocumentTabularSection.ИзменениеДатыВозвратаИзПодряда.ИзделияКомплекты" category="TabularSection">
 						<xr:TypeId>510841ec-d038-45a4-adea-e84502f31bd0</xr:TypeId>
 						<xr:ValueId>c7245272-b6fa-49fb-8fd7-38aa95be16a4</xr:ValueId>
 					</xr:GeneratedType>
-					<xr:GeneratedType name="DocumentTabularSectionRow.ИзменениеДатыВозвратаизПодряда.ИзделияКомплекты" category="TabularSectionRow">
+					<xr:GeneratedType name="DocumentTabularSectionRow.ИзменениеДатыВозвратаИзПодряда.ИзделияКомплекты" category="TabularSectionRow">
 						<xr:TypeId>978e7ebc-128d-45fa-9b38-c4b6564fca39</xr:TypeId>
 						<xr:ValueId>19a7d772-783d-483c-a0ec-dcc45b80377f</xr:ValueId>
 					</xr:GeneratedType>
