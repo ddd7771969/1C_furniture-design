@@ -135,6 +135,12 @@
 									<ContextMenu name="НеВыводитьНаДиаграммуКонтекстноеМеню" id="161"/>
 									<ExtendedTooltip name="НеВыводитьНаДиаграммуРасширеннаяПодсказка" id="162"/>
 								</CheckBoxField>
+								<InputField name="ДлинаРазрыва" id="210">
+									<DataPath>Объект.ДлинаРазрываДляГанта</DataPath>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ДлинаРазрываКонтекстноеМеню" id="211"/>
+									<ExtendedTooltip name="ДлинаРазрываРасширеннаяПодсказка" id="212"/>
+								</InputField>
 							</ChildItems>
 						</UsualGroup>
 						<InputField name="СтатусОбъекта" id="143">

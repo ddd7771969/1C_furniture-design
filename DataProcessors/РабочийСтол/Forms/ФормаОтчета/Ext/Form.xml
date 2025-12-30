@@ -658,85 +658,179 @@
 						</LabelField>
 					</ChildItems>
 				</Table>
-				<Table name="тзЗадачиДизайнера" id="294">
-					<Representation>List</Representation>
-					<TitleLocation>Top</TitleLocation>
-					<AutoInsertNewRow>true</AutoInsertNewRow>
-					<EnableStartDrag>true</EnableStartDrag>
-					<EnableDrag>true</EnableDrag>
-					<DataPath>тзЗадачиДизайнера</DataPath>
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Задачи Прочие</v8:content>
-						</v8:item>
-					</Title>
-					<RowFilter xsi:nil="true"/>
-					<ContextMenu name="тзЗадачиДизайнераКонтекстноеМеню" id="295"/>
-					<AutoCommandBar name="тзЗадачиДизайнераКоманднаяПанель" id="296">
-						<Autofill>false</Autofill>
-						<ChildItems>
-							<Button name="ОткрытьКанбанТЗ" id="325">
-								<Type>CommandBarButton</Type>
-								<CommandName>Form.Command.ОткрытьКанбанТЗ</CommandName>
-								<ExtendedTooltip name="ОткрытьКанбанТЗРасширеннаяПодсказка" id="326"/>
-							</Button>
-						</ChildItems>
-					</AutoCommandBar>
-					<ExtendedTooltip name="тзЗадачиДизайнераРасширеннаяПодсказка" id="297"/>
-					<SearchStringAddition name="тзЗадачиДизайнераСтрокаПоиска" id="298">
-						<AdditionSource>
-							<Item>тзЗадачиДизайнера</Item>
-							<Type>SearchStringRepresentation</Type>
-						</AdditionSource>
-						<ContextMenu name="тзЗадачиДизайнераСтрокаПоискаКонтекстноеМеню" id="299"/>
-						<ExtendedTooltip name="тзЗадачиДизайнераСтрокаПоискаРасширеннаяПодсказка" id="300"/>
-					</SearchStringAddition>
-					<ViewStatusAddition name="тзЗадачиДизайнераСостояниеПросмотра" id="301">
-						<AdditionSource>
-							<Item>тзЗадачиДизайнера</Item>
-							<Type>ViewStatusRepresentation</Type>
-						</AdditionSource>
-						<ContextMenu name="тзЗадачиДизайнераСостояниеПросмотраКонтекстноеМеню" id="302"/>
-						<ExtendedTooltip name="тзЗадачиДизайнераСостояниеПросмотраРасширеннаяПодсказка" id="303"/>
-					</ViewStatusAddition>
-					<SearchControlAddition name="тзЗадачиДизайнераУправлениеПоиском" id="304">
-						<AdditionSource>
-							<Item>тзЗадачиДизайнера</Item>
-							<Type>SearchControl</Type>
-						</AdditionSource>
-						<ContextMenu name="тзЗадачиДизайнераУправлениеПоискомКонтекстноеМеню" id="305"/>
-						<ExtendedTooltip name="тзЗадачиДизайнераУправлениеПоискомРасширеннаяПодсказка" id="306"/>
-					</SearchControlAddition>
-					<Events>
-						<Event name="BeforeAddRow">тзЗадачиДизайнераПередНачаломДобавления</Event>
-						<Event name="BeforeDeleteRow">тзЗадачиДизайнераПередУдалением</Event>
-						<Event name="BeforeRowChange">тзЗадачиДизайнераПередНачаломИзменения</Event>
-					</Events>
+				<UsualGroup name="Группа5" id="1144">
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа5РасширеннаяПодсказка" id="1145"/>
 					<ChildItems>
-						<InputField name="тзЗадачиДизайнераПредставлениеЗадача" id="322">
-							<DataPath>тзЗадачиДизайнера.ПредставлениеЗадача</DataPath>
-							<EditMode>EnterOnInput</EditMode>
-							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-							<ContextMenu name="тзЗадачиДизайнераПредставлениеЗадачаКонтекстноеМеню" id="323"/>
-							<ExtendedTooltip name="тзЗадачиДизайнераПредставлениеЗадачаРасширеннаяПодсказка" id="324"/>
-						</InputField>
-						<InputField name="тзЗадачиДизайнераИсполнитель" id="310">
-							<DataPath>тзЗадачиДизайнера.Исполнитель</DataPath>
-							<EditMode>EnterOnInput</EditMode>
-							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-							<ContextMenu name="тзЗадачиДизайнераИсполнительКонтекстноеМеню" id="311"/>
-							<ExtendedTooltip name="тзЗадачиДизайнераИсполнительРасширеннаяПодсказка" id="312"/>
-						</InputField>
-						<InputField name="тзЗадачиДизайнераКрайняяДата" id="316">
-							<DataPath>тзЗадачиДизайнера.КрайняяДата</DataPath>
-							<EditMode>EnterOnInput</EditMode>
-							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-							<ContextMenu name="тзЗадачиДизайнераКрайняяДатаКонтекстноеМеню" id="317"/>
-							<ExtendedTooltip name="тзЗадачиДизайнераКрайняяДатаРасширеннаяПодсказка" id="318"/>
-						</InputField>
+						<Table name="тзЗадачиДизайнера" id="294">
+							<Representation>List</Representation>
+							<TitleLocation>Top</TitleLocation>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>тзЗадачиДизайнера</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Задачи Прочие</v8:content>
+								</v8:item>
+							</Title>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="тзЗадачиДизайнераКонтекстноеМеню" id="295"/>
+							<AutoCommandBar name="тзЗадачиДизайнераКоманднаяПанель" id="296">
+								<Autofill>false</Autofill>
+								<ChildItems>
+									<Button name="ОткрытьКанбанТЗ" id="325">
+										<Type>CommandBarButton</Type>
+										<CommandName>Form.Command.ОткрытьКанбанТЗ</CommandName>
+										<ExtendedTooltip name="ОткрытьКанбанТЗРасширеннаяПодсказка" id="326"/>
+									</Button>
+								</ChildItems>
+							</AutoCommandBar>
+							<ExtendedTooltip name="тзЗадачиДизайнераРасширеннаяПодсказка" id="297"/>
+							<SearchStringAddition name="тзЗадачиДизайнераСтрокаПоиска" id="298">
+								<AdditionSource>
+									<Item>тзЗадачиДизайнера</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="тзЗадачиДизайнераСтрокаПоискаКонтекстноеМеню" id="299"/>
+								<ExtendedTooltip name="тзЗадачиДизайнераСтрокаПоискаРасширеннаяПодсказка" id="300"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="тзЗадачиДизайнераСостояниеПросмотра" id="301">
+								<AdditionSource>
+									<Item>тзЗадачиДизайнера</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="тзЗадачиДизайнераСостояниеПросмотраКонтекстноеМеню" id="302"/>
+								<ExtendedTooltip name="тзЗадачиДизайнераСостояниеПросмотраРасширеннаяПодсказка" id="303"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="тзЗадачиДизайнераУправлениеПоиском" id="304">
+								<AdditionSource>
+									<Item>тзЗадачиДизайнера</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="тзЗадачиДизайнераУправлениеПоискомКонтекстноеМеню" id="305"/>
+								<ExtendedTooltip name="тзЗадачиДизайнераУправлениеПоискомРасширеннаяПодсказка" id="306"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="BeforeAddRow">тзЗадачиДизайнераПередНачаломДобавления</Event>
+								<Event name="BeforeDeleteRow">тзЗадачиДизайнераПередУдалением</Event>
+								<Event name="BeforeRowChange">тзЗадачиДизайнераПередНачаломИзменения</Event>
+							</Events>
+							<ChildItems>
+								<InputField name="тзЗадачиДизайнераПредставлениеЗадача" id="322">
+									<DataPath>тзЗадачиДизайнера.ПредставлениеЗадача</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="тзЗадачиДизайнераПредставлениеЗадачаКонтекстноеМеню" id="323"/>
+									<ExtendedTooltip name="тзЗадачиДизайнераПредставлениеЗадачаРасширеннаяПодсказка" id="324"/>
+								</InputField>
+								<InputField name="тзЗадачиДизайнераИсполнитель" id="310">
+									<DataPath>тзЗадачиДизайнера.Исполнитель</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="тзЗадачиДизайнераИсполнительКонтекстноеМеню" id="311"/>
+									<ExtendedTooltip name="тзЗадачиДизайнераИсполнительРасширеннаяПодсказка" id="312"/>
+								</InputField>
+								<InputField name="тзЗадачиДизайнераКрайняяДата" id="316">
+									<DataPath>тзЗадачиДизайнера.КрайняяДата</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="тзЗадачиДизайнераКрайняяДатаКонтекстноеМеню" id="317"/>
+									<ExtendedTooltip name="тзЗадачиДизайнераКрайняяДатаРасширеннаяПодсказка" id="318"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+						<Table name="ЗадачиМенеджера1" id="1146">
+							<UseAlternationRowColor>true</UseAlternationRowColor>
+							<EnableStartDrag>true</EnableStartDrag>
+							<DataPath>ЗадачиМенеджера</DataPath>
+							<RowPictureDataPath>ЗадачиМенеджера.DefaultPicture</RowPictureDataPath>
+							<AutoRefresh>false</AutoRefresh>
+							<AutoRefreshPeriod>60</AutoRefreshPeriod>
+							<Period>
+								<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+								<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+								<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+							</Period>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<RestoreCurrentRow>false</RestoreCurrentRow>
+							<TopLevelParent xsi:nil="true"/>
+							<ShowRoot>true</ShowRoot>
+							<AllowRootChoice>false</AllowRootChoice>
+							<UpdateOnDataChange>Auto</UpdateOnDataChange>
+							<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
+							<ContextMenu name="ЗадачиМенеджера1КонтекстноеМеню" id="1147"/>
+							<AutoCommandBar name="ЗадачиМенеджера1КоманднаяПанель" id="1148"/>
+							<ExtendedTooltip name="ЗадачиМенеджера1РасширеннаяПодсказка" id="1149"/>
+							<SearchStringAddition name="ЗадачиМенеджера1СтрокаПоиска" id="1150">
+								<AdditionSource>
+									<Item>ЗадачиМенеджера1</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ЗадачиМенеджера1СтрокаПоискаКонтекстноеМеню" id="1151"/>
+								<ExtendedTooltip name="ЗадачиМенеджера1СтрокаПоискаРасширеннаяПодсказка" id="1152"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ЗадачиМенеджера1СостояниеПросмотра" id="1153">
+								<AdditionSource>
+									<Item>ЗадачиМенеджера1</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ЗадачиМенеджера1СостояниеПросмотраКонтекстноеМеню" id="1154"/>
+								<ExtendedTooltip name="ЗадачиМенеджера1СостояниеПросмотраРасширеннаяПодсказка" id="1155"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ЗадачиМенеджера1УправлениеПоиском" id="1156">
+								<AdditionSource>
+									<Item>ЗадачиМенеджера1</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ЗадачиМенеджера1УправлениеПоискомКонтекстноеМеню" id="1157"/>
+								<ExtendedTooltip name="ЗадачиМенеджера1УправлениеПоискомРасширеннаяПодсказка" id="1158"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="ЗадачиМенеджера1Наименование" id="1186">
+									<DataPath>ЗадачиМенеджера.Наименование</DataPath>
+									<ContextMenu name="ЗадачиМенеджера1НаименованиеКонтекстноеМеню" id="1187"/>
+									<ExtendedTooltip name="ЗадачиМенеджера1НаименованиеРасширеннаяПодсказка" id="1188"/>
+								</LabelField>
+								<LabelField name="ЗадачиМенеджера1Исполнитель" id="1174">
+									<DataPath>ЗадачиМенеджера.Исполнитель</DataPath>
+									<ContextMenu name="ЗадачиМенеджера1ИсполнительКонтекстноеМеню" id="1175"/>
+									<ExtendedTooltip name="ЗадачиМенеджера1ИсполнительРасширеннаяПодсказка" id="1176"/>
+								</LabelField>
+								<LabelField name="ЗадачиМенеджера1ТекущаяСтадияПолноеНаименование" id="1216">
+									<DataPath>ЗадачиМенеджера.ТекущаяСтадияПолноеНаименование</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Текущая стадия</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ЗадачиМенеджера1ТекущаяСтадияПолноеНаименованиеКонтекстноеМеню" id="1217"/>
+									<ExtendedTooltip name="ЗадачиМенеджера1ТекущаяСтадияПолноеНаименованиеРасширеннаяПодсказка" id="1218"/>
+								</LabelField>
+								<LabelField name="ЗадачиМенеджера1КонтрольнаяДата" id="1231">
+									<DataPath>ЗадачиМенеджера.КонтрольнаяДата</DataPath>
+									<Format>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>ДФ=dd.MM.yyyy</v8:content>
+										</v8:item>
+									</Format>
+									<ContextMenu name="ЗадачиМенеджера1КонтрольнаяДатаКонтекстноеМеню" id="1232"/>
+									<ExtendedTooltip name="ЗадачиМенеджера1КонтрольнаяДатаРасширеннаяПодсказка" id="1233"/>
+								</LabelField>
+								<LabelField name="ЗадачиМенеджера1Комментарий1" id="1234">
+									<DataPath>ЗадачиМенеджера.Комментарий1</DataPath>
+									<ContextMenu name="ЗадачиМенеджера1Комментарий1КонтекстноеМеню" id="1235"/>
+									<ExtendedTooltip name="ЗадачиМенеджера1Комментарий1РасширеннаяПодсказка" id="1236"/>
+								</LabelField>
+							</ChildItems>
+						</Table>
 					</ChildItems>
-				</Table>
+				</UsualGroup>
 			</ChildItems>
 		</UsualGroup>
 		<UsualGroup name="ГруппаВедущийКонструктор" id="330">
@@ -1682,15 +1776,15 @@
 							<ContextMenu name="ЗадачиМенеджераТекущаяСтадияПолноеНаименованиеКонтекстноеМеню" id="1142"/>
 							<ExtendedTooltip name="ЗадачиМенеджераТекущаяСтадияПолноеНаименованиеРасширеннаяПодсказка" id="1143"/>
 						</LabelField>
-						<LabelField name="ЗадачиМенеджераПроект" id="1126">
-							<DataPath>ЗадачиМенеджера.Проект</DataPath>
-							<ContextMenu name="ЗадачиМенеджераПроектКонтекстноеМеню" id="1127"/>
-							<ExtendedTooltip name="ЗадачиМенеджераПроектРасширеннаяПодсказка" id="1128"/>
+						<LabelField name="ЗадачиМенеджераКомментарий1" id="1225">
+							<DataPath>ЗадачиМенеджера.Комментарий1</DataPath>
+							<ContextMenu name="ЗадачиМенеджераКомментарий1КонтекстноеМеню" id="1226"/>
+							<ExtendedTooltip name="ЗадачиМенеджераКомментарий1РасширеннаяПодсказка" id="1227"/>
 						</LabelField>
-						<LabelField name="ЗадачиМенеджераДата" id="1129">
-							<DataPath>ЗадачиМенеджера.Дата</DataPath>
-							<ContextMenu name="ЗадачиМенеджераДатаКонтекстноеМеню" id="1130"/>
-							<ExtendedTooltip name="ЗадачиМенеджераДатаРасширеннаяПодсказка" id="1131"/>
+						<LabelField name="ЗадачиМенеджераКонтрольнаяДата" id="1228">
+							<DataPath>ЗадачиМенеджера.КонтрольнаяДата</DataPath>
+							<ContextMenu name="ЗадачиМенеджераКонтрольнаяДатаКонтекстноеМеню" id="1229"/>
+							<ExtendedTooltip name="ЗадачиМенеджераКонтрольнаяДатаРасширеннаяПодсказка" id="1230"/>
 						</LabelField>
 					</ChildItems>
 				</Table>
@@ -3005,11 +3099,15 @@
 		Наблюдатель КАК Наблюдатель
 	) КАК Наблюдатели,
 	ДанныеКомплектаСрезПоследних.ТекущаяСтадия КАК ТекущаяСтадия,
-	ДанныеКомплектаСрезПоследних.ТекущаяСтадия.ПолноеНаименование КАК ТекущаяСтадияПолноеНаименование
+	ДанныеКомплектаСрезПоследних.ТекущаяСтадия.ПолноеНаименование КАК ТекущаяСтадияПолноеНаименование,
+	ВнешнееДействиеСрезПоследних.КонтрольнаяДата КАК КонтрольнаяДата,
+	ВнешнееДействиеСрезПоследних.Комментарий КАК Комментарий1
 ИЗ
 	Задача.Задачи_ПКД КАК Задачи_ПКД
 		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ДанныеКомплекта.СрезПоследних КАК ДанныеКомплектаСрезПоследних
 		ПО Задачи_ПКД.ОбъектТЗ = ДанныеКомплектаСрезПоследних.Комплект
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ВнешнееДействие.СрезПоследних КАК ВнешнееДействиеСрезПоследних
+		ПО (ВнешнееДействиеСрезПоследних.Объект = Задачи_ПКД.ОбъектТЗ)
 ГДЕ
 	Задачи_ПКД.ТипЗадачи = ЗНАЧЕНИЕ(Перечисление.ТипыЗадачКонструирования.ОжиданиеМенеджером)
 	И ВЫБОР
@@ -3139,6 +3237,24 @@
 				<Field xsi:type="dcssch:DataSetFieldField">
 					<dcssch:dataPath>ТекущаяСтадияПолноеНаименование</dcssch:dataPath>
 					<dcssch:field>ТекущаяСтадияПолноеНаименование</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Объект</dcssch:dataPath>
+					<dcssch:field>Объект</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>КонтрольнаяДата</dcssch:dataPath>
+					<dcssch:field>КонтрольнаяДата</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Комментарий1</dcssch:dataPath>
+					<dcssch:field>Комментарий1</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Комментарий1</v8:content>
+						</v8:item>
+					</dcssch:title>
 				</Field>
 				<Parameter>
 					<dcssch:name>Исполнитель</dcssch:name>

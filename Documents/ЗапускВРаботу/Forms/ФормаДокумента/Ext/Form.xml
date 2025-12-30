@@ -540,6 +540,38 @@
 					<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
 					<ExtendedTooltip name="КомплектыГруппаМатериалыРасширеннаяПодсказка" id="183"/>
 				</ColumnGroup>
+				<CheckBoxField name="КомплектыГОСТ" id="199">
+					<DataPath>Объект.Комплекты.ГОСТ</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="КомплектыГОСТКонтекстноеМеню" id="200"/>
+					<ExtendedTooltip name="КомплектыГОСТРасширеннаяПодсказка" id="201"/>
+					<Events>
+						<Event name="OnChange">КомплектыГОСТПриИзменении</Event>
+					</Events>
+				</CheckBoxField>
+				<InputField name="КомплектыКатегорияКонструктора" id="196">
+					<DataPath>Объект.Комплекты.КатегорияКонструктора</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<SpinButton>true</SpinButton>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<MaxValue xsi:type="xs:decimal">4</MaxValue>
+					<ContextMenu name="КомплектыКатегорияКонструктораКонтекстноеМеню" id="197"/>
+					<ExtendedTooltip name="КомплектыКатегорияКонструктораРасширеннаяПодсказка" id="198"/>
+					<Events>
+						<Event name="OnChange">КомплектыКатегорияКонструктораПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="КомплектыТипКомплекта" id="193">
+					<DataPath>Объект.Комплекты.ТипКомплекта</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="КомплектыТипКомплектаКонтекстноеМеню" id="194"/>
+					<ExtendedTooltip name="КомплектыТипКомплектаРасширеннаяПодсказка" id="195"/>
+					<Events>
+						<Event name="OnChange">КомплектыТипКомплектаПриИзменении</Event>
+					</Events>
+				</InputField>
 				<InputField name="КомплектыКомментарий" id="98">
 					<DataPath>Объект.Комплекты.Комментарий</DataPath>
 					<EditMode>EnterOnInput</EditMode>
@@ -717,6 +749,44 @@
 						</Title>
 						<Type>
 							<v8:Type>xs:boolean</v8:Type>
+						</Type>
+					</Column>
+					<Column name="ТипКомплекта" id="7">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Тип комплекта</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>cfg:CatalogRef.ТипыКомплектов</v8:Type>
+						</Type>
+					</Column>
+					<Column name="ГОСТ" id="8">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>ГОСТ</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:boolean</v8:Type>
+						</Type>
+					</Column>
+					<Column name="КатегорияКонструктора" id="13">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Категория конструктора</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:decimal</v8:Type>
+							<v8:NumberQualifiers>
+								<v8:Digits>1</v8:Digits>
+								<v8:FractionDigits>0</v8:FractionDigits>
+								<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+							</v8:NumberQualifiers>
 						</Type>
 					</Column>
 				</AdditionalColumns>
