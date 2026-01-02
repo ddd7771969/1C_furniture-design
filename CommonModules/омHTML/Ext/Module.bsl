@@ -56,7 +56,7 @@
 			|    justify-content: center;
 			|    min-height: 100vh;
 			|    padding: 50px;
-			|    background-color: #18191C;
+			|    background-color: #BBBBFF;
 			|    color: #e6dfdf;
 			|    font-family: ""Roboto"", sans-serif;
 			|  }
@@ -83,6 +83,45 @@
 			|  padding: 10px;
 			|	border: 3px solid rgb(43, 129, 17);
 			| } </style>
+			|"	
+	ИначеЕсли НомерСтиля = 2 Тогда
+		
+		Возврат "<style>
+			|body {
+			|    display: flex;
+			|    align-items: center;
+			|    justify-content: center;
+			|    min-height: 100vh;
+			|    padding: 5px;
+			|    background-color: #eeeeee;
+			|    color: #020202;
+			|    font-family: ""Roboto"", sans-serif;			
+			|  }
+			|
+			|table {
+			|  width: 100%;
+			|  border-top: 7px solid rgb(43, 129, 17);
+			|  border-collapse: collapse;
+			|  text-align: center;
+			|  margin-bottom: 20px;
+			|  border: 1px solid #101010;
+			|}
+			|
+			|::-webkit-scrollbar {
+ 			| width: 0;
+			|}
+			|
+			|td {
+			|  text-align: center;
+			|	padding: 5px;
+			|	border: 3px solid rgb(43, 129, 17);
+			|}
+			|
+			|th {
+			|  text-align: center;
+			|	padding: 5px;
+			|	border: 3px solid rgb(43, 129, 17);
+			|}</style>
 			|"	
 	КонецЕсли;	
 	
