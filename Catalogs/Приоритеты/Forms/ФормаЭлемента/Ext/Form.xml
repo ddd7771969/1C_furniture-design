@@ -39,6 +39,7 @@
 				<InputField name="НомерПоПорядку" id="13">
 					<DataPath>Объект.НомерПоПорядку</DataPath>
 					<EditMode>EnterOnInput</EditMode>
+					<SpinButton>true</SpinButton>
 					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 					<ContextMenu name="НомерПоПорядкуКонтекстноеМеню" id="14"/>
 					<ExtendedTooltip name="НомерПоПорядкуРасширеннаяПодсказка" id="15"/>
@@ -46,6 +47,7 @@
 				<InputField name="ВсегоЗадач" id="7">
 					<DataPath>Объект.ВсегоЗадач</DataPath>
 					<EditMode>EnterOnInput</EditMode>
+					<SpinButton>true</SpinButton>
 					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 					<ContextMenu name="ВсегоЗадачКонтекстноеМеню" id="8"/>
 					<ExtendedTooltip name="ВсегоЗадачРасширеннаяПодсказка" id="9"/>
@@ -53,6 +55,7 @@
 				<InputField name="КоличествоЗадачУКонструктора" id="10">
 					<DataPath>Объект.КоличествоЗадачУКонструктора</DataPath>
 					<EditMode>EnterOnInput</EditMode>
+					<SpinButton>true</SpinButton>
 					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 					<ContextMenu name="КоличествоЗадачУКонструктораКонтекстноеМеню" id="11"/>
 					<ExtendedTooltip name="КоличествоЗадачУКонструктораРасширеннаяПодсказка" id="12"/>
@@ -79,13 +82,19 @@
 						<PictureField name="АдресКартинкиМаленькой" id="28">
 							<DataPath>АдресКартинкиМаленькой</DataPath>
 							<TitleLocation>None</TitleLocation>
+							<NonselectedPictureText>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Загрузите картинку</v8:content>
+								</v8:item>
+							</NonselectedPictureText>
 							<EnableStartDrag>true</EnableStartDrag>
 							<EnableDrag>true</EnableDrag>
 							<ContextMenu name="АдресКартинкиМаленькойКонтекстноеМеню" id="29"/>
 							<ExtendedTooltip name="АдресКартинкиМаленькойРасширеннаяПодсказка" id="30"/>
 							<Events>
-								<Event name="DragCheck">АдресКартинкиПроверкаПеретаскивания</Event>
-								<Event name="Drag">АдресКартинкиПеретаскивание</Event>
+								<Event name="DragCheck">АдресКартинкиМаленькойПроверкаПеретаскивания</Event>
+								<Event name="Drag">АдресКартинкиМаленькойПеретаскивание</Event>
 							</Events>
 						</PictureField>
 					</ChildItems>
@@ -104,13 +113,19 @@
 						<PictureField name="АдресКартинкиБольшой" id="31">
 							<DataPath>АдресКартинкиБольшой</DataPath>
 							<TitleLocation>None</TitleLocation>
+							<NonselectedPictureText>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Загрузите картинку</v8:content>
+								</v8:item>
+							</NonselectedPictureText>
 							<EnableStartDrag>true</EnableStartDrag>
 							<EnableDrag>true</EnableDrag>
 							<ContextMenu name="АдресКартинкиБольшойКонтекстноеМеню" id="32"/>
 							<ExtendedTooltip name="АдресКартинкиБольшойРасширеннаяПодсказка" id="33"/>
 							<Events>
-								<Event name="DragCheck">АдресКартинкиПроверкаПеретаскивания</Event>
-								<Event name="Drag">АдресКартинкиПеретаскивание</Event>
+								<Event name="DragCheck">АдресКартинкиБольшойПроверкаПеретаскивания</Event>
+								<Event name="Drag">АдресКартинкиБольшойПеретаскивание</Event>
 							</Events>
 						</PictureField>
 					</ChildItems>
