@@ -635,6 +635,11 @@
 							<ContextMenu name="ПодтверждениеПКД1ЗаголовокКонтекстноеМеню" id="1078"/>
 							<ExtendedTooltip name="ПодтверждениеПКД1ЗаголовокРасширеннаяПодсказка" id="1079"/>
 						</LabelField>
+						<LabelField name="ПодтверждениеПКД1Конструктор" id="1237">
+							<DataPath>ПодтверждениеПКД.Конструктор</DataPath>
+							<ContextMenu name="ПодтверждениеПКД1КонструкторКонтекстноеМеню" id="1238"/>
+							<ExtendedTooltip name="ПодтверждениеПКД1КонструкторРасширеннаяПодсказка" id="1239"/>
+						</LabelField>
 						<LabelField name="ПодтверждениеПКДИсполнитель1" id="508">
 							<DataPath>ПодтверждениеПКД.Исполнитель</DataPath>
 							<ContextMenu name="ПодтверждениеПКДИсполнитель1КонтекстноеМеню" id="509"/>
@@ -664,6 +669,103 @@
 					<ShowTitle>false</ShowTitle>
 					<ExtendedTooltip name="Группа5РасширеннаяПодсказка" id="1145"/>
 					<ChildItems>
+						<Table name="ЗадачиМенеджера1" id="1146">
+							<TitleLocation>Top</TitleLocation>
+							<UseAlternationRowColor>true</UseAlternationRowColor>
+							<EnableStartDrag>true</EnableStartDrag>
+							<DataPath>ЗадачиМенеджера</DataPath>
+							<RowPictureDataPath>ЗадачиМенеджера.DefaultPicture</RowPictureDataPath>
+							<AutoRefresh>false</AutoRefresh>
+							<AutoRefreshPeriod>60</AutoRefreshPeriod>
+							<Period>
+								<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+								<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+								<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+							</Period>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<RestoreCurrentRow>false</RestoreCurrentRow>
+							<TopLevelParent xsi:nil="true"/>
+							<ShowRoot>true</ShowRoot>
+							<AllowRootChoice>false</AllowRootChoice>
+							<UpdateOnDataChange>Auto</UpdateOnDataChange>
+							<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
+							<ContextMenu name="ЗадачиМенеджера1КонтекстноеМеню" id="1147"/>
+							<AutoCommandBar name="ЗадачиМенеджера1КоманднаяПанель" id="1148"/>
+							<ExtendedTooltip name="ЗадачиМенеджера1РасширеннаяПодсказка" id="1149"/>
+							<SearchStringAddition name="ЗадачиМенеджера1СтрокаПоиска" id="1150">
+								<AdditionSource>
+									<Item>ЗадачиМенеджера1</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ЗадачиМенеджера1СтрокаПоискаКонтекстноеМеню" id="1151"/>
+								<ExtendedTooltip name="ЗадачиМенеджера1СтрокаПоискаРасширеннаяПодсказка" id="1152"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ЗадачиМенеджера1СостояниеПросмотра" id="1153">
+								<AdditionSource>
+									<Item>ЗадачиМенеджера1</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ЗадачиМенеджера1СостояниеПросмотраКонтекстноеМеню" id="1154"/>
+								<ExtendedTooltip name="ЗадачиМенеджера1СостояниеПросмотраРасширеннаяПодсказка" id="1155"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ЗадачиМенеджера1УправлениеПоиском" id="1156">
+								<AdditionSource>
+									<Item>ЗадачиМенеджера1</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ЗадачиМенеджера1УправлениеПоискомКонтекстноеМеню" id="1157"/>
+								<ExtendedTooltip name="ЗадачиМенеджера1УправлениеПоискомРасширеннаяПодсказка" id="1158"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="ЗадачиМенеджера1Наименование" id="1186">
+									<DataPath>ЗадачиМенеджера.Наименование</DataPath>
+									<ContextMenu name="ЗадачиМенеджера1НаименованиеКонтекстноеМеню" id="1187"/>
+									<ExtendedTooltip name="ЗадачиМенеджера1НаименованиеРасширеннаяПодсказка" id="1188"/>
+								</LabelField>
+								<LabelField name="ЗадачиМенеджера1Исполнитель" id="1174">
+									<DataPath>ЗадачиМенеджера.Исполнитель</DataPath>
+									<ContextMenu name="ЗадачиМенеджера1ИсполнительКонтекстноеМеню" id="1175"/>
+									<ExtendedTooltip name="ЗадачиМенеджера1ИсполнительРасширеннаяПодсказка" id="1176"/>
+								</LabelField>
+								<LabelField name="ЗадачиМенеджера1ТекущаяСтадияПолноеНаименование" id="1216">
+									<DataPath>ЗадачиМенеджера.ТекущаяСтадияПолноеНаименование</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Текущая стадия</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ЗадачиМенеджера1ТекущаяСтадияПолноеНаименованиеКонтекстноеМеню" id="1217"/>
+									<ExtendedTooltip name="ЗадачиМенеджера1ТекущаяСтадияПолноеНаименованиеРасширеннаяПодсказка" id="1218"/>
+								</LabelField>
+								<LabelField name="ЗадачиМенеджера1НачалоДействия" id="1243">
+									<DataPath>ЗадачиМенеджера.НачалоДействия</DataPath>
+									<ContextMenu name="ЗадачиМенеджера1НачалоДействияКонтекстноеМеню" id="1244"/>
+									<ExtendedTooltip name="ЗадачиМенеджера1НачалоДействияРасширеннаяПодсказка" id="1245"/>
+								</LabelField>
+								<LabelField name="ЗадачиМенеджера1Конструктор" id="1240">
+									<DataPath>ЗадачиМенеджера.Конструктор</DataPath>
+									<ContextMenu name="ЗадачиМенеджера1КонструкторКонтекстноеМеню" id="1241"/>
+									<ExtendedTooltip name="ЗадачиМенеджера1КонструкторРасширеннаяПодсказка" id="1242"/>
+								</LabelField>
+								<LabelField name="ЗадачиМенеджера1КонтрольнаяДата" id="1231">
+									<DataPath>ЗадачиМенеджера.КонтрольнаяДата</DataPath>
+									<Format>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>ДФ=dd.MM.yyyy</v8:content>
+										</v8:item>
+									</Format>
+									<ContextMenu name="ЗадачиМенеджера1КонтрольнаяДатаКонтекстноеМеню" id="1232"/>
+									<ExtendedTooltip name="ЗадачиМенеджера1КонтрольнаяДатаРасширеннаяПодсказка" id="1233"/>
+								</LabelField>
+								<LabelField name="ЗадачиМенеджера1Комментарий1" id="1234">
+									<DataPath>ЗадачиМенеджера.Комментарий1</DataPath>
+									<ContextMenu name="ЗадачиМенеджера1Комментарий1КонтекстноеМеню" id="1235"/>
+									<ExtendedTooltip name="ЗадачиМенеджера1Комментарий1РасширеннаяПодсказка" id="1236"/>
+								</LabelField>
+							</ChildItems>
+						</Table>
 						<Table name="тзЗадачиДизайнера" id="294">
 							<Representation>List</Representation>
 							<TitleLocation>Top</TitleLocation>
@@ -741,92 +843,6 @@
 									<ContextMenu name="тзЗадачиДизайнераКрайняяДатаКонтекстноеМеню" id="317"/>
 									<ExtendedTooltip name="тзЗадачиДизайнераКрайняяДатаРасширеннаяПодсказка" id="318"/>
 								</InputField>
-							</ChildItems>
-						</Table>
-						<Table name="ЗадачиМенеджера1" id="1146">
-							<UseAlternationRowColor>true</UseAlternationRowColor>
-							<EnableStartDrag>true</EnableStartDrag>
-							<DataPath>ЗадачиМенеджера</DataPath>
-							<RowPictureDataPath>ЗадачиМенеджера.DefaultPicture</RowPictureDataPath>
-							<AutoRefresh>false</AutoRefresh>
-							<AutoRefreshPeriod>60</AutoRefreshPeriod>
-							<Period>
-								<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
-								<v8:startDate>0001-01-01T00:00:00</v8:startDate>
-								<v8:endDate>0001-01-01T00:00:00</v8:endDate>
-							</Period>
-							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
-							<RestoreCurrentRow>false</RestoreCurrentRow>
-							<TopLevelParent xsi:nil="true"/>
-							<ShowRoot>true</ShowRoot>
-							<AllowRootChoice>false</AllowRootChoice>
-							<UpdateOnDataChange>Auto</UpdateOnDataChange>
-							<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
-							<ContextMenu name="ЗадачиМенеджера1КонтекстноеМеню" id="1147"/>
-							<AutoCommandBar name="ЗадачиМенеджера1КоманднаяПанель" id="1148"/>
-							<ExtendedTooltip name="ЗадачиМенеджера1РасширеннаяПодсказка" id="1149"/>
-							<SearchStringAddition name="ЗадачиМенеджера1СтрокаПоиска" id="1150">
-								<AdditionSource>
-									<Item>ЗадачиМенеджера1</Item>
-									<Type>SearchStringRepresentation</Type>
-								</AdditionSource>
-								<ContextMenu name="ЗадачиМенеджера1СтрокаПоискаКонтекстноеМеню" id="1151"/>
-								<ExtendedTooltip name="ЗадачиМенеджера1СтрокаПоискаРасширеннаяПодсказка" id="1152"/>
-							</SearchStringAddition>
-							<ViewStatusAddition name="ЗадачиМенеджера1СостояниеПросмотра" id="1153">
-								<AdditionSource>
-									<Item>ЗадачиМенеджера1</Item>
-									<Type>ViewStatusRepresentation</Type>
-								</AdditionSource>
-								<ContextMenu name="ЗадачиМенеджера1СостояниеПросмотраКонтекстноеМеню" id="1154"/>
-								<ExtendedTooltip name="ЗадачиМенеджера1СостояниеПросмотраРасширеннаяПодсказка" id="1155"/>
-							</ViewStatusAddition>
-							<SearchControlAddition name="ЗадачиМенеджера1УправлениеПоиском" id="1156">
-								<AdditionSource>
-									<Item>ЗадачиМенеджера1</Item>
-									<Type>SearchControl</Type>
-								</AdditionSource>
-								<ContextMenu name="ЗадачиМенеджера1УправлениеПоискомКонтекстноеМеню" id="1157"/>
-								<ExtendedTooltip name="ЗадачиМенеджера1УправлениеПоискомРасширеннаяПодсказка" id="1158"/>
-							</SearchControlAddition>
-							<ChildItems>
-								<LabelField name="ЗадачиМенеджера1Наименование" id="1186">
-									<DataPath>ЗадачиМенеджера.Наименование</DataPath>
-									<ContextMenu name="ЗадачиМенеджера1НаименованиеКонтекстноеМеню" id="1187"/>
-									<ExtendedTooltip name="ЗадачиМенеджера1НаименованиеРасширеннаяПодсказка" id="1188"/>
-								</LabelField>
-								<LabelField name="ЗадачиМенеджера1Исполнитель" id="1174">
-									<DataPath>ЗадачиМенеджера.Исполнитель</DataPath>
-									<ContextMenu name="ЗадачиМенеджера1ИсполнительКонтекстноеМеню" id="1175"/>
-									<ExtendedTooltip name="ЗадачиМенеджера1ИсполнительРасширеннаяПодсказка" id="1176"/>
-								</LabelField>
-								<LabelField name="ЗадачиМенеджера1ТекущаяСтадияПолноеНаименование" id="1216">
-									<DataPath>ЗадачиМенеджера.ТекущаяСтадияПолноеНаименование</DataPath>
-									<Title>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>Текущая стадия</v8:content>
-										</v8:item>
-									</Title>
-									<ContextMenu name="ЗадачиМенеджера1ТекущаяСтадияПолноеНаименованиеКонтекстноеМеню" id="1217"/>
-									<ExtendedTooltip name="ЗадачиМенеджера1ТекущаяСтадияПолноеНаименованиеРасширеннаяПодсказка" id="1218"/>
-								</LabelField>
-								<LabelField name="ЗадачиМенеджера1КонтрольнаяДата" id="1231">
-									<DataPath>ЗадачиМенеджера.КонтрольнаяДата</DataPath>
-									<Format>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>ДФ=dd.MM.yyyy</v8:content>
-										</v8:item>
-									</Format>
-									<ContextMenu name="ЗадачиМенеджера1КонтрольнаяДатаКонтекстноеМеню" id="1232"/>
-									<ExtendedTooltip name="ЗадачиМенеджера1КонтрольнаяДатаРасширеннаяПодсказка" id="1233"/>
-								</LabelField>
-								<LabelField name="ЗадачиМенеджера1Комментарий1" id="1234">
-									<DataPath>ЗадачиМенеджера.Комментарий1</DataPath>
-									<ContextMenu name="ЗадачиМенеджера1Комментарий1КонтекстноеМеню" id="1235"/>
-									<ExtendedTooltip name="ЗадачиМенеджера1Комментарий1РасширеннаяПодсказка" id="1236"/>
-								</LabelField>
 							</ChildItems>
 						</Table>
 					</ChildItems>
@@ -1038,17 +1054,6 @@
 											<ContextMenu name="ПодтверждениеПКДЕстьФайлыКонтекстноеМеню" id="1139"/>
 											<ExtendedTooltip name="ПодтверждениеПКДЕстьФайлыРасширеннаяПодсказка" id="1140"/>
 										</PictureField>
-										<LabelField name="ПодтверждениеПКДПереходПредставление" id="1086">
-											<DataPath>ПодтверждениеПКД.ПереходПредставление</DataPath>
-											<Title>
-												<v8:item>
-													<v8:lang>ru</v8:lang>
-													<v8:content>Д.И.Ред.Рек</v8:content>
-												</v8:item>
-											</Title>
-											<ContextMenu name="ПодтверждениеПКДПереходПредставлениеКонтекстноеМеню" id="1087"/>
-											<ExtendedTooltip name="ПодтверждениеПКДПереходПредставлениеРасширеннаяПодсказка" id="1088"/>
-										</LabelField>
 										<LabelField name="ПодтверждениеПКДНаименование" id="462">
 											<DataPath>ПодтверждениеПКД.Заголовок</DataPath>
 											<Title>
@@ -1059,6 +1064,11 @@
 											</Title>
 											<ContextMenu name="ПодтверждениеПКДНаименованиеКонтекстноеМеню" id="463"/>
 											<ExtendedTooltip name="ПодтверждениеПКДНаименованиеРасширеннаяПодсказка" id="464"/>
+										</LabelField>
+										<LabelField name="ПодтверждениеПКДКонструктор" id="1246">
+											<DataPath>ПодтверждениеПКД.Конструктор</DataPath>
+											<ContextMenu name="ПодтверждениеПКДКонструкторКонтекстноеМеню" id="1247"/>
+											<ExtendedTooltip name="ПодтверждениеПКДКонструкторРасширеннаяПодсказка" id="1248"/>
 										</LabelField>
 										<LabelField name="ПодтверждениеПКДИсполнитель" id="450">
 											<DataPath>ПодтверждениеПКД.Исполнитель</DataPath>
@@ -1097,7 +1107,7 @@
 									<Title>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
-											<v8:content>Проверка.РКД</v8:content>
+											<v8:content>Утверждение.РКД</v8:content>
 										</v8:item>
 									</Title>
 									<AutoRefresh>false</AutoRefresh>
@@ -1144,27 +1154,16 @@
 										<ExtendedTooltip name="ПодтверждениеРКДУправлениеПоискомРасширеннаяПодсказка" id="1101"/>
 									</SearchControlAddition>
 									<ChildItems>
-										<LabelField name="ПодтверждениеРКДПереходПредставление" id="1114">
-											<DataPath>ПодтверждениеРКД.ПереходПредставление</DataPath>
-											<Title>
-												<v8:item>
-													<v8:lang>ru</v8:lang>
-													<v8:content>Д.И.Ред.Рек</v8:content>
-												</v8:item>
-											</Title>
-											<ContextMenu name="ПодтверждениеРКДПереходПредставлениеКонтекстноеМеню" id="1115"/>
-											<ExtendedTooltip name="ПодтверждениеРКДПереходПредставлениеРасширеннаяПодсказка" id="1116"/>
-										</LabelField>
-										<LabelField name="ПодтверждениеРКДНаименование" id="1111">
-											<DataPath>ПодтверждениеРКД.Наименование</DataPath>
+										<LabelField name="ПодтверждениеРКДЗаголовок" id="1111">
+											<DataPath>ПодтверждениеРКД.Заголовок</DataPath>
 											<Title>
 												<v8:item>
 													<v8:lang>ru</v8:lang>
 													<v8:content>Задача</v8:content>
 												</v8:item>
 											</Title>
-											<ContextMenu name="ПодтверждениеРКДНаименованиеКонтекстноеМеню" id="1112"/>
-											<ExtendedTooltip name="ПодтверждениеРКДНаименованиеРасширеннаяПодсказка" id="1113"/>
+											<ContextMenu name="ПодтверждениеРКДЗаголовокКонтекстноеМеню" id="1112"/>
+											<ExtendedTooltip name="ПодтверждениеРКДЗаголовокРасширеннаяПодсказка" id="1113"/>
 										</LabelField>
 										<LabelField name="ПодтверждениеРКДИсполнитель" id="1105">
 											<DataPath>ПодтверждениеРКД.Исполнитель</DataPath>
@@ -1175,6 +1174,11 @@
 											<DataPath>ПодтверждениеРКД.КрайРКД</DataPath>
 											<ContextMenu name="ПодтверждениеРКДКрайРКДКонтекстноеМеню" id="1118"/>
 											<ExtendedTooltip name="ПодтверждениеРКДКрайРКДРасширеннаяПодсказка" id="1119"/>
+										</LabelField>
+										<LabelField name="ПодтверждениеРКДКонструктор" id="1249">
+											<DataPath>ПодтверждениеРКД.Конструктор</DataPath>
+											<ContextMenu name="ПодтверждениеРКДКонструкторКонтекстноеМеню" id="1250"/>
+											<ExtendedTooltip name="ПодтверждениеРКДКонструкторРасширеннаяПодсказка" id="1251"/>
 										</LabelField>
 										<LabelField name="ПодтверждениеРКДДата" id="1102">
 											<DataPath>ПодтверждениеРКД.Дата</DataPath>
@@ -1765,6 +1769,11 @@
 							<ContextMenu name="ЗадачиМенеджераИсполнительКонтекстноеМеню" id="1017"/>
 							<ExtendedTooltip name="ЗадачиМенеджераИсполнительРасширеннаяПодсказка" id="1018"/>
 						</LabelField>
+						<LabelField name="ЗадачиМенеджераКонструктор" id="1252">
+							<DataPath>ЗадачиМенеджера.Конструктор</DataPath>
+							<ContextMenu name="ЗадачиМенеджераКонструкторКонтекстноеМеню" id="1253"/>
+							<ExtendedTooltip name="ЗадачиМенеджераКонструкторРасширеннаяПодсказка" id="1254"/>
+						</LabelField>
 						<LabelField name="ЗадачиМенеджераТекущаяСтадияПолноеНаименование" id="1141">
 							<DataPath>ЗадачиМенеджера.ТекущаяСтадияПолноеНаименование</DataPath>
 							<Title>
@@ -2324,17 +2333,6 @@
 						</v8:NumberQualifiers>
 					</Type>
 				</Column>
-				<Column name="Выполнена" id="8">
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Выполнена</v8:content>
-						</v8:item>
-					</Title>
-					<Type>
-						<v8:Type>xs:boolean</v8:Type>
-					</Type>
-				</Column>
 			</Columns>
 		</Attribute>
 		<Attribute name="ПереводВПроектное" id="12">
@@ -2571,13 +2569,16 @@
 	ЗадачаЗадачи_ПКД.Заголовок КАК Заголовок,
 	ЕСТЬNULL(ДатыКомплекта.КрайПКД, ДАТАВРЕМЯ(1, 1, 1)) КАК КрайПКД,
 	ЕСТЬNULL(ДатыКомплекта.ПереходПредставление, "") КАК ПереходПредставление,
-	НаличиеФайлов.ЕстьФайлы КАК ЕстьФайлы
+	ЕСТЬNULL(НаличиеФайлов.ЕстьФайлы, ЛОЖЬ) КАК ЕстьФайлы,
+	ДанныеКомплекта.Конструктор КАК Конструктор
 ИЗ
 	Задача.Задачи_ПКД КАК ЗадачаЗадачи_ПКД
 		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ДатыКомплекта КАК ДатыКомплекта
 		ПО ЗадачаЗадачи_ПКД.ОбъектТЗ = ДатыКомплекта.Комплект
 		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.НаличиеФайлов КАК НаличиеФайлов
 		ПО ЗадачаЗадачи_ПКД.Ссылка = НаличиеФайлов.ОбъектСФайлами
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ДанныеКомплекта.СрезПоследних КАК ДанныеКомплекта
+		ПО ЗадачаЗадачи_ПКД.ОбъектТЗ = ДанныеКомплекта.Комплект
 ГДЕ
 	ВЫБОР
 			КОГДА &amp;Проект = ЗНАЧЕНИЕ(Справочник.Проекты.ПустаяСсылка)
@@ -2704,6 +2705,14 @@
 					<dcssch:dataPath>ЕстьФайлы</dcssch:dataPath>
 					<dcssch:field>ЕстьФайлы</dcssch:field>
 				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Конструктор</dcssch:dataPath>
+					<dcssch:field>Конструктор</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Комплект</dcssch:dataPath>
+					<dcssch:field>Комплект</dcssch:field>
+				</Field>
 				<Parameter>
 					<dcssch:name>Проект</dcssch:name>
 					<dcssch:title xsi:type="v8:LocalStringType">
@@ -2746,6 +2755,23 @@
 					<dcssch:value xsi:nil="true"/>
 					<dcssch:useRestriction>true</dcssch:useRestriction>
 					<dcssch:valueListAllowed>true</dcssch:valueListAllowed>
+				</Parameter>
+				<Parameter>
+					<dcssch:name>Период</dcssch:name>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Период</v8:content>
+						</v8:item>
+					</dcssch:title>
+					<dcssch:valueType>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>DateTime</v8:DateFractions>
+						</v8:DateQualifiers>
+					</dcssch:valueType>
+					<dcssch:value xsi:type="xs:dateTime">0001-01-01T00:00:00</dcssch:value>
+					<dcssch:useRestriction>false</dcssch:useRestriction>
 				</Parameter>
 				<MainTable>Task.Задачи_ПКД</MainTable>
 				<ListSettings>
@@ -2844,7 +2870,7 @@
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ЗаголовЗадачаок</v8:content>
+							<v8:content>Задача</v8:content>
 						</v8:item>
 					</Title>
 					<Type>
@@ -3101,7 +3127,9 @@
 	ДанныеКомплектаСрезПоследних.ТекущаяСтадия КАК ТекущаяСтадия,
 	ДанныеКомплектаСрезПоследних.ТекущаяСтадия.ПолноеНаименование КАК ТекущаяСтадияПолноеНаименование,
 	ВнешнееДействиеСрезПоследних.КонтрольнаяДата КАК КонтрольнаяДата,
-	ВнешнееДействиеСрезПоследних.Комментарий КАК Комментарий1
+	ВнешнееДействиеСрезПоследних.Комментарий КАК Комментарий1,
+	ДанныеКомплектаСрезПоследних.Конструктор КАК Конструктор,
+	ВнешнееДействиеСрезПоследних.Период КАК НачалоДействия
 ИЗ
 	Задача.Задачи_ПКД КАК Задачи_ПКД
 		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ДанныеКомплекта.СрезПоследних КАК ДанныеКомплектаСрезПоследних
@@ -3253,6 +3281,20 @@
 						<v8:item>
 							<v8:lang>ru</v8:lang>
 							<v8:content>Комментарий1</v8:content>
+						</v8:item>
+					</dcssch:title>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Конструктор</dcssch:dataPath>
+					<dcssch:field>Конструктор</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>НачалоДействия</dcssch:dataPath>
+					<dcssch:field>НачалоДействия</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Начало действия</v8:content>
 						</v8:item>
 					</dcssch:title>
 				</Field>
@@ -3487,11 +3529,17 @@
 	ЕСТЬNULL(ДатыКомплекта.ПереходПредставление, "") КАК ПереходПредставление,
 	Задачи_РКД.Ссылка КАК Ссылка,
 	Задачи_РКД.Наименование КАК Наименование,
-	Задачи_РКД.Исполнитель КАК Исполнитель
+	Задачи_РКД.Исполнитель КАК Исполнитель,
+	ДанныеКомплектаСрезПоследних.Конструктор КАК Конструктор,
+	ДанныеКомплектаСрезПоследних.ТекущаяСтадия КАК ТекущаяСтадия,
+	ДанныеКомплектаСрезПоследних.Приоритет КАК Приоритет,
+	Задачи_РКД.Заголовок КАК Заголовок
 ИЗ
 	Задача.Задачи_РКД КАК Задачи_РКД
 		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ДатыКомплекта КАК ДатыКомплекта
 		ПО Задачи_РКД.ОбъектТЗ = ДатыКомплекта.Комплект
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ДанныеКомплекта.СрезПоследних КАК ДанныеКомплектаСрезПоследних
+		ПО Задачи_РКД.ОбъектТЗ = ДанныеКомплектаСрезПоследних.Комплект
 ГДЕ
 	НЕ Задачи_РКД.Выполнена
 	И ВЫБОР
@@ -3575,6 +3623,22 @@
 						</v8:item>
 					</dcssch:title>
 				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Комплект</dcssch:dataPath>
+					<dcssch:field>Комплект</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Конструктор</dcssch:dataPath>
+					<dcssch:field>Конструктор</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ТекущаяСтадия</dcssch:dataPath>
+					<dcssch:field>ТекущаяСтадия</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Приоритет</dcssch:dataPath>
+					<dcssch:field>Приоритет</dcssch:field>
+				</Field>
 				<Parameter>
 					<dcssch:name>Исполнитель</dcssch:name>
 					<dcssch:title xsi:type="v8:LocalStringType">
@@ -3617,6 +3681,23 @@
 					<dcssch:value xsi:nil="true"/>
 					<dcssch:useRestriction>true</dcssch:useRestriction>
 					<dcssch:valueListAllowed>true</dcssch:valueListAllowed>
+				</Parameter>
+				<Parameter>
+					<dcssch:name>Период</dcssch:name>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Период</v8:content>
+						</v8:item>
+					</dcssch:title>
+					<dcssch:valueType>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>DateTime</v8:DateFractions>
+						</v8:DateQualifiers>
+					</dcssch:valueType>
+					<dcssch:value xsi:type="xs:dateTime">0001-01-01T00:00:00</dcssch:value>
+					<dcssch:useRestriction>false</dcssch:useRestriction>
 				</Parameter>
 				<MainTable>Task.Задачи_РКД</MainTable>
 				<ListSettings>

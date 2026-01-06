@@ -56,7 +56,7 @@
 			|    justify-content: center;
 			|    min-height: 100vh;
 			|    padding: 50px;
-			|    background-color: #BBBBFF;
+			|    background-color: #101030;
 			|    color: #e6dfdf;
 			|    font-family: ""Roboto"", sans-serif;
 			|  }
