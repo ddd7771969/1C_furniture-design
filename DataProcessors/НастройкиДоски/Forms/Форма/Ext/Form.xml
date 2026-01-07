@@ -183,6 +183,13 @@
 											<ContextMenu name="КолонкиОкончаниеКонтекстноеМеню" id="159"/>
 											<ExtendedTooltip name="КолонкиОкончаниеРасширеннаяПодсказка" id="160"/>
 										</CheckBoxField>
+										<InputField name="КолонкиСостояние" id="303">
+											<DataPath>Колонки.Статус</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="КолонкиСостояниеКонтекстноеМеню" id="304"/>
+											<ExtendedTooltip name="КолонкиСостояниеРасширеннаяПодсказка" id="305"/>
+										</InputField>
 										<InputField name="КолонкиИмяСобытия" id="155">
 											<DataPath>Колонки.ИмяСобытия</DataPath>
 											<EditMode>EnterOnInput</EditMode>
@@ -1000,6 +1007,17 @@
 					</Title>
 					<Type>
 						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Статус" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Статус</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:EnumRef.СтатусыЗадач</v8:Type>
 					</Type>
 				</Column>
 			</Columns>

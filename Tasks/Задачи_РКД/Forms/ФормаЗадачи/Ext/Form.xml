@@ -225,13 +225,19 @@
 													<ShowTitle>false</ShowTitle>
 													<ExtendedTooltip name="Группа6РасширеннаяПодсказка" id="42"/>
 													<ChildItems>
-														<InputField name="ИзделиеКомплект" id="13">
+														<InputField name="ОбъектТЗ" id="13">
 															<DataPath>Объект.ОбъектТЗ</DataPath>
 															<ReadOnly>true</ReadOnly>
+															<Title>
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Комплект</v8:content>
+																</v8:item>
+															</Title>
 															<EditMode>EnterOnInput</EditMode>
 															<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-															<ContextMenu name="ИзделиеКомплектКонтекстноеМеню" id="14"/>
-															<ExtendedTooltip name="ИзделиеКомплектРасширеннаяПодсказка" id="15"/>
+															<ContextMenu name="ОбъектТЗКонтекстноеМеню" id="14"/>
+															<ExtendedTooltip name="ОбъектТЗРасширеннаяПодсказка" id="15"/>
 														</InputField>
 														<InputField name="КрайРКД" id="43">
 															<DataPath>КрайРКД</DataPath>
@@ -332,6 +338,11 @@
 									<ContextMenu name="СостояниеКонтекстноеМеню" id="87"/>
 									<ExtendedTooltip name="СостояниеРасширеннаяПодсказка" id="88"/>
 								</InputField>
+								<Button name="СнятьСВыполнения" id="91">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.СнятьСВыполнения</CommandName>
+									<ExtendedTooltip name="СнятьСВыполненияРасширеннаяПодсказка" id="92"/>
+								</Button>
 							</ChildItems>
 						</UsualGroup>
 					</ChildItems>
@@ -549,6 +560,21 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ЗаписатьЗадачу</Action>
+		</Command>
+		<Command name="СнятьСВыполнения" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Снять с выполнения</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Снять с выполнения</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СнятьСВыполнения</Action>
 		</Command>
 	</Commands>
 	<CommandInterface>
