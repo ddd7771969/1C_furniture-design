@@ -8,9 +8,58 @@
 		<Autofill>false</Autofill>
 	</AutoCommandBar>
 	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 	</Events>
 	<ChildItems>
+		<UsualGroup name="Группа2" id="14">
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="15"/>
+			<ChildItems>
+				<Button name="ФормаОбновить" id="12">
+					<Type>UsualButton</Type>
+					<Representation>Picture</Representation>
+					<CommandName>Form.Command.Обновить</CommandName>
+					<Picture>
+						<xr:Ref>StdPicture.Refresh</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</Picture>
+					<ExtendedTooltip name="ФормаОбновитьРасширеннаяПодсказка" id="13"/>
+				</Button>
+				<CheckBoxField name="ПоказатьПоКомплектам" id="16">
+					<DataPath>ПоказатьПоКомплектам</DataPath>
+					<TitleLocation>Right</TitleLocation>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ПоказатьПоКомплектамКонтекстноеМеню" id="17"/>
+					<ExtendedTooltip name="ПоказатьПоКомплектамРасширеннаяПодсказка" id="18"/>
+					<Events>
+						<Event name="OnChange">ПоказатьПоКомплектамПриИзменении</Event>
+					</Events>
+				</CheckBoxField>
+				<CheckBoxField name="ПоказатьПоКонструкторам" id="19">
+					<DataPath>ПоказатьПоКонструкторам</DataPath>
+					<TitleLocation>Right</TitleLocation>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ПоказатьПоКонструкторамКонтекстноеМеню" id="20"/>
+					<ExtendedTooltip name="ПоказатьПоКонструкторамРасширеннаяПодсказка" id="21"/>
+					<Events>
+						<Event name="OnChange">ПоказатьПоКонструкторамПриИзменении</Event>
+					</Events>
+				</CheckBoxField>
+				<CheckBoxField name="ПоказатьЛегенду" id="22">
+					<DataPath>ПоказатьЛегенду</DataPath>
+					<TitleLocation>Right</TitleLocation>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ПоказатьЛегендуКонтекстноеМеню" id="23"/>
+					<ExtendedTooltip name="ПоказатьЛегендуРасширеннаяПодсказка" id="24"/>
+					<Events>
+						<Event name="OnChange">ПоказатьЛегендуПриИзменении</Event>
+					</Events>
+				</CheckBoxField>
+			</ChildItems>
+		</UsualGroup>
 		<UsualGroup name="Группа1" id="4">
 			<Group>AlwaysHorizontal</Group>
 			<Representation>None</Representation>
@@ -22,6 +71,9 @@
 					<TitleLocation>None</TitleLocation>
 					<ContextMenu name="ПолеВыводаКонтекстноеМеню" id="2"/>
 					<ExtendedTooltip name="ПолеВыводаРасширеннаяПодсказка" id="3"/>
+					<Events>
+						<Event name="DetailProcessing">ПолеВыводаОбработкаРасшифровки</Event>
+					</Events>
 				</SpreadSheetDocumentField>
 				<SpreadSheetDocumentField name="ПолеВыводаКонструкторы" id="9">
 					<DataPath>ПолеВыводаКонструкторы</DataPath>
@@ -118,6 +170,22 @@
 						<v8:Type>v8ui:Color</v8:Type>
 					</Type>
 				</Column>
+				<Column name="ВсегоЗадач" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Всего задач</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>3</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
 			</Columns>
 		</Attribute>
 		<Attribute name="Приоритеты" id="5">
@@ -150,7 +218,7 @@
 						</v8:item>
 					</Title>
 					<Type>
-						<v8:Type>cfg:CatalogRef.Пользователи</v8:Type>
+						<v8:Type>cfg:CatalogRef.Сотрудники</v8:Type>
 					</Type>
 				</Column>
 				<Column name="Задача" id="3">
@@ -191,11 +259,11 @@
 						</v8:StringQualifiers>
 					</Type>
 				</Column>
-				<Column name="КонмтрукторНаименование" id="6">
+				<Column name="КонструкторНаименование" id="6">
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Конмтруктор наименование</v8:content>
+							<v8:content>Конструктор наименование</v8:content>
 						</v8:item>
 					</Title>
 					<Type>
@@ -204,6 +272,52 @@
 							<v8:Length>0</v8:Length>
 							<v8:AllowedLength>Variable</v8:AllowedLength>
 						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ПриоритетНаименование" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Приоритет наименование</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ЗадачаНаименование" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Задача наименование</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="НомерПоПорядку" id="9">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Номер по порядку</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>3</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
 					</Type>
 				</Column>
 			</Columns>
@@ -219,5 +333,55 @@
 				<v8:Type xmlns:mxl="http://v8.1c.ru/8.2/data/spreadsheet">mxl:SpreadsheetDocument</v8:Type>
 			</Type>
 		</Attribute>
+		<Attribute name="ПоказатьПоКомплектам" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать по комплектам</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ПоказатьПоКонструкторам" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать по конструкторам</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ПоказатьЛегенду" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать легенду</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
 	</Attributes>
+	<Commands>
+		<Command name="Обновить" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Обновить</Action>
+		</Command>
+	</Commands>
 </Form>

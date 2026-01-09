@@ -88,7 +88,7 @@
 			<c>
 				<i>1</i>
 				<c>
-					<f>3</f>
+					<f>8</f>
 				</c>
 			</c>
 		</row>
@@ -99,7 +99,7 @@
 			<c>
 				<i>1</i>
 				<c>
-					<f>3</f>
+					<f>8</f>
 				</c>
 			</c>
 		</row>
@@ -110,21 +110,21 @@
 			<c>
 				<i>1</i>
 				<c>
-					<f>8</f>
+					<f>9</f>
 					<parameter>Комплект</parameter>
 					<detailParameter>стКомплект</detailParameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>8</f>
+					<f>9</f>
 					<parameter>Задача</parameter>
 					<detailParameter>стЗадача</detailParameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>8</f>
+					<f>9</f>
 					<parameter>Приоритет</parameter>
 					<detailParameter>стПриоритет</detailParameter>
 				</c>
@@ -143,15 +143,15 @@
 			<c>
 				<i>1</i>
 				<c>
-					<f>9</f>
-					<parameter>Конструктор</parameter>
-					<detailParameter>стКонструктор</detailParameter>
+					<f>10</f>
+					<parameter>КонструкторНаименование</parameter>
+					<detailParameter>Конструктор</detailParameter>
 				</c>
 			</c>
 		</row>
 	</rowsItem>
 	<templateMode>true</templateMode>
-	<defaultFormatIndex>10</defaultFormatIndex>
+	<defaultFormatIndex>11</defaultFormatIndex>
 	<height>8</height>
 	<vgRows>8</vgRows>
 	<merge>
@@ -159,16 +159,6 @@
 		<c>1</c>
 		<w>2</w>
 	</merge>
-	<namedItem xsi:type="NamedItemCells">
-		<name>Приоритет</name>
-		<area>
-			<type>Rectangle</type>
-			<beginRow>7</beginRow>
-			<endRow>7</endRow>
-			<beginColumn>1</beginColumn>
-			<endColumn>3</endColumn>
-		</area>
-	</namedItem>
 	<namedItem xsi:type="NamedItemCells">
 		<name>Строка</name>
 		<area>
@@ -180,7 +170,7 @@
 		</area>
 	</namedItem>
 	<namedItem xsi:type="NamedItemCells">
-		<name>СтрокаПриоритет</name>
+		<name>СтрокаКонструктор</name>
 		<area>
 			<type>Rows</type>
 			<beginRow>7</beginRow>
@@ -218,10 +208,10 @@
 		<width>27</width>
 	</format>
 	<format>
-		<width>310</width>
+		<width>216</width>
 	</format>
 	<format>
-		<width>402</width>
+		<width>167</width>
 	</format>
 	<format>
 		<width>187</width>
@@ -245,6 +235,9 @@
 		<width>331</width>
 		<horizontalAlignment>Center</horizontalAlignment>
 		<verticalAlignment>Center</verticalAlignment>
+	</format>
+	<format>
+		<width>402</width>
 	</format>
 	<format>
 		<border>0</border>
