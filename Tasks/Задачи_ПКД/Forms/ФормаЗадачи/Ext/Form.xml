@@ -87,6 +87,48 @@
 									<ContextMenu name="СтадияКомплектаКонтекстноеМеню" id="227"/>
 									<ExtendedTooltip name="СтадияКомплектаРасширеннаяПодсказка" id="228"/>
 								</LabelField>
+								<UsualGroup name="ГруппаДополнениеТЗ" id="229">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа дополнение ТЗ</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа дополнение ТЗ</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>AlwaysHorizontal</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаДополнениеТЗРасширеннаяПодсказка" id="230"/>
+									<ChildItems>
+										<Button name="ОткрытьДополнениеТЗ" id="231">
+											<Type>UsualButton</Type>
+											<Representation>Picture</Representation>
+											<CommandName>Form.Command.ОткрытьДополнениеТЗ</CommandName>
+											<Picture>
+												<xr:Ref>StdPicture.Find</xr:Ref>
+												<xr:LoadTransparent>true</xr:LoadTransparent>
+											</Picture>
+											<ExtendedTooltip name="ОткрытьДополнениеТЗРасширеннаяПодсказка" id="232"/>
+										</Button>
+										<LabelDecoration name="ОписаниеДополнительногоТЗ" id="233">
+											<TextColor>#0000FF</TextColor>
+											<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Описание дополнительного ТЗ</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="ОписаниеДополнительногоТЗКонтекстноеМеню" id="234"/>
+											<ExtendedTooltip name="ОписаниеДополнительногоТЗРасширеннаяПодсказка" id="235"/>
+										</LabelDecoration>
+									</ChildItems>
+								</UsualGroup>
 							</ChildItems>
 						</UsualGroup>
 						<UsualGroup name="Группа4" id="56">
@@ -1299,6 +1341,21 @@
 				</v8:item>
 			</ToolTip>
 			<Action>СоздатьЧекЛист</Action>
+		</Command>
+		<Command name="ОткрытьДополнениеТЗ" id="28">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть дополнение ТЗ</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть дополнение ТЗ</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОткрытьДополнениеТЗ</Action>
 		</Command>
 	</Commands>
 	<CommandInterface>
