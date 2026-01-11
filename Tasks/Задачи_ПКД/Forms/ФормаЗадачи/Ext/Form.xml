@@ -74,12 +74,18 @@
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="Группа5РасширеннаяПодсказка" id="59"/>
 							<ChildItems>
-								<LabelField name="ТекущиеСостояние" id="68">
-									<DataPath>ТекущиеСостояниеСтрокой</DataPath>
-									<TitleLocation>None</TitleLocation>
+								<LabelField name="СтадияКомплекта" id="226">
+									<DataPath>СтадияКомплекта</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Стадия</v8:content>
+										</v8:item>
+									</Title>
+									<TitleFont ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
 									<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
-									<ContextMenu name="ТекущиеСостояниеКонтекстноеМеню" id="69"/>
-									<ExtendedTooltip name="ТекущиеСостояниеРасширеннаяПодсказка" id="70"/>
+									<ContextMenu name="СтадияКомплектаКонтекстноеМеню" id="227"/>
+									<ExtendedTooltip name="СтадияКомплектаРасширеннаяПодсказка" id="228"/>
 								</LabelField>
 							</ChildItems>
 						</UsualGroup>
@@ -730,21 +736,6 @@
 			<MainAttribute>true</MainAttribute>
 			<SavedData>true</SavedData>
 		</Attribute>
-		<Attribute name="ТекущиеСостояниеСтрокой" id="2">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Текущие состояние строкой</v8:content>
-				</v8:item>
-			</Title>
-			<Type>
-				<v8:Type>xs:string</v8:Type>
-				<v8:StringQualifiers>
-					<v8:Length>0</v8:Length>
-					<v8:AllowedLength>Variable</v8:AllowedLength>
-				</v8:StringQualifiers>
-			</Type>
-		</Attribute>
 		<Attribute name="История" id="3">
 			<Title>
 				<v8:item>
@@ -884,6 +875,22 @@
 			</Title>
 			<Type>
 				<v8:Type>cfg:EnumRef.СостоянияЗадач</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="СтадияКомплекта" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Стадия комплекта</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:Type>cfg:CatalogRef.СтадииКомплекта</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
 			</Type>
 		</Attribute>
 	</Attributes>
