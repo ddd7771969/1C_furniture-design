@@ -535,146 +535,52 @@
 					<v8:content>Группа дизайнер</v8:content>
 				</v8:item>
 			</ToolTip>
-			<Group>AlwaysHorizontal</Group>
+			<Group>Vertical</Group>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГруппаДизайнерРасширеннаяПодсказка" id="293"/>
 			<ChildItems>
-				<Table name="ПодтверждениеПКД1" id="489">
-					<TitleLocation>Top</TitleLocation>
-					<UseAlternationRowColor>true</UseAlternationRowColor>
-					<EnableStartDrag>true</EnableStartDrag>
-					<DataPath>ПодтверждениеПКД</DataPath>
-					<RowPictureDataPath>ПодтверждениеПКД.DefaultPicture</RowPictureDataPath>
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>ПКД.Контроль</v8:content>
-						</v8:item>
-					</Title>
-					<AutoRefresh>false</AutoRefresh>
-					<AutoRefreshPeriod>60</AutoRefreshPeriod>
-					<Period>
-						<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
-						<v8:startDate>0001-01-01T00:00:00</v8:startDate>
-						<v8:endDate>0001-01-01T00:00:00</v8:endDate>
-					</Period>
-					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
-					<RestoreCurrentRow>false</RestoreCurrentRow>
-					<TopLevelParent xsi:nil="true"/>
-					<ShowRoot>true</ShowRoot>
-					<AllowRootChoice>false</AllowRootChoice>
-					<UpdateOnDataChange>Auto</UpdateOnDataChange>
-					<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
-					<ContextMenu name="ПодтверждениеПКД1КонтекстноеМеню" id="490"/>
-					<AutoCommandBar name="ПодтверждениеПКД1КоманднаяПанель" id="491">
-						<Autofill>false</Autofill>
-					</AutoCommandBar>
-					<ExtendedTooltip name="ПодтверждениеПКД1РасширеннаяПодсказка" id="492"/>
-					<SearchStringAddition name="ПодтверждениеПКД1СтрокаПоиска" id="493">
-						<AdditionSource>
-							<Item>ПодтверждениеПКД1</Item>
-							<Type>SearchStringRepresentation</Type>
-						</AdditionSource>
-						<ContextMenu name="ПодтверждениеПКД1СтрокаПоискаКонтекстноеМеню" id="494"/>
-						<ExtendedTooltip name="ПодтверждениеПКД1СтрокаПоискаРасширеннаяПодсказка" id="495"/>
-					</SearchStringAddition>
-					<ViewStatusAddition name="ПодтверждениеПКД1СостояниеПросмотра" id="496">
-						<AdditionSource>
-							<Item>ПодтверждениеПКД1</Item>
-							<Type>ViewStatusRepresentation</Type>
-						</AdditionSource>
-						<ContextMenu name="ПодтверждениеПКД1СостояниеПросмотраКонтекстноеМеню" id="497"/>
-						<ExtendedTooltip name="ПодтверждениеПКД1СостояниеПросмотраРасширеннаяПодсказка" id="498"/>
-					</ViewStatusAddition>
-					<SearchControlAddition name="ПодтверждениеПКД1УправлениеПоиском" id="499">
-						<AdditionSource>
-							<Item>ПодтверждениеПКД1</Item>
-							<Type>SearchControl</Type>
-						</AdditionSource>
-						<ContextMenu name="ПодтверждениеПКД1УправлениеПоискомКонтекстноеМеню" id="500"/>
-						<ExtendedTooltip name="ПодтверждениеПКД1УправлениеПоискомРасширеннаяПодсказка" id="501"/>
-					</SearchControlAddition>
-					<ChildItems>
-						<PictureField name="ЕстьФайлы" id="1132">
-							<DataPath>ПодтверждениеПКД.ЕстьФайлы</DataPath>
-							<TitleLocation>None</TitleLocation>
-							<FooterPicture>
-								<xr:Ref>CommonPicture.Скрепка</xr:Ref>
-								<xr:LoadTransparent>true</xr:LoadTransparent>
-							</FooterPicture>
-							<ValuesPicture>
-								<xr:Ref>CommonPicture.Скрепка</xr:Ref>
-								<xr:LoadTransparent>true</xr:LoadTransparent>
-							</ValuesPicture>
-							<ContextMenu name="ЕстьФайлыКонтекстноеМеню" id="1133"/>
-							<ExtendedTooltip name="ЕстьФайлыРасширеннаяПодсказка" id="1134"/>
-						</PictureField>
-						<PictureField name="ПодтверждениеПКД1ЕстьФайлы" id="1135">
-							<DataPath>ПодтверждениеПКД.ЕстьФайлы</DataPath>
-							<TitleLocation>None</TitleLocation>
-							<FooterPicture>
-								<xr:Ref>CommonPicture.Скрепка</xr:Ref>
-								<xr:LoadTransparent>true</xr:LoadTransparent>
-							</FooterPicture>
-							<ValuesPicture>
-								<xr:Ref>CommonPicture.Скрепка</xr:Ref>
-								<xr:LoadTransparent>true</xr:LoadTransparent>
-							</ValuesPicture>
-							<ContextMenu name="ПодтверждениеПКД1ЕстьФайлыКонтекстноеМеню" id="1136"/>
-							<ExtendedTooltip name="ПодтверждениеПКД1ЕстьФайлыРасширеннаяПодсказка" id="1137"/>
-						</PictureField>
-						<LabelField name="ПодтверждениеПКД1Наименование" id="1077">
-							<DataPath>ПодтверждениеПКД.Наименование</DataPath>
-							<Title>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Задача</v8:content>
-								</v8:item>
-							</Title>
-							<ContextMenu name="ПодтверждениеПКД1НаименованиеКонтекстноеМеню" id="1078"/>
-							<ExtendedTooltip name="ПодтверждениеПКД1НаименованиеРасширеннаяПодсказка" id="1079"/>
-						</LabelField>
-						<LabelField name="ПодтверждениеПКД1Конструктор" id="1237">
-							<DataPath>ПодтверждениеПКД.Конструктор</DataPath>
-							<ContextMenu name="ПодтверждениеПКД1КонструкторКонтекстноеМеню" id="1238"/>
-							<ExtendedTooltip name="ПодтверждениеПКД1КонструкторРасширеннаяПодсказка" id="1239"/>
-						</LabelField>
-						<LabelField name="ПодтверждениеПКДИсполнитель1" id="508">
-							<DataPath>ПодтверждениеПКД.Исполнитель</DataPath>
-							<ContextMenu name="ПодтверждениеПКДИсполнитель1КонтекстноеМеню" id="509"/>
-							<ExtendedTooltip name="ПодтверждениеПКДИсполнитель1РасширеннаяПодсказка" id="510"/>
-						</LabelField>
-						<LabelField name="ПодтверждениеПКДКомпозиция1" id="514">
-							<DataPath>ПодтверждениеПКД.Композиция</DataPath>
-							<ContextMenu name="ПодтверждениеПКДКомпозиция1КонтекстноеМеню" id="515"/>
-							<ExtendedTooltip name="ПодтверждениеПКДКомпозиция1РасширеннаяПодсказка" id="516"/>
-						</LabelField>
-						<LabelField name="ПодтверждениеПКДДата1" id="505">
-							<DataPath>ПодтверждениеПКД.Дата</DataPath>
-							<Format>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>ДФ=dd.MM.yy</v8:content>
-								</v8:item>
-							</Format>
-							<ContextMenu name="ПодтверждениеПКДДата1КонтекстноеМеню" id="506"/>
-							<ExtendedTooltip name="ПодтверждениеПКДДата1РасширеннаяПодсказка" id="507"/>
-						</LabelField>
-					</ChildItems>
-				</Table>
-				<UsualGroup name="Группа5" id="1144">
-					<Group>Vertical</Group>
+				<UsualGroup name="Группа9" id="1255">
+					<Group>AlwaysHorizontal</Group>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
-					<ExtendedTooltip name="Группа5РасширеннаяПодсказка" id="1145"/>
+					<ExtendedTooltip name="Группа9РасширеннаяПодсказка" id="1256"/>
 					<ChildItems>
-						<Table name="ЗадачиМенеджера1" id="1146">
+						<Button name="ОткрытьКанбанТЗ1" id="1257">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.ОткрытьКанбанТЗ</CommandName>
+							<ExtendedTooltip name="ОткрытьКанбанТЗ1РасширеннаяПодсказка" id="1258"/>
+						</Button>
+						<Button name="ИзменениеДизайнером" id="1261">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.ИзменениеДизайнером</CommandName>
+							<ExtendedTooltip name="ИзменениеДизайнеромРасширеннаяПодсказка" id="1262"/>
+						</Button>
+						<Button name="КорректировкаЗаказчиком" id="1263">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.КорректировкаЗаказчиком</CommandName>
+							<ExtendedTooltip name="КорректировкаЗаказчикомРасширеннаяПодсказка" id="1264"/>
+						</Button>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="Группа11" id="1259">
+					<Group>AlwaysHorizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа11РасширеннаяПодсказка" id="1260"/>
+					<ChildItems>
+						<Table name="ПодтверждениеПКД1" id="489">
 							<TitleLocation>Top</TitleLocation>
 							<UseAlternationRowColor>true</UseAlternationRowColor>
 							<EnableStartDrag>true</EnableStartDrag>
-							<DataPath>ЗадачиМенеджера</DataPath>
-							<RowPictureDataPath>ЗадачиМенеджера.DefaultPicture</RowPictureDataPath>
+							<DataPath>ПодтверждениеПКД</DataPath>
+							<RowPictureDataPath>ПодтверждениеПКД.DefaultPicture</RowPictureDataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>ПКД.Контроль</v8:content>
+								</v8:item>
+							</Title>
 							<AutoRefresh>false</AutoRefresh>
 							<AutoRefreshPeriod>60</AutoRefreshPeriod>
 							<Period>
@@ -689,162 +595,289 @@
 							<AllowRootChoice>false</AllowRootChoice>
 							<UpdateOnDataChange>Auto</UpdateOnDataChange>
 							<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
-							<ContextMenu name="ЗадачиМенеджера1КонтекстноеМеню" id="1147"/>
-							<AutoCommandBar name="ЗадачиМенеджера1КоманднаяПанель" id="1148"/>
-							<ExtendedTooltip name="ЗадачиМенеджера1РасширеннаяПодсказка" id="1149"/>
-							<SearchStringAddition name="ЗадачиМенеджера1СтрокаПоиска" id="1150">
+							<ContextMenu name="ПодтверждениеПКД1КонтекстноеМеню" id="490"/>
+							<AutoCommandBar name="ПодтверждениеПКД1КоманднаяПанель" id="491">
+								<Autofill>false</Autofill>
+							</AutoCommandBar>
+							<ExtendedTooltip name="ПодтверждениеПКД1РасширеннаяПодсказка" id="492"/>
+							<SearchStringAddition name="ПодтверждениеПКД1СтрокаПоиска" id="493">
 								<AdditionSource>
-									<Item>ЗадачиМенеджера1</Item>
+									<Item>ПодтверждениеПКД1</Item>
 									<Type>SearchStringRepresentation</Type>
 								</AdditionSource>
-								<ContextMenu name="ЗадачиМенеджера1СтрокаПоискаКонтекстноеМеню" id="1151"/>
-								<ExtendedTooltip name="ЗадачиМенеджера1СтрокаПоискаРасширеннаяПодсказка" id="1152"/>
+								<ContextMenu name="ПодтверждениеПКД1СтрокаПоискаКонтекстноеМеню" id="494"/>
+								<ExtendedTooltip name="ПодтверждениеПКД1СтрокаПоискаРасширеннаяПодсказка" id="495"/>
 							</SearchStringAddition>
-							<ViewStatusAddition name="ЗадачиМенеджера1СостояниеПросмотра" id="1153">
+							<ViewStatusAddition name="ПодтверждениеПКД1СостояниеПросмотра" id="496">
 								<AdditionSource>
-									<Item>ЗадачиМенеджера1</Item>
+									<Item>ПодтверждениеПКД1</Item>
 									<Type>ViewStatusRepresentation</Type>
 								</AdditionSource>
-								<ContextMenu name="ЗадачиМенеджера1СостояниеПросмотраКонтекстноеМеню" id="1154"/>
-								<ExtendedTooltip name="ЗадачиМенеджера1СостояниеПросмотраРасширеннаяПодсказка" id="1155"/>
+								<ContextMenu name="ПодтверждениеПКД1СостояниеПросмотраКонтекстноеМеню" id="497"/>
+								<ExtendedTooltip name="ПодтверждениеПКД1СостояниеПросмотраРасширеннаяПодсказка" id="498"/>
 							</ViewStatusAddition>
-							<SearchControlAddition name="ЗадачиМенеджера1УправлениеПоиском" id="1156">
+							<SearchControlAddition name="ПодтверждениеПКД1УправлениеПоиском" id="499">
 								<AdditionSource>
-									<Item>ЗадачиМенеджера1</Item>
+									<Item>ПодтверждениеПКД1</Item>
 									<Type>SearchControl</Type>
 								</AdditionSource>
-								<ContextMenu name="ЗадачиМенеджера1УправлениеПоискомКонтекстноеМеню" id="1157"/>
-								<ExtendedTooltip name="ЗадачиМенеджера1УправлениеПоискомРасширеннаяПодсказка" id="1158"/>
+								<ContextMenu name="ПодтверждениеПКД1УправлениеПоискомКонтекстноеМеню" id="500"/>
+								<ExtendedTooltip name="ПодтверждениеПКД1УправлениеПоискомРасширеннаяПодсказка" id="501"/>
 							</SearchControlAddition>
 							<ChildItems>
-								<LabelField name="ЗадачиМенеджера1Наименование" id="1186">
-									<DataPath>ЗадачиМенеджера.Наименование</DataPath>
-									<ContextMenu name="ЗадачиМенеджера1НаименованиеКонтекстноеМеню" id="1187"/>
-									<ExtendedTooltip name="ЗадачиМенеджера1НаименованиеРасширеннаяПодсказка" id="1188"/>
-								</LabelField>
-								<LabelField name="ЗадачиМенеджера1Исполнитель" id="1174">
-									<DataPath>ЗадачиМенеджера.Исполнитель</DataPath>
-									<ContextMenu name="ЗадачиМенеджера1ИсполнительКонтекстноеМеню" id="1175"/>
-									<ExtendedTooltip name="ЗадачиМенеджера1ИсполнительРасширеннаяПодсказка" id="1176"/>
-								</LabelField>
-								<LabelField name="ЗадачиМенеджера1ТекущаяСтадияПолноеНаименование" id="1216">
-									<DataPath>ЗадачиМенеджера.ТекущаяСтадияПолноеНаименование</DataPath>
+								<PictureField name="ЕстьФайлы" id="1132">
+									<DataPath>ПодтверждениеПКД.ЕстьФайлы</DataPath>
+									<TitleLocation>None</TitleLocation>
+									<FooterPicture>
+										<xr:Ref>CommonPicture.Скрепка</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</FooterPicture>
+									<ValuesPicture>
+										<xr:Ref>CommonPicture.Скрепка</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</ValuesPicture>
+									<ContextMenu name="ЕстьФайлыКонтекстноеМеню" id="1133"/>
+									<ExtendedTooltip name="ЕстьФайлыРасширеннаяПодсказка" id="1134"/>
+								</PictureField>
+								<PictureField name="ПодтверждениеПКД1ЕстьФайлы" id="1135">
+									<DataPath>ПодтверждениеПКД.ЕстьФайлы</DataPath>
+									<TitleLocation>None</TitleLocation>
+									<FooterPicture>
+										<xr:Ref>CommonPicture.Скрепка</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</FooterPicture>
+									<ValuesPicture>
+										<xr:Ref>CommonPicture.Скрепка</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</ValuesPicture>
+									<ContextMenu name="ПодтверждениеПКД1ЕстьФайлыКонтекстноеМеню" id="1136"/>
+									<ExtendedTooltip name="ПодтверждениеПКД1ЕстьФайлыРасширеннаяПодсказка" id="1137"/>
+								</PictureField>
+								<LabelField name="ПодтверждениеПКД1Наименование" id="1077">
+									<DataPath>ПодтверждениеПКД.Наименование</DataPath>
 									<Title>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
-											<v8:content>Текущая стадия</v8:content>
+											<v8:content>Задача</v8:content>
 										</v8:item>
 									</Title>
-									<ContextMenu name="ЗадачиМенеджера1ТекущаяСтадияПолноеНаименованиеКонтекстноеМеню" id="1217"/>
-									<ExtendedTooltip name="ЗадачиМенеджера1ТекущаяСтадияПолноеНаименованиеРасширеннаяПодсказка" id="1218"/>
+									<ContextMenu name="ПодтверждениеПКД1НаименованиеКонтекстноеМеню" id="1078"/>
+									<ExtendedTooltip name="ПодтверждениеПКД1НаименованиеРасширеннаяПодсказка" id="1079"/>
 								</LabelField>
-								<LabelField name="ЗадачиМенеджера1НачалоДействия" id="1243">
-									<DataPath>ЗадачиМенеджера.НачалоДействия</DataPath>
-									<ContextMenu name="ЗадачиМенеджера1НачалоДействияКонтекстноеМеню" id="1244"/>
-									<ExtendedTooltip name="ЗадачиМенеджера1НачалоДействияРасширеннаяПодсказка" id="1245"/>
+								<LabelField name="ПодтверждениеПКД1Конструктор" id="1237">
+									<DataPath>ПодтверждениеПКД.Конструктор</DataPath>
+									<ContextMenu name="ПодтверждениеПКД1КонструкторКонтекстноеМеню" id="1238"/>
+									<ExtendedTooltip name="ПодтверждениеПКД1КонструкторРасширеннаяПодсказка" id="1239"/>
 								</LabelField>
-								<LabelField name="ЗадачиМенеджера1Конструктор" id="1240">
-									<DataPath>ЗадачиМенеджера.Конструктор</DataPath>
-									<ContextMenu name="ЗадачиМенеджера1КонструкторКонтекстноеМеню" id="1241"/>
-									<ExtendedTooltip name="ЗадачиМенеджера1КонструкторРасширеннаяПодсказка" id="1242"/>
+								<LabelField name="ПодтверждениеПКДИсполнитель1" id="508">
+									<DataPath>ПодтверждениеПКД.Исполнитель</DataPath>
+									<ContextMenu name="ПодтверждениеПКДИсполнитель1КонтекстноеМеню" id="509"/>
+									<ExtendedTooltip name="ПодтверждениеПКДИсполнитель1РасширеннаяПодсказка" id="510"/>
 								</LabelField>
-								<LabelField name="ЗадачиМенеджера1КонтрольнаяДата" id="1231">
-									<DataPath>ЗадачиМенеджера.КонтрольнаяДата</DataPath>
+								<LabelField name="ПодтверждениеПКДКомпозиция1" id="514">
+									<DataPath>ПодтверждениеПКД.Композиция</DataPath>
+									<ContextMenu name="ПодтверждениеПКДКомпозиция1КонтекстноеМеню" id="515"/>
+									<ExtendedTooltip name="ПодтверждениеПКДКомпозиция1РасширеннаяПодсказка" id="516"/>
+								</LabelField>
+								<LabelField name="ПодтверждениеПКДДата1" id="505">
+									<DataPath>ПодтверждениеПКД.Дата</DataPath>
 									<Format>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
-											<v8:content>ДФ=dd.MM.yyyy</v8:content>
+											<v8:content>ДФ=dd.MM.yy</v8:content>
 										</v8:item>
 									</Format>
-									<ContextMenu name="ЗадачиМенеджера1КонтрольнаяДатаКонтекстноеМеню" id="1232"/>
-									<ExtendedTooltip name="ЗадачиМенеджера1КонтрольнаяДатаРасширеннаяПодсказка" id="1233"/>
-								</LabelField>
-								<LabelField name="ЗадачиМенеджера1Комментарий1" id="1234">
-									<DataPath>ЗадачиМенеджера.Комментарий1</DataPath>
-									<ContextMenu name="ЗадачиМенеджера1Комментарий1КонтекстноеМеню" id="1235"/>
-									<ExtendedTooltip name="ЗадачиМенеджера1Комментарий1РасширеннаяПодсказка" id="1236"/>
+									<ContextMenu name="ПодтверждениеПКДДата1КонтекстноеМеню" id="506"/>
+									<ExtendedTooltip name="ПодтверждениеПКДДата1РасширеннаяПодсказка" id="507"/>
 								</LabelField>
 							</ChildItems>
 						</Table>
-						<Table name="тзЗадачиДизайнера" id="294">
-							<Representation>List</Representation>
-							<TitleLocation>Top</TitleLocation>
-							<AutoInsertNewRow>true</AutoInsertNewRow>
-							<EnableStartDrag>true</EnableStartDrag>
-							<EnableDrag>true</EnableDrag>
-							<DataPath>тзЗадачиДизайнера</DataPath>
-							<Title>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Задачи Прочие</v8:content>
-								</v8:item>
-							</Title>
-							<RowFilter xsi:nil="true"/>
-							<ContextMenu name="тзЗадачиДизайнераКонтекстноеМеню" id="295"/>
-							<AutoCommandBar name="тзЗадачиДизайнераКоманднаяПанель" id="296">
-								<Autofill>false</Autofill>
-								<ChildItems>
-									<Button name="ОткрытьКанбанТЗ" id="325">
-										<Type>CommandBarButton</Type>
-										<CommandName>Form.Command.ОткрытьКанбанТЗ</CommandName>
-										<ExtendedTooltip name="ОткрытьКанбанТЗРасширеннаяПодсказка" id="326"/>
-									</Button>
-								</ChildItems>
-							</AutoCommandBar>
-							<ExtendedTooltip name="тзЗадачиДизайнераРасширеннаяПодсказка" id="297"/>
-							<SearchStringAddition name="тзЗадачиДизайнераСтрокаПоиска" id="298">
-								<AdditionSource>
-									<Item>тзЗадачиДизайнера</Item>
-									<Type>SearchStringRepresentation</Type>
-								</AdditionSource>
-								<ContextMenu name="тзЗадачиДизайнераСтрокаПоискаКонтекстноеМеню" id="299"/>
-								<ExtendedTooltip name="тзЗадачиДизайнераСтрокаПоискаРасширеннаяПодсказка" id="300"/>
-							</SearchStringAddition>
-							<ViewStatusAddition name="тзЗадачиДизайнераСостояниеПросмотра" id="301">
-								<AdditionSource>
-									<Item>тзЗадачиДизайнера</Item>
-									<Type>ViewStatusRepresentation</Type>
-								</AdditionSource>
-								<ContextMenu name="тзЗадачиДизайнераСостояниеПросмотраКонтекстноеМеню" id="302"/>
-								<ExtendedTooltip name="тзЗадачиДизайнераСостояниеПросмотраРасширеннаяПодсказка" id="303"/>
-							</ViewStatusAddition>
-							<SearchControlAddition name="тзЗадачиДизайнераУправлениеПоиском" id="304">
-								<AdditionSource>
-									<Item>тзЗадачиДизайнера</Item>
-									<Type>SearchControl</Type>
-								</AdditionSource>
-								<ContextMenu name="тзЗадачиДизайнераУправлениеПоискомКонтекстноеМеню" id="305"/>
-								<ExtendedTooltip name="тзЗадачиДизайнераУправлениеПоискомРасширеннаяПодсказка" id="306"/>
-							</SearchControlAddition>
-							<Events>
-								<Event name="BeforeAddRow">тзЗадачиДизайнераПередНачаломДобавления</Event>
-								<Event name="BeforeDeleteRow">тзЗадачиДизайнераПередУдалением</Event>
-								<Event name="BeforeRowChange">тзЗадачиДизайнераПередНачаломИзменения</Event>
-							</Events>
+						<UsualGroup name="Группа5" id="1144">
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа5РасширеннаяПодсказка" id="1145"/>
 							<ChildItems>
-								<InputField name="тзЗадачиДизайнераПредставлениеЗадача" id="322">
-									<DataPath>тзЗадачиДизайнера.ПредставлениеЗадача</DataPath>
-									<EditMode>EnterOnInput</EditMode>
-									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-									<ContextMenu name="тзЗадачиДизайнераПредставлениеЗадачаКонтекстноеМеню" id="323"/>
-									<ExtendedTooltip name="тзЗадачиДизайнераПредставлениеЗадачаРасширеннаяПодсказка" id="324"/>
-								</InputField>
-								<InputField name="тзЗадачиДизайнераИсполнитель" id="310">
-									<DataPath>тзЗадачиДизайнера.Исполнитель</DataPath>
-									<EditMode>EnterOnInput</EditMode>
-									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-									<ContextMenu name="тзЗадачиДизайнераИсполнительКонтекстноеМеню" id="311"/>
-									<ExtendedTooltip name="тзЗадачиДизайнераИсполнительРасширеннаяПодсказка" id="312"/>
-								</InputField>
-								<InputField name="тзЗадачиДизайнераКрайняяДата" id="316">
-									<DataPath>тзЗадачиДизайнера.КрайняяДата</DataPath>
-									<EditMode>EnterOnInput</EditMode>
-									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-									<ContextMenu name="тзЗадачиДизайнераКрайняяДатаКонтекстноеМеню" id="317"/>
-									<ExtendedTooltip name="тзЗадачиДизайнераКрайняяДатаРасширеннаяПодсказка" id="318"/>
-								</InputField>
+								<Table name="ЗадачиМенеджера1" id="1146">
+									<TitleLocation>Top</TitleLocation>
+									<UseAlternationRowColor>true</UseAlternationRowColor>
+									<EnableStartDrag>true</EnableStartDrag>
+									<DataPath>ЗадачиМенеджера</DataPath>
+									<RowPictureDataPath>ЗадачиМенеджера.DefaultPicture</RowPictureDataPath>
+									<AutoRefresh>false</AutoRefresh>
+									<AutoRefreshPeriod>60</AutoRefreshPeriod>
+									<Period>
+										<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+										<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+										<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+									</Period>
+									<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+									<RestoreCurrentRow>false</RestoreCurrentRow>
+									<TopLevelParent xsi:nil="true"/>
+									<ShowRoot>true</ShowRoot>
+									<AllowRootChoice>false</AllowRootChoice>
+									<UpdateOnDataChange>Auto</UpdateOnDataChange>
+									<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
+									<ContextMenu name="ЗадачиМенеджера1КонтекстноеМеню" id="1147"/>
+									<AutoCommandBar name="ЗадачиМенеджера1КоманднаяПанель" id="1148">
+										<Autofill>false</Autofill>
+									</AutoCommandBar>
+									<ExtendedTooltip name="ЗадачиМенеджера1РасширеннаяПодсказка" id="1149"/>
+									<SearchStringAddition name="ЗадачиМенеджера1СтрокаПоиска" id="1150">
+										<AdditionSource>
+											<Item>ЗадачиМенеджера1</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ЗадачиМенеджера1СтрокаПоискаКонтекстноеМеню" id="1151"/>
+										<ExtendedTooltip name="ЗадачиМенеджера1СтрокаПоискаРасширеннаяПодсказка" id="1152"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="ЗадачиМенеджера1СостояниеПросмотра" id="1153">
+										<AdditionSource>
+											<Item>ЗадачиМенеджера1</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ЗадачиМенеджера1СостояниеПросмотраКонтекстноеМеню" id="1154"/>
+										<ExtendedTooltip name="ЗадачиМенеджера1СостояниеПросмотраРасширеннаяПодсказка" id="1155"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="ЗадачиМенеджера1УправлениеПоиском" id="1156">
+										<AdditionSource>
+											<Item>ЗадачиМенеджера1</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="ЗадачиМенеджера1УправлениеПоискомКонтекстноеМеню" id="1157"/>
+										<ExtendedTooltip name="ЗадачиМенеджера1УправлениеПоискомРасширеннаяПодсказка" id="1158"/>
+									</SearchControlAddition>
+									<ChildItems>
+										<LabelField name="ЗадачиМенеджера1Наименование" id="1186">
+											<DataPath>ЗадачиМенеджера.Наименование</DataPath>
+											<ContextMenu name="ЗадачиМенеджера1НаименованиеКонтекстноеМеню" id="1187"/>
+											<ExtendedTooltip name="ЗадачиМенеджера1НаименованиеРасширеннаяПодсказка" id="1188"/>
+										</LabelField>
+										<LabelField name="ЗадачиМенеджера1Исполнитель" id="1174">
+											<DataPath>ЗадачиМенеджера.Исполнитель</DataPath>
+											<ContextMenu name="ЗадачиМенеджера1ИсполнительКонтекстноеМеню" id="1175"/>
+											<ExtendedTooltip name="ЗадачиМенеджера1ИсполнительРасширеннаяПодсказка" id="1176"/>
+										</LabelField>
+										<LabelField name="ЗадачиМенеджера1ТекущаяСтадияПолноеНаименование" id="1216">
+											<DataPath>ЗадачиМенеджера.ТекущаяСтадияПолноеНаименование</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Текущая стадия</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="ЗадачиМенеджера1ТекущаяСтадияПолноеНаименованиеКонтекстноеМеню" id="1217"/>
+											<ExtendedTooltip name="ЗадачиМенеджера1ТекущаяСтадияПолноеНаименованиеРасширеннаяПодсказка" id="1218"/>
+										</LabelField>
+										<LabelField name="ЗадачиМенеджера1НачалоДействия" id="1243">
+											<DataPath>ЗадачиМенеджера.НачалоДействия</DataPath>
+											<ContextMenu name="ЗадачиМенеджера1НачалоДействияКонтекстноеМеню" id="1244"/>
+											<ExtendedTooltip name="ЗадачиМенеджера1НачалоДействияРасширеннаяПодсказка" id="1245"/>
+										</LabelField>
+										<LabelField name="ЗадачиМенеджера1Конструктор" id="1240">
+											<DataPath>ЗадачиМенеджера.Конструктор</DataPath>
+											<ContextMenu name="ЗадачиМенеджера1КонструкторКонтекстноеМеню" id="1241"/>
+											<ExtendedTooltip name="ЗадачиМенеджера1КонструкторРасширеннаяПодсказка" id="1242"/>
+										</LabelField>
+										<LabelField name="ЗадачиМенеджера1КонтрольнаяДата" id="1231">
+											<DataPath>ЗадачиМенеджера.КонтрольнаяДата</DataPath>
+											<Format>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>ДФ=dd.MM.yyyy</v8:content>
+												</v8:item>
+											</Format>
+											<ContextMenu name="ЗадачиМенеджера1КонтрольнаяДатаКонтекстноеМеню" id="1232"/>
+											<ExtendedTooltip name="ЗадачиМенеджера1КонтрольнаяДатаРасширеннаяПодсказка" id="1233"/>
+										</LabelField>
+										<LabelField name="ЗадачиМенеджера1Комментарий1" id="1234">
+											<DataPath>ЗадачиМенеджера.Комментарий1</DataPath>
+											<ContextMenu name="ЗадачиМенеджера1Комментарий1КонтекстноеМеню" id="1235"/>
+											<ExtendedTooltip name="ЗадачиМенеджера1Комментарий1РасширеннаяПодсказка" id="1236"/>
+										</LabelField>
+									</ChildItems>
+								</Table>
+								<Table name="тзЗадачиДизайнера" id="294">
+									<Representation>List</Representation>
+									<TitleLocation>Top</TitleLocation>
+									<AutoInsertNewRow>true</AutoInsertNewRow>
+									<EnableStartDrag>true</EnableStartDrag>
+									<EnableDrag>true</EnableDrag>
+									<DataPath>тзЗадачиДизайнера</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Задачи Прочие</v8:content>
+										</v8:item>
+									</Title>
+									<RowFilter xsi:nil="true"/>
+									<ContextMenu name="тзЗадачиДизайнераКонтекстноеМеню" id="295"/>
+									<AutoCommandBar name="тзЗадачиДизайнераКоманднаяПанель" id="296">
+										<Autofill>false</Autofill>
+										<ChildItems>
+											<Button name="ОткрытьКанбанТЗ" id="325">
+												<Type>CommandBarButton</Type>
+												<CommandName>Form.Command.ОткрытьКанбанТЗ</CommandName>
+												<ExtendedTooltip name="ОткрытьКанбанТЗРасширеннаяПодсказка" id="326"/>
+											</Button>
+										</ChildItems>
+									</AutoCommandBar>
+									<ExtendedTooltip name="тзЗадачиДизайнераРасширеннаяПодсказка" id="297"/>
+									<SearchStringAddition name="тзЗадачиДизайнераСтрокаПоиска" id="298">
+										<AdditionSource>
+											<Item>тзЗадачиДизайнера</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="тзЗадачиДизайнераСтрокаПоискаКонтекстноеМеню" id="299"/>
+										<ExtendedTooltip name="тзЗадачиДизайнераСтрокаПоискаРасширеннаяПодсказка" id="300"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="тзЗадачиДизайнераСостояниеПросмотра" id="301">
+										<AdditionSource>
+											<Item>тзЗадачиДизайнера</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="тзЗадачиДизайнераСостояниеПросмотраКонтекстноеМеню" id="302"/>
+										<ExtendedTooltip name="тзЗадачиДизайнераСостояниеПросмотраРасширеннаяПодсказка" id="303"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="тзЗадачиДизайнераУправлениеПоиском" id="304">
+										<AdditionSource>
+											<Item>тзЗадачиДизайнера</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="тзЗадачиДизайнераУправлениеПоискомКонтекстноеМеню" id="305"/>
+										<ExtendedTooltip name="тзЗадачиДизайнераУправлениеПоискомРасширеннаяПодсказка" id="306"/>
+									</SearchControlAddition>
+									<Events>
+										<Event name="BeforeAddRow">тзЗадачиДизайнераПередНачаломДобавления</Event>
+										<Event name="BeforeDeleteRow">тзЗадачиДизайнераПередУдалением</Event>
+										<Event name="BeforeRowChange">тзЗадачиДизайнераПередНачаломИзменения</Event>
+									</Events>
+									<ChildItems>
+										<InputField name="тзЗадачиДизайнераПредставлениеЗадача" id="322">
+											<DataPath>тзЗадачиДизайнера.ПредставлениеЗадача</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="тзЗадачиДизайнераПредставлениеЗадачаКонтекстноеМеню" id="323"/>
+											<ExtendedTooltip name="тзЗадачиДизайнераПредставлениеЗадачаРасширеннаяПодсказка" id="324"/>
+										</InputField>
+										<InputField name="тзЗадачиДизайнераИсполнитель" id="310">
+											<DataPath>тзЗадачиДизайнера.Исполнитель</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="тзЗадачиДизайнераИсполнительКонтекстноеМеню" id="311"/>
+											<ExtendedTooltip name="тзЗадачиДизайнераИсполнительРасширеннаяПодсказка" id="312"/>
+										</InputField>
+										<InputField name="тзЗадачиДизайнераКрайняяДата" id="316">
+											<DataPath>тзЗадачиДизайнера.КрайняяДата</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="тзЗадачиДизайнераКрайняяДатаКонтекстноеМеню" id="317"/>
+											<ExtendedTooltip name="тзЗадачиДизайнераКрайняяДатаРасширеннаяПодсказка" id="318"/>
+										</InputField>
+									</ChildItems>
+								</Table>
 							</ChildItems>
-						</Table>
+						</UsualGroup>
 					</ChildItems>
 				</UsualGroup>
 			</ChildItems>
@@ -3815,6 +3848,36 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ОткрытьГантКонструктора</Action>
+		</Command>
+		<Command name="ИзменениеДизайнером" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Изменение дизайнером</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Изменение дизайнером</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ИзменениеДизайнером</Action>
+		</Command>
+		<Command name="КорректировкаЗаказчиком" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Корректировка заказчиком</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Корректировка заказчиком</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КорректировкаЗаказчиком</Action>
 		</Command>
 	</Commands>
 </Form>
