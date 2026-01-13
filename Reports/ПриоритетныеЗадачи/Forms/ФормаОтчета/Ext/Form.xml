@@ -58,6 +58,26 @@
 						<Event name="OnChange">ПоказатьЛегендуПриИзменении</Event>
 					</Events>
 				</CheckBoxField>
+				<InputField name="Проект" id="28">
+					<DataPath>Проект</DataPath>
+					<ClearButton>true</ClearButton>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ПроектКонтекстноеМеню" id="29"/>
+					<ExtendedTooltip name="ПроектРасширеннаяПодсказка" id="30"/>
+					<Events>
+						<Event name="OnChange">ПроектПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="Приоритет" id="25">
+					<DataPath>Приоритет</DataPath>
+					<ClearButton>true</ClearButton>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ПриоритетКонтекстноеМеню" id="26"/>
+					<ExtendedTooltip name="ПриоритетРасширеннаяПодсказка" id="27"/>
+					<Events>
+						<Event name="OnChange">ПриоритетПриИзменении</Event>
+					</Events>
+				</InputField>
 			</ChildItems>
 		</UsualGroup>
 		<UsualGroup name="Группа1" id="4">
@@ -364,6 +384,28 @@
 			</Title>
 			<Type>
 				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Приоритет" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Приоритет</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Приоритеты</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Проект" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проект</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Проекты</v8:Type>
 			</Type>
 		</Attribute>
 	</Attributes>

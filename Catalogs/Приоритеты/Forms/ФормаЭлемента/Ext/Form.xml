@@ -30,6 +30,12 @@
 				</LabelField>
 			</ChildItems>
 		</UsualGroup>
+		<InputField name="ТипКонтроляПриоритета" id="68">
+			<DataPath>Объект.ТипКонтроляПриоритета</DataPath>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ТипКонтроляПриоритетаКонтекстноеМеню" id="69"/>
+			<ExtendedTooltip name="ТипКонтроляПриоритетаРасширеннаяПодсказка" id="70"/>
+		</InputField>
 		<UsualGroup name="Группа2" id="18">
 			<Group>AlwaysHorizontal</Group>
 			<Representation>None</Representation>
@@ -52,13 +58,13 @@
 					<ContextMenu name="ВсегоЗадачКонтекстноеМеню" id="8"/>
 					<ExtendedTooltip name="ВсегоЗадачРасширеннаяПодсказка" id="9"/>
 				</InputField>
-				<InputField name="КоличествоЗадачУКонструктора" id="10">
-					<DataPath>Объект.КоличествоЗадачУКонструктора</DataPath>
+				<InputField name="КоличествоЗадачУИсполнителя" id="10">
+					<DataPath>Объект.КоличествоЗадачУИсполнителя</DataPath>
 					<EditMode>EnterOnInput</EditMode>
 					<SpinButton>true</SpinButton>
 					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-					<ContextMenu name="КоличествоЗадачУКонструктораКонтекстноеМеню" id="11"/>
-					<ExtendedTooltip name="КоличествоЗадачУКонструктораРасширеннаяПодсказка" id="12"/>
+					<ContextMenu name="КоличествоЗадачУИсполнителяКонтекстноеМеню" id="11"/>
+					<ExtendedTooltip name="КоличествоЗадачУИсполнителяРасширеннаяПодсказка" id="12"/>
 				</InputField>
 			</ChildItems>
 		</UsualGroup>
@@ -168,6 +174,55 @@
 			<ContextMenu name="Декорация1КонтекстноеМеню" id="47"/>
 			<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="48"/>
 		</LabelDecoration>
+		<Table name="СтадииКомплекта" id="49">
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Объект.СтадииКомплекта</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="СтадииКомплектаКонтекстноеМеню" id="50"/>
+			<AutoCommandBar name="СтадииКомплектаКоманднаяПанель" id="51"/>
+			<ExtendedTooltip name="СтадииКомплектаРасширеннаяПодсказка" id="52"/>
+			<SearchStringAddition name="СтадииКомплектаСтрокаПоиска" id="53">
+				<AdditionSource>
+					<Item>СтадииКомплекта</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СтадииКомплектаСтрокаПоискаКонтекстноеМеню" id="54"/>
+				<ExtendedTooltip name="СтадииКомплектаСтрокаПоискаРасширеннаяПодсказка" id="55"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="СтадииКомплектаСостояниеПросмотра" id="56">
+				<AdditionSource>
+					<Item>СтадииКомплекта</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СтадииКомплектаСостояниеПросмотраКонтекстноеМеню" id="57"/>
+				<ExtendedTooltip name="СтадииКомплектаСостояниеПросмотраРасширеннаяПодсказка" id="58"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="СтадииКомплектаУправлениеПоиском" id="59">
+				<AdditionSource>
+					<Item>СтадииКомплекта</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="СтадииКомплектаУправлениеПоискомКонтекстноеМеню" id="60"/>
+				<ExtendedTooltip name="СтадииКомплектаУправлениеПоискомРасширеннаяПодсказка" id="61"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<LabelField name="СтадииКомплектаНомерСтроки" id="62">
+					<DataPath>Объект.СтадииКомплекта.LineNumber</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="СтадииКомплектаНомерСтрокиКонтекстноеМеню" id="63"/>
+					<ExtendedTooltip name="СтадииКомплектаНомерСтрокиРасширеннаяПодсказка" id="64"/>
+				</LabelField>
+				<InputField name="СтадииКомплектаСтадия" id="65">
+					<DataPath>Объект.СтадииКомплекта.Стадия</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="СтадииКомплектаСтадияКонтекстноеМеню" id="66"/>
+					<ExtendedTooltip name="СтадииКомплектаСтадияРасширеннаяПодсказка" id="67"/>
+				</InputField>
+			</ChildItems>
+		</Table>
 	</ChildItems>
 	<Attributes>
 		<Attribute name="Объект" id="1">
