@@ -3,6 +3,7 @@
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
 	<Events>
 		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 	</Events>
 	<ChildItems>
 		<UsualGroup name="СписокКомпоновщикНастроекПользовательскиеНастройки" id="1">
@@ -230,6 +231,12 @@
 				<Field xsi:type="dcssch:DataSetFieldField">
 					<dcssch:dataPath>КрайТЗ</dcssch:dataPath>
 					<dcssch:field>КрайТЗ</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Край ТЗ</v8:content>
+						</v8:item>
+					</dcssch:title>
 				</Field>
 				<Field xsi:type="dcssch:DataSetFieldField">
 					<dcssch:dataPath>НормаВремени_ПКД</dcssch:dataPath>
@@ -280,30 +287,12 @@
 					<dcssch:field>Проект</dcssch:field>
 				</Field>
 				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>СделкаНомер</dcssch:dataPath>
-					<dcssch:field>СделкаНомер</dcssch:field>
-					<dcssch:title xsi:type="v8:LocalStringType">
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Сделка номер</v8:content>
-						</v8:item>
-					</dcssch:title>
-				</Field>
-				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>Код_в_PDM</dcssch:dataPath>
-					<dcssch:field>Код_в_PDM</dcssch:field>
-				</Field>
-				<Field xsi:type="dcssch:DataSetFieldField">
 					<dcssch:dataPath>ГабаритныйЧертеж</dcssch:dataPath>
 					<dcssch:field>ГабаритныйЧертеж</dcssch:field>
 				</Field>
 				<Field xsi:type="dcssch:DataSetFieldField">
 					<dcssch:dataPath>Конструктор</dcssch:dataPath>
 					<dcssch:field>Конструктор</dcssch:field>
-				</Field>
-				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>Комплект</dcssch:dataPath>
-					<dcssch:field>Комплект</dcssch:field>
 				</Field>
 				<Field xsi:type="dcssch:DataSetFieldField">
 					<dcssch:dataPath>НомерВерсииКанбан</dcssch:dataPath>
@@ -394,8 +383,26 @@
 					<dcssch:field>ТекущаяСтадия</dcssch:field>
 				</Field>
 				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Код_в_PDM</dcssch:dataPath>
+					<dcssch:field>Код_в_PDM</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>СделкаНомер</dcssch:dataPath>
+					<dcssch:field>СделкаНомер</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сделка номер</v8:content>
+						</v8:item>
+					</dcssch:title>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
 					<dcssch:dataPath>ТекущаяСтадияПолноеНаименование</dcssch:dataPath>
 					<dcssch:field>ТекущаяСтадияПолноеНаименование</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Комплект</dcssch:dataPath>
+					<dcssch:field>Комплект</dcssch:field>
 				</Field>
 				<Parameter>
 					<dcssch:name>Период</dcssch:name>
