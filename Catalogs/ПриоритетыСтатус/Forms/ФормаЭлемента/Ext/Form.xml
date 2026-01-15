@@ -23,14 +23,38 @@
 			<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
 			<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
 		</InputField>
-		<InputField name="НомерПоПорядку" id="7">
-			<DataPath>Объект.НомерПоПорядку</DataPath>
-			<EditMode>EnterOnInput</EditMode>
-			<SpinButton>true</SpinButton>
-			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-			<ContextMenu name="НомерПоПорядкуКонтекстноеМеню" id="8"/>
-			<ExtendedTooltip name="НомерПоПорядкуРасширеннаяПодсказка" id="9"/>
-		</InputField>
+		<UsualGroup name="Группа2" id="39">
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="40"/>
+			<ChildItems>
+				<InputField name="ВсегоЗадач" id="41">
+					<DataPath>Объект.ВсегоЗадач</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<SpinButton>true</SpinButton>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ВсегоЗадачКонтекстноеМеню" id="42"/>
+					<ExtendedTooltip name="ВсегоЗадачРасширеннаяПодсказка" id="43"/>
+				</InputField>
+				<InputField name="КоличествоЗадачУИсполнителя" id="44">
+					<DataPath>Объект.КоличествоЗадачУИсполнителя</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<SpinButton>true</SpinButton>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="КоличествоЗадачУИсполнителяКонтекстноеМеню" id="45"/>
+					<ExtendedTooltip name="КоличествоЗадачУИсполнителяРасширеннаяПодсказка" id="46"/>
+				</InputField>
+				<InputField name="НомерПоПорядку" id="7">
+					<DataPath>Объект.НомерПоПорядку</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<SpinButton>true</SpinButton>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="НомерПоПорядкуКонтекстноеМеню" id="8"/>
+					<ExtendedTooltip name="НомерПоПорядкуРасширеннаяПодсказка" id="9"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
 		<UsualGroup name="Группа3" id="24">
 			<Group>AlwaysHorizontal</Group>
 			<Representation>None</Representation>

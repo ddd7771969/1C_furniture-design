@@ -38,95 +38,154 @@
 					<ShowTitle>false</ShowTitle>
 					<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="55"/>
 					<ChildItems>
-						<UsualGroup name="Группа1" id="50">
+						<UsualGroup name="Группа9" id="236">
 							<Group>AlwaysHorizontal</Group>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
-							<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="51"/>
+							<ExtendedTooltip name="Группа9РасширеннаяПодсказка" id="237"/>
 							<ChildItems>
-								<InputField name="Наименование" id="4">
-									<DataPath>Объект.Description</DataPath>
-									<ReadOnly>true</ReadOnly>
-									<EditMode>EnterOnInput</EditMode>
-									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-									<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
-									<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
-								</InputField>
-								<LabelField name="Дата" id="7">
-									<DataPath>Объект.Date</DataPath>
-									<EditMode>EnterOnInput</EditMode>
-									<ContextMenu name="ДатаКонтекстноеМеню" id="8"/>
-									<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="9"/>
-								</LabelField>
-								<InputField name="Номер" id="1">
-									<DataPath>Объект.Number</DataPath>
-									<ReadOnly>true</ReadOnly>
-									<EditMode>EnterOnInput</EditMode>
-									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-									<ContextMenu name="НомерКонтекстноеМеню" id="2"/>
-									<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="3"/>
-								</InputField>
-							</ChildItems>
-						</UsualGroup>
-						<UsualGroup name="Группа5" id="58">
-							<Group>AlwaysHorizontal</Group>
-							<Representation>None</Representation>
-							<ShowTitle>false</ShowTitle>
-							<ExtendedTooltip name="Группа5РасширеннаяПодсказка" id="59"/>
-							<ChildItems>
-								<LabelField name="СтадияКомплекта" id="226">
-									<DataPath>СтадияКомплекта</DataPath>
+								<UsualGroup name="Группа10" id="238">
+									<Group>Vertical</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="Группа10РасширеннаяПодсказка" id="239"/>
+									<ChildItems>
+										<UsualGroup name="Группа1" id="50">
+											<Group>AlwaysHorizontal</Group>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="51"/>
+											<ChildItems>
+												<InputField name="Наименование" id="4">
+													<DataPath>Объект.Description</DataPath>
+													<ReadOnly>true</ReadOnly>
+													<EditMode>EnterOnInput</EditMode>
+													<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+													<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
+													<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
+												</InputField>
+												<LabelField name="Дата" id="7">
+													<DataPath>Объект.Date</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="ДатаКонтекстноеМеню" id="8"/>
+													<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="9"/>
+												</LabelField>
+												<InputField name="Номер" id="1">
+													<DataPath>Объект.Number</DataPath>
+													<ReadOnly>true</ReadOnly>
+													<EditMode>EnterOnInput</EditMode>
+													<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+													<ContextMenu name="НомерКонтекстноеМеню" id="2"/>
+													<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="3"/>
+												</InputField>
+											</ChildItems>
+										</UsualGroup>
+										<UsualGroup name="Группа5" id="58">
+											<Group>AlwaysHorizontal</Group>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="Группа5РасширеннаяПодсказка" id="59"/>
+											<ChildItems>
+												<LabelField name="СтадияКомплекта" id="226">
+													<DataPath>СтадияКомплекта</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Стадия</v8:content>
+														</v8:item>
+													</Title>
+													<TitleFont ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+													<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+													<ContextMenu name="СтадияКомплектаКонтекстноеМеню" id="227"/>
+													<ExtendedTooltip name="СтадияКомплектаРасширеннаяПодсказка" id="228"/>
+												</LabelField>
+												<UsualGroup name="ГруппаДополнениеТЗ" id="229">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа дополнение ТЗ</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа дополнение ТЗ</v8:content>
+														</v8:item>
+													</ToolTip>
+													<Group>AlwaysHorizontal</Group>
+													<Representation>None</Representation>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ГруппаДополнениеТЗРасширеннаяПодсказка" id="230"/>
+													<ChildItems>
+														<Button name="ОткрытьДополнениеТЗ" id="231">
+															<Type>UsualButton</Type>
+															<Representation>Picture</Representation>
+															<CommandName>Form.Command.ОткрытьДополнениеТЗ</CommandName>
+															<Picture>
+																<xr:Ref>StdPicture.Find</xr:Ref>
+																<xr:LoadTransparent>true</xr:LoadTransparent>
+															</Picture>
+															<ExtendedTooltip name="ОткрытьДополнениеТЗРасширеннаяПодсказка" id="232"/>
+														</Button>
+														<LabelDecoration name="ОписаниеДополнительногоТЗ" id="233">
+															<TextColor>#0000FF</TextColor>
+															<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Описание дополнительного ТЗ</v8:content>
+																</v8:item>
+															</Title>
+															<ContextMenu name="ОписаниеДополнительногоТЗКонтекстноеМеню" id="234"/>
+															<ExtendedTooltip name="ОписаниеДополнительногоТЗРасширеннаяПодсказка" id="235"/>
+														</LabelDecoration>
+													</ChildItems>
+												</UsualGroup>
+											</ChildItems>
+										</UsualGroup>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаПриоритет" id="240">
 									<Title>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
-											<v8:content>Стадия</v8:content>
-										</v8:item>
-									</Title>
-									<TitleFont ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
-									<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
-									<ContextMenu name="СтадияКомплектаКонтекстноеМеню" id="227"/>
-									<ExtendedTooltip name="СтадияКомплектаРасширеннаяПодсказка" id="228"/>
-								</LabelField>
-								<UsualGroup name="ГруппаДополнениеТЗ" id="229">
-									<Title>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>Группа дополнение ТЗ</v8:content>
+											<v8:content>Группа приоритет</v8:content>
 										</v8:item>
 									</Title>
 									<ToolTip>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
-											<v8:content>Группа дополнение ТЗ</v8:content>
+											<v8:content>Группа приоритет</v8:content>
 										</v8:item>
 									</ToolTip>
 									<Group>AlwaysHorizontal</Group>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
-									<ExtendedTooltip name="ГруппаДополнениеТЗРасширеннаяПодсказка" id="230"/>
+									<ExtendedTooltip name="ГруппаПриоритетРасширеннаяПодсказка" id="241"/>
 									<ChildItems>
-										<Button name="ОткрытьДополнениеТЗ" id="231">
-											<Type>UsualButton</Type>
-											<Representation>Picture</Representation>
-											<CommandName>Form.Command.ОткрытьДополнениеТЗ</CommandName>
-											<Picture>
-												<xr:Ref>StdPicture.Find</xr:Ref>
-												<xr:LoadTransparent>true</xr:LoadTransparent>
-											</Picture>
-											<ExtendedTooltip name="ОткрытьДополнениеТЗРасширеннаяПодсказка" id="232"/>
-										</Button>
-										<LabelDecoration name="ОписаниеДополнительногоТЗ" id="233">
-											<TextColor>#0000FF</TextColor>
-											<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
-											<Title formatted="false">
-												<v8:item>
-													<v8:lang>ru</v8:lang>
-													<v8:content>Описание дополнительного ТЗ</v8:content>
-												</v8:item>
-											</Title>
-											<ContextMenu name="ОписаниеДополнительногоТЗКонтекстноеМеню" id="234"/>
-											<ExtendedTooltip name="ОписаниеДополнительногоТЗРасширеннаяПодсказка" id="235"/>
-										</LabelDecoration>
+										<LabelField name="Приоритет" id="242">
+											<DataPath>Приоритет</DataPath>
+											<TitleTextColor>#B30000</TitleTextColor>
+											<TextColor>#B30000</TextColor>
+											<ContextMenu name="ПриоритетКонтекстноеМеню" id="243"/>
+											<ExtendedTooltip name="ПриоритетРасширеннаяПодсказка" id="244"/>
+										</LabelField>
+										<PictureField name="КартинкаПриоритета" id="245">
+											<DataPath>КартинкаПриоритета</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<Width>6</Width>
+											<AutoMaxWidth>false</AutoMaxWidth>
+											<Height>2</Height>
+											<AutoMaxHeight>false</AutoMaxHeight>
+											<HorizontalStretch>false</HorizontalStretch>
+											<VerticalStretch>false</VerticalStretch>
+											<BorderColor>#FFFFFF</BorderColor>
+											<Border width="1">
+												<v8ui:style xsi:type="v8ui:ControlBorderType">WithoutBorder</v8ui:style>
+											</Border>
+											<ContextMenu name="КартинкаПриоритетаКонтекстноеМеню" id="246"/>
+											<ExtendedTooltip name="КартинкаПриоритетаРасширеннаяПодсказка" id="247"/>
+										</PictureField>
 									</ChildItems>
 								</UsualGroup>
 							</ChildItems>
@@ -929,6 +988,32 @@
 			<Type>
 				<v8:Type>xs:string</v8:Type>
 				<v8:Type>cfg:CatalogRef.СтадииКомплекта</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Приоритет" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Приоритет</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Приоритеты</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="КартинкаПриоритета" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Картинка приоритета</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
 				<v8:StringQualifiers>
 					<v8:Length>0</v8:Length>
 					<v8:AllowedLength>Variable</v8:AllowedLength>
