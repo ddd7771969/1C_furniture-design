@@ -23,6 +23,31 @@
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="КомпоновщикНастроекПользовательскиеНастройкиРасширеннаяПодсказка" id="2"/>
 		</UsualGroup>
+		<UsualGroup name="Группа1" id="3">
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="4"/>
+			<ChildItems>
+				<InputField name="Проект" id="5">
+					<DataPath>Проект</DataPath>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ПроектКонтекстноеМеню" id="6"/>
+					<ExtendedTooltip name="ПроектРасширеннаяПодсказка" id="7"/>
+					<Events>
+						<Event name="OnChange">ПроектПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="Комплект" id="8">
+					<DataPath>Комплект</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<ListChoiceMode>true</ListChoiceMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="КомплектКонтекстноеМеню" id="9"/>
+					<ExtendedTooltip name="КомплектРасширеннаяПодсказка" id="10"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
 	</ChildItems>
 	<Attributes>
 		<Attribute name="Отчет" id="1">
@@ -30,6 +55,28 @@
 				<v8:Type>cfg:ReportObject.ПриоритетныеЗадачи</v8:Type>
 			</Type>
 			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="Проект" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проект</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Проекты</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Комплект" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Комплект</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.ИзделияКомплект</v8:Type>
+			</Type>
 		</Attribute>
 	</Attributes>
 </Form>
