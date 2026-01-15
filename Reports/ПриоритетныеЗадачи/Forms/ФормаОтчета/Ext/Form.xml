@@ -18,6 +18,16 @@
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="15"/>
 			<ChildItems>
+				<Button name="ДобавитьПриоритет" id="31">
+					<Type>UsualButton</Type>
+					<Representation>PictureAndText</Representation>
+					<CommandName>Form.Command.ДобавитьПриоритет</CommandName>
+					<Picture>
+						<xr:Ref>StdPicture.CreateListItem</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</Picture>
+					<ExtendedTooltip name="ДобавитьПриоритетРасширеннаяПодсказка" id="32"/>
+				</Button>
 				<Button name="ФормаОбновить" id="12">
 					<Type>UsualButton</Type>
 					<Representation>Picture</Representation>
@@ -424,6 +434,21 @@
 				</v8:item>
 			</ToolTip>
 			<Action>Обновить</Action>
+		</Command>
+		<Command name="ДобавитьПриоритет" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить приоритет</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить приоритет</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ДобавитьПриоритет</Action>
 		</Command>
 	</Commands>
 </Form>

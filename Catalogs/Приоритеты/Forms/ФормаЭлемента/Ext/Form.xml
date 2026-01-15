@@ -4,8 +4,6 @@
 	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
 	<Events>
-		<Event name="OnOpen">ПриОткрытии</Event>
-		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 		<Event name="BeforeWriteAtServer">ПередЗаписьюНаСервере</Event>
 	</Events>
 	<ChildItems>
@@ -30,28 +28,28 @@
 				</LabelField>
 			</ChildItems>
 		</UsualGroup>
-		<InputField name="ТипКонтроляПриоритета" id="68">
-			<DataPath>Объект.ТипКонтроляПриоритета</DataPath>
-			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-			<ContextMenu name="ТипКонтроляПриоритетаКонтекстноеМеню" id="69"/>
-			<ExtendedTooltip name="ТипКонтроляПриоритетаРасширеннаяПодсказка" id="70"/>
-		</InputField>
+		<UsualGroup name="Группа3" id="71">
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="72"/>
+			<ChildItems>
+				<InputField name="СтатусПриоритета" id="73">
+					<DataPath>Объект.СтатусПриоритета</DataPath>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="СтатусПриоритетаКонтекстноеМеню" id="74"/>
+					<ExtendedTooltip name="СтатусПриоритетаРасширеннаяПодсказка" id="75"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
 		<UsualGroup name="Группа2" id="18">
 			<Group>AlwaysHorizontal</Group>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="19"/>
 			<ChildItems>
-				<InputField name="НомерПоПорядку" id="13">
-					<DataPath>Объект.НомерПоПорядку</DataPath>
-					<EditMode>EnterOnInput</EditMode>
-					<SpinButton>true</SpinButton>
-					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-					<ContextMenu name="НомерПоПорядкуКонтекстноеМеню" id="14"/>
-					<ExtendedTooltip name="НомерПоПорядкуРасширеннаяПодсказка" id="15"/>
-				</InputField>
 				<InputField name="ВсегоЗадач" id="7">
-					<DataPath>Объект.ВсегоЗадач</DataPath>
+					<DataPath>1/0:300b290f-2667-44db-9ad8-4c77d3ab71e9</DataPath>
 					<EditMode>EnterOnInput</EditMode>
 					<SpinButton>true</SpinButton>
 					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
@@ -59,7 +57,7 @@
 					<ExtendedTooltip name="ВсегоЗадачРасширеннаяПодсказка" id="9"/>
 				</InputField>
 				<InputField name="КоличествоЗадачУИсполнителя" id="10">
-					<DataPath>Объект.КоличествоЗадачУИсполнителя</DataPath>
+					<DataPath>1/0:63a22125-dfe6-4dff-9778-2606c2a3a94f</DataPath>
 					<EditMode>EnterOnInput</EditMode>
 					<SpinButton>true</SpinButton>
 					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
@@ -68,112 +66,6 @@
 				</InputField>
 			</ChildItems>
 		</UsualGroup>
-		<UsualGroup name="Группа3" id="20">
-			<Group>AlwaysHorizontal</Group>
-			<Representation>None</Representation>
-			<ShowTitle>false</ShowTitle>
-			<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="21"/>
-			<ChildItems>
-				<UsualGroup name="Группа5" id="34">
-					<Group>Vertical</Group>
-					<Representation>None</Representation>
-					<ShowTitle>false</ShowTitle>
-					<ExtendedTooltip name="Группа5РасширеннаяПодсказка" id="35"/>
-					<ChildItems>
-						<Button name="ДобавитьМаленькуюКартинку" id="24">
-							<Type>UsualButton</Type>
-							<CommandName>Form.Command.ДобавитьМаленькуюКартинку</CommandName>
-							<ExtendedTooltip name="ДобавитьМаленькуюКартинкуРасширеннаяПодсказка" id="25"/>
-						</Button>
-						<PictureField name="АдресКартинкиМаленькой" id="28">
-							<DataPath>АдресКартинкиМаленькой</DataPath>
-							<TitleLocation>None</TitleLocation>
-							<NonselectedPictureText>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Загрузите картинку</v8:content>
-								</v8:item>
-							</NonselectedPictureText>
-							<EnableStartDrag>true</EnableStartDrag>
-							<EnableDrag>true</EnableDrag>
-							<ContextMenu name="АдресКартинкиМаленькойКонтекстноеМеню" id="29"/>
-							<ExtendedTooltip name="АдресКартинкиМаленькойРасширеннаяПодсказка" id="30"/>
-							<Events>
-								<Event name="DragCheck">АдресКартинкиМаленькойПроверкаПеретаскивания</Event>
-								<Event name="Drag">АдресКартинкиМаленькойПеретаскивание</Event>
-							</Events>
-						</PictureField>
-					</ChildItems>
-				</UsualGroup>
-				<UsualGroup name="Группа6" id="36">
-					<Group>Vertical</Group>
-					<Representation>None</Representation>
-					<ShowTitle>false</ShowTitle>
-					<ExtendedTooltip name="Группа6РасширеннаяПодсказка" id="37"/>
-					<ChildItems>
-						<Button name="ДобавитьБольшуюКартинку" id="22">
-							<Type>UsualButton</Type>
-							<CommandName>Form.Command.ДобавитьБольшуюКартинку</CommandName>
-							<ExtendedTooltip name="ДобавитьБольшуюКартинкуРасширеннаяПодсказка" id="23"/>
-						</Button>
-						<PictureField name="АдресКартинкиБольшой" id="31">
-							<DataPath>АдресКартинкиБольшой</DataPath>
-							<TitleLocation>None</TitleLocation>
-							<NonselectedPictureText>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Загрузите картинку</v8:content>
-								</v8:item>
-							</NonselectedPictureText>
-							<EnableStartDrag>true</EnableStartDrag>
-							<EnableDrag>true</EnableDrag>
-							<ContextMenu name="АдресКартинкиБольшойКонтекстноеМеню" id="32"/>
-							<ExtendedTooltip name="АдресКартинкиБольшойРасширеннаяПодсказка" id="33"/>
-							<Events>
-								<Event name="DragCheck">АдресКартинкиБольшойПроверкаПеретаскивания</Event>
-								<Event name="Drag">АдресКартинкиБольшойПеретаскивание</Event>
-							</Events>
-						</PictureField>
-					</ChildItems>
-				</UsualGroup>
-			</ChildItems>
-		</UsualGroup>
-		<UsualGroup name="Группа4" id="38">
-			<Group>AlwaysHorizontal</Group>
-			<Representation>None</Representation>
-			<ShowTitle>false</ShowTitle>
-			<ExtendedTooltip name="Группа4РасширеннаяПодсказка" id="39"/>
-			<ChildItems>
-				<InputField name="ЦветФона" id="40">
-					<DataPath>ЦветФона</DataPath>
-					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-					<ContextMenu name="ЦветФонаКонтекстноеМеню" id="41"/>
-					<ExtendedTooltip name="ЦветФонаРасширеннаяПодсказка" id="42"/>
-					<Events>
-						<Event name="OnChange">ЦветФонаПриИзменении</Event>
-					</Events>
-				</InputField>
-				<InputField name="ЦветШрифта" id="43">
-					<DataPath>ЦветТекста</DataPath>
-					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-					<ContextMenu name="ЦветШрифтаКонтекстноеМеню" id="44"/>
-					<ExtendedTooltip name="ЦветШрифтаРасширеннаяПодсказка" id="45"/>
-					<Events>
-						<Event name="OnChange">ЦветШрифтаПриИзменении</Event>
-					</Events>
-				</InputField>
-			</ChildItems>
-		</UsualGroup>
-		<LabelDecoration name="Декорация1" id="46">
-			<Title formatted="false">
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Пример текста</v8:content>
-				</v8:item>
-			</Title>
-			<ContextMenu name="Декорация1КонтекстноеМеню" id="47"/>
-			<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="48"/>
-		</LabelDecoration>
 		<Table name="СтадииКомплекта" id="49">
 			<AutoInsertNewRow>true</AutoInsertNewRow>
 			<EnableStartDrag>true</EnableStartDrag>
@@ -285,42 +177,10 @@
 			</Type>
 		</Attribute>
 	</Attributes>
-	<Commands>
-		<Command name="ДобавитьБольшуюКартинку" id="1">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Добавить большую картинку</v8:content>
-				</v8:item>
-			</Title>
-			<ToolTip>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Добавить большую картинку</v8:content>
-				</v8:item>
-			</ToolTip>
-			<Action>ДобавитьБольшуюКартинку</Action>
-		</Command>
-		<Command name="ДобавитьМаленькуюКартинку" id="2">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Добавить маленькую картинку</v8:content>
-				</v8:item>
-			</Title>
-			<ToolTip>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Добавить маленькую картинку</v8:content>
-				</v8:item>
-			</ToolTip>
-			<Action>ДобавитьМаленькуюКартинку</Action>
-		</Command>
-	</Commands>
 	<CommandInterface>
 		<NavigationPanel>
 			<Item>
-				<Command>InformationRegister.ОбщиеКомментарии.StandardCommand.OpenByValue.Ссылка</Command>
+				<Command>3:baaaaa08-149f-40e3-9713-1b118ed73e31</Command>
 				<Type>Auto</Type>
 				<CommandGroup>FormNavigationPanelGoTo</CommandGroup>
 				<DefaultVisible>false</DefaultVisible>
