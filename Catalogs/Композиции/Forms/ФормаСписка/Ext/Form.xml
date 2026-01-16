@@ -82,6 +82,11 @@
 					<ContextMenu name="ГабаритныйЧертежКонтекстноеМеню" id="23"/>
 					<ExtendedTooltip name="ГабаритныйЧертежРасширеннаяПодсказка" id="24"/>
 				</LabelField>
+				<LabelField name="ОсновноеПомещение" id="40">
+					<DataPath>Список.ОсновноеПомещение</DataPath>
+					<ContextMenu name="ОсновноеПомещениеКонтекстноеМеню" id="41"/>
+					<ExtendedTooltip name="ОсновноеПомещениеРасширеннаяПодсказка" id="42"/>
+				</LabelField>
 				<LabelField name="Конструктор" id="37">
 					<DataPath>Список.Конструктор</DataPath>
 					<ContextMenu name="КонструкторКонтекстноеМеню" id="38"/>
@@ -144,7 +149,8 @@
 		ИНАЧЕ 0
 	КОНЕЦ КАК СделкаНомер,
 	ДатыКомплекта.Код_в_PDM КАК Код_в_PDM,
-	СправочникКомпозиции.Конструктор КАК Конструктор
+	СправочникКомпозиции.Конструктор КАК Конструктор,
+	СправочникКомпозиции.ОсновноеПомещение КАК ОсновноеПомещение
 ИЗ
 	Справочник.Композиции КАК СправочникКомпозиции
 		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ДатыКомплекта КАК ДатыКомплекта
@@ -206,6 +212,10 @@
 				<Field xsi:type="dcssch:DataSetFieldField">
 					<dcssch:dataPath>Конструктор</dcssch:dataPath>
 					<dcssch:field>Конструктор</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ОсновноеПомещение</dcssch:dataPath>
+					<dcssch:field>ОсновноеПомещение</dcssch:field>
 				</Field>
 				<MainTable>Catalog.Композиции</MainTable>
 				<ListSettings>

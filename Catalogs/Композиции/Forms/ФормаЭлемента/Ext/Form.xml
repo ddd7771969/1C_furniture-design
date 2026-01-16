@@ -28,6 +28,13 @@
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="17"/>
 			<ChildItems>
+				<InputField name="Наименование" id="4">
+					<DataPath>Объект.Description</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
+				</InputField>
 				<InputField name="Код" id="1">
 					<DataPath>Объект.Code</DataPath>
 					<ReadOnly>true</ReadOnly>
@@ -35,13 +42,6 @@
 					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 					<ContextMenu name="КодКонтекстноеМеню" id="2"/>
 					<ExtendedTooltip name="КодРасширеннаяПодсказка" id="3"/>
-				</InputField>
-				<InputField name="Наименование" id="4">
-					<DataPath>Объект.Description</DataPath>
-					<EditMode>EnterOnInput</EditMode>
-					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-					<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
-					<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
 				</InputField>
 			</ChildItems>
 		</UsualGroup>
@@ -64,6 +64,17 @@
 					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 					<ContextMenu name="ГабаритныйЧертежКонтекстноеМеню" id="14"/>
 					<ExtendedTooltip name="ГабаритныйЧертежРасширеннаяПодсказка" id="15"/>
+				</InputField>
+				<InputField name="ОсновноеПомещение" id="106">
+					<DataPath>Объект.ОсновноеПомещение</DataPath>
+					<ListChoiceMode>true</ListChoiceMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ChooseType>false</ChooseType>
+					<ContextMenu name="ОсновноеПомещениеКонтекстноеМеню" id="107"/>
+					<ExtendedTooltip name="ОсновноеПомещениеРасширеннаяПодсказка" id="108"/>
+					<Events>
+						<Event name="StartChoice">ОсновноеПомещениеНачалоВыбора</Event>
+					</Events>
 				</InputField>
 			</ChildItems>
 		</UsualGroup>
