@@ -11,14 +11,34 @@
 		<Event name="OnOpen">ПриОткрытии</Event>
 	</Events>
 	<ChildItems>
-		<InputField name="Проект" id="23">
-			<DataPath>Проект</DataPath>
-			<ContextMenu name="ПроектКонтекстноеМеню" id="24"/>
-			<ExtendedTooltip name="ПроектРасширеннаяПодсказка" id="25"/>
-			<Events>
-				<Event name="OnChange">ПроектПриИзменении</Event>
-			</Events>
-		</InputField>
+		<UsualGroup name="Группа2" id="51">
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="52"/>
+			<ChildItems>
+				<InputField name="Проект" id="23">
+					<DataPath>Проект</DataPath>
+					<ContextMenu name="ПроектКонтекстноеМеню" id="24"/>
+					<ExtendedTooltip name="ПроектРасширеннаяПодсказка" id="25"/>
+					<Events>
+						<Event name="OnChange">ПроектПриИзменении</Event>
+					</Events>
+				</InputField>
+				<Button name="Печать" id="53">
+					<Type>UsualButton</Type>
+					<Representation>Picture</Representation>
+					<Width>3</Width>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<CommandName>Form.Command.Печать</CommandName>
+					<Picture>
+						<xr:Ref>StdPicture.Print</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</Picture>
+					<ExtendedTooltip name="ПечатьРасширеннаяПодсказка" id="54"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
 		<GanttChartField name="Диаграмма" id="1">
 			<DataPath>Диаграмма</DataPath>
 			<TitleLocation>None</TitleLocation>
@@ -541,6 +561,21 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ДобавитьКомплекты</Action>
+		</Command>
+		<Command name="Печать" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Печать</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Печать</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Печать</Action>
 		</Command>
 	</Commands>
 </Form>
