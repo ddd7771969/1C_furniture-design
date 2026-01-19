@@ -15,16 +15,6 @@
 				</Picture>
 				<ExtendedTooltip name="ФормаЗаписатьРасширеннаяПодсказка" id="93"/>
 			</Button>
-			<Button name="ФормаПринять" id="35">
-				<Type>CommandBarButton</Type>
-				<CommandName>Form.Command.Принять</CommandName>
-				<ExtendedTooltip name="ФормаПринятьРасширеннаяПодсказка" id="36"/>
-			</Button>
-			<Button name="ФормаОтказать" id="37">
-				<Type>CommandBarButton</Type>
-				<CommandName>Form.Command.Отказать</CommandName>
-				<ExtendedTooltip name="ФормаОтказатьРасширеннаяПодсказка" id="38"/>
-			</Button>
 			<Button name="ФормаОткрытьТЗ" id="39">
 				<Type>CommandBarButton</Type>
 				<CommandName>Form.Command.ОткрытьТЗ</CommandName>
@@ -208,6 +198,34 @@
 							<ContextMenu name="ИсполнительКонтекстноеМеню" id="26"/>
 							<ExtendedTooltip name="ИсполнительРасширеннаяПодсказка" id="27"/>
 						</InputField>
+						<UsualGroup name="Группа7" id="94">
+							<Group>AlwaysHorizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа7РасширеннаяПодсказка" id="95"/>
+							<ChildItems>
+								<Button name="ФормаПринять" id="35">
+									<Type>UsualButton</Type>
+									<Representation>PictureAndText</Representation>
+									<CommandName>Form.Command.Принять</CommandName>
+									<Picture>
+										<xr:Ref>StdPicture.AppearanceCheckIcon</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ExtendedTooltip name="ФормаПринятьРасширеннаяПодсказка" id="36"/>
+								</Button>
+								<Button name="ФормаОтказать" id="37">
+									<Type>UsualButton</Type>
+									<Representation>PictureAndText</Representation>
+									<CommandName>Form.Command.Отказать</CommandName>
+									<Picture>
+										<xr:Ref>StdPicture.AppearanceCrossIcon</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ExtendedTooltip name="ФормаОтказатьРасширеннаяПодсказка" id="38"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
 					</ChildItems>
 				</UsualGroup>
 				<UsualGroup name="Группа5" id="45">
