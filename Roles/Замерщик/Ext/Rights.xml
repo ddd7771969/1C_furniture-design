@@ -66,11 +66,23 @@
 			<value>true</value>
 		</right>
 		<right>
+			<name>InteractiveInsert</name>
+			<value>true</value>
+		</right>
+		<right>
 			<name>Edit</name>
 			<value>true</value>
 		</right>
 		<right>
 			<name>InputByString</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Execute</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveExecute</name>
 			<value>true</value>
 		</right>
 	</object>
@@ -192,13 +204,6 @@
 		</right>
 	</object>
 	<object>
-		<name>Task.ИзменениеСтатусаГЧ.AddressingAttribute.Исполнитель</name>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
 		<name>InformationRegister.НепринятыеКОбработкеПочтовымСерверомИсходящиеПисьма</name>
 		<right>
 			<name>Read</name>
@@ -229,13 +234,6 @@
 		<right>
 			<name>Update</name>
 			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>Task.ИзменениеСтатусаГЧ.Attribute.НовыйСтатус</name>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
 		</right>
 	</object>
 	<object>
@@ -374,13 +372,6 @@
 		</right>
 	</object>
 	<object>
-		<name>Task.ИзменениеСтатусаГЧ.Attribute.СтатусИзменен</name>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
 		<name>InformationRegister.ИдентификаторыПолученныхЭлектронныхПисем</name>
 		<right>
 			<name>Read</name>
@@ -451,13 +442,6 @@
 		<right>
 			<name>Update</name>
 			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>Task.ИзменениеСтатусаГЧ.TabularSection.ДополнительныеДанные</name>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
 		</right>
 	</object>
 	<object>
@@ -549,13 +533,6 @@
 		</right>
 	</object>
 	<object>
-		<name>Task.ИзменениеСтатусаГЧ.Attribute.Основание</name>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
 		<name>InformationRegister.ПрогрессОбновления</name>
 		<right>
 			<name>Read</name>
@@ -575,13 +552,6 @@
 		<right>
 			<name>View</name>
 			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>Task.ИзменениеСтатусаГЧ.Attribute.Комментарий</name>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
 		</right>
 	</object>
 	<object>
@@ -625,6 +595,41 @@
 		</right>
 		<right>
 			<name>Update</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Task.ЗадачаИсполнителя</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Insert</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Update</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveInsert</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Execute</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveExecute</name>
 			<value>true</value>
 		</right>
 	</object>
@@ -900,13 +905,6 @@
 		</right>
 	</object>
 	<object>
-		<name>Task.ИзменениеСтатусаГЧ.Attribute.ГабаритныйЧертеж</name>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
 		<name>Catalog.Пользователи</name>
 		<right>
 			<name>Read</name>
@@ -1009,13 +1007,6 @@
 		</right>
 	</object>
 	<object>
-		<name>Task.ИзменениеСтатусаГЧ.TabularSection.Наблюдатели.Attribute.Наблюдатель</name>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
 		<name>InformationRegister.КанбанОбъединениеКолонок</name>
 		<right>
 			<name>Read</name>
@@ -1037,64 +1028,28 @@
 			<value>true</value>
 		</right>
 		<right>
+			<name>Update</name>
+			<value>true</value>
+		</right>
+		<right>
 			<name>View</name>
 			<value>true</value>
 		</right>
-	</object>
-	<object>
-		<name>Task.ИзменениеСтатусаГЧ.StandardAttribute.Executed</name>
 		<right>
-			<name>Edit</name>
-			<value>false</value>
+			<name>InteractiveInsert</name>
+			<value>true</value>
 		</right>
-	</object>
-	<object>
-		<name>Task.ИзменениеСтатусаГЧ.StandardAttribute.Description</name>
 		<right>
 			<name>Edit</name>
-			<value>false</value>
+			<value>true</value>
 		</right>
-	</object>
-	<object>
-		<name>Task.ИзменениеСтатусаГЧ.StandardAttribute.RoutePoint</name>
 		<right>
-			<name>Edit</name>
-			<value>false</value>
+			<name>Execute</name>
+			<value>true</value>
 		</right>
-	</object>
-	<object>
-		<name>Task.ИзменениеСтатусаГЧ.StandardAttribute.BusinessProcess</name>
 		<right>
-			<name>Edit</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
-		<name>Task.ИзменениеСтатусаГЧ.StandardAttribute.Ref</name>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
-		<name>Task.ИзменениеСтатусаГЧ.StandardAttribute.DeletionMark</name>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
-		<name>Task.ИзменениеСтатусаГЧ.StandardAttribute.Date</name>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
-		<name>Task.ИзменениеСтатусаГЧ.StandardAttribute.Number</name>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
+			<name>InteractiveExecute</name>
+			<value>true</value>
 		</right>
 	</object>
 	<object>
@@ -1164,13 +1119,6 @@
 		</right>
 	</object>
 	<object>
-		<name>Task.ИзменениеСтатусаГЧ.TabularSection.ДополнительныеДанные.Attribute.ИмяГруппыДляОтображения</name>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
 		<name>InformationRegister.СертификатыПолучателейРассылкиОтчетов</name>
 		<right>
 			<name>Read</name>
@@ -1226,6 +1174,52 @@
 		</right>
 		<right>
 			<name>Update</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.НаправлениеОбщихЗадач</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Task.Задачи_РКД</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Insert</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Update</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveInsert</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Execute</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveExecute</name>
 			<value>true</value>
 		</right>
 	</object>
@@ -1369,6 +1363,41 @@
 		</right>
 	</object>
 	<object>
+		<name>Task.Задачи_ПКД</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Insert</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Update</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveInsert</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Execute</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveExecute</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>Task.ПроверитьГабаритныеЧертежи</name>
 		<right>
 			<name>Read</name>
@@ -1387,11 +1416,23 @@
 			<value>true</value>
 		</right>
 		<right>
+			<name>InteractiveInsert</name>
+			<value>true</value>
+		</right>
+		<right>
 			<name>Edit</name>
 			<value>true</value>
 		</right>
 		<right>
 			<name>InputByString</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Execute</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveExecute</name>
 			<value>true</value>
 		</right>
 	</object>
@@ -1535,9 +1576,72 @@
 		</right>
 	</object>
 	<object>
+		<name>Task.ОбщиеЗадачи</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Insert</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Update</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveInsert</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Execute</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveExecute</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>Task.ПереводГабаритногоЧертежаВПроектное</name>
 		<right>
 			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Insert</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Update</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveInsert</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Execute</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveExecute</name>
 			<value>true</value>
 		</right>
 	</object>
@@ -1729,13 +1833,6 @@
 		</right>
 	</object>
 	<object>
-		<name>Task.ИзменениеСтатусаГЧ.TabularSection.ДополнительныеДанные.Attribute.Представление</name>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
 		<name>InformationRegister.Б24_К_ИдентификаторыДел</name>
 		<right>
 			<name>Read</name>
@@ -1755,13 +1852,6 @@
 		<right>
 			<name>Update</name>
 			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>Task.ИзменениеСтатусаГЧ.TabularSection.ДополнительныеДанные.Attribute.Значение</name>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
 		</right>
 	</object>
 	<object>
@@ -1970,13 +2060,6 @@
 		</right>
 	</object>
 	<object>
-		<name>Task.ИзменениеСтатусаГЧ.TabularSection.Наблюдатели</name>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
 		<name>Task.СоздатьМодельГабаритногоЧертежа</name>
 		<right>
 			<name>Read</name>
@@ -1992,6 +2075,10 @@
 		</right>
 		<right>
 			<name>View</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveInsert</name>
 			<value>true</value>
 		</right>
 		<right>
@@ -2078,6 +2165,41 @@
 		</right>
 	</object>
 	<object>
+		<name>Task.ПодготовкаПроекта</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Insert</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Update</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveInsert</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Execute</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveExecute</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>InformationRegister.ПроизвольноеОписаниеСобытий</name>
 		<right>
 			<name>Read</name>
@@ -2122,6 +2244,41 @@
 		</right>
 	</object>
 	<object>
+		<name>Task.ВыполнитьКорректировкуИзделияКомплект</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Insert</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Update</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveInsert</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Execute</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveExecute</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>InformationRegister.КоличествоЧасовВМесяц</name>
 		<right>
 			<name>Read</name>
@@ -2158,6 +2315,34 @@
 		<name>Task.КонтрольТЗ</name>
 		<right>
 			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Insert</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Update</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveInsert</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Execute</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveExecute</name>
 			<value>true</value>
 		</right>
 	</object>
@@ -2226,13 +2411,6 @@
 		</right>
 	</object>
 	<object>
-		<name>Task.ИзменениеСтатусаГЧ.TabularSection.ДополнительныеДанные.Attribute.Наименование</name>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
 		<name>InformationRegister.ДомаЗданияСтроения</name>
 		<right>
 			<name>Read</name>
@@ -2241,13 +2419,6 @@
 		<right>
 			<name>Update</name>
 			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>Task.ИзменениеСтатусаГЧ.Attribute.КрайняяДатаИсполнения</name>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
 		</right>
 	</object>
 	<object>
@@ -2563,13 +2734,6 @@
 		<right>
 			<name>Update</name>
 			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>Task.ИзменениеСтатусаГЧ.Attribute.Проект</name>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
 		</right>
 	</object>
 </Rights>
