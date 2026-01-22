@@ -961,6 +961,11 @@
 								</LabelField>
 							</ChildItems>
 						</UsualGroup>
+						<Button name="КонтрольРегистрации" id="472">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.КонтрольРегистрации</CommandName>
+							<ExtendedTooltip name="КонтрольРегистрацииРасширеннаяПодсказка" id="473"/>
+						</Button>
 					</ChildItems>
 				</Page>
 			</ChildItems>
@@ -1680,6 +1685,21 @@
 			</ToolTip>
 			<Action>ОткрытьФайлПДМ</Action>
 		</Command>
+		<Command name="КонтрольРегистрации" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Контроль регистрации</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Контроль регистрации</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КонтрольРегистрации</Action>
+		</Command>
 	</Commands>
 	<CommandInterface>
 		<NavigationPanel>
@@ -1855,6 +1875,16 @@
 				<Type>Auto</Type>
 				<CommandGroup>FormNavigationPanelGoTo</CommandGroup>
 				<Index>16</Index>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>InformationRegister.Дополнение_к_ТЗ.StandardCommand.OpenByValue.Комплект</Command>
+				<Type>Auto</Type>
+				<CommandGroup>FormNavigationPanelGoTo</CommandGroup>
+				<Index>17</Index>
 				<DefaultVisible>false</DefaultVisible>
 				<Visible>
 					<xr:Common>false</xr:Common>
