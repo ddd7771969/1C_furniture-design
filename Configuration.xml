@@ -1025,13 +1025,6 @@
 			<CommonModule>Б24_СУ_ОбщегоНазначенияВызовСервера</CommonModule>
 			<CommonModule>Б24_СУ_ОбщегоНазначенияВызовСервераПовтИсп</CommonModule>
 			<CommonModule>Б24_СУ_РегистрацияИзмененийВызовСервера</CommonModule>
-			<CommonModule>БизнесПроцессыИЗадачиВызовСервера</CommonModule>
-			<CommonModule>БизнесПроцессыИЗадачиКлиент</CommonModule>
-			<CommonModule>БизнесПроцессыИЗадачиКлиентПереопределяемый</CommonModule>
-			<CommonModule>БизнесПроцессыИЗадачиКлиентСервер</CommonModule>
-			<CommonModule>БизнесПроцессыИЗадачиПереопределяемый</CommonModule>
-			<CommonModule>БизнесПроцессыИЗадачиСервер</CommonModule>
-			<CommonModule>БизнесПроцессыИЗадачиСобытия</CommonModule>
 			<CommonModule>БлокировкаРаботыСВнешнимиРесурсами</CommonModule>
 			<CommonModule>БлокировкаРаботыСВнешнимиРесурсамиПереопределяемый</CommonModule>
 			<CommonModule>ВариантыОтчетов</CommonModule>
@@ -1488,7 +1481,6 @@
 			<EventSubscription>ВыполнитьДействияПослеПолученияДанныхУзлаВРаспределеннойИнформационнойБазе</EventSubscription>
 			<EventSubscription>ВыполнитьДействияПриЗаписиПрисоединенногоФайла</EventSubscription>
 			<EventSubscription>ЗаписатьВерсиюОбъекта</EventSubscription>
-			<EventSubscription>ЗаписатьВСписокБизнесПроцессов</EventSubscription>
 			<EventSubscription>ЗаполнитьЗначениеРеквизитаУпорядочивания</EventSubscription>
 			<EventSubscription>ЗаполнитьКонтактнуюИнформацию</EventSubscription>
 			<EventSubscription>ЗапретитьИспользованиеУдаляемыхОбъектовВДокументах</EventSubscription>
@@ -1501,7 +1493,6 @@
 			<EventSubscription>КонтактнаяИнформацияОбработкаПроверкиЗаполнения</EventSubscription>
 			<EventSubscription>ОбновитьВнешнегоПользователя</EventSubscription>
 			<EventSubscription>ОбновитьКонтактнуюИнформацию</EventSubscription>
-			<EventSubscription>ОбновитьСостояниеБизнесПроцесса</EventSubscription>
 			<EventSubscription>ОбновлениеВерсииДатЗапретаИзмененияПослеЗагрузкиДанных</EventSubscription>
 			<EventSubscription>ОбновлениеВерсииИБПередУдалениемСсылочногоОбъекта</EventSubscription>
 			<EventSubscription>ОбработкаПроверкиЗаполненияПрисоединенногоФайла</EventSubscription>
@@ -1513,8 +1504,6 @@
 			<EventSubscription>ОчиститьИнформациюОбАвтореВерсии</EventSubscription>
 			<EventSubscription>ПолучениеПолейПредставленияВзаимодействия</EventSubscription>
 			<EventSubscription>ПолучениеПредставленияВзаимодействия</EventSubscription>
-			<EventSubscription>ПолучитьПоляПредставленияБизнесПроцесса</EventSubscription>
-			<EventSubscription>ПолучитьПредставлениеБизнесПроцесса</EventSubscription>
 			<EventSubscription>ПослеПроведенияПлановойГотовностиПомещений</EventSubscription>
 			<EventSubscription>ПриОтправкеДанныхГлавному</EventSubscription>
 			<EventSubscription>ПриОтправкеДанныхПодчиненному</EventSubscription>
@@ -1526,7 +1515,6 @@
 			<EventSubscription>СвойстваПередУдалениемСсылочногоОбъекта</EventSubscription>
 			<EventSubscription>СкопироватьРеквизитыВерсииФайловВФайл</EventSubscription>
 			<EventSubscription>СоздатьПредопределенныеПапкиЭлектронныхПисем</EventSubscription>
-			<EventSubscription>УстановитьПометкуУдаленияЗадач</EventSubscription>
 			<EventSubscription>УстановитьПометкуУдаленияПрисоединенныхФайлов</EventSubscription>
 			<EventSubscription>УстановитьПометкуУдаленияПрисоединенныхФайловДокументовВзаимодействия</EventSubscription>
 			<EventSubscription>УстановитьСнятьПометкуУдаленияЗаметок</EventSubscription>
@@ -1538,7 +1526,6 @@
 			<ScheduledJob>ИзвлечениеТекста</ScheduledJob>
 			<ScheduledJob>ИсправлениеУстаревшихАдресов</ScheduledJob>
 			<ScheduledJob>КонтрольУдаленияПомеченныхОбъектов</ScheduledJob>
-			<ScheduledJob>МониторингЗадач</ScheduledJob>
 			<ScheduledJob>ОбновлениеИндексаППД</ScheduledJob>
 			<ScheduledJob>ОбновлениеПредопределенныхВариантовОтчетов</ScheduledJob>
 			<ScheduledJob>ОбновлениеСостоянияЗаявленияНаВыпускСертификата</ScheduledJob>
@@ -1559,9 +1546,7 @@
 			<ScheduledJob>РассылкаОтчетов</ScheduledJob>
 			<ScheduledJob>СинхронизацияФайлов</ScheduledJob>
 			<ScheduledJob>СлияниеИндексаППД</ScheduledJob>
-			<ScheduledJob>СтартОтложенныхПроцессов</ScheduledJob>
 			<ScheduledJob>ТелеграммПолучитьСообщение</ScheduledJob>
-			<ScheduledJob>УведомлениеИсполнителейОНовыхЗадачах</ScheduledJob>
 			<ScheduledJob>УдалениеПомеченныхОбъектов</ScheduledJob>
 			<ScheduledJob>УдалениеУстаревшихПараметровРаботыВерсийРасширений</ScheduledJob>
 			<ScheduledJob>УстановкаПорядкаОтложенногоОбновленияВМоделиСервиса</ScheduledJob>
@@ -1614,8 +1599,6 @@
 			<FunctionalOption>УчитыватьОбъектПриХранении</FunctionalOption>
 			<FunctionalOptionsParameter>ТипВерсионируемогоОбъекта</FunctionalOptionsParameter>
 			<DefinedType>АдресатЗапретаИзменения</DefinedType>
-			<DefinedType>БизнесПроцесс</DefinedType>
-			<DefinedType>БизнесПроцессОбъект</DefinedType>
 			<DefinedType>ВариантОбновляемогоОтчета</DefinedType>
 			<DefinedType>ВерсионируемыеДанные</DefinedType>
 			<DefinedType>ВерсионируемыеДанныеОбъект</DefinedType>
@@ -1640,7 +1623,6 @@
 			<DefinedType>ОбъектСклонения</DefinedType>
 			<DefinedType>ОбъектСНастраиваемымПорядком</DefinedType>
 			<DefinedType>Организация</DefinedType>
-			<DefinedType>ОтложенныйБизнесПроцесс</DefinedType>
 			<DefinedType>ПодписанныйОбъект</DefinedType>
 			<DefinedType>ПодписанныйОбъектМЧД</DefinedType>
 			<DefinedType>Подразделение</DefinedType>
@@ -1661,11 +1643,8 @@
 			<CommonCommand>ВремяТекущегоСеанса</CommonCommand>
 			<CommonCommand>ЗагрузитьКурсыВалют</CommonCommand>
 			<CommonCommand>ДополнительныеСведенияКоманднаяПанель</CommonCommand>
-			<CommonCommand>ЗадачиПоПредмету</CommonCommand>
 			<CommonCommand>ВсеФайлы</CommonCommand>
 			<CommonCommand>ИсторияИзменений</CommonCommand>
-			<CommonCommand>ЗадачиПоБизнесПроцессу</CommonCommand>
-			<CommonCommand>КартаМаршрутаБизнесПроцесса</CommonCommand>
 			<CommonCommand>МоиЗаметкиПоПредмету</CommonCommand>
 			<CommonCommand>Напомнить</CommonCommand>
 			<CommonCommand>НастройкаКолонтитулов</CommonCommand>
@@ -2142,7 +2121,6 @@
 			<Enum>ЮрФизЛицо</Enum>
 			<Report>АнализВерсийОбъектов</Report>
 			<Report>АнализЖурналаРегистрации</Report>
-			<Report>БизнесПроцессы</Report>
 			<Report>ГрафикЗамеров</Report>
 			<Report>ГрафикЗамеровПолный</Report>
 			<Report>ДатыЗапретаЗагрузки</Report>
@@ -2150,11 +2128,9 @@
 			<Report>ДвижениеНоменклатуры</Report>
 			<Report>ДвиженияДокумента</Report>
 			<Report>ДлительностьОтложенногоОбновления</Report>
-			<Report>ЗависшиеЗадачи</Report>
 			<Report>ЗагрузитьНоменклатуруИзPDM</Report>
 			<Report>ЗагрузкаКонструкторскогоОтдела</Report>
 			<Report>Задания</Report>
-			<Report>Задачи</Report>
 			<Report>ЗадачиИстекающиеНаДату</Report>
 			<Report>ЗаказанныйМатериал</Report>
 			<Report>ИзделияПроекта</Report>
@@ -2273,7 +2249,6 @@
 			<InformationRegister>ВыданноСоСклада</InformationRegister>
 			<InformationRegister>ВыпускиПроизводственныхКомплектов</InformationRegister>
 			<InformationRegister>ВыходныеДни</InformationRegister>
-			<InformationRegister>ДанныеБизнесПроцессов</InformationRegister>
 			<InformationRegister>ДанныеГабаритныйЧертеж</InformationRegister>
 			<InformationRegister>ДанныеИзделияЗаказчика</InformationRegister>
 			<InformationRegister>ДанныеКомплекта</InformationRegister>
@@ -2376,7 +2351,6 @@
 			<InformationRegister>ПричиныИзмененияДатКомплекта</InformationRegister>
 			<InformationRegister>ПрогрессОбновления</InformationRegister>
 			<InformationRegister>ПроизвольноеОписаниеСобытий</InformationRegister>
-			<InformationRegister>ПроцессыДляЗапуска</InformationRegister>
 			<InformationRegister>ПутиКПрограммамЭлектроннойПодписиИШифрованияНаСерверахLinux</InformationRegister>
 			<InformationRegister>РаботаКонструктораФакт</InformationRegister>
 			<InformationRegister>РабочиеКаталогиФайлов</InformationRegister>
@@ -2432,9 +2406,7 @@
 			<ChartOfCharacteristicTypes>ОбъектыАдресацииЗадач</ChartOfCharacteristicTypes>
 			<ChartOfCharacteristicTypes>РазделыДатЗапретаИзменения</ChartOfCharacteristicTypes>
 			<ChartOfCharacteristicTypes>ВидыСубконтоХозрасчетные</ChartOfCharacteristicTypes>
-			<BusinessProcess>Задание</BusinessProcess>
 			<Task>ВыполнитьКорректировкуИзделияКомплект</Task>
-			<Task>ЗадачаИсполнителя</Task>
 			<Task>Задачи_ПКД</Task>
 			<Task>Задачи_РКД</Task>
 			<Task>ИзменениеСтатусаГЧ</Task>
