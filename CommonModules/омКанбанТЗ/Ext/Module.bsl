@@ -801,6 +801,13 @@
 |    // Сохраняем ID перетаскиваемого элемента в объект dataTransfer
 |    event.dataTransfer.setData(""text/plain"", event.target.dataset.id + ';' + event.target.dataset.track);
 |
+|    // Создаем событие и помещаем его в очередь
+|    const eventData = {
+|      event: ""DropItemStart"", // тип события
+|      itemId: event.currentTarget.dataset.id, // ID элемента
+|      trackId: event.currentTarget.dataset.track, // Дорожка элемента
+|    };
+|    pushEvent(eventData);
 |    // Скрываем элемент во время перетаскивания (для улучшения UX)
 |    setTimeout(() => {
 |      event.target.style.display = ""none"";
