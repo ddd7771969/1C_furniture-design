@@ -9,10 +9,10 @@
 				<CommandName>Form.Command.ВыгрузитьВPDM</CommandName>
 				<ExtendedTooltip name="ВыгрузитьВPDMРасширеннаяПодсказка" id="77"/>
 			</Button>
-			<Button name="ФормаОткрытьТЗ" id="80">
+			<Button name="ФормаЗагрузитьТЗ" id="113">
 				<Type>CommandBarButton</Type>
-				<CommandName>Form.Command.ОткрытьТЗ</CommandName>
-				<ExtendedTooltip name="ФормаОткрытьТЗРасширеннаяПодсказка" id="81"/>
+				<CommandName>Form.Command.ЗагрузитьТЗ</CommandName>
+				<ExtendedTooltip name="ФормаЗагрузитьТЗРасширеннаяПодсказка" id="114"/>
 			</Button>
 		</ChildItems>
 	</AutoCommandBar>
@@ -151,16 +151,35 @@
 				</InputField>
 			</ChildItems>
 		</UsualGroup>
-		<Button name="ОткрытьФайлПДМ" id="99">
-			<Type>UsualButton</Type>
-			<Representation>PictureAndText</Representation>
-			<CommandName>Form.Command.ОткрытьФайлПДМ</CommandName>
-			<Picture>
-				<xr:Ref>StdPicture.OpenFile</xr:Ref>
-				<xr:LoadTransparent>true</xr:LoadTransparent>
-			</Picture>
-			<ExtendedTooltip name="ОткрытьФайлПДМРасширеннаяПодсказка" id="100"/>
-		</Button>
+		<UsualGroup name="Группа6" id="109">
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа6РасширеннаяПодсказка" id="110"/>
+			<ChildItems>
+				<Button name="ОткрытьФайлПДМ" id="99">
+					<Type>UsualButton</Type>
+					<Representation>PictureAndText</Representation>
+					<CommandName>Form.Command.ОткрытьФайлПДМ</CommandName>
+					<Picture>
+						<xr:Ref>StdPicture.OpenFile</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</Picture>
+					<ExtendedTooltip name="ОткрытьФайлПДМРасширеннаяПодсказка" id="100"/>
+				</Button>
+				<Button name="ОткрытьТЗ" id="111">
+					<Type>UsualButton</Type>
+					<Visible>false</Visible>
+					<Representation>PictureAndText</Representation>
+					<CommandName>Form.Command.ОткрытьТЗ</CommandName>
+					<Picture>
+						<xr:Ref>StdPicture.OpenFile</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</Picture>
+					<ExtendedTooltip name="ОткрытьТЗРасширеннаяПодсказка" id="112"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
 		<UsualGroup name="Группа4" id="50">
 			<Group>AlwaysHorizontal</Group>
 			<Representation>None</Representation>
@@ -478,21 +497,6 @@
 			</ToolTip>
 			<Action>НазначитьКодPDM</Action>
 		</Command>
-		<Command name="ОткрытьТЗ" id="3">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Открыть ТЗ</v8:content>
-				</v8:item>
-			</Title>
-			<ToolTip>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Открыть ТЗ</v8:content>
-				</v8:item>
-			</ToolTip>
-			<Action>ОткрытьТЗ</Action>
-		</Command>
 		<Command name="НазначитьКодБитрикс" id="4">
 			<Title>
 				<v8:item>
@@ -522,6 +526,36 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ОткрытьФайлПДМ</Action>
+		</Command>
+		<Command name="ОткрытьТЗ" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть ТЗ</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть ТЗ</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОткрытьТЗ</Action>
+		</Command>
+		<Command name="ЗагрузитьТЗ" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить ТЗ</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Загрузить ТЗ</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗагрузитьТЗ</Action>
 		</Command>
 	</Commands>
 	<CommandInterface>

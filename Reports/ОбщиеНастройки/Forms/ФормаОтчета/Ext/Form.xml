@@ -726,6 +726,18 @@
 							<ContextMenu name="СтадияСогласованиеКонтекстноеМеню" id="218"/>
 							<ExtendedTooltip name="СтадияСогласованиеРасширеннаяПодсказка" id="219"/>
 						</InputField>
+						<InputField name="СтадияТЗ" id="220">
+							<DataPath>СтадияТЗ</DataPath>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="СтадияТЗКонтекстноеМеню" id="221"/>
+							<ExtendedTooltip name="СтадияТЗРасширеннаяПодсказка" id="222"/>
+						</InputField>
+						<InputField name="СтадияПодтвержденияТЗ" id="223">
+							<DataPath>СтадияПодтвержденияТЗ</DataPath>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="СтадияПодтвержденияТЗКонтекстноеМеню" id="224"/>
+							<ExtendedTooltip name="СтадияПодтвержденияТЗРасширеннаяПодсказка" id="225"/>
+						</InputField>
 					</ChildItems>
 				</Page>
 			</ChildItems>
@@ -1398,6 +1410,28 @@
 				<v8:item>
 					<v8:lang>ru</v8:lang>
 					<v8:content>Стадия согласование</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.СтадииКомплекта</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="СтадияТЗ" id="40">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Стадия ТЗ</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.СтадииКомплекта</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="СтадияПодтвержденияТЗ" id="41">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Стадия подтверждения ТЗ</v8:content>
 				</v8:item>
 			</Title>
 			<Type>

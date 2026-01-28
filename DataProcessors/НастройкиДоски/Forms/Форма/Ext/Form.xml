@@ -169,6 +169,13 @@
 											<ContextMenu name="КолонкиЗапрещенИнтерактивныйПереходКонтекстноеМеню" id="307"/>
 											<ExtendedTooltip name="КолонкиЗапрещенИнтерактивныйПереходРасширеннаяПодсказка" id="308"/>
 										</CheckBoxField>
+										<CheckBoxField name="КолонкиЗапрещенИнтерактивныйУход" id="309">
+											<DataPath>Колонки.ЗапрещенИнтерактивныйУход</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="КолонкиЗапрещенИнтерактивныйУходКонтекстноеМеню" id="310"/>
+											<ExtendedTooltip name="КолонкиЗапрещенИнтерактивныйУходРасширеннаяПодсказка" id="311"/>
+										</CheckBoxField>
 										<InputField name="КолонкиЛимитКарточек" id="29">
 											<DataPath>Колонки.ЛимитКарточек</DataPath>
 											<EditMode>EnterOnInput</EditMode>
@@ -1032,6 +1039,17 @@
 						<v8:item>
 							<v8:lang>ru</v8:lang>
 							<v8:content>Запрещен интерактивный переход</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ЗапрещенИнтерактивныйУход" id="10">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Запрещен интерактивный уход</v8:content>
 						</v8:item>
 					</Title>
 					<Type>
