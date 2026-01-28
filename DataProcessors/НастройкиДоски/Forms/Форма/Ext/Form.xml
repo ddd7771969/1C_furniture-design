@@ -162,6 +162,13 @@
 											<ContextMenu name="КолонкиНаименованиеКонтекстноеМеню" id="27"/>
 											<ExtendedTooltip name="КолонкиНаименованиеРасширеннаяПодсказка" id="28"/>
 										</InputField>
+										<CheckBoxField name="КолонкиЗапрещенИнтерактивныйПереход" id="306">
+											<DataPath>Колонки.ЗапрещенИнтерактивныйПереход</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="КолонкиЗапрещенИнтерактивныйПереходКонтекстноеМеню" id="307"/>
+											<ExtendedTooltip name="КолонкиЗапрещенИнтерактивныйПереходРасширеннаяПодсказка" id="308"/>
+										</CheckBoxField>
 										<InputField name="КолонкиЛимитКарточек" id="29">
 											<DataPath>Колонки.ЛимитКарточек</DataPath>
 											<EditMode>EnterOnInput</EditMode>
@@ -1018,6 +1025,17 @@
 					</Title>
 					<Type>
 						<v8:Type>cfg:EnumRef.СтатусыЗадач</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ЗапрещенИнтерактивныйПереход" id="9">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Запрещен интерактивный переход</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
 					</Type>
 				</Column>
 			</Columns>
