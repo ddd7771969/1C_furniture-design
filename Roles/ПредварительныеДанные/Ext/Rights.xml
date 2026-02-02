@@ -94,10 +94,6 @@
 	<object>
 		<name>Catalog.Проекты.TabularSection.КонтактнаяИнформация.Attribute.ЗначенияПолей</name>
 		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
 			<name>Edit</name>
 			<value>false</value>
 		</right>
@@ -3531,6 +3527,14 @@
 			<name>Update</name>
 			<value>true</value>
 		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InputByString</name>
+			<value>true</value>
+		</right>
 	</object>
 	<object>
 		<name>InformationRegister.СведенияОПользователях.Attribute.АутентификацияOpenID</name>
@@ -5797,10 +5801,6 @@
 	<object>
 		<name>Catalog.Проекты.TabularSection.КонтактнаяИнформация.Attribute.Страна</name>
 		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
 			<name>Edit</name>
 			<value>false</value>
 		</right>
@@ -5829,10 +5829,6 @@
 	</object>
 	<object>
 		<name>Catalog.Проекты.TabularSection.КонтактнаяИнформация.Attribute.Вид</name>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
@@ -6198,6 +6194,17 @@
 		</right>
 	</object>
 	<object>
+		<name>Catalog.Организации</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>InformationRegister.МашиночитаемыеДоверенностиПредставителиИДоверители.Dimension.ИНН</name>
 		<right>
 			<name>View</name>
@@ -6349,10 +6356,6 @@
 	</object>
 	<object>
 		<name>Catalog.Проекты.TabularSection.КонтактнаяИнформация.Attribute.ДоменноеИмяСервера</name>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
@@ -6740,10 +6743,6 @@
 	<object>
 		<name>Catalog.Проекты.TabularSection.КонтактнаяИнформация.Attribute.Значение</name>
 		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
 			<name>Edit</name>
 			<value>false</value>
 		</right>
@@ -7021,10 +7020,6 @@
 	</object>
 	<object>
 		<name>Catalog.Проекты.TabularSection.КонтактнаяИнформация.Attribute.Город</name>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
@@ -8590,10 +8585,6 @@
 	<object>
 		<name>Catalog.Проекты.TabularSection.КонтактнаяИнформация.Attribute.НомерТелефона</name>
 		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
 			<name>Edit</name>
 			<value>false</value>
 		</right>
@@ -9669,10 +9660,6 @@
 	</object>
 	<object>
 		<name>Catalog.Проекты.TabularSection.КонтактнаяИнформация.Attribute.НомерТелефонаБезКодов</name>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
@@ -10858,10 +10845,6 @@
 	<object>
 		<name>Catalog.Проекты.TabularSection.КонтактнаяИнформация.Attribute.Представление</name>
 		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
 			<name>Edit</name>
 			<value>false</value>
 		</right>
@@ -10990,10 +10973,6 @@
 	<object>
 		<name>Catalog.Проекты.TabularSection.КонтактнаяИнформация.Attribute.ВидДляСписка</name>
 		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
 			<name>Edit</name>
 			<value>false</value>
 		</right>
@@ -11113,10 +11092,6 @@
 	</object>
 	<object>
 		<name>Catalog.Проекты.TabularSection.КонтактнаяИнформация.Attribute.Регион</name>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
@@ -12154,6 +12129,17 @@
 		</right>
 	</object>
 	<object>
+		<name>Catalog.ФотоЗамеров</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>InformationRegister.Б24_К_ИдентификаторыДел</name>
 		<right>
 			<name>Read</name>
@@ -13047,6 +13033,17 @@
 		<right>
 			<name>Edit</name>
 			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.ТипыКомплектов</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
 		</right>
 	</object>
 	<object>
@@ -14485,10 +14482,6 @@
 	<object>
 		<name>Catalog.Проекты.TabularSection.КонтактнаяИнформация.Attribute.Тип</name>
 		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
-		<right>
 			<name>Edit</name>
 			<value>false</value>
 		</right>
@@ -15279,6 +15272,17 @@
 		</right>
 	</object>
 	<object>
+		<name>Catalog.НоменклатураПоставщика</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>Catalog.Задачи_ПКДПрисоединенныеФайлы</name>
 		<right>
 			<name>Read</name>
@@ -15857,10 +15861,6 @@
 	</object>
 	<object>
 		<name>Catalog.Проекты.TabularSection.КонтактнаяИнформация.Attribute.АдресЭП</name>
-		<right>
-			<name>View</name>
-			<value>false</value>
-		</right>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
