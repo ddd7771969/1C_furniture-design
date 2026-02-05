@@ -3,6 +3,11 @@
 	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
 	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="BeforeWriteAtServer">ПередЗаписьюНаСервере</Event>
+	</Events>
 	<ChildItems>
 		<UsualGroup name="Группа1" id="13">
 			<Group>AlwaysHorizontal</Group>
@@ -27,36 +32,57 @@
 				</InputField>
 			</ChildItems>
 		</UsualGroup>
+		<InputField name="Текст" id="28">
+			<DataPath>Объект.Текст</DataPath>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ТекстКонтекстноеМеню" id="29"/>
+			<ExtendedTooltip name="ТекстРасширеннаяПодсказка" id="30"/>
+			<Events>
+				<Event name="OnChange">ТекстПриИзменении</Event>
+			</Events>
+		</InputField>
 		<UsualGroup name="Группа2" id="18">
 			<Group>AlwaysHorizontal</Group>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="19"/>
 			<ChildItems>
-				<InputField name="Текст" id="10">
-					<DataPath>Объект.Текст</DataPath>
-					<EditMode>EnterOnInput</EditMode>
+				<UsualGroup name="Группа4" id="20">
+					<Group>AlwaysHorizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа4РасширеннаяПодсказка" id="21"/>
+				</UsualGroup>
+				<InputField name="ЦветТекста" id="22">
+					<DataPath>ЦветТекста</DataPath>
 					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-					<ContextMenu name="ТекстКонтекстноеМеню" id="11"/>
-					<ExtendedTooltip name="ТекстРасширеннаяПодсказка" id="12"/>
+					<ContextMenu name="ЦветТекстаКонтекстноеМеню" id="23"/>
+					<ExtendedTooltip name="ЦветТекстаРасширеннаяПодсказка" id="24"/>
+					<Events>
+						<Event name="OnChange">ЦветШрифтаПриИзменении</Event>
+					</Events>
 				</InputField>
-				<Button name="ВыбратьЦвет" id="20">
-					<Type>UsualButton</Type>
-					<CommandName>Form.Command.ВыбратьЦвет</CommandName>
-					<ExtendedTooltip name="ВыбратьЦветРасширеннаяПодсказка" id="21"/>
-				</Button>
+				<InputField name="ЦветФона" id="25">
+					<DataPath>ЦветФона</DataPath>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ЦветФонаКонтекстноеМеню" id="26"/>
+					<ExtendedTooltip name="ЦветФонаРасширеннаяПодсказка" id="27"/>
+					<Events>
+						<Event name="OnChange">ЦветФонаПриИзменении</Event>
+					</Events>
+				</InputField>
 			</ChildItems>
 		</UsualGroup>
-		<LabelDecoration name="ОбразецЦвета" id="15">
+		<LabelDecoration name="Декорация1" id="15">
 			<Width>18</Width>
 			<Title formatted="false">
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Образец цвета</v8:content>
+					<v8:content>Пример текста</v8:content>
 				</v8:item>
 			</Title>
-			<ContextMenu name="ОбразецЦветаКонтекстноеМеню" id="16"/>
-			<ExtendedTooltip name="ОбразецЦветаРасширеннаяПодсказка" id="17"/>
+			<ContextMenu name="Декорация1КонтекстноеМеню" id="16"/>
+			<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="17"/>
 		</LabelDecoration>
 	</ChildItems>
 	<Attributes>
@@ -67,22 +93,27 @@
 			<MainAttribute>true</MainAttribute>
 			<SavedData>true</SavedData>
 		</Attribute>
-	</Attributes>
-	<Commands>
-		<Command name="ВыбратьЦвет" id="1">
+		<Attribute name="ЦветТекста" id="2">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Выбрать цвет</v8:content>
+					<v8:content>Цвет текста</v8:content>
 				</v8:item>
 			</Title>
-			<ToolTip>
+			<Type>
+				<v8:Type>v8ui:Color</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ЦветФона" id="3">
+			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Выбрать цвет</v8:content>
+					<v8:content>Цвет фона</v8:content>
 				</v8:item>
-			</ToolTip>
-			<Action>ВыбратьЦвет</Action>
-		</Command>
-	</Commands>
+			</Title>
+			<Type>
+				<v8:Type>v8ui:Color</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
 </Form>

@@ -633,7 +633,8 @@
 	
 	ШаблонHTML = "
       |<div class=""item"" draggable=""true"" data-id=""%1"" data-track=""%2"" ondragstart=""onDragStart(event)"" ondragend=""onDragEnd(event)"" onclick=""onClickItem(event)"" ondblclick=""onDbClickItem(event)"" tabindex=""%5"">
-      |  <h4 class=""item-header"">%3</h4>
+	  |<table><tr><td %5>%6</td><td></td><td %7>%8</td></tr></table>      
+	  |  <h5 class=""item-header"">%3</h5>
       |  <p class=""item-desk"">
       |    Крайняя дата: %4
       |  </p>
@@ -646,7 +647,8 @@
 
 	ШаблонHTML = "
       |<div class=""item"" draggable=""true"" data-id=""%1"" data-track=""%2"" ondragstart=""offDragStart(event)"" ondragend=""onDragEnd(event)"" onclick=""onClickItem(event)"" ondblclick=""onDbClickItem(event)"" tabindex=""%5"">
-      |  <h4 class=""item-header"">%3</h4>
+	  |<table><tr><td %5>%6</td><td></td><td %7>%8</td></tr></table>      
+      |  <h5 class=""item-header"">%3</h5>
       |  <p class=""item-desk"">
       |    Крайняя дата: %4
       |  </p>
@@ -714,8 +716,8 @@
 	Возврат "
 	|    .item {
 	|      background: white;
-	|      padding: 10px;
-	|      margin: 5px 2px;
+	|      padding: 4px;
+	|      margin: 3px 1px;
 	|      border-radius: 3px;
 	|      cursor: grab;
 	|    }
@@ -763,6 +765,10 @@
 	//}
 	
 	Возврат "
+	| 	 .cellComment {
+	|      background: rgb(0, 78, 26); 
+	|      color: white;
+	|    }
 	|    .items-container {
 	|      flex-grow: 1;
 	|      overflow-y: auto;
@@ -867,7 +873,6 @@
 	Возврат  " 
 	|    body {
 	|      font-family: Arial, sans-serif;
-	//|      background: #b8b8b8 url('https://i.pinimg.com/originals/46/6c/4d/466c4d0ec2824e15ff7def79f8ec2789.png') no-repeat center center fixed;
 	|      background-size: cover;
 	|      margin: 0;
 	|      padding: 0;
@@ -886,12 +891,12 @@
 	// padding: 5px; /* Добавляет внутренние отступы в 10px со всех сторон контейнера */
 	
 	Возврат "    
-|    .kanban-container {
-|      display: flex;
-|      overflow-x: auto;
-|      overflow-y: hidden;
-|      padding: 5px;
-|    }"
+	|    .kanban-container {
+	|      display: flex;
+	|      overflow-x: auto;
+	|      overflow-y: hidden;
+	|      padding: 5px;
+	|    }"
 
 КонецФункции // ПолучитьМакет_css_kanban_container()
 
