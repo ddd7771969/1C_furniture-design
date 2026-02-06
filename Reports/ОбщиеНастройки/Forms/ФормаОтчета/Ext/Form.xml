@@ -702,42 +702,96 @@
 					</ToolTip>
 					<ExtendedTooltip name="ГруппаКанбанРасширеннаяПодсказка" id="201"/>
 					<ChildItems>
-						<InputField name="ТЗ_Дизайнер" id="202">
-							<DataPath>ТЗ_Дизайнер</DataPath>
-							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-							<ContextMenu name="ТЗ_ДизайнерКонтекстноеМеню" id="203"/>
-							<ExtendedTooltip name="ТЗ_ДизайнерРасширеннаяПодсказка" id="204"/>
-						</InputField>
-						<InputField name="ТЗ_ДизайнерВозврат" id="205">
-							<DataPath>ТЗ_ДизайнерВозврат</DataPath>
-							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-							<ContextMenu name="ТЗ_ДизайнерВозвратКонтекстноеМеню" id="206"/>
-							<ExtendedTooltip name="ТЗ_ДизайнерВозвратРасширеннаяПодсказка" id="207"/>
-						</InputField>
-						<InputField name="ТЗ_ДизайнерОжидание" id="208">
-							<DataPath>ТЗ_ДизайнерОжидание</DataPath>
-							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-							<ContextMenu name="ТЗ_ДизайнерОжиданиеКонтекстноеМеню" id="209"/>
-							<ExtendedTooltip name="ТЗ_ДизайнерОжиданиеРасширеннаяПодсказка" id="210"/>
-						</InputField>
-						<InputField name="СтадияСогласование" id="217">
-							<DataPath>СтадияСогласование</DataPath>
-							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-							<ContextMenu name="СтадияСогласованиеКонтекстноеМеню" id="218"/>
-							<ExtendedTooltip name="СтадияСогласованиеРасширеннаяПодсказка" id="219"/>
-						</InputField>
-						<InputField name="СтадияТЗ" id="220">
-							<DataPath>СтадияТЗ</DataPath>
-							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-							<ContextMenu name="СтадияТЗКонтекстноеМеню" id="221"/>
-							<ExtendedTooltip name="СтадияТЗРасширеннаяПодсказка" id="222"/>
-						</InputField>
-						<InputField name="СтадияПодтвержденияТЗ" id="223">
-							<DataPath>СтадияПодтвержденияТЗ</DataPath>
-							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-							<ContextMenu name="СтадияПодтвержденияТЗКонтекстноеМеню" id="224"/>
-							<ExtendedTooltip name="СтадияПодтвержденияТЗРасширеннаяПодсказка" id="225"/>
-						</InputField>
+						<UsualGroup name="Группа3" id="226">
+							<Group>AlwaysHorizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="227"/>
+							<ChildItems>
+								<UsualGroup name="ГруппаКанбанЛевая" id="228">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа канбан левая</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа канбан левая</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Vertical</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаКанбанЛеваяРасширеннаяПодсказка" id="229"/>
+									<ChildItems>
+										<InputField name="ТЗ_Дизайнер" id="202">
+											<DataPath>ТЗ_Дизайнер</DataPath>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="ТЗ_ДизайнерКонтекстноеМеню" id="203"/>
+											<ExtendedTooltip name="ТЗ_ДизайнерРасширеннаяПодсказка" id="204"/>
+										</InputField>
+										<InputField name="ТЗ_ДизайнерВозврат" id="205">
+											<DataPath>ТЗ_ДизайнерВозврат</DataPath>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="ТЗ_ДизайнерВозвратКонтекстноеМеню" id="206"/>
+											<ExtendedTooltip name="ТЗ_ДизайнерВозвратРасширеннаяПодсказка" id="207"/>
+										</InputField>
+										<InputField name="ТЗ_ДизайнерОжидание" id="208">
+											<DataPath>ТЗ_ДизайнерОжидание</DataPath>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="ТЗ_ДизайнерОжиданиеКонтекстноеМеню" id="209"/>
+											<ExtendedTooltip name="ТЗ_ДизайнерОжиданиеРасширеннаяПодсказка" id="210"/>
+										</InputField>
+										<InputField name="СтадияСогласование" id="217">
+											<DataPath>СтадияСогласование</DataPath>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="СтадияСогласованиеКонтекстноеМеню" id="218"/>
+											<ExtendedTooltip name="СтадияСогласованиеРасширеннаяПодсказка" id="219"/>
+										</InputField>
+										<InputField name="СтадияТЗ" id="220">
+											<DataPath>СтадияТЗ</DataPath>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="СтадияТЗКонтекстноеМеню" id="221"/>
+											<ExtendedTooltip name="СтадияТЗРасширеннаяПодсказка" id="222"/>
+										</InputField>
+										<InputField name="СтадияПодтвержденияТЗ" id="223">
+											<DataPath>СтадияПодтвержденияТЗ</DataPath>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="СтадияПодтвержденияТЗКонтекстноеМеню" id="224"/>
+											<ExtendedTooltip name="СтадияПодтвержденияТЗРасширеннаяПодсказка" id="225"/>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаКанбанПравая" id="230">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа канбан правая</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа канбан правая</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Vertical</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаКанбанПраваяРасширеннаяПодсказка" id="231"/>
+									<ChildItems>
+										<InputField name="ТегКомментарий" id="232">
+											<DataPath>ТегКомментарий</DataPath>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="ТегКомментарийКонтекстноеМеню" id="233"/>
+											<ExtendedTooltip name="ТегКомментарийРасширеннаяПодсказка" id="234"/>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
 					</ChildItems>
 				</Page>
 			</ChildItems>
@@ -1436,6 +1490,17 @@
 			</Title>
 			<Type>
 				<v8:Type>cfg:CatalogRef.СтадииКомплекта</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ТегКомментарий" id="42">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тег комментарий</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Теги</v8:Type>
 			</Type>
 		</Attribute>
 	</Attributes>
