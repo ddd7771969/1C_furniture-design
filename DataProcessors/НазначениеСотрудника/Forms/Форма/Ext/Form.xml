@@ -13,6 +13,11 @@
 				</Picture>
 				<ExtendedTooltip name="ФормаСохранитьРасширеннаяПодсказка" id="33"/>
 			</Button>
+			<Button name="ФормаСправка" id="56">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.StandardCommand.Help</CommandName>
+				<ExtendedTooltip name="ФормаСправкаРасширеннаяПодсказка" id="57"/>
+			</Button>
 		</ChildItems>
 	</AutoCommandBar>
 	<Events>
@@ -38,6 +43,9 @@
 					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 					<ContextMenu name="ДатаКонтекстноеМеню" id="54"/>
 					<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="55"/>
+					<Events>
+						<Event name="OnChange">ДатаПриИзменении</Event>
+					</Events>
 				</InputField>
 			</ChildItems>
 		</UsualGroup>

@@ -333,6 +333,13 @@
 							<ContextMenu name="КомплектыКонструкторКонтекстноеМеню" id="66"/>
 							<ExtendedTooltip name="КомплектыКонструкторРасширеннаяПодсказка" id="67"/>
 						</InputField>
+						<InputField name="КомплектыПланРазработкиВДнях" id="99">
+							<DataPath>Комплекты.ПланРазработкиВДнях</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="КомплектыПланРазработкиВДняхКонтекстноеМеню" id="100"/>
+							<ExtendedTooltip name="КомплектыПланРазработкиВДняхРасширеннаяПодсказка" id="101"/>
+						</InputField>
 						<CheckBoxField name="КомплектыВыгруженВPDM" id="68">
 							<DataPath>Комплекты.ВыгруженВPDM</DataPath>
 							<ReadOnly>true</ReadOnly>
@@ -396,6 +403,22 @@
 					</Title>
 					<Type>
 						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ПланРазработкиВДнях" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>План разработки в днях</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>3</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
 					</Type>
 				</Column>
 			</Columns>

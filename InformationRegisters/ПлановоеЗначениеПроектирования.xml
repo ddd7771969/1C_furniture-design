@@ -105,7 +105,7 @@
 			</Resource>
 			<Resource uuid="081d839b-1f95-4fe6-aa1c-379c23f3fc3d">
 				<Properties>
-					<Name>План</Name>
+					<Name>ПланРазработкиВДнях</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -149,17 +149,17 @@
 			</Resource>
 			<Dimension uuid="879f9981-64d3-4745-b862-c55b752c9759">
 				<Properties>
-					<Name>Комплект</Name>
+					<Name>Задача</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Комплект</v8:content>
+							<v8:content>Задача</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
 					<Type>
-						<v8:Type>cfg:CatalogRef.Композиции</v8:Type>
-						<v8:Type>cfg:CatalogRef.ИзделияКомплект</v8:Type>
+						<v8:Type>cfg:TaskRef.Задачи_ПКД</v8:Type>
+						<v8:Type>cfg:TaskRef.Задачи_РКД</v8:Type>
 					</Type>
 					<PasswordMode>false</PasswordMode>
 					<Format/>
@@ -191,23 +191,18 @@
 					<TypeReductionMode>TransformValues</TypeReductionMode>
 				</Properties>
 			</Dimension>
-			<Dimension uuid="e8844c8e-40e0-4940-898c-26a264774db1">
+			<Dimension uuid="7d0b040d-efbb-46b2-b91a-e7e9177c1b6f">
 				<Properties>
-					<Name>ТипПлана</Name>
+					<Name>ДокументИзменения</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Тип плана</v8:content>
+							<v8:content>Документ изменения</v8:content>
 						</v8:item>
 					</Synonym>
-					<Comment>0 - ПКД, 1 - РКД</Comment>
+					<Comment/>
 					<Type>
-						<v8:Type>xs:decimal</v8:Type>
-						<v8:NumberQualifiers>
-							<v8:Digits>1</v8:Digits>
-							<v8:FractionDigits>0</v8:FractionDigits>
-							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
-						</v8:NumberQualifiers>
+						<v8:Type>cfg:DocumentRef.ЗапускВРаботу</v8:Type>
 					</Type>
 					<PasswordMode>false</PasswordMode>
 					<Format/>
@@ -219,7 +214,7 @@
 					<ExtendedEdit>false</ExtendedEdit>
 					<MinValue xsi:nil="true"/>
 					<MaxValue xsi:nil="true"/>
-					<FillFromFillingValue>false</FillFromFillingValue>
+					<FillFromFillingValue>true</FillFromFillingValue>
 					<FillValue xsi:nil="true"/>
 					<FillChecking>DontCheck</FillChecking>
 					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
@@ -230,7 +225,7 @@
 					<ChoiceForm/>
 					<LinkByType/>
 					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
-					<Master>false</Master>
+					<Master>true</Master>
 					<MainFilter>true</MainFilter>
 					<DenyIncompleteValues>false</DenyIncompleteValues>
 					<Indexing>DontIndex</Indexing>
