@@ -31,6 +31,7 @@
 			<ChildItems>
 				<InputField name="Проект" id="1">
 					<DataPath>Проект</DataPath>
+					<CreateButton>false</CreateButton>
 					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 					<ContextMenu name="ПроектКонтекстноеМеню" id="2"/>
 					<ExtendedTooltip name="ПроектРасширеннаяПодсказка" id="3"/>
@@ -147,6 +148,7 @@
 					<DataPath>ДеревоСотрудники.Менеджер</DataPath>
 					<EditMode>EnterOnInput</EditMode>
 					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<QuickChoice>true</QuickChoice>
 					<ContextMenu name="ТаблицаСотрудникиМенеджерКонтекстноеМеню" id="21"/>
 					<ExtendedTooltip name="ТаблицаСотрудникиМенеджерРасширеннаяПодсказка" id="22"/>
 				</InputField>
@@ -154,6 +156,7 @@
 					<DataPath>ДеревоСотрудники.ВедущийКонструктор</DataPath>
 					<EditMode>EnterOnInput</EditMode>
 					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<QuickChoice>true</QuickChoice>
 					<ContextMenu name="ТаблицаСотрудникиВедущийКонструкторКонтекстноеМеню" id="27"/>
 					<ExtendedTooltip name="ТаблицаСотрудникиВедущийКонструкторРасширеннаяПодсказка" id="28"/>
 				</InputField>
@@ -161,8 +164,17 @@
 					<DataPath>ДеревоСотрудники.Дизайнер</DataPath>
 					<EditMode>EnterOnInput</EditMode>
 					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<QuickChoice>true</QuickChoice>
 					<ContextMenu name="ТаблицаСотрудникиДизайнерКонтекстноеМеню" id="30"/>
 					<ExtendedTooltip name="ТаблицаСотрудникиДизайнерРасширеннаяПодсказка" id="31"/>
+				</InputField>
+				<InputField name="ДеревоСотрудникиКонструктор" id="58">
+					<DataPath>ДеревоСотрудники.Конструктор</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ДеревоСотрудникиКонструкторКонтекстноеМеню" id="59"/>
+					<ExtendedTooltip name="ДеревоСотрудникиКонструкторРасширеннаяПодсказка" id="60"/>
 				</InputField>
 			</ChildItems>
 		</Table>
@@ -260,6 +272,17 @@
 					</Title>
 					<Type>
 						<v8:Type>cfg:CatalogRef.Композиции</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Конструктор" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Конструктор</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Сотрудники</v8:Type>
 					</Type>
 				</Column>
 			</Columns>
