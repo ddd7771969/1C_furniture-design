@@ -1258,6 +1258,12 @@
 											<CommandName>Form.Command.ОткрытьГрафикЗамеров</CommandName>
 											<ExtendedTooltip name="ОткрытьГрафикЗамеровРасширеннаяПодсказка" id="1275"/>
 										</Button>
+										<Button name="ОткрытьПлан" id="1278">
+											<Type>UsualButton</Type>
+											<Enabled>false</Enabled>
+											<CommandName>Form.Command.ОткрытьПлан</CommandName>
+											<ExtendedTooltip name="ОткрытьПланРасширеннаяПодсказка" id="1279"/>
+										</Button>
 									</ChildItems>
 								</UsualGroup>
 								<Table name="ЗадачиВРаботеВедущийКонструктор" id="853">
@@ -4037,6 +4043,21 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ОткрытьГрафикЗамеров</Action>
+		</Command>
+		<Command name="ОткрытьПлан" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть план</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть план</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОткрытьПлан</Action>
 		</Command>
 	</Commands>
 </Form>
