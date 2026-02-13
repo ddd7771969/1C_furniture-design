@@ -49,6 +49,9 @@
 					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 					<ContextMenu name="ИнтервалКонтекстноеМеню" id="13"/>
 					<ExtendedTooltip name="ИнтервалРасширеннаяПодсказка" id="14"/>
+					<Events>
+						<Event name="OnChange">ИнтервалПриИзменении</Event>
+					</Events>
 				</InputField>
 			</ChildItems>
 		</UsualGroup>
