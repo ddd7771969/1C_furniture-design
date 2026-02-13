@@ -1236,17 +1236,30 @@
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="Группа10РасширеннаяПодсказка" id="654"/>
 							<ChildItems>
-								<Button name="ОткрытьГантКонструктора1" id="1019">
-									<Type>UsualButton</Type>
-									<CommandName>Form.Command.ОткрытьГантКонструктора</CommandName>
-									<Title>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>Открыть Гант</v8:content>
-										</v8:item>
-									</Title>
-									<ExtendedTooltip name="ОткрытьГантКонструктора1РасширеннаяПодсказка" id="1020"/>
-								</Button>
+								<UsualGroup name="Группа12" id="1276">
+									<Group>AlwaysHorizontal</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="Группа12РасширеннаяПодсказка" id="1277"/>
+									<ChildItems>
+										<Button name="ОткрытьГантКонструктора1" id="1019">
+											<Type>UsualButton</Type>
+											<CommandName>Form.Command.ОткрытьГантКонструктора</CommandName>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Открыть Гант</v8:content>
+												</v8:item>
+											</Title>
+											<ExtendedTooltip name="ОткрытьГантКонструктора1РасширеннаяПодсказка" id="1020"/>
+										</Button>
+										<Button name="ОткрытьГрафикЗамеров" id="1274">
+											<Type>UsualButton</Type>
+											<CommandName>Form.Command.ОткрытьГрафикЗамеров</CommandName>
+											<ExtendedTooltip name="ОткрытьГрафикЗамеровРасширеннаяПодсказка" id="1275"/>
+										</Button>
+									</ChildItems>
+								</UsualGroup>
 								<Table name="ЗадачиВРаботеВедущийКонструктор" id="853">
 									<Representation>List</Representation>
 									<AutoInsertNewRow>true</AutoInsertNewRow>
@@ -4009,6 +4022,21 @@
 				</v8:item>
 			</ToolTip>
 			<Action>КорректировкаЗаказчиком</Action>
+		</Command>
+		<Command name="ОткрытьГрафикЗамеров" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть график замеров</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть график замеров</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОткрытьГрафикЗамеров</Action>
 		</Command>
 	</Commands>
 </Form>
