@@ -48,68 +48,6 @@
 				<Event name="StartChoice">ПроектНачалоВыбора</Event>
 			</Events>
 		</InputField>
-		<UsualGroup name="ГруппаВедущийКонструктор" id="75">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Ведущий конструктор</v8:content>
-				</v8:item>
-			</Title>
-			<ToolTip>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Группа ведущий конструктор</v8:content>
-				</v8:item>
-			</ToolTip>
-			<Group>AlwaysHorizontal</Group>
-			<Representation>StrongSeparation</Representation>
-			<ExtendedTooltip name="ГруппаВедущийКонструкторРасширеннаяПодсказка" id="76"/>
-			<ChildItems>
-				<Button name="ПодписатьВедущийКонструктор" id="77">
-					<Type>UsualButton</Type>
-					<Enabled>false</Enabled>
-					<CommandName>Form.Command.ПодписатьВедущийКонструктор</CommandName>
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Подписать</v8:content>
-						</v8:item>
-					</Title>
-					<ExtendedTooltip name="ПодписатьВедущийКонструкторРасширеннаяПодсказка" id="78"/>
-				</Button>
-				<InputField name="ПодписьВедущийКонструктор" id="10">
-					<DataPath>Объект.ПодписьВедущийКонструктор</DataPath>
-					<ReadOnly>true</ReadOnly>
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Подпись</v8:content>
-						</v8:item>
-					</Title>
-					<EditMode>EnterOnInput</EditMode>
-					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-					<ContextMenu name="ПодписьВедущийКонструкторКонтекстноеМеню" id="11"/>
-					<ExtendedTooltip name="ПодписьВедущийКонструкторРасширеннаяПодсказка" id="12"/>
-					<Events>
-						<Event name="OnChange">ПодписьВедущийКонструкторПриИзменении</Event>
-					</Events>
-				</InputField>
-				<InputField name="ДатаПодписьВедущийКонструктор" id="19">
-					<DataPath>Объект.ДатаПодписьВедущийКонструктор</DataPath>
-					<ReadOnly>true</ReadOnly>
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Дата</v8:content>
-						</v8:item>
-					</Title>
-					<EditMode>EnterOnInput</EditMode>
-					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-					<ContextMenu name="ДатаПодписьВедущийКонструкторКонтекстноеМеню" id="20"/>
-					<ExtendedTooltip name="ДатаПодписьВедущийКонструкторРасширеннаяПодсказка" id="21"/>
-				</InputField>
-			</ChildItems>
-		</UsualGroup>
 		<UsualGroup name="ГруппаМенеджер" id="79">
 			<Title>
 				<v8:item>
@@ -128,7 +66,6 @@
 			<ChildItems>
 				<Button name="ПодписатьМенеджер" id="81">
 					<Type>UsualButton</Type>
-					<Enabled>false</Enabled>
 					<CommandName>Form.Command.ПодписатьМенеджер</CommandName>
 					<Title>
 						<v8:item>
@@ -168,122 +105,255 @@
 				</InputField>
 			</ChildItems>
 		</UsualGroup>
-		<UsualGroup name="ГруппаНачальникПроизводства" id="83">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Начальник производства</v8:content>
-				</v8:item>
-			</Title>
-			<ToolTip>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Группа начальник производства</v8:content>
-				</v8:item>
-			</ToolTip>
+		<UsualGroup name="Группа2" id="94">
 			<Group>AlwaysHorizontal</Group>
-			<Representation>StrongSeparation</Representation>
-			<ExtendedTooltip name="ГруппаНачальникПроизводстваРасширеннаяПодсказка" id="84"/>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="95"/>
 			<ChildItems>
-				<Button name="ПодписатьНачальникПроизводства" id="87">
-					<Type>UsualButton</Type>
-					<Enabled>false</Enabled>
-					<CommandName>Form.Command.ПодписатьНачальникПроизводства</CommandName>
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Подписать</v8:content>
-						</v8:item>
-					</Title>
-					<ExtendedTooltip name="ПодписатьНачальникПроизводстваРасширеннаяПодсказка" id="88"/>
-				</Button>
-				<InputField name="ПодписьНачальникаПроизводства" id="13">
-					<DataPath>Объект.ПодписьНачальникаПроизводства</DataPath>
-					<ReadOnly>true</ReadOnly>
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Подпись</v8:content>
-						</v8:item>
-					</Title>
-					<EditMode>EnterOnInput</EditMode>
-					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-					<ContextMenu name="ПодписьНачальникаПроизводстваКонтекстноеМеню" id="14"/>
-					<ExtendedTooltip name="ПодписьНачальникаПроизводстваРасширеннаяПодсказка" id="15"/>
-				</InputField>
-				<InputField name="ДатаПодписьНачальникаПроизводства" id="22">
-					<DataPath>Объект.ДатаПодписьНачальникаПроизводства</DataPath>
-					<ReadOnly>true</ReadOnly>
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Дата</v8:content>
-						</v8:item>
-					</Title>
-					<EditMode>EnterOnInput</EditMode>
-					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-					<ContextMenu name="ДатаПодписьНачальникаПроизводстваКонтекстноеМеню" id="23"/>
-					<ExtendedTooltip name="ДатаПодписьНачальникаПроизводстваРасширеннаяПодсказка" id="24"/>
-				</InputField>
-			</ChildItems>
-		</UsualGroup>
-		<UsualGroup name="ГруппаНачальникМонтажа" id="85">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Начальник монтажа</v8:content>
-				</v8:item>
-			</Title>
-			<ToolTip>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Группа начальник монтажа</v8:content>
-				</v8:item>
-			</ToolTip>
-			<Group>AlwaysHorizontal</Group>
-			<Representation>StrongSeparation</Representation>
-			<ExtendedTooltip name="ГруппаНачальникМонтажаРасширеннаяПодсказка" id="86"/>
-			<ChildItems>
-				<Button name="ПодписатьНачальникМонтажа" id="89">
-					<Type>UsualButton</Type>
-					<Enabled>false</Enabled>
-					<CommandName>Form.Command.ПодписатьНачальникМонтажа</CommandName>
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Подписать</v8:content>
-						</v8:item>
-					</Title>
-					<ExtendedTooltip name="ПодписатьНачальникМонтажаРасширеннаяПодсказка" id="90"/>
-				</Button>
-				<InputField name="ПодписьНачальникаМонтажа" id="16">
-					<DataPath>Объект.ПодписьНачальникаМонтажа</DataPath>
-					<ReadOnly>true</ReadOnly>
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Подпись</v8:content>
-						</v8:item>
-					</Title>
-					<EditMode>EnterOnInput</EditMode>
-					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-					<ContextMenu name="ПодписьНачальникаМонтажаКонтекстноеМеню" id="17"/>
-					<ExtendedTooltip name="ПодписьНачальникаМонтажаРасширеннаяПодсказка" id="18"/>
-				</InputField>
-				<InputField name="ДатаПодписьНачальникаМонтажа" id="25">
-					<DataPath>Объект.ДатаПодписьНачальникаМонтажа</DataPath>
-					<ReadOnly>true</ReadOnly>
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Дата</v8:content>
-						</v8:item>
-					</Title>
-					<EditMode>EnterOnInput</EditMode>
-					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-					<ContextMenu name="ДатаПодписьНачальникаМонтажаКонтекстноеМеню" id="26"/>
-					<ExtendedTooltip name="ДатаПодписьНачальникаМонтажаРасширеннаяПодсказка" id="27"/>
-				</InputField>
+				<UsualGroup name="Группа3" id="96">
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="97"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаДизайнер" id="100">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Дизайнер</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа дизайнер</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>AlwaysHorizontal</Group>
+							<Representation>StrongSeparation</Representation>
+							<ExtendedTooltip name="ГруппаДизайнерРасширеннаяПодсказка" id="101"/>
+							<ChildItems>
+								<Button name="ПодписатьДизайнера" id="102">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.ПодписатьДизайнера</CommandName>
+									<ExtendedTooltip name="ПодписатьДизайнераРасширеннаяПодсказка" id="103"/>
+								</Button>
+								<InputField name="ПодписьДизанер" id="104">
+									<DataPath>Объект.ПодписьДизанер</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Подпись</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ПодписьДизанерКонтекстноеМеню" id="105"/>
+									<ExtendedTooltip name="ПодписьДизанерРасширеннаяПодсказка" id="106"/>
+								</InputField>
+								<InputField name="ДатаПодписьДизайнер" id="107">
+									<DataPath>Объект.ДатаПодписьДизайнер</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Дата</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ДатаПодписьДизайнерКонтекстноеМеню" id="108"/>
+									<ExtendedTooltip name="ДатаПодписьДизайнерРасширеннаяПодсказка" id="109"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаВедущийКонструктор" id="75">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Ведущий конструктор</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа ведущий конструктор</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>AlwaysHorizontal</Group>
+							<Representation>StrongSeparation</Representation>
+							<ExtendedTooltip name="ГруппаВедущийКонструкторРасширеннаяПодсказка" id="76"/>
+							<ChildItems>
+								<Button name="ПодписатьВедущийКонструктор" id="77">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.ПодписатьВедущийКонструктор</CommandName>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Подписать</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="ПодписатьВедущийКонструкторРасширеннаяПодсказка" id="78"/>
+								</Button>
+								<InputField name="ПодписьВедущийКонструктор" id="10">
+									<DataPath>Объект.ПодписьВедущийКонструктор</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Подпись</v8:content>
+										</v8:item>
+									</Title>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ПодписьВедущийКонструкторКонтекстноеМеню" id="11"/>
+									<ExtendedTooltip name="ПодписьВедущийКонструкторРасширеннаяПодсказка" id="12"/>
+									<Events>
+										<Event name="OnChange">ПодписьВедущийКонструкторПриИзменении</Event>
+									</Events>
+								</InputField>
+								<InputField name="ДатаПодписьВедущийКонструктор" id="19">
+									<DataPath>Объект.ДатаПодписьВедущийКонструктор</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Дата</v8:content>
+										</v8:item>
+									</Title>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ДатаПодписьВедущийКонструкторКонтекстноеМеню" id="20"/>
+									<ExtendedTooltip name="ДатаПодписьВедущийКонструкторРасширеннаяПодсказка" id="21"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="Группа4" id="98">
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа4РасширеннаяПодсказка" id="99"/>
+					<ChildItems>
+						<UsualGroup name="ГруппаНачальникПроизводства" id="83">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Начальник производства</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа начальник производства</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>AlwaysHorizontal</Group>
+							<Representation>StrongSeparation</Representation>
+							<ExtendedTooltip name="ГруппаНачальникПроизводстваРасширеннаяПодсказка" id="84"/>
+							<ChildItems>
+								<Button name="ПодписатьНачальникПроизводства" id="87">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.ПодписатьНачальникПроизводства</CommandName>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Подписать</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="ПодписатьНачальникПроизводстваРасширеннаяПодсказка" id="88"/>
+								</Button>
+								<InputField name="ПодписьНачальникаПроизводства" id="13">
+									<DataPath>Объект.ПодписьНачальникаПроизводства</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Подпись</v8:content>
+										</v8:item>
+									</Title>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ПодписьНачальникаПроизводстваКонтекстноеМеню" id="14"/>
+									<ExtendedTooltip name="ПодписьНачальникаПроизводстваРасширеннаяПодсказка" id="15"/>
+								</InputField>
+								<InputField name="ДатаПодписьНачальникаПроизводства" id="22">
+									<DataPath>Объект.ДатаПодписьНачальникаПроизводства</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Дата</v8:content>
+										</v8:item>
+									</Title>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ДатаПодписьНачальникаПроизводстваКонтекстноеМеню" id="23"/>
+									<ExtendedTooltip name="ДатаПодписьНачальникаПроизводстваРасширеннаяПодсказка" id="24"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаНачальникМонтажа" id="85">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Начальник монтажа</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа начальник монтажа</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>AlwaysHorizontal</Group>
+							<Representation>StrongSeparation</Representation>
+							<ExtendedTooltip name="ГруппаНачальникМонтажаРасширеннаяПодсказка" id="86"/>
+							<ChildItems>
+								<Button name="ПодписатьНачальникМонтажа" id="89">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.ПодписатьНачальникМонтажа</CommandName>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Подписать</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="ПодписатьНачальникМонтажаРасширеннаяПодсказка" id="90"/>
+								</Button>
+								<InputField name="ПодписьНачальникаМонтажа" id="16">
+									<DataPath>Объект.ПодписьНачальникаМонтажа</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Подпись</v8:content>
+										</v8:item>
+									</Title>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ПодписьНачальникаМонтажаКонтекстноеМеню" id="17"/>
+									<ExtendedTooltip name="ПодписьНачальникаМонтажаРасширеннаяПодсказка" id="18"/>
+								</InputField>
+								<InputField name="ДатаПодписьНачальникаМонтажа" id="25">
+									<DataPath>Объект.ДатаПодписьНачальникаМонтажа</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Дата</v8:content>
+										</v8:item>
+									</Title>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ДатаПодписьНачальникаМонтажаКонтекстноеМеню" id="26"/>
+									<ExtendedTooltip name="ДатаПодписьНачальникаМонтажаРасширеннаяПодсказка" id="27"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
 			</ChildItems>
 		</UsualGroup>
 		<Table name="Комплекты" id="34">
@@ -336,6 +406,7 @@
 			<ChildItems>
 				<LabelField name="КомплектыНомерСтроки" id="47">
 					<DataPath>Объект.Комплекты.LineNumber</DataPath>
+					<ReadOnly>true</ReadOnly>
 					<EditMode>EnterOnInput</EditMode>
 					<ContextMenu name="КомплектыНомерСтрокиКонтекстноеМеню" id="48"/>
 					<ExtendedTooltip name="КомплектыНомерСтрокиРасширеннаяПодсказка" id="49"/>
@@ -350,7 +421,6 @@
 				</InputField>
 				<InputField name="КомплектыПродолжительностьТЗ" id="53">
 					<DataPath>Объект.Комплекты.ПродолжительностьТЗ</DataPath>
-					<ReadOnly>true</ReadOnly>
 					<EditMode>EnterOnInput</EditMode>
 					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 					<ContextMenu name="КомплектыПродолжительностьТЗКонтекстноеМеню" id="54"/>
@@ -358,7 +428,6 @@
 				</InputField>
 				<InputField name="КомплектыПродолжительностьПроектирования" id="56">
 					<DataPath>Объект.Комплекты.ПродолжительностьПроектирования</DataPath>
-					<ReadOnly>true</ReadOnly>
 					<EditMode>EnterOnInput</EditMode>
 					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 					<ContextMenu name="КомплектыПродолжительностьПроектированияКонтекстноеМеню" id="57"/>
@@ -366,7 +435,6 @@
 				</InputField>
 				<InputField name="КомплектыПродолжительностьСогласования" id="59">
 					<DataPath>Объект.Комплекты.ПродолжительностьСогласования</DataPath>
-					<ReadOnly>true</ReadOnly>
 					<EditMode>EnterOnInput</EditMode>
 					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 					<ContextMenu name="КомплектыПродолжительностьСогласованияКонтекстноеМеню" id="60"/>
@@ -374,7 +442,6 @@
 				</InputField>
 				<InputField name="КомплектыПродолжительностьРКД" id="62">
 					<DataPath>Объект.Комплекты.ПродолжительностьРКД</DataPath>
-					<ReadOnly>true</ReadOnly>
 					<EditMode>EnterOnInput</EditMode>
 					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 					<ContextMenu name="КомплектыПродолжительностьРКДКонтекстноеМеню" id="63"/>
@@ -382,7 +449,6 @@
 				</InputField>
 				<InputField name="КомплектыПродолжительностьПроизводства" id="65">
 					<DataPath>Объект.Комплекты.ПродолжительностьПроизводства</DataPath>
-					<ReadOnly>true</ReadOnly>
 					<EditMode>EnterOnInput</EditMode>
 					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 					<ContextMenu name="КомплектыПродолжительностьПроизводстваКонтекстноеМеню" id="66"/>
@@ -390,7 +456,6 @@
 				</InputField>
 				<InputField name="КомплектыПродолжительностьМонтажа" id="68">
 					<DataPath>Объект.Комплекты.ПродолжительностьМонтажа</DataPath>
-					<ReadOnly>true</ReadOnly>
 					<EditMode>EnterOnInput</EditMode>
 					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 					<ContextMenu name="КомплектыПродолжительностьМонтажаКонтекстноеМеню" id="69"/>
@@ -493,6 +558,21 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ПодписатьНачальникМонтажа</Action>
+		</Command>
+		<Command name="ПодписатьДизайнера" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подписать</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подписать ведущий конструктор</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПодписатьДизайнера</Action>
 		</Command>
 	</Commands>
 </Form>
