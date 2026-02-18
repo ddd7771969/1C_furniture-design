@@ -626,6 +626,12 @@
 											<ChildItems>
 												<InputField name="ПланРазработкиВДнях" id="252">
 													<DataPath>ПланРазработкиВДнях</DataPath>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>План разработки в днях</v8:content>
+														</v8:item>
+													</Title>
 													<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 													<ContextMenu name="ПланРазработкиВДняхКонтекстноеМеню" id="253"/>
 													<ExtendedTooltip name="ПланРазработкиВДняхРасширеннаяПодсказка" id="254"/>
@@ -633,16 +639,36 @@
 														<Event name="OnChange">ПланРазработкиВДняхПриИзменении</Event>
 													</Events>
 												</InputField>
-												<LabelDecoration name="ДекорацияПроектноеВремя" id="257">
-													<Title formatted="false">
-														<v8:item>
-															<v8:lang>ru</v8:lang>
-															<v8:content>Декорация проектное время</v8:content>
-														</v8:item>
-													</Title>
-													<ContextMenu name="ДекорацияПроектноеВремяКонтекстноеМеню" id="258"/>
-													<ExtendedTooltip name="ДекорацияПроектноеВремяРасширеннаяПодсказка" id="259"/>
-												</LabelDecoration>
+												<UsualGroup name="Группа11" id="260">
+													<Group>AlwaysHorizontal</Group>
+													<Representation>None</Representation>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="Группа11РасширеннаяПодсказка" id="261"/>
+													<ChildItems>
+														<LabelDecoration name="ДекорацияПроектноеВремя" id="257">
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Декорация проектное время</v8:content>
+																</v8:item>
+															</Title>
+															<ContextMenu name="ДекорацияПроектноеВремяКонтекстноеМеню" id="258"/>
+															<ExtendedTooltip name="ДекорацияПроектноеВремяРасширеннаяПодсказка" id="259"/>
+														</LabelDecoration>
+														<LabelDecoration name="ДекорацияДатаОкончания" id="262">
+															<Visible>false</Visible>
+															<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+															<Title formatted="false">
+																<v8:item>
+																	<v8:lang>ru</v8:lang>
+																	<v8:content>Декорация дата окончания</v8:content>
+																</v8:item>
+															</Title>
+															<ContextMenu name="ДекорацияДатаОкончанияКонтекстноеМеню" id="263"/>
+															<ExtendedTooltip name="ДекорацияДатаОкончанияРасширеннаяПодсказка" id="264"/>
+														</LabelDecoration>
+													</ChildItems>
+												</UsualGroup>
 											</ChildItems>
 										</UsualGroup>
 										<Button name="КнопкаНачатьВыполнениеКонструктор" id="60">

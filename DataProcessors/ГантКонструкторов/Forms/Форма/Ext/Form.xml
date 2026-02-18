@@ -63,6 +63,7 @@
 			<ChildItems>
 				<InputField name="Сортировка" id="34">
 					<DataPath>Сортировка</DataPath>
+					<Enabled>false</Enabled>
 					<ListChoiceMode>true</ListChoiceMode>
 					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 					<ChooseType>false</ChooseType>
@@ -135,6 +136,8 @@
 				<Height>10</Height>
 				<HeightControlVariant>UseHeightInFormRows</HeightControlVariant>
 				<VerticalScrollBar>DontUse</VerticalScrollBar>
+				<InitialListView>Beginning</InitialListView>
+				<InitialTreeView>ExpandAllLevels</InitialTreeView>
 				<DataPath>Диаграмма</DataPath>
 				<SearchStringLocation>None</SearchStringLocation>
 				<ViewStatusLocation>None</ViewStatusLocation>
@@ -167,6 +170,13 @@
 					<ExtendedTooltip name="ДиаграммаТаблицаУправлениеПоискомРасширеннаяПодсказка" id="27"/>
 				</SearchControlAddition>
 				<ChildItems>
+					<InputField name="ДиаграммаТаблицаТекущаяСтадия" id="44">
+						<DataPath>Диаграмма.Переходы</DataPath>
+						<EditMode>EnterOnInput</EditMode>
+						<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+						<ContextMenu name="ДиаграммаТаблицаТекущаяСтадияКонтекстноеМеню" id="45"/>
+						<ExtendedTooltip name="ДиаграммаТаблицаТекущаяСтадияРасширеннаяПодсказка" id="46"/>
+					</InputField>
 					<InputField name="ГантТаблицаТочка" id="28">
 						<DataPath>Диаграмма.Point</DataPath>
 						<EditMode>EnterOnInput</EditMode>
@@ -240,6 +250,23 @@
 			<Type>
 				<v8:Type xmlns:d5p1="http://v8.1c.ru/8.2/data/chart">d5p1:GanttChart</v8:Type>
 			</Type>
+			<Columns>
+				<Column name="Переходы" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Переходы</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
 		</Attribute>
 		<Attribute name="Сортировка" id="6">
 			<Title>
@@ -547,6 +574,32 @@
 					</Title>
 					<Type>
 						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Переходы" id="15">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Переходы</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Приоритет" id="22">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Приоритет</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Приоритеты</v8:Type>
 					</Type>
 				</Column>
 			</Columns>
