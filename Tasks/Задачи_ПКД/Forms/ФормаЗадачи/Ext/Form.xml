@@ -606,15 +606,45 @@
 									<ShowTitle>false</ShowTitle>
 									<ExtendedTooltip name="ГруппаКнопкаКонструктораРасширеннаяПодсказка" id="86"/>
 									<ChildItems>
-										<InputField name="ПланРазработкиВДнях" id="252">
-											<DataPath>ПланРазработкиВДнях</DataPath>
-											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-											<ContextMenu name="ПланРазработкиВДняхКонтекстноеМеню" id="253"/>
-											<ExtendedTooltip name="ПланРазработкиВДняхРасширеннаяПодсказка" id="254"/>
-											<Events>
-												<Event name="OnChange">ПланРазработкиВДняхПриИзменении</Event>
-											</Events>
-										</InputField>
+										<UsualGroup name="ГруппаСрокРазработки" id="255">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа срок разработки</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа срок разработки</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Group>Vertical</Group>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаСрокРазработкиРасширеннаяПодсказка" id="256"/>
+											<ChildItems>
+												<InputField name="ПланРазработкиВДнях" id="252">
+													<DataPath>ПланРазработкиВДнях</DataPath>
+													<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+													<ContextMenu name="ПланРазработкиВДняхКонтекстноеМеню" id="253"/>
+													<ExtendedTooltip name="ПланРазработкиВДняхРасширеннаяПодсказка" id="254"/>
+													<Events>
+														<Event name="OnChange">ПланРазработкиВДняхПриИзменении</Event>
+													</Events>
+												</InputField>
+												<LabelDecoration name="ДекорацияПроектноеВремя" id="257">
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Декорация проектное время</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="ДекорацияПроектноеВремяКонтекстноеМеню" id="258"/>
+													<ExtendedTooltip name="ДекорацияПроектноеВремяРасширеннаяПодсказка" id="259"/>
+												</LabelDecoration>
+											</ChildItems>
+										</UsualGroup>
 										<Button name="КнопкаНачатьВыполнениеКонструктор" id="60">
 											<Type>UsualButton</Type>
 											<Representation>Picture</Representation>
@@ -1050,12 +1080,30 @@
 			<Type>
 				<v8:Type>xs:decimal</v8:Type>
 				<v8:NumberQualifiers>
-					<v8:Digits>3</v8:Digits>
-					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:Digits>4</v8:Digits>
+					<v8:FractionDigits>1</v8:FractionDigits>
 					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
 				</v8:NumberQualifiers>
 			</Type>
 		</Attribute>
+		<ConditionalAppearance>
+			<dcsset:item>
+				<dcsset:selection/>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">ПланРазработкиВДнях</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:decimal">0</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветФона</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">#FDC9D4</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+		</ConditionalAppearance>
 	</Attributes>
 	<Commands>
 		<Command name="НачатьВыполнение" id="1">
