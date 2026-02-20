@@ -718,26 +718,31 @@
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="227"/>
 							<ChildItems>
-								<UsualGroup name="ГруппаКанбанЛевая" id="228">
+								<UsualGroup name="ГруппаКанбанТЗ" id="228">
 									<Title>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
-											<v8:content>Группа канбан левая</v8:content>
+											<v8:content>ТЗ</v8:content>
 										</v8:item>
 									</Title>
 									<ToolTip>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
-											<v8:content>Группа канбан левая</v8:content>
+											<v8:content>Группа канбан ТЗ</v8:content>
 										</v8:item>
 									</ToolTip>
 									<Group>Vertical</Group>
-									<Representation>None</Representation>
-									<ShowTitle>false</ShowTitle>
-									<ExtendedTooltip name="ГруппаКанбанЛеваяРасширеннаяПодсказка" id="229"/>
+									<Representation>StrongSeparation</Representation>
+									<ExtendedTooltip name="ГруппаКанбанТЗРасширеннаяПодсказка" id="229"/>
 									<ChildItems>
 										<InputField name="ТЗ_Дизайнер" id="202">
 											<DataPath>ТЗ_Дизайнер</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Наименование доски</v8:content>
+												</v8:item>
+											</Title>
 											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 											<ContextMenu name="ТЗ_ДизайнерКонтекстноеМеню" id="203"/>
 											<ExtendedTooltip name="ТЗ_ДизайнерРасширеннаяПодсказка" id="204"/>
@@ -774,23 +779,51 @@
 										</InputField>
 									</ChildItems>
 								</UsualGroup>
-								<UsualGroup name="ГруппаКанбанПравая" id="230">
+								<UsualGroup name="ГруппаПроизводство" id="240">
 									<Title>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
-											<v8:content>Группа канбан правая</v8:content>
+											<v8:content>Производство</v8:content>
 										</v8:item>
 									</Title>
 									<ToolTip>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
-											<v8:content>Группа канбан правая</v8:content>
+											<v8:content>Группа производство</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ExtendedTooltip name="ГруппаПроизводствоРасширеннаяПодсказка" id="241"/>
+									<ChildItems>
+										<InputField name="ПроизводствоНаименованиеДоски" id="242">
+											<DataPath>ПроизводствоНаименованиеДоски</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Наименование доски</v8:content>
+												</v8:item>
+											</Title>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="ПроизводствоНаименованиеДоскиКонтекстноеМеню" id="243"/>
+											<ExtendedTooltip name="ПроизводствоНаименованиеДоскиРасширеннаяПодсказка" id="244"/>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаКанбанОбщие" id="230">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Общие</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа канбан общие</v8:content>
 										</v8:item>
 									</ToolTip>
 									<Group>Vertical</Group>
-									<Representation>None</Representation>
-									<ShowTitle>false</ShowTitle>
-									<ExtendedTooltip name="ГруппаКанбанПраваяРасширеннаяПодсказка" id="231"/>
+									<Representation>StrongSeparation</Representation>
+									<ExtendedTooltip name="ГруппаКанбанОбщиеРасширеннаяПодсказка" id="231"/>
 									<ChildItems>
 										<InputField name="ТегКомментарий" id="232">
 											<DataPath>ТегКомментарий</DataPath>
@@ -1497,6 +1530,21 @@
 			</Title>
 			<Type>
 				<v8:Type>v8ui:Color</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ПроизводствоНаименованиеДоски" id="44">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Производство наименование доски</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
 			</Type>
 		</Attribute>
 	</Attributes>
