@@ -439,17 +439,21 @@
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="Группа5РасширеннаяПодсказка" id="236"/>
 							<ChildItems>
-								<LabelField name="ЦветФорна" id="116">
-									<DataPath>ЦветФорна</DataPath>
+								<LabelField name="ЦветФона" id="116">
+									<DataPath>ЦветФона</DataPath>
 									<TitleLocation>None</TitleLocation>
-									<ContextMenu name="ЦветФорнаКонтекстноеМеню" id="117"/>
-									<ExtendedTooltip name="ЦветФорнаРасширеннаяПодсказка" id="118"/>
+									<ContextMenu name="ЦветФонаКонтекстноеМеню" id="117"/>
+									<ExtendedTooltip name="ЦветФонаРасширеннаяПодсказка" id="118"/>
 								</LabelField>
-								<Button name="ИзменитьЦвет" id="237">
-									<Type>UsualButton</Type>
-									<CommandName>Form.Command.ИзменитьЦвет</CommandName>
-									<ExtendedTooltip name="ИзменитьЦветРасширеннаяПодсказка" id="238"/>
-								</Button>
+								<InputField name="ВыборЦветаФона" id="237">
+									<DataPath>ВыборЦветаФона</DataPath>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ВыборЦветаФонаКонтекстноеМеню" id="238"/>
+									<ExtendedTooltip name="ВыборЦветаФонаРасширеннаяПодсказка" id="239"/>
+									<Events>
+										<Event name="OnChange">ВыборЦветаФонаПриИзменении</Event>
+									</Events>
+								</InputField>
 							</ChildItems>
 						</UsualGroup>
 					</ChildItems>
@@ -1141,11 +1145,11 @@
 				<v8:Type>v8:ValueListType</v8:Type>
 			</Type>
 		</Attribute>
-		<Attribute name="ЦветФорна" id="22">
+		<Attribute name="ЦветФона" id="22">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Цвет форна</v8:content>
+					<v8:content>Цвет фона</v8:content>
 				</v8:item>
 			</Title>
 			<Type>
@@ -1484,6 +1488,17 @@
 				<v8:Type>cfg:CatalogRef.Теги</v8:Type>
 			</Type>
 		</Attribute>
+		<Attribute name="ВыборЦветаФона" id="43">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбор цвета фона</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8ui:Color</v8:Type>
+			</Type>
+		</Attribute>
 	</Attributes>
 	<Commands>
 		<Command name="Сохранить" id="1">
@@ -1605,21 +1620,6 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ВыгрузитьВБитрикс</Action>
-		</Command>
-		<Command name="ИзменитьЦвет" id="9">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Изменить цвет</v8:content>
-				</v8:item>
-			</Title>
-			<ToolTip>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Изменить цвет</v8:content>
-				</v8:item>
-			</ToolTip>
-			<Action>ИзменитьЦвет</Action>
 		</Command>
 	</Commands>
 </Form>

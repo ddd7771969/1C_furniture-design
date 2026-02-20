@@ -178,6 +178,16 @@
 							</Picture>
 							<ExtendedTooltip name="КнопкаИсторияРасширеннаяПодсказка" id="61"/>
 						</Button>
+						<Button name="ОткрытьФайлПДМ" id="96">
+							<Type>UsualButton</Type>
+							<Representation>PictureAndText</Representation>
+							<CommandName>Form.Command.ОткрытьФайлПДМ</CommandName>
+							<Picture>
+								<xr:Ref>StdPicture.OpenFile</xr:Ref>
+								<xr:LoadTransparent>true</xr:LoadTransparent>
+							</Picture>
+							<ExtendedTooltip name="ОткрытьФайлПДМРасширеннаяПодсказка" id="97"/>
+						</Button>
 					</ChildItems>
 				</UsualGroup>
 				<UsualGroup name="Группа7" id="62">
@@ -582,6 +592,21 @@
 				</v8:item>
 			</ToolTip>
 			<Action>СнятьСВыполнения</Action>
+		</Command>
+		<Command name="ОткрытьФайлПДМ" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть файл PDM</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть файл ПДМ</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОткрытьФайлПДМ</Action>
 		</Command>
 	</Commands>
 	<CommandInterface>
