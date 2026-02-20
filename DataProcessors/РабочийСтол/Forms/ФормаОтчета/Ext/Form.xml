@@ -1490,171 +1490,267 @@
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГруппаКонструкторРасширеннаяПодсказка" id="545"/>
 			<ChildItems>
-				<UsualGroup name="Группа8" id="604">
+				<UsualGroup name="Группа13" id="1305">
 					<Group>Vertical</Group>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
-					<ExtendedTooltip name="Группа8РасширеннаяПодсказка" id="605"/>
+					<ExtendedTooltip name="Группа13РасширеннаяПодсказка" id="1306"/>
 					<ChildItems>
-						<Button name="ОткрытьГантКонструктора" id="750">
-							<Type>UsualButton</Type>
-							<CommandName>Form.Command.ОткрытьГантКонструктора</CommandName>
-							<Title>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Открыть Гант</v8:content>
-								</v8:item>
-							</Title>
-							<ExtendedTooltip name="ОткрытьГантКонструктораРасширеннаяПодсказка" id="751"/>
-						</Button>
-						<Table name="Задачи_ПКД_РКД" id="1021">
-							<Representation>List</Representation>
-							<AutoInsertNewRow>true</AutoInsertNewRow>
-							<EnableStartDrag>true</EnableStartDrag>
-							<EnableDrag>true</EnableDrag>
-							<DataPath>Задачи_ПКД_РКД</DataPath>
-							<RowFilter xsi:nil="true"/>
-							<ContextMenu name="Задачи_ПКД_РКДКонтекстноеМеню" id="1022"/>
-							<AutoCommandBar name="Задачи_ПКД_РКДКоманднаяПанель" id="1023">
-								<Autofill>false</Autofill>
-							</AutoCommandBar>
-							<ExtendedTooltip name="Задачи_ПКД_РКДРасширеннаяПодсказка" id="1024"/>
-							<SearchStringAddition name="Задачи_ПКД_РКДСтрокаПоиска" id="1025">
-								<AdditionSource>
-									<Item>Задачи_ПКД_РКД</Item>
-									<Type>SearchStringRepresentation</Type>
-								</AdditionSource>
-								<ContextMenu name="Задачи_ПКД_РКДСтрокаПоискаКонтекстноеМеню" id="1026"/>
-								<ExtendedTooltip name="Задачи_ПКД_РКДСтрокаПоискаРасширеннаяПодсказка" id="1027"/>
-							</SearchStringAddition>
-							<ViewStatusAddition name="Задачи_ПКД_РКДСостояниеПросмотра" id="1028">
-								<AdditionSource>
-									<Item>Задачи_ПКД_РКД</Item>
-									<Type>ViewStatusRepresentation</Type>
-								</AdditionSource>
-								<ContextMenu name="Задачи_ПКД_РКДСостояниеПросмотраКонтекстноеМеню" id="1029"/>
-								<ExtendedTooltip name="Задачи_ПКД_РКДСостояниеПросмотраРасширеннаяПодсказка" id="1030"/>
-							</ViewStatusAddition>
-							<SearchControlAddition name="Задачи_ПКД_РКДУправлениеПоиском" id="1031">
-								<AdditionSource>
-									<Item>Задачи_ПКД_РКД</Item>
-									<Type>SearchControl</Type>
-								</AdditionSource>
-								<ContextMenu name="Задачи_ПКД_РКДУправлениеПоискомКонтекстноеМеню" id="1032"/>
-								<ExtendedTooltip name="Задачи_ПКД_РКДУправлениеПоискомРасширеннаяПодсказка" id="1033"/>
-							</SearchControlAddition>
-							<Events>
-								<Event name="BeforeAddRow">Задачи_ПКД_РКДПередНачаломДобавления</Event>
-								<Event name="BeforeDeleteRow">Задачи_ПКД_РКДПередУдалением</Event>
-								<Event name="BeforeRowChange">Задачи_ПКД_РКДПередНачаломИзменения</Event>
-							</Events>
+						<UsualGroup name="Группа8" id="604">
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа8РасширеннаяПодсказка" id="605"/>
 							<ChildItems>
-								<InputField name="Задачи_ПКД_РКДНаименование" id="1074">
-									<DataPath>Задачи_ПКД_РКД.Наименование</DataPath>
+								<Button name="ОткрытьГантКонструктора" id="750">
+									<Type>UsualButton</Type>
+									<Visible>false</Visible>
+									<CommandName>Form.Command.ОткрытьГантКонструктора</CommandName>
 									<Title>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
-											<v8:content>Задача</v8:content>
+											<v8:content>Открыть Гант</v8:content>
 										</v8:item>
 									</Title>
+									<ExtendedTooltip name="ОткрытьГантКонструктораРасширеннаяПодсказка" id="751"/>
+								</Button>
+								<Table name="Задачи_ПКД_РКД" id="1021">
+									<Representation>List</Representation>
+									<AutoInsertNewRow>true</AutoInsertNewRow>
+									<EnableStartDrag>true</EnableStartDrag>
+									<EnableDrag>true</EnableDrag>
+									<DataPath>Задачи_ПКД_РКД</DataPath>
+									<RowFilter xsi:nil="true"/>
+									<ContextMenu name="Задачи_ПКД_РКДКонтекстноеМеню" id="1022"/>
+									<AutoCommandBar name="Задачи_ПКД_РКДКоманднаяПанель" id="1023">
+										<Autofill>false</Autofill>
+									</AutoCommandBar>
+									<ExtendedTooltip name="Задачи_ПКД_РКДРасширеннаяПодсказка" id="1024"/>
+									<SearchStringAddition name="Задачи_ПКД_РКДСтрокаПоиска" id="1025">
+										<AdditionSource>
+											<Item>Задачи_ПКД_РКД</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="Задачи_ПКД_РКДСтрокаПоискаКонтекстноеМеню" id="1026"/>
+										<ExtendedTooltip name="Задачи_ПКД_РКДСтрокаПоискаРасширеннаяПодсказка" id="1027"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="Задачи_ПКД_РКДСостояниеПросмотра" id="1028">
+										<AdditionSource>
+											<Item>Задачи_ПКД_РКД</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="Задачи_ПКД_РКДСостояниеПросмотраКонтекстноеМеню" id="1029"/>
+										<ExtendedTooltip name="Задачи_ПКД_РКДСостояниеПросмотраРасширеннаяПодсказка" id="1030"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="Задачи_ПКД_РКДУправлениеПоиском" id="1031">
+										<AdditionSource>
+											<Item>Задачи_ПКД_РКД</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="Задачи_ПКД_РКДУправлениеПоискомКонтекстноеМеню" id="1032"/>
+										<ExtendedTooltip name="Задачи_ПКД_РКДУправлениеПоискомРасширеннаяПодсказка" id="1033"/>
+									</SearchControlAddition>
+									<Events>
+										<Event name="BeforeAddRow">Задачи_ПКД_РКДПередНачаломДобавления</Event>
+										<Event name="BeforeDeleteRow">Задачи_ПКД_РКДПередУдалением</Event>
+										<Event name="BeforeRowChange">Задачи_ПКД_РКДПередНачаломИзменения</Event>
+									</Events>
+									<ChildItems>
+										<InputField name="Задачи_ПКД_РКДНаименование" id="1074">
+											<DataPath>Задачи_ПКД_РКД.Наименование</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Задача</v8:content>
+												</v8:item>
+											</Title>
+											<EditMode>EnterOnInput</EditMode>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="Задачи_ПКД_РКДНаименованиеКонтекстноеМеню" id="1075"/>
+											<ExtendedTooltip name="Задачи_ПКД_РКДНаименованиеРасширеннаяПодсказка" id="1076"/>
+										</InputField>
+										<InputField name="Задачи_ПКД_РКДТекущаяСтадия" id="1046">
+											<DataPath>Задачи_ПКД_РКД.ТекущаяСтадия</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="Задачи_ПКД_РКДТекущаяСтадияКонтекстноеМеню" id="1047"/>
+											<ExtendedTooltip name="Задачи_ПКД_РКДТекущаяСтадияРасширеннаяПодсказка" id="1048"/>
+										</InputField>
+										<InputField name="Задачи_ПКД_РКДКрай" id="1040">
+											<DataPath>Задачи_ПКД_РКД.Край</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="Задачи_ПКД_РКДКрайКонтекстноеМеню" id="1041"/>
+											<ExtendedTooltip name="Задачи_ПКД_РКДКрайРасширеннаяПодсказка" id="1042"/>
+										</InputField>
+										<InputField name="Задачи_ПКД_РКДИсполнитель" id="1043">
+											<DataPath>Задачи_ПКД_РКД.Исполнитель</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="Задачи_ПКД_РКДИсполнительКонтекстноеМеню" id="1044"/>
+											<ExtendedTooltip name="Задачи_ПКД_РКДИсполнительРасширеннаяПодсказка" id="1045"/>
+										</InputField>
+									</ChildItems>
+								</Table>
+							</ChildItems>
+						</UsualGroup>
+						<Table name="КомплектыКонструктора" id="1049">
+							<Representation>List</Representation>
+							<ReadOnly>true</ReadOnly>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>КомплектыКонструктора</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="КомплектыКонструктораКонтекстноеМеню" id="1050"/>
+							<AutoCommandBar name="КомплектыКонструктораКоманднаяПанель" id="1051">
+								<Autofill>false</Autofill>
+							</AutoCommandBar>
+							<ExtendedTooltip name="КомплектыКонструктораРасширеннаяПодсказка" id="1052"/>
+							<SearchStringAddition name="КомплектыКонструктораСтрокаПоиска" id="1053">
+								<AdditionSource>
+									<Item>КомплектыКонструктора</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="КомплектыКонструктораСтрокаПоискаКонтекстноеМеню" id="1054"/>
+								<ExtendedTooltip name="КомплектыКонструктораСтрокаПоискаРасширеннаяПодсказка" id="1055"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="КомплектыКонструктораСостояниеПросмотра" id="1056">
+								<AdditionSource>
+									<Item>КомплектыКонструктора</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="КомплектыКонструктораСостояниеПросмотраКонтекстноеМеню" id="1057"/>
+								<ExtendedTooltip name="КомплектыКонструктораСостояниеПросмотраРасширеннаяПодсказка" id="1058"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="КомплектыКонструктораУправлениеПоиском" id="1059">
+								<AdditionSource>
+									<Item>КомплектыКонструктора</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="КомплектыКонструктораУправлениеПоискомКонтекстноеМеню" id="1060"/>
+								<ExtendedTooltip name="КомплектыКонструктораУправлениеПоискомРасширеннаяПодсказка" id="1061"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<InputField name="КомплектыКонструктораКомплект" id="1062">
+									<DataPath>КомплектыКонструктора.Комплект</DataPath>
 									<EditMode>EnterOnInput</EditMode>
 									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-									<ContextMenu name="Задачи_ПКД_РКДНаименованиеКонтекстноеМеню" id="1075"/>
-									<ExtendedTooltip name="Задачи_ПКД_РКДНаименованиеРасширеннаяПодсказка" id="1076"/>
+									<ContextMenu name="КомплектыКонструктораКомплектКонтекстноеМеню" id="1063"/>
+									<ExtendedTooltip name="КомплектыКонструктораКомплектРасширеннаяПодсказка" id="1064"/>
 								</InputField>
-								<InputField name="Задачи_ПКД_РКДТекущаяСтадия" id="1046">
-									<DataPath>Задачи_ПКД_РКД.ТекущаяСтадия</DataPath>
+								<InputField name="КомплектыКонструктораТекущаяСтадия" id="1065">
+									<DataPath>КомплектыКонструктора.ТекущаяСтадия</DataPath>
 									<EditMode>EnterOnInput</EditMode>
 									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-									<ContextMenu name="Задачи_ПКД_РКДТекущаяСтадияКонтекстноеМеню" id="1047"/>
-									<ExtendedTooltip name="Задачи_ПКД_РКДТекущаяСтадияРасширеннаяПодсказка" id="1048"/>
+									<ContextMenu name="КомплектыКонструктораТекущаяСтадияКонтекстноеМеню" id="1066"/>
+									<ExtendedTooltip name="КомплектыКонструктораТекущаяСтадияРасширеннаяПодсказка" id="1067"/>
 								</InputField>
-								<InputField name="Задачи_ПКД_РКДКрай" id="1040">
-									<DataPath>Задачи_ПКД_РКД.Край</DataPath>
+								<InputField name="КомплектыКонструктораВедущийКонструктор" id="1068">
+									<DataPath>КомплектыКонструктора.ВедущийКонструктор</DataPath>
 									<EditMode>EnterOnInput</EditMode>
 									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-									<ContextMenu name="Задачи_ПКД_РКДКрайКонтекстноеМеню" id="1041"/>
-									<ExtendedTooltip name="Задачи_ПКД_РКДКрайРасширеннаяПодсказка" id="1042"/>
+									<ContextMenu name="КомплектыКонструктораВедущийКонструкторКонтекстноеМеню" id="1069"/>
+									<ExtendedTooltip name="КомплектыКонструктораВедущийКонструкторРасширеннаяПодсказка" id="1070"/>
 								</InputField>
-								<InputField name="Задачи_ПКД_РКДИсполнитель" id="1043">
-									<DataPath>Задачи_ПКД_РКД.Исполнитель</DataPath>
+								<InputField name="КомплектыКонструктораДизайнер" id="1071">
+									<DataPath>КомплектыКонструктора.Дизайнер</DataPath>
 									<EditMode>EnterOnInput</EditMode>
 									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-									<ContextMenu name="Задачи_ПКД_РКДИсполнительКонтекстноеМеню" id="1044"/>
-									<ExtendedTooltip name="Задачи_ПКД_РКДИсполнительРасширеннаяПодсказка" id="1045"/>
+									<ContextMenu name="КомплектыКонструктораДизайнерКонтекстноеМеню" id="1072"/>
+									<ExtendedTooltip name="КомплектыКонструктораДизайнерРасширеннаяПодсказка" id="1073"/>
 								</InputField>
 							</ChildItems>
 						</Table>
+						<Button name="ОбновитьГантКонструктора" id="1332">
+							<Type>UsualButton</Type>
+							<Representation>Picture</Representation>
+							<CommandName>Form.Command.ОбновитьГантКонструктора</CommandName>
+							<Picture>
+								<xr:Ref>StdPicture.Refresh</xr:Ref>
+								<xr:LoadTransparent>true</xr:LoadTransparent>
+							</Picture>
+							<ExtendedTooltip name="ОбновитьГантКонструктораРасширеннаяПодсказка" id="1333"/>
+						</Button>
+						<GanttChartField name="Диаграмма" id="1307">
+							<DataPath>Диаграмма</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<AutoMaxHeight>false</AutoMaxHeight>
+							<ContextMenu name="ДиаграммаКонтекстноеМеню" id="1308"/>
+							<ExtendedTooltip name="ДиаграммаРасширеннаяПодсказка" id="1309"/>
+							<Table name="ДиаграммаТаблица" id="1310">
+								<Representation>Tree</Representation>
+								<Visible>false</Visible>
+								<Height>10</Height>
+								<AutoMaxHeight>false</AutoMaxHeight>
+								<HeightControlVariant>UseHeightInFormRows</HeightControlVariant>
+								<VerticalScrollBar>DontUse</VerticalScrollBar>
+								<InitialListView>Beginning</InitialListView>
+								<InitialTreeView>ExpandAllLevels</InitialTreeView>
+								<DataPath>Диаграмма</DataPath>
+								<SearchStringLocation>None</SearchStringLocation>
+								<ViewStatusLocation>None</ViewStatusLocation>
+								<SearchControlLocation>None</SearchControlLocation>
+								<ContextMenu name="ДиаграммаТаблицаКонтекстноеМеню" id="1311"/>
+								<AutoCommandBar name="ДиаграммаТаблицаКоманднаяПанель" id="1312"/>
+								<ExtendedTooltip name="ДиаграммаТаблицаРасширеннаяПодсказка" id="1313"/>
+								<SearchStringAddition name="ДиаграммаТаблицаСтрокаПоиска" id="1314">
+									<AdditionSource>
+										<Item>ДиаграммаТаблица</Item>
+										<Type>SearchStringRepresentation</Type>
+									</AdditionSource>
+									<ContextMenu name="ДиаграммаТаблицаСтрокаПоискаКонтекстноеМеню" id="1315"/>
+									<ExtendedTooltip name="ДиаграммаТаблицаСтрокаПоискаРасширеннаяПодсказка" id="1316"/>
+								</SearchStringAddition>
+								<ViewStatusAddition name="ДиаграммаТаблицаСостояниеПросмотра" id="1317">
+									<AdditionSource>
+										<Item>ДиаграммаТаблица</Item>
+										<Type>ViewStatusRepresentation</Type>
+									</AdditionSource>
+									<ContextMenu name="ДиаграммаТаблицаСостояниеПросмотраКонтекстноеМеню" id="1318"/>
+									<ExtendedTooltip name="ДиаграммаТаблицаСостояниеПросмотраРасширеннаяПодсказка" id="1319"/>
+								</ViewStatusAddition>
+								<SearchControlAddition name="ДиаграммаТаблицаУправлениеПоиском" id="1320">
+									<AdditionSource>
+										<Item>ДиаграммаТаблица</Item>
+										<Type>SearchControl</Type>
+									</AdditionSource>
+									<ContextMenu name="ДиаграммаТаблицаУправлениеПоискомКонтекстноеМеню" id="1321"/>
+									<ExtendedTooltip name="ДиаграммаТаблицаУправлениеПоискомРасширеннаяПодсказка" id="1322"/>
+								</SearchControlAddition>
+								<ChildItems>
+									<InputField name="ДиаграммаТаблицаТочка" id="1323">
+										<DataPath>Диаграмма.Point</DataPath>
+										<EditMode>EnterOnInput</EditMode>
+										<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+										<ContextMenu name="ДиаграммаТаблицаТочкаКонтекстноеМеню" id="1324"/>
+										<ExtendedTooltip name="ДиаграммаТаблицаТочкаРасширеннаяПодсказка" id="1325"/>
+									</InputField>
+									<InputField name="ДиаграммаТаблицаТекст" id="1326">
+										<DataPath>Диаграмма.Text</DataPath>
+										<EditMode>EnterOnInput</EditMode>
+										<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+										<ContextMenu name="ДиаграммаТаблицаТекстКонтекстноеМеню" id="1327"/>
+										<ExtendedTooltip name="ДиаграммаТаблицаТекстРасширеннаяПодсказка" id="1328"/>
+									</InputField>
+									<InputField name="ДиаграммаТаблицаПереходы" id="1329">
+										<DataPath>Диаграмма.Переходы</DataPath>
+										<EditMode>EnterOnInput</EditMode>
+										<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+										<ContextMenu name="ДиаграммаТаблицаПереходыКонтекстноеМеню" id="1330"/>
+										<ExtendedTooltip name="ДиаграммаТаблицаПереходыРасширеннаяПодсказка" id="1331"/>
+									</InputField>
+								</ChildItems>
+							</Table>
+							<Events>
+								<Event name="Selection">ДиаграммаВыбор</Event>
+								<Event name="DetailProcessing">ДиаграммаОбработкаРасшифровки</Event>
+								<Event name="OnIntervalEditEnd">ДиаграммаПриОкончанииРедактированияИнтервала</Event>
+							</Events>
+						</GanttChartField>
 					</ChildItems>
 				</UsualGroup>
-				<Table name="КомплектыКонструктора" id="1049">
-					<Representation>List</Representation>
-					<ReadOnly>true</ReadOnly>
-					<AutoInsertNewRow>true</AutoInsertNewRow>
-					<EnableStartDrag>true</EnableStartDrag>
-					<EnableDrag>true</EnableDrag>
-					<DataPath>КомплектыКонструктора</DataPath>
-					<RowFilter xsi:nil="true"/>
-					<ContextMenu name="КомплектыКонструктораКонтекстноеМеню" id="1050"/>
-					<AutoCommandBar name="КомплектыКонструктораКоманднаяПанель" id="1051">
-						<Autofill>false</Autofill>
-					</AutoCommandBar>
-					<ExtendedTooltip name="КомплектыКонструктораРасширеннаяПодсказка" id="1052"/>
-					<SearchStringAddition name="КомплектыКонструктораСтрокаПоиска" id="1053">
-						<AdditionSource>
-							<Item>КомплектыКонструктора</Item>
-							<Type>SearchStringRepresentation</Type>
-						</AdditionSource>
-						<ContextMenu name="КомплектыКонструктораСтрокаПоискаКонтекстноеМеню" id="1054"/>
-						<ExtendedTooltip name="КомплектыКонструктораСтрокаПоискаРасширеннаяПодсказка" id="1055"/>
-					</SearchStringAddition>
-					<ViewStatusAddition name="КомплектыКонструктораСостояниеПросмотра" id="1056">
-						<AdditionSource>
-							<Item>КомплектыКонструктора</Item>
-							<Type>ViewStatusRepresentation</Type>
-						</AdditionSource>
-						<ContextMenu name="КомплектыКонструктораСостояниеПросмотраКонтекстноеМеню" id="1057"/>
-						<ExtendedTooltip name="КомплектыКонструктораСостояниеПросмотраРасширеннаяПодсказка" id="1058"/>
-					</ViewStatusAddition>
-					<SearchControlAddition name="КомплектыКонструктораУправлениеПоиском" id="1059">
-						<AdditionSource>
-							<Item>КомплектыКонструктора</Item>
-							<Type>SearchControl</Type>
-						</AdditionSource>
-						<ContextMenu name="КомплектыКонструктораУправлениеПоискомКонтекстноеМеню" id="1060"/>
-						<ExtendedTooltip name="КомплектыКонструктораУправлениеПоискомРасширеннаяПодсказка" id="1061"/>
-					</SearchControlAddition>
-					<ChildItems>
-						<InputField name="КомплектыКонструктораКомплект" id="1062">
-							<DataPath>КомплектыКонструктора.Комплект</DataPath>
-							<EditMode>EnterOnInput</EditMode>
-							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-							<ContextMenu name="КомплектыКонструктораКомплектКонтекстноеМеню" id="1063"/>
-							<ExtendedTooltip name="КомплектыКонструктораКомплектРасширеннаяПодсказка" id="1064"/>
-						</InputField>
-						<InputField name="КомплектыКонструктораТекущаяСтадия" id="1065">
-							<DataPath>КомплектыКонструктора.ТекущаяСтадия</DataPath>
-							<EditMode>EnterOnInput</EditMode>
-							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-							<ContextMenu name="КомплектыКонструктораТекущаяСтадияКонтекстноеМеню" id="1066"/>
-							<ExtendedTooltip name="КомплектыКонструктораТекущаяСтадияРасширеннаяПодсказка" id="1067"/>
-						</InputField>
-						<InputField name="КомплектыКонструктораВедущийКонструктор" id="1068">
-							<DataPath>КомплектыКонструктора.ВедущийКонструктор</DataPath>
-							<EditMode>EnterOnInput</EditMode>
-							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-							<ContextMenu name="КомплектыКонструктораВедущийКонструкторКонтекстноеМеню" id="1069"/>
-							<ExtendedTooltip name="КомплектыКонструктораВедущийКонструкторРасширеннаяПодсказка" id="1070"/>
-						</InputField>
-						<InputField name="КомплектыКонструктораДизайнер" id="1071">
-							<DataPath>КомплектыКонструктора.Дизайнер</DataPath>
-							<EditMode>EnterOnInput</EditMode>
-							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-							<ContextMenu name="КомплектыКонструктораДизайнерКонтекстноеМеню" id="1072"/>
-							<ExtendedTooltip name="КомплектыКонструктораДизайнерРасширеннаяПодсказка" id="1073"/>
-						</InputField>
-					</ChildItems>
-				</Table>
 			</ChildItems>
 		</UsualGroup>
 		<UsualGroup name="ГруппаФиндиректор" id="881">
@@ -3915,6 +4011,34 @@
 				</ListSettings>
 			</Settings>
 		</Attribute>
+		<Attribute name="Диаграмма" id="22">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Диаграмма</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type xmlns:d5p1="http://v8.1c.ru/8.2/data/chart">d5p1:GanttChart</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Переходы" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Переходы</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
 		<ConditionalAppearance>
 			<dcsset:item>
 				<dcsset:selection>
@@ -4058,6 +4182,21 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ОткрытьПлан</Action>
+		</Command>
+		<Command name="ОбновитьГантКонструктора" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить гант конструктора</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить гант конструктора</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбновитьГантКонструктора</Action>
 		</Command>
 	</Commands>
 </Form>
