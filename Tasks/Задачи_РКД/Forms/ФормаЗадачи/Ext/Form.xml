@@ -272,13 +272,31 @@
 													<ContextMenu name="ОснованиеКонтекстноеМеню" id="17"/>
 													<ExtendedTooltip name="ОснованиеРасширеннаяПодсказка" id="18"/>
 												</InputField>
-												<InputField name="Исполнитель" id="25">
-													<DataPath>Объект.Исполнитель</DataPath>
-													<EditMode>EnterOnInput</EditMode>
-													<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-													<ContextMenu name="ИсполнительКонтекстноеМеню" id="26"/>
-													<ExtendedTooltip name="ИсполнительРасширеннаяПодсказка" id="27"/>
-												</InputField>
+												<UsualGroup name="Группа10" id="98">
+													<Group>AlwaysHorizontal</Group>
+													<Representation>None</Representation>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="Группа10РасширеннаяПодсказка" id="99"/>
+													<ChildItems>
+														<InputField name="Исполнитель" id="25">
+															<DataPath>Объект.Исполнитель</DataPath>
+															<EditMode>EnterOnInput</EditMode>
+															<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+															<ContextMenu name="ИсполнительКонтекстноеМеню" id="26"/>
+															<ExtendedTooltip name="ИсполнительРасширеннаяПодсказка" id="27"/>
+														</InputField>
+														<Button name="ОбновитьИсполнителя" id="100">
+															<Type>UsualButton</Type>
+															<Representation>Picture</Representation>
+															<CommandName>Form.Command.ОбновитьИсполнителя</CommandName>
+															<Picture>
+																<xr:Ref>StdPicture.Refresh</xr:Ref>
+																<xr:LoadTransparent>true</xr:LoadTransparent>
+															</Picture>
+															<ExtendedTooltip name="ОбновитьИсполнителяРасширеннаяПодсказка" id="101"/>
+														</Button>
+													</ChildItems>
+												</UsualGroup>
 											</ChildItems>
 										</UsualGroup>
 										<UsualGroup name="Группа4" id="34">
@@ -607,6 +625,21 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ОткрытьФайлПДМ</Action>
+		</Command>
+		<Command name="ОбновитьИсполнителя" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить исполнителя</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить исполнителя</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбновитьИсполнителя</Action>
 		</Command>
 	</Commands>
 	<CommandInterface>
