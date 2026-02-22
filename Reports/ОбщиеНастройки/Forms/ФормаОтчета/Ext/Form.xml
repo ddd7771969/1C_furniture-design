@@ -749,12 +749,24 @@
 										</InputField>
 										<InputField name="ТЗ_ДизайнерВозврат" id="205">
 											<DataPath>ТЗ_ДизайнерВозврат</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Дизайнер возврат</v8:content>
+												</v8:item>
+											</Title>
 											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 											<ContextMenu name="ТЗ_ДизайнерВозвратКонтекстноеМеню" id="206"/>
 											<ExtendedTooltip name="ТЗ_ДизайнерВозвратРасширеннаяПодсказка" id="207"/>
 										</InputField>
 										<InputField name="ТЗ_ДизайнерОжидание" id="208">
 											<DataPath>ТЗ_ДизайнерОжидание</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Дизайнер ожидание</v8:content>
+												</v8:item>
+											</Title>
 											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 											<ContextMenu name="ТЗ_ДизайнерОжиданиеКонтекстноеМеню" id="209"/>
 											<ExtendedTooltip name="ТЗ_ДизайнерОжиданиеРасширеннаяПодсказка" id="210"/>
@@ -805,6 +817,12 @@
 											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 											<ContextMenu name="ПроизводствоНаименованиеДоскиКонтекстноеМеню" id="243"/>
 											<ExtendedTooltip name="ПроизводствоНаименованиеДоскиРасширеннаяПодсказка" id="244"/>
+										</InputField>
+										<InputField name="ПроизводствоВМонтаж" id="245">
+											<DataPath>ПроизводствоВМонтаж</DataPath>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="ПроизводствоВМонтажКонтекстноеМеню" id="246"/>
+											<ExtendedTooltip name="ПроизводствоВМонтажРасширеннаяПодсказка" id="247"/>
 										</InputField>
 									</ChildItems>
 								</UsualGroup>
@@ -1537,6 +1555,21 @@
 				<v8:item>
 					<v8:lang>ru</v8:lang>
 					<v8:content>Производство наименование доски</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПроизводствоВМонтаж" id="45">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Производство в монтаж</v8:content>
 				</v8:item>
 			</Title>
 			<Type>

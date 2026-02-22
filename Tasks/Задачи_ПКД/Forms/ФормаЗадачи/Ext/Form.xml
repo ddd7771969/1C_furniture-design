@@ -261,14 +261,32 @@
 								</InputField>
 							</ChildItems>
 						</UsualGroup>
-						<InputField name="Исполнитель" id="28">
-							<DataPath>Объект.Исполнитель</DataPath>
-							<EditMode>EnterOnInput</EditMode>
-							<CreateButton>false</CreateButton>
-							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-							<ContextMenu name="ИсполнительКонтекстноеМеню" id="29"/>
-							<ExtendedTooltip name="ИсполнительРасширеннаяПодсказка" id="30"/>
-						</InputField>
+						<UsualGroup name="Группа12" id="265">
+							<Group>AlwaysHorizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа12РасширеннаяПодсказка" id="266"/>
+							<ChildItems>
+								<InputField name="Исполнитель" id="28">
+									<DataPath>Объект.Исполнитель</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<CreateButton>false</CreateButton>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ИсполнительКонтекстноеМеню" id="29"/>
+									<ExtendedTooltip name="ИсполнительРасширеннаяПодсказка" id="30"/>
+								</InputField>
+								<Button name="ОбновитьИсполнителя" id="267">
+									<Type>UsualButton</Type>
+									<Representation>Picture</Representation>
+									<CommandName>Form.Command.ОбновитьИсполнителя</CommandName>
+									<Picture>
+										<xr:Ref>StdPicture.Refresh</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ExtendedTooltip name="ОбновитьИсполнителяРасширеннаяПодсказка" id="268"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
 						<UsualGroup name="Группа8" id="127">
 							<Group>AlwaysHorizontal</Group>
 							<Representation>None</Representation>
@@ -1566,6 +1584,21 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ОткрытьФайлПДМ</Action>
+		</Command>
+		<Command name="ОбновитьИсполнителя" id="30">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить исполнителя</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить исполнителя</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбновитьИсполнителя</Action>
 		</Command>
 	</Commands>
 	<CommandInterface>
