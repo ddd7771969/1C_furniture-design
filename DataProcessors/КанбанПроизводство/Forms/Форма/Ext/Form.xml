@@ -188,7 +188,10 @@
 		<HTMLDocumentField name="ПолеHTML" id="1">
 			<DataPath>ПолеHTML</DataPath>
 			<TitleLocation>None</TitleLocation>
-			<ContextMenu name="ПолеHTMLКонтекстноеМеню" id="2"/>
+			<ToolTipRepresentation>None</ToolTipRepresentation>
+			<ContextMenu name="ПолеHTMLКонтекстноеМеню" id="2">
+				<Autofill>false</Autofill>
+			</ContextMenu>
 			<ExtendedTooltip name="ПолеHTMLРасширеннаяПодсказка" id="3"/>
 			<Events>
 				<Event name="DocumentComplete">ПолеHTMLДокументСформирован</Event>

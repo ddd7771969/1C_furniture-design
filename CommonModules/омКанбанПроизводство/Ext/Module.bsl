@@ -616,7 +616,7 @@
 Функция ПолучитьШаблонЭлемента() Экспорт
 	
 	ШаблонHTML = "
-      |<div class=""item"" draggable=""true"" data-id=""%1"" data-track=""%2"" ondragstart=""onDragStart(event)"" ondragend=""onDragEnd(event)"" onclick=""onClickItem(event)"" ondblclick=""onDbClickItem(event)"" tabindex=""%5"">
+      |<div class=""item"" draggable=""true"" data-id=""%1"" data-track=""%2"" ondragstart=""onDragStart(event)"" ondragend=""onDragEnd(event)"" onclick=""onClickItem(event)"" ondblclick=""onDbClickItem(event)"" oncontextmenu=""onRClickItem(event)"" tabindex=""%5"">
 	  |%6      
 	  |  <h5 class=""item-header"">%3</h5>
       |  <p class=""item-desk"">
@@ -646,7 +646,7 @@
 	Возврат "
 	|<div class=""category"" data-category-id=""100"" ondragover=""event.preventDefault()"" ondrop=""onDrop(event)"">
 	|	<div class=""items-container"">
-	|		<div class=""item"" draggable=""true"" data-id=""100"" data-track=""100"" ondragstart=""onDragStart(event)"" ondragend=""onDragEnd(event)"" onclick=""onClickItem(event)"" ondblclick=""onDbClickItem(event)"">
+	|		<div class=""item"" draggable=""true"" data-id=""100"" data-track=""100"" ondragstart=""onDragStart(event)"" ondragend=""onDragEnd(event)"" onclick=""onClickItem(event)"" ondblclick=""onDbClickItem(event)"" oncontextmenu=""onRClickItem(event)"">
 	|			<div class=""item"" ondragover=""event.preventDefault()"" ondrop=""onDrop(event)"" data-category-id="""">
 	|		   	<img src=""%1"">
 	|			</div>
@@ -908,6 +908,14 @@
 |  function onDbClickItem(event) {
 |    const eventData = {
 |      event: ""DbClickItem"", // тип события
+|      itemId: event.currentTarget.dataset.id, // ID элемента
+|    };
+|    pushEvent(eventData);
+|  }
+|
+|  function onRClickItem(event) {
+|    const eventData = {
+|      event: ""RClickItem"", // тип события
 |      itemId: event.currentTarget.dataset.id, // ID элемента
 |    };
 |    pushEvent(eventData);
