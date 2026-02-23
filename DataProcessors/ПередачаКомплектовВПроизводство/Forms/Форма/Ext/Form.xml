@@ -1,0 +1,163 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+		<ChildItems>
+			<Button name="ФормаПеренестиВПроизводство" id="23">
+				<Type>CommandBarButton</Type>
+				<Enabled>false</Enabled>
+				<CommandName>Form.Command.ПеренестиВПроизводство</CommandName>
+				<ExtendedTooltip name="ФормаПеренестиВПроизводствоРасширеннаяПодсказка" id="24"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="Проект" id="1">
+			<DataPath>Проект</DataPath>
+			<ClearButton>true</ClearButton>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ПроектКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="ПроектРасширеннаяПодсказка" id="3"/>
+			<Events>
+				<Event name="OnChange">ПроектПриИзменении</Event>
+			</Events>
+		</InputField>
+		<Table name="Комплекты" id="4">
+			<Representation>List</Representation>
+			<Header>false</Header>
+			<HorizontalLines>false</HorizontalLines>
+			<VerticalLines>false</VerticalLines>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<DataPath>Комплекты</DataPath>
+			<RowPictureDataPath>Комплекты.Picture</RowPictureDataPath>
+			<ContextMenu name="КомплектыКонтекстноеМеню" id="5"/>
+			<AutoCommandBar name="КомплектыКоманднаяПанель" id="6">
+				<Autofill>false</Autofill>
+			</AutoCommandBar>
+			<ExtendedTooltip name="КомплектыРасширеннаяПодсказка" id="7"/>
+			<SearchStringAddition name="КомплектыСтрокаПоиска" id="8">
+				<AdditionSource>
+					<Item>Комплекты</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="КомплектыСтрокаПоискаКонтекстноеМеню" id="9"/>
+				<ExtendedTooltip name="КомплектыСтрокаПоискаРасширеннаяПодсказка" id="10"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="КомплектыСостояниеПросмотра" id="11">
+				<AdditionSource>
+					<Item>Комплекты</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="КомплектыСостояниеПросмотраКонтекстноеМеню" id="12"/>
+				<ExtendedTooltip name="КомплектыСостояниеПросмотраРасширеннаяПодсказка" id="13"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="КомплектыУправлениеПоиском" id="14">
+				<AdditionSource>
+					<Item>Комплекты</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="КомплектыУправлениеПоискомКонтекстноеМеню" id="15"/>
+				<ExtendedTooltip name="КомплектыУправлениеПоискомРасширеннаяПодсказка" id="16"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<CheckBoxField name="КомплектыПометка" id="20">
+					<DataPath>Комплекты.Check</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="КомплектыПометкаКонтекстноеМеню" id="21"/>
+					<ExtendedTooltip name="КомплектыПометкаРасширеннаяПодсказка" id="22"/>
+				</CheckBoxField>
+				<InputField name="КомплектыЗначение" id="17">
+					<DataPath>Комплекты.Value</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="КомплектыЗначениеКонтекстноеМеню" id="18"/>
+					<ExtendedTooltip name="КомплектыЗначениеРасширеннаяПодсказка" id="19"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ПередачаКомплектовВПроизводство</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="Проект" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проект</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Проекты</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Комплекты" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Комплекты</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+			<Settings xsi:type="v8:TypeDescription">
+				<v8:Type>cfg:CatalogRef.ИзделияКомплект</v8:Type>
+			</Settings>
+		</Attribute>
+		<Attribute name="УИДКолонкаОжидание" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>УИДКолонка ожидание</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="УИДДоскиПроизводство" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>УИДДоски производство</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ПеренестиВПроизводство" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перенести в производство</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перенести в производство</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПеренестиВПроизводство</Action>
+		</Command>
+	</Commands>
+</Form>
