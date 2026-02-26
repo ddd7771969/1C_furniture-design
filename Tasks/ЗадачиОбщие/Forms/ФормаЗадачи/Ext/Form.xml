@@ -27,6 +27,7 @@
 		</ChildItems>
 	</AutoCommandBar>
 	<Events>
+		<Event name="AfterWrite">ПослеЗаписи</Event>
 		<Event name="OnOpen">ПриОткрытии</Event>
 		<Event name="BeforeWrite">ПередЗаписью</Event>
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
@@ -105,7 +106,7 @@
 					</Events>
 				</CheckBoxField>
 				<InputField name="Исполнитель" id="22">
-					<DataPath>Объект.Исполнитель</DataPath>
+					<DataPath>Исполнитель</DataPath>
 					<EditMode>EnterOnInput</EditMode>
 					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 					<ContextMenu name="ИсполнительКонтекстноеМеню" id="23"/>
@@ -128,6 +129,19 @@
 						<Event name="OnChange">ДолжностьПриИзменении</Event>
 						<Event name="StartListChoice">ДолжностьИсполнителяНачалоВыбораИзСписка</Event>
 					</Events>
+				</InputField>
+				<InputField name="ТекущийИсполнитель" id="65">
+					<DataPath>ТекущийИсполнитель</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Исполнитель</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ТекущийИсполнительКонтекстноеМеню" id="66"/>
+					<ExtendedTooltip name="ТекущийИсполнительРасширеннаяПодсказка" id="67"/>
 				</InputField>
 			</ChildItems>
 		</UsualGroup>
@@ -252,6 +266,13 @@
 				</LabelField>
 			</ChildItems>
 		</UsualGroup>
+		<InputField name="СвязаннаяЗадача" id="62">
+			<DataPath>Объект.СвязаннаяЗадача</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="СвязаннаяЗадачаКонтекстноеМеню" id="63"/>
+			<ExtendedTooltip name="СвязаннаяЗадачаРасширеннаяПодсказка" id="64"/>
+		</InputField>
 		<UsualGroup name="Группа6" id="57">
 			<Group>AlwaysHorizontal</Group>
 			<Representation>None</Representation>
@@ -319,6 +340,28 @@
 			</Title>
 			<Type>
 				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Исполнитель" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Исполнитель</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Пользователи</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ТекущийИсполнитель" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Текущий исполнитель</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Пользователи</v8:Type>
 			</Type>
 		</Attribute>
 	</Attributes>

@@ -148,28 +148,58 @@
 							<ContextMenu name="СтатусОбъектаКонтекстноеМеню" id="144"/>
 							<ExtendedTooltip name="СтатусОбъектаРасширеннаяПодсказка" id="145"/>
 						</InputField>
-						<InputField name="Дизайнер" id="154">
-							<DataPath>Объект.Дизайнер</DataPath>
-							<ContextMenu name="ДизайнерКонтекстноеМеню" id="155"/>
-							<ExtendedTooltip name="ДизайнерРасширеннаяПодсказка" id="156"/>
-						</InputField>
-						<InputField name="Менеджер" id="182">
-							<DataPath>Объект.Менеджер</DataPath>
-							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-							<ContextMenu name="МенеджерКонтекстноеМеню" id="183"/>
-							<ExtendedTooltip name="МенеджерРасширеннаяПодсказка" id="184"/>
-						</InputField>
-						<InputField name="ВедущийКонструктор" id="179">
-							<DataPath>Объект.ВедущийКонструктор</DataPath>
-							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-							<ContextMenu name="ВедущийКонструкторКонтекстноеМеню" id="180"/>
-							<ExtendedTooltip name="ВедущийКонструкторРасширеннаяПодсказка" id="181"/>
-						</InputField>
-						<InputField name="Сметчик" id="157">
-							<DataPath>Объект.Сметчик</DataPath>
-							<ContextMenu name="СметчикКонтекстноеМеню" id="158"/>
-							<ExtendedTooltip name="СметчикРасширеннаяПодсказка" id="159"/>
-						</InputField>
+						<UsualGroup name="Группа2" id="216">
+							<Group>AlwaysHorizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="217"/>
+							<ChildItems>
+								<UsualGroup name="Группа3" id="218">
+									<Group>Vertical</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="219"/>
+									<ChildItems>
+										<InputField name="Дизайнер" id="154">
+											<DataPath>Объект.Дизайнер</DataPath>
+											<ContextMenu name="ДизайнерКонтекстноеМеню" id="155"/>
+											<ExtendedTooltip name="ДизайнерРасширеннаяПодсказка" id="156"/>
+										</InputField>
+										<InputField name="Менеджер" id="182">
+											<DataPath>Объект.Менеджер</DataPath>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="МенеджерКонтекстноеМеню" id="183"/>
+											<ExtendedTooltip name="МенеджерРасширеннаяПодсказка" id="184"/>
+										</InputField>
+										<InputField name="ВедущийКонструктор" id="179">
+											<DataPath>Объект.ВедущийКонструктор</DataPath>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="ВедущийКонструкторКонтекстноеМеню" id="180"/>
+											<ExtendedTooltip name="ВедущийКонструкторРасширеннаяПодсказка" id="181"/>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="Группа4" id="220">
+									<Group>Vertical</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="Группа4РасширеннаяПодсказка" id="221"/>
+									<ChildItems>
+										<InputField name="Сметчик" id="157">
+											<DataPath>Объект.Сметчик</DataPath>
+											<ContextMenu name="СметчикКонтекстноеМеню" id="158"/>
+											<ExtendedTooltip name="СметчикРасширеннаяПодсказка" id="159"/>
+										</InputField>
+										<InputField name="Замерщик" id="213">
+											<DataPath>Объект.Замерщик</DataPath>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="ЗамерщикКонтекстноеМеню" id="214"/>
+											<ExtendedTooltip name="ЗамерщикРасширеннаяПодсказка" id="215"/>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
 						<UsualGroup name="ГруппаПапкиВPDM" id="171">
 							<Title>
 								<v8:item>
