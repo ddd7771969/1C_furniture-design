@@ -14,12 +14,23 @@
 				</Picture>
 				<ExtendedTooltip name="ФормаЗаписатьРасширеннаяПодсказка" id="38"/>
 			</Button>
+			<Button name="ФормаВыполнена" id="47">
+				<Type>CommandBarButton</Type>
+				<Representation>PictureAndText</Representation>
+				<CommandName>Form.Command.Выполнена</CommandName>
+				<Picture>
+					<xr:Ref>StdPicture.AppearanceCheckBox</xr:Ref>
+					<xr:LoadTransparent>true</xr:LoadTransparent>
+				</Picture>
+				<ExtendedTooltip name="ФормаВыполненаРасширеннаяПодсказка" id="48"/>
+			</Button>
 		</ChildItems>
 	</AutoCommandBar>
 	<Events>
 		<Event name="OnOpen">ПриОткрытии</Event>
 		<Event name="BeforeWrite">ПередЗаписью</Event>
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+		<Event name="BeforeWriteAtServer">ПередЗаписьюНаСервере</Event>
 	</Events>
 	<ChildItems>
 		<UsualGroup name="Группа1" id="28">
@@ -72,16 +83,54 @@
 					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 					<ContextMenu name="ТипЗадачиКонтекстноеМеню" id="20"/>
 					<ExtendedTooltip name="ТипЗадачиРасширеннаяПодсказка" id="21"/>
+					<Events>
+						<Event name="OnChange">ТипЗадачиПриИзменении</Event>
+					</Events>
 				</InputField>
 			</ChildItems>
 		</UsualGroup>
-		<InputField name="Исполнитель" id="22">
-			<DataPath>Объект.Исполнитель</DataPath>
-			<EditMode>EnterOnInput</EditMode>
-			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-			<ContextMenu name="ИсполнительКонтекстноеМеню" id="23"/>
-			<ExtendedTooltip name="ИсполнительРасширеннаяПодсказка" id="24"/>
-		</InputField>
+		<UsualGroup name="Группа5" id="49">
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа5РасширеннаяПодсказка" id="50"/>
+			<ChildItems>
+				<CheckBoxField name="ПоДолжности" id="51">
+					<DataPath>ПоДолжности</DataPath>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ПоДолжностиКонтекстноеМеню" id="52"/>
+					<ExtendedTooltip name="ПоДолжностиРасширеннаяПодсказка" id="53"/>
+					<Events>
+						<Event name="OnChange">ПоДолжностиПриИзменении</Event>
+					</Events>
+				</CheckBoxField>
+				<InputField name="Исполнитель" id="22">
+					<DataPath>Объект.Исполнитель</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ИсполнительКонтекстноеМеню" id="23"/>
+					<ExtendedTooltip name="ИсполнительРасширеннаяПодсказка" id="24"/>
+				</InputField>
+				<InputField name="ДолжностьИсполнителя" id="54">
+					<DataPath>Объект.ДолжностьИсполнителя</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Должность</v8:content>
+						</v8:item>
+					</Title>
+					<ListChoiceMode>true</ListChoiceMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ChooseType>false</ChooseType>
+					<ContextMenu name="ДолжностьИсполнителяКонтекстноеМеню" id="55"/>
+					<ExtendedTooltip name="ДолжностьИсполнителяРасширеннаяПодсказка" id="56"/>
+					<Events>
+						<Event name="OnChange">ДолжностьПриИзменении</Event>
+						<Event name="StartListChoice">ДолжностьИсполнителяНачалоВыбораИзСписка</Event>
+					</Events>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
 		<UsualGroup name="Группа4" id="39">
 			<Group>AlwaysHorizontal</Group>
 			<Representation>None</Representation>
@@ -203,12 +252,25 @@
 				</LabelField>
 			</ChildItems>
 		</UsualGroup>
-		<LabelField name="Автор" id="10">
-			<DataPath>Объект.Автор</DataPath>
-			<EditMode>EnterOnInput</EditMode>
-			<ContextMenu name="АвторКонтекстноеМеню" id="11"/>
-			<ExtendedTooltip name="АвторРасширеннаяПодсказка" id="12"/>
-		</LabelField>
+		<UsualGroup name="Группа6" id="57">
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа6РасширеннаяПодсказка" id="58"/>
+			<ChildItems>
+				<LabelField name="Автор" id="10">
+					<DataPath>Объект.Автор</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ContextMenu name="АвторКонтекстноеМеню" id="11"/>
+					<ExtendedTooltip name="АвторРасширеннаяПодсказка" id="12"/>
+				</LabelField>
+				<LabelField name="АвторИсполнения" id="59">
+					<DataPath>Объект.АвторИсполнения</DataPath>
+					<ContextMenu name="АвторИсполненияКонтекстноеМеню" id="60"/>
+					<ExtendedTooltip name="АвторИсполненияРасширеннаяПодсказка" id="61"/>
+				</LabelField>
+			</ChildItems>
+		</UsualGroup>
 	</ChildItems>
 	<Attributes>
 		<Attribute name="Объект" id="1">
@@ -248,6 +310,17 @@
 				</v8:StringQualifiers>
 			</Type>
 		</Attribute>
+		<Attribute name="ПоДолжности" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>По должности</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
 	</Attributes>
 	<Commands>
 		<Command name="Записать" id="1">
@@ -264,6 +337,21 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ЗаписатьЗадачу</Action>
+		</Command>
+		<Command name="Выполнена" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выполнена</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выполнена</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Выполнена</Action>
 		</Command>
 	</Commands>
 	<CommandInterface>
