@@ -266,13 +266,27 @@
 				</LabelField>
 			</ChildItems>
 		</UsualGroup>
-		<InputField name="СвязаннаяЗадача" id="62">
-			<DataPath>Объект.СвязаннаяЗадача</DataPath>
-			<ReadOnly>true</ReadOnly>
-			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-			<ContextMenu name="СвязаннаяЗадачаКонтекстноеМеню" id="63"/>
-			<ExtendedTooltip name="СвязаннаяЗадачаРасширеннаяПодсказка" id="64"/>
-		</InputField>
+		<UsualGroup name="Группа7" id="68">
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа7РасширеннаяПодсказка" id="69"/>
+			<ChildItems>
+				<InputField name="СвязаннаяЗадача" id="62">
+					<DataPath>Объект.СвязаннаяЗадача</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="СвязаннаяЗадачаКонтекстноеМеню" id="63"/>
+					<ExtendedTooltip name="СвязаннаяЗадачаРасширеннаяПодсказка" id="64"/>
+				</InputField>
+				<CheckBoxField name="НуженОтчетОВыполнении" id="70">
+					<DataPath>Объект.НуженОтчетОВыполнении</DataPath>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="НуженОтчетОВыполненииКонтекстноеМеню" id="71"/>
+					<ExtendedTooltip name="НуженОтчетОВыполненииРасширеннаяПодсказка" id="72"/>
+				</CheckBoxField>
+			</ChildItems>
+		</UsualGroup>
 		<UsualGroup name="Группа6" id="57">
 			<Group>AlwaysHorizontal</Group>
 			<Representation>None</Representation>
