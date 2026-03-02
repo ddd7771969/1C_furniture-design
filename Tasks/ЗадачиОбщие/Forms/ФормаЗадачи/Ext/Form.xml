@@ -285,6 +285,17 @@
 					<ContextMenu name="НуженОтчетОВыполненииКонтекстноеМеню" id="71"/>
 					<ExtendedTooltip name="НуженОтчетОВыполненииРасширеннаяПодсказка" id="72"/>
 				</CheckBoxField>
+				<LabelField name="ДатаВыполнения" id="73">
+					<DataPath>Объект.ДатаВыполнения</DataPath>
+					<Format>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ДЛФ=DDT</v8:content>
+						</v8:item>
+					</Format>
+					<ContextMenu name="ДатаВыполненияКонтекстноеМеню" id="74"/>
+					<ExtendedTooltip name="ДатаВыполненияРасширеннаяПодсказка" id="75"/>
+				</LabelField>
 			</ChildItems>
 		</UsualGroup>
 		<UsualGroup name="Группа6" id="57">
