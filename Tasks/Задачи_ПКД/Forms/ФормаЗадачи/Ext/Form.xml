@@ -725,6 +725,19 @@
 											</Picture>
 											<ExtendedTooltip name="КнопкаПриостановитьКонструкторРасширеннаяПодсказка" id="65"/>
 										</Button>
+										<Button name="КнопкаСбросКонструктором" id="269">
+											<Type>UsualButton</Type>
+											<Representation>Picture</Representation>
+											<Width>4</Width>
+											<Height>2</Height>
+											<CommandName>Form.Command.СбросКонструктором</CommandName>
+											<Picture>
+												<xr:Ref>CommonPicture.Сброс50х50</xr:Ref>
+												<xr:LoadTransparent>true</xr:LoadTransparent>
+											</Picture>
+											<PictureLocation>Left</PictureLocation>
+											<ExtendedTooltip name="КнопкаСбросКонструкторомРасширеннаяПодсказка" id="270"/>
+										</Button>
 										<Button name="КнопкаОтложитьКонструктор" id="78">
 											<Type>UsualButton</Type>
 											<Visible>false</Visible>
@@ -1599,6 +1612,21 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ОбновитьИсполнителя</Action>
+		</Command>
+		<Command name="СбросКонструктором" id="31">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сброс конструктором</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сброс конструктором</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СбросКонструктором</Action>
 		</Command>
 	</Commands>
 	<CommandInterface>

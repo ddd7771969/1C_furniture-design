@@ -2,33 +2,33 @@
 <MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
 	<Document uuid="b2b0bbb1-f0a2-45e3-84d3-a63ee109ab7d">
 		<InternalInfo>
-			<xr:GeneratedType name="DocumentObject.ИзменитьКонструктора" category="Object">
+			<xr:GeneratedType name="DocumentObject.НазначениеКонструктора" category="Object">
 				<xr:TypeId>e271b4de-4a23-47fd-92c9-a62af163d166</xr:TypeId>
 				<xr:ValueId>facbf50e-077e-4732-87a4-dcf638436263</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="DocumentRef.ИзменитьКонструктора" category="Ref">
+			<xr:GeneratedType name="DocumentRef.НазначениеКонструктора" category="Ref">
 				<xr:TypeId>f192432d-4d19-4fca-8cb2-a649b30bf3ae</xr:TypeId>
 				<xr:ValueId>403b0b4f-4a23-4b88-be4a-c8a46f2e7d60</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="DocumentSelection.ИзменитьКонструктора" category="Selection">
+			<xr:GeneratedType name="DocumentSelection.НазначениеКонструктора" category="Selection">
 				<xr:TypeId>bf244b11-1b27-4a55-b821-1f618acca3bf</xr:TypeId>
 				<xr:ValueId>c4c1f711-785d-4c53-8437-12cf5cbc2a31</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="DocumentList.ИзменитьКонструктора" category="List">
+			<xr:GeneratedType name="DocumentList.НазначениеКонструктора" category="List">
 				<xr:TypeId>dd8e6938-2ec4-4eed-baca-c4dedf71435b</xr:TypeId>
 				<xr:ValueId>e60f3d26-3e4d-43b3-9b09-2cda519c3e82</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="DocumentManager.ИзменитьКонструктора" category="Manager">
+			<xr:GeneratedType name="DocumentManager.НазначениеКонструктора" category="Manager">
 				<xr:TypeId>69cb8c0d-4237-4f8a-a436-b8855ff112e5</xr:TypeId>
 				<xr:ValueId>f67d8af2-e984-4059-8b29-c21feae27ec9</xr:ValueId>
 			</xr:GeneratedType>
 		</InternalInfo>
 		<Properties>
-			<Name>ИзменитьКонструктора</Name>
+			<Name>НазначениеКонструктора</Name>
 			<Synonym>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Изменить конструктора</v8:content>
+					<v8:content>Назначение конструктора</v8:content>
 				</v8:item>
 			</Synonym>
 			<Comment/>
@@ -43,13 +43,13 @@
 			<Characteristics/>
 			<BasedOn/>
 			<InputByString>
-				<xr:Field>Document.ИзменитьКонструктора.StandardAttribute.Number</xr:Field>
+				<xr:Field>Document.НазначениеКонструктора.StandardAttribute.Number</xr:Field>
 			</InputByString>
 			<CreateOnInput>Use</CreateOnInput>
 			<SearchStringModeOnInputByString>Begin</SearchStringModeOnInputByString>
 			<FullTextSearchOnInputByString>DontUse</FullTextSearchOnInputByString>
 			<ChoiceDataGetModeOnInputByString>Directly</ChoiceDataGetModeOnInputByString>
-			<DefaultObjectForm>Document.ИзменитьКонструктора.Form.ФормаДокумента</DefaultObjectForm>
+			<DefaultObjectForm>Document.НазначениеКонструктора.Form.ФормаДокумента</DefaultObjectForm>
 			<DefaultListForm/>
 			<DefaultChoiceForm/>
 			<AuxiliaryObjectForm/>
@@ -103,6 +103,49 @@
 					<MaxValue xsi:nil="true"/>
 					<FillFromFillingValue>false</FillFromFillingValue>
 					<FillValue xsi:nil="true"/>
+					<FillChecking>DontCheck</FillChecking>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<ChoiceParameterLinks/>
+					<ChoiceParameters/>
+					<QuickChoice>Auto</QuickChoice>
+					<CreateOnInput>Auto</CreateOnInput>
+					<ChoiceForm/>
+					<LinkByType/>
+					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+					<Indexing>DontIndex</Indexing>
+					<FullTextSearch>Use</FullTextSearch>
+					<DataHistory>Use</DataHistory>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="ffd7f538-3e42-46d3-aef0-cae4a36a66a8">
+				<Properties>
+					<Name>Комментарий</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Комментарий</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+					<PasswordMode>false</PasswordMode>
+					<Format/>
+					<EditFormat/>
+					<ToolTip/>
+					<MarkNegatives>false</MarkNegatives>
+					<Mask/>
+					<MultiLine>false</MultiLine>
+					<ExtendedEdit>false</ExtendedEdit>
+					<MinValue xsi:nil="true"/>
+					<MaxValue xsi:nil="true"/>
+					<FillFromFillingValue>false</FillFromFillingValue>
+					<FillValue xsi:type="xs:string"/>
 					<FillChecking>DontCheck</FillChecking>
 					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
 					<ChoiceParameterLinks/>
@@ -197,6 +240,70 @@
 				</Properties>
 			</Attribute>
 			<Form>ФормаДокумента</Form>
+			<TabularSection uuid="baaa6652-82a9-43ee-9d8e-3852119e0aba">
+				<InternalInfo>
+					<xr:GeneratedType name="DocumentTabularSection.НазначениеКонструктора.Комплекты" category="TabularSection">
+						<xr:TypeId>b2afce58-cff2-4abb-bfd5-430756915923</xr:TypeId>
+						<xr:ValueId>16a7cfc6-7cf7-45ff-bc33-bf4fb038fe22</xr:ValueId>
+					</xr:GeneratedType>
+					<xr:GeneratedType name="DocumentTabularSectionRow.НазначениеКонструктора.Комплекты" category="TabularSectionRow">
+						<xr:TypeId>6be32803-b4da-482e-a1b5-ce19323efca7</xr:TypeId>
+						<xr:ValueId>8db74fd3-c981-4794-9dfe-2621241366df</xr:ValueId>
+					</xr:GeneratedType>
+				</InternalInfo>
+				<Properties>
+					<Name>Комплекты</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Комплекты</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<ToolTip/>
+					<FillChecking>DontCheck</FillChecking>
+					<LineNumberLength>9</LineNumberLength>
+				</Properties>
+				<ChildObjects>
+					<Attribute uuid="575d6c44-7eaa-41d5-bdbf-4fd7f45261a6">
+						<Properties>
+							<Name>Комплект</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Комплект</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<Type>
+								<v8:Type>cfg:CatalogRef.ИзделияКомплект</v8:Type>
+							</Type>
+							<PasswordMode>false</PasswordMode>
+							<Format/>
+							<EditFormat/>
+							<ToolTip/>
+							<MarkNegatives>false</MarkNegatives>
+							<Mask/>
+							<MultiLine>false</MultiLine>
+							<ExtendedEdit>false</ExtendedEdit>
+							<MinValue xsi:nil="true"/>
+							<MaxValue xsi:nil="true"/>
+							<FillChecking>DontCheck</FillChecking>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<ChoiceParameterLinks/>
+							<ChoiceParameters/>
+							<QuickChoice>Auto</QuickChoice>
+							<CreateOnInput>Auto</CreateOnInput>
+							<ChoiceForm/>
+							<LinkByType/>
+							<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+							<Indexing>DontIndex</Indexing>
+							<FullTextSearch>Use</FullTextSearch>
+							<DataHistory>Use</DataHistory>
+						</Properties>
+					</Attribute>
+				</ChildObjects>
+			</TabularSection>
 		</ChildObjects>
 	</Document>
 </MetaDataObject>
