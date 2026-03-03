@@ -178,16 +178,6 @@
 							</Picture>
 							<ExtendedTooltip name="КнопкаИсторияРасширеннаяПодсказка" id="61"/>
 						</Button>
-						<Button name="ОткрытьФайлПДМ" id="96">
-							<Type>UsualButton</Type>
-							<Representation>PictureAndText</Representation>
-							<CommandName>Form.Command.ОткрытьФайлПДМ</CommandName>
-							<Picture>
-								<xr:Ref>StdPicture.OpenFile</xr:Ref>
-								<xr:LoadTransparent>true</xr:LoadTransparent>
-							</Picture>
-							<ExtendedTooltip name="ОткрытьФайлПДМРасширеннаяПодсказка" id="97"/>
-						</Button>
 					</ChildItems>
 				</UsualGroup>
 				<UsualGroup name="Группа7" id="62">
@@ -297,6 +287,19 @@
 														</Button>
 													</ChildItems>
 												</UsualGroup>
+												<LabelDecoration name="Декорация1" id="124">
+													<Visible>false</Visible>
+													<TextColor>#993366</TextColor>
+													<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Ожидание готовности габаритного чертежа</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="Декорация1КонтекстноеМеню" id="125"/>
+													<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="126"/>
+												</LabelDecoration>
 												<UsualGroup name="ГруппаЗамеры" id="102">
 													<Title>
 														<v8:item>
@@ -338,8 +341,38 @@
 															<ContextMenu name="ОбъектИзмененияГЧКонтекстноеМеню" id="111"/>
 															<ExtendedTooltip name="ОбъектИзмененияГЧРасширеннаяПодсказка" id="112"/>
 														</InputField>
+														<UsualGroup name="Группа11" id="122">
+															<Group>AlwaysHorizontal</Group>
+															<Representation>None</Representation>
+															<ShowTitle>false</ShowTitle>
+															<ExtendedTooltip name="Группа11РасширеннаяПодсказка" id="123"/>
+															<ChildItems>
+																<InputField name="ГабаритныйЧертеж" id="119">
+																	<DataPath>ГабаритныйЧертеж</DataPath>
+																	<ReadOnly>true</ReadOnly>
+																	<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+																	<ContextMenu name="ГабаритныйЧертежКонтекстноеМеню" id="120"/>
+																	<ExtendedTooltip name="ГабаритныйЧертежРасширеннаяПодсказка" id="121"/>
+																</InputField>
+																<Button name="ОткрытьФайлПДМ" id="96">
+																	<Type>UsualButton</Type>
+																	<Representation>PictureAndText</Representation>
+																	<CommandName>Form.Command.ОткрытьФайлПДМ</CommandName>
+																	<Picture>
+																		<xr:Ref>StdPicture.OpenFile</xr:Ref>
+																		<xr:LoadTransparent>true</xr:LoadTransparent>
+																	</Picture>
+																	<ExtendedTooltip name="ОткрытьФайлПДМРасширеннаяПодсказка" id="97"/>
+																</Button>
+															</ChildItems>
+														</UsualGroup>
 													</ChildItems>
 												</UsualGroup>
+												<LabelField name="БезГабаритногоЧертежа" id="116">
+													<DataPath>БезГабаритногоЧертежа</DataPath>
+													<ContextMenu name="БезГабаритногоЧертежаКонтекстноеМеню" id="117"/>
+													<ExtendedTooltip name="БезГабаритногоЧертежаРасширеннаяПодсказка" id="118"/>
+												</LabelField>
 											</ChildItems>
 										</UsualGroup>
 										<UsualGroup name="Группа4" id="34">
@@ -554,6 +587,28 @@
 			</Title>
 			<Type>
 				<v8:Type>cfg:EnumRef.СтатусыЗамера</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="БезГабаритногоЧертежа" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Без габаритного чертежа</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ГабаритныйЧертеж" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Габаритный чертеж</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.ГабаритныеЧертежи</v8:Type>
 			</Type>
 		</Attribute>
 	</Attributes>
@@ -783,6 +838,16 @@
 				<Type>Auto</Type>
 				<CommandGroup>FormNavigationPanelGoTo</CommandGroup>
 				<Index>3</Index>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>InformationRegister.ОчередьВыгрузкиPDM.StandardCommand.OpenByValue.ОбъектВыгрузки</Command>
+				<Type>Auto</Type>
+				<CommandGroup>FormNavigationPanelGoTo</CommandGroup>
+				<Index>4</Index>
 				<DefaultVisible>false</DefaultVisible>
 				<Visible>
 					<xr:Common>false</xr:Common>
