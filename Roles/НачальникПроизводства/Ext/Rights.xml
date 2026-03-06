@@ -477,6 +477,13 @@
 		</right>
 	</object>
 	<object>
+		<name>Constant.Адрес_API_Telegramm</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>InformationRegister.КоличествоЧасовВМесяц.Resource.РабочиеЧасы</name>
 		<right>
 			<name>View</name>
@@ -1655,6 +1662,13 @@
 		</right>
 	</object>
 	<object>
+		<name>Subsystem.Монтаж.Subsystem.НеПоказывать</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>InformationRegister.УдалитьЗамерыВремени3.Dimension.КлючеваяОперация</name>
 		<right>
 			<name>View</name>
@@ -1663,6 +1677,13 @@
 		<right>
 			<name>Edit</name>
 			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Subsystem.Подрядчики</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
 		</right>
 	</object>
 	<object>
@@ -2167,6 +2188,13 @@
 		</right>
 	</object>
 	<object>
+		<name>FilterCriterion.СвязанныеДокументы</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>InformationRegister.ИсполнителиЗадач.Dimension.ОсновнойОбъектАдресации</name>
 		<right>
 			<name>View</name>
@@ -2361,6 +2389,17 @@
 		<right>
 			<name>Edit</name>
 			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>SessionParameter.ЕстьВизуализацияСообщений</name>
+		<right>
+			<name>Get</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Set</name>
+			<value>true</value>
 		</right>
 	</object>
 	<object>
@@ -2825,6 +2864,13 @@
 		</right>
 	</object>
 	<object>
+		<name>Subsystem.Проекты.Subsystem.Договора</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>InformationRegister.НастройкиУчетныхЗаписейЭлектроннойПочты.Resource.ПодписьДляНовыхСообщенийФорматированныйДокумент</name>
 		<right>
 			<name>View</name>
@@ -3259,6 +3305,17 @@
 		</right>
 	</object>
 	<object>
+		<name>InformationRegister.ОчередьВыгрузкиPDM</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Update</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>InformationRegister.ДанныеИзделияЗаказчика</name>
 		<right>
 			<name>Read</name>
@@ -3308,6 +3365,17 @@
 		<right>
 			<name>Edit</name>
 			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Report.ИзделияПроекта</name>
+		<right>
+			<name>Use</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
 		</right>
 	</object>
 	<object>
@@ -3898,6 +3966,17 @@
 		</right>
 		<right>
 			<name>Update</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Report.СостояниеПроекта</name>
+		<right>
+			<name>Use</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
 			<value>true</value>
 		</right>
 	</object>
@@ -4534,7 +4613,7 @@
 			<value>true</value>
 		</right>
 		<right>
-			<name>Insert</name>
+			<name>View</name>
 			<value>true</value>
 		</right>
 	</object>
@@ -4835,6 +4914,10 @@
 		</right>
 		<right>
 			<name>Insert</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
 			<value>true</value>
 		</right>
 	</object>
@@ -6111,6 +6194,13 @@
 		</right>
 	</object>
 	<object>
+		<name>Subsystem.Проекты.Subsystem.НеПоказывать</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>Catalog.Проекты.TabularSection.КонтактнаяИнформация.Attribute.Страна</name>
 		<right>
 			<name>Edit</name>
@@ -6284,6 +6374,10 @@
 			<name>Read</name>
 			<value>true</value>
 		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
 	</object>
 	<object>
 		<name>InformationRegister.ДанныеГабаритныйЧертеж</name>
@@ -6300,6 +6394,13 @@
 		<name>Catalog.ТелефонныйЗвонокПрисоединенныеФайлы</name>
 		<right>
 			<name>Read</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>FilterCriterion.ДокументыЗаказа</name>
+		<right>
+			<name>View</name>
 			<value>true</value>
 		</right>
 	</object>
@@ -6574,7 +6675,7 @@
 			<value>true</value>
 		</right>
 		<right>
-			<name>Insert</name>
+			<name>View</name>
 			<value>true</value>
 		</right>
 	</object>
@@ -6587,6 +6688,13 @@
 		<right>
 			<name>Edit</name>
 			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Subsystem.ПодготовкаПроекта.Subsystem.НеПоказывать</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
 		</right>
 	</object>
 	<object>
@@ -7265,6 +7373,10 @@
 			<name>Read</name>
 			<value>true</value>
 		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
 	</object>
 	<object>
 		<name>InformationRegister.НаборыИзделийЭлемент.Dimension.ИзделиеЭлемент</name>
@@ -7715,6 +7827,10 @@
 		<name>Catalog.ИзделияЭлемент</name>
 		<right>
 			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
 			<value>true</value>
 		</right>
 	</object>
@@ -8515,6 +8631,13 @@
 		</right>
 	</object>
 	<object>
+		<name>Subsystem.Проекты</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>InformationRegister.ПредметыПапкиВзаимодействий.Resource.ПапкаЭлектронногоПисьма</name>
 		<right>
 			<name>View</name>
@@ -9040,6 +9163,24 @@
 		</right>
 	</object>
 	<object>
+		<name>Subsystem.Склад.Subsystem.НеПоказывать</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.Композиции</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>InformationRegister.РаботаКонструктораФакт.Resource.Автор</name>
 		<right>
 			<name>View</name>
@@ -9194,6 +9335,13 @@
 		</right>
 	</object>
 	<object>
+		<name>Subsystem.Производство.Subsystem.ПроизводствоНеПоказывать</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>SessionParameter.ОбновлениеСправочниковИдентификаторов</name>
 		<right>
 			<name>Get</name>
@@ -9271,6 +9419,17 @@
 		<right>
 			<name>Edit</name>
 			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Document.ПоступлениеМатериалов</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
 		</right>
 	</object>
 	<object>
@@ -9395,6 +9554,13 @@
 		</right>
 	</object>
 	<object>
+		<name>Subsystem.Производство.Subsystem.Справочники</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>Catalog.Месяцы</name>
 		<right>
 			<name>Read</name>
@@ -9502,6 +9668,13 @@
 		<right>
 			<name>Edit</name>
 			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Subsystem.Склад.Subsystem.Настройки</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
 		</right>
 	</object>
 	<object>
@@ -10057,6 +10230,13 @@
 		</right>
 	</object>
 	<object>
+		<name>Subsystem.Производство</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>Catalog.Проекты.TabularSection.КонтактнаяИнформация.Attribute.НомерТелефонаБезКодов</name>
 		<right>
 			<name>Edit</name>
@@ -10133,6 +10313,13 @@
 		</right>
 	</object>
 	<object>
+		<name>Subsystem.Монтаж</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>Catalog.Номенклатура</name>
 		<right>
 			<name>Read</name>
@@ -10163,6 +10350,30 @@
 		<name>Document.ЗапускВРаботу</name>
 		<right>
 			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Update</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Posting</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractivePosting</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractivePostingRegular</name>
 			<value>true</value>
 		</right>
 	</object>
@@ -10547,6 +10758,28 @@
 		</right>
 	</object>
 	<object>
+		<name>Document.СписаниеМатериалов</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Report.КонтрольПроекта</name>
+		<right>
+			<name>Use</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>InformationRegister.ОбработчикиОбновления.Attribute.ВерсияПорядок</name>
 		<right>
 			<name>View</name>
@@ -10736,6 +10969,17 @@
 		<right>
 			<name>Edit</name>
 			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Catalog.ЗадачиОбщиеПрисоединенныеФайлы</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
 		</right>
 	</object>
 	<object>
@@ -11007,6 +11251,17 @@
 		</right>
 	</object>
 	<object>
+		<name>Document.ВозвратСПодряда</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>InformationRegister.ЭлектронныеПодписиМЧД.Dimension.ПодписанныйОбъект</name>
 		<right>
 			<name>View</name>
@@ -11109,6 +11364,13 @@
 		<name>Catalog.Бригады</name>
 		<right>
 			<name>Read</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Subsystem.Склад</name>
+		<right>
+			<name>View</name>
 			<value>true</value>
 		</right>
 	</object>
@@ -11877,6 +12139,13 @@
 		<right>
 			<name>Edit</name>
 			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Subsystem.Проекты.Subsystem.Документы</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
 		</right>
 	</object>
 	<object>
@@ -13006,6 +13275,17 @@
 		</right>
 	</object>
 	<object>
+		<name>AccumulationRegister.КомплектыУПодрядчика</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Update</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>Catalog.КлассификаторБанков</name>
 		<right>
 			<name>Read</name>
@@ -13643,6 +13923,13 @@
 		</right>
 	</object>
 	<object>
+		<name>Subsystem.ПодготовкаПроекта</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>InformationRegister.СведенияОФайлах.Resource.ПометкаУдаления</name>
 		<right>
 			<name>View</name>
@@ -13651,6 +13938,13 @@
 		<right>
 			<name>Edit</name>
 			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Subsystem.Проекты.Subsystem.Настройки</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
 		</right>
 	</object>
 	<object>
@@ -13904,6 +14198,13 @@
 		<right>
 			<name>Edit</name>
 			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>FilterCriterion.ОтборДеталировокИзделия</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
 		</right>
 	</object>
 	<object>
@@ -14506,6 +14807,17 @@
 		</right>
 	</object>
 	<object>
+		<name>Document.ПолучениеОтПодрядчика</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>InformationRegister.ДополнительныеСведения.Dimension.Объект</name>
 		<right>
 			<name>View</name>
@@ -14685,6 +14997,13 @@
 		</right>
 	</object>
 	<object>
+		<name>Subsystem.Подрядчики.Subsystem.НеПоказывать</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>InformationRegister.МашиночитаемыеДоверенностиПредставителиИДоверители.Resource.СовместныеПолномочия</name>
 		<right>
 			<name>View</name>
@@ -14852,6 +15171,13 @@
 		</right>
 	</object>
 	<object>
+		<name>Subsystem.Проекты.Subsystem.ПредварительныйРасчет</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>InformationRegister.ПроизвольноеОписаниеСобытий</name>
 		<right>
 			<name>Read</name>
@@ -14944,6 +15270,17 @@
 		<right>
 			<name>Edit</name>
 			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Report.НоменклатураПроекта</name>
+		<right>
+			<name>Use</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
 		</right>
 	</object>
 	<object>
@@ -16037,6 +16374,13 @@
 		</right>
 	</object>
 	<object>
+		<name>Subsystem.Проекты.Subsystem.Задачи</name>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>InformationRegister.ИдентификаторыПолученныхЭлектронныхПисем.Dimension.Идентификатор</name>
 		<right>
 			<name>View</name>
@@ -16227,6 +16571,17 @@
 		</right>
 	</object>
 	<object>
+		<name>Report.ДвижениеНоменклатуры</name>
+		<right>
+			<name>Use</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>InformationRegister.ПоставляемыеМакетыПечати.Dimension.Объект</name>
 		<right>
 			<name>View</name>
@@ -16395,6 +16750,13 @@
 		</right>
 		<right>
 			<name>Update</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>FilterCriterion.ФайлыВТоме</name>
+		<right>
+			<name>View</name>
 			<value>true</value>
 		</right>
 	</object>
@@ -17562,6 +17924,17 @@
 		</right>
 		<right>
 			<name>Update</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Report.ДвиженияДокумента</name>
+		<right>
+			<name>Use</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
 			<value>true</value>
 		</right>
 	</object>
