@@ -213,6 +213,13 @@
 									<ContextMenu name="ПроектКонтекстноеМеню" id="26"/>
 									<ExtendedTooltip name="ПроектРасширеннаяПодсказка" id="27"/>
 								</InputField>
+								<InputField name="Конструктор" id="271">
+									<DataPath>Конструктор</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="КонструкторКонтекстноеМеню" id="272"/>
+									<ExtendedTooltip name="КонструкторРасширеннаяПодсказка" id="273"/>
+								</InputField>
 							</ChildItems>
 						</UsualGroup>
 						<UsualGroup name="Группа6" id="80">
@@ -369,19 +376,12 @@
 											<ContextMenu name="ПодчиненыеКомплектыИсполнительКонтекстноеМеню" id="146"/>
 											<ExtendedTooltip name="ПодчиненыеКомплектыИсполнительРасширеннаяПодсказка" id="147"/>
 										</InputField>
-										<InputField name="ПодчиненыеКомплектыТипЗадачи" id="148">
-											<DataPath>ПодчиненыеКомплекты.ТипЗадачи</DataPath>
+										<InputField name="ПодчиненыеКомплектыТекущаяСтадия" id="151">
+											<DataPath>ПодчиненыеКомплекты.ТекущаяСтадия</DataPath>
 											<EditMode>EnterOnInput</EditMode>
 											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-											<ContextMenu name="ПодчиненыеКомплектыТипЗадачиКонтекстноеМеню" id="149"/>
-											<ExtendedTooltip name="ПодчиненыеКомплектыТипЗадачиРасширеннаяПодсказка" id="150"/>
-										</InputField>
-										<InputField name="ПодчиненыеКомплектыСостояниеЗадачи" id="151">
-											<DataPath>ПодчиненыеКомплекты.СостояниеЗадачи</DataPath>
-											<EditMode>EnterOnInput</EditMode>
-											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-											<ContextMenu name="ПодчиненыеКомплектыСостояниеЗадачиКонтекстноеМеню" id="152"/>
-											<ExtendedTooltip name="ПодчиненыеКомплектыСостояниеЗадачиРасширеннаяПодсказка" id="153"/>
+											<ContextMenu name="ПодчиненыеКомплектыТекущаяСтадияКонтекстноеМеню" id="152"/>
+											<ExtendedTooltip name="ПодчиненыеКомплектыТекущаяСтадияРасширеннаяПодсказка" id="153"/>
 										</InputField>
 										<InputField name="ПодчиненыеКомплектыКонструктор" id="156">
 											<DataPath>ПодчиненыеКомплекты.Конструктор</DataPath>
@@ -1017,26 +1017,15 @@
 						<v8:Type>cfg:CatalogRef.Пользователи</v8:Type>
 					</Type>
 				</Column>
-				<Column name="ТипЗадачи" id="3">
+				<Column name="ТекущаяСтадия" id="4">
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Тип задачи</v8:content>
+							<v8:content>Текущая стадия</v8:content>
 						</v8:item>
 					</Title>
 					<Type>
-						<v8:Type>cfg:EnumRef.ТипыЗадачКонструирования</v8:Type>
-					</Type>
-				</Column>
-				<Column name="СостояниеЗадачи" id="4">
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Состояние задачи</v8:content>
-						</v8:item>
-					</Title>
-					<Type>
-						<v8:Type>cfg:EnumRef.СостоянияЗадач</v8:Type>
+						<v8:Type>cfg:CatalogRef.СтадииКомплекта</v8:Type>
 					</Type>
 				</Column>
 				<Column name="Задача" id="5">
@@ -1141,6 +1130,17 @@
 					<v8:FractionDigits>1</v8:FractionDigits>
 					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
 				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Конструктор" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Конструктор</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Сотрудники</v8:Type>
 			</Type>
 		</Attribute>
 		<ConditionalAppearance>
