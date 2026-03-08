@@ -1549,6 +1549,22 @@
 										<Event name="BeforeRowChange">Задачи_ПКД_РКДПередНачаломИзменения</Event>
 									</Events>
 									<ChildItems>
+										<PictureField name="Задачи_ПКД_РКДКартинка" id="1334">
+											<DataPath>Задачи_ПКД_РКД.Картинка</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content> </v8:content>
+												</v8:item>
+											</Title>
+											<EditMode>EnterOnInput</EditMode>
+											<ValuesPicture>
+												<xr:Ref>CommonPicture.СостоянияПроцессов</xr:Ref>
+												<xr:LoadTransparent>true</xr:LoadTransparent>
+											</ValuesPicture>
+											<ContextMenu name="Задачи_ПКД_РКДКартинкаКонтекстноеМеню" id="1335"/>
+											<ExtendedTooltip name="Задачи_ПКД_РКДКартинкаРасширеннаяПодсказка" id="1336"/>
+										</PictureField>
 										<InputField name="Задачи_ПКД_РКДНаименование" id="1074">
 											<DataPath>Задачи_ПКД_РКД.Наименование</DataPath>
 											<Title>
@@ -3734,6 +3750,22 @@
 							<v8:Length>0</v8:Length>
 							<v8:AllowedLength>Variable</v8:AllowedLength>
 						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Картинка" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Картинка</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>2</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
 					</Type>
 				</Column>
 			</Columns>

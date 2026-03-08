@@ -513,62 +513,88 @@
 											<v8:content>Группа кнопки дизайнера</v8:content>
 										</v8:item>
 									</ToolTip>
-									<Group>AlwaysHorizontal</Group>
+									<Group>Vertical</Group>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
 									<ExtendedTooltip name="ГруппаКнопкиДизайнераРасширеннаяПодсказка" id="105"/>
 									<ChildItems>
-										<Button name="ДоработкаДизайнера" id="106">
-											<Type>UsualButton</Type>
-											<CommandName>Form.Command.ДоработкаДизайнера</CommandName>
+										<UsualGroup name="ГруппаТолькоКнопкиДизайнер" id="274">
 											<Title>
 												<v8:item>
 													<v8:lang>ru</v8:lang>
-													<v8:content>Доработка</v8:content>
+													<v8:content>Группа только кнопки дизайнер</v8:content>
 												</v8:item>
 											</Title>
-											<ExtendedTooltip name="ДоработкаДизайнераРасширеннаяПодсказка" id="107"/>
-										</Button>
-										<Button name="КорректировкаДизайнер" id="108">
-											<Type>UsualButton</Type>
-											<CommandName>Form.Command.КорректировкаДизайнер</CommandName>
-											<ExtendedTooltip name="КорректировкаДизайнерРасширеннаяПодсказка" id="109"/>
-										</Button>
-										<Button name="ВнешнееСоглосование" id="114">
-											<Type>UsualButton</Type>
-											<CommandName>Form.Command.ВнешнееСоглосование</CommandName>
-											<ExtendedTooltip name="ВнешнееСоглосованиеРасширеннаяПодсказка" id="115"/>
-										</Button>
-										<Button name="Запрос" id="116">
-											<Type>UsualButton</Type>
-											<CommandName>Form.Command.ВнешнийЗапрос</CommandName>
-											<ExtendedTooltip name="ЗапросРасширеннаяПодсказка" id="117"/>
-										</Button>
-										<Button name="Согласовано" id="112">
-											<Type>UsualButton</Type>
-											<CommandName>Form.Command.Согласовано</CommandName>
-											<ExtendedTooltip name="СогласованоРасширеннаяПодсказка" id="113"/>
-										</Button>
-										<Button name="РекламацияДизайнер" id="182">
-											<Type>UsualButton</Type>
-											<CommandName>Form.Command.РекламацияДизайнер</CommandName>
-											<ExtendedTooltip name="РекламацияДизайнерРасширеннаяПодсказка" id="183"/>
-										</Button>
-										<Button name="РедакцияДизайнер" id="180">
-											<Type>UsualButton</Type>
-											<CommandName>Form.Command.РедакцияДизайнер</CommandName>
-											<ExtendedTooltip name="РедакцияДизайнерРасширеннаяПодсказка" id="181"/>
-										</Button>
-										<Button name="КонтрольКП" id="178">
-											<Type>UsualButton</Type>
-											<CommandName>Form.Command.КонтрольКП</CommandName>
-											<ExtendedTooltip name="КонтрольКПРасширеннаяПодсказка" id="179"/>
-										</Button>
-										<Button name="СоздатьЧекЛист" id="224">
-											<Type>UsualButton</Type>
-											<CommandName>Form.Command.СоздатьЧекЛист</CommandName>
-											<ExtendedTooltip name="СоздатьЧекЛистРасширеннаяПодсказка" id="225"/>
-										</Button>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа только кнопки дизайнер</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Group>AlwaysHorizontal</Group>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаТолькоКнопкиДизайнерРасширеннаяПодсказка" id="275"/>
+											<ChildItems>
+												<Button name="ДоработкаДизайнера" id="106">
+													<Type>UsualButton</Type>
+													<CommandName>Form.Command.ДоработкаДизайнера</CommandName>
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Доработка</v8:content>
+														</v8:item>
+													</Title>
+													<ExtendedTooltip name="ДоработкаДизайнераРасширеннаяПодсказка" id="107"/>
+												</Button>
+												<Button name="КорректировкаДизайнер" id="108">
+													<Type>UsualButton</Type>
+													<CommandName>Form.Command.КорректировкаДизайнер</CommandName>
+													<ExtendedTooltip name="КорректировкаДизайнерРасширеннаяПодсказка" id="109"/>
+												</Button>
+												<Button name="ВнешнееСоглосование" id="114">
+													<Type>UsualButton</Type>
+													<CommandName>Form.Command.ВнешнееСоглосование</CommandName>
+													<ExtendedTooltip name="ВнешнееСоглосованиеРасширеннаяПодсказка" id="115"/>
+												</Button>
+												<Button name="Запрос" id="116">
+													<Type>UsualButton</Type>
+													<CommandName>Form.Command.ВнешнийЗапрос</CommandName>
+													<ExtendedTooltip name="ЗапросРасширеннаяПодсказка" id="117"/>
+												</Button>
+												<Button name="Согласовано" id="112">
+													<Type>UsualButton</Type>
+													<CommandName>Form.Command.Согласовано</CommandName>
+													<ExtendedTooltip name="СогласованоРасширеннаяПодсказка" id="113"/>
+												</Button>
+												<Button name="РекламацияДизайнер" id="182">
+													<Type>UsualButton</Type>
+													<CommandName>Form.Command.РекламацияДизайнер</CommandName>
+													<ExtendedTooltip name="РекламацияДизайнерРасширеннаяПодсказка" id="183"/>
+												</Button>
+												<Button name="РедакцияДизайнер" id="180">
+													<Type>UsualButton</Type>
+													<CommandName>Form.Command.РедакцияДизайнер</CommandName>
+													<ExtendedTooltip name="РедакцияДизайнерРасширеннаяПодсказка" id="181"/>
+												</Button>
+												<Button name="КонтрольКП" id="178">
+													<Type>UsualButton</Type>
+													<CommandName>Form.Command.КонтрольКП</CommandName>
+													<ExtendedTooltip name="КонтрольКПРасширеннаяПодсказка" id="179"/>
+												</Button>
+												<Button name="СоздатьЧекЛист" id="224">
+													<Type>UsualButton</Type>
+													<CommandName>Form.Command.СоздатьЧекЛист</CommandName>
+													<ExtendedTooltip name="СоздатьЧекЛистРасширеннаяПодсказка" id="225"/>
+												</Button>
+											</ChildItems>
+										</UsualGroup>
+										<CheckBoxField name="КороткаяСрочнаяЗадача" id="276">
+											<DataPath>Объект.КороткаяСрочнаяЗадача</DataPath>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="КороткаяСрочнаяЗадачаКонтекстноеМеню" id="277"/>
+											<ExtendedTooltip name="КороткаяСрочнаяЗадачаРасширеннаяПодсказка" id="278"/>
+										</CheckBoxField>
 									</ChildItems>
 								</UsualGroup>
 								<UsualGroup name="ГруппаКнопкиМенеджера" id="118">
@@ -685,6 +711,15 @@
 															<ContextMenu name="ДекорацияДатаОкончанияКонтекстноеМеню" id="263"/>
 															<ExtendedTooltip name="ДекорацияДатаОкончанияРасширеннаяПодсказка" id="264"/>
 														</LabelDecoration>
+														<LabelField name="КороткаяСрочнаяЗадача1" id="279">
+															<DataPath>Объект.КороткаяСрочнаяЗадача</DataPath>
+															<TitleTextColor>#0000FF</TitleTextColor>
+															<TitleFont ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+															<TextColor>#0000FF</TextColor>
+															<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+															<ContextMenu name="КороткаяСрочнаяЗадача1КонтекстноеМеню" id="280"/>
+															<ExtendedTooltip name="КороткаяСрочнаяЗадача1РасширеннаяПодсказка" id="281"/>
+														</LabelField>
 													</ChildItems>
 												</UsualGroup>
 											</ChildItems>
