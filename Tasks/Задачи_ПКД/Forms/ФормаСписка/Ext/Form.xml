@@ -130,7 +130,7 @@
 					<ExtendedTooltip name="ИсполнительРасширеннаяПодсказка" id="30"/>
 				</LabelField>
 				<LabelField name="ТекущаяСтадия" id="57">
-					<DataPath>Список.ТекущаяСтадияПолноеНаименование</DataPath>
+					<DataPath>Список.ТекущаяСтадия</DataPath>
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -144,21 +144,6 @@
 					<DataPath>Список.Дата</DataPath>
 					<ContextMenu name="ДатаКонтекстноеМеню" id="23"/>
 					<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="24"/>
-				</LabelField>
-				<LabelField name="СтатусЗадачи" id="60">
-					<DataPath>Список.СтатусЗадачи</DataPath>
-					<ContextMenu name="СтатусЗадачиКонтекстноеМеню" id="61"/>
-					<ExtendedTooltip name="СтатусЗадачиРасширеннаяПодсказка" id="62"/>
-				</LabelField>
-				<LabelField name="ТипЗадачи" id="37">
-					<DataPath>Список.ТипЗадачи</DataPath>
-					<ContextMenu name="ТипЗадачиКонтекстноеМеню" id="38"/>
-					<ExtendedTooltip name="ТипЗадачиРасширеннаяПодсказка" id="39"/>
-				</LabelField>
-				<LabelField name="Состояние" id="40">
-					<DataPath>Список.Состояние</DataPath>
-					<ContextMenu name="СостояниеКонтекстноеМеню" id="41"/>
-					<ExtendedTooltip name="СостояниеРасширеннаяПодсказка" id="42"/>
 				</LabelField>
 				<LabelField name="Композиция" id="43">
 					<DataPath>Список.Композиция</DataPath>
@@ -221,10 +206,8 @@
 	) КАК Наблюдатели,
 	ТаймингЗадачСрезПоследних.Состояние КАК Состояние,
 	ЗадачаЗадачи_ПКД.ОбобщеннаяЗадача КАК ОбобщеннаяЗадача,
-	ДанныеКомплектаСрезПоследних.ТекущаяСтадия КАК ТекущаяСтадия,
-	ЗадачаЗадачи_ПКД.СтатусЗадачи КАК СтатусЗадачи,
 	НаличиеФайлов.ЕстьФайлы КАК ЕстьФайлы,
-	ЕСТЬNULL(ДанныеКомплектаСрезПоследних.ТекущаяСтадия.ПолноеНаименование, "") КАК ТекущаяСтадияПолноеНаименование
+	ЕСТЬNULL(ДанныеКомплектаСрезПоследних.ТекущаяСтадия.ПолноеНаименование, "") КАК ТекущаяСтадия
 ИЗ
 	Задача.Задачи_ПКД КАК ЗадачаЗадачи_ПКД
 		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ТаймингЗадач.СрезПоследних КАК ТаймингЗадачСрезПоследних
@@ -341,16 +324,8 @@
 					<dcssch:field>ОбобщеннаяЗадача</dcssch:field>
 				</Field>
 				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>ТекущаяСтадия</dcssch:dataPath>
-					<dcssch:field>ТекущаяСтадия</dcssch:field>
-				</Field>
-				<Field xsi:type="dcssch:DataSetFieldField">
 					<dcssch:dataPath>Задача</dcssch:dataPath>
 					<dcssch:field>Задача</dcssch:field>
-				</Field>
-				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>Заголовок</dcssch:dataPath>
-					<dcssch:field>Заголовок</dcssch:field>
 				</Field>
 				<Field xsi:type="dcssch:DataSetFieldField">
 					<dcssch:dataPath>ЧекЛист</dcssch:dataPath>
@@ -365,8 +340,18 @@
 					<dcssch:field>ЕстьФайлы</dcssch:field>
 				</Field>
 				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>ТекущаяСтадияПолноеНаименование</dcssch:dataPath>
-					<dcssch:field>ТекущаяСтадияПолноеНаименование</dcssch:field>
+					<dcssch:dataPath>КороткаяСрочнаяЗадача</dcssch:dataPath>
+					<dcssch:field>КороткаяСрочнаяЗадача</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ТекущаяСтадия</dcssch:dataPath>
+					<dcssch:field>ТекущаяСтадия</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Текущая стадия</v8:content>
+						</v8:item>
+					</dcssch:title>
 				</Field>
 				<Parameter>
 					<dcssch:name>Период</dcssch:name>

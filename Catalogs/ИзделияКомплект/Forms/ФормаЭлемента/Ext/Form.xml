@@ -214,10 +214,16 @@
 							<ContextMenu name="НаправлениеКонтекстноеМеню" id="353"/>
 							<ExtendedTooltip name="НаправлениеРасширеннаяПодсказка" id="354"/>
 						</InputField>
-						<LabelField name="ТекущаяСтадия" id="355">
-							<DataPath>ТекущаяСтадия</DataPath>
-							<ContextMenu name="ТекущаяСтадияКонтекстноеМеню" id="356"/>
-							<ExtendedTooltip name="ТекущаяСтадияРасширеннаяПодсказка" id="357"/>
+						<LabelField name="ТекущаяСтадияПН" id="355">
+							<DataPath>ТекущаяСтадияПН</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Текущая стадия</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ТекущаяСтадияПНКонтекстноеМеню" id="356"/>
+							<ExtendedTooltip name="ТекущаяСтадияПНРасширеннаяПодсказка" id="357"/>
 						</LabelField>
 						<InputField name="Композиция" id="404">
 							<DataPath>Композиция</DataPath>
@@ -1566,6 +1572,21 @@
 			</Title>
 			<Type>
 				<v8:Type>cfg:CatalogRef.ТипыКомплектов</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ТекущаяСтадияПН" id="34">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Текущая стадия ПН</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
 			</Type>
 		</Attribute>
 	</Attributes>
