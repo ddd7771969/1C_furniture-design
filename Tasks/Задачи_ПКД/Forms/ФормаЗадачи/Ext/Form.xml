@@ -964,6 +964,11 @@
 									<CommandName>Form.Command.СнятьСВыполнения</CommandName>
 									<ExtendedTooltip name="СнятьСВыполненияРасширеннаяПодсказка" id="193"/>
 								</Button>
+								<Button name="УстановитьВыполнение" id="282">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.УстановитьВыполнение</CommandName>
+									<ExtendedTooltip name="УстановитьВыполнениеРасширеннаяПодсказка" id="283"/>
+								</Button>
 							</ChildItems>
 						</UsualGroup>
 					</ChildItems>
@@ -1662,6 +1667,21 @@
 				</v8:item>
 			</ToolTip>
 			<Action>СбросКонструктором</Action>
+		</Command>
+		<Command name="УстановитьВыполнение" id="32">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить выполнение</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить выполнение</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>УстановитьВыполнение</Action>
 		</Command>
 	</Commands>
 	<CommandInterface>
