@@ -905,7 +905,7 @@
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="Группа7РасширеннаяПодсказка" id="427"/>
 							<ChildItems>
-								<Table name="КонтрольТЗ" id="380">
+								<Table name="ПроверкаТЗ" id="380">
 									<Representation>List</Representation>
 									<TitleLocation>Top</TitleLocation>
 									<AutoMaxHeight>false</AutoMaxHeight>
@@ -916,12 +916,12 @@
 									<UseAlternationRowColor>true</UseAlternationRowColor>
 									<VerticalStretch>false</VerticalStretch>
 									<EnableStartDrag>true</EnableStartDrag>
-									<DataPath>КонтрольТЗ</DataPath>
-									<RowPictureDataPath>КонтрольТЗ.DefaultPicture</RowPictureDataPath>
+									<DataPath>ПроверкаТЗ</DataPath>
+									<RowPictureDataPath>ПроверкаТЗ.DefaultPicture</RowPictureDataPath>
 									<Title>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
-											<v8:content>Контроль.ТЗ</v8:content>
+											<v8:content>Проверка.ТЗ</v8:content>
 										</v8:item>
 									</Title>
 									<AutoRefresh>false</AutoRefresh>
@@ -938,38 +938,38 @@
 									<AllowRootChoice>false</AllowRootChoice>
 									<UpdateOnDataChange>Auto</UpdateOnDataChange>
 									<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
-									<ContextMenu name="КонтрольТЗКонтекстноеМеню" id="381"/>
-									<AutoCommandBar name="КонтрольТЗКоманднаяПанель" id="382">
+									<ContextMenu name="ПроверкаТЗКонтекстноеМеню" id="381"/>
+									<AutoCommandBar name="ПроверкаТЗКоманднаяПанель" id="382">
 										<Autofill>false</Autofill>
 									</AutoCommandBar>
-									<ExtendedTooltip name="КонтрольТЗРасширеннаяПодсказка" id="383"/>
-									<SearchStringAddition name="КонтрольТЗСтрокаПоиска" id="384">
+									<ExtendedTooltip name="ПроверкаТЗРасширеннаяПодсказка" id="383"/>
+									<SearchStringAddition name="ПроверкаТЗСтрокаПоиска" id="384">
 										<AdditionSource>
-											<Item>КонтрольТЗ</Item>
+											<Item>ПроверкаТЗ</Item>
 											<Type>SearchStringRepresentation</Type>
 										</AdditionSource>
-										<ContextMenu name="КонтрольТЗСтрокаПоискаКонтекстноеМеню" id="385"/>
-										<ExtendedTooltip name="КонтрольТЗСтрокаПоискаРасширеннаяПодсказка" id="386"/>
+										<ContextMenu name="ПроверкаТЗСтрокаПоискаКонтекстноеМеню" id="385"/>
+										<ExtendedTooltip name="ПроверкаТЗСтрокаПоискаРасширеннаяПодсказка" id="386"/>
 									</SearchStringAddition>
-									<ViewStatusAddition name="КонтрольТЗСостояниеПросмотра" id="387">
+									<ViewStatusAddition name="ПроверкаТЗСостояниеПросмотра" id="387">
 										<AdditionSource>
-											<Item>КонтрольТЗ</Item>
+											<Item>ПроверкаТЗ</Item>
 											<Type>ViewStatusRepresentation</Type>
 										</AdditionSource>
-										<ContextMenu name="КонтрольТЗСостояниеПросмотраКонтекстноеМеню" id="388"/>
-										<ExtendedTooltip name="КонтрольТЗСостояниеПросмотраРасширеннаяПодсказка" id="389"/>
+										<ContextMenu name="ПроверкаТЗСостояниеПросмотраКонтекстноеМеню" id="388"/>
+										<ExtendedTooltip name="ПроверкаТЗСостояниеПросмотраРасширеннаяПодсказка" id="389"/>
 									</ViewStatusAddition>
-									<SearchControlAddition name="КонтрольТЗУправлениеПоиском" id="390">
+									<SearchControlAddition name="ПроверкаТЗУправлениеПоиском" id="390">
 										<AdditionSource>
-											<Item>КонтрольТЗ</Item>
+											<Item>ПроверкаТЗ</Item>
 											<Type>SearchControl</Type>
 										</AdditionSource>
-										<ContextMenu name="КонтрольТЗУправлениеПоискомКонтекстноеМеню" id="391"/>
-										<ExtendedTooltip name="КонтрольТЗУправлениеПоискомРасширеннаяПодсказка" id="392"/>
+										<ContextMenu name="ПроверкаТЗУправлениеПоискомКонтекстноеМеню" id="391"/>
+										<ExtendedTooltip name="ПроверкаТЗУправлениеПоискомРасширеннаяПодсказка" id="392"/>
 									</SearchControlAddition>
 									<ChildItems>
 										<LabelField name="КонтрольТЗНаименование" id="1080">
-											<DataPath>~КонтрольТЗ.Наименование</DataPath>
+											<DataPath>ПроверкаТЗ.Наименование</DataPath>
 											<Title>
 												<v8:item>
 													<v8:lang>ru</v8:lang>
@@ -980,18 +980,18 @@
 											<ExtendedTooltip name="КонтрольТЗНаименованиеРасширеннаяПодсказка" id="1082"/>
 										</LabelField>
 										<LabelField name="КонтрольТЗИсполнитель" id="423">
-											<DataPath>~КонтрольТЗ.Исполнитель</DataPath>
+											<DataPath>ПроверкаТЗ.Исполнитель</DataPath>
 											<ContextMenu name="КонтрольТЗИсполнительКонтекстноеМеню" id="424"/>
 											<ExtendedTooltip name="КонтрольТЗИсполнительРасширеннаяПодсказка" id="425"/>
 										</LabelField>
 										<CheckBoxField name="КонтрольТЗЕстьМодельГЧ" id="1271">
-											<DataPath>~КонтрольТЗ.ЕстьМодельГЧ</DataPath>
+											<DataPath>ПроверкаТЗ.ЕстьМодельГЧ</DataPath>
 											<CheckBoxType>Auto</CheckBoxType>
 											<ContextMenu name="КонтрольТЗЕстьМодельГЧКонтекстноеМеню" id="1272"/>
 											<ExtendedTooltip name="КонтрольТЗЕстьМодельГЧРасширеннаяПодсказка" id="1273"/>
 										</CheckBoxField>
 										<LabelField name="КонтрольТЗДатаЗамера" id="1268">
-											<DataPath>~КонтрольТЗ.ДатаЗамера</DataPath>
+											<DataPath>ПроверкаТЗ.ДатаЗамера</DataPath>
 											<Format>
 												<v8:item>
 													<v8:lang>ru</v8:lang>
@@ -1002,12 +1002,12 @@
 											<ExtendedTooltip name="КонтрольТЗДатаЗамераРасширеннаяПодсказка" id="1270"/>
 										</LabelField>
 										<LabelField name="КонтрольТЗСтатусЗамера" id="1265">
-											<DataPath>~КонтрольТЗ.СтатусЗамера</DataPath>
+											<DataPath>ПроверкаТЗ.СтатусЗамера</DataPath>
 											<ContextMenu name="КонтрольТЗСтатусЗамераКонтекстноеМеню" id="1266"/>
 											<ExtendedTooltip name="КонтрольТЗСтатусЗамераРасширеннаяПодсказка" id="1267"/>
 										</LabelField>
 										<LabelField name="КонтрольТЗКрайняяДатаИсполнения" id="411">
-											<DataPath>~КонтрольТЗ.КрайняяДатаИсполнения</DataPath>
+											<DataPath>ПроверкаТЗ.КрайняяДатаИсполнения</DataPath>
 											<ContextMenu name="КонтрольТЗКрайняяДатаИсполненияКонтекстноеМеню" id="412"/>
 											<ExtendedTooltip name="КонтрольТЗКрайняяДатаИсполненияРасширеннаяПодсказка" id="413"/>
 										</LabelField>
@@ -2532,11 +2532,11 @@
 				</ListSettings>
 			</Settings>
 		</Attribute>
-		<Attribute name="КонтрольТЗ" id="13">
+		<Attribute name="ПроверкаТЗ" id="13">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Контроль ТЗ</v8:content>
+					<v8:content>Проверка ТЗ</v8:content>
 				</v8:item>
 			</Title>
 			<Type>
@@ -2546,29 +2546,29 @@
 				<ManualQuery>true</ManualQuery>
 				<DynamicDataRead>false</DynamicDataRead>
 				<QueryText>ВЫБРАТЬ
-	ЗадачаКонтрольТЗ.Ссылка КАК Задача,
+	ЗадачаПринятьТЗ.Ссылка КАК Задача,
 	СостояниеЗамераСрезПоследних.Период КАК Период,
 	СостояниеЗамераСрезПоследних.СтатусЗамера КАК СтатусЗамера
 ПОМЕСТИТЬ вт
 ИЗ
-	Задача.КонтрольТЗ КАК ЗадачаКонтрольТЗ
+	Задача.ПринятьТЗ КАК ЗадачаПринятьТЗ
 		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.СостояниеЗамера.СрезПоследних КАК СостояниеЗамераСрезПоследних
-		ПО ЗадачаКонтрольТЗ.ОбъектТЗ.ГабаритныйЧертеж = СостояниеЗамераСрезПоследних.ОбъектЗамера
+		ПО ЗадачаПринятьТЗ.ОбъектТЗ.ГабаритныйЧертеж = СостояниеЗамераСрезПоследних.ОбъектЗамера
 ГДЕ
-	НЕ ЗадачаКонтрольТЗ.Выполнена
+	НЕ ЗадачаПринятьТЗ.Выполнена
 	И ВЫБОР
 			КОГДА &amp;Исполнитель = ЗНАЧЕНИЕ(Справочник.Пользователи.ПустаяСсылка)
 				ТОГДА ИСТИНА
-			ИНАЧЕ ЗадачаКонтрольТЗ.Исполнитель = &amp;Исполнитель
+			ИНАЧЕ ЗадачаПринятьТЗ.Исполнитель = &amp;Исполнитель
 		КОНЕЦ
 	И ВЫБОР
 			КОГДА &amp;Проект = ЗНАЧЕНИЕ(Справочник.Проекты.ПустаяСсылка)
 				ТОГДА ИСТИНА
-			ИНАЧЕ ЗадачаКонтрольТЗ.Проект = &amp;Проект
+			ИНАЧЕ ЗадачаПринятьТЗ.Проект = &amp;Проект
 		КОНЕЦ
 
 СГРУППИРОВАТЬ ПО
-	ЗадачаКонтрольТЗ.Ссылка,
+	ЗадачаПринятьТЗ.Ссылка,
 	СостояниеЗамераСрезПоследних.Период,
 	СостояниеЗамераСрезПоследних.СтатусЗамера
 ;
@@ -2625,91 +2625,45 @@
 	ЕСТЬNULL(втМоделиГЧ.Выполнена, ЛОЖЬ) КАК ЕстьМодельГЧ
 ИЗ
 	вт КАК вт
-		ВНУТРЕННЕЕ СОЕДИНЕНИЕ Задача.КонтрольТЗ КАК КонтрольТЗ
+		ВНУТРЕННЕЕ СОЕДИНЕНИЕ Задача.ПринятьТЗ КАК ЗадачаПринятьТЗ
 			ЛЕВОЕ СОЕДИНЕНИЕ втМоделиГЧ КАК втМоделиГЧ
-			ПО (втМоделиГЧ.Задача = КонтрольТЗ.Ссылка)
-		ПО вт.Задача = КонтрольТЗ.Ссылка</QueryText>
+			ПО (втМоделиГЧ.Задача = ЗадачаПринятьТЗ.Ссылка)
+		ПО вт.Задача = ЗадачаПринятьТЗ.Ссылка</QueryText>
 				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>Комментарий</dcssch:dataPath>
-					<dcssch:field>Комментарий</dcssch:field>
-				</Field>
-				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>Ссылка</dcssch:dataPath>
-					<dcssch:field>Ссылка</dcssch:field>
-				</Field>
-				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>Номер</dcssch:dataPath>
-					<dcssch:field>Номер</dcssch:field>
-				</Field>
-				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>ПометкаУдаления</dcssch:dataPath>
-					<dcssch:field>ПометкаУдаления</dcssch:field>
-				</Field>
-				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>Выполнена</dcssch:dataPath>
-					<dcssch:field>Выполнена</dcssch:field>
-				</Field>
-				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>КрайняяДатаИсполнения</dcssch:dataPath>
-					<dcssch:field>КрайняяДатаИсполнения</dcssch:field>
-				</Field>
-				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>Версия</dcssch:dataPath>
-					<dcssch:field>Версия</dcssch:field>
-				</Field>
-				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>Дата</dcssch:dataPath>
-					<dcssch:field>Дата</dcssch:field>
-				</Field>
-				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>Наименование</dcssch:dataPath>
-					<dcssch:field>Наименование</dcssch:field>
-				</Field>
-				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>ОбъектТЗ</dcssch:dataPath>
-					<dcssch:field>ОбъектТЗ</dcssch:field>
-				</Field>
-				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>Проект</dcssch:dataPath>
-					<dcssch:field>Проект</dcssch:field>
-				</Field>
-				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>Статус</dcssch:dataPath>
-					<dcssch:field>Статус</dcssch:field>
-				</Field>
-				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>Исполнитель</dcssch:dataPath>
-					<dcssch:field>Исполнитель</dcssch:field>
-				</Field>
-				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>Заголовок</dcssch:dataPath>
-					<dcssch:field>Заголовок</dcssch:field>
+					<dcssch:dataPath>ПометкаУдаления1</dcssch:dataPath>
+					<dcssch:field>ПометкаУдаления1</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Пометка удаления1</v8:content>
+						</v8:item>
+					</dcssch:title>
 				</Field>
 				<Field xsi:type="dcssch:DataSetFieldField">
 					<dcssch:dataPath>ОбъектЗамера</dcssch:dataPath>
 					<dcssch:field>ОбъектЗамера</dcssch:field>
 				</Field>
 				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>ОбъектИзменения</dcssch:dataPath>
-					<dcssch:field>ОбъектИзменения</dcssch:field>
-				</Field>
-				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>СтатусЗамера</dcssch:dataPath>
-					<dcssch:field>СтатусЗамера</dcssch:field>
+					<dcssch:dataPath>ЕстьМодельГЧ</dcssch:dataPath>
+					<dcssch:field>ЕстьМодельГЧ</dcssch:field>
 					<dcssch:title xsi:type="v8:LocalStringType">
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Статус замера</v8:content>
+							<v8:content>Есть модель ГЧ</v8:content>
 						</v8:item>
 					</dcssch:title>
 				</Field>
 				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>ДатаЗамера</dcssch:dataPath>
-					<dcssch:field>ДатаЗамера</dcssch:field>
+					<dcssch:dataPath>ОбъектИзменения</dcssch:dataPath>
+					<dcssch:field>ОбъектИзменения</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Дата1</dcssch:dataPath>
+					<dcssch:field>Дата1</dcssch:field>
 					<dcssch:title xsi:type="v8:LocalStringType">
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Дата замера</v8:content>
+							<v8:content>Дата1</v8:content>
 						</v8:item>
 					</dcssch:title>
 				</Field>
@@ -2724,22 +2678,16 @@
 					</dcssch:title>
 				</Field>
 				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>ПометкаУдаления1</dcssch:dataPath>
-					<dcssch:field>ПометкаУдаления1</dcssch:field>
-					<dcssch:title xsi:type="v8:LocalStringType">
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Пометка удаления1</v8:content>
-						</v8:item>
-					</dcssch:title>
+					<dcssch:dataPath>ЧекЛистКонструктора</dcssch:dataPath>
+					<dcssch:field>ЧекЛистКонструктора</dcssch:field>
 				</Field>
 				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>Дата1</dcssch:dataPath>
-					<dcssch:field>Дата1</dcssch:field>
+					<dcssch:dataPath>СтатусЗамера</dcssch:dataPath>
+					<dcssch:field>СтатусЗамера</dcssch:field>
 					<dcssch:title xsi:type="v8:LocalStringType">
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Дата1</v8:content>
+							<v8:content>Статус замера</v8:content>
 						</v8:item>
 					</dcssch:title>
 				</Field>
@@ -2748,15 +2696,172 @@
 					<dcssch:field>Наблюдатели</dcssch:field>
 				</Field>
 				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>ЕстьМодельГЧ</dcssch:dataPath>
-					<dcssch:field>ЕстьМодельГЧ</dcssch:field>
+					<dcssch:dataPath>ДатаЗамера</dcssch:dataPath>
+					<dcssch:field>ДатаЗамера</dcssch:field>
 					<dcssch:title xsi:type="v8:LocalStringType">
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Есть модель ГЧ</v8:content>
+							<v8:content>Дата замера</v8:content>
 						</v8:item>
 					</dcssch:title>
 				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Ссылка</dcssch:dataPath>
+					<dcssch:field>Ссылка</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ссылка</v8:content>
+						</v8:item>
+					</dcssch:title>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ПометкаУдаления</dcssch:dataPath>
+					<dcssch:field>ПометкаУдаления</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Пометка удаления</v8:content>
+						</v8:item>
+					</dcssch:title>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Номер</dcssch:dataPath>
+					<dcssch:field>Номер</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Номер</v8:content>
+						</v8:item>
+					</dcssch:title>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Дата</dcssch:dataPath>
+					<dcssch:field>Дата</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата</v8:content>
+						</v8:item>
+					</dcssch:title>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Наименование</dcssch:dataPath>
+					<dcssch:field>Наименование</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Наименование</v8:content>
+						</v8:item>
+					</dcssch:title>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Выполнена</dcssch:dataPath>
+					<dcssch:field>Выполнена</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Выполнена</v8:content>
+						</v8:item>
+					</dcssch:title>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Версия</dcssch:dataPath>
+					<dcssch:field>Версия</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Версия</v8:content>
+						</v8:item>
+					</dcssch:title>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Комментарий</dcssch:dataPath>
+					<dcssch:field>Комментарий</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Комментарий</v8:content>
+						</v8:item>
+					</dcssch:title>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>КрайняяДатаИсполнения</dcssch:dataPath>
+					<dcssch:field>КрайняяДатаИсполнения</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Крайняя дата исполнения</v8:content>
+						</v8:item>
+					</dcssch:title>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ОбъектТЗ</dcssch:dataPath>
+					<dcssch:field>ОбъектТЗ</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Объект ТЗ</v8:content>
+						</v8:item>
+					</dcssch:title>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Проект</dcssch:dataPath>
+					<dcssch:field>Проект</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Проект</v8:content>
+						</v8:item>
+					</dcssch:title>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Статус</dcssch:dataPath>
+					<dcssch:field>Статус</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Статус</v8:content>
+						</v8:item>
+					</dcssch:title>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Исполнитель</dcssch:dataPath>
+					<dcssch:field>Исполнитель</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Исполнитель</v8:content>
+						</v8:item>
+					</dcssch:title>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Заголовок</dcssch:dataPath>
+					<dcssch:field>Заголовок</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Заголовок</v8:content>
+						</v8:item>
+					</dcssch:title>
+				</Field>
+				<Parameter>
+					<dcssch:name>Период</dcssch:name>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Период</v8:content>
+						</v8:item>
+					</dcssch:title>
+					<dcssch:valueType>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>DateTime</v8:DateFractions>
+						</v8:DateQualifiers>
+					</dcssch:valueType>
+					<dcssch:value xsi:type="xs:dateTime">0001-01-01T00:00:00</dcssch:value>
+					<dcssch:useRestriction>false</dcssch:useRestriction>
+				</Parameter>
 				<Parameter>
 					<dcssch:name>Исполнитель</dcssch:name>
 					<dcssch:title xsi:type="v8:LocalStringType">
@@ -2785,29 +2890,13 @@
 					<dcssch:value xsi:nil="true"/>
 					<dcssch:useRestriction>true</dcssch:useRestriction>
 				</Parameter>
-				<Parameter>
-					<dcssch:name>Период</dcssch:name>
-					<dcssch:title xsi:type="v8:LocalStringType">
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Период</v8:content>
-						</v8:item>
-					</dcssch:title>
-					<dcssch:valueType>
-						<v8:Type>xs:dateTime</v8:Type>
-						<v8:DateQualifiers>
-							<v8:DateFractions>DateTime</v8:DateFractions>
-						</v8:DateQualifiers>
-					</dcssch:valueType>
-					<dcssch:value xsi:type="xs:dateTime">0001-01-01T00:00:00</dcssch:value>
-					<dcssch:useRestriction>false</dcssch:useRestriction>
-				</Parameter>
 				<MainTable>Task.ПринятьТЗ</MainTable>
 				<ListSettings>
 					<dcsset:filter>
 						<dcsset:viewMode>Normal</dcsset:viewMode>
 						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
 					</dcsset:filter>
+					<dcsset:dataParameters/>
 					<dcsset:order>
 						<dcsset:viewMode>Normal</dcsset:viewMode>
 						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
