@@ -2,33 +2,33 @@
 <MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
 	<Task uuid="dd22d9d2-0d23-43a1-95d2-7c5476681ed8">
 		<InternalInfo>
-			<xr:GeneratedType name="TaskObject.КонтрольТЗ" category="Object">
+			<xr:GeneratedType name="TaskObject.ПринятьТЗ" category="Object">
 				<xr:TypeId>b128dc59-5bce-4b3c-8186-41d1580738f3</xr:TypeId>
 				<xr:ValueId>b3ad6af3-250e-44f9-87fb-cf843e463d17</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="TaskRef.КонтрольТЗ" category="Ref">
+			<xr:GeneratedType name="TaskRef.ПринятьТЗ" category="Ref">
 				<xr:TypeId>b78340b0-a302-4cac-aaa9-dd623407ebb1</xr:TypeId>
 				<xr:ValueId>dfd6fa81-086c-48ca-81b2-76fd2ab07349</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="TaskSelection.КонтрольТЗ" category="Selection">
+			<xr:GeneratedType name="TaskSelection.ПринятьТЗ" category="Selection">
 				<xr:TypeId>db0221d8-b970-42ee-8566-fa749690404f</xr:TypeId>
 				<xr:ValueId>63c32861-70db-4532-b3ca-2c91c0bc6b36</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="TaskList.КонтрольТЗ" category="List">
+			<xr:GeneratedType name="TaskList.ПринятьТЗ" category="List">
 				<xr:TypeId>aff8b3d5-65e6-4459-bf9e-9d42e1d0dc17</xr:TypeId>
 				<xr:ValueId>64b901d0-0ccd-4adf-8c6c-2748b7491d1a</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="TaskManager.КонтрольТЗ" category="Manager">
+			<xr:GeneratedType name="TaskManager.ПринятьТЗ" category="Manager">
 				<xr:TypeId>8cfcd241-f6e7-4155-acbc-6bc986cc95c2</xr:TypeId>
 				<xr:ValueId>3223e0e9-8187-4f14-a9e4-6aa083d372af</xr:ValueId>
 			</xr:GeneratedType>
 		</InternalInfo>
 		<Properties>
-			<Name>КонтрольТЗ</Name>
+			<Name>ПринятьТЗ</Name>
 			<Synonym>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Контроль ТЗ</v8:content>
+					<v8:content>Принять ТЗ</v8:content>
 				</v8:item>
 			</Synonym>
 			<Comment/>
@@ -48,14 +48,14 @@
 			<DefaultPresentation>AsDescription</DefaultPresentation>
 			<EditType>InDialog</EditType>
 			<InputByString>
-				<xr:Field>Task.КонтрольТЗ.StandardAttribute.Description</xr:Field>
-				<xr:Field>Task.КонтрольТЗ.StandardAttribute.Number</xr:Field>
+				<xr:Field>Task.ПринятьТЗ.StandardAttribute.Description</xr:Field>
+				<xr:Field>Task.ПринятьТЗ.StandardAttribute.Number</xr:Field>
 			</InputByString>
 			<SearchStringModeOnInputByString>Begin</SearchStringModeOnInputByString>
 			<FullTextSearchOnInputByString>DontUse</FullTextSearchOnInputByString>
 			<ChoiceDataGetModeOnInputByString>Directly</ChoiceDataGetModeOnInputByString>
 			<CreateOnInput>DontUse</CreateOnInput>
-			<DefaultObjectForm>Task.КонтрольТЗ.Form.ФормаЗадачи</DefaultObjectForm>
+			<DefaultObjectForm>Task.ПринятьТЗ.Form.ФормаЗадачи</DefaultObjectForm>
 			<DefaultListForm/>
 			<DefaultChoiceForm/>
 			<AuxiliaryObjectForm/>
@@ -373,11 +373,11 @@
 			</Attribute>
 			<TabularSection uuid="365e4ba4-317d-47df-a369-7b14d79afc86">
 				<InternalInfo>
-					<xr:GeneratedType name="TaskTabularSection.КонтрольТЗ.Наблюдатели" category="TabularSection">
+					<xr:GeneratedType name="TaskTabularSection.ПринятьТЗ.Наблюдатели" category="TabularSection">
 						<xr:TypeId>73d950c2-cce2-4134-bdc1-36ade813b90e</xr:TypeId>
 						<xr:ValueId>9aef5222-9a1a-402c-bf0b-a43f6387deb6</xr:ValueId>
 					</xr:GeneratedType>
-					<xr:GeneratedType name="TaskTabularSectionRow.КонтрольТЗ.Наблюдатели" category="TabularSectionRow">
+					<xr:GeneratedType name="TaskTabularSectionRow.ПринятьТЗ.Наблюдатели" category="TabularSectionRow">
 						<xr:TypeId>2aae3a46-9cdf-4901-baf1-fc8c61ceb39b</xr:TypeId>
 						<xr:ValueId>d7ecfe9e-c156-4c4d-84ba-86809ce22da3</xr:ValueId>
 					</xr:GeneratedType>
@@ -437,6 +437,111 @@
 							<Comment/>
 							<Type>
 								<v8:Type>cfg:CatalogRef.Пользователи</v8:Type>
+							</Type>
+							<PasswordMode>false</PasswordMode>
+							<Format/>
+							<EditFormat/>
+							<ToolTip/>
+							<MarkNegatives>false</MarkNegatives>
+							<Mask/>
+							<MultiLine>false</MultiLine>
+							<ExtendedEdit>false</ExtendedEdit>
+							<MinValue xsi:nil="true"/>
+							<MaxValue xsi:nil="true"/>
+							<FillChecking>DontCheck</FillChecking>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<ChoiceParameterLinks/>
+							<ChoiceParameters/>
+							<QuickChoice>Auto</QuickChoice>
+							<CreateOnInput>Auto</CreateOnInput>
+							<ChoiceForm/>
+							<LinkByType/>
+							<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+							<Indexing>DontIndex</Indexing>
+							<FullTextSearch>Use</FullTextSearch>
+							<DataHistory>Use</DataHistory>
+						</Properties>
+					</Attribute>
+				</ChildObjects>
+			</TabularSection>
+			<TabularSection uuid="7caf525a-e453-4384-bcd3-58c8b21c03d5">
+				<InternalInfo>
+					<xr:GeneratedType name="TaskTabularSection.ПринятьТЗ.ЧекЛистКонструктора" category="TabularSection">
+						<xr:TypeId>75446d50-4321-4176-a3b1-f086811ff6fd</xr:TypeId>
+						<xr:ValueId>a63ccc1b-9411-4902-bbaa-8794da8316a7</xr:ValueId>
+					</xr:GeneratedType>
+					<xr:GeneratedType name="TaskTabularSectionRow.ПринятьТЗ.ЧекЛистКонструктора" category="TabularSectionRow">
+						<xr:TypeId>71b6372b-0b50-42bb-878b-6b8f6746cc2f</xr:TypeId>
+						<xr:ValueId>889b4349-1701-4b00-b102-4ecaf53ba5b1</xr:ValueId>
+					</xr:GeneratedType>
+				</InternalInfo>
+				<Properties>
+					<Name>ЧекЛистКонструктора</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Чек лист конструктора</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<ToolTip/>
+					<FillChecking>DontCheck</FillChecking>
+					<LineNumberLength>9</LineNumberLength>
+				</Properties>
+				<ChildObjects>
+					<Attribute uuid="ec792646-fd9d-4171-8ac5-ed1c34956d1a">
+						<Properties>
+							<Name>Выполнено</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Выполнено</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<Type>
+								<v8:Type>xs:boolean</v8:Type>
+							</Type>
+							<PasswordMode>false</PasswordMode>
+							<Format/>
+							<EditFormat/>
+							<ToolTip/>
+							<MarkNegatives>false</MarkNegatives>
+							<Mask/>
+							<MultiLine>false</MultiLine>
+							<ExtendedEdit>false</ExtendedEdit>
+							<MinValue xsi:nil="true"/>
+							<MaxValue xsi:nil="true"/>
+							<FillChecking>DontCheck</FillChecking>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<ChoiceParameterLinks/>
+							<ChoiceParameters/>
+							<QuickChoice>Auto</QuickChoice>
+							<CreateOnInput>Auto</CreateOnInput>
+							<ChoiceForm/>
+							<LinkByType/>
+							<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+							<Indexing>DontIndex</Indexing>
+							<FullTextSearch>Use</FullTextSearch>
+							<DataHistory>Use</DataHistory>
+						</Properties>
+					</Attribute>
+					<Attribute uuid="f4d630d7-79dd-4c26-bf63-17eaff077cd6">
+						<Properties>
+							<Name>Описание</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Описание</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<Type>
+								<v8:Type>xs:string</v8:Type>
+								<v8:StringQualifiers>
+									<v8:Length>150</v8:Length>
+									<v8:AllowedLength>Variable</v8:AllowedLength>
+								</v8:StringQualifiers>
 							</Type>
 							<PasswordMode>false</PasswordMode>
 							<Format/>

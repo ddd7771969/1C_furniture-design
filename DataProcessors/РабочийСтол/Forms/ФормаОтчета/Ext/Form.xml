@@ -969,7 +969,7 @@
 									</SearchControlAddition>
 									<ChildItems>
 										<LabelField name="КонтрольТЗНаименование" id="1080">
-											<DataPath>КонтрольТЗ.Наименование</DataPath>
+											<DataPath>~КонтрольТЗ.Наименование</DataPath>
 											<Title>
 												<v8:item>
 													<v8:lang>ru</v8:lang>
@@ -980,18 +980,18 @@
 											<ExtendedTooltip name="КонтрольТЗНаименованиеРасширеннаяПодсказка" id="1082"/>
 										</LabelField>
 										<LabelField name="КонтрольТЗИсполнитель" id="423">
-											<DataPath>КонтрольТЗ.Исполнитель</DataPath>
+											<DataPath>~КонтрольТЗ.Исполнитель</DataPath>
 											<ContextMenu name="КонтрольТЗИсполнительКонтекстноеМеню" id="424"/>
 											<ExtendedTooltip name="КонтрольТЗИсполнительРасширеннаяПодсказка" id="425"/>
 										</LabelField>
 										<CheckBoxField name="КонтрольТЗЕстьМодельГЧ" id="1271">
-											<DataPath>КонтрольТЗ.ЕстьМодельГЧ</DataPath>
+											<DataPath>~КонтрольТЗ.ЕстьМодельГЧ</DataPath>
 											<CheckBoxType>Auto</CheckBoxType>
 											<ContextMenu name="КонтрольТЗЕстьМодельГЧКонтекстноеМеню" id="1272"/>
 											<ExtendedTooltip name="КонтрольТЗЕстьМодельГЧРасширеннаяПодсказка" id="1273"/>
 										</CheckBoxField>
 										<LabelField name="КонтрольТЗДатаЗамера" id="1268">
-											<DataPath>КонтрольТЗ.ДатаЗамера</DataPath>
+											<DataPath>~КонтрольТЗ.ДатаЗамера</DataPath>
 											<Format>
 												<v8:item>
 													<v8:lang>ru</v8:lang>
@@ -1002,12 +1002,12 @@
 											<ExtendedTooltip name="КонтрольТЗДатаЗамераРасширеннаяПодсказка" id="1270"/>
 										</LabelField>
 										<LabelField name="КонтрольТЗСтатусЗамера" id="1265">
-											<DataPath>КонтрольТЗ.СтатусЗамера</DataPath>
+											<DataPath>~КонтрольТЗ.СтатусЗамера</DataPath>
 											<ContextMenu name="КонтрольТЗСтатусЗамераКонтекстноеМеню" id="1266"/>
 											<ExtendedTooltip name="КонтрольТЗСтатусЗамераРасширеннаяПодсказка" id="1267"/>
 										</LabelField>
 										<LabelField name="КонтрольТЗКрайняяДатаИсполнения" id="411">
-											<DataPath>КонтрольТЗ.КрайняяДатаИсполнения</DataPath>
+											<DataPath>~КонтрольТЗ.КрайняяДатаИсполнения</DataPath>
 											<ContextMenu name="КонтрольТЗКрайняяДатаИсполненияКонтекстноеМеню" id="412"/>
 											<ExtendedTooltip name="КонтрольТЗКрайняяДатаИсполненияРасширеннаяПодсказка" id="413"/>
 										</LabelField>
@@ -2802,7 +2802,7 @@
 					<dcssch:value xsi:type="xs:dateTime">0001-01-01T00:00:00</dcssch:value>
 					<dcssch:useRestriction>false</dcssch:useRestriction>
 				</Parameter>
-				<MainTable>Task.КонтрольТЗ</MainTable>
+				<MainTable>Task.ПринятьТЗ</MainTable>
 				<ListSettings>
 					<dcsset:filter>
 						<dcsset:viewMode>Normal</dcsset:viewMode>
