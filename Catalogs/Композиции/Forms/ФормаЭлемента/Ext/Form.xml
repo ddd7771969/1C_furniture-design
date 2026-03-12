@@ -300,11 +300,6 @@
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="Группа5РасширеннаяПодсказка" id="72"/>
 			<ChildItems>
-				<LabelField name="КодВыгрузкиВБитрикс" id="68">
-					<DataPath>КодВыгрузкиВБитрикс</DataPath>
-					<ContextMenu name="КодВыгрузкиВБитриксКонтекстноеМеню" id="69"/>
-					<ExtendedTooltip name="КодВыгрузкиВБитриксРасширеннаяПодсказка" id="70"/>
-				</LabelField>
 				<Button name="НазначитьКодБитрикс" id="97">
 					<Type>UsualButton</Type>
 					<CommandName>Form.Command.НазначитьКодБитрикс</CommandName>
@@ -370,21 +365,6 @@
 			<Settings xsi:type="v8:TypeDescription">
 				<v8:Type>cfg:CatalogRef.Помещения</v8:Type>
 			</Settings>
-		</Attribute>
-		<Attribute name="КодВыгрузкиВБитрикс" id="8">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Код выгрузки в Битрикс</v8:content>
-				</v8:item>
-			</Title>
-			<Type>
-				<v8:Type>xs:string</v8:Type>
-				<v8:StringQualifiers>
-					<v8:Length>7</v8:Length>
-					<v8:AllowedLength>Variable</v8:AllowedLength>
-				</v8:StringQualifiers>
-			</Type>
 		</Attribute>
 		<Attribute name="Код_в_PDM" id="9">
 			<Title>

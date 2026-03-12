@@ -248,22 +248,6 @@
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="Группа5РасширеннаяПодсказка" id="69"/>
 			<ChildItems>
-				<LabelField name="КодВыгрузкиВБитрикс" id="70">
-					<DataPath>КодВыгрузкиВБитрикс</DataPath>
-					<ContextMenu name="КодВыгрузкиВБитриксКонтекстноеМеню" id="71"/>
-					<ExtendedTooltip name="КодВыгрузкиВБитриксРасширеннаяПодсказка" id="72"/>
-				</LabelField>
-				<Button name="НазначитьКодБитрикс" id="101">
-					<Type>UsualButton</Type>
-					<CommandName>Form.Command.НазначитьКодБитрикс</CommandName>
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>...</v8:content>
-						</v8:item>
-					</Title>
-					<ExtendedTooltip name="НазначитьКодБитриксРасширеннаяПодсказка" id="102"/>
-				</Button>
 				<LabelField name="Код" id="1">
 					<DataPath>Объект.Code</DataPath>
 					<EditMode>EnterOnInput</EditMode>
@@ -342,21 +326,6 @@
 				</v8:NumberQualifiers>
 			</Type>
 		</Attribute>
-		<Attribute name="КодВыгрузкиВБитрикс" id="5">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Код выгрузки в Битрикс</v8:content>
-				</v8:item>
-			</Title>
-			<Type>
-				<v8:Type>xs:string</v8:Type>
-				<v8:StringQualifiers>
-					<v8:Length>7</v8:Length>
-					<v8:AllowedLength>Variable</v8:AllowedLength>
-				</v8:StringQualifiers>
-			</Type>
-		</Attribute>
 		<Attribute name="СписокКомплектов" id="6">
 			<Title>
 				<v8:item>
@@ -432,21 +401,6 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ЗапросНаПроектныйСтатус</Action>
-		</Command>
-		<Command name="НазначитьКодБитрикс" id="4">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Назначить код битрикс</v8:content>
-				</v8:item>
-			</Title>
-			<ToolTip>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Назначить код битрикс</v8:content>
-				</v8:item>
-			</ToolTip>
-			<Action>НазначитьКодБитрикс</Action>
 		</Command>
 		<Command name="ОткрытьФайлПДМ" id="5">
 			<Title>

@@ -829,7 +829,6 @@
 			<SessionParameter>ВыполняетсяУдалениеОбъектов</SessionParameter>
 			<SessionParameter>ДействующиеДатыЗапретаИзменения</SessionParameter>
 			<SessionParameter>ДлительныеОперации</SessionParameter>
-			<SessionParameter>ЗагрузкаИзБитрикс</SessionParameter>
 			<SessionParameter>ИнтерактивнаяПроверкаЗаполненияКонтактнойИнформации</SessionParameter>
 			<SessionParameter>ИнтерактивнаяПроверкаЗаполненияСвойств</SessionParameter>
 			<SessionParameter>КлючДанныхПовторногоИспользования</SessionParameter>
@@ -866,7 +865,6 @@
 			<Role>БазовыеПраваВнешнихПользователейБСП</Role>
 			<Role>ВыводНаПринтерФайлБуферОбмена</Role>
 			<Role>Выгрузка_в_PDM</Role>
-			<Role>ВыгрузкаВБитрикс</Role>
 			<Role>ГлавныйКонструктор</Role>
 			<Role>Дизайнер</Role>
 			<Role>Директор</Role>
@@ -978,6 +976,7 @@
 			<CommonTemplate>ПолучениеДереваОбработчиковОбновления</CommonTemplate>
 			<CommonTemplate>ПустойМакетDOCX</CommonTemplate>
 			<CommonTemplate>СтруктураПодчиненности</CommonTemplate>
+			<CommonTemplate>Эталон</CommonTemplate>
 			<FilterCriterion>СвязанныеДокументы</FilterCriterion>
 			<FilterCriterion>ФайлыВТоме</FilterCriterion>
 			<FilterCriterion>ОтборДеталировокИзделия</FilterCriterion>
@@ -994,38 +993,6 @@
 			<CommonModule>АдресныйКлассификаторСлужебный</CommonModule>
 			<CommonModule>АнализЖурналаРегистрацииКлиент</CommonModule>
 			<CommonModule>АнализЖурналаРегистрацииСлужебный</CommonModule>
-			<CommonModule>Б24_К_RestApiВызовСервера</CommonModule>
-			<CommonModule>Б24_К_ВыгрузкаДелВызовСервера</CommonModule>
-			<CommonModule>Б24_К_ИдентификаторыОбъектов</CommonModule>
-			<CommonModule>Б24_К_ЛонгПуллингКлиентСервер</CommonModule>
-			<CommonModule>Б24_К_ОбменКомпанийКонтактовСервер</CommonModule>
-			<CommonModule>Б24_К_ОбщегоНазначенияВызовСервера</CommonModule>
-			<CommonModule>Б24_К_ОбщегоНазначенияВызовСервераПовтИсп</CommonModule>
-			<CommonModule>Б24_К_ОбщегоНазначенияКлиент</CommonModule>
-			<CommonModule>Б24_К_РаботаСАдресамиСервер</CommonModule>
-			<CommonModule>Б24_К_СлужебныйВызовСервера</CommonModule>
-			<CommonModule>Б24_К_СлужебныйКлиент</CommonModule>
-			<CommonModule>Б24_К_ТелефонияВызовСервера</CommonModule>
-			<CommonModule>Б24_К_ТелефонияКлиент</CommonModule>
-			<CommonModule>Б24_КБ_ОбщегоНазначенияВызовСервера</CommonModule>
-			<CommonModule>Б24_КБ_ОбщегоНазначенияВызовСервераПовтИсп</CommonModule>
-			<CommonModule>Б24_КБ_РаботаИзОдногоОкнаВызовСервера</CommonModule>
-			<CommonModule>Б24_КС_ВыгрузкаСервер</CommonModule>
-			<CommonModule>Б24_КС_ЗагрузкаСервер</CommonModule>
-			<CommonModule>Б24_КС_ОбщегоНазначенияВызовСервера</CommonModule>
-			<CommonModule>Б24_КС_ОбщегоНазначенияВызовСервераПовтИсп</CommonModule>
-			<CommonModule>Б24_СМ_ВыгрузкаСервер</CommonModule>
-			<CommonModule>Б24_СМ_ЗагрузкаСервер</CommonModule>
-			<CommonModule>Б24_СМ_ЗаданиеВыполнениеСинхронизацииПоРасписаниюСервер</CommonModule>
-			<CommonModule>Б24_СМ_ОбщегоНазначенияВызовСервера</CommonModule>
-			<CommonModule>Б24_СМ_ОбщегоНазначенияВызовСервераПовтИсп</CommonModule>
-			<CommonModule>Б24_СМ_ОбщегоНазначенияСерверПереопределяемый</CommonModule>
-			<CommonModule>Б24_СМ_РегистрацияИзмененийСервер</CommonModule>
-			<CommonModule>Б24_СУ_ВыгрузкаСервер</CommonModule>
-			<CommonModule>Б24_СУ_ЗагрузкаСервер</CommonModule>
-			<CommonModule>Б24_СУ_ОбщегоНазначенияВызовСервера</CommonModule>
-			<CommonModule>Б24_СУ_ОбщегоНазначенияВызовСервераПовтИсп</CommonModule>
-			<CommonModule>Б24_СУ_РегистрацияИзмененийВызовСервера</CommonModule>
 			<CommonModule>БлокировкаРаботыСВнешнимиРесурсами</CommonModule>
 			<CommonModule>БлокировкаРаботыСВнешнимиРесурсамиПереопределяемый</CommonModule>
 			<CommonModule>ВариантыОтчетов</CommonModule>
@@ -1114,7 +1081,6 @@
 			<CommonModule>МашиночитаемыеДоверенностиФНССлужебныйВызовСервера</CommonModule>
 			<CommonModule>МашиночитаемыеДоверенностиФНССлужебныйКлиент</CommonModule>
 			<CommonModule>МашиночитаемыеДоверенностиФНССлужебныйКлиентСервер</CommonModule>
-			<CommonModule>НаборыВызовСервера</CommonModule>
 			<CommonModule>НапоминанияПользователя</CommonModule>
 			<CommonModule>НапоминанияПользователяВызовСервера</CommonModule>
 			<CommonModule>НапоминанияПользователяГлобальный</CommonModule>
@@ -1160,8 +1126,6 @@
 			<CommonModule>омMsSQL</CommonModule>
 			<CommonModule>омPDM</CommonModule>
 			<CommonModule>омPDMНаСервере</CommonModule>
-			<CommonModule>омRestApiВызовСервера</CommonModule>
-			<CommonModule>омБитриксКоманды</CommonModule>
 			<CommonModule>омВыгрузкаCRMНаКлиенте</CommonModule>
 			<CommonModule>омВыгрузкаCRMНаСевере</CommonModule>
 			<CommonModule>омВыгрузкаCRMНаСевереПовтор</CommonModule>
@@ -1220,7 +1184,6 @@
 			<CommonModule>омНастройкиПолучитьЗаписать</CommonModule>
 			<CommonModule>омНоменклатура</CommonModule>
 			<CommonModule>омНормыРасхода</CommonModule>
-			<CommonModule>омОбменБитрикс24</CommonModule>
 			<CommonModule>омОбщиеНаКлиенте</CommonModule>
 			<CommonModule>омОбщиеФункции</CommonModule>
 			<CommonModule>омОформлениеФормы</CommonModule>
@@ -1487,7 +1450,6 @@
 			<XDTOPackage>КонтактнаяИнформация</XDTOPackage>
 			<XDTOPackage>МашиночитаемаяДоверенность_EMCHD_1</XDTOPackage>
 			<WebService>InterfaceVersion</WebService>
-			<EventSubscription>Б24_СМ_РегистрацияИзмененийПриЗаписи</EventSubscription>
 			<EventSubscription>ВариантыОтчетовПередУдалениемИдентификатораОбъектаМетаданных</EventSubscription>
 			<EventSubscription>ВариантыОтчетовПриУдаленииПользователя</EventSubscription>
 			<EventSubscription>ВключитьРегламентноеЗаданиеПриИзмененииФункциональнойОпции</EventSubscription>
@@ -1534,7 +1496,6 @@
 			<EventSubscription>УстановитьСнятьПометкуУдаленияЗаметок</EventSubscription>
 			<EventSubscription>УстановитьСтатусИзмененияПометкиУдаленияПользователя</EventSubscription>
 			<EventSubscription>ОтменаПроведенияПлановыедатыПомещений</EventSubscription>
-			<ScheduledJob>ВыгрузкаВРежимеРВСМ</ScheduledJob>
 			<ScheduledJob>ЗагрузкаКурсовВалют</ScheduledJob>
 			<ScheduledJob>ЗаполнениеПараметровРаботыРасширений</ScheduledJob>
 			<ScheduledJob>ИзвлечениеТекста</ScheduledJob>
@@ -1755,7 +1716,6 @@
 			<Constant>КоличествоПотоковОбновленияИнформационнойБазы</Constant>
 			<Constant>МаксимальныйРазмерФайла</Constant>
 			<Constant>МаксимальныйРазмерФайлаОбластиДанных</Constant>
-			<Constant>НастройкаПодключенияКБитриксПоУмолчанию</Constant>
 			<Constant>НастройкаПроксиСервера</Constant>
 			<Constant>НастройкиВходаПользователей</Constant>
 			<Constant>НастройкиКолонтитулов</Constant>
@@ -1802,7 +1762,6 @@
 			<Constant>ХранитьИсториюРассылкиОтчетов</Constant>
 			<Constant>ХранитьФайлыВТомахНаДиске</Constant>
 			<CommonForm>АдреснаяКнига</CommonForm>
-			<CommonForm>Б24_К_УстановкиАлгоритмов</CommonForm>
 			<CommonForm>БлокировкаРаботыСВнешнимиРесурсами</CommonForm>
 			<CommonForm>ВводЗначенийСпискомСФлажками</CommonForm>
 			<CommonForm>Вопрос</CommonForm>
@@ -1882,8 +1841,6 @@
 			<CommonForm>ФормаОтчета</CommonForm>
 			<CommonForm>ФормаПоиска</CommonForm>
 			<CommonForm>ЭлектроннаяПодпись</CommonForm>
-			<Catalog>Б24_К_НастройкиПодключения</Catalog>
-			<Catalog>Б24_КС_ПользовательскиеГруппыТоваров</Catalog>
 			<Catalog>Бригады</Catalog>
 			<Catalog>Валюты</Catalog>
 			<Catalog>ВариантыОтчетов</Catalog>
@@ -1991,7 +1948,6 @@
 			<Catalog>УчетныеЗаписиЭлектроннойПочты</Catalog>
 			<Catalog>Файлы</Catalog>
 			<Catalog>ФотоЗамеров</Catalog>
-			<Catalog>ХарактеристикиНоменклатуры</Catalog>
 			<Catalog>ШаблоныИзделия</Catalog>
 			<Catalog>ШаблоныСообщений</Catalog>
 			<Catalog>ШаблоныСообщенийПрисоединенныеФайлы</Catalog>
@@ -2161,7 +2117,6 @@
 			<Report>КонтрольРассылкиОтчетов</Report>
 			<Report>НастройкаPDM</Report>
 			<Report>НастройкаРасписания</Report>
-			<Report>НастройкиБитрикс</Report>
 			<Report>НоменклатураПроекта</Report>
 			<Report>ОбщиеНастройки</Report>
 			<Report>ОбъемНенужныхФайлов</Report>
@@ -2227,7 +2182,6 @@
 			<DataProcessor>ПередачаВЧастичныйПодряд</DataProcessor>
 			<DataProcessor>ПередачаКомплектовВПроизводство</DataProcessor>
 			<DataProcessor>ПереносФайлов</DataProcessor>
-			<DataProcessor>ПечатьЭтикетокИЦенников</DataProcessor>
 			<DataProcessor>ПолнотекстовыйПоискВДанных</DataProcessor>
 			<DataProcessor>ПользователиТелеграмм</DataProcessor>
 			<DataProcessor>ПрограммыЭлектроннойПодписиИШифрования</DataProcessor>
@@ -2249,21 +2203,6 @@
 			<InformationRegister>АдресныеОбъекты</InformationRegister>
 			<InformationRegister>АктуальныеИзделияКомплектыЭлементы</InformationRegister>
 			<InformationRegister>АктуальныеСметы</InformationRegister>
-			<InformationRegister>Б24_К_ИдентификаторыДел</InformationRegister>
-			<InformationRegister>Б24_К_ИдентификаторыОбъектов</InformationRegister>
-			<InformationRegister>Б24_К_Логирование</InformationRegister>
-			<InformationRegister>Б24_К_ПользователиБитрикс24</InformationRegister>
-			<InformationRegister>Б24_К_ТокеныПодключений</InformationRegister>
-			<InformationRegister>Б24_КС_НастройкиСинхронизации</InformationRegister>
-			<InformationRegister>Б24_КС_ПакетыВыгрузки</InformationRegister>
-			<InformationRegister>Б24_КС_ТаблицаИзменений</InformationRegister>
-			<InformationRegister>Б24_СМ_ИдентификаторыОбъектов</InformationRegister>
-			<InformationRegister>Б24_СМ_НастройкиСмартПроцессов</InformationRegister>
-			<InformationRegister>Б24_СМ_ПакетыВыгрузки</InformationRegister>
-			<InformationRegister>Б24_СМ_ТаблицаИзменений</InformationRegister>
-			<InformationRegister>Б24_СУ_Настройки</InformationRegister>
-			<InformationRegister>Б24_СУ_ПакетыВыгрузки</InformationRegister>
-			<InformationRegister>Б24_СУ_ТаблицаИзменений</InformationRegister>
 			<InformationRegister>БезопасноеХранилищеДанных</InformationRegister>
 			<InformationRegister>БезопасноеХранилищеДанныхОбластейДанных</InformationRegister>
 			<InformationRegister>БлокировкиСеансовОбластейДанных</InformationRegister>
@@ -2391,7 +2330,6 @@
 			<InformationRegister>СлужебныеАдресныеСведения</InformationRegister>
 			<InformationRegister>СнимкиОтчетов</InformationRegister>
 			<InformationRegister>СообщенияЧерновик</InformationRegister>
-			<InformationRegister>СопоставлениеПолейСБитрикс</InformationRegister>
 			<InformationRegister>СоставыГруппПользователей</InformationRegister>
 			<InformationRegister>СостояниеЗамера</InformationRegister>
 			<InformationRegister>СостоянияКонтактовВзаимодействий</InformationRegister>

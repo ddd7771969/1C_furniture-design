@@ -479,11 +479,6 @@
 							<ContextMenu name="КореньПапкиPDMКонтекстноеМеню" id="185"/>
 							<ExtendedTooltip name="КореньПапкиPDMРасширеннаяПодсказка" id="186"/>
 						</InputField>
-						<Button name="ВыгрузитьВБитрикс" id="168">
-							<Type>UsualButton</Type>
-							<CommandName>Form.Command.ВыгрузитьВБитрикс</CommandName>
-							<ExtendedTooltip name="ВыгрузитьВБитриксРасширеннаяПодсказка" id="169"/>
-						</Button>
 						<Table name="тзВыгрузка_в_PDM" id="124">
 							<Representation>List</Representation>
 							<AutoInsertNewRow>true</AutoInsertNewRow>
@@ -1751,21 +1746,6 @@
 				</v8:item>
 			</ToolTip>
 			<Action>СоздатьНаОснованииВыгрузка</Action>
-		</Command>
-		<Command name="ВыгрузитьВБитрикс" id="8">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Выгрузить в битрикс</v8:content>
-				</v8:item>
-			</Title>
-			<ToolTip>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Выгрузить в битрикс</v8:content>
-				</v8:item>
-			</ToolTip>
-			<Action>ВыгрузитьВБитрикс</Action>
 		</Command>
 	</Commands>
 </Form>
