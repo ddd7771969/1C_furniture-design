@@ -300,17 +300,6 @@
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="Группа5РасширеннаяПодсказка" id="72"/>
 			<ChildItems>
-				<Button name="НазначитьКодБитрикс" id="97">
-					<Type>UsualButton</Type>
-					<CommandName>Form.Command.НазначитьКодБитрикс</CommandName>
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>...</v8:content>
-						</v8:item>
-					</Title>
-					<ExtendedTooltip name="НазначитьКодБитриксРасширеннаяПодсказка" id="98"/>
-				</Button>
 				<LabelField name="Код_в_PDM" id="73">
 					<DataPath>Код_в_PDM</DataPath>
 					<ContextMenu name="Код_в_PDMКонтекстноеМеню" id="74"/>
@@ -477,21 +466,6 @@
 				</v8:item>
 			</ToolTip>
 			<Action>НазначитьКодPDM</Action>
-		</Command>
-		<Command name="НазначитьКодБитрикс" id="4">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Назначить код битрикс</v8:content>
-				</v8:item>
-			</Title>
-			<ToolTip>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Назначить код битрикс</v8:content>
-				</v8:item>
-			</ToolTip>
-			<Action>НазначитьКодБитрикс</Action>
 		</Command>
 		<Command name="ОткрытьФайлПДМ" id="5">
 			<Title>

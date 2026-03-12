@@ -105,7 +105,7 @@
 					<ExtendedTooltip name="НомерПомещенияРасширеннаяПодсказка" id="27"/>
 				</LabelField>
 				<LabelField name="ТекущаяСтадия" id="31">
-					<DataPath>Список.ТекущаяСтадия</DataPath>
+					<DataPath>~Список.ТекущаяСтадия</DataPath>
 					<ContextMenu name="ТекущаяСтадияКонтекстноеМеню" id="32"/>
 					<ExtendedTooltip name="ТекущаяСтадияРасширеннаяПодсказка" id="33"/>
 				</LabelField>
@@ -133,8 +133,7 @@
 	СправочникПомещения.НомерПомещения КАК НомерПомещения,
 	СправочникПомещения.Проект КАК Проект,
 	СправочникПомещения.Предопределенный КАК Предопределенный,
-	СправочникПомещения.ИмяПредопределенныхДанных КАК ИмяПредопределенныхДанных,
-	СправочникПомещения.ТекущаяСтадия КАК ТекущаяСтадия
+	СправочникПомещения.ИмяПредопределенныхДанных КАК ИмяПредопределенныхДанных
 ИЗ
 	Справочник.Помещения КАК СправочникПомещения
 ГДЕ
@@ -153,6 +152,18 @@
 				ТОГДА НЕ СправочникПомещения.Ссылка В (&amp;СписокПомещенийНеПоказывать)
 			ИНАЧЕ ИСТИНА
 		КОНЕЦ</QueryText>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>СтатусПомещения</dcssch:dataPath>
+					<dcssch:field>СтатусПомещения</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Наименование</dcssch:dataPath>
+					<dcssch:field>Наименование</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ЭтоГруппа</dcssch:dataPath>
+					<dcssch:field>ЭтоГруппа</dcssch:field>
+				</Field>
 				<Field xsi:type="dcssch:DataSetFieldField">
 					<dcssch:dataPath>ИмяПредопределенныхДанных</dcssch:dataPath>
 					<dcssch:field>ИмяПредопределенныхДанных</dcssch:field>
@@ -178,14 +189,6 @@
 					<dcssch:field>Родитель</dcssch:field>
 				</Field>
 				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>Наименование</dcssch:dataPath>
-					<dcssch:field>Наименование</dcssch:field>
-				</Field>
-				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>ЭтоГруппа</dcssch:dataPath>
-					<dcssch:field>ЭтоГруппа</dcssch:field>
-				</Field>
-				<Field xsi:type="dcssch:DataSetFieldField">
 					<dcssch:dataPath>НаименованиеБезКода</dcssch:dataPath>
 					<dcssch:field>НаименованиеБезКода</dcssch:field>
 				</Field>
@@ -194,24 +197,12 @@
 					<dcssch:field>НомерПомещения</dcssch:field>
 				</Field>
 				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>Сделка</dcssch:dataPath>
-					<dcssch:field>Сделка</dcssch:field>
+					<dcssch:dataPath>Проект</dcssch:dataPath>
+					<dcssch:field>Проект</dcssch:field>
 				</Field>
 				<Field xsi:type="dcssch:DataSetFieldField">
 					<dcssch:dataPath>Предопределенный</dcssch:dataPath>
 					<dcssch:field>Предопределенный</dcssch:field>
-				</Field>
-				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>ТекущаяСтадия</dcssch:dataPath>
-					<dcssch:field>ТекущаяСтадия</dcssch:field>
-				</Field>
-				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>СтатусПомещения</dcssch:dataPath>
-					<dcssch:field>СтатусПомещения</dcssch:field>
-				</Field>
-				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>ДатаДоговорнойГотовности</dcssch:dataPath>
-					<dcssch:field>ДатаДоговорнойГотовности</dcssch:field>
 				</Field>
 				<Parameter>
 					<dcssch:name>НеПоказыватьПомещения</dcssch:name>
@@ -228,11 +219,11 @@
 					<dcssch:useRestriction>true</dcssch:useRestriction>
 				</Parameter>
 				<Parameter>
-					<dcssch:name>Сделка</dcssch:name>
+					<dcssch:name>Проект</dcssch:name>
 					<dcssch:title xsi:type="v8:LocalStringType">
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Сделка</v8:content>
+							<v8:content>Проект</v8:content>
 						</v8:item>
 					</dcssch:title>
 					<dcssch:valueType>
@@ -262,6 +253,12 @@
 						<dcsset:viewMode>Normal</dcsset:viewMode>
 						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
 					</dcsset:filter>
+					<dcsset:dataParameters>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:use>false</dcscor:use>
+							<dcscor:parameter>СписокПомещенийНеПоказывать</dcscor:parameter>
+						</dcscor:item>
+					</dcsset:dataParameters>
 					<dcsset:order>
 						<dcsset:viewMode>Normal</dcsset:viewMode>
 						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
