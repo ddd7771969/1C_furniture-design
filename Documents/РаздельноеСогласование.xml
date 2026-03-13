@@ -2,33 +2,33 @@
 <MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
 	<Document uuid="a4974551-44d7-4a2c-93e0-be616eb47fb2">
 		<InternalInfo>
-			<xr:GeneratedType name="DocumentObject.РазделитьКомпозицию" category="Object">
+			<xr:GeneratedType name="DocumentObject.РаздельноеСогласование" category="Object">
 				<xr:TypeId>62aee80d-5914-4d1a-9bc3-c8b55614aab6</xr:TypeId>
 				<xr:ValueId>88f19621-6200-4648-9483-8a8a7c3f92eb</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="DocumentRef.РазделитьКомпозицию" category="Ref">
+			<xr:GeneratedType name="DocumentRef.РаздельноеСогласование" category="Ref">
 				<xr:TypeId>11756341-467b-4a0e-a4bc-793b14d78595</xr:TypeId>
 				<xr:ValueId>9072d986-1501-4d2c-a9f9-4dc368e4079b</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="DocumentSelection.РазделитьКомпозицию" category="Selection">
+			<xr:GeneratedType name="DocumentSelection.РаздельноеСогласование" category="Selection">
 				<xr:TypeId>8564074e-715b-4c14-89c2-74d753c1c351</xr:TypeId>
 				<xr:ValueId>80bf40d9-e516-41d9-8060-520e388f3f8c</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="DocumentList.РазделитьКомпозицию" category="List">
+			<xr:GeneratedType name="DocumentList.РаздельноеСогласование" category="List">
 				<xr:TypeId>0788bbad-cf02-424f-9307-d046ffa9f071</xr:TypeId>
 				<xr:ValueId>bb82d026-f1aa-4934-815f-6ad84d122d38</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="DocumentManager.РазделитьКомпозицию" category="Manager">
+			<xr:GeneratedType name="DocumentManager.РаздельноеСогласование" category="Manager">
 				<xr:TypeId>9b60dceb-7bcc-4d06-bd29-1c0ddd3aab59</xr:TypeId>
 				<xr:ValueId>18e4682b-cae6-40ca-b1b4-76d7c7860cfe</xr:ValueId>
 			</xr:GeneratedType>
 		</InternalInfo>
 		<Properties>
-			<Name>РазделитьКомпозицию</Name>
+			<Name>РаздельноеСогласование</Name>
 			<Synonym>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Разделить композицию</v8:content>
+					<v8:content>Раздельное согласование</v8:content>
 				</v8:item>
 			</Synonym>
 			<Comment/>
@@ -43,13 +43,13 @@
 			<Characteristics/>
 			<BasedOn/>
 			<InputByString>
-				<xr:Field>Document.РазделитьКомпозицию.StandardAttribute.Number</xr:Field>
+				<xr:Field>Document.РаздельноеСогласование.StandardAttribute.Number</xr:Field>
 			</InputByString>
 			<CreateOnInput>Use</CreateOnInput>
 			<SearchStringModeOnInputByString>Begin</SearchStringModeOnInputByString>
 			<FullTextSearchOnInputByString>DontUse</FullTextSearchOnInputByString>
 			<ChoiceDataGetModeOnInputByString>Directly</ChoiceDataGetModeOnInputByString>
-			<DefaultObjectForm/>
+			<DefaultObjectForm>Document.РаздельноеСогласование.Form.ФормаДокумента</DefaultObjectForm>
 			<DefaultListForm/>
 			<DefaultChoiceForm/>
 			<AuxiliaryObjectForm/>
@@ -103,7 +103,7 @@
 					<MaxValue xsi:nil="true"/>
 					<FillFromFillingValue>false</FillFromFillingValue>
 					<FillValue xsi:nil="true"/>
-					<FillChecking>DontCheck</FillChecking>
+					<FillChecking>ShowError</FillChecking>
 					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
 					<ChoiceParameterLinks/>
 					<ChoiceParameters/>
@@ -156,13 +156,14 @@
 					<DataHistory>Use</DataHistory>
 				</Properties>
 			</Attribute>
+			<Form>ФормаДокумента</Form>
 			<TabularSection uuid="b5c2b128-2737-413f-a726-55cf6694a6ec">
 				<InternalInfo>
-					<xr:GeneratedType name="DocumentTabularSection.РазделитьКомпозицию.Соглосовать" category="TabularSection">
+					<xr:GeneratedType name="DocumentTabularSection.РаздельноеСогласование.Соглосовать" category="TabularSection">
 						<xr:TypeId>55938d2f-487f-4ee7-b75c-d8cec67dd0f4</xr:TypeId>
 						<xr:ValueId>824b3f3b-ca02-4741-9c3f-9aa491083600</xr:ValueId>
 					</xr:GeneratedType>
-					<xr:GeneratedType name="DocumentTabularSectionRow.РазделитьКомпозицию.Соглосовать" category="TabularSectionRow">
+					<xr:GeneratedType name="DocumentTabularSectionRow.РаздельноеСогласование.Соглосовать" category="TabularSectionRow">
 						<xr:TypeId>c4dbdf40-2ed6-4d0f-84f1-784480784871</xr:TypeId>
 						<xr:ValueId>5e807812-d5d3-4eb9-bc8e-c82849183ca9</xr:ValueId>
 					</xr:GeneratedType>

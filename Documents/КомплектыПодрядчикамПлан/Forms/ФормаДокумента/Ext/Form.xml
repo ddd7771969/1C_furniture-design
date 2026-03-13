@@ -30,7 +30,7 @@
 				</InputField>
 			</ChildItems>
 		</UsualGroup>
-		<InputField name="Сделка" id="10">
+		<InputField name="Проект" id="10">
 			<DataPath>Объект.Проект</DataPath>
 			<EditMode>EnterOnInput</EditMode>
 			<DropListButton>false</DropListButton>
@@ -40,8 +40,8 @@
 			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 			<TextEdit>false</TextEdit>
 			<ChoiceHistoryOnInput>DontUse</ChoiceHistoryOnInput>
-			<ContextMenu name="СделкаКонтекстноеМеню" id="11"/>
-			<ExtendedTooltip name="СделкаРасширеннаяПодсказка" id="12"/>
+			<ContextMenu name="ПроектКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="ПроектРасширеннаяПодсказка" id="12"/>
 			<Events>
 				<Event name="StartChoice">СделкаНачалоВыбора</Event>
 				<Event name="Clearing">СделкаОчистка</Event>
