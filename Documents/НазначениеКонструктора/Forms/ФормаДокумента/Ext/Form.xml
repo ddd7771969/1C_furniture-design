@@ -29,7 +29,7 @@
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 	</Events>
 	<ChildItems>
-		<LabelDecoration name="Декорация1" id="33">
+		<LabelDecoration name="ДекорацияНеВозможно" id="33">
 			<TextColor>#993366</TextColor>
 			<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
 			<Title formatted="false">
@@ -38,8 +38,8 @@
 					<v8:content>Назначение конструктора возможна только при отсутствии задачи ПКД или РКД или нахождении задачи в стадии ожидания.</v8:content>
 				</v8:item>
 			</Title>
-			<ContextMenu name="Декорация1КонтекстноеМеню" id="34"/>
-			<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="35"/>
+			<ContextMenu name="ДекорацияНеВозможноКонтекстноеМеню" id="34"/>
+			<ExtendedTooltip name="ДекорацияНеВозможноРасширеннаяПодсказка" id="35"/>
 		</LabelDecoration>
 		<UsualGroup name="Группа2" id="23">
 			<Group>AlwaysHorizontal</Group>
@@ -90,13 +90,18 @@
 								<Event name="OnChange">КомплектПриИзменении</Event>
 							</Events>
 						</InputField>
-						<InputField name="ТекущаяСтадия" id="17">
-							<DataPath>ТекущаяСтадия</DataPath>
-							<ReadOnly>true</ReadOnly>
-							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-							<ContextMenu name="ТекущаяСтадияКонтекстноеМеню" id="18"/>
-							<ExtendedTooltip name="ТекущаяСтадияРасширеннаяПодсказка" id="19"/>
-						</InputField>
+						<LabelField name="ТекущаяСтадия" id="66">
+							<DataPath>ТекущаяСтадия.ПолноеНаименование</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Текущая стадия</v8:content>
+								</v8:item>
+							</Title>
+							<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+							<ContextMenu name="ТекущаяСтадияКонтекстноеМеню" id="67"/>
+							<ExtendedTooltip name="ТекущаяСтадияРасширеннаяПодсказка" id="68"/>
+						</LabelField>
 						<InputField name="ТекущийКонструктор" id="20">
 							<DataPath>ТекущийКонструктор</DataPath>
 							<ReadOnly>true</ReadOnly>
