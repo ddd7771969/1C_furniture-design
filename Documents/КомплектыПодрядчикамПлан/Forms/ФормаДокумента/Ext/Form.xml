@@ -8,45 +8,69 @@
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 	</Events>
 	<ChildItems>
-		<UsualGroup name="Группа1" id="38">
+		<UsualGroup name="Группа2" id="46">
 			<Group>AlwaysHorizontal</Group>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
-			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="39"/>
+			<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="47"/>
 			<ChildItems>
-				<InputField name="Номер" id="1">
-					<DataPath>Объект.Number</DataPath>
-					<EditMode>EnterOnInput</EditMode>
+				<UsualGroup name="Группа3" id="48">
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="49"/>
+					<ChildItems>
+						<UsualGroup name="Группа1" id="38">
+							<Group>AlwaysHorizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="39"/>
+							<ChildItems>
+								<InputField name="Номер" id="1">
+									<DataPath>Объект.Number</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="НомерКонтекстноеМеню" id="2"/>
+									<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="3"/>
+								</InputField>
+								<InputField name="Дата" id="4">
+									<DataPath>Объект.Date</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ДатаКонтекстноеМеню" id="5"/>
+									<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="6"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<InputField name="Проект" id="10">
+							<DataPath>Объект.Проект</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<DropListButton>false</DropListButton>
+							<ChoiceButton>true</ChoiceButton>
+							<ChoiceButtonRepresentation>ShowInInputField</ChoiceButtonRepresentation>
+							<OpenButton>true</OpenButton>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<TextEdit>false</TextEdit>
+							<ChoiceHistoryOnInput>DontUse</ChoiceHistoryOnInput>
+							<ContextMenu name="ПроектКонтекстноеМеню" id="11"/>
+							<ExtendedTooltip name="ПроектРасширеннаяПодсказка" id="12"/>
+							<Events>
+								<Event name="StartChoice">СделкаНачалоВыбора</Event>
+								<Event name="Clearing">СделкаОчистка</Event>
+							</Events>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<InputField name="Комментарий" id="50">
+					<DataPath>Объект.Комментарий</DataPath>
+					<Height>2</Height>
+					<MultiLine>true</MultiLine>
 					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-					<ContextMenu name="НомерКонтекстноеМеню" id="2"/>
-					<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="3"/>
-				</InputField>
-				<InputField name="Дата" id="4">
-					<DataPath>Объект.Date</DataPath>
-					<EditMode>EnterOnInput</EditMode>
-					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-					<ContextMenu name="ДатаКонтекстноеМеню" id="5"/>
-					<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="6"/>
+					<ContextMenu name="КомментарийКонтекстноеМеню" id="51"/>
+					<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="52"/>
 				</InputField>
 			</ChildItems>
 		</UsualGroup>
-		<InputField name="Проект" id="10">
-			<DataPath>Объект.Проект</DataPath>
-			<EditMode>EnterOnInput</EditMode>
-			<DropListButton>false</DropListButton>
-			<ChoiceButton>true</ChoiceButton>
-			<ChoiceButtonRepresentation>ShowInInputField</ChoiceButtonRepresentation>
-			<OpenButton>true</OpenButton>
-			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-			<TextEdit>false</TextEdit>
-			<ChoiceHistoryOnInput>DontUse</ChoiceHistoryOnInput>
-			<ContextMenu name="ПроектКонтекстноеМеню" id="11"/>
-			<ExtendedTooltip name="ПроектРасширеннаяПодсказка" id="12"/>
-			<Events>
-				<Event name="StartChoice">СделкаНачалоВыбора</Event>
-				<Event name="Clearing">СделкаОчистка</Event>
-			</Events>
-		</InputField>
 		<Table name="Комплекты" id="13">
 			<Representation>List</Representation>
 			<AutoInsertNewRow>true</AutoInsertNewRow>
@@ -83,6 +107,7 @@
 			</SearchControlAddition>
 			<Events>
 				<Event name="BeforeAddRow">КомплектыПередНачаломДобавления</Event>
+				<Event name="OnChange">КомплектыПриИзменении</Event>
 			</Events>
 			<ChildItems>
 				<LabelField name="КомплектыНомерСтроки" id="26">
@@ -117,6 +142,20 @@
 					<ContextMenu name="КомплектыИзготовительКонтекстноеМеню" id="36"/>
 					<ExtendedTooltip name="КомплектыИзготовительРасширеннаяПодсказка" id="37"/>
 				</InputField>
+				<CheckBoxField name="КомплектыПКД_Подрядчика" id="40">
+					<DataPath>Объект.Комплекты.ПКД_Подрядчика</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="КомплектыПКД_ПодрядчикаКонтекстноеМеню" id="41"/>
+					<ExtendedTooltip name="КомплектыПКД_ПодрядчикаРасширеннаяПодсказка" id="42"/>
+				</CheckBoxField>
+				<CheckBoxField name="КомплектыРКД_Подрядчика" id="43">
+					<DataPath>Объект.Комплекты.РКД_Подрядчика</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="КомплектыРКД_ПодрядчикаКонтекстноеМеню" id="44"/>
+					<ExtendedTooltip name="КомплектыРКД_ПодрядчикаРасширеннаяПодсказка" id="45"/>
+				</CheckBoxField>
 			</ChildItems>
 		</Table>
 		<LabelField name="Автор" id="7">
