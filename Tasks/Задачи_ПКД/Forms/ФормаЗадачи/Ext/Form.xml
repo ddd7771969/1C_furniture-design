@@ -724,68 +724,95 @@
 												</UsualGroup>
 											</ChildItems>
 										</UsualGroup>
-										<Button name="КнопкаНачатьВыполнениеКонструктор" id="60">
-											<Type>UsualButton</Type>
-											<Representation>Picture</Representation>
-											<Width>4</Width>
-											<Height>2</Height>
-											<CommandName>Form.Command.НачатьВыполнение</CommandName>
-											<Picture>
-												<xr:Ref>CommonPicture.Пуск50х50</xr:Ref>
-												<xr:LoadTransparent>true</xr:LoadTransparent>
-											</Picture>
-											<ExtendedTooltip name="КнопкаНачатьВыполнениеКонструкторРасширеннаяПодсказка" id="61"/>
-										</Button>
-										<Button name="КнопкаЗавершитьВыполнениеКонструктор" id="62">
-											<Type>UsualButton</Type>
-											<Representation>Picture</Representation>
-											<Width>4</Width>
-											<Height>2</Height>
-											<CommandName>Form.Command.ЗавершитьВыполнениеКонструктор</CommandName>
-											<Picture>
-												<xr:Ref>CommonPicture.Стоп50х50</xr:Ref>
-												<xr:LoadTransparent>true</xr:LoadTransparent>
-											</Picture>
-											<ExtendedTooltip name="КнопкаЗавершитьВыполнениеКонструкторРасширеннаяПодсказка" id="63"/>
-										</Button>
-										<Button name="КнопкаПриостановитьКонструктор" id="64">
-											<Type>UsualButton</Type>
-											<Representation>Picture</Representation>
-											<Width>4</Width>
-											<Height>2</Height>
-											<CommandName>Form.Command.Приостановить</CommandName>
-											<Picture>
-												<xr:Ref>CommonPicture.Пауза50х50</xr:Ref>
-												<xr:LoadTransparent>true</xr:LoadTransparent>
-											</Picture>
-											<ExtendedTooltip name="КнопкаПриостановитьКонструкторРасширеннаяПодсказка" id="65"/>
-										</Button>
-										<Button name="КнопкаСбросКонструктором" id="269">
-											<Type>UsualButton</Type>
-											<Representation>Picture</Representation>
-											<Width>4</Width>
-											<Height>2</Height>
-											<CommandName>Form.Command.СбросКонструктором</CommandName>
-											<Picture>
-												<xr:Ref>CommonPicture.Сброс50х50</xr:Ref>
-												<xr:LoadTransparent>true</xr:LoadTransparent>
-											</Picture>
-											<PictureLocation>Left</PictureLocation>
-											<ExtendedTooltip name="КнопкаСбросКонструкторомРасширеннаяПодсказка" id="270"/>
-										</Button>
-										<Button name="КнопкаОтложитьКонструктор" id="78">
-											<Type>UsualButton</Type>
-											<Visible>false</Visible>
-											<Representation>Picture</Representation>
-											<Width>4</Width>
-											<Height>2</Height>
-											<CommandName>Form.Command.Отложить</CommandName>
-											<Picture>
-												<xr:Ref>CommonPicture.Отложить50х50</xr:Ref>
-												<xr:LoadTransparent>true</xr:LoadTransparent>
-											</Picture>
-											<ExtendedTooltip name="КнопкаОтложитьКонструкторРасширеннаяПодсказка" id="79"/>
-										</Button>
+										<UsualGroup name="Группа13" id="284">
+											<Group>Vertical</Group>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="Группа13РасширеннаяПодсказка" id="285"/>
+											<ChildItems>
+												<UsualGroup name="Группа14" id="286">
+													<Group>AlwaysHorizontal</Group>
+													<Representation>None</Representation>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="Группа14РасширеннаяПодсказка" id="287"/>
+													<ChildItems>
+														<Button name="КнопкаНачатьВыполнениеКонструктор" id="60">
+															<Type>UsualButton</Type>
+															<Representation>Picture</Representation>
+															<Width>4</Width>
+															<Height>2</Height>
+															<CommandName>Form.Command.НачатьВыполнение</CommandName>
+															<Picture>
+																<xr:Ref>CommonPicture.Пуск50х50</xr:Ref>
+																<xr:LoadTransparent>true</xr:LoadTransparent>
+															</Picture>
+															<ExtendedTooltip name="КнопкаНачатьВыполнениеКонструкторРасширеннаяПодсказка" id="61"/>
+														</Button>
+														<Button name="КнопкаЗавершитьВыполнениеКонструктор" id="62">
+															<Type>UsualButton</Type>
+															<Representation>Picture</Representation>
+															<Width>4</Width>
+															<Height>2</Height>
+															<CommandName>Form.Command.ЗавершитьВыполнениеКонструктор</CommandName>
+															<Picture>
+																<xr:Ref>CommonPicture.Стоп50х50</xr:Ref>
+																<xr:LoadTransparent>true</xr:LoadTransparent>
+															</Picture>
+															<ExtendedTooltip name="КнопкаЗавершитьВыполнениеКонструкторРасширеннаяПодсказка" id="63"/>
+														</Button>
+														<Button name="КнопкаПриостановитьКонструктор" id="64">
+															<Type>UsualButton</Type>
+															<Representation>Picture</Representation>
+															<Width>4</Width>
+															<Height>2</Height>
+															<CommandName>Form.Command.Приостановить</CommandName>
+															<Picture>
+																<xr:Ref>CommonPicture.Пауза50х50</xr:Ref>
+																<xr:LoadTransparent>true</xr:LoadTransparent>
+															</Picture>
+															<ExtendedTooltip name="КнопкаПриостановитьКонструкторРасширеннаяПодсказка" id="65"/>
+														</Button>
+														<Button name="КнопкаСбросКонструктором" id="269">
+															<Type>UsualButton</Type>
+															<Representation>Picture</Representation>
+															<Width>4</Width>
+															<Height>2</Height>
+															<CommandName>Form.Command.СбросКонструктором</CommandName>
+															<Picture>
+																<xr:Ref>CommonPicture.Сброс50х50</xr:Ref>
+																<xr:LoadTransparent>true</xr:LoadTransparent>
+															</Picture>
+															<PictureLocation>Left</PictureLocation>
+															<ExtendedTooltip name="КнопкаСбросКонструкторомРасширеннаяПодсказка" id="270"/>
+														</Button>
+														<Button name="КнопкаОтложитьКонструктор" id="78">
+															<Type>UsualButton</Type>
+															<Visible>false</Visible>
+															<Representation>Picture</Representation>
+															<Width>4</Width>
+															<Height>2</Height>
+															<CommandName>Form.Command.Отложить</CommandName>
+															<Picture>
+																<xr:Ref>CommonPicture.Отложить50х50</xr:Ref>
+																<xr:LoadTransparent>true</xr:LoadTransparent>
+															</Picture>
+															<ExtendedTooltip name="КнопкаОтложитьКонструкторРасширеннаяПодсказка" id="79"/>
+														</Button>
+													</ChildItems>
+												</UsualGroup>
+												<LabelDecoration name="ДекорацияДатаОкончанияПроектирования" id="288">
+													<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Декорация дата окончания проектирования</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="ДекорацияДатаОкончанияПроектированияКонтекстноеМеню" id="289"/>
+													<ExtendedTooltip name="ДекорацияДатаОкончанияПроектированияРасширеннаяПодсказка" id="290"/>
+												</LabelDecoration>
+											</ChildItems>
+										</UsualGroup>
 									</ChildItems>
 								</UsualGroup>
 								<UsualGroup name="ГруппаКнопкиВедущегоКонструктора" id="87">
