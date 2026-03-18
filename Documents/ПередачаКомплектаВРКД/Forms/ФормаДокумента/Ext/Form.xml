@@ -9,95 +9,95 @@
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 	</Events>
 	<ChildItems>
-		<UsualGroup name="Группа2" id="68">
+		<UsualGroup name="Группа2" id="10">
 			<Group>AlwaysHorizontal</Group>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
-			<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="69"/>
+			<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="11"/>
 			<ChildItems>
-				<UsualGroup name="Группа3" id="70">
+				<UsualGroup name="Группа3" id="12">
 					<Group>Vertical</Group>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
-					<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="71"/>
+					<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="13"/>
 					<ChildItems>
-						<UsualGroup name="Группа1" id="32">
+						<UsualGroup name="Группа1" id="14">
 							<Group>AlwaysHorizontal</Group>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
-							<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="33"/>
+							<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="15"/>
 							<ChildItems>
-								<LabelField name="Номер" id="1">
+								<LabelField name="Номер" id="16">
 									<DataPath>Объект.Number</DataPath>
 									<EditMode>EnterOnInput</EditMode>
-									<ContextMenu name="НомерКонтекстноеМеню" id="2"/>
-									<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="3"/>
+									<ContextMenu name="НомерКонтекстноеМеню" id="17"/>
+									<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="18"/>
 								</LabelField>
-								<LabelField name="Дата" id="4">
+								<LabelField name="Дата" id="19">
 									<DataPath>Объект.Date</DataPath>
 									<EditMode>EnterOnInput</EditMode>
-									<ContextMenu name="ДатаКонтекстноеМеню" id="5"/>
-									<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="6"/>
+									<ContextMenu name="ДатаКонтекстноеМеню" id="20"/>
+									<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="21"/>
 								</LabelField>
 							</ChildItems>
 						</UsualGroup>
-						<InputField name="Композиция" id="7">
+						<InputField name="Композиция" id="22">
 							<DataPath>Объект.Композиция</DataPath>
 							<EditMode>EnterOnInput</EditMode>
 							<MultiLine>false</MultiLine>
 							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-							<ContextMenu name="КомпозицияКонтекстноеМеню" id="8"/>
-							<ExtendedTooltip name="КомпозицияРасширеннаяПодсказка" id="9"/>
+							<ContextMenu name="КомпозицияКонтекстноеМеню" id="23"/>
+							<ExtendedTooltip name="КомпозицияРасширеннаяПодсказка" id="24"/>
 							<Events>
 								<Event name="OnChange">КомпозицияПриИзменении</Event>
 							</Events>
 						</InputField>
 					</ChildItems>
 				</UsualGroup>
-				<InputField name="Комментарий" id="72">
+				<InputField name="Комментарий" id="25">
 					<DataPath>Объект.Комментарий</DataPath>
 					<MultiLine>true</MultiLine>
 					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-					<ContextMenu name="КомментарийКонтекстноеМеню" id="73"/>
-					<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="74"/>
+					<ContextMenu name="КомментарийКонтекстноеМеню" id="26"/>
+					<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="27"/>
 				</InputField>
 			</ChildItems>
 		</UsualGroup>
-		<Table name="Комплекты" id="40">
+		<Table name="Комплекты" id="28">
 			<Representation>List</Representation>
 			<AutoInsertNewRow>true</AutoInsertNewRow>
 			<EnableStartDrag>true</EnableStartDrag>
 			<EnableDrag>true</EnableDrag>
 			<DataPath>Комплекты</DataPath>
 			<RowFilter xsi:nil="true"/>
-			<ContextMenu name="КомплектыКонтекстноеМеню" id="41"/>
-			<AutoCommandBar name="КомплектыКоманднаяПанель" id="42">
+			<ContextMenu name="КомплектыКонтекстноеМеню" id="29"/>
+			<AutoCommandBar name="КомплектыКоманднаяПанель" id="30">
 				<Autofill>false</Autofill>
 			</AutoCommandBar>
-			<ExtendedTooltip name="КомплектыРасширеннаяПодсказка" id="43"/>
-			<SearchStringAddition name="КомплектыСтрокаПоиска" id="44">
+			<ExtendedTooltip name="КомплектыРасширеннаяПодсказка" id="31"/>
+			<SearchStringAddition name="КомплектыСтрокаПоиска" id="32">
 				<AdditionSource>
 					<Item>Комплекты</Item>
 					<Type>SearchStringRepresentation</Type>
 				</AdditionSource>
-				<ContextMenu name="КомплектыСтрокаПоискаКонтекстноеМеню" id="45"/>
-				<ExtendedTooltip name="КомплектыСтрокаПоискаРасширеннаяПодсказка" id="46"/>
+				<ContextMenu name="КомплектыСтрокаПоискаКонтекстноеМеню" id="33"/>
+				<ExtendedTooltip name="КомплектыСтрокаПоискаРасширеннаяПодсказка" id="34"/>
 			</SearchStringAddition>
-			<ViewStatusAddition name="КомплектыСостояниеПросмотра" id="47">
+			<ViewStatusAddition name="КомплектыСостояниеПросмотра" id="35">
 				<AdditionSource>
 					<Item>Комплекты</Item>
 					<Type>ViewStatusRepresentation</Type>
 				</AdditionSource>
-				<ContextMenu name="КомплектыСостояниеПросмотраКонтекстноеМеню" id="48"/>
-				<ExtendedTooltip name="КомплектыСостояниеПросмотраРасширеннаяПодсказка" id="49"/>
+				<ContextMenu name="КомплектыСостояниеПросмотраКонтекстноеМеню" id="36"/>
+				<ExtendedTooltip name="КомплектыСостояниеПросмотраРасширеннаяПодсказка" id="37"/>
 			</ViewStatusAddition>
-			<SearchControlAddition name="КомплектыУправлениеПоиском" id="50">
+			<SearchControlAddition name="КомплектыУправлениеПоиском" id="38">
 				<AdditionSource>
 					<Item>Комплекты</Item>
 					<Type>SearchControl</Type>
 				</AdditionSource>
-				<ContextMenu name="КомплектыУправлениеПоискомКонтекстноеМеню" id="51"/>
-				<ExtendedTooltip name="КомплектыУправлениеПоискомРасширеннаяПодсказка" id="52"/>
+				<ContextMenu name="КомплектыУправлениеПоискомКонтекстноеМеню" id="39"/>
+				<ExtendedTooltip name="КомплектыУправлениеПоискомРасширеннаяПодсказка" id="40"/>
 			</SearchControlAddition>
 			<Events>
 				<Event name="BeforeAddRow">КомплектыПередНачаломДобавления</Event>
@@ -105,60 +105,60 @@
 				<Event name="BeforeRowChange">КомплектыПередНачаломИзменения</Event>
 			</Events>
 			<ChildItems>
-				<InputField name="КомплектыКомплект" id="53">
+				<InputField name="КомплектыКомплект" id="41">
 					<DataPath>Комплекты.Комплект</DataPath>
 					<ReadOnly>true</ReadOnly>
 					<EditMode>EnterOnInput</EditMode>
 					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-					<ContextMenu name="КомплектыКомплектКонтекстноеМеню" id="54"/>
-					<ExtendedTooltip name="КомплектыКомплектРасширеннаяПодсказка" id="55"/>
+					<ContextMenu name="КомплектыКомплектКонтекстноеМеню" id="42"/>
+					<ExtendedTooltip name="КомплектыКомплектРасширеннаяПодсказка" id="43"/>
 				</InputField>
-				<CheckBoxField name="КомплектыСогласовать" id="56">
-					<DataPath>Комплекты.Согласовать</DataPath>
+				<CheckBoxField name="КомплектыРКД_отдельно_от_композиции" id="44">
+					<DataPath>Комплекты.РКД_отдельно_от_композиции</DataPath>
 					<EditMode>EnterOnInput</EditMode>
 					<CheckBoxType>Auto</CheckBoxType>
-					<ContextMenu name="КомплектыСогласоватьКонтекстноеМеню" id="57"/>
-					<ExtendedTooltip name="КомплектыСогласоватьРасширеннаяПодсказка" id="58"/>
+					<ContextMenu name="КомплектыРКД_отдельно_от_композицииКонтекстноеМеню" id="45"/>
+					<ExtendedTooltip name="КомплектыРКД_отдельно_от_композицииРасширеннаяПодсказка" id="46"/>
 				</CheckBoxField>
-				<CheckBoxField name="КомплектыСогласовано" id="59">
-					<DataPath>Комплекты.Согласовано</DataPath>
+				<CheckBoxField name="КомплектыРКД_создано" id="47">
+					<DataPath>Комплекты.РКД_создано</DataPath>
 					<ReadOnly>true</ReadOnly>
 					<EditMode>EnterOnInput</EditMode>
 					<CheckBoxType>Auto</CheckBoxType>
-					<ContextMenu name="КомплектыСогласованоКонтекстноеМеню" id="60"/>
-					<ExtendedTooltip name="КомплектыСогласованоРасширеннаяПодсказка" id="61"/>
+					<ContextMenu name="КомплектыРКД_созданоКонтекстноеМеню" id="48"/>
+					<ExtendedTooltip name="КомплектыРКД_созданоРасширеннаяПодсказка" id="49"/>
 				</CheckBoxField>
-				<InputField name="КомплектыТекущаяСтадия" id="62">
+				<InputField name="КомплектыТекущаяСтадия" id="50">
 					<DataPath>Комплекты.ТекущаяСтадия</DataPath>
 					<ReadOnly>true</ReadOnly>
 					<EditMode>EnterOnInput</EditMode>
 					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-					<ContextMenu name="КомплектыТекущаяСтадияКонтекстноеМеню" id="63"/>
-					<ExtendedTooltip name="КомплектыТекущаяСтадияРасширеннаяПодсказка" id="64"/>
+					<ContextMenu name="КомплектыТекущаяСтадияКонтекстноеМеню" id="51"/>
+					<ExtendedTooltip name="КомплектыТекущаяСтадияРасширеннаяПодсказка" id="52"/>
 				</InputField>
-				<InputField name="КомплектыОсновнаяСтадия" id="65">
+				<InputField name="КомплектыОсновнаяСтадия" id="53">
 					<DataPath>Комплекты.ОсновнаяСтадия</DataPath>
 					<ReadOnly>true</ReadOnly>
 					<EditMode>EnterOnInput</EditMode>
 					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-					<ContextMenu name="КомплектыОсновнаяСтадияКонтекстноеМеню" id="66"/>
-					<ExtendedTooltip name="КомплектыОсновнаяСтадияРасширеннаяПодсказка" id="67"/>
+					<ContextMenu name="КомплектыОсновнаяСтадияКонтекстноеМеню" id="54"/>
+					<ExtendedTooltip name="КомплектыОсновнаяСтадияРасширеннаяПодсказка" id="55"/>
 				</InputField>
 			</ChildItems>
 		</Table>
-		<InputField name="Автор" id="10">
+		<InputField name="Автор" id="7">
 			<DataPath>Объект.Автор</DataPath>
 			<ReadOnly>true</ReadOnly>
 			<EditMode>EnterOnInput</EditMode>
 			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-			<ContextMenu name="АвторКонтекстноеМеню" id="11"/>
-			<ExtendedTooltip name="АвторРасширеннаяПодсказка" id="12"/>
+			<ContextMenu name="АвторКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="АвторРасширеннаяПодсказка" id="9"/>
 		</InputField>
 	</ChildItems>
 	<Attributes>
 		<Attribute name="Объект" id="1">
 			<Type>
-				<v8:Type>cfg:DocumentObject.РаздельноеСогласование</v8:Type>
+				<v8:Type>cfg:DocumentObject.ПередачаКомплектаВРКД</v8:Type>
 			</Type>
 			<MainAttribute>true</MainAttribute>
 			<SavedData>true</SavedData>
@@ -188,22 +188,22 @@
 						<v8:Type>cfg:CatalogRef.ИзделияКомплект</v8:Type>
 					</Type>
 				</Column>
-				<Column name="Согласовать" id="2">
+				<Column name="РКД_отдельно_от_композиции" id="2">
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Согласовать</v8:content>
+							<v8:content>РКД отдельно от композиции</v8:content>
 						</v8:item>
 					</Title>
 					<Type>
 						<v8:Type>xs:boolean</v8:Type>
 					</Type>
 				</Column>
-				<Column name="Согласовано" id="3">
+				<Column name="РКД_создано" id="3">
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Согласовано</v8:content>
+							<v8:content>РКД создано</v8:content>
 						</v8:item>
 					</Title>
 					<Type>
@@ -234,35 +234,5 @@
 				</Column>
 			</Columns>
 		</Attribute>
-		<ConditionalAppearance>
-			<dcsset:item>
-				<dcsset:selection>
-					<dcsset:item>
-						<dcsset:field>Комплекты</dcsset:field>
-					</dcsset:item>
-				</dcsset:selection>
-				<dcsset:filter>
-					<dcsset:item xsi:type="dcsset:FilterItemGroup">
-						<dcsset:groupType>OrGroup</dcsset:groupType>
-						<dcsset:item xsi:type="dcsset:FilterItemComparison">
-							<dcsset:left xsi:type="dcscor:Field">Комплекты.ОсновнаяСтадия</dcsset:left>
-							<dcsset:comparisonType>NotEqual</dcsset:comparisonType>
-							<dcsset:right xsi:type="dcscor:DesignTimeValue">Перечисление.ОсновныеЭтапы.ПКД</dcsset:right>
-						</dcsset:item>
-						<dcsset:item xsi:type="dcsset:FilterItemComparison">
-							<dcsset:left xsi:type="dcscor:Field">Комплекты.Согласовано</dcsset:left>
-							<dcsset:comparisonType>Equal</dcsset:comparisonType>
-							<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
-						</dcsset:item>
-					</dcsset:item>
-				</dcsset:filter>
-				<dcsset:appearance>
-					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
-						<dcscor:parameter>ЦветФона</dcscor:parameter>
-						<dcscor:value xsi:type="v8ui:Color">#FFE6EA</dcscor:value>
-					</dcscor:item>
-				</dcsset:appearance>
-			</dcsset:item>
-		</ConditionalAppearance>
 	</Attributes>
 </Form>
