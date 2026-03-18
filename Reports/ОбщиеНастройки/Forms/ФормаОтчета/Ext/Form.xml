@@ -874,6 +874,12 @@
 											<ContextMenu name="ТегКомментарийКонтекстноеМеню" id="233"/>
 											<ExtendedTooltip name="ТегКомментарийРасширеннаяПодсказка" id="234"/>
 										</InputField>
+										<InputField name="ТегОжиданиеСогласования" id="260">
+											<DataPath>ТегОжиданиеСогласования</DataPath>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="ТегОжиданиеСогласованияКонтекстноеМеню" id="261"/>
+											<ExtendedTooltip name="ТегОжиданиеСогласованияРасширеннаяПодсказка" id="262"/>
+										</InputField>
 									</ChildItems>
 								</UsualGroup>
 							</ChildItems>
@@ -1660,6 +1666,17 @@
 					<v8:FractionDigits>0</v8:FractionDigits>
 					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
 				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ТегОжиданиеСогласования" id="50">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тег ожидание согласования</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Теги</v8:Type>
 			</Type>
 		</Attribute>
 	</Attributes>

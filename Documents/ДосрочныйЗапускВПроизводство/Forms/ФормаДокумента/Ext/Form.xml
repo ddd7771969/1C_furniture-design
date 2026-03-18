@@ -79,6 +79,9 @@
 				<ContextMenu name="КомплектыУправлениеПоискомКонтекстноеМеню" id="24"/>
 				<ExtendedTooltip name="КомплектыУправлениеПоискомРасширеннаяПодсказка" id="25"/>
 			</SearchControlAddition>
+			<Events>
+				<Event name="BeforeAddRow">КомплектыПередНачаломДобавления</Event>
+			</Events>
 			<ChildItems>
 				<LabelField name="КомплектыНомерСтроки" id="26">
 					<DataPath>Объект.ЗадачиРКД.LineNumber</DataPath>
