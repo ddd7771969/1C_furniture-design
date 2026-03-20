@@ -15,6 +15,17 @@
 		</right>
 	</object>
 	<object>
+		<name>Document.ПередачаПодрядчикуКомплектов.TabularSection.ИзделияКомплекты</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
 		<name>InformationRegister.ТелеграммСлужебныеДанные</name>
 		<right>
 			<name>Read</name>
@@ -200,13 +211,6 @@
 		</right>
 	</object>
 	<object>
-		<name>Document.ЗапускВРаботу.Attribute.ПриложениеКДоговору</name>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
 		<name>AccumulationRegister.ПотребностьПредварительнойНоменклатуры</name>
 		<right>
 			<name>Read</name>
@@ -258,13 +262,6 @@
 		</right>
 	</object>
 	<object>
-		<name>Document.ЗапускВРаботу.Attribute.ДокументЗакрыт</name>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
 		<name>InformationRegister.ТелеграммДоступныеКоманды</name>
 		<right>
 			<name>Read</name>
@@ -273,13 +270,6 @@
 		<right>
 			<name>Update</name>
 			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>Document.ЗапускВРаботу.Attribute.ВедущийКонструкторДатаПодписи</name>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
 		</right>
 	</object>
 	<object>
@@ -504,13 +494,6 @@
 		</right>
 	</object>
 	<object>
-		<name>Document.ЗапускВРаботу.Attribute.ДизайнерПодписьАвтор</name>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
 		<name>InformationRegister.ПричиныИзмененияДатКомплекта</name>
 		<right>
 			<name>Read</name>
@@ -534,13 +517,6 @@
 	</object>
 	<object>
 		<name>Task.СоздатьМодельГабаритногоЧертежа.Attribute.Проект</name>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
-		<name>Document.ЗапускВРаботу.TabularSection.Комплекты.Attribute.Комментарий</name>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
@@ -595,13 +571,6 @@
 		</right>
 	</object>
 	<object>
-		<name>Document.ЗапускВРаботу.Attribute.ВедущийКонструкторПодписьАвтор</name>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
 		<name>Report.ИзделияПроекта</name>
 		<right>
 			<name>Use</name>
@@ -616,17 +585,6 @@
 		<name>Catalog.Приоритеты</name>
 		<right>
 			<name>Read</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>View</name>
-			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>Report.ОтчетПоПодрядам</name>
-		<right>
-			<name>Use</name>
 			<value>true</value>
 		</right>
 		<right>
@@ -1102,13 +1060,6 @@
 		</right>
 	</object>
 	<object>
-		<name>Document.ЗапускВРаботу.TabularSection.Комплекты</name>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
 		<name>InformationRegister.СсылкиНаНоменклатуруПоставщика</name>
 		<right>
 			<name>Read</name>
@@ -1146,13 +1097,6 @@
 		<right>
 			<name>View</name>
 			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>Document.ЗапускВРаботу.Attribute.Автор</name>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
 		</right>
 	</object>
 	<object>
@@ -1378,13 +1322,6 @@
 		</right>
 	</object>
 	<object>
-		<name>Document.ЗапускВРаботу.TabularSection.Комплекты.Attribute.СофтРКД</name>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
 		<name>InformationRegister.ПакетыИнформацииПриЗапуске</name>
 		<right>
 			<name>Read</name>
@@ -1396,34 +1333,58 @@
 		</right>
 	</object>
 	<object>
-		<name>Document.ПередачаПодрядчикуКомплектов</name>
-		<right>
-			<name>Read</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>Insert</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>Update</name>
-			<value>true</value>
-		</right>
+		<name>Document.ПередачаПодрядчикуКомплектов.StandardAttribute.Posted</name>
 		<right>
 			<name>View</name>
-			<value>true</value>
-		</right>
-		<right>
-			<name>InteractiveInsert</name>
-			<value>true</value>
+			<value>false</value>
 		</right>
 		<right>
 			<name>Edit</name>
-			<value>true</value>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Document.ПередачаПодрядчикуКомплектов.StandardAttribute.Ref</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
 		</right>
 		<right>
-			<name>InteractiveChangeOfPosted</name>
-			<value>true</value>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Document.ПередачаПодрядчикуКомплектов.StandardAttribute.DeletionMark</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Document.ПередачаПодрядчикуКомплектов.StandardAttribute.Date</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Document.ПередачаПодрядчикуКомплектов.StandardAttribute.Number</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
 		</right>
 	</object>
 	<object>
@@ -1658,6 +1619,17 @@
 		</right>
 	</object>
 	<object>
+		<name>Document.ПередачаКомплектаВРКД</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>InformationRegister.СоставыГруппПользователей</name>
 		<right>
 			<name>Read</name>
@@ -1854,7 +1826,35 @@
 			<value>true</value>
 		</right>
 		<right>
+			<name>Insert</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Update</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Posting</name>
+			<value>true</value>
+		</right>
+		<right>
 			<name>View</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveInsert</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractivePosting</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveChangeOfPosted</name>
 			<value>true</value>
 		</right>
 		<right>
@@ -1863,35 +1863,11 @@
 		</right>
 	</object>
 	<object>
-		<name>Document.ЗапускВРаботу.StandardAttribute.Posted</name>
+		<name>Document.ПередачаПодрядчикуКомплектов.Attribute.Подрядчик</name>
 		<right>
-			<name>Edit</name>
+			<name>View</name>
 			<value>false</value>
 		</right>
-	</object>
-	<object>
-		<name>Document.ЗапускВРаботу.StandardAttribute.Ref</name>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
-		<name>Document.ЗапускВРаботу.StandardAttribute.DeletionMark</name>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
-		<name>Document.ЗапускВРаботу.StandardAttribute.Date</name>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
-		<name>Document.ЗапускВРаботу.StandardAttribute.Number</name>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
@@ -2081,6 +2057,17 @@
 		</right>
 	</object>
 	<object>
+		<name>Document.ПлановаяГотовностьПомещений</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>InformationRegister.НапоминанияПользователя</name>
 		<right>
 			<name>Read</name>
@@ -2132,6 +2119,53 @@
 		</right>
 	</object>
 	<object>
+		<name>Document.ВозвратСПодряда</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Insert</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Update</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Posting</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveInsert</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractivePosting</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractivePostingRegular</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveChangeOfPosted</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InputByString</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>InformationRegister.ИсторияМуниципальнойИерархии</name>
 		<right>
 			<name>Read</name>
@@ -2140,6 +2174,17 @@
 		<right>
 			<name>Update</name>
 			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Document.ПередачаПодрядчикуКомплектов.Attribute.Комментарий</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
 		</right>
 	</object>
 	<object>
@@ -2157,6 +2202,18 @@
 			<value>true</value>
 		</right>
 		<right>
+			<name>Delete</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Posting</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>UndoPosting</name>
+			<value>true</value>
+		</right>
+		<right>
 			<name>View</name>
 			<value>true</value>
 		</right>
@@ -2166,6 +2223,26 @@
 		</right>
 		<right>
 			<name>Edit</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveSetDeletionMark</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveClearDeletionMark</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractivePosting</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractivePostingRegular</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveUndoPosting</name>
 			<value>true</value>
 		</right>
 		<right>
@@ -2181,6 +2258,61 @@
 		</right>
 		<right>
 			<name>Update</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Document.ИзменениеДатыВозвратаИзПодряда</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Insert</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Update</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Posting</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>UndoPosting</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveInsert</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractivePosting</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractivePostingRegular</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveUndoPosting</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveChangeOfPosted</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InputByString</name>
 			<value>true</value>
 		</right>
 	</object>
@@ -2207,6 +2339,17 @@
 		</right>
 	</object>
 	<object>
+		<name>Document.ПередачаПодрядчикуКомплектов.Attribute.Автор</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
 		<name>Document.ВыездНаЗамер.TabularSection.ГабаритныеЧертежи.Attribute.Комментарий</name>
 		<right>
 			<name>Edit</name>
@@ -2218,6 +2361,77 @@
 		<right>
 			<name>Edit</name>
 			<value>false</value>
+		</right>
+	</object>
+	<object>
+		<name>Document.КомплектыПодрядчикамПлан</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Insert</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Update</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Delete</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Posting</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>UndoPosting</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveInsert</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveSetDeletionMark</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveClearDeletionMark</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveDeleteMarked</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractivePosting</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractivePostingRegular</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveUndoPosting</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveChangeOfPosted</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InputByString</name>
+			<value>true</value>
 		</right>
 	</object>
 	<object>
@@ -2253,6 +2467,18 @@
 			<value>true</value>
 		</right>
 		<right>
+			<name>Delete</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Posting</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>UndoPosting</name>
+			<value>true</value>
+		</right>
+		<right>
 			<name>View</name>
 			<value>true</value>
 		</right>
@@ -2265,7 +2491,46 @@
 			<value>true</value>
 		</right>
 		<right>
+			<name>InteractiveSetDeletionMark</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveClearDeletionMark</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveDeleteMarked</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractivePosting</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractivePostingRegular</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveUndoPosting</name>
+			<value>true</value>
+		</right>
+		<right>
 			<name>InteractiveChangeOfPosted</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InputByString</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Document.РаздельноеСогласование</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
 			<value>true</value>
 		</right>
 	</object>
@@ -2470,6 +2735,17 @@
 		</right>
 	</object>
 	<object>
+		<name>AccumulationRegister.КомплектыУПодрядчика</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Update</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
 		<name>InformationRegister.ЗемельныеУчастки</name>
 		<right>
 			<name>Read</name>
@@ -2640,14 +2916,11 @@
 		</right>
 	</object>
 	<object>
-		<name>Document.ЗапускВРаботу.Attribute.ДизайнерДатаПодписи</name>
+		<name>Document.ПередачаПодрядчикуКомплектов.TabularSection.ИзделияКомплекты.Attribute.ВозвратНаСклад</name>
 		<right>
-			<name>Edit</name>
+			<name>View</name>
 			<value>false</value>
 		</right>
-	</object>
-	<object>
-		<name>Document.ЗапускВРаботу.TabularSection.Комплекты.Attribute.Комплект</name>
 		<right>
 			<name>Edit</name>
 			<value>false</value>
@@ -2738,20 +3011,6 @@
 		<right>
 			<name>Update</name>
 			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>Document.ЗапускВРаботу.Attribute.Основание</name>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
-		</right>
-	</object>
-	<object>
-		<name>Document.ЗапускВРаботу.Attribute.Проект</name>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
 		</right>
 	</object>
 	<object>
@@ -2848,6 +3107,77 @@
 		</right>
 		<right>
 			<name>Update</name>
+			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Document.ПолучениеОтПодрядчика</name>
+		<right>
+			<name>Read</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Insert</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Update</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Delete</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Posting</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>UndoPosting</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>View</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveInsert</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveSetDeletionMark</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveClearDeletionMark</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveDeleteMarked</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractivePosting</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractivePostingRegular</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveUndoPosting</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InteractiveChangeOfPosted</name>
+			<value>true</value>
+		</right>
+		<right>
+			<name>InputByString</name>
 			<value>true</value>
 		</right>
 	</object>
@@ -3091,6 +3421,17 @@
 		</right>
 	</object>
 	<object>
+		<name>Document.ПередачаПодрядчикуКомплектов.TabularSection.ИзделияКомплекты.Attribute.ДатаВозвратаКомплекта</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
+		</right>
+	</object>
+	<object>
 		<name>InformationRegister.ИдентификаторыОбъектовВерсийРасширений</name>
 		<right>
 			<name>Read</name>
@@ -3323,6 +3664,17 @@
 		<right>
 			<name>View</name>
 			<value>true</value>
+		</right>
+	</object>
+	<object>
+		<name>Document.ПередачаПодрядчикуКомплектов.TabularSection.ИзделияКомплекты.Attribute.ИзделиеКомплект</name>
+		<right>
+			<name>View</name>
+			<value>false</value>
+		</right>
+		<right>
+			<name>Edit</name>
+			<value>false</value>
 		</right>
 	</object>
 	<object>
@@ -3566,13 +3918,6 @@
 		<right>
 			<name>Update</name>
 			<value>true</value>
-		</right>
-	</object>
-	<object>
-		<name>Document.ЗапускВРаботу.TabularSection.Комплекты.Attribute.СофтПКД</name>
-		<right>
-			<name>Edit</name>
-			<value>false</value>
 		</right>
 	</object>
 	<object>

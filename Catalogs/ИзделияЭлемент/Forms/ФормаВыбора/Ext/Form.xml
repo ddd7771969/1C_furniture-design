@@ -155,7 +155,7 @@
 		ПО СправочникИзделияЭлемент.Ссылка = ДанныеИзделияЗаказчика.ИзделиеЗаказчика
 ГДЕ
 	ВЫБОР
-			КОГДА &amp;Объект = ЗНАЧЕНИЕ(Справочник.Проекты.ПустаяСсылка)
+			КОГДА &amp;Проект = ЗНАЧЕНИЕ(Справочник.Проекты.ПустаяСсылка)
 				ТОГДА ИСТИНА
 			ИНАЧЕ СправочникИзделияЭлемент.Проект = &amp;Проект
 					И СправочникИзделияЭлемент.ЭтоГруппа = ЛОЖЬ
@@ -202,10 +202,6 @@
 					<dcssch:field>Комментарий</dcssch:field>
 				</Field>
 				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>Сделка</dcssch:dataPath>
-					<dcssch:field>Сделка</dcssch:field>
-				</Field>
-				<Field xsi:type="dcssch:DataSetFieldField">
 					<dcssch:dataPath>Помещения</dcssch:dataPath>
 					<dcssch:field>Помещения</dcssch:field>
 				</Field>
@@ -222,31 +218,29 @@
 					<dcssch:field>Актуальность</dcssch:field>
 				</Field>
 				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>НаименованиеСАртикулом</dcssch:dataPath>
-					<dcssch:field>НаименованиеСАртикулом</dcssch:field>
+					<dcssch:dataPath>Проект</dcssch:dataPath>
+					<dcssch:field>Проект</dcssch:field>
 				</Field>
 				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>ПриложениеКДоговору</dcssch:dataPath>
-					<dcssch:field>ПриложениеКДоговору</dcssch:field>
+					<dcssch:dataPath>ЕдиницаИзмерени</dcssch:dataPath>
+					<dcssch:field>ЕдиницаИзмерени</dcssch:field>
 				</Field>
 				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>ИзделиеЗаказчика</dcssch:dataPath>
-					<dcssch:field>ИзделиеЗаказчика</dcssch:field>
+					<dcssch:dataPath>Количество</dcssch:dataPath>
+					<dcssch:field>Количество</dcssch:field>
 				</Field>
-				<Parameter>
-					<dcssch:name>Объект</dcssch:name>
-					<dcssch:title xsi:type="v8:LocalStringType">
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Объект</v8:content>
-						</v8:item>
-					</dcssch:title>
-					<dcssch:valueType>
-						<v8:Type>cfg:CatalogRef.Проекты</v8:Type>
-					</dcssch:valueType>
-					<dcssch:value xsi:nil="true"/>
-					<dcssch:useRestriction>true</dcssch:useRestriction>
-				</Parameter>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>КодИзделия</dcssch:dataPath>
+					<dcssch:field>КодИзделия</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>НаименованиеБезАртикула</dcssch:dataPath>
+					<dcssch:field>НаименованиеБезАртикула</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>НомерВерсииКанбан</dcssch:dataPath>
+					<dcssch:field>НомерВерсииКанбан</dcssch:field>
+				</Field>
 				<Parameter>
 					<dcssch:name>Сделка</dcssch:name>
 					<dcssch:title xsi:type="v8:LocalStringType">
@@ -261,7 +255,21 @@
 					<dcssch:value xsi:nil="true"/>
 					<dcssch:useRestriction>true</dcssch:useRestriction>
 				</Parameter>
-				<MainTable>InformationRegister.ДанныеИзделияЗаказчика</MainTable>
+				<Parameter>
+					<dcssch:name>Проект</dcssch:name>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Проект</v8:content>
+						</v8:item>
+					</dcssch:title>
+					<dcssch:valueType>
+						<v8:Type>cfg:CatalogRef.Проекты</v8:Type>
+					</dcssch:valueType>
+					<dcssch:value xsi:nil="true"/>
+					<dcssch:useRestriction>true</dcssch:useRestriction>
+				</Parameter>
+				<MainTable>Catalog.ИзделияЭлемент</MainTable>
 				<ListSettings>
 					<dcsset:filter>
 						<dcsset:viewMode>Normal</dcsset:viewMode>
