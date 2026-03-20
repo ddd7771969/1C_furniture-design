@@ -70,6 +70,11 @@
 				<ContextMenu name="КомплектыУправлениеПоискомКонтекстноеМеню" id="14"/>
 				<ExtendedTooltip name="КомплектыУправлениеПоискомРасширеннаяПодсказка" id="15"/>
 			</SearchControlAddition>
+			<Events>
+				<Event name="BeforeAddRow">КомплектыПередНачаломДобавления</Event>
+				<Event name="BeforeDeleteRow">КомплектыПередУдалением</Event>
+				<Event name="BeforeRowChange">КомплектыПередНачаломИзменения</Event>
+			</Events>
 			<ChildItems>
 				<InputField name="КомплектыКомплект" id="16">
 					<DataPath>Комплекты.Комплект</DataPath>

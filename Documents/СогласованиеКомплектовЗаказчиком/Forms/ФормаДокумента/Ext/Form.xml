@@ -81,6 +81,7 @@
 			</SearchControlAddition>
 			<Events>
 				<Event name="BeforeAddRow">КомплектыПередНачаломДобавления</Event>
+				<Event name="BeforeRowChange">КомплектыПередНачаломИзменения</Event>
 			</Events>
 			<ChildItems>
 				<LabelField name="КомплектыНомерСтроки" id="26">
@@ -142,4 +143,17 @@
 			<Action>Добавить</Action>
 		</Command>
 	</Commands>
+	<CommandInterface>
+		<NavigationPanel>
+			<Item>
+				<Command>3:e4290736-7689-411f-8c99-88b7d0913383</Command>
+				<Type>Auto</Type>
+				<CommandGroup>FormNavigationPanelGoTo</CommandGroup>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+		</NavigationPanel>
+	</CommandInterface>
 </Form>
