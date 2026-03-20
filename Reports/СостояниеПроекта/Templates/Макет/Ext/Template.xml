@@ -163,7 +163,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Согласовано</v8:content>
+							<v8:content>Согласовано (Архитектор/ Заказчик)</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -409,7 +409,7 @@
 			<c>
 				<c>
 					<f>36</f>
-					<parameter>Согласовано</parameter>
+					<parameter>СогласованоАрхитектор</parameter>
 				</c>
 			</c>
 			<c>
@@ -438,7 +438,7 @@
 			</c>
 			<c>
 				<c>
-					<f>36</f>
+					<f>39</f>
 					<parameter>КрайСогласования</parameter>
 				</c>
 			</c>
@@ -456,13 +456,13 @@
 			</c>
 			<c>
 				<c>
-					<f>39</f>
+					<f>40</f>
 					<parameter>КрайМонтаж</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>40</f>
+					<f>41</f>
 				</c>
 			</c>
 		</row>
@@ -483,7 +483,7 @@
 			</c>
 			<c>
 				<c>
-					<f>41</f>
+					<f>42</f>
 					<parameter>СтатусПомещения</parameter>
 				</c>
 			</c>
@@ -545,12 +545,12 @@
 			<c>
 				<i>3</i>
 				<c>
-					<f>42</f>
+					<f>43</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>42</f>
+					<f>43</f>
 				</c>
 			</c>
 			<c>
@@ -584,7 +584,7 @@
 			<c>
 				<i>1</i>
 				<c>
-					<f>43</f>
+					<f>44</f>
 					<parameter>ПроектНаименование</parameter>
 				</c>
 			</c>
@@ -913,7 +913,7 @@
 		<width>221</width>
 	</format>
 	<format>
-		<width>98</width>
+		<width>87</width>
 	</format>
 	<format>
 		<width>93</width>
@@ -1263,6 +1263,20 @@
 		<bottomBorder>1</bottomBorder>
 		<width>33</width>
 		<horizontalAlignment>Left</horizontalAlignment>
+		<verticalAlignment>Center</verticalAlignment>
+		<textPlacement>Wrap</textPlacement>
+		<fillType>Parameter</fillType>
+		<format>
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>ДФ=dd.MM.yyyy</v8:content>
+			</v8:item>
+		</format>
+	</format>
+	<format>
+		<border>1</border>
+		<width>33</width>
+		<horizontalAlignment>Center</horizontalAlignment>
 		<verticalAlignment>Center</verticalAlignment>
 		<textPlacement>Wrap</textPlacement>
 		<fillType>Parameter</fillType>
