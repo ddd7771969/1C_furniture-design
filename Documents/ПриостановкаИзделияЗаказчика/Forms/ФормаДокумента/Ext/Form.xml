@@ -5,6 +5,7 @@
 	<RepostOnWrite>true</RepostOnWrite>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
 	<Events>
+		<Event name="AfterWriteAtServer">ПослеЗаписиНаСервере</Event>
 		<Event name="OnOpen">ПриОткрытии</Event>
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 	</Events>
@@ -114,7 +115,7 @@
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>ИзделиеЗ заказчика</v8:content>
+							<v8:content>Изделие заказчика</v8:content>
 						</v8:item>
 					</Title>
 					<EditMode>EnterOnInput</EditMode>
