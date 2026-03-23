@@ -849,6 +849,12 @@
 											<ContextMenu name="ОжиданиеГЧКонтекстноеМеню" id="252"/>
 											<ExtendedTooltip name="ОжиданиеГЧРасширеннаяПодсказка" id="253"/>
 										</InputField>
+										<InputField name="ХранениеНаСкладе" id="263">
+											<DataPath>ХранениеНаСкладе</DataPath>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="ХранениеНаСкладеКонтекстноеМеню" id="264"/>
+											<ExtendedTooltip name="ХранениеНаСкладеРасширеннаяПодсказка" id="265"/>
+										</InputField>
 									</ChildItems>
 								</UsualGroup>
 								<UsualGroup name="ГруппаКанбанОбщие" id="230">
@@ -1677,6 +1683,17 @@
 			</Title>
 			<Type>
 				<v8:Type>cfg:CatalogRef.Теги</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ХранениеНаСкладе" id="51">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Хранение на складе</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.СтадииКомплекта</v8:Type>
 			</Type>
 		</Attribute>
 	</Attributes>

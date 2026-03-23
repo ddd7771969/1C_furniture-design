@@ -1,0 +1,513 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ФормаЗаполнитьКомплекты" id="27">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ЗаполнитьКомплекты</CommandName>
+				<ExtendedTooltip name="ФормаЗаполнитьКомплектыРасширеннаяПодсказка" id="28"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Группа2" id="29">
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="30"/>
+			<ChildItems>
+				<UsualGroup name="Группа3" id="31">
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="32"/>
+					<ChildItems>
+						<UsualGroup name="Группа4" id="43">
+							<Group>AlwaysHorizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа4РасширеннаяПодсказка" id="44"/>
+							<ChildItems>
+								<Table name="КомплектыДляПередачи" id="1">
+									<Representation>List</Representation>
+									<TitleLocation>Top</TitleLocation>
+									<AutoInsertNewRow>true</AutoInsertNewRow>
+									<EnableStartDrag>true</EnableStartDrag>
+									<EnableDrag>true</EnableDrag>
+									<DataPath>КомплектыДляПередачи</DataPath>
+									<RowFilter xsi:nil="true"/>
+									<ContextMenu name="КомплектыДляПередачиКонтекстноеМеню" id="2"/>
+									<AutoCommandBar name="КомплектыДляПередачиКоманднаяПанель" id="3">
+										<Autofill>false</Autofill>
+									</AutoCommandBar>
+									<ExtendedTooltip name="КомплектыДляПередачиРасширеннаяПодсказка" id="4"/>
+									<SearchStringAddition name="КомплектыДляПередачиСтрокаПоиска" id="5">
+										<AdditionSource>
+											<Item>КомплектыДляПередачи</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="КомплектыДляПередачиСтрокаПоискаКонтекстноеМеню" id="6"/>
+										<ExtendedTooltip name="КомплектыДляПередачиСтрокаПоискаРасширеннаяПодсказка" id="7"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="КомплектыДляПередачиСостояниеПросмотра" id="8">
+										<AdditionSource>
+											<Item>КомплектыДляПередачи</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="КомплектыДляПередачиСостояниеПросмотраКонтекстноеМеню" id="9"/>
+										<ExtendedTooltip name="КомплектыДляПередачиСостояниеПросмотраРасширеннаяПодсказка" id="10"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="КомплектыДляПередачиУправлениеПоиском" id="11">
+										<AdditionSource>
+											<Item>КомплектыДляПередачи</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="КомплектыДляПередачиУправлениеПоискомКонтекстноеМеню" id="12"/>
+										<ExtendedTooltip name="КомплектыДляПередачиУправлениеПоискомРасширеннаяПодсказка" id="13"/>
+									</SearchControlAddition>
+									<Events>
+										<Event name="BeforeAddRow">КомплектыДляПередачиПередНачаломДобавления</Event>
+										<Event name="BeforeDeleteRow">КомплектыДляПередачиПередУдалением</Event>
+										<Event name="OnActivateRow">КомплектыДляПередачиПриАктивизацииСтроки</Event>
+										<Event name="BeforeRowChange">КомплектыДляПередачиПередНачаломИзменения</Event>
+									</Events>
+									<ChildItems>
+										<InputField name="КомплектыДляОтгрузкиКомплекты" id="14">
+											<DataPath>КомплектыДляПередачи.Комплекты</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="КомплектыДляОтгрузкиКомплектыКонтекстноеМеню" id="15"/>
+											<ExtendedTooltip name="КомплектыДляОтгрузкиКомплектыРасширеннаяПодсказка" id="16"/>
+										</InputField>
+										<CheckBoxField name="КомплектыДляОтгрузкиЧастичноОтгружен" id="17">
+											<DataPath>КомплектыДляПередачи.ЧастичноПередан</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<EditMode>EnterOnInput</EditMode>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="КомплектыДляОтгрузкиЧастичноОтгруженКонтекстноеМеню" id="18"/>
+											<ExtendedTooltip name="КомплектыДляОтгрузкиЧастичноОтгруженРасширеннаяПодсказка" id="19"/>
+										</CheckBoxField>
+									</ChildItems>
+								</Table>
+								<UsualGroup name="ГруппаКнопкиПереноса" id="69">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа кнопки переноса</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа кнопки переноса</v8:content>
+										</v8:item>
+									</ToolTip>
+									<GroupVerticalAlign>Center</GroupVerticalAlign>
+									<Group>Vertical</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаКнопкиПереносаРасширеннаяПодсказка" id="70"/>
+									<ChildItems>
+										<Button name="ПеренестиКомплект" id="67">
+											<Type>UsualButton</Type>
+											<CommandName>Form.Command.ПеренестиКомплект</CommandName>
+											<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>&gt;&gt;</v8:content>
+												</v8:item>
+											</Title>
+											<ExtendedTooltip name="ПеренестиКомплектРасширеннаяПодсказка" id="68"/>
+										</Button>
+										<Button name="ПеренестиЧастьКомплекта" id="71">
+											<Type>UsualButton</Type>
+											<CommandName>Form.Command.ПеренестиЧастьКомплекта</CommandName>
+											<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>&gt;</v8:content>
+												</v8:item>
+											</Title>
+											<ExtendedTooltip name="ПеренестиЧастьКомплектаРасширеннаяПодсказка" id="72"/>
+										</Button>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="Группа5" id="75">
+									<Group>Vertical</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="Группа5РасширеннаяПодсказка" id="76"/>
+									<ChildItems>
+										<InputField name="МестоХранения" id="77">
+											<DataPath>МестоХранения</DataPath>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="МестоХраненияКонтекстноеМеню" id="78"/>
+											<ExtendedTooltip name="МестоХраненияРасширеннаяПодсказка" id="79"/>
+										</InputField>
+										<Table name="КомплектыВДокумент" id="45">
+											<Representation>List</Representation>
+											<TitleLocation>Top</TitleLocation>
+											<AutoInsertNewRow>true</AutoInsertNewRow>
+											<EnableStartDrag>true</EnableStartDrag>
+											<EnableDrag>true</EnableDrag>
+											<DataPath>КомплектыВДокумент</DataPath>
+											<RowFilter xsi:nil="true"/>
+											<ContextMenu name="КомплектыВДокументКонтекстноеМеню" id="46"/>
+											<AutoCommandBar name="КомплектыВДокументКоманднаяПанель" id="47">
+												<Autofill>false</Autofill>
+												<ChildItems>
+													<Button name="КомплектыВДокументСоздатьДокументПередачиНаСклад" id="73">
+														<Type>CommandBarButton</Type>
+														<CommandName>Form.Command.СоздатьДокументПередачиНаСклад</CommandName>
+														<ExtendedTooltip name="КомплектыВДокументСоздатьДокументПередачиНаСкладРасширеннаяПодсказка" id="74"/>
+													</Button>
+												</ChildItems>
+											</AutoCommandBar>
+											<ExtendedTooltip name="КомплектыВДокументРасширеннаяПодсказка" id="48"/>
+											<SearchStringAddition name="КомплектыВДокументСтрокаПоиска" id="49">
+												<AdditionSource>
+													<Item>КомплектыВДокумент</Item>
+													<Type>SearchStringRepresentation</Type>
+												</AdditionSource>
+												<ContextMenu name="КомплектыВДокументСтрокаПоискаКонтекстноеМеню" id="50"/>
+												<ExtendedTooltip name="КомплектыВДокументСтрокаПоискаРасширеннаяПодсказка" id="51"/>
+											</SearchStringAddition>
+											<ViewStatusAddition name="КомплектыВДокументСостояниеПросмотра" id="52">
+												<AdditionSource>
+													<Item>КомплектыВДокумент</Item>
+													<Type>ViewStatusRepresentation</Type>
+												</AdditionSource>
+												<ContextMenu name="КомплектыВДокументСостояниеПросмотраКонтекстноеМеню" id="53"/>
+												<ExtendedTooltip name="КомплектыВДокументСостояниеПросмотраРасширеннаяПодсказка" id="54"/>
+											</ViewStatusAddition>
+											<SearchControlAddition name="КомплектыВДокументУправлениеПоиском" id="55">
+												<AdditionSource>
+													<Item>КомплектыВДокумент</Item>
+													<Type>SearchControl</Type>
+												</AdditionSource>
+												<ContextMenu name="КомплектыВДокументУправлениеПоискомКонтекстноеМеню" id="56"/>
+												<ExtendedTooltip name="КомплектыВДокументУправлениеПоискомРасширеннаяПодсказка" id="57"/>
+											</SearchControlAddition>
+											<Events>
+												<Event name="BeforeAddRow">КомплектыВДокументПередНачаломДобавления</Event>
+											</Events>
+											<ChildItems>
+												<InputField name="КомплектыВДокументКомплекты" id="58">
+													<DataPath>КомплектыВДокумент.Комплекты</DataPath>
+													<ReadOnly>true</ReadOnly>
+													<EditMode>EnterOnInput</EditMode>
+													<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+													<ContextMenu name="КомплектыВДокументКомплектыКонтекстноеМеню" id="59"/>
+													<ExtendedTooltip name="КомплектыВДокументКомплектыРасширеннаяПодсказка" id="60"/>
+												</InputField>
+												<InputField name="КомплектыВДокументКомментарий" id="61">
+													<DataPath>КомплектыВДокумент.Комментарий</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+													<ContextMenu name="КомплектыВДокументКомментарийКонтекстноеМеню" id="62"/>
+													<ExtendedTooltip name="КомплектыВДокументКомментарийРасширеннаяПодсказка" id="63"/>
+												</InputField>
+												<CheckBoxField name="КомплектыВДокументЧастичноПередан" id="64">
+													<DataPath>КомплектыВДокумент.ЧастичноПередан</DataPath>
+													<ReadOnly>true</ReadOnly>
+													<EditMode>EnterOnInput</EditMode>
+													<CheckBoxType>Auto</CheckBoxType>
+													<ContextMenu name="КомплектыВДокументЧастичноПереданКонтекстноеМеню" id="65"/>
+													<ExtendedTooltip name="КомплектыВДокументЧастичноПереданРасширеннаяПодсказка" id="66"/>
+												</CheckBoxField>
+											</ChildItems>
+										</Table>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="Группа1" id="23">
+							<Group>AlwaysHorizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="24"/>
+							<ChildItems>
+								<InputField name="ВыбранныйКомплект" id="20">
+									<DataPath>ВыбранныйКомплект</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ВыбранныйКомплектКонтекстноеМеню" id="21"/>
+									<ExtendedTooltip name="ВыбранныйКомплектРасширеннаяПодсказка" id="22"/>
+								</InputField>
+								<Button name="ИнформацияОПередаче" id="25">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.ИнформацияОПередаче</CommandName>
+									<ExtendedTooltip name="ИнформацияОПередачеРасширеннаяПодсказка" id="26"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаИнформацияОПередаче" id="33">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа информация о передаче</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа информация о передаче</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаИнформацияОПередачеРасширеннаяПодсказка" id="34"/>
+					<ChildItems>
+						<Button name="ЗакрытьИнформации" id="35">
+							<Type>UsualButton</Type>
+							<Representation>Picture</Representation>
+							<CommandName>Form.Command.ЗакрытьИнформации</CommandName>
+							<Picture>
+								<xr:Ref>StdPicture.Close</xr:Ref>
+								<xr:LoadTransparent>true</xr:LoadTransparent>
+							</Picture>
+							<ExtendedTooltip name="ЗакрытьИнформацииРасширеннаяПодсказка" id="36"/>
+						</Button>
+						<HTMLDocumentField name="ВыводИнформацияОПередаче" id="37">
+							<DataPath>ВыводИнформацияОПередаче</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<ContextMenu name="ВыводИнформацияОПередачеКонтекстноеМеню" id="38"/>
+							<ExtendedTooltip name="ВыводИнформацияОПередачеРасширеннаяПодсказка" id="39"/>
+						</HTMLDocumentField>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ПередачаГотовойПродукцииНаСклад</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="КомплектыДляПередачи" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Комплекты для передачи</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Комплекты" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Комплекты</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ИзделияКомплект</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ЧастичноПередан" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Частично передан</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ВыбранныйКомплект" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбранный комплект</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.ИзделияКомплект</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ВыводИнформацияОПередаче" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вывод информация о передаче</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="КомплектыВДокумент" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Комплекты в документ</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Комплекты" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Комплекты</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ИзделияКомплект</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Комментарий" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Комментарий</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ЧастичноПередан" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Частично передан</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="МестоХранения" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Место хранения</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.МестаХраненияГотовойПродукции</v8:Type>
+			</Type>
+			<FillCheck>ShowError</FillCheck>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ИнформацияОПередаче" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Информация о передаче</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Информация о передаче</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ИнформацияОПередачи</Action>
+		</Command>
+		<Command name="ЗаполнитьКомплекты" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить комплекты</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить комплекты</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗаполнитьКомплекты</Action>
+		</Command>
+		<Command name="ЗакрытьИнформации" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Закрыть информации</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Закрыть информации</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗакрытьИнформации</Action>
+		</Command>
+		<Command name="ПеренестиКомплект" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перенести комплект</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перенести комплект</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПеренестиКомплект</Action>
+		</Command>
+		<Command name="ПеренестиЧастьКомплекта" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перенести часть комплекта</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Перенести часть комплекта</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПеренестиЧастьКомплекта</Action>
+		</Command>
+		<Command name="СоздатьДокументПередачиНаСклад" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать документ передачи на склад</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать документ передачи на склад</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СоздатьДокументПередачиНаСклад</Action>
+		</Command>
+	</Commands>
+</Form>
