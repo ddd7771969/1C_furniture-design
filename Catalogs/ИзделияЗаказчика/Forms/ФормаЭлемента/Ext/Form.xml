@@ -297,10 +297,11 @@
 						<PictureField name="АдресКартинки" id="170">
 							<DataPath>АдресКартинки</DataPath>
 							<TitleLocation>None</TitleLocation>
+							<Height>8</Height>
 							<ContextMenu name="АдресКартинкиКонтекстноеМеню" id="171"/>
 							<ExtendedTooltip name="АдресКартинкиРасширеннаяПодсказка" id="172"/>
 						</PictureField>
-						<Table name="СписокКомплектов" id="173">
+						<Table name="СписокКомплектов" id="198">
 							<Representation>List</Representation>
 							<Header>false</Header>
 							<HorizontalLines>false</HorizontalLines>
@@ -308,47 +309,47 @@
 							<AutoInsertNewRow>true</AutoInsertNewRow>
 							<DataPath>СписокКомплектов</DataPath>
 							<RowPictureDataPath>СписокКомплектов.Picture</RowPictureDataPath>
-							<ContextMenu name="СписокКомплектовКонтекстноеМеню" id="174"/>
-							<AutoCommandBar name="СписокКомплектовКоманднаяПанель" id="175">
+							<ContextMenu name="СписокКомплектовКонтекстноеМеню" id="199"/>
+							<AutoCommandBar name="СписокКомплектовКоманднаяПанель" id="200">
 								<Autofill>false</Autofill>
 							</AutoCommandBar>
-							<ExtendedTooltip name="СписокКомплектовРасширеннаяПодсказка" id="176"/>
-							<SearchStringAddition name="СписокКомплектовСтрокаПоиска" id="177">
+							<ExtendedTooltip name="СписокКомплектовРасширеннаяПодсказка" id="201"/>
+							<SearchStringAddition name="СписокКомплектовСтрокаПоиска" id="202">
 								<AdditionSource>
 									<Item>СписокКомплектов</Item>
 									<Type>SearchStringRepresentation</Type>
 								</AdditionSource>
-								<ContextMenu name="СписокКомплектовСтрокаПоискаКонтекстноеМеню" id="178"/>
-								<ExtendedTooltip name="СписокКомплектовСтрокаПоискаРасширеннаяПодсказка" id="179"/>
+								<ContextMenu name="СписокКомплектовСтрокаПоискаКонтекстноеМеню" id="203"/>
+								<ExtendedTooltip name="СписокКомплектовСтрокаПоискаРасширеннаяПодсказка" id="204"/>
 							</SearchStringAddition>
-							<ViewStatusAddition name="СписокКомплектовСостояниеПросмотра" id="180">
+							<ViewStatusAddition name="СписокКомплектовСостояниеПросмотра" id="205">
 								<AdditionSource>
 									<Item>СписокКомплектов</Item>
 									<Type>ViewStatusRepresentation</Type>
 								</AdditionSource>
-								<ContextMenu name="СписокКомплектовСостояниеПросмотраКонтекстноеМеню" id="181"/>
-								<ExtendedTooltip name="СписокКомплектовСостояниеПросмотраРасширеннаяПодсказка" id="182"/>
+								<ContextMenu name="СписокКомплектовСостояниеПросмотраКонтекстноеМеню" id="206"/>
+								<ExtendedTooltip name="СписокКомплектовСостояниеПросмотраРасширеннаяПодсказка" id="207"/>
 							</ViewStatusAddition>
-							<SearchControlAddition name="СписокКомплектовУправлениеПоиском" id="183">
+							<SearchControlAddition name="СписокКомплектовУправлениеПоиском" id="208">
 								<AdditionSource>
 									<Item>СписокКомплектов</Item>
 									<Type>SearchControl</Type>
 								</AdditionSource>
-								<ContextMenu name="СписокКомплектовУправлениеПоискомКонтекстноеМеню" id="184"/>
-								<ExtendedTooltip name="СписокКомплектовУправлениеПоискомРасширеннаяПодсказка" id="185"/>
+								<ContextMenu name="СписокКомплектовУправлениеПоискомКонтекстноеМеню" id="209"/>
+								<ExtendedTooltip name="СписокКомплектовУправлениеПоискомРасширеннаяПодсказка" id="210"/>
 							</SearchControlAddition>
 							<Events>
-								<Event name="BeforeAddRow">СписокКомплектовПередНачаломДобавления</Event>
+								<Event name="BeforeAddRow">ИзделияЭлементПередНачаломДобавления</Event>
 								<Event name="BeforeDeleteRow">СписокКомплектовПередУдалением</Event>
 								<Event name="BeforeRowChange">СписокКомплектовПередНачаломИзменения</Event>
 							</Events>
 							<ChildItems>
-								<InputField name="СписокКомплектовЗначение" id="186">
+								<LabelField name="СписокКомплектовЗначение" id="211">
 									<DataPath>СписокКомплектов.Value</DataPath>
 									<EditMode>EnterOnInput</EditMode>
-									<ContextMenu name="СписокКомплектовЗначениеКонтекстноеМеню" id="187"/>
-									<ExtendedTooltip name="СписокКомплектовЗначениеРасширеннаяПодсказка" id="188"/>
-								</InputField>
+									<ContextMenu name="СписокКомплектовЗначениеКонтекстноеМеню" id="212"/>
+									<ExtendedTooltip name="СписокКомплектовЗначениеРасширеннаяПодсказка" id="213"/>
+								</LabelField>
 							</ChildItems>
 						</Table>
 					</ChildItems>
@@ -392,8 +393,6 @@
 			<Settings xsi:type="v8:TypeDescription">
 				<v8:Type>cfg:CatalogRef.ИзделияКомплект</v8:Type>
 				<v8:Type>cfg:CatalogRef.ПриложенияКДоговорам</v8:Type>
-				<v8:Type>cfg:CatalogRef.ПроизводственныеКомплекты</v8:Type>
-				<v8:TypeId>db8b1537-29c3-4552-8a74-58ca2b7ea93e</v8:TypeId>
 			</Settings>
 		</Attribute>
 		<Attribute name="Актуальность" id="5">
@@ -475,6 +474,16 @@
 				<Type>Auto</Type>
 				<CommandGroup>FormNavigationPanelGoTo</CommandGroup>
 				<Index>3</Index>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>InformationRegister.ГлабольныеСостояниеКомплекта.StandardCommand.OpenByValue.ИзделиеЗаказчика</Command>
+				<Type>Auto</Type>
+				<CommandGroup>FormNavigationPanelGoTo</CommandGroup>
+				<Index>4</Index>
 				<DefaultVisible>false</DefaultVisible>
 				<Visible>
 					<xr:Common>false</xr:Common>
