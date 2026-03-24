@@ -1,34 +1,34 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
-	<Document uuid="669b2387-4cb8-462d-9c9a-99c45b2d6ed7">
+	<Document uuid="25183639-1b6c-4fa3-ba17-0d186b6a014d">
 		<InternalInfo>
-			<xr:GeneratedType name="DocumentObject.ОтменаПроизводства" category="Object">
-				<xr:TypeId>9761fbe8-2fa5-4731-b8a0-1c2004ee547e</xr:TypeId>
-				<xr:ValueId>3e32cba2-1c4e-4113-92cd-c1d2c12ed0be</xr:ValueId>
+			<xr:GeneratedType name="DocumentObject.ПриостановкаИзделияКомплект" category="Object">
+				<xr:TypeId>1a28cb57-bbee-4a1b-b209-05238ab145ad</xr:TypeId>
+				<xr:ValueId>1a71ea75-b7b2-4d58-90f4-186999c2f6f0</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="DocumentRef.ОтменаПроизводства" category="Ref">
-				<xr:TypeId>cae7bbbe-43e7-4b9a-81a4-377ed9885b55</xr:TypeId>
-				<xr:ValueId>e9f177a7-46ad-46d3-b2fe-eb13f445d861</xr:ValueId>
+			<xr:GeneratedType name="DocumentRef.ПриостановкаИзделияКомплект" category="Ref">
+				<xr:TypeId>bca87de2-3f32-4eb2-9da9-6cb2eebf3c89</xr:TypeId>
+				<xr:ValueId>ba71edf9-a697-4bde-82b6-2dc32bb4d018</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="DocumentSelection.ОтменаПроизводства" category="Selection">
-				<xr:TypeId>6d8e0abf-9707-44bc-8f07-11cc451d9927</xr:TypeId>
-				<xr:ValueId>b2ed03e6-105c-4aa6-a2dd-be963934ac58</xr:ValueId>
+			<xr:GeneratedType name="DocumentSelection.ПриостановкаИзделияКомплект" category="Selection">
+				<xr:TypeId>2fa92c1e-ef93-472c-a2fe-ad917c1cb03a</xr:TypeId>
+				<xr:ValueId>f0e45b76-4b56-45c9-b11c-603e7837c73d</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="DocumentList.ОтменаПроизводства" category="List">
-				<xr:TypeId>0d46cb94-a29d-436b-b765-66a58f7ab1de</xr:TypeId>
-				<xr:ValueId>bd016047-f2e4-43c5-8227-7773af73bb2d</xr:ValueId>
+			<xr:GeneratedType name="DocumentList.ПриостановкаИзделияКомплект" category="List">
+				<xr:TypeId>01ef2105-e92b-443d-a876-49b67815c9e5</xr:TypeId>
+				<xr:ValueId>44d825b5-760a-4c3d-911f-114a13ebd52a</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="DocumentManager.ОтменаПроизводства" category="Manager">
-				<xr:TypeId>e0845553-3ca6-49b0-8bf0-ada49e858103</xr:TypeId>
-				<xr:ValueId>a7b92af5-f6d1-4602-b9e7-730d1157c877</xr:ValueId>
+			<xr:GeneratedType name="DocumentManager.ПриостановкаИзделияКомплект" category="Manager">
+				<xr:TypeId>39d3bbab-5ce9-4f5f-bbde-af6d2c17a0b2</xr:TypeId>
+				<xr:ValueId>9d185d8c-ee7b-4bc2-bdd0-b7dd68170db2</xr:ValueId>
 			</xr:GeneratedType>
 		</InternalInfo>
 		<Properties>
-			<Name>ОтменаПроизводства</Name>
+			<Name>ПриостановкаИзделияКомплект</Name>
 			<Synonym>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Отмена производства</v8:content>
+					<v8:content>Приостановка изделия комплект</v8:content>
 				</v8:item>
 			</Synonym>
 			<Comment/>
@@ -40,24 +40,161 @@
 			<NumberPeriodicity>Nonperiodical</NumberPeriodicity>
 			<CheckUnique>true</CheckUnique>
 			<Autonumbering>true</Autonumbering>
+			<StandardAttributes>
+				<xr:StandardAttribute name="Posted">
+					<xr:LinkByType/>
+					<xr:FillChecking>DontCheck</xr:FillChecking>
+					<xr:MultiLine>false</xr:MultiLine>
+					<xr:FillFromFillingValue>false</xr:FillFromFillingValue>
+					<xr:CreateOnInput>Auto</xr:CreateOnInput>
+					<xr:TypeReductionMode>TransformValues</xr:TypeReductionMode>
+					<xr:MaxValue xsi:nil="true"/>
+					<xr:ToolTip/>
+					<xr:ExtendedEdit>false</xr:ExtendedEdit>
+					<xr:Format/>
+					<xr:ChoiceForm/>
+					<xr:QuickChoice>Auto</xr:QuickChoice>
+					<xr:ChoiceHistoryOnInput>Auto</xr:ChoiceHistoryOnInput>
+					<xr:EditFormat/>
+					<xr:PasswordMode>false</xr:PasswordMode>
+					<xr:DataHistory>Use</xr:DataHistory>
+					<xr:MarkNegatives>false</xr:MarkNegatives>
+					<xr:MinValue xsi:nil="true"/>
+					<xr:Synonym/>
+					<xr:Comment/>
+					<xr:FullTextSearch>Use</xr:FullTextSearch>
+					<xr:ChoiceParameterLinks/>
+					<xr:FillValue xsi:nil="true"/>
+					<xr:Mask/>
+					<xr:ChoiceParameters/>
+				</xr:StandardAttribute>
+				<xr:StandardAttribute name="Ref">
+					<xr:LinkByType/>
+					<xr:FillChecking>DontCheck</xr:FillChecking>
+					<xr:MultiLine>false</xr:MultiLine>
+					<xr:FillFromFillingValue>false</xr:FillFromFillingValue>
+					<xr:CreateOnInput>Auto</xr:CreateOnInput>
+					<xr:TypeReductionMode>TransformValues</xr:TypeReductionMode>
+					<xr:MaxValue xsi:nil="true"/>
+					<xr:ToolTip/>
+					<xr:ExtendedEdit>false</xr:ExtendedEdit>
+					<xr:Format/>
+					<xr:ChoiceForm/>
+					<xr:QuickChoice>Auto</xr:QuickChoice>
+					<xr:ChoiceHistoryOnInput>Auto</xr:ChoiceHistoryOnInput>
+					<xr:EditFormat/>
+					<xr:PasswordMode>false</xr:PasswordMode>
+					<xr:DataHistory>Use</xr:DataHistory>
+					<xr:MarkNegatives>false</xr:MarkNegatives>
+					<xr:MinValue xsi:nil="true"/>
+					<xr:Synonym/>
+					<xr:Comment/>
+					<xr:FullTextSearch>Use</xr:FullTextSearch>
+					<xr:ChoiceParameterLinks/>
+					<xr:FillValue xsi:nil="true"/>
+					<xr:Mask/>
+					<xr:ChoiceParameters/>
+				</xr:StandardAttribute>
+				<xr:StandardAttribute name="DeletionMark">
+					<xr:LinkByType/>
+					<xr:FillChecking>DontCheck</xr:FillChecking>
+					<xr:MultiLine>false</xr:MultiLine>
+					<xr:FillFromFillingValue>false</xr:FillFromFillingValue>
+					<xr:CreateOnInput>Auto</xr:CreateOnInput>
+					<xr:TypeReductionMode>TransformValues</xr:TypeReductionMode>
+					<xr:MaxValue xsi:nil="true"/>
+					<xr:ToolTip/>
+					<xr:ExtendedEdit>false</xr:ExtendedEdit>
+					<xr:Format/>
+					<xr:ChoiceForm/>
+					<xr:QuickChoice>Auto</xr:QuickChoice>
+					<xr:ChoiceHistoryOnInput>Auto</xr:ChoiceHistoryOnInput>
+					<xr:EditFormat/>
+					<xr:PasswordMode>false</xr:PasswordMode>
+					<xr:DataHistory>Use</xr:DataHistory>
+					<xr:MarkNegatives>false</xr:MarkNegatives>
+					<xr:MinValue xsi:nil="true"/>
+					<xr:Synonym/>
+					<xr:Comment/>
+					<xr:FullTextSearch>Use</xr:FullTextSearch>
+					<xr:ChoiceParameterLinks/>
+					<xr:FillValue xsi:nil="true"/>
+					<xr:Mask/>
+					<xr:ChoiceParameters/>
+				</xr:StandardAttribute>
+				<xr:StandardAttribute name="Date">
+					<xr:LinkByType/>
+					<xr:FillChecking>ShowError</xr:FillChecking>
+					<xr:MultiLine>false</xr:MultiLine>
+					<xr:FillFromFillingValue>false</xr:FillFromFillingValue>
+					<xr:CreateOnInput>Auto</xr:CreateOnInput>
+					<xr:TypeReductionMode>TransformValues</xr:TypeReductionMode>
+					<xr:MaxValue xsi:nil="true"/>
+					<xr:ToolTip/>
+					<xr:ExtendedEdit>false</xr:ExtendedEdit>
+					<xr:Format/>
+					<xr:ChoiceForm/>
+					<xr:QuickChoice>Auto</xr:QuickChoice>
+					<xr:ChoiceHistoryOnInput>Auto</xr:ChoiceHistoryOnInput>
+					<xr:EditFormat/>
+					<xr:PasswordMode>false</xr:PasswordMode>
+					<xr:DataHistory>Use</xr:DataHistory>
+					<xr:MarkNegatives>false</xr:MarkNegatives>
+					<xr:MinValue xsi:nil="true"/>
+					<xr:Synonym/>
+					<xr:Comment/>
+					<xr:FullTextSearch>Use</xr:FullTextSearch>
+					<xr:ChoiceParameterLinks/>
+					<xr:FillValue xsi:nil="true"/>
+					<xr:Mask/>
+					<xr:ChoiceParameters/>
+				</xr:StandardAttribute>
+				<xr:StandardAttribute name="Number">
+					<xr:LinkByType/>
+					<xr:FillChecking>DontCheck</xr:FillChecking>
+					<xr:MultiLine>false</xr:MultiLine>
+					<xr:FillFromFillingValue>false</xr:FillFromFillingValue>
+					<xr:CreateOnInput>Auto</xr:CreateOnInput>
+					<xr:TypeReductionMode>TransformValues</xr:TypeReductionMode>
+					<xr:MaxValue xsi:nil="true"/>
+					<xr:ToolTip/>
+					<xr:ExtendedEdit>false</xr:ExtendedEdit>
+					<xr:Format/>
+					<xr:ChoiceForm/>
+					<xr:QuickChoice>Auto</xr:QuickChoice>
+					<xr:ChoiceHistoryOnInput>Auto</xr:ChoiceHistoryOnInput>
+					<xr:EditFormat/>
+					<xr:PasswordMode>false</xr:PasswordMode>
+					<xr:DataHistory>Use</xr:DataHistory>
+					<xr:MarkNegatives>false</xr:MarkNegatives>
+					<xr:MinValue xsi:nil="true"/>
+					<xr:Synonym/>
+					<xr:Comment/>
+					<xr:FullTextSearch>Use</xr:FullTextSearch>
+					<xr:ChoiceParameterLinks/>
+					<xr:FillValue xsi:nil="true"/>
+					<xr:Mask/>
+					<xr:ChoiceParameters/>
+				</xr:StandardAttribute>
+			</StandardAttributes>
 			<Characteristics/>
 			<BasedOn/>
 			<InputByString>
-				<xr:Field>Document.ОтменаПроизводства.StandardAttribute.Number</xr:Field>
+				<xr:Field>Document.ПриостановкаИзделияКомплект.StandardAttribute.Number</xr:Field>
 			</InputByString>
 			<CreateOnInput>Use</CreateOnInput>
 			<SearchStringModeOnInputByString>Begin</SearchStringModeOnInputByString>
 			<FullTextSearchOnInputByString>DontUse</FullTextSearchOnInputByString>
 			<ChoiceDataGetModeOnInputByString>Directly</ChoiceDataGetModeOnInputByString>
-			<DefaultObjectForm/>
+			<DefaultObjectForm>Document.ПриостановкаИзделияКомплект.Form.ФормаДокумента</DefaultObjectForm>
 			<DefaultListForm/>
 			<DefaultChoiceForm/>
 			<AuxiliaryObjectForm/>
 			<AuxiliaryListForm/>
 			<AuxiliaryChoiceForm/>
 			<Posting>Allow</Posting>
-			<RealTimePosting>Allow</RealTimePosting>
-			<RegisterRecordsDeletion>AutoDeleteOnUnpost</RegisterRecordsDeletion>
+			<RealTimePosting>Deny</RealTimePosting>
+			<RegisterRecordsDeletion>AutoDelete</RegisterRecordsDeletion>
 			<RegisterRecordsWritingOnPost>WriteSelected</RegisterRecordsWritingOnPost>
 			<SequenceFilling>AutoFill</SequenceFilling>
 			<RegisterRecords>
@@ -80,7 +217,7 @@
 			<ExecuteAfterWriteDataHistoryVersionProcessing>false</ExecuteAfterWriteDataHistoryVersionProcessing>
 		</Properties>
 		<ChildObjects>
-			<Attribute uuid="582c08ea-65f6-40be-b020-659b2dba288b">
+			<Attribute uuid="e0fc2a4c-0d8a-44ac-bf9d-6404cba032f9">
 				<Properties>
 					<Name>Автор</Name>
 					<Synonym>
@@ -119,13 +256,13 @@
 					<DataHistory>Use</DataHistory>
 				</Properties>
 			</Attribute>
-			<Attribute uuid="18add235-dee6-40fb-847a-f49db2f2058d">
+			<Attribute uuid="428c2ccb-1416-4262-a196-d2895571e664">
 				<Properties>
-					<Name>ДатаОтмены</Name>
+					<Name>ДатаПриостановки</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Дата отмены</v8:content>
+							<v8:content>Дата приостановки</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -161,7 +298,7 @@
 					<DataHistory>Use</DataHistory>
 				</Properties>
 			</Attribute>
-			<Attribute uuid="78369a63-7ea8-4717-a4b5-3306289631f1">
+			<Attribute uuid="b5c5ca44-3d49-4bf6-85e2-47edf58da8e4">
 				<Properties>
 					<Name>Комментарий</Name>
 					<Synonym>
@@ -204,7 +341,7 @@
 					<DataHistory>Use</DataHistory>
 				</Properties>
 			</Attribute>
-			<Attribute uuid="0af6fb76-72a5-468d-b96e-f9b43d76ad28">
+			<Attribute uuid="dbdf9cf6-b24c-4ac8-a749-046ccb1e6ecd">
 				<Properties>
 					<Name>Проект</Name>
 					<Synonym>
@@ -243,15 +380,16 @@
 					<DataHistory>Use</DataHistory>
 				</Properties>
 			</Attribute>
-			<TabularSection uuid="44e57d77-aa44-46fc-b1c5-e3cd3129e5fe">
+			<Form>ФормаДокумента</Form>
+			<TabularSection uuid="636fd7f4-7a44-4c3b-b7ea-5f96ed879bae">
 				<InternalInfo>
-					<xr:GeneratedType name="DocumentTabularSection.ОтменаПроизводства.ИзделияКомплект" category="TabularSection">
-						<xr:TypeId>4d2a5455-8bda-4b1a-b647-ba5da9a169b4</xr:TypeId>
-						<xr:ValueId>f33a7305-5c22-40be-bc68-3211ec727f21</xr:ValueId>
+					<xr:GeneratedType name="DocumentTabularSection.ПриостановкаИзделияКомплект.ИзделияКомплект" category="TabularSection">
+						<xr:TypeId>de09e64b-935c-46dd-bd7a-36c1cba368c5</xr:TypeId>
+						<xr:ValueId>5a4dcc05-314c-4b5d-a4e1-75e000c6f77b</xr:ValueId>
 					</xr:GeneratedType>
-					<xr:GeneratedType name="DocumentTabularSectionRow.ОтменаПроизводства.ИзделияКомплект" category="TabularSectionRow">
-						<xr:TypeId>540a2469-8114-4469-9868-a038d778a765</xr:TypeId>
-						<xr:ValueId>a806adc8-2d29-4923-ab4f-36a57e9146a2</xr:ValueId>
+					<xr:GeneratedType name="DocumentTabularSectionRow.ПриостановкаИзделияКомплект.ИзделияКомплект" category="TabularSectionRow">
+						<xr:TypeId>af7d8a0b-82bb-4b4b-950a-66b89e679e97</xr:TypeId>
+						<xr:ValueId>4cafd7a6-0dc9-4a91-9162-f602c6a4afac</xr:ValueId>
 					</xr:GeneratedType>
 				</InternalInfo>
 				<Properties>
@@ -297,7 +435,7 @@
 					<LineNumberLength>9</LineNumberLength>
 				</Properties>
 				<ChildObjects>
-					<Attribute uuid="a6cb72d9-a2f5-4970-8236-1e09444a0f20">
+					<Attribute uuid="d0755c55-8dfc-4db5-a6a9-63f6f5a98af6">
 						<Properties>
 							<Name>ИзделиеКомплект</Name>
 							<Synonym>
@@ -334,7 +472,7 @@
 							<DataHistory>Use</DataHistory>
 						</Properties>
 					</Attribute>
-					<Attribute uuid="f9a26ee7-2b5d-436b-8625-7eaf4a98c47c">
+					<Attribute uuid="35a1c32f-5c46-47d8-b791-d8fecfba4c71">
 						<Properties>
 							<Name>Комментарий</Name>
 							<Synonym>

@@ -2,33 +2,33 @@
 <MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
 	<Document uuid="67e6d9d4-2cd2-46ba-b54a-3b0b6d604695">
 		<InternalInfo>
-			<xr:GeneratedType name="DocumentObject.ПродолжениеПроизволства" category="Object">
+			<xr:GeneratedType name="DocumentObject.ПродолжениеПроизводства" category="Object">
 				<xr:TypeId>f5e516f5-64e2-4479-9260-81ff95f04505</xr:TypeId>
 				<xr:ValueId>069719e1-4ddb-47ad-a428-7d025057dc56</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="DocumentRef.ПродолжениеПроизволства" category="Ref">
+			<xr:GeneratedType name="DocumentRef.ПродолжениеПроизводства" category="Ref">
 				<xr:TypeId>2e35241c-cc7e-401d-b3b9-14ece494fb8e</xr:TypeId>
 				<xr:ValueId>a01748ba-79bc-442b-8c0c-4c273183fc5b</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="DocumentSelection.ПродолжениеПроизволства" category="Selection">
+			<xr:GeneratedType name="DocumentSelection.ПродолжениеПроизводства" category="Selection">
 				<xr:TypeId>11f5ea99-8dea-4d5b-a0ba-b7bee36dcf59</xr:TypeId>
 				<xr:ValueId>29f749bb-cefa-4f05-b3f2-9f815b38786f</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="DocumentList.ПродолжениеПроизволства" category="List">
+			<xr:GeneratedType name="DocumentList.ПродолжениеПроизводства" category="List">
 				<xr:TypeId>702371cc-49ea-4dbc-b126-797b618b514c</xr:TypeId>
 				<xr:ValueId>9bf88d63-938c-49ab-8cbc-becf890bc0b3</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="DocumentManager.ПродолжениеПроизволства" category="Manager">
+			<xr:GeneratedType name="DocumentManager.ПродолжениеПроизводства" category="Manager">
 				<xr:TypeId>5b8c75bc-2d90-4d1c-9bbd-13cae29b0687</xr:TypeId>
 				<xr:ValueId>78ea3b13-59d3-4865-b228-e00192619428</xr:ValueId>
 			</xr:GeneratedType>
 		</InternalInfo>
 		<Properties>
-			<Name>ПродолжениеПроизволства</Name>
+			<Name>ПродолжениеПроизводства</Name>
 			<Synonym>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Продолжение произволства</v8:content>
+					<v8:content>Продолжение производства</v8:content>
 				</v8:item>
 			</Synonym>
 			<Comment/>
@@ -43,7 +43,7 @@
 			<Characteristics/>
 			<BasedOn/>
 			<InputByString>
-				<xr:Field>Document.ПродолжениеПроизволства.StandardAttribute.Number</xr:Field>
+				<xr:Field>Document.ПродолжениеПроизводства.StandardAttribute.Number</xr:Field>
 			</InputByString>
 			<CreateOnInput>Use</CreateOnInput>
 			<SearchStringModeOnInputByString>Begin</SearchStringModeOnInputByString>
@@ -162,18 +162,60 @@
 					<DataHistory>Use</DataHistory>
 				</Properties>
 			</Attribute>
-			<Attribute uuid="30a2939b-0322-4419-b1e1-7914fc367af7">
+			<Attribute uuid="c1176536-be04-49f3-bebc-23d2dd592940">
 				<Properties>
-					<Name>ПриложениеКДоговору</Name>
+					<Name>Проект</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Приложение к договору</v8:content>
+							<v8:content>Проект</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
 					<Type>
-						<v8:Type>cfg:CatalogRef.ПриложенияКДоговорам</v8:Type>
+						<v8:Type>cfg:CatalogRef.Проекты</v8:Type>
+					</Type>
+					<PasswordMode>false</PasswordMode>
+					<Format/>
+					<EditFormat/>
+					<ToolTip/>
+					<MarkNegatives>false</MarkNegatives>
+					<Mask/>
+					<MultiLine>false</MultiLine>
+					<ExtendedEdit>false</ExtendedEdit>
+					<MinValue xsi:nil="true"/>
+					<MaxValue xsi:nil="true"/>
+					<FillFromFillingValue>false</FillFromFillingValue>
+					<FillValue xsi:nil="true"/>
+					<FillChecking>ShowError</FillChecking>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<ChoiceParameterLinks/>
+					<ChoiceParameters/>
+					<QuickChoice>Auto</QuickChoice>
+					<CreateOnInput>Auto</CreateOnInput>
+					<ChoiceForm/>
+					<LinkByType/>
+					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+					<Indexing>DontIndex</Indexing>
+					<FullTextSearch>Use</FullTextSearch>
+					<DataHistory>Use</DataHistory>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="ac985048-e544-46cd-879a-1d55a9523950">
+				<Properties>
+					<Name>ДатаПродолжения</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата продолжения</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
 					</Type>
 					<PasswordMode>false</PasswordMode>
 					<Format/>
@@ -203,21 +245,21 @@
 			</Attribute>
 			<TabularSection uuid="2272582a-7a77-47de-ae42-325fd528d443">
 				<InternalInfo>
-					<xr:GeneratedType name="DocumentTabularSection.ПродолжениеПроизволства.ИзделияЗаказчика" category="TabularSection">
+					<xr:GeneratedType name="DocumentTabularSection.ПродолжениеПроизводства.ИзделияКомплект" category="TabularSection">
 						<xr:TypeId>81d81be7-1394-4942-9866-ad1c015cb73a</xr:TypeId>
 						<xr:ValueId>02a25ef6-ce60-4f71-8323-1a1184d9c6a1</xr:ValueId>
 					</xr:GeneratedType>
-					<xr:GeneratedType name="DocumentTabularSectionRow.ПродолжениеПроизволства.ИзделияЗаказчика" category="TabularSectionRow">
+					<xr:GeneratedType name="DocumentTabularSectionRow.ПродолжениеПроизводства.ИзделияКомплект" category="TabularSectionRow">
 						<xr:TypeId>5fbaca26-e7a5-4e67-81a9-84ec27a4ce18</xr:TypeId>
 						<xr:ValueId>895ea860-346c-4ae2-a8cc-0c216c8c4f23</xr:ValueId>
 					</xr:GeneratedType>
 				</InternalInfo>
 				<Properties>
-					<Name>ИзделияЗаказчика</Name>
+					<Name>ИзделияКомплект</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Изделия заказчика</v8:content>
+							<v8:content>Изделия комплект</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -257,16 +299,16 @@
 				<ChildObjects>
 					<Attribute uuid="1577bdb1-00ae-49b3-a77a-43b5d38c0e1b">
 						<Properties>
-							<Name>ИзделиеЗаказчика</Name>
+							<Name>ИзделиеКомплект</Name>
 							<Synonym>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
-									<v8:content>Изделие заказчика</v8:content>
+									<v8:content>Изделие комплект</v8:content>
 								</v8:item>
 							</Synonym>
 							<Comment/>
 							<Type>
-								<v8:Type>cfg:CatalogRef.ИзделияЗаказчика</v8:Type>
+								<v8:Type>cfg:CatalogRef.ИзделияКомплект</v8:Type>
 							</Type>
 							<PasswordMode>false</PasswordMode>
 							<Format/>
