@@ -5,8 +5,6 @@
 	<RepostOnWrite>true</RepostOnWrite>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
 	<Events>
-		<Event name="AfterWrite">ПослеЗаписи</Event>
-		<Event name="OnOpen">ПриОткрытии</Event>
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 	</Events>
 	<ChildItems>
@@ -50,9 +48,17 @@
 						</InputField>
 						<InputField name="Проект" id="53">
 							<DataPath>Объект.Проект</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<DropListButton>false</DropListButton>
+							<ChoiceButton>true</ChoiceButton>
+							<ChoiceButtonRepresentation>ShowInInputField</ChoiceButtonRepresentation>
 							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<TextEdit>false</TextEdit>
 							<ContextMenu name="ПроектКонтекстноеМеню" id="54"/>
 							<ExtendedTooltip name="ПроектРасширеннаяПодсказка" id="55"/>
+							<Events>
+								<Event name="StartChoice">ПроектНачалоВыбора</Event>
+							</Events>
 						</InputField>
 					</ChildItems>
 				</UsualGroup>
@@ -67,43 +73,42 @@
 				</InputField>
 			</ChildItems>
 		</UsualGroup>
-		<Table name="ИзделияЗаказчика" id="16">
+		<Table name="ИзделияКомплект" id="16">
 			<Representation>List</Representation>
 			<AutoInsertNewRow>true</AutoInsertNewRow>
 			<EnableStartDrag>true</EnableStartDrag>
 			<EnableDrag>true</EnableDrag>
 			<DataPath>Объект.ИзделияКомплект</DataPath>
 			<RowFilter xsi:nil="true"/>
-			<ContextMenu name="ИзделияЗаказчикаКонтекстноеМеню" id="17"/>
-			<AutoCommandBar name="ИзделияЗаказчикаКоманднаяПанель" id="18"/>
-			<ExtendedTooltip name="ИзделияЗаказчикаРасширеннаяПодсказка" id="19"/>
-			<SearchStringAddition name="ИзделияЗаказчикаСтрокаПоиска" id="20">
+			<ContextMenu name="ИзделияКомплектКонтекстноеМеню" id="17"/>
+			<AutoCommandBar name="ИзделияКомплектКоманднаяПанель" id="18"/>
+			<ExtendedTooltip name="ИзделияКомплектРасширеннаяПодсказка" id="19"/>
+			<SearchStringAddition name="ИзделияКомплектСтрокаПоиска" id="20">
 				<AdditionSource>
-					<Item>ИзделияЗаказчика</Item>
+					<Item>ИзделияКомплект</Item>
 					<Type>SearchStringRepresentation</Type>
 				</AdditionSource>
-				<ContextMenu name="ИзделияЗаказчикаСтрокаПоискаКонтекстноеМеню" id="21"/>
-				<ExtendedTooltip name="ИзделияЗаказчикаСтрокаПоискаРасширеннаяПодсказка" id="22"/>
+				<ContextMenu name="ИзделияКомплектСтрокаПоискаКонтекстноеМеню" id="21"/>
+				<ExtendedTooltip name="ИзделияКомплектСтрокаПоискаРасширеннаяПодсказка" id="22"/>
 			</SearchStringAddition>
-			<ViewStatusAddition name="ИзделияЗаказчикаСостояниеПросмотра" id="23">
+			<ViewStatusAddition name="ИзделияКомплектСостояниеПросмотра" id="23">
 				<AdditionSource>
-					<Item>ИзделияЗаказчика</Item>
+					<Item>ИзделияКомплект</Item>
 					<Type>ViewStatusRepresentation</Type>
 				</AdditionSource>
-				<ContextMenu name="ИзделияЗаказчикаСостояниеПросмотраКонтекстноеМеню" id="24"/>
-				<ExtendedTooltip name="ИзделияЗаказчикаСостояниеПросмотраРасширеннаяПодсказка" id="25"/>
+				<ContextMenu name="ИзделияКомплектСостояниеПросмотраКонтекстноеМеню" id="24"/>
+				<ExtendedTooltip name="ИзделияКомплектСостояниеПросмотраРасширеннаяПодсказка" id="25"/>
 			</ViewStatusAddition>
-			<SearchControlAddition name="ИзделияЗаказчикаУправлениеПоиском" id="26">
+			<SearchControlAddition name="ИзделияКомплектУправлениеПоиском" id="26">
 				<AdditionSource>
-					<Item>ИзделияЗаказчика</Item>
+					<Item>ИзделияКомплект</Item>
 					<Type>SearchControl</Type>
 				</AdditionSource>
-				<ContextMenu name="ИзделияЗаказчикаУправлениеПоискомКонтекстноеМеню" id="27"/>
-				<ExtendedTooltip name="ИзделияЗаказчикаУправлениеПоискомРасширеннаяПодсказка" id="28"/>
+				<ContextMenu name="ИзделияКомплектУправлениеПоискомКонтекстноеМеню" id="27"/>
+				<ExtendedTooltip name="ИзделияКомплектУправлениеПоискомРасширеннаяПодсказка" id="28"/>
 			</SearchControlAddition>
 			<Events>
-				<Event name="BeforeAddRow">ИзделияЗаказчикаПередНачаломДобавления</Event>
-				<Event name="BeforeRowChange">ИзделияЗаказчикаПередНачаломИзменения</Event>
+				<Event name="BeforeAddRow">ИзделияКомплектПередНачаломДобавления</Event>
 			</Events>
 			<ChildItems>
 				<LabelField name="ИзделияЗаказчикаНомерСтроки" id="29">
