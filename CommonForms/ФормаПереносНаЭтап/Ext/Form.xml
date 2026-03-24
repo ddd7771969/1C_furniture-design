@@ -1,0 +1,247 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Группа1" id="7">
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="8"/>
+			<ChildItems>
+				<InputField name="Комплект" id="1">
+					<DataPath>Комплект</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="КомплектКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="КомплектРасширеннаяПодсказка" id="3"/>
+				</InputField>
+				<InputField name="ТекущийСтатус" id="4">
+					<DataPath>ТекущийСтатус</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ТекущийСтатусКонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="ТекущийСтатусРасширеннаяПодсказка" id="6"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаНовыйЭтап" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Новый этап</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа новый этап</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Representation>StrongSeparation</Representation>
+			<ExtendedTooltip name="ГруппаНовыйЭтапРасширеннаяПодсказка" id="10"/>
+			<ChildItems>
+				<UsualGroup name="Группа2" id="30">
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="31"/>
+					<ChildItems>
+						<InputField name="ОсновнойЭтап" id="11">
+							<DataPath>ОсновнойЭтап</DataPath>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ОсновнойЭтапКонтекстноеМеню" id="12"/>
+							<ExtendedTooltip name="ОсновнойЭтапРасширеннаяПодсказка" id="13"/>
+							<Events>
+								<Event name="OnChange">ОсновнойЭтапПриИзменении</Event>
+							</Events>
+						</InputField>
+						<Table name="Статусы" id="14">
+							<Representation>List</Representation>
+							<Header>false</Header>
+							<HorizontalLines>false</HorizontalLines>
+							<VerticalLines>false</VerticalLines>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<DataPath>Статусы</DataPath>
+							<RowPictureDataPath>Статусы.Picture</RowPictureDataPath>
+							<ContextMenu name="СтатусыКонтекстноеМеню" id="15"/>
+							<AutoCommandBar name="СтатусыКоманднаяПанель" id="16">
+								<Autofill>false</Autofill>
+							</AutoCommandBar>
+							<ExtendedTooltip name="СтатусыРасширеннаяПодсказка" id="17"/>
+							<SearchStringAddition name="СтатусыСтрокаПоиска" id="18">
+								<AdditionSource>
+									<Item>Статусы</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СтатусыСтрокаПоискаКонтекстноеМеню" id="19"/>
+								<ExtendedTooltip name="СтатусыСтрокаПоискаРасширеннаяПодсказка" id="20"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="СтатусыСостояниеПросмотра" id="21">
+								<AdditionSource>
+									<Item>Статусы</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СтатусыСостояниеПросмотраКонтекстноеМеню" id="22"/>
+								<ExtendedTooltip name="СтатусыСостояниеПросмотраРасширеннаяПодсказка" id="23"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="СтатусыУправлениеПоиском" id="24">
+								<AdditionSource>
+									<Item>Статусы</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="СтатусыУправлениеПоискомКонтекстноеМеню" id="25"/>
+								<ExtendedTooltip name="СтатусыУправлениеПоискомРасширеннаяПодсказка" id="26"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="BeforeAddRow">СтатусыПередНачаломДобавления</Event>
+								<Event name="BeforeDeleteRow">СтатусыПередУдалением</Event>
+								<Event name="BeforeRowChange">СтатусыПередНачаломИзменения</Event>
+							</Events>
+							<ChildItems>
+								<InputField name="СтатусыЗначение" id="27">
+									<DataPath>Статусы.Value</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="СтатусыЗначениеКонтекстноеМеню" id="28"/>
+									<ExtendedTooltip name="СтатусыЗначениеРасширеннаяПодсказка" id="29"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="Группа3" id="32">
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="33"/>
+					<ChildItems>
+						<InputField name="НовыйСтатус" id="40">
+							<DataPath>НовыйСтатус</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="НовыйСтатусКонтекстноеМеню" id="41"/>
+							<ExtendedTooltip name="НовыйСтатусРасширеннаяПодсказка" id="42"/>
+						</InputField>
+						<InputField name="Статус" id="43">
+							<DataPath>Статус</DataPath>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="СтатусКонтекстноеМеню" id="44"/>
+							<ExtendedTooltip name="СтатусРасширеннаяПодсказка" id="45"/>
+						</InputField>
+						<InputField name="ТипЗадачи" id="46">
+							<DataPath>ТипЗадачи</DataPath>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ТипЗадачиКонтекстноеМеню" id="47"/>
+							<ExtendedTooltip name="ТипЗадачиРасширеннаяПодсказка" id="48"/>
+						</InputField>
+						<InputField name="Состояние" id="37">
+							<DataPath>Состояние</DataPath>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="СостояниеКонтекстноеМеню" id="38"/>
+							<ExtendedTooltip name="СостояниеРасширеннаяПодсказка" id="39"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Комплект" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Комплект</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Композиции</v8:Type>
+				<v8:Type>cfg:CatalogRef.ИзделияКомплект</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ТекущийСтатус" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Текущий статус</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.СтадииКомплекта</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ОсновнойЭтап" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Основной этап</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:EnumRef.ОсновныеЭтапы</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Статусы" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Статусы</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+			<Settings xsi:type="v8:TypeDescription">
+				<v8:Type>cfg:CatalogRef.СтадииКомплекта</v8:Type>
+			</Settings>
+		</Attribute>
+		<Attribute name="Состояние" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Состояние</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:EnumRef.СостоянияЗадач</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="НовыйСтатус" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Новый статус</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.СтадииКомплекта</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Статус" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Статус</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:EnumRef.СтатусыЗадач</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ТипЗадачи" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тип задачи</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:EnumRef.ТипыЗадачКонструирования</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+</Form>

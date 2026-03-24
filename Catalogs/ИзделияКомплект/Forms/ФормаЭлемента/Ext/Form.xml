@@ -37,6 +37,11 @@
 				<CommandName>Form.Command.ЗагрузитьТЗ</CommandName>
 				<ExtendedTooltip name="ФормаЗагрузитьТЗРасширеннаяПодсказка" id="479"/>
 			</Button>
+			<Button name="ФормаИзменитСтатус" id="480">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ИзменитСтатус</CommandName>
+				<ExtendedTooltip name="ФормаИзменитСтатусРасширеннаяПодсказка" id="481"/>
+			</Button>
 		</ChildItems>
 	</AutoCommandBar>
 	<Events>
@@ -1706,6 +1711,21 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ЗагрузитьТЗ</Action>
+		</Command>
+		<Command name="ИзменитСтатус" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Изменит статус</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Изменит статус</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ИзменитСтатус</Action>
 		</Command>
 	</Commands>
 	<CommandInterface>
