@@ -22,11 +22,26 @@
 			<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
 			<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
 		</InputField>
-		<LabelField name="ПолноеНаименование" id="50">
-			<DataPath>Объект.ПолноеНаименование</DataPath>
-			<ContextMenu name="ПолноеНаименованиеКонтекстноеМеню" id="51"/>
-			<ExtendedTooltip name="ПолноеНаименованиеРасширеннаяПодсказка" id="52"/>
-		</LabelField>
+		<UsualGroup name="Группа1" id="59">
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="60"/>
+			<ChildItems>
+				<InputField name="ПолноеНаименование" id="50">
+					<DataPath>Объект.ПолноеНаименование</DataPath>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ПолноеНаименованиеКонтекстноеМеню" id="51"/>
+					<ExtendedTooltip name="ПолноеНаименованиеРасширеннаяПодсказка" id="52"/>
+				</InputField>
+				<CheckBoxField name="ПолноеНаименованиеВРучную" id="61">
+					<DataPath>Объект.ПолноеНаименованиеВРучную</DataPath>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ПолноеНаименованиеВРучнуюКонтекстноеМеню" id="62"/>
+					<ExtendedTooltip name="ПолноеНаименованиеВРучнуюРасширеннаяПодсказка" id="63"/>
+				</CheckBoxField>
+			</ChildItems>
+		</UsualGroup>
 		<InputField name="Родитель" id="7">
 			<DataPath>Объект.Parent</DataPath>
 			<EditMode>EnterOnInput</EditMode>

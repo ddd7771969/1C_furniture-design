@@ -181,6 +181,29 @@
 								</RadioButtonField>
 							</ChildItems>
 						</Page>
+						<Page name="ГруппаНаСтопе" id="44">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>На стопе</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа на стопе</v8:content>
+								</v8:item>
+							</ToolTip>
+							<ExtendedTooltip name="ГруппаНаСтопеРасширеннаяПодсказка" id="45"/>
+							<ChildItems>
+								<InputField name="КомплектыНаСтопе" id="46">
+									<DataPath>КомплектыНаСтопе</DataPath>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="КомплектыНаСтопеКонтекстноеМеню" id="47"/>
+									<ExtendedTooltip name="КомплектыНаСтопеРасширеннаяПодсказка" id="48"/>
+								</InputField>
+							</ChildItems>
+						</Page>
 					</ChildItems>
 				</Pages>
 			</ChildItems>
@@ -318,6 +341,20 @@
 					<v8:AllowedLength>Variable</v8:AllowedLength>
 				</v8:StringQualifiers>
 			</Type>
+		</Attribute>
+		<Attribute name="КомплектыНаСтопе" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Комплекты на стопе</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+			<Settings xsi:type="v8:TypeDescription">
+				<v8:Type>cfg:CatalogRef.ИзделияКомплект</v8:Type>
+			</Settings>
 		</Attribute>
 	</Attributes>
 </Form>
