@@ -49,20 +49,18 @@
 			<SearchStringModeOnInputByString>Begin</SearchStringModeOnInputByString>
 			<FullTextSearchOnInputByString>DontUse</FullTextSearchOnInputByString>
 			<ChoiceDataGetModeOnInputByString>Directly</ChoiceDataGetModeOnInputByString>
-			<DefaultObjectForm/>
+			<DefaultObjectForm>Document.ОтгрузкаГотовойПродукции.Form.ФормаДокумента</DefaultObjectForm>
 			<DefaultListForm/>
 			<DefaultChoiceForm/>
 			<AuxiliaryObjectForm/>
 			<AuxiliaryListForm/>
 			<AuxiliaryChoiceForm/>
-			<Posting>Allow</Posting>
+			<Posting>Deny</Posting>
 			<RealTimePosting>Deny</RealTimePosting>
 			<RegisterRecordsDeletion>AutoDeleteOnUnpost</RegisterRecordsDeletion>
 			<RegisterRecordsWritingOnPost>WriteSelected</RegisterRecordsWritingOnPost>
 			<SequenceFilling>AutoFill</SequenceFilling>
-			<RegisterRecords>
-				<xr:Item xsi:type="xr:MDObjectRef">AccumulationRegister.ГотоваяПродукция</xr:Item>
-			</RegisterRecords>
+			<RegisterRecords/>
 			<PostInPrivilegedMode>true</PostInPrivilegedMode>
 			<UnpostInPrivilegedMode>true</UnpostInPrivilegedMode>
 			<IncludeHelpInContents>false</IncludeHelpInContents>
@@ -119,62 +117,24 @@
 					<DataHistory>Use</DataHistory>
 				</Properties>
 			</Attribute>
-			<Attribute uuid="e99adcb4-0a8f-45a3-85d4-9a972b61dbe1">
-				<Properties>
-					<Name>МестоХранения</Name>
-					<Synonym>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Место хранения</v8:content>
-						</v8:item>
-					</Synonym>
-					<Comment/>
-					<Type>
-						<v8:Type>cfg:CatalogRef.МестаХраненияГотовойПродукции</v8:Type>
-					</Type>
-					<PasswordMode>false</PasswordMode>
-					<Format/>
-					<EditFormat/>
-					<ToolTip/>
-					<MarkNegatives>false</MarkNegatives>
-					<Mask/>
-					<MultiLine>false</MultiLine>
-					<ExtendedEdit>false</ExtendedEdit>
-					<MinValue xsi:nil="true"/>
-					<MaxValue xsi:nil="true"/>
-					<FillFromFillingValue>false</FillFromFillingValue>
-					<FillValue xsi:nil="true"/>
-					<FillChecking>ShowError</FillChecking>
-					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
-					<ChoiceParameterLinks/>
-					<ChoiceParameters/>
-					<QuickChoice>Auto</QuickChoice>
-					<CreateOnInput>Auto</CreateOnInput>
-					<ChoiceForm/>
-					<LinkByType/>
-					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
-					<Indexing>DontIndex</Indexing>
-					<FullTextSearch>Use</FullTextSearch>
-					<DataHistory>Use</DataHistory>
-				</Properties>
-			</Attribute>
+			<Form>ФормаДокумента</Form>
 			<TabularSection uuid="737cf2b5-301c-4da1-b35a-f1e28b1f3c18">
 				<InternalInfo>
-					<xr:GeneratedType name="DocumentTabularSection.ОтгрузкаГотовойПродукции.ПартииГотовойПродукции" category="TabularSection">
+					<xr:GeneratedType name="DocumentTabularSection.ОтгрузкаГотовойПродукции.ИзделияКомплекты" category="TabularSection">
 						<xr:TypeId>6e289a70-f0b5-4e3e-a7e3-aec78ce9ad61</xr:TypeId>
 						<xr:ValueId>f28c7b40-d89b-4d6a-9b5a-24f7573c0473</xr:ValueId>
 					</xr:GeneratedType>
-					<xr:GeneratedType name="DocumentTabularSectionRow.ОтгрузкаГотовойПродукции.ПартииГотовойПродукции" category="TabularSectionRow">
+					<xr:GeneratedType name="DocumentTabularSectionRow.ОтгрузкаГотовойПродукции.ИзделияКомплекты" category="TabularSectionRow">
 						<xr:TypeId>bfe572de-8ebc-4867-a54e-f9ab823917f2</xr:TypeId>
 						<xr:ValueId>e3906578-f8fd-4355-b761-9c9a18e4c93b</xr:ValueId>
 					</xr:GeneratedType>
 				</InternalInfo>
 				<Properties>
-					<Name>ПартииГотовойПродукции</Name>
+					<Name>ИзделияКомплекты</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Партии готовой продукции</v8:content>
+							<v8:content>Изделия комплекты</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -185,16 +145,16 @@
 				<ChildObjects>
 					<Attribute uuid="d98d9750-9215-4ef0-a4e9-773c3cb1ce36">
 						<Properties>
-							<Name>ПартияГотовойПродукции</Name>
+							<Name>ИзделиеКомплект</Name>
 							<Synonym>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
-									<v8:content>Партия готовой продукции</v8:content>
+									<v8:content>Изделие комплект</v8:content>
 								</v8:item>
 							</Synonym>
 							<Comment/>
 							<Type>
-								<v8:Type>cfg:CatalogRef.ПартииГотовойПродукции</v8:Type>
+								<v8:Type>cfg:CatalogRef.ИзделияКомплект</v8:Type>
 							</Type>
 							<PasswordMode>false</PasswordMode>
 							<Format/>
