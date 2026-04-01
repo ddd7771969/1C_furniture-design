@@ -1,34 +1,34 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
-	<Catalog uuid="52609271-1c2e-4b58-ba7f-d2712dfc8c7e">
+	<Catalog uuid="a9275854-37cb-4901-a797-ad97a8151a56">
 		<InternalInfo>
-			<xr:GeneratedType name="CatalogObject.ПартииГотовойПродукции" category="Object">
-				<xr:TypeId>61300cbb-0c16-41ce-b86d-bc7380f55503</xr:TypeId>
-				<xr:ValueId>a7621d72-baa8-4ff7-8b2a-fff654d253be</xr:ValueId>
+			<xr:GeneratedType name="CatalogObject.ЧастичнаяОтгрузка" category="Object">
+				<xr:TypeId>34e04bda-10db-4890-97bd-a621027c6a0e</xr:TypeId>
+				<xr:ValueId>3615a204-1488-400d-a7cc-c8caee357428</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="CatalogRef.ПартииГотовойПродукции" category="Ref">
-				<xr:TypeId>919667d1-14c6-486a-bb80-4f0089bb2d5c</xr:TypeId>
-				<xr:ValueId>b3bb0b6f-a2ca-406f-a460-76b8817fb033</xr:ValueId>
+			<xr:GeneratedType name="CatalogRef.ЧастичнаяОтгрузка" category="Ref">
+				<xr:TypeId>35b8c809-1f99-4df1-ad88-2438edee35d4</xr:TypeId>
+				<xr:ValueId>1998fd8e-a0d3-4cba-8ea1-6c3cbd77a458</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="CatalogSelection.ПартииГотовойПродукции" category="Selection">
-				<xr:TypeId>a7902dbb-59ed-42c1-af25-e060b849cb72</xr:TypeId>
-				<xr:ValueId>f21dfbe8-361e-4fb1-9c02-36d1ed200617</xr:ValueId>
+			<xr:GeneratedType name="CatalogSelection.ЧастичнаяОтгрузка" category="Selection">
+				<xr:TypeId>14ff274c-7e00-46e6-adbe-3da8f96ce85c</xr:TypeId>
+				<xr:ValueId>d64bdc34-d96f-4614-92b1-4e96f6ab9b04</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="CatalogList.ПартииГотовойПродукции" category="List">
-				<xr:TypeId>12b1f811-dc7f-4b3c-9884-848274a16218</xr:TypeId>
-				<xr:ValueId>e7062909-445b-4bbc-9d5d-92246f56ca5d</xr:ValueId>
+			<xr:GeneratedType name="CatalogList.ЧастичнаяОтгрузка" category="List">
+				<xr:TypeId>b30d9000-2f0c-425a-9e54-8495f777df5a</xr:TypeId>
+				<xr:ValueId>8ce7b560-690d-45a3-9af5-9fd6ea55e1ff</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="CatalogManager.ПартииГотовойПродукции" category="Manager">
-				<xr:TypeId>5e43efb3-cdcb-4d0b-8483-1827895e1c54</xr:TypeId>
-				<xr:ValueId>6134a639-d208-4dc3-9908-0c0b9ac92d0f</xr:ValueId>
+			<xr:GeneratedType name="CatalogManager.ЧастичнаяОтгрузка" category="Manager">
+				<xr:TypeId>ae71d336-3fa9-4105-8f78-acc2d7200bab</xr:TypeId>
+				<xr:ValueId>ee26c779-985a-4142-9f04-5ae227bb672a</xr:ValueId>
 			</xr:GeneratedType>
 		</InternalInfo>
 		<Properties>
-			<Name>ПартииГотовойПродукции</Name>
+			<Name>ЧастичнаяОтгрузка</Name>
 			<Synonym>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Партии готовой продукции</v8:content>
+					<v8:content>Частичная отгрузка</v8:content>
 				</v8:item>
 			</Synonym>
 			<Comment/>
@@ -54,8 +54,8 @@
 			<QuickChoice>false</QuickChoice>
 			<ChoiceMode>BothWays</ChoiceMode>
 			<InputByString>
-				<xr:Field>Catalog.ПартииГотовойПродукции.StandardAttribute.Description</xr:Field>
-				<xr:Field>Catalog.ПартииГотовойПродукции.StandardAttribute.Code</xr:Field>
+				<xr:Field>Catalog.ЧастичнаяОтгрузка.StandardAttribute.Description</xr:Field>
+				<xr:Field>Catalog.ЧастичнаяОтгрузка.StandardAttribute.Code</xr:Field>
 			</InputByString>
 			<SearchStringModeOnInputByString>Begin</SearchStringModeOnInputByString>
 			<FullTextSearchOnInputByString>DontUse</FullTextSearchOnInputByString>
@@ -75,12 +75,7 @@
 			<DataLockFields/>
 			<DataLockControlMode>Managed</DataLockControlMode>
 			<FullTextSearch>Use</FullTextSearch>
-			<ObjectPresentation>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Партия готовой продукции</v8:content>
-				</v8:item>
-			</ObjectPresentation>
+			<ObjectPresentation/>
 			<ExtendedObjectPresentation/>
 			<ListPresentation/>
 			<ExtendedListPresentation/>
@@ -92,7 +87,47 @@
 			<ExecuteAfterWriteDataHistoryVersionProcessing>false</ExecuteAfterWriteDataHistoryVersionProcessing>
 		</Properties>
 		<ChildObjects>
-			<Attribute uuid="7ca5d62c-6f1f-48e5-8a45-1b1823387e3b">
+			<Attribute uuid="7c262f9b-561a-40d9-9231-6fc0c0fb395c">
+				<Properties>
+					<Name>Автор</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Автор</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Пользователи</v8:Type>
+					</Type>
+					<PasswordMode>false</PasswordMode>
+					<Format/>
+					<EditFormat/>
+					<ToolTip/>
+					<MarkNegatives>false</MarkNegatives>
+					<Mask/>
+					<MultiLine>false</MultiLine>
+					<ExtendedEdit>false</ExtendedEdit>
+					<MinValue xsi:nil="true"/>
+					<MaxValue xsi:nil="true"/>
+					<FillFromFillingValue>false</FillFromFillingValue>
+					<FillValue xsi:nil="true"/>
+					<FillChecking>DontCheck</FillChecking>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<ChoiceParameterLinks/>
+					<ChoiceParameters/>
+					<QuickChoice>Auto</QuickChoice>
+					<CreateOnInput>Auto</CreateOnInput>
+					<ChoiceForm/>
+					<LinkByType/>
+					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+					<Use>ForItem</Use>
+					<Indexing>DontIndex</Indexing>
+					<FullTextSearch>Use</FullTextSearch>
+					<DataHistory>Use</DataHistory>
+				</Properties>
+			</Attribute>
+			<Attribute uuid="d0012254-d9c5-4999-93e5-773f62765ba6">
 				<Properties>
 					<Name>ИзделиеКомплект</Name>
 					<Synonym>
@@ -127,67 +162,26 @@
 					<LinkByType/>
 					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
 					<Use>ForItem</Use>
-					<Indexing>Index</Indexing>
-					<FullTextSearch>Use</FullTextSearch>
-					<DataHistory>Use</DataHistory>
-				</Properties>
-			</Attribute>
-			<Attribute uuid="d98779e4-899f-40ac-9a84-6b00a2680869">
-				<Properties>
-					<Name>Комментарий</Name>
-					<Synonym>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Комментарий</v8:content>
-						</v8:item>
-					</Synonym>
-					<Comment/>
-					<Type>
-						<v8:Type>xs:string</v8:Type>
-						<v8:StringQualifiers>
-							<v8:Length>0</v8:Length>
-							<v8:AllowedLength>Variable</v8:AllowedLength>
-						</v8:StringQualifiers>
-					</Type>
-					<PasswordMode>false</PasswordMode>
-					<Format/>
-					<EditFormat/>
-					<ToolTip/>
-					<MarkNegatives>false</MarkNegatives>
-					<Mask/>
-					<MultiLine>false</MultiLine>
-					<ExtendedEdit>false</ExtendedEdit>
-					<MinValue xsi:nil="true"/>
-					<MaxValue xsi:nil="true"/>
-					<FillFromFillingValue>false</FillFromFillingValue>
-					<FillValue xsi:type="xs:string"/>
-					<FillChecking>DontCheck</FillChecking>
-					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
-					<ChoiceParameterLinks/>
-					<ChoiceParameters/>
-					<QuickChoice>Auto</QuickChoice>
-					<CreateOnInput>Auto</CreateOnInput>
-					<ChoiceForm/>
-					<LinkByType/>
-					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
-					<Use>ForItem</Use>
 					<Indexing>DontIndex</Indexing>
 					<FullTextSearch>Use</FullTextSearch>
 					<DataHistory>Use</DataHistory>
 				</Properties>
 			</Attribute>
-			<Attribute uuid="0a356fcc-0044-465d-8909-542754e79da6">
+			<Attribute uuid="af5a0ab7-d311-49ed-904a-29c57a1138ba">
 				<Properties>
-					<Name>ЧастичноПередан</Name>
+					<Name>Дата</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Частично передан</v8:content>
+							<v8:content>Дата</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
 					<Type>
-						<v8:Type>xs:boolean</v8:Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
 					</Type>
 					<PasswordMode>false</PasswordMode>
 					<Format/>
@@ -216,6 +210,75 @@
 					<DataHistory>Use</DataHistory>
 				</Properties>
 			</Attribute>
+			<TabularSection uuid="92cf353e-530c-4262-8149-e348ce99df32">
+				<InternalInfo>
+					<xr:GeneratedType name="CatalogTabularSection.ЧастичнаяОтгрузка.ПредметыОтгрузки" category="TabularSection">
+						<xr:TypeId>84d44ef2-3f54-431b-b5d5-096d2dff9c93</xr:TypeId>
+						<xr:ValueId>91b77635-6c4d-4ab0-86ae-11cb94661e59</xr:ValueId>
+					</xr:GeneratedType>
+					<xr:GeneratedType name="CatalogTabularSectionRow.ЧастичнаяОтгрузка.ПредметыОтгрузки" category="TabularSectionRow">
+						<xr:TypeId>d81da747-051b-42df-8c38-eced4f4807d6</xr:TypeId>
+						<xr:ValueId>c6926086-079d-4737-b061-0243516180b8</xr:ValueId>
+					</xr:GeneratedType>
+				</InternalInfo>
+				<Properties>
+					<Name>ПредметыОтгрузки</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Предметы отгрузки</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<ToolTip/>
+					<FillChecking>DontCheck</FillChecking>
+					<Use>ForItem</Use>
+					<LineNumberLength>9</LineNumberLength>
+				</Properties>
+				<ChildObjects>
+					<Attribute uuid="279304d5-4c50-4db7-bc61-4b71242d61fe">
+						<Properties>
+							<Name>ПредметОтгрузки</Name>
+							<Synonym>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Предмет отгрузки</v8:content>
+								</v8:item>
+							</Synonym>
+							<Comment/>
+							<Type>
+								<v8:Type>xs:string</v8:Type>
+								<v8:StringQualifiers>
+									<v8:Length>150</v8:Length>
+									<v8:AllowedLength>Variable</v8:AllowedLength>
+								</v8:StringQualifiers>
+							</Type>
+							<PasswordMode>false</PasswordMode>
+							<Format/>
+							<EditFormat/>
+							<ToolTip/>
+							<MarkNegatives>false</MarkNegatives>
+							<Mask/>
+							<MultiLine>false</MultiLine>
+							<ExtendedEdit>false</ExtendedEdit>
+							<MinValue xsi:nil="true"/>
+							<MaxValue xsi:nil="true"/>
+							<FillChecking>DontCheck</FillChecking>
+							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+							<ChoiceParameterLinks/>
+							<ChoiceParameters/>
+							<QuickChoice>Auto</QuickChoice>
+							<CreateOnInput>Auto</CreateOnInput>
+							<ChoiceForm/>
+							<LinkByType/>
+							<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+							<Indexing>DontIndex</Indexing>
+							<FullTextSearch>Use</FullTextSearch>
+							<DataHistory>Use</DataHistory>
+						</Properties>
+					</Attribute>
+				</ChildObjects>
+			</TabularSection>
 		</ChildObjects>
 	</Catalog>
 </MetaDataObject>
