@@ -68,6 +68,14 @@
 										<Event name="OnChange">ПроектПриИзменении</Event>
 									</Events>
 								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="Группа16" id="1384">
+							<Group>AlwaysHorizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа16РасширеннаяПодсказка" id="1385"/>
+							<ChildItems>
 								<InputField name="Исполнитель" id="11">
 									<DataPath>ИсполнительЗамеры</DataPath>
 									<Title>
@@ -91,12 +99,6 @@
 									<ExtendedTooltip name="МоиЗадачиРасширеннаяПодсказка" id="15"/>
 								</Button>
 							</ChildItems>
-						</UsualGroup>
-						<UsualGroup name="Группа1" id="9">
-							<Group>AlwaysHorizontal</Group>
-							<Representation>None</Representation>
-							<ShowTitle>false</ShowTitle>
-							<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="10"/>
 						</UsualGroup>
 						<UsualGroup name="ГруппаФильтры" id="256">
 							<Title>
@@ -248,6 +250,105 @@
 						</InputField>
 					</ChildItems>
 				</Table>
+				<UsualGroup name="Группа15" id="1358">
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа15РасширеннаяПодсказка" id="1359"/>
+					<ChildItems>
+						<Table name="ТаблицаОбщихЗадач" id="1360">
+							<Representation>List</Representation>
+							<Height>4</Height>
+							<AutoMaxHeight>false</AutoMaxHeight>
+							<MaxHeight>4</MaxHeight>
+							<AutoMaxRowsCount>false</AutoMaxRowsCount>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>ТаблицаОбщихЗадач</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ТаблицаОбщихЗадачКонтекстноеМеню" id="1361"/>
+							<AutoCommandBar name="ТаблицаОбщихЗадачКоманднаяПанель" id="1362">
+								<Autofill>false</Autofill>
+								<ChildItems>
+									<Button name="ТаблицаОбщихЗадачСоздатьОбщуюЗадачу" id="1382">
+										<Type>CommandBarButton</Type>
+										<Representation>Picture</Representation>
+										<CommandName>Form.Command.СоздатьОбщуюЗадачу</CommandName>
+										<Picture>
+											<xr:Ref>StdPicture.CreateListItem</xr:Ref>
+											<xr:LoadTransparent>true</xr:LoadTransparent>
+										</Picture>
+										<ExtendedTooltip name="ТаблицаОбщихЗадачСоздатьОбщуюЗадачуРасширеннаяПодсказка" id="1383"/>
+									</Button>
+									<Button name="ТаблицаОбщихЗадачОбновитьОбщикеЗадачи" id="1386">
+										<Type>CommandBarButton</Type>
+										<Representation>Picture</Representation>
+										<CommandName>Form.Command.ОбновитьОбщикеЗадачи</CommandName>
+										<Picture>
+											<xr:Ref>StdPicture.Refresh</xr:Ref>
+											<xr:LoadTransparent>true</xr:LoadTransparent>
+										</Picture>
+										<ExtendedTooltip name="ТаблицаОбщихЗадачОбновитьОбщикеЗадачиРасширеннаяПодсказка" id="1387"/>
+									</Button>
+								</ChildItems>
+							</AutoCommandBar>
+							<ExtendedTooltip name="ТаблицаОбщихЗадачРасширеннаяПодсказка" id="1363"/>
+							<SearchStringAddition name="ТаблицаОбщихЗадачСтрокаПоиска" id="1364">
+								<AdditionSource>
+									<Item>ТаблицаОбщихЗадач</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ТаблицаОбщихЗадачСтрокаПоискаКонтекстноеМеню" id="1365"/>
+								<ExtendedTooltip name="ТаблицаОбщихЗадачСтрокаПоискаРасширеннаяПодсказка" id="1366"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ТаблицаОбщихЗадачСостояниеПросмотра" id="1367">
+								<AdditionSource>
+									<Item>ТаблицаОбщихЗадач</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ТаблицаОбщихЗадачСостояниеПросмотраКонтекстноеМеню" id="1368"/>
+								<ExtendedTooltip name="ТаблицаОбщихЗадачСостояниеПросмотраРасширеннаяПодсказка" id="1369"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ТаблицаОбщихЗадачУправлениеПоиском" id="1370">
+								<AdditionSource>
+									<Item>ТаблицаОбщихЗадач</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ТаблицаОбщихЗадачУправлениеПоискомКонтекстноеМеню" id="1371"/>
+								<ExtendedTooltip name="ТаблицаОбщихЗадачУправлениеПоискомРасширеннаяПодсказка" id="1372"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="BeforeAddRow">ОбщиеЗадачиПередНачаломДобавления</Event>
+								<Event name="BeforeDeleteRow">ОбщиеЗадачиПередУдалением</Event>
+								<Event name="BeforeRowChange">ОбщиеЗадачиПередНачаломИзменения</Event>
+							</Events>
+							<ChildItems>
+								<InputField name="ТаблицаОбщихЗадачДата" id="1373">
+									<DataPath>ТаблицаОбщихЗадач.Дата</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ТаблицаОбщихЗадачДатаКонтекстноеМеню" id="1374"/>
+									<ExtendedTooltip name="ТаблицаОбщихЗадачДатаРасширеннаяПодсказка" id="1375"/>
+								</InputField>
+								<InputField name="ТаблицаОбщихЗадачАвтор" id="1376">
+									<DataPath>ТаблицаОбщихЗадач.Автор</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ТаблицаОбщихЗадачАвторКонтекстноеМеню" id="1377"/>
+									<ExtendedTooltip name="ТаблицаОбщихЗадачАвторРасширеннаяПодсказка" id="1378"/>
+								</InputField>
+								<InputField name="ТаблицаОбщихЗадачСообщение" id="1379">
+									<DataPath>ТаблицаОбщихЗадач.Сообщение</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ТаблицаОбщихЗадачСообщениеКонтекстноеМеню" id="1380"/>
+									<ExtendedTooltip name="ТаблицаОбщихЗадачСообщениеРасширеннаяПодсказка" id="1381"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</UsualGroup>
 			</ChildItems>
 		</UsualGroup>
 		<UsualGroup name="ГруппаЗамеры" id="4" DisplayImportance="VeryHigh">
@@ -4289,6 +4390,70 @@
 				</ListSettings>
 			</Settings>
 		</Attribute>
+		<Attribute name="ТаблицаОбщихЗадач" id="24">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Таблица общих задач</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Дата" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>DateTime</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="Автор" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Автор</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Пользователи</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Сообщение" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сообщение</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>200</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Задача" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Задача</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:TaskRef.ЗадачиОбщие</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
 		<ConditionalAppearance>
 			<dcsset:item>
 				<dcsset:selection>
@@ -4447,6 +4612,36 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ОбновитьГантКонструктора</Action>
+		</Command>
+		<Command name="СоздатьОбщуюЗадачу" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать общую задачу</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать общую задачу</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СоздатьОбщуюЗадачу</Action>
+		</Command>
+		<Command name="ОбновитьОбщикеЗадачи" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить общике задачи</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить общике задачи</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбновитьОбщикеЗадачи</Action>
 		</Command>
 	</Commands>
 </Form>
