@@ -961,7 +961,6 @@
 			<Role>ЧтениеУчетныхЗаписейЭлектроннойПочты</Role>
 			<Role>ЧтениеШаблоновСообщений</Role>
 			<Role>ШифрованиеИРасшифровкаДанных</Role>
-			<Role>Роль1</Role>
 			<CommonTemplate>PDM_1C_COM</CommonTemplate>
 			<CommonTemplate>БиблиотекаPDM</CommonTemplate>
 			<CommonTemplate>ВидыДокументовУдостоверяющихЛичность</CommonTemplate>
@@ -1123,6 +1122,7 @@
 			<CommonModule>омMsSQL</CommonModule>
 			<CommonModule>омPDM</CommonModule>
 			<CommonModule>омPDMНаСервере</CommonModule>
+			<CommonModule>омВнешнееПроизводство</CommonModule>
 			<CommonModule>омВыгрузкаCRMНаКлиенте</CommonModule>
 			<CommonModule>омВыгрузкаCRMНаСевере</CommonModule>
 			<CommonModule>омВыгрузкаCRMНаСевереПовтор</CommonModule>
@@ -1969,7 +1969,7 @@
 			<Document>НазначениеКонструктора</Document>
 			<Document>ОбещанияВыполения</Document>
 			<Document>ОзнакомительныйВыезд</Document>
-			<Document>ОменитьВнешнееПроизводство</Document>
+			<Document>ОтменитьВнешнееПроизводство</Document>
 			<Document>ОтгрузкаГотовойПродукции</Document>
 			<Document>ОтменаПроизводства</Document>
 			<Document>ПереводПреварительнойНоменклатуры</Document>
@@ -2383,6 +2383,7 @@
 			<ChartOfCharacteristicTypes>РазделыДатЗапретаИзменения</ChartOfCharacteristicTypes>
 			<ChartOfCharacteristicTypes>ВидыСубконтоХозрасчетные</ChartOfCharacteristicTypes>
 			<Task>ВыполнитьКорректировкуИзделияКомплект</Task>
+			<Task>ЗадачаВнешнееПроизводство</Task>
 			<Task>Задачи_ПКД</Task>
 			<Task>Задачи_РКД</Task>
 			<Task>ЗадачиОбщие</Task>
