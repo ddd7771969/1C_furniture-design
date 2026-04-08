@@ -2133,6 +2133,108 @@
 						</LabelField>
 					</ChildItems>
 				</Table>
+				<Table name="ВнешнееПроизводство" id="1388">
+					<UseAlternationRowColor>true</UseAlternationRowColor>
+					<EnableStartDrag>true</EnableStartDrag>
+					<DataPath>ВнешнееПроизводство</DataPath>
+					<RowPictureDataPath>ВнешнееПроизводство.DefaultPicture</RowPictureDataPath>
+					<AutoRefresh>false</AutoRefresh>
+					<AutoRefreshPeriod>60</AutoRefreshPeriod>
+					<Period>
+						<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+						<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+						<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+					</Period>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<RestoreCurrentRow>false</RestoreCurrentRow>
+					<TopLevelParent xsi:nil="true"/>
+					<ShowRoot>true</ShowRoot>
+					<AllowRootChoice>false</AllowRootChoice>
+					<UpdateOnDataChange>Auto</UpdateOnDataChange>
+					<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
+					<ContextMenu name="ВнешнееПроизводствоКонтекстноеМеню" id="1389"/>
+					<AutoCommandBar name="ВнешнееПроизводствоКоманднаяПанель" id="1390">
+						<Autofill>false</Autofill>
+					</AutoCommandBar>
+					<ExtendedTooltip name="ВнешнееПроизводствоРасширеннаяПодсказка" id="1391"/>
+					<SearchStringAddition name="ВнешнееПроизводствоСтрокаПоиска" id="1392">
+						<AdditionSource>
+							<Item>ВнешнееПроизводство</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ВнешнееПроизводствоСтрокаПоискаКонтекстноеМеню" id="1393"/>
+						<ExtendedTooltip name="ВнешнееПроизводствоСтрокаПоискаРасширеннаяПодсказка" id="1394"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="ВнешнееПроизводствоСостояниеПросмотра" id="1395">
+						<AdditionSource>
+							<Item>ВнешнееПроизводство</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ВнешнееПроизводствоСостояниеПросмотраКонтекстноеМеню" id="1396"/>
+						<ExtendedTooltip name="ВнешнееПроизводствоСостояниеПросмотраРасширеннаяПодсказка" id="1397"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="ВнешнееПроизводствоУправлениеПоиском" id="1398">
+						<AdditionSource>
+							<Item>ВнешнееПроизводство</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="ВнешнееПроизводствоУправлениеПоискомКонтекстноеМеню" id="1399"/>
+						<ExtendedTooltip name="ВнешнееПроизводствоУправлениеПоискомРасширеннаяПодсказка" id="1400"/>
+					</SearchControlAddition>
+					<ChildItems>
+						<LabelField name="ВнешнееПроизводствоНаименование" id="1422">
+							<DataPath>ВнешнееПроизводство.Наименование</DataPath>
+							<ContextMenu name="ВнешнееПроизводствоНаименованиеКонтекстноеМеню" id="1423"/>
+							<ExtendedTooltip name="ВнешнееПроизводствоНаименованиеРасширеннаяПодсказка" id="1424"/>
+						</LabelField>
+						<LabelField name="ВнешнееПроизводствоДата" id="1407">
+							<DataPath>ВнешнееПроизводство.Дата</DataPath>
+							<ContextMenu name="ВнешнееПроизводствоДатаКонтекстноеМеню" id="1408"/>
+							<ExtendedTooltip name="ВнешнееПроизводствоДатаРасширеннаяПодсказка" id="1409"/>
+						</LabelField>
+						<LabelField name="ВнешнееПроизводствоДатаОжидаемогоОкончанияПодрядчиком" id="1410">
+							<DataPath>ВнешнееПроизводство.ДатаОжидаемогоОкончанияПодрядчиком</DataPath>
+							<ContextMenu name="ВнешнееПроизводствоДатаОжидаемогоОкончанияПодрядчикомКонтекстноеМеню" id="1411"/>
+							<ExtendedTooltip name="ВнешнееПроизводствоДатаОжидаемогоОкончанияПодрядчикомРасширеннаяПодсказка" id="1412"/>
+						</LabelField>
+						<LabelField name="ВнешнееПроизводствоПроект" id="1434">
+							<DataPath>ВнешнееПроизводство.Проект</DataPath>
+							<ContextMenu name="ВнешнееПроизводствоПроектКонтекстноеМеню" id="1435"/>
+							<ExtendedTooltip name="ВнешнееПроизводствоПроектРасширеннаяПодсказка" id="1436"/>
+						</LabelField>
+						<LabelField name="ВнешнееПроизводствоОбъектТЗ" id="1428">
+							<DataPath>ВнешнееПроизводство.ОбъектТЗ</DataPath>
+							<ContextMenu name="ВнешнееПроизводствоОбъектТЗКонтекстноеМеню" id="1429"/>
+							<ExtendedTooltip name="ВнешнееПроизводствоОбъектТЗРасширеннаяПодсказка" id="1430"/>
+						</LabelField>
+						<LabelField name="ВнешнееПроизводствоИсполнитель" id="1416">
+							<DataPath>ВнешнееПроизводство.Исполнитель</DataPath>
+							<ContextMenu name="ВнешнееПроизводствоИсполнительКонтекстноеМеню" id="1417"/>
+							<ExtendedTooltip name="ВнешнееПроизводствоИсполнительРасширеннаяПодсказка" id="1418"/>
+						</LabelField>
+						<LabelField name="ВнешнееПроизводствоКомментарий" id="1419">
+							<DataPath>ВнешнееПроизводство.Комментарий</DataPath>
+							<ContextMenu name="ВнешнееПроизводствоКомментарийКонтекстноеМеню" id="1420"/>
+							<ExtendedTooltip name="ВнешнееПроизводствоКомментарийРасширеннаяПодсказка" id="1421"/>
+						</LabelField>
+						<CheckBoxField name="ВнешнееПроизводствоДоставкаНаСклад" id="1413">
+							<DataPath>ВнешнееПроизводство.ДоставкаНаСклад</DataPath>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ВнешнееПроизводствоДоставкаНаСкладКонтекстноеМеню" id="1414"/>
+							<ExtendedTooltip name="ВнешнееПроизводствоДоставкаНаСкладРасширеннаяПодсказка" id="1415"/>
+						</CheckBoxField>
+						<LabelField name="ВнешнееПроизводствоТипЗадачи" id="1440">
+							<DataPath>ВнешнееПроизводство.ТипЗадачи</DataPath>
+							<ContextMenu name="ВнешнееПроизводствоТипЗадачиКонтекстноеМеню" id="1441"/>
+							<ExtendedTooltip name="ВнешнееПроизводствоТипЗадачиРасширеннаяПодсказка" id="1442"/>
+						</LabelField>
+						<LabelField name="ВнешнееПроизводствоАвтор" id="1401">
+							<DataPath>ВнешнееПроизводство.Автор</DataPath>
+							<ContextMenu name="ВнешнееПроизводствоАвторКонтекстноеМеню" id="1402"/>
+							<ExtendedTooltip name="ВнешнееПроизводствоАвторРасширеннаяПодсказка" id="1403"/>
+						</LabelField>
+					</ChildItems>
+				</Table>
 			</ChildItems>
 		</UsualGroup>
 	</ChildItems>
@@ -4453,6 +4555,113 @@
 					</Type>
 				</Column>
 			</Columns>
+		</Attribute>
+		<Attribute name="ВнешнееПроизводство" id="25">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Внешнее производство</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:DynamicList</v8:Type>
+			</Type>
+			<Settings xsi:type="DynamicList">
+				<ManualQuery>true</ManualQuery>
+				<DynamicDataRead>true</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	ЗадачаЗадачаВнешнееПроизводство.Ссылка КАК Ссылка,
+	ЗадачаЗадачаВнешнееПроизводство.ПометкаУдаления КАК ПометкаУдаления,
+	ЗадачаЗадачаВнешнееПроизводство.Номер КАК Номер,
+	ЗадачаЗадачаВнешнееПроизводство.Дата КАК Дата,
+	ЗадачаЗадачаВнешнееПроизводство.Наименование КАК Наименование,
+	ЗадачаЗадачаВнешнееПроизводство.Выполнена КАК Выполнена,
+	ЗадачаЗадачаВнешнееПроизводство.Автор КАК Автор,
+	ЗадачаЗадачаВнешнееПроизводство.ДатаОжидаемогоОкончанияПодрядчиком КАК ДатаОжидаемогоОкончанияПодрядчиком,
+	ЗадачаЗадачаВнешнееПроизводство.ДоставкаНаСклад КАК ДоставкаНаСклад,
+	ЗадачаЗадачаВнешнееПроизводство.Комментарий КАК Комментарий,
+	ЗадачаЗадачаВнешнееПроизводство.ОбъектТЗ КАК ОбъектТЗ,
+	ЗадачаЗадачаВнешнееПроизводство.Проект КАК Проект,
+	ЗадачаЗадачаВнешнееПроизводство.ТипЗадачи КАК ТипЗадачи,
+	ЗадачаЗадачаВнешнееПроизводство.Исполнитель КАК Исполнитель
+ИЗ
+	Задача.ЗадачаВнешнееПроизводство КАК ЗадачаЗадачаВнешнееПроизводство
+ГДЕ
+	НЕ ЗадачаЗадачаВнешнееПроизводство.Выполнена</QueryText>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Ссылка</dcssch:dataPath>
+					<dcssch:field>Ссылка</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Номер</dcssch:dataPath>
+					<dcssch:field>Номер</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ПометкаУдаления</dcssch:dataPath>
+					<dcssch:field>ПометкаУдаления</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Выполнена</dcssch:dataPath>
+					<dcssch:field>Выполнена</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Дата</dcssch:dataPath>
+					<dcssch:field>Дата</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Наименование</dcssch:dataPath>
+					<dcssch:field>Наименование</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Проект</dcssch:dataPath>
+					<dcssch:field>Проект</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Автор</dcssch:dataPath>
+					<dcssch:field>Автор</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ДатаОжидаемогоОкончанияПодрядчиком</dcssch:dataPath>
+					<dcssch:field>ДатаОжидаемогоОкончанияПодрядчиком</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Исполнитель</dcssch:dataPath>
+					<dcssch:field>Исполнитель</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ДоставкаНаСклад</dcssch:dataPath>
+					<dcssch:field>ДоставкаНаСклад</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Комментарий</dcssch:dataPath>
+					<dcssch:field>Комментарий</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ОбъектТЗ</dcssch:dataPath>
+					<dcssch:field>ОбъектТЗ</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ТипЗадачи</dcssch:dataPath>
+					<dcssch:field>ТипЗадачи</dcssch:field>
+				</Field>
+				<MainTable>Task.ЗадачаВнешнееПроизводство</MainTable>
+				<ListSettings>
+					<dcsset:filter>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
+					</dcsset:filter>
+					<dcsset:order>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
+					</dcsset:order>
+					<dcsset:conditionalAppearance>
+						<dcsset:viewMode>Normal</dcsset:viewMode>
+						<dcsset:userSettingID>b75fecce-942b-4aed-abc9-e6a02e460fb3</dcsset:userSettingID>
+					</dcsset:conditionalAppearance>
+					<dcsset:itemsViewMode>Normal</dcsset:itemsViewMode>
+					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
+				</ListSettings>
+			</Settings>
 		</Attribute>
 		<ConditionalAppearance>
 			<dcsset:item>
