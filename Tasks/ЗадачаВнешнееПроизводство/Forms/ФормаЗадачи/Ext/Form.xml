@@ -149,12 +149,28 @@
 									<CommandName>Form.Command.Согласовано</CommandName>
 									<ExtendedTooltip name="СогласованоРасширеннаяПодсказка" id="53"/>
 								</Button>
+								<Button name="ДоработкаДизайнера" id="54">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.ДоработкаДизайнера</CommandName>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Доработка</v8:content>
+										</v8:item>
+									</Title>
+									<ExtendedTooltip name="ДоработкаДизайнераРасширеннаяПодсказка" id="55"/>
+								</Button>
+								<Button name="ДоработкаВедущийКонструктор" id="56">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.ДоработкаВедущийКонструктор</CommandName>
+									<ExtendedTooltip name="ДоработкаВедущийКонструкторРасширеннаяПодсказка" id="57"/>
+								</Button>
 							</ChildItems>
 						</UsualGroup>
 					</ChildItems>
 				</UsualGroup>
 				<InputField name="Комментарий" id="13">
-					<DataPath>Объект.Комментарий</DataPath>
+					<DataPath>1/0:96a19cb6-33b4-421c-8cc6-0c5221b0e90e</DataPath>
 					<EditMode>EnterOnInput</EditMode>
 					<MultiLine>true</MultiLine>
 					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
@@ -241,6 +257,51 @@
 				</v8:item>
 			</ToolTip>
 			<Action>Согласовано</Action>
+		</Command>
+		<Command name="ДоработкаДизайнера" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Доработка дизайнера</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Доработка дизайнера</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ДоработкаДизайнера</Action>
+		</Command>
+		<Command name="ДоработкаВедущийКонструктор" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Доработка</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Доработка ведущий конструктор</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ДоработкаВедущийКонструктор</Action>
+		</Command>
+		<Command name="ДобавитьКомментарий" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить комментарий</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить комментарий</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ДобавитьКомментарий</Action>
 		</Command>
 	</Commands>
 	<CommandInterface>
