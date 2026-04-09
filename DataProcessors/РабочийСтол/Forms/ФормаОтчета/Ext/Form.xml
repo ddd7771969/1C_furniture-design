@@ -741,129 +741,239 @@
 					<ShowTitle>false</ShowTitle>
 					<ExtendedTooltip name="Группа11РасширеннаяПодсказка" id="1260"/>
 					<ChildItems>
-						<Table name="ПодтверждениеПКД1" id="489">
-							<TitleLocation>Top</TitleLocation>
-							<UseAlternationRowColor>true</UseAlternationRowColor>
-							<EnableStartDrag>true</EnableStartDrag>
-							<DataPath>ПодтверждениеПКД</DataPath>
-							<RowPictureDataPath>ПодтверждениеПКД.DefaultPicture</RowPictureDataPath>
-							<Title>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>ПКД.Контроль</v8:content>
-								</v8:item>
-							</Title>
-							<AutoRefresh>false</AutoRefresh>
-							<AutoRefreshPeriod>60</AutoRefreshPeriod>
-							<Period>
-								<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
-								<v8:startDate>0001-01-01T00:00:00</v8:startDate>
-								<v8:endDate>0001-01-01T00:00:00</v8:endDate>
-							</Period>
-							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
-							<RestoreCurrentRow>false</RestoreCurrentRow>
-							<TopLevelParent xsi:nil="true"/>
-							<ShowRoot>true</ShowRoot>
-							<AllowRootChoice>false</AllowRootChoice>
-							<UpdateOnDataChange>Auto</UpdateOnDataChange>
-							<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
-							<ContextMenu name="ПодтверждениеПКД1КонтекстноеМеню" id="490"/>
-							<AutoCommandBar name="ПодтверждениеПКД1КоманднаяПанель" id="491">
-								<Autofill>false</Autofill>
-							</AutoCommandBar>
-							<ExtendedTooltip name="ПодтверждениеПКД1РасширеннаяПодсказка" id="492"/>
-							<SearchStringAddition name="ПодтверждениеПКД1СтрокаПоиска" id="493">
-								<AdditionSource>
-									<Item>ПодтверждениеПКД1</Item>
-									<Type>SearchStringRepresentation</Type>
-								</AdditionSource>
-								<ContextMenu name="ПодтверждениеПКД1СтрокаПоискаКонтекстноеМеню" id="494"/>
-								<ExtendedTooltip name="ПодтверждениеПКД1СтрокаПоискаРасширеннаяПодсказка" id="495"/>
-							</SearchStringAddition>
-							<ViewStatusAddition name="ПодтверждениеПКД1СостояниеПросмотра" id="496">
-								<AdditionSource>
-									<Item>ПодтверждениеПКД1</Item>
-									<Type>ViewStatusRepresentation</Type>
-								</AdditionSource>
-								<ContextMenu name="ПодтверждениеПКД1СостояниеПросмотраКонтекстноеМеню" id="497"/>
-								<ExtendedTooltip name="ПодтверждениеПКД1СостояниеПросмотраРасширеннаяПодсказка" id="498"/>
-							</ViewStatusAddition>
-							<SearchControlAddition name="ПодтверждениеПКД1УправлениеПоиском" id="499">
-								<AdditionSource>
-									<Item>ПодтверждениеПКД1</Item>
-									<Type>SearchControl</Type>
-								</AdditionSource>
-								<ContextMenu name="ПодтверждениеПКД1УправлениеПоискомКонтекстноеМеню" id="500"/>
-								<ExtendedTooltip name="ПодтверждениеПКД1УправлениеПоискомРасширеннаяПодсказка" id="501"/>
-							</SearchControlAddition>
+						<UsualGroup name="Группа1" id="1443">
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="1444"/>
 							<ChildItems>
-								<PictureField name="ЕстьФайлы" id="1132">
-									<DataPath>ПодтверждениеПКД.ЕстьФайлы</DataPath>
-									<TitleLocation>None</TitleLocation>
-									<FooterPicture>
-										<xr:Ref>CommonPicture.Скрепка</xr:Ref>
-										<xr:LoadTransparent>true</xr:LoadTransparent>
-									</FooterPicture>
-									<ValuesPicture>
-										<xr:Ref>CommonPicture.Скрепка</xr:Ref>
-										<xr:LoadTransparent>true</xr:LoadTransparent>
-									</ValuesPicture>
-									<ContextMenu name="ЕстьФайлыКонтекстноеМеню" id="1133"/>
-									<ExtendedTooltip name="ЕстьФайлыРасширеннаяПодсказка" id="1134"/>
-								</PictureField>
-								<PictureField name="ПодтверждениеПКД1ЕстьФайлы" id="1135">
-									<DataPath>ПодтверждениеПКД.ЕстьФайлы</DataPath>
-									<TitleLocation>None</TitleLocation>
-									<FooterPicture>
-										<xr:Ref>CommonPicture.Скрепка</xr:Ref>
-										<xr:LoadTransparent>true</xr:LoadTransparent>
-									</FooterPicture>
-									<ValuesPicture>
-										<xr:Ref>CommonPicture.Скрепка</xr:Ref>
-										<xr:LoadTransparent>true</xr:LoadTransparent>
-									</ValuesPicture>
-									<ContextMenu name="ПодтверждениеПКД1ЕстьФайлыКонтекстноеМеню" id="1136"/>
-									<ExtendedTooltip name="ПодтверждениеПКД1ЕстьФайлыРасширеннаяПодсказка" id="1137"/>
-								</PictureField>
-								<LabelField name="ПодтверждениеПКД1Наименование" id="1077">
-									<DataPath>ПодтверждениеПКД.Наименование</DataPath>
+								<Table name="ПодтверждениеПКД1" id="489">
+									<TitleLocation>Top</TitleLocation>
+									<UseAlternationRowColor>true</UseAlternationRowColor>
+									<EnableStartDrag>true</EnableStartDrag>
+									<DataPath>ПодтверждениеПКД</DataPath>
+									<RowPictureDataPath>ПодтверждениеПКД.DefaultPicture</RowPictureDataPath>
 									<Title>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
-											<v8:content>Задача</v8:content>
+											<v8:content>ПКД.Контроль</v8:content>
 										</v8:item>
 									</Title>
-									<ContextMenu name="ПодтверждениеПКД1НаименованиеКонтекстноеМеню" id="1078"/>
-									<ExtendedTooltip name="ПодтверждениеПКД1НаименованиеРасширеннаяПодсказка" id="1079"/>
-								</LabelField>
-								<LabelField name="ПодтверждениеПКД1Конструктор" id="1237">
-									<DataPath>ПодтверждениеПКД.Конструктор</DataPath>
-									<ContextMenu name="ПодтверждениеПКД1КонструкторКонтекстноеМеню" id="1238"/>
-									<ExtendedTooltip name="ПодтверждениеПКД1КонструкторРасширеннаяПодсказка" id="1239"/>
-								</LabelField>
-								<LabelField name="ПодтверждениеПКДИсполнитель1" id="508">
-									<DataPath>ПодтверждениеПКД.Исполнитель</DataPath>
-									<ContextMenu name="ПодтверждениеПКДИсполнитель1КонтекстноеМеню" id="509"/>
-									<ExtendedTooltip name="ПодтверждениеПКДИсполнитель1РасширеннаяПодсказка" id="510"/>
-								</LabelField>
-								<LabelField name="ПодтверждениеПКДКомпозиция1" id="514">
-									<DataPath>ПодтверждениеПКД.Композиция</DataPath>
-									<ContextMenu name="ПодтверждениеПКДКомпозиция1КонтекстноеМеню" id="515"/>
-									<ExtendedTooltip name="ПодтверждениеПКДКомпозиция1РасширеннаяПодсказка" id="516"/>
-								</LabelField>
-								<LabelField name="ПодтверждениеПКДДата1" id="505">
-									<DataPath>ПодтверждениеПКД.Дата</DataPath>
-									<Format>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>ДФ=dd.MM.yy</v8:content>
-										</v8:item>
-									</Format>
-									<ContextMenu name="ПодтверждениеПКДДата1КонтекстноеМеню" id="506"/>
-									<ExtendedTooltip name="ПодтверждениеПКДДата1РасширеннаяПодсказка" id="507"/>
-								</LabelField>
+									<AutoRefresh>false</AutoRefresh>
+									<AutoRefreshPeriod>60</AutoRefreshPeriod>
+									<Period>
+										<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+										<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+										<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+									</Period>
+									<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+									<RestoreCurrentRow>false</RestoreCurrentRow>
+									<TopLevelParent xsi:nil="true"/>
+									<ShowRoot>true</ShowRoot>
+									<AllowRootChoice>false</AllowRootChoice>
+									<UpdateOnDataChange>Auto</UpdateOnDataChange>
+									<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
+									<ContextMenu name="ПодтверждениеПКД1КонтекстноеМеню" id="490"/>
+									<AutoCommandBar name="ПодтверждениеПКД1КоманднаяПанель" id="491">
+										<Autofill>false</Autofill>
+									</AutoCommandBar>
+									<ExtendedTooltip name="ПодтверждениеПКД1РасширеннаяПодсказка" id="492"/>
+									<SearchStringAddition name="ПодтверждениеПКД1СтрокаПоиска" id="493">
+										<AdditionSource>
+											<Item>ПодтверждениеПКД1</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ПодтверждениеПКД1СтрокаПоискаКонтекстноеМеню" id="494"/>
+										<ExtendedTooltip name="ПодтверждениеПКД1СтрокаПоискаРасширеннаяПодсказка" id="495"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="ПодтверждениеПКД1СостояниеПросмотра" id="496">
+										<AdditionSource>
+											<Item>ПодтверждениеПКД1</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ПодтверждениеПКД1СостояниеПросмотраКонтекстноеМеню" id="497"/>
+										<ExtendedTooltip name="ПодтверждениеПКД1СостояниеПросмотраРасширеннаяПодсказка" id="498"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="ПодтверждениеПКД1УправлениеПоиском" id="499">
+										<AdditionSource>
+											<Item>ПодтверждениеПКД1</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="ПодтверждениеПКД1УправлениеПоискомКонтекстноеМеню" id="500"/>
+										<ExtendedTooltip name="ПодтверждениеПКД1УправлениеПоискомРасширеннаяПодсказка" id="501"/>
+									</SearchControlAddition>
+									<ChildItems>
+										<PictureField name="ЕстьФайлы" id="1132">
+											<DataPath>ПодтверждениеПКД.ЕстьФайлы</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<FooterPicture>
+												<xr:Ref>CommonPicture.Скрепка</xr:Ref>
+												<xr:LoadTransparent>true</xr:LoadTransparent>
+											</FooterPicture>
+											<ValuesPicture>
+												<xr:Ref>CommonPicture.Скрепка</xr:Ref>
+												<xr:LoadTransparent>true</xr:LoadTransparent>
+											</ValuesPicture>
+											<ContextMenu name="ЕстьФайлыКонтекстноеМеню" id="1133"/>
+											<ExtendedTooltip name="ЕстьФайлыРасширеннаяПодсказка" id="1134"/>
+										</PictureField>
+										<PictureField name="ПодтверждениеПКД1ЕстьФайлы" id="1135">
+											<DataPath>ПодтверждениеПКД.ЕстьФайлы</DataPath>
+											<TitleLocation>None</TitleLocation>
+											<FooterPicture>
+												<xr:Ref>CommonPicture.Скрепка</xr:Ref>
+												<xr:LoadTransparent>true</xr:LoadTransparent>
+											</FooterPicture>
+											<ValuesPicture>
+												<xr:Ref>CommonPicture.Скрепка</xr:Ref>
+												<xr:LoadTransparent>true</xr:LoadTransparent>
+											</ValuesPicture>
+											<ContextMenu name="ПодтверждениеПКД1ЕстьФайлыКонтекстноеМеню" id="1136"/>
+											<ExtendedTooltip name="ПодтверждениеПКД1ЕстьФайлыРасширеннаяПодсказка" id="1137"/>
+										</PictureField>
+										<LabelField name="ПодтверждениеПКД1Наименование" id="1077">
+											<DataPath>ПодтверждениеПКД.Наименование</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Задача</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="ПодтверждениеПКД1НаименованиеКонтекстноеМеню" id="1078"/>
+											<ExtendedTooltip name="ПодтверждениеПКД1НаименованиеРасширеннаяПодсказка" id="1079"/>
+										</LabelField>
+										<LabelField name="ПодтверждениеПКД1Конструктор" id="1237">
+											<DataPath>ПодтверждениеПКД.Конструктор</DataPath>
+											<ContextMenu name="ПодтверждениеПКД1КонструкторКонтекстноеМеню" id="1238"/>
+											<ExtendedTooltip name="ПодтверждениеПКД1КонструкторРасширеннаяПодсказка" id="1239"/>
+										</LabelField>
+										<LabelField name="ПодтверждениеПКДИсполнитель1" id="508">
+											<DataPath>ПодтверждениеПКД.Исполнитель</DataPath>
+											<ContextMenu name="ПодтверждениеПКДИсполнитель1КонтекстноеМеню" id="509"/>
+											<ExtendedTooltip name="ПодтверждениеПКДИсполнитель1РасширеннаяПодсказка" id="510"/>
+										</LabelField>
+										<LabelField name="ПодтверждениеПКДКомпозиция1" id="514">
+											<DataPath>ПодтверждениеПКД.Композиция</DataPath>
+											<ContextMenu name="ПодтверждениеПКДКомпозиция1КонтекстноеМеню" id="515"/>
+											<ExtendedTooltip name="ПодтверждениеПКДКомпозиция1РасширеннаяПодсказка" id="516"/>
+										</LabelField>
+										<LabelField name="ПодтверждениеПКДДата1" id="505">
+											<DataPath>ПодтверждениеПКД.Дата</DataPath>
+											<Format>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>ДФ=dd.MM.yy</v8:content>
+												</v8:item>
+											</Format>
+											<ContextMenu name="ПодтверждениеПКДДата1КонтекстноеМеню" id="506"/>
+											<ExtendedTooltip name="ПодтверждениеПКДДата1РасширеннаяПодсказка" id="507"/>
+										</LabelField>
+									</ChildItems>
+								</Table>
+								<Table name="ВнешнееПроизводство1" id="1445">
+									<UseAlternationRowColor>true</UseAlternationRowColor>
+									<EnableStartDrag>true</EnableStartDrag>
+									<DataPath>ВнешнееПроизводство</DataPath>
+									<RowPictureDataPath>ВнешнееПроизводство.DefaultPicture</RowPictureDataPath>
+									<AutoRefresh>false</AutoRefresh>
+									<AutoRefreshPeriod>60</AutoRefreshPeriod>
+									<Period>
+										<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+										<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+										<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+									</Period>
+									<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+									<RestoreCurrentRow>false</RestoreCurrentRow>
+									<TopLevelParent xsi:nil="true"/>
+									<ShowRoot>true</ShowRoot>
+									<AllowRootChoice>false</AllowRootChoice>
+									<UpdateOnDataChange>Auto</UpdateOnDataChange>
+									<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
+									<ContextMenu name="ВнешнееПроизводство1КонтекстноеМеню" id="1446"/>
+									<AutoCommandBar name="ВнешнееПроизводство1КоманднаяПанель" id="1447">
+										<Autofill>false</Autofill>
+									</AutoCommandBar>
+									<ExtendedTooltip name="ВнешнееПроизводство1РасширеннаяПодсказка" id="1448"/>
+									<SearchStringAddition name="ВнешнееПроизводство1СтрокаПоиска" id="1449">
+										<AdditionSource>
+											<Item>ВнешнееПроизводство1</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ВнешнееПроизводство1СтрокаПоискаКонтекстноеМеню" id="1450"/>
+										<ExtendedTooltip name="ВнешнееПроизводство1СтрокаПоискаРасширеннаяПодсказка" id="1451"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="ВнешнееПроизводство1СостояниеПросмотра" id="1452">
+										<AdditionSource>
+											<Item>ВнешнееПроизводство1</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ВнешнееПроизводство1СостояниеПросмотраКонтекстноеМеню" id="1453"/>
+										<ExtendedTooltip name="ВнешнееПроизводство1СостояниеПросмотраРасширеннаяПодсказка" id="1454"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="ВнешнееПроизводство1УправлениеПоиском" id="1455">
+										<AdditionSource>
+											<Item>ВнешнееПроизводство1</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="ВнешнееПроизводство1УправлениеПоискомКонтекстноеМеню" id="1456"/>
+										<ExtendedTooltip name="ВнешнееПроизводство1УправлениеПоискомРасширеннаяПодсказка" id="1457"/>
+									</SearchControlAddition>
+									<ChildItems>
+										<LabelField name="ВнешнееПроизводствоНаименование1" id="1458">
+											<DataPath>ВнешнееПроизводство.Наименование</DataPath>
+											<ContextMenu name="ВнешнееПроизводствоНаименование1КонтекстноеМеню" id="1459"/>
+											<ExtendedTooltip name="ВнешнееПроизводствоНаименование1РасширеннаяПодсказка" id="1460"/>
+										</LabelField>
+										<LabelField name="ВнешнееПроизводствоДата1" id="1461">
+											<DataPath>ВнешнееПроизводство.Дата</DataPath>
+											<ContextMenu name="ВнешнееПроизводствоДата1КонтекстноеМеню" id="1462"/>
+											<ExtendedTooltip name="ВнешнееПроизводствоДата1РасширеннаяПодсказка" id="1463"/>
+										</LabelField>
+										<LabelField name="ВнешнееПроизводствоДатаОжидаемогоОкончанияПодрядчиком1" id="1464">
+											<DataPath>ВнешнееПроизводство.ДатаОжидаемогоОкончанияПодрядчиком</DataPath>
+											<ContextMenu name="ВнешнееПроизводствоДатаОжидаемогоОкончанияПодрядчиком1КонтекстноеМеню" id="1465"/>
+											<ExtendedTooltip name="ВнешнееПроизводствоДатаОжидаемогоОкончанияПодрядчиком1РасширеннаяПодсказка" id="1466"/>
+										</LabelField>
+										<LabelField name="ВнешнееПроизводствоПроект1" id="1467">
+											<DataPath>ВнешнееПроизводство.Проект</DataPath>
+											<ContextMenu name="ВнешнееПроизводствоПроект1КонтекстноеМеню" id="1468"/>
+											<ExtendedTooltip name="ВнешнееПроизводствоПроект1РасширеннаяПодсказка" id="1469"/>
+										</LabelField>
+										<LabelField name="ВнешнееПроизводствоОбъектТЗ1" id="1470">
+											<DataPath>ВнешнееПроизводство.ОбъектТЗ</DataPath>
+											<ContextMenu name="ВнешнееПроизводствоОбъектТЗ1КонтекстноеМеню" id="1471"/>
+											<ExtendedTooltip name="ВнешнееПроизводствоОбъектТЗ1РасширеннаяПодсказка" id="1472"/>
+										</LabelField>
+										<LabelField name="ВнешнееПроизводствоИсполнитель1" id="1473">
+											<DataPath>ВнешнееПроизводство.Исполнитель</DataPath>
+											<ContextMenu name="ВнешнееПроизводствоИсполнитель1КонтекстноеМеню" id="1474"/>
+											<ExtendedTooltip name="ВнешнееПроизводствоИсполнитель1РасширеннаяПодсказка" id="1475"/>
+										</LabelField>
+										<LabelField name="ВнешнееПроизводствоКомментарий1" id="1476">
+											<DataPath>~ВнешнееПроизводство.Комментарий</DataPath>
+											<ContextMenu name="ВнешнееПроизводствоКомментарий1КонтекстноеМеню" id="1477"/>
+											<ExtendedTooltip name="ВнешнееПроизводствоКомментарий1РасширеннаяПодсказка" id="1478"/>
+										</LabelField>
+										<CheckBoxField name="ВнешнееПроизводствоДоставкаНаСклад1" id="1479">
+											<DataPath>ВнешнееПроизводство.ДоставкаНаСклад</DataPath>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="ВнешнееПроизводствоДоставкаНаСклад1КонтекстноеМеню" id="1480"/>
+											<ExtendedTooltip name="ВнешнееПроизводствоДоставкаНаСклад1РасширеннаяПодсказка" id="1481"/>
+										</CheckBoxField>
+										<LabelField name="ВнешнееПроизводствоТипЗадачи1" id="1482">
+											<DataPath>ВнешнееПроизводство.ТипЗадачи</DataPath>
+											<ContextMenu name="ВнешнееПроизводствоТипЗадачи1КонтекстноеМеню" id="1483"/>
+											<ExtendedTooltip name="ВнешнееПроизводствоТипЗадачи1РасширеннаяПодсказка" id="1484"/>
+										</LabelField>
+										<LabelField name="ВнешнееПроизводствоАвтор1" id="1485">
+											<DataPath>ВнешнееПроизводство.Автор</DataPath>
+											<ContextMenu name="ВнешнееПроизводствоАвтор1КонтекстноеМеню" id="1486"/>
+											<ExtendedTooltip name="ВнешнееПроизводствоАвтор1РасширеннаяПодсказка" id="1487"/>
+										</LabelField>
+									</ChildItems>
+								</Table>
 							</ChildItems>
-						</Table>
+						</UsualGroup>
 						<UsualGroup name="Группа5" id="1144">
 							<Group>Vertical</Group>
 							<Representation>None</Representation>
@@ -876,6 +986,12 @@
 									<EnableStartDrag>true</EnableStartDrag>
 									<DataPath>ЗадачиМенеджера</DataPath>
 									<RowPictureDataPath>ЗадачиМенеджера.DefaultPicture</RowPictureDataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Согласования</v8:content>
+										</v8:item>
+									</Title>
 									<AutoRefresh>false</AutoRefresh>
 									<AutoRefreshPeriod>60</AutoRefreshPeriod>
 									<Period>
@@ -1631,6 +1747,108 @@
 										</LabelField>
 									</ChildItems>
 								</Table>
+								<Table name="ВнешнееПроизводство2" id="1488">
+									<UseAlternationRowColor>true</UseAlternationRowColor>
+									<EnableStartDrag>true</EnableStartDrag>
+									<DataPath>ВнешнееПроизводство</DataPath>
+									<RowPictureDataPath>ВнешнееПроизводство.DefaultPicture</RowPictureDataPath>
+									<AutoRefresh>false</AutoRefresh>
+									<AutoRefreshPeriod>60</AutoRefreshPeriod>
+									<Period>
+										<v8:variant xsi:type="v8:StandardPeriodVariant">Custom</v8:variant>
+										<v8:startDate>0001-01-01T00:00:00</v8:startDate>
+										<v8:endDate>0001-01-01T00:00:00</v8:endDate>
+									</Period>
+									<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+									<RestoreCurrentRow>false</RestoreCurrentRow>
+									<TopLevelParent xsi:nil="true"/>
+									<ShowRoot>true</ShowRoot>
+									<AllowRootChoice>false</AllowRootChoice>
+									<UpdateOnDataChange>Auto</UpdateOnDataChange>
+									<AllowGettingCurrentRowURL>true</AllowGettingCurrentRowURL>
+									<ContextMenu name="ВнешнееПроизводство2КонтекстноеМеню" id="1489"/>
+									<AutoCommandBar name="ВнешнееПроизводство2КоманднаяПанель" id="1490">
+										<Autofill>false</Autofill>
+									</AutoCommandBar>
+									<ExtendedTooltip name="ВнешнееПроизводство2РасширеннаяПодсказка" id="1491"/>
+									<SearchStringAddition name="ВнешнееПроизводство2СтрокаПоиска" id="1492">
+										<AdditionSource>
+											<Item>ВнешнееПроизводство2</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ВнешнееПроизводство2СтрокаПоискаКонтекстноеМеню" id="1493"/>
+										<ExtendedTooltip name="ВнешнееПроизводство2СтрокаПоискаРасширеннаяПодсказка" id="1494"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="ВнешнееПроизводство2СостояниеПросмотра" id="1495">
+										<AdditionSource>
+											<Item>ВнешнееПроизводство2</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ВнешнееПроизводство2СостояниеПросмотраКонтекстноеМеню" id="1496"/>
+										<ExtendedTooltip name="ВнешнееПроизводство2СостояниеПросмотраРасширеннаяПодсказка" id="1497"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="ВнешнееПроизводство2УправлениеПоиском" id="1498">
+										<AdditionSource>
+											<Item>ВнешнееПроизводство2</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="ВнешнееПроизводство2УправлениеПоискомКонтекстноеМеню" id="1499"/>
+										<ExtendedTooltip name="ВнешнееПроизводство2УправлениеПоискомРасширеннаяПодсказка" id="1500"/>
+									</SearchControlAddition>
+									<ChildItems>
+										<LabelField name="ВнешнееПроизводствоНаименование2" id="1501">
+											<DataPath>ВнешнееПроизводство.Наименование</DataPath>
+											<ContextMenu name="ВнешнееПроизводствоНаименование2КонтекстноеМеню" id="1502"/>
+											<ExtendedTooltip name="ВнешнееПроизводствоНаименование2РасширеннаяПодсказка" id="1503"/>
+										</LabelField>
+										<LabelField name="ВнешнееПроизводствоДата2" id="1504">
+											<DataPath>ВнешнееПроизводство.Дата</DataPath>
+											<ContextMenu name="ВнешнееПроизводствоДата2КонтекстноеМеню" id="1505"/>
+											<ExtendedTooltip name="ВнешнееПроизводствоДата2РасширеннаяПодсказка" id="1506"/>
+										</LabelField>
+										<LabelField name="ВнешнееПроизводствоДатаОжидаемогоОкончанияПодрядчиком2" id="1507">
+											<DataPath>ВнешнееПроизводство.ДатаОжидаемогоОкончанияПодрядчиком</DataPath>
+											<ContextMenu name="ВнешнееПроизводствоДатаОжидаемогоОкончанияПодрядчиком2КонтекстноеМеню" id="1508"/>
+											<ExtendedTooltip name="ВнешнееПроизводствоДатаОжидаемогоОкончанияПодрядчиком2РасширеннаяПодсказка" id="1509"/>
+										</LabelField>
+										<LabelField name="ВнешнееПроизводствоПроект2" id="1510">
+											<DataPath>ВнешнееПроизводство.Проект</DataPath>
+											<ContextMenu name="ВнешнееПроизводствоПроект2КонтекстноеМеню" id="1511"/>
+											<ExtendedTooltip name="ВнешнееПроизводствоПроект2РасширеннаяПодсказка" id="1512"/>
+										</LabelField>
+										<LabelField name="ВнешнееПроизводствоОбъектТЗ2" id="1513">
+											<DataPath>ВнешнееПроизводство.ОбъектТЗ</DataPath>
+											<ContextMenu name="ВнешнееПроизводствоОбъектТЗ2КонтекстноеМеню" id="1514"/>
+											<ExtendedTooltip name="ВнешнееПроизводствоОбъектТЗ2РасширеннаяПодсказка" id="1515"/>
+										</LabelField>
+										<LabelField name="ВнешнееПроизводствоИсполнитель2" id="1516">
+											<DataPath>ВнешнееПроизводство.Исполнитель</DataPath>
+											<ContextMenu name="ВнешнееПроизводствоИсполнитель2КонтекстноеМеню" id="1517"/>
+											<ExtendedTooltip name="ВнешнееПроизводствоИсполнитель2РасширеннаяПодсказка" id="1518"/>
+										</LabelField>
+										<LabelField name="ВнешнееПроизводствоКомментарий2" id="1519">
+											<DataPath>~ВнешнееПроизводство.Комментарий</DataPath>
+											<ContextMenu name="ВнешнееПроизводствоКомментарий2КонтекстноеМеню" id="1520"/>
+											<ExtendedTooltip name="ВнешнееПроизводствоКомментарий2РасширеннаяПодсказка" id="1521"/>
+										</LabelField>
+										<CheckBoxField name="ВнешнееПроизводствоДоставкаНаСклад2" id="1522">
+											<DataPath>ВнешнееПроизводство.ДоставкаНаСклад</DataPath>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="ВнешнееПроизводствоДоставкаНаСклад2КонтекстноеМеню" id="1523"/>
+											<ExtendedTooltip name="ВнешнееПроизводствоДоставкаНаСклад2РасширеннаяПодсказка" id="1524"/>
+										</CheckBoxField>
+										<LabelField name="ВнешнееПроизводствоТипЗадачи2" id="1525">
+											<DataPath>ВнешнееПроизводство.ТипЗадачи</DataPath>
+											<ContextMenu name="ВнешнееПроизводствоТипЗадачи2КонтекстноеМеню" id="1526"/>
+											<ExtendedTooltip name="ВнешнееПроизводствоТипЗадачи2РасширеннаяПодсказка" id="1527"/>
+										</LabelField>
+										<LabelField name="ВнешнееПроизводствоАвтор2" id="1528">
+											<DataPath>ВнешнееПроизводство.Автор</DataPath>
+											<ContextMenu name="ВнешнееПроизводствоАвтор2КонтекстноеМеню" id="1529"/>
+											<ExtendedTooltip name="ВнешнееПроизводствоАвтор2РасширеннаяПодсказка" id="1530"/>
+										</LabelField>
+									</ChildItems>
+								</Table>
 							</ChildItems>
 						</UsualGroup>
 					</ChildItems>
@@ -2183,32 +2401,32 @@
 					</SearchControlAddition>
 					<ChildItems>
 						<LabelField name="ВнешнееПроизводствоНаименование" id="1422">
-							<DataPath>~ВнешнееПроизводство.Наименование</DataPath>
+							<DataPath>ВнешнееПроизводство.Наименование</DataPath>
 							<ContextMenu name="ВнешнееПроизводствоНаименованиеКонтекстноеМеню" id="1423"/>
 							<ExtendedTooltip name="ВнешнееПроизводствоНаименованиеРасширеннаяПодсказка" id="1424"/>
 						</LabelField>
 						<LabelField name="ВнешнееПроизводствоДата" id="1407">
-							<DataPath>~ВнешнееПроизводство.Дата</DataPath>
+							<DataPath>ВнешнееПроизводство.Дата</DataPath>
 							<ContextMenu name="ВнешнееПроизводствоДатаКонтекстноеМеню" id="1408"/>
 							<ExtendedTooltip name="ВнешнееПроизводствоДатаРасширеннаяПодсказка" id="1409"/>
 						</LabelField>
 						<LabelField name="ВнешнееПроизводствоДатаОжидаемогоОкончанияПодрядчиком" id="1410">
-							<DataPath>~ВнешнееПроизводство.ДатаОжидаемогоОкончанияПодрядчиком</DataPath>
+							<DataPath>ВнешнееПроизводство.ДатаОжидаемогоОкончанияПодрядчиком</DataPath>
 							<ContextMenu name="ВнешнееПроизводствоДатаОжидаемогоОкончанияПодрядчикомКонтекстноеМеню" id="1411"/>
 							<ExtendedTooltip name="ВнешнееПроизводствоДатаОжидаемогоОкончанияПодрядчикомРасширеннаяПодсказка" id="1412"/>
 						</LabelField>
 						<LabelField name="ВнешнееПроизводствоПроект" id="1434">
-							<DataPath>~ВнешнееПроизводство.Проект</DataPath>
+							<DataPath>ВнешнееПроизводство.Проект</DataPath>
 							<ContextMenu name="ВнешнееПроизводствоПроектКонтекстноеМеню" id="1435"/>
 							<ExtendedTooltip name="ВнешнееПроизводствоПроектРасширеннаяПодсказка" id="1436"/>
 						</LabelField>
 						<LabelField name="ВнешнееПроизводствоОбъектТЗ" id="1428">
-							<DataPath>~ВнешнееПроизводство.ОбъектТЗ</DataPath>
+							<DataPath>ВнешнееПроизводство.ОбъектТЗ</DataPath>
 							<ContextMenu name="ВнешнееПроизводствоОбъектТЗКонтекстноеМеню" id="1429"/>
 							<ExtendedTooltip name="ВнешнееПроизводствоОбъектТЗРасширеннаяПодсказка" id="1430"/>
 						</LabelField>
 						<LabelField name="ВнешнееПроизводствоИсполнитель" id="1416">
-							<DataPath>~ВнешнееПроизводство.Исполнитель</DataPath>
+							<DataPath>ВнешнееПроизводство.Исполнитель</DataPath>
 							<ContextMenu name="ВнешнееПроизводствоИсполнительКонтекстноеМеню" id="1417"/>
 							<ExtendedTooltip name="ВнешнееПроизводствоИсполнительРасширеннаяПодсказка" id="1418"/>
 						</LabelField>
@@ -2218,18 +2436,18 @@
 							<ExtendedTooltip name="ВнешнееПроизводствоКомментарийРасширеннаяПодсказка" id="1421"/>
 						</LabelField>
 						<CheckBoxField name="ВнешнееПроизводствоДоставкаНаСклад" id="1413">
-							<DataPath>~ВнешнееПроизводство.ДоставкаНаСклад</DataPath>
+							<DataPath>ВнешнееПроизводство.ДоставкаНаСклад</DataPath>
 							<CheckBoxType>Auto</CheckBoxType>
 							<ContextMenu name="ВнешнееПроизводствоДоставкаНаСкладКонтекстноеМеню" id="1414"/>
 							<ExtendedTooltip name="ВнешнееПроизводствоДоставкаНаСкладРасширеннаяПодсказка" id="1415"/>
 						</CheckBoxField>
 						<LabelField name="ВнешнееПроизводствоТипЗадачи" id="1440">
-							<DataPath>~ВнешнееПроизводство.ТипЗадачи</DataPath>
+							<DataPath>ВнешнееПроизводство.ТипЗадачи</DataPath>
 							<ContextMenu name="ВнешнееПроизводствоТипЗадачиКонтекстноеМеню" id="1441"/>
 							<ExtendedTooltip name="ВнешнееПроизводствоТипЗадачиРасширеннаяПодсказка" id="1442"/>
 						</LabelField>
 						<LabelField name="ВнешнееПроизводствоАвтор" id="1401">
-							<DataPath>~ВнешнееПроизводство.Автор</DataPath>
+							<DataPath>ВнешнееПроизводство.Автор</DataPath>
 							<ContextMenu name="ВнешнееПроизводствоАвторКонтекстноеМеню" id="1402"/>
 							<ExtendedTooltip name="ВнешнееПроизводствоАвторРасширеннаяПодсказка" id="1403"/>
 						</LabelField>
@@ -3240,7 +3458,8 @@
 				ТОГДА ИСТИНА
 			ИНАЧЕ ЗадачаЗадачи_ПКД.Исполнитель = &amp;Исполнитель
 		КОНЕЦ
-	И НЕ ЗадачаЗадачи_ПКД.ОбобщеннаяЗадача</QueryText>
+	И НЕ ЗадачаЗадачи_ПКД.ОбобщеннаяЗадача
+	И НЕ ЗадачаЗадачи_ПКД.СтатусЗадачи = ЗНАЧЕНИЕ(Перечисление.СтатусыЗадач.ГлобальнаяПриостановкаРаботы)</QueryText>
 				<Field xsi:type="dcssch:DataSetFieldField">
 					<dcssch:dataPath>ДополнительноеСвойство</dcssch:dataPath>
 					<dcssch:field>ДополнительноеСвойство</dcssch:field>
@@ -3374,6 +3593,10 @@
 							<v8:content>Переход представление</v8:content>
 						</v8:item>
 					</dcssch:title>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>КороткаяСрочнаяЗадача</dcssch:dataPath>
+					<dcssch:field>КороткаяСрочнаяЗадача</dcssch:field>
 				</Field>
 				<Parameter>
 					<dcssch:name>Период</dcssch:name>
@@ -3811,7 +4034,8 @@
 			ИНАЧЕ Задачи_ПКД.Проект = &amp;Проект
 		КОНЕЦ
 	И НЕ Задачи_ПКД.Выполнена
-	И НЕ Задачи_ПКД.ОбобщеннаяЗадача</QueryText>
+	И НЕ Задачи_ПКД.ОбобщеннаяЗадача
+	И НЕ Задачи_ПКД.СтатусЗадачи = ЗНАЧЕНИЕ(Перечисление.СтатусыЗадач.ГлобальнаяПриостановкаРаботы)</QueryText>
 				<Field xsi:type="dcssch:DataSetFieldField">
 					<dcssch:dataPath>Проект</dcssch:dataPath>
 					<dcssch:field>Проект</dcssch:field>
@@ -3901,10 +4125,6 @@
 					<dcssch:field>Наблюдатели</dcssch:field>
 				</Field>
 				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>Заголовок</dcssch:dataPath>
-					<dcssch:field>Заголовок</dcssch:field>
-				</Field>
-				<Field xsi:type="dcssch:DataSetFieldField">
 					<dcssch:dataPath>Изменение</dcssch:dataPath>
 					<dcssch:field>Изменение</dcssch:field>
 				</Field>
@@ -3959,6 +4179,10 @@
 							<v8:content>Начало действия</v8:content>
 						</v8:item>
 					</dcssch:title>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>КороткаяСрочнаяЗадача</dcssch:dataPath>
+					<dcssch:field>КороткаяСрочнаяЗадача</dcssch:field>
 				</Field>
 				<Parameter>
 					<dcssch:name>Исполнитель</dcssch:name>
@@ -4229,7 +4453,8 @@
 			КОГДА &amp;Исполнитель = ЗНАЧЕНИЕ(Справочник.Пользователи.ПустаяСсылка)
 				ТОГДА ИСТИНА
 			ИНАЧЕ Задачи_РКД.Исполнитель = &amp;Исполнитель
-		КОНЕЦ</QueryText>
+		КОНЕЦ
+	И НЕ Задачи_РКД.СтатусЗадачи = ЗНАЧЕНИЕ(Перечисление.СтатусыЗадач.ГлобальнаяПриостановкаРаботы)</QueryText>
 				<Field xsi:type="dcssch:DataSetFieldField">
 					<dcssch:dataPath>Выполнена</dcssch:dataPath>
 					<dcssch:field>Выполнена</dcssch:field>
@@ -4579,7 +4804,6 @@
 	ЗадачаЗадачаВнешнееПроизводство.Автор КАК Автор,
 	ЗадачаЗадачаВнешнееПроизводство.ДатаОжидаемогоОкончанияПодрядчиком КАК ДатаОжидаемогоОкончанияПодрядчиком,
 	ЗадачаЗадачаВнешнееПроизводство.ДоставкаНаСклад КАК ДоставкаНаСклад,
-	ЗадачаЗадачаВнешнееПроизводство.Комментарий КАК Комментарий,
 	ЗадачаЗадачаВнешнееПроизводство.ОбъектТЗ КАК ОбъектТЗ,
 	ЗадачаЗадачаВнешнееПроизводство.Проект КАК Проект,
 	ЗадачаЗадачаВнешнееПроизводство.ТипЗадачи КАК ТипЗадачи,
@@ -4589,28 +4813,24 @@
 ГДЕ
 	НЕ ЗадачаЗадачаВнешнееПроизводство.Выполнена</QueryText>
 				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>Ссылка</dcssch:dataPath>
-					<dcssch:field>Ссылка</dcssch:field>
+					<dcssch:dataPath>Наименование</dcssch:dataPath>
+					<dcssch:field>Наименование</dcssch:field>
 				</Field>
 				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>Номер</dcssch:dataPath>
-					<dcssch:field>Номер</dcssch:field>
-				</Field>
-				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>ПометкаУдаления</dcssch:dataPath>
-					<dcssch:field>ПометкаУдаления</dcssch:field>
+					<dcssch:dataPath>ДатаОкончанияПКД</dcssch:dataPath>
+					<dcssch:field>ДатаОкончанияПКД</dcssch:field>
 				</Field>
 				<Field xsi:type="dcssch:DataSetFieldField">
 					<dcssch:dataPath>Выполнена</dcssch:dataPath>
 					<dcssch:field>Выполнена</dcssch:field>
 				</Field>
 				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>Дата</dcssch:dataPath>
-					<dcssch:field>Дата</dcssch:field>
+					<dcssch:dataPath>Номер</dcssch:dataPath>
+					<dcssch:field>Номер</dcssch:field>
 				</Field>
 				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>Наименование</dcssch:dataPath>
-					<dcssch:field>Наименование</dcssch:field>
+					<dcssch:dataPath>Комментарии</dcssch:dataPath>
+					<dcssch:field>Комментарии</dcssch:field>
 				</Field>
 				<Field xsi:type="dcssch:DataSetFieldField">
 					<dcssch:dataPath>Проект</dcssch:dataPath>
@@ -4619,6 +4839,18 @@
 				<Field xsi:type="dcssch:DataSetFieldField">
 					<dcssch:dataPath>Автор</dcssch:dataPath>
 					<dcssch:field>Автор</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Ссылка</dcssch:dataPath>
+					<dcssch:field>Ссылка</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ПометкаУдаления</dcssch:dataPath>
+					<dcssch:field>ПометкаУдаления</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Дата</dcssch:dataPath>
+					<dcssch:field>Дата</dcssch:field>
 				</Field>
 				<Field xsi:type="dcssch:DataSetFieldField">
 					<dcssch:dataPath>ДатаОжидаемогоОкончанияПодрядчиком</dcssch:dataPath>
@@ -4631,10 +4863,6 @@
 				<Field xsi:type="dcssch:DataSetFieldField">
 					<dcssch:dataPath>ДоставкаНаСклад</dcssch:dataPath>
 					<dcssch:field>ДоставкаНаСклад</dcssch:field>
-				</Field>
-				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>Комментарий</dcssch:dataPath>
-					<dcssch:field>Комментарий</dcssch:field>
 				</Field>
 				<Field xsi:type="dcssch:DataSetFieldField">
 					<dcssch:dataPath>ОбъектТЗ</dcssch:dataPath>

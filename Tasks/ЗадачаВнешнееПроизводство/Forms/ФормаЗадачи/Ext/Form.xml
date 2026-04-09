@@ -101,6 +101,12 @@
 									<ContextMenu name="ДатаОжидаемогоОкончанияПодрядчикомКонтекстноеМеню" id="34"/>
 									<ExtendedTooltip name="ДатаОжидаемогоОкончанияПодрядчикомРасширеннаяПодсказка" id="35"/>
 								</InputField>
+								<InputField name="ДатаОкончанияПКД" id="58">
+									<DataPath>Объект.ДатаОкончанияПКД</DataPath>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ДатаОкончанияПКДКонтекстноеМеню" id="59"/>
+									<ExtendedTooltip name="ДатаОкончанияПКДРасширеннаяПодсказка" id="60"/>
+								</InputField>
 								<CheckBoxField name="ДоставкаНаСклад" id="38">
 									<DataPath>Объект.ДоставкаНаСклад</DataPath>
 									<CheckBoxType>Auto</CheckBoxType>
@@ -109,13 +115,28 @@
 								</CheckBoxField>
 							</ChildItems>
 						</UsualGroup>
-						<InputField name="Исполнитель" id="22">
-							<DataPath>Объект.Исполнитель</DataPath>
-							<EditMode>EnterOnInput</EditMode>
-							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-							<ContextMenu name="ИсполнительКонтекстноеМеню" id="23"/>
-							<ExtendedTooltip name="ИсполнительРасширеннаяПодсказка" id="24"/>
-						</InputField>
+						<UsualGroup name="Группа5" id="61">
+							<Group>AlwaysHorizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа5РасширеннаяПодсказка" id="62"/>
+							<ChildItems>
+								<InputField name="Исполнитель" id="22">
+									<DataPath>Объект.Исполнитель</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ИсполнительКонтекстноеМеню" id="23"/>
+									<ExtendedTooltip name="ИсполнительРасширеннаяПодсказка" id="24"/>
+								</InputField>
+								<InputField name="ТипВнешнегоПроизводства" id="63">
+									<DataPath>ТипВнешнегоПроизводства</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ТипВнешнегоПроизводстваКонтекстноеМеню" id="64"/>
+									<ExtendedTooltip name="ТипВнешнегоПроизводстваРасширеннаяПодсказка" id="65"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
 						<UsualGroup name="ГруппаКнопки" id="43">
 							<Title>
 								<v8:item>
@@ -195,6 +216,17 @@
 			</Type>
 			<MainAttribute>true</MainAttribute>
 			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="ТипВнешнегоПроизводства" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тип внешнего производства</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:EnumRef.ТипыВнешнегоПроизводства</v8:Type>
+			</Type>
 		</Attribute>
 	</Attributes>
 	<Commands>
