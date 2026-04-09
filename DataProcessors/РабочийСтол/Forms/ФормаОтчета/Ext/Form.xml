@@ -931,6 +931,12 @@
 										</LabelField>
 										<LabelField name="ВнешнееПроизводствоДатаОжидаемогоОкончанияПодрядчиком1" id="1464">
 											<DataPath>ВнешнееПроизводство.ДатаОжидаемогоОкончанияПодрядчиком</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Дата окончания</v8:content>
+												</v8:item>
+											</Title>
 											<ContextMenu name="ВнешнееПроизводствоДатаОжидаемогоОкончанияПодрядчиком1КонтекстноеМеню" id="1465"/>
 											<ExtendedTooltip name="ВнешнееПроизводствоДатаОжидаемогоОкончанияПодрядчиком1РасширеннаяПодсказка" id="1466"/>
 										</LabelField>
@@ -2431,11 +2437,6 @@
 							<DataPath>ВнешнееПроизводство.Проект</DataPath>
 							<ContextMenu name="ВнешнееПроизводствоПроектКонтекстноеМеню" id="1435"/>
 							<ExtendedTooltip name="ВнешнееПроизводствоПроектРасширеннаяПодсказка" id="1436"/>
-						</LabelField>
-						<LabelField name="ВнешнееПроизводствоОбъектТЗ" id="1428">
-							<DataPath>ВнешнееПроизводство.ОбъектТЗ</DataPath>
-							<ContextMenu name="ВнешнееПроизводствоОбъектТЗКонтекстноеМеню" id="1429"/>
-							<ExtendedTooltip name="ВнешнееПроизводствоОбъектТЗРасширеннаяПодсказка" id="1430"/>
 						</LabelField>
 						<LabelField name="ВнешнееПроизводствоИсполнитель" id="1416">
 							<DataPath>ВнешнееПроизводство.Исполнитель</DataPath>
@@ -4806,7 +4807,7 @@
 			</Type>
 			<Settings xsi:type="DynamicList">
 				<ManualQuery>true</ManualQuery>
-				<DynamicDataRead>true</DynamicDataRead>
+				<DynamicDataRead>false</DynamicDataRead>
 				<QueryText>ВЫБРАТЬ
 	ЗадачаЗадачаВнешнееПроизводство.Ссылка КАК Ссылка,
 	ЗадачаЗадачаВнешнееПроизводство.ПометкаУдаления КАК ПометкаУдаления,
@@ -4824,7 +4825,15 @@
 ИЗ
 	Задача.ЗадачаВнешнееПроизводство КАК ЗадачаЗадачаВнешнееПроизводство
 ГДЕ
-	НЕ ЗадачаЗадачаВнешнееПроизводство.Выполнена</QueryText>
+	НЕ ЗадачаЗадачаВнешнееПроизводство.Выполнена
+	И ВЫБОР
+			КОГДА &amp;Дизйнер
+				ТОГДА ЗадачаЗадачаВнешнееПроизводство.ТипЗадачи = ЗНАЧЕНИЕ(Перечисление.ТипыЗадачКонструирования.ВнешнееСогласование)
+			КОГДА &amp;ВедКон
+				ТОГДА ЗадачаЗадачаВнешнееПроизводство.ТипЗадачи = ЗНАЧЕНИЕ(Перечисление.ТипыЗадачКонструирования.ВнешнееПКД)
+						И НЕ ЗадачаЗадачаВнешнееПроизводство.Исполнитель = ЗНАЧЕНИЕ(Справочник.Контрагенты.ПустаяСсылка)
+			ИНАЧЕ ИСТИНА
+		КОНЕЦ</QueryText>
 				<Field xsi:type="dcssch:DataSetFieldField">
 					<dcssch:dataPath>Наименование</dcssch:dataPath>
 					<dcssch:field>Наименование</dcssch:field>
@@ -4885,6 +4894,34 @@
 					<dcssch:dataPath>ТипЗадачи</dcssch:dataPath>
 					<dcssch:field>ТипЗадачи</dcssch:field>
 				</Field>
+				<Parameter>
+					<dcssch:name>Дизйнер</dcssch:name>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дизйнер</v8:content>
+						</v8:item>
+					</dcssch:title>
+					<dcssch:valueType>
+						<v8:Type>xs:boolean</v8:Type>
+					</dcssch:valueType>
+					<dcssch:value xsi:type="xs:boolean">false</dcssch:value>
+					<dcssch:useRestriction>true</dcssch:useRestriction>
+				</Parameter>
+				<Parameter>
+					<dcssch:name>ВедКон</dcssch:name>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Вед кон</v8:content>
+						</v8:item>
+					</dcssch:title>
+					<dcssch:valueType>
+						<v8:Type>xs:boolean</v8:Type>
+					</dcssch:valueType>
+					<dcssch:value xsi:type="xs:boolean">false</dcssch:value>
+					<dcssch:useRestriction>true</dcssch:useRestriction>
+				</Parameter>
 				<MainTable>Task.ЗадачаВнешнееПроизводство</MainTable>
 				<ListSettings>
 					<dcsset:filter>
