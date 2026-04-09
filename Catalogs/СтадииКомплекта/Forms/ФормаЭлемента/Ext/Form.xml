@@ -61,13 +61,27 @@
 			<ContextMenu name="ОсновнойЭтапКонтекстноеМеню" id="54"/>
 			<ExtendedTooltip name="ОсновнойЭтапРасширеннаяПодсказка" id="55"/>
 		</InputField>
-		<InputField name="НомерПоПорядку" id="16">
-			<DataPath>Объект.НомерПоПорядку</DataPath>
-			<EditMode>EnterOnInput</EditMode>
-			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-			<ContextMenu name="НомерПоПорядкуКонтекстноеМеню" id="17"/>
-			<ExtendedTooltip name="НомерПоПорядкуРасширеннаяПодсказка" id="18"/>
-		</InputField>
+		<UsualGroup name="Группа2" id="64">
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="65"/>
+			<ChildItems>
+				<CheckBoxField name="ОграниченныйПоказ" id="66">
+					<DataPath>Объект.ОграниченныйПоказ</DataPath>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ОграниченныйПоказКонтекстноеМеню" id="67"/>
+					<ExtendedTooltip name="ОграниченныйПоказРасширеннаяПодсказка" id="68"/>
+				</CheckBoxField>
+				<InputField name="НомерПоПорядку" id="16">
+					<DataPath>Объект.НомерПоПорядку</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="НомерПоПорядкуКонтекстноеМеню" id="17"/>
+					<ExtendedTooltip name="НомерПоПорядкуРасширеннаяПодсказка" id="18"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
 		<Table name="РеквизитыСтадии" id="25">
 			<AutoInsertNewRow>true</AutoInsertNewRow>
 			<EnableStartDrag>true</EnableStartDrag>
