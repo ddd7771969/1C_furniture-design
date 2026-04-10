@@ -405,7 +405,7 @@
 							<Title>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
-									<v8:content>t</v8:content>
+									<v8:content>t (дней)</v8:content>
 								</v8:item>
 							</Title>
 							<EditMode>EnterOnInput</EditMode>
@@ -417,6 +417,7 @@
 						</InputField>
 						<InputField name="КомплектыНормаДоработки_ПКД" id="173">
 							<DataPath>Объект.Комплекты.НормаДоработки_ПКД</DataPath>
+							<Visible>false</Visible>
 							<Title>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
@@ -433,6 +434,7 @@
 						</InputField>
 						<InputField name="КомплектыДнейПКД" id="95">
 							<DataPath>Объект.Комплекты.ДнейПКД</DataPath>
+							<Visible>false</Visible>
 							<EditMode>EnterOnInput</EditMode>
 							<ContextMenu name="КомплектыДнейПКДКонтекстноеМеню" id="96"/>
 							<ExtendedTooltip name="КомплектыДнейПКДРасширеннаяПодсказка" id="97"/>
@@ -442,6 +444,7 @@
 						</InputField>
 						<InputField name="КомплектыСофтПКД" id="125">
 							<DataPath>Объект.Комплекты.СофтПКД</DataPath>
+							<Visible>false</Visible>
 							<Title>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
@@ -478,7 +481,7 @@
 							<Title>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
-									<v8:content>t</v8:content>
+									<v8:content>t (дней)</v8:content>
 								</v8:item>
 							</Title>
 							<EditMode>EnterOnInput</EditMode>
@@ -490,6 +493,7 @@
 						</InputField>
 						<InputField name="КомплектыНормаДоработки_РКД" id="176">
 							<DataPath>Объект.Комплекты.НормаДоработки_РКД</DataPath>
+							<Visible>false</Visible>
 							<Title>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
@@ -506,6 +510,7 @@
 						</InputField>
 						<InputField name="КомплектыДнейРКД" id="116">
 							<DataPath>Объект.Комплекты.ДнейРКД</DataPath>
+							<Visible>false</Visible>
 							<EditMode>EnterOnInput</EditMode>
 							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 							<ContextMenu name="КомплектыДнейРКДКонтекстноеМеню" id="117"/>
@@ -516,6 +521,7 @@
 						</InputField>
 						<InputField name="КомплектыСофтРКД" id="128">
 							<DataPath>Объект.Комплекты.СофтРКД</DataPath>
+							<Visible>false</Visible>
 							<Title>
 								<v8:item>
 									<v8:lang>ru</v8:lang>

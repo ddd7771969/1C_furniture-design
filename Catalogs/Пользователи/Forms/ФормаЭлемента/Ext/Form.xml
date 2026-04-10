@@ -620,23 +620,51 @@
 			</ChildItems>
 		</UsualGroup>
 		<UsualGroup name="Группа1" id="451">
-			<Group>AlwaysHorizontal</Group>
+			<Group>Vertical</Group>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="452"/>
 			<ChildItems>
-				<InputField name="Сотрудник" id="448">
-					<DataPath>Объект.Сотрудник</DataPath>
-					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-					<ContextMenu name="СотрудникКонтекстноеМеню" id="449"/>
-					<ExtendedTooltip name="СотрудникРасширеннаяПодсказка" id="450"/>
-				</InputField>
-				<CheckBoxField name="НеИспользоватьСообщения" id="453">
-					<DataPath>Объект.НеИспользоватьСообщения</DataPath>
-					<CheckBoxType>Auto</CheckBoxType>
-					<ContextMenu name="НеИспользоватьСообщенияКонтекстноеМеню" id="454"/>
-					<ExtendedTooltip name="НеИспользоватьСообщенияРасширеннаяПодсказка" id="455"/>
-				</CheckBoxField>
+				<UsualGroup name="Группа2" id="480">
+					<Group>AlwaysHorizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="481"/>
+					<ChildItems>
+						<InputField name="Сотрудник" id="448">
+							<DataPath>Объект.Сотрудник</DataPath>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="СотрудникКонтекстноеМеню" id="449"/>
+							<ExtendedTooltip name="СотрудникРасширеннаяПодсказка" id="450"/>
+						</InputField>
+						<CheckBoxField name="НеИспользоватьСообщения" id="453">
+							<DataPath>Объект.НеИспользоватьСообщения</DataPath>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="НеИспользоватьСообщенияКонтекстноеМеню" id="454"/>
+							<ExtendedTooltip name="НеИспользоватьСообщенияРасширеннаяПодсказка" id="455"/>
+						</CheckBoxField>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="Группа3" id="482">
+					<Group>AlwaysHorizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="483"/>
+					<ChildItems>
+						<InputField name="НачалаРабочегоДня" id="487">
+							<DataPath>Объект.НачалаРабочегоДня</DataPath>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="НачалаРабочегоДняКонтекстноеМеню" id="488"/>
+							<ExtendedTooltip name="НачалаРабочегоДняРасширеннаяПодсказка" id="489"/>
+						</InputField>
+						<InputField name="ОкончаниеРабочегоДня" id="484">
+							<DataPath>Объект.ОкончаниеРабочегоДня</DataPath>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ОкончаниеРабочегоДняКонтекстноеМеню" id="485"/>
+							<ExtendedTooltip name="ОкончаниеРабочегоДняРасширеннаяПодсказка" id="486"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
 			</ChildItems>
 		</UsualGroup>
 		<Pages name="Страницы" id="70">

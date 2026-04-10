@@ -258,6 +258,7 @@
 			<Subsystem>PDM</Subsystem>
 			<Subsystem>Администрирование</Subsystem>
 			<Subsystem>Замеры</Subsystem>
+			<Subsystem>КадровыйУчет</Subsystem>
 			<Subsystem>Канбан</Subsystem>
 			<Subsystem>Монтаж</Subsystem>
 			<Subsystem>ПодготовкаПроекта</Subsystem>
@@ -909,6 +910,7 @@
 			<Role>ИнтерактивноеОткрытиеВнешнихОтчетовИОбработок</Role>
 			<Role>ИспользованиеОбработкиТекущиеДела</Role>
 			<Role>ИспользованиеУниверсальногоОтчета</Role>
+			<Role>КадровыйУчет</Role>
 			<Role>Кладовщик</Role>
 			<Role>Конструктор</Role>
 			<Role>КорректировкаНормМонажа</Role>
@@ -1936,7 +1938,6 @@
 			<Catalog>Теги</Catalog>
 			<Catalog>ТелеграммБоты</Catalog>
 			<Catalog>ТелефонныйЗвонокПрисоединенныеФайлы</Catalog>
-			<Catalog>ТипПокрытия</Catalog>
 			<Catalog>ТипыКомплектов</Catalog>
 			<Catalog>ТомаХраненияФайлов</Catalog>
 			<Catalog>УслугиПриложенияДоговора</Catalog>
@@ -1970,9 +1971,10 @@
 			<Document>НазначениеКонструктора</Document>
 			<Document>ОбещанияВыполения</Document>
 			<Document>ОзнакомительныйВыезд</Document>
-			<Document>ОтменитьВнешнееПроизводство</Document>
 			<Document>ОтгрузкаГотовойПродукции</Document>
+			<Document>ОтклоненияРабочихДней</Document>
 			<Document>ОтменаПроизводства</Document>
+			<Document>ОтменитьВнешнееПроизводство</Document>
 			<Document>ПереводПреварительнойНоменклатуры</Document>
 			<Document>ПередачаКомплектаВРКД</Document>
 			<Document>ПередачаМатериаловПодрядчику</Document>
@@ -2080,6 +2082,7 @@
 			<Enum>ТипыОтчетов</Enum>
 			<Enum>ТипыПодписиКриптографии</Enum>
 			<Enum>ТипыПредопределенныхПапокПисем</Enum>
+			<Enum>ТипыРабочихДней</Enum>
 			<Enum>ТипыСобытий</Enum>
 			<Enum>ТипыСобытияЗамеров</Enum>
 			<Enum>ТипыТекстовЭлектронныхПисем</Enum>
@@ -2202,6 +2205,7 @@
 			<DataProcessor>Сканирование</DataProcessor>
 			<DataProcessor>СкладскиеДокументы</DataProcessor>
 			<DataProcessor>СостояниеКомплектов</DataProcessor>
+			<DataProcessor>Табель</DataProcessor>
 			<DataProcessor>ТекущиеДела</DataProcessor>
 			<DataProcessor>УдалениеПомеченныхОбъектов</DataProcessor>
 			<DataProcessor>ЭтапыПредприятия</DataProcessor>
@@ -2350,6 +2354,7 @@
 			<InformationRegister>СсылкиНаНоменклатуруПоставщика</InformationRegister>
 			<InformationRegister>СтатусыЗадач</InformationRegister>
 			<InformationRegister>СтатусыСинхронизацииФайловСОблачнымСервисом</InformationRegister>
+			<InformationRegister>Табель</InformationRegister>
 			<InformationRegister>ТаймингЗадач</InformationRegister>
 			<InformationRegister>ТаймингЗадачКомментарии</InformationRegister>
 			<InformationRegister>ТелеграммДоступныеКоманды</InformationRegister>
