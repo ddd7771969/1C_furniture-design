@@ -22,6 +22,13 @@
 			<ContextMenu name="ПроектКонтекстноеМеню" id="21"/>
 			<ExtendedTooltip name="ПроектРасширеннаяПодсказка" id="22"/>
 		</InputField>
+		<InputField name="ТипВнешнегоПроизводства" id="25">
+			<DataPath>ТипВнешнегоПроизводства</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ТипВнешнегоПроизводстваКонтекстноеМеню" id="26"/>
+			<ExtendedTooltip name="ТипВнешнегоПроизводстваРасширеннаяПодсказка" id="27"/>
+		</InputField>
 		<Table name="СписокВыбора" id="1">
 			<Representation>List</Representation>
 			<Header>false</Header>
@@ -118,6 +125,17 @@
 			</Title>
 			<Type>
 				<v8:Type>cfg:CatalogRef.Проекты</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ТипВнешнегоПроизводства" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тип внешнего производства</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:EnumRef.ТипыВнешнегоПроизводства</v8:Type>
 			</Type>
 		</Attribute>
 	</Attributes>

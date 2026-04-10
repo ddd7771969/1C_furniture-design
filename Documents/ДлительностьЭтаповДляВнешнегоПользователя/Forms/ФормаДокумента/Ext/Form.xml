@@ -356,110 +356,101 @@
 				</UsualGroup>
 			</ChildItems>
 		</UsualGroup>
-		<Table name="Комплекты" id="34">
-			<Representation>List</Representation>
+		<Table name="ДеревоКомплектов" id="110">
+			<Representation>Tree</Representation>
 			<AutoInsertNewRow>true</AutoInsertNewRow>
 			<EnableStartDrag>true</EnableStartDrag>
 			<EnableDrag>true</EnableDrag>
-			<DataPath>Объект.Комплекты</DataPath>
-			<RowFilter xsi:nil="true"/>
-			<ContextMenu name="КомплектыКонтекстноеМеню" id="35"/>
-			<AutoCommandBar name="КомплектыКоманднаяПанель" id="36">
+			<DataPath>ДеревоКомплектов</DataPath>
+			<ContextMenu name="ДеревоКомплектовКонтекстноеМеню" id="111"/>
+			<AutoCommandBar name="ДеревоКомплектовКоманднаяПанель" id="112">
 				<Autofill>false</Autofill>
 				<ChildItems>
-					<Button name="КомплектыЗаполнить" id="73">
+					<Button name="ДеревоКомплектовЗаполнить" id="144">
 						<Type>CommandBarButton</Type>
 						<CommandName>Form.Command.Заполнить</CommandName>
-						<ExtendedTooltip name="КомплектыЗаполнитьРасширеннаяПодсказка" id="74"/>
+						<ExtendedTooltip name="ДеревоКомплектовЗаполнитьРасширеннаяПодсказка" id="145"/>
 					</Button>
 				</ChildItems>
 			</AutoCommandBar>
-			<ExtendedTooltip name="КомплектыРасширеннаяПодсказка" id="37"/>
-			<SearchStringAddition name="КомплектыСтрокаПоиска" id="38">
+			<ExtendedTooltip name="ДеревоКомплектовРасширеннаяПодсказка" id="113"/>
+			<SearchStringAddition name="ДеревоКомплектовСтрокаПоиска" id="114">
 				<AdditionSource>
-					<Item>Комплекты</Item>
+					<Item>ДеревоКомплектов</Item>
 					<Type>SearchStringRepresentation</Type>
 				</AdditionSource>
-				<ContextMenu name="КомплектыСтрокаПоискаКонтекстноеМеню" id="39"/>
-				<ExtendedTooltip name="КомплектыСтрокаПоискаРасширеннаяПодсказка" id="40"/>
+				<ContextMenu name="ДеревоКомплектовСтрокаПоискаКонтекстноеМеню" id="115"/>
+				<ExtendedTooltip name="ДеревоКомплектовСтрокаПоискаРасширеннаяПодсказка" id="116"/>
 			</SearchStringAddition>
-			<ViewStatusAddition name="КомплектыСостояниеПросмотра" id="41">
+			<ViewStatusAddition name="ДеревоКомплектовСостояниеПросмотра" id="117">
 				<AdditionSource>
-					<Item>Комплекты</Item>
+					<Item>ДеревоКомплектов</Item>
 					<Type>ViewStatusRepresentation</Type>
 				</AdditionSource>
-				<ContextMenu name="КомплектыСостояниеПросмотраКонтекстноеМеню" id="42"/>
-				<ExtendedTooltip name="КомплектыСостояниеПросмотраРасширеннаяПодсказка" id="43"/>
+				<ContextMenu name="ДеревоКомплектовСостояниеПросмотраКонтекстноеМеню" id="118"/>
+				<ExtendedTooltip name="ДеревоКомплектовСостояниеПросмотраРасширеннаяПодсказка" id="119"/>
 			</ViewStatusAddition>
-			<SearchControlAddition name="КомплектыУправлениеПоиском" id="44">
+			<SearchControlAddition name="ДеревоКомплектовУправлениеПоиском" id="120">
 				<AdditionSource>
-					<Item>Комплекты</Item>
+					<Item>ДеревоКомплектов</Item>
 					<Type>SearchControl</Type>
 				</AdditionSource>
-				<ContextMenu name="КомплектыУправлениеПоискомКонтекстноеМеню" id="45"/>
-				<ExtendedTooltip name="КомплектыУправлениеПоискомРасширеннаяПодсказка" id="46"/>
+				<ContextMenu name="ДеревоКомплектовУправлениеПоискомКонтекстноеМеню" id="121"/>
+				<ExtendedTooltip name="ДеревоКомплектовУправлениеПоискомРасширеннаяПодсказка" id="122"/>
 			</SearchControlAddition>
 			<Events>
-				<Event name="BeforeAddRow">КомплектыПередНачаломДобавления</Event>
-				<Event name="BeforeDeleteRow">КомплектыПередУдалением</Event>
+				<Event name="BeforeAddRow">ДеревоКомплектовПередНачаломДобавления</Event>
+				<Event name="BeforeDeleteRow">ДеревоКомплектовПередУдалением</Event>
 			</Events>
 			<ChildItems>
-				<LabelField name="КомплектыНомерСтроки" id="47">
-					<DataPath>Объект.Комплекты.LineNumber</DataPath>
-					<ReadOnly>true</ReadOnly>
-					<EditMode>EnterOnInput</EditMode>
-					<ContextMenu name="КомплектыНомерСтрокиКонтекстноеМеню" id="48"/>
-					<ExtendedTooltip name="КомплектыНомерСтрокиРасширеннаяПодсказка" id="49"/>
-				</LabelField>
-				<InputField name="КомплектыКомплект" id="50">
-					<DataPath>Объект.Комплекты.Комплект</DataPath>
-					<ReadOnly>true</ReadOnly>
+				<InputField name="ДеревоКомплектовКомплект" id="123">
+					<DataPath>ДеревоКомплектов.Комплект</DataPath>
 					<EditMode>EnterOnInput</EditMode>
 					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-					<ContextMenu name="КомплектыКомплектКонтекстноеМеню" id="51"/>
-					<ExtendedTooltip name="КомплектыКомплектРасширеннаяПодсказка" id="52"/>
+					<ContextMenu name="ДеревоКомплектовКомплектКонтекстноеМеню" id="124"/>
+					<ExtendedTooltip name="ДеревоКомплектовКомплектРасширеннаяПодсказка" id="125"/>
 				</InputField>
-				<InputField name="КомплектыПродолжительностьТЗ" id="53">
-					<DataPath>Объект.Комплекты.ПродолжительностьТЗ</DataPath>
+				<InputField name="ДеревоКомплектовПродолжительностьМонтажа" id="126">
+					<DataPath>ДеревоКомплектов.ПродолжительностьМонтажа</DataPath>
 					<EditMode>EnterOnInput</EditMode>
 					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-					<ContextMenu name="КомплектыПродолжительностьТЗКонтекстноеМеню" id="54"/>
-					<ExtendedTooltip name="КомплектыПродолжительностьТЗРасширеннаяПодсказка" id="55"/>
+					<ContextMenu name="ДеревоКомплектовПродолжительностьМонтажаКонтекстноеМеню" id="127"/>
+					<ExtendedTooltip name="ДеревоКомплектовПродолжительностьМонтажаРасширеннаяПодсказка" id="128"/>
 				</InputField>
-				<InputField name="КомплектыПродолжительностьПроектирования" id="56">
-					<DataPath>Объект.Комплекты.ПродолжительностьПроектирования</DataPath>
+				<InputField name="ДеревоКомплектовПродолжительностьПроектирования" id="129">
+					<DataPath>ДеревоКомплектов.ПродолжительностьПроектирования</DataPath>
 					<EditMode>EnterOnInput</EditMode>
 					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-					<ContextMenu name="КомплектыПродолжительностьПроектированияКонтекстноеМеню" id="57"/>
-					<ExtendedTooltip name="КомплектыПродолжительностьПроектированияРасширеннаяПодсказка" id="58"/>
+					<ContextMenu name="ДеревоКомплектовПродолжительностьПроектированияКонтекстноеМеню" id="130"/>
+					<ExtendedTooltip name="ДеревоКомплектовПродолжительностьПроектированияРасширеннаяПодсказка" id="131"/>
 				</InputField>
-				<InputField name="КомплектыПродолжительностьСогласования" id="59">
-					<DataPath>Объект.Комплекты.ПродолжительностьСогласования</DataPath>
+				<InputField name="ДеревоКомплектовПродолжительностьПроизводства" id="132">
+					<DataPath>ДеревоКомплектов.ПродолжительностьПроизводства</DataPath>
 					<EditMode>EnterOnInput</EditMode>
 					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-					<ContextMenu name="КомплектыПродолжительностьСогласованияКонтекстноеМеню" id="60"/>
-					<ExtendedTooltip name="КомплектыПродолжительностьСогласованияРасширеннаяПодсказка" id="61"/>
+					<ContextMenu name="ДеревоКомплектовПродолжительностьПроизводстваКонтекстноеМеню" id="133"/>
+					<ExtendedTooltip name="ДеревоКомплектовПродолжительностьПроизводстваРасширеннаяПодсказка" id="134"/>
 				</InputField>
-				<InputField name="КомплектыПродолжительностьРКД" id="62">
-					<DataPath>Объект.Комплекты.ПродолжительностьРКД</DataPath>
+				<InputField name="ДеревоКомплектовПродолжительностьРКД" id="135">
+					<DataPath>ДеревоКомплектов.ПродолжительностьРКД</DataPath>
 					<EditMode>EnterOnInput</EditMode>
 					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-					<ContextMenu name="КомплектыПродолжительностьРКДКонтекстноеМеню" id="63"/>
-					<ExtendedTooltip name="КомплектыПродолжительностьРКДРасширеннаяПодсказка" id="64"/>
+					<ContextMenu name="ДеревоКомплектовПродолжительностьРКДКонтекстноеМеню" id="136"/>
+					<ExtendedTooltip name="ДеревоКомплектовПродолжительностьРКДРасширеннаяПодсказка" id="137"/>
 				</InputField>
-				<InputField name="КомплектыПродолжительностьПроизводства" id="65">
-					<DataPath>Объект.Комплекты.ПродолжительностьПроизводства</DataPath>
+				<InputField name="ДеревоКомплектовПродолжительностьСогласования" id="138">
+					<DataPath>ДеревоКомплектов.ПродолжительностьСогласования</DataPath>
 					<EditMode>EnterOnInput</EditMode>
 					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-					<ContextMenu name="КомплектыПродолжительностьПроизводстваКонтекстноеМеню" id="66"/>
-					<ExtendedTooltip name="КомплектыПродолжительностьПроизводстваРасширеннаяПодсказка" id="67"/>
+					<ContextMenu name="ДеревоКомплектовПродолжительностьСогласованияКонтекстноеМеню" id="139"/>
+					<ExtendedTooltip name="ДеревоКомплектовПродолжительностьСогласованияРасширеннаяПодсказка" id="140"/>
 				</InputField>
-				<InputField name="КомплектыПродолжительностьМонтажа" id="68">
-					<DataPath>Объект.Комплекты.ПродолжительностьМонтажа</DataPath>
+				<InputField name="ДеревоКомплектовПродолжительностьТЗ" id="141">
+					<DataPath>ДеревоКомплектов.ПродолжительностьТЗ</DataPath>
 					<EditMode>EnterOnInput</EditMode>
 					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-					<ContextMenu name="КомплектыПродолжительностьМонтажаКонтекстноеМеню" id="69"/>
-					<ExtendedTooltip name="КомплектыПродолжительностьМонтажаРасширеннаяПодсказка" id="70"/>
+					<ContextMenu name="ДеревоКомплектовПродолжительностьТЗКонтекстноеМеню" id="142"/>
+					<ExtendedTooltip name="ДеревоКомплектовПродолжительностьТЗРасширеннаяПодсказка" id="143"/>
 				</InputField>
 			</ChildItems>
 		</Table>
@@ -481,6 +472,127 @@
 			<UseAlways>
 				<Field>Объект.RegisterRecords</Field>
 			</UseAlways>
+		</Attribute>
+		<Attribute name="ДеревоКомплектов" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дерево комплектов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTree</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Комплект" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Комплект</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Композиции</v8:Type>
+						<v8:Type>cfg:CatalogRef.ИзделияКомплект</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ПродолжительностьМонтажа" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Продолжительность монтажа (в нед.)</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>3</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ПродолжительностьПроектирования" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Продолжительность проектирования (в нед.)</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>3</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ПродолжительностьПроизводства" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Продолжительность производства (в нед.)</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>3</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ПродолжительностьРКД" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Продолжительность РКД (в нед.)</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>3</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ПродолжительностьСогласования" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Продолжительность соглосования (в нед.)</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>3</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ПродолжительностьТЗ" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Продолжительность ТЗ (в нед.)</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>3</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+			</Columns>
 		</Attribute>
 	</Attributes>
 	<Commands>
