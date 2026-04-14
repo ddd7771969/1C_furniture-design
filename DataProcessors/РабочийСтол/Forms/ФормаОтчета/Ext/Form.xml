@@ -1987,6 +1987,13 @@
 											<ContextMenu name="Задачи_ПКД_РКДТекущаяСтадияКонтекстноеМеню" id="1047"/>
 											<ExtendedTooltip name="Задачи_ПКД_РКДТекущаяСтадияРасширеннаяПодсказка" id="1048"/>
 										</InputField>
+										<InputField name="Задачи_ПКД_РКДПредыдущаяСтадия" id="1531">
+											<DataPath>Задачи_ПКД_РКД.ПредыдущаяСтадия</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="Задачи_ПКД_РКДПредыдущаяСтадияКонтекстноеМеню" id="1532"/>
+											<ExtendedTooltip name="Задачи_ПКД_РКДПредыдущаяСтадияРасширеннаяПодсказка" id="1533"/>
+										</InputField>
 										<InputField name="Задачи_ПКД_РКДКрай" id="1040">
 											<DataPath>Задачи_ПКД_РКД.Край</DataPath>
 											<EditMode>EnterOnInput</EditMode>
@@ -4364,6 +4371,21 @@
 							<v8:FractionDigits>0</v8:FractionDigits>
 							<v8:AllowedSign>Any</v8:AllowedSign>
 						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ПредыдущаяСтадия" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Предыдущая стадия</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
 					</Type>
 				</Column>
 			</Columns>
