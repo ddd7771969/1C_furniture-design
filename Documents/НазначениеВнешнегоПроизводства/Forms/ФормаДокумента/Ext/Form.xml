@@ -52,13 +52,6 @@
 								<Event name="StartChoice">ПроектНачалоВыбора</Event>
 							</Events>
 						</InputField>
-						<InputField name="ТипВнешнегоПроизводства" id="10">
-							<DataPath>Объект.ТипВнешнегоПроизводства</DataPath>
-							<EditMode>EnterOnInput</EditMode>
-							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-							<ContextMenu name="ТипВнешнегоПроизводстваКонтекстноеМеню" id="11"/>
-							<ExtendedTooltip name="ТипВнешнегоПроизводстваРасширеннаяПодсказка" id="12"/>
-						</InputField>
 					</ChildItems>
 				</UsualGroup>
 				<InputField name="Комментарий" id="39">
@@ -70,58 +63,62 @@
 				</InputField>
 			</ChildItems>
 		</UsualGroup>
-		<Table name="Комплекты" id="13">
-			<Representation>List</Representation>
+		<Table name="ДеревоКомплектов" id="44">
+			<Representation>Tree</Representation>
 			<AutoInsertNewRow>true</AutoInsertNewRow>
 			<EnableStartDrag>true</EnableStartDrag>
 			<EnableDrag>true</EnableDrag>
-			<DataPath>Объект.Комплекты</DataPath>
-			<RowFilter xsi:nil="true"/>
-			<ContextMenu name="КомплектыКонтекстноеМеню" id="14"/>
-			<AutoCommandBar name="КомплектыКоманднаяПанель" id="15"/>
-			<ExtendedTooltip name="КомплектыРасширеннаяПодсказка" id="16"/>
-			<SearchStringAddition name="КомплектыСтрокаПоиска" id="17">
+			<DataPath>ДеревоКомплектов</DataPath>
+			<ContextMenu name="ДеревоКомплектовКонтекстноеМеню" id="45"/>
+			<AutoCommandBar name="ДеревоКомплектовКоманднаяПанель" id="46">
+				<Autofill>false</Autofill>
+			</AutoCommandBar>
+			<ExtendedTooltip name="ДеревоКомплектовРасширеннаяПодсказка" id="47"/>
+			<SearchStringAddition name="ДеревоКомплектовСтрокаПоиска" id="48">
 				<AdditionSource>
-					<Item>Комплекты</Item>
+					<Item>ДеревоКомплектов</Item>
 					<Type>SearchStringRepresentation</Type>
 				</AdditionSource>
-				<ContextMenu name="КомплектыСтрокаПоискаКонтекстноеМеню" id="18"/>
-				<ExtendedTooltip name="КомплектыСтрокаПоискаРасширеннаяПодсказка" id="19"/>
+				<ContextMenu name="ДеревоКомплектовСтрокаПоискаКонтекстноеМеню" id="49"/>
+				<ExtendedTooltip name="ДеревоКомплектовСтрокаПоискаРасширеннаяПодсказка" id="50"/>
 			</SearchStringAddition>
-			<ViewStatusAddition name="КомплектыСостояниеПросмотра" id="20">
+			<ViewStatusAddition name="ДеревоКомплектовСостояниеПросмотра" id="51">
 				<AdditionSource>
-					<Item>Комплекты</Item>
+					<Item>ДеревоКомплектов</Item>
 					<Type>ViewStatusRepresentation</Type>
 				</AdditionSource>
-				<ContextMenu name="КомплектыСостояниеПросмотраКонтекстноеМеню" id="21"/>
-				<ExtendedTooltip name="КомплектыСостояниеПросмотраРасширеннаяПодсказка" id="22"/>
+				<ContextMenu name="ДеревоКомплектовСостояниеПросмотраКонтекстноеМеню" id="52"/>
+				<ExtendedTooltip name="ДеревоКомплектовСостояниеПросмотраРасширеннаяПодсказка" id="53"/>
 			</ViewStatusAddition>
-			<SearchControlAddition name="КомплектыУправлениеПоиском" id="23">
+			<SearchControlAddition name="ДеревоКомплектовУправлениеПоиском" id="54">
 				<AdditionSource>
-					<Item>Комплекты</Item>
+					<Item>ДеревоКомплектов</Item>
 					<Type>SearchControl</Type>
 				</AdditionSource>
-				<ContextMenu name="КомплектыУправлениеПоискомКонтекстноеМеню" id="24"/>
-				<ExtendedTooltip name="КомплектыУправлениеПоискомРасширеннаяПодсказка" id="25"/>
+				<ContextMenu name="ДеревоКомплектовУправлениеПоискомКонтекстноеМеню" id="55"/>
+				<ExtendedTooltip name="ДеревоКомплектовУправлениеПоискомРасширеннаяПодсказка" id="56"/>
 			</SearchControlAddition>
-			<Events>
-				<Event name="BeforeAddRow">КомплектыПередНачаломДобавления</Event>
-				<Event name="OnStartEdit">КомплектыПриНачалеРедактирования</Event>
-			</Events>
 			<ChildItems>
-				<LabelField name="КомплектыНомерСтроки" id="26">
-					<DataPath>Объект.Комплекты.LineNumber</DataPath>
-					<EditMode>EnterOnInput</EditMode>
-					<ContextMenu name="КомплектыНомерСтрокиКонтекстноеМеню" id="27"/>
-					<ExtendedTooltip name="КомплектыНомерСтрокиРасширеннаяПодсказка" id="28"/>
-				</LabelField>
-				<InputField name="КомплектыКомплект" id="29">
-					<DataPath>Объект.Комплекты.Комплект</DataPath>
+				<InputField name="ДеревоКомплектовКомпозиция" id="57">
+					<DataPath>ДеревоКомплектов.Композиция</DataPath>
 					<EditMode>EnterOnInput</EditMode>
 					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-					<ChooseType>false</ChooseType>
-					<ContextMenu name="КомплектыКомплектКонтекстноеМеню" id="30"/>
-					<ExtendedTooltip name="КомплектыКомплектРасширеннаяПодсказка" id="31"/>
+					<ContextMenu name="ДеревоКомплектовКомпозицияКонтекстноеМеню" id="58"/>
+					<ExtendedTooltip name="ДеревоКомплектовКомпозицияРасширеннаяПодсказка" id="59"/>
+				</InputField>
+				<InputField name="ДеревоКомплектовКомплект" id="60">
+					<DataPath>ДеревоКомплектов.Комплект</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ДеревоКомплектовКомплектКонтекстноеМеню" id="61"/>
+					<ExtendedTooltip name="ДеревоКомплектовКомплектРасширеннаяПодсказка" id="62"/>
+				</InputField>
+				<InputField name="ДеревоКомплектовТипВнешнегоПроизводства" id="63">
+					<DataPath>ДеревоКомплектов.ТипВнешнегоПроизводства</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ДеревоКомплектовТипВнешнегоПроизводстваКонтекстноеМеню" id="64"/>
+					<ExtendedTooltip name="ДеревоКомплектовТипВнешнегоПроизводстваРасширеннаяПодсказка" id="65"/>
 				</InputField>
 			</ChildItems>
 		</Table>
@@ -142,6 +139,63 @@
 			<UseAlways>
 				<Field>Объект.RegisterRecords</Field>
 			</UseAlways>
+		</Attribute>
+		<Attribute name="ДеревоКомплектов" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дерево комплектов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTree</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Композиция" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Композиция</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Композиции</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Комплект" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Комплект</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ИзделияКомплект</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ТипВнешнегоПроизводства" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Тип внешнего производства</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:EnumRef.ТипыДанныхКэшаПрограммныхИнтерфейсов</v8:Type>
+					</Type>
+				</Column>
+				<Column name="НельзяПередоватьКомпозицию" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Нельзя передовать композицию</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
 		</Attribute>
 	</Attributes>
 	<CommandInterface>

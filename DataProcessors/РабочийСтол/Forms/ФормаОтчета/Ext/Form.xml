@@ -284,12 +284,19 @@
 									<Button name="ТаблицаОбщихЗадачОбновитьОбщиеЗадачи" id="1386">
 										<Type>CommandBarButton</Type>
 										<Representation>Picture</Representation>
+										<Check>true</Check>
 										<CommandName>Form.Command.ОбновитьОбщиеЗадачи</CommandName>
 										<Picture>
 											<xr:Ref>StdPicture.Refresh</xr:Ref>
 											<xr:LoadTransparent>true</xr:LoadTransparent>
 										</Picture>
 										<ExtendedTooltip name="ТаблицаОбщихЗадачОбновитьОбщиеЗадачиРасширеннаяПодсказка" id="1387"/>
+									</Button>
+									<Button name="ТаблицаОбщихЗадачОбщиеМоиЗадачи" id="1534">
+										<Type>CommandBarButton</Type>
+										<Check>true</Check>
+										<CommandName>Form.Command.ОбщиеМоиЗадачи</CommandName>
+										<ExtendedTooltip name="ТаблицаОбщихЗадачОбщиеМоиЗадачиРасширеннаяПодсказка" id="1535"/>
 									</Button>
 								</ChildItems>
 							</AutoCommandBar>
@@ -5151,6 +5158,37 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ОбновитьОбщиеЗадачи</Action>
+		</Command>
+		<Command name="ОбщиеМоиЗадачи" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Мои задачи</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Общие мои задачи</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбщиеМоиЗадачи</Action>
+		</Command>
+		<Command name="Команда1" id="13"/>
+		<Command name="ОбщиеДляМеня" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Общие для меня</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Общие для меня</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбщиеДляМеня</Action>
 		</Command>
 	</Commands>
 </Form>
