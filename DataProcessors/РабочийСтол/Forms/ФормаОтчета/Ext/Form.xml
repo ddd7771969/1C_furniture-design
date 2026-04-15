@@ -284,7 +284,6 @@
 									<Button name="ТаблицаОбщихЗадачОбновитьОбщиеЗадачи" id="1386">
 										<Type>CommandBarButton</Type>
 										<Representation>Picture</Representation>
-										<Check>true</Check>
 										<CommandName>Form.Command.ОбновитьОбщиеЗадачи</CommandName>
 										<Picture>
 											<xr:Ref>StdPicture.Refresh</xr:Ref>
@@ -294,9 +293,14 @@
 									</Button>
 									<Button name="ТаблицаОбщихЗадачОбщиеМоиЗадачи" id="1534">
 										<Type>CommandBarButton</Type>
-										<Check>true</Check>
 										<CommandName>Form.Command.ОбщиеМоиЗадачи</CommandName>
 										<ExtendedTooltip name="ТаблицаОбщихЗадачОбщиеМоиЗадачиРасширеннаяПодсказка" id="1535"/>
+									</Button>
+									<Button name="ТаблицаОбщихЗадачОбщиеДляМеня" id="1536">
+										<Type>CommandBarButton</Type>
+										<Check>true</Check>
+										<CommandName>Form.Command.ОбщиеДляМеня</CommandName>
+										<ExtendedTooltip name="ТаблицаОбщихЗадачОбщиеДляМеняРасширеннаяПодсказка" id="1537"/>
 									</Button>
 								</ChildItems>
 							</AutoCommandBar>
@@ -337,6 +341,13 @@
 									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 									<ContextMenu name="ТаблицаОбщихЗадачДатаКонтекстноеМеню" id="1374"/>
 									<ExtendedTooltip name="ТаблицаОбщихЗадачДатаРасширеннаяПодсказка" id="1375"/>
+								</InputField>
+								<InputField name="ТаблицаОбщихЗадачИсполнитель" id="1538">
+									<DataPath>ТаблицаОбщихЗадач.Исполнитель</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ТаблицаОбщихЗадачИсполнительКонтекстноеМеню" id="1539"/>
+									<ExtendedTooltip name="ТаблицаОбщихЗадачИсполнительРасширеннаяПодсказка" id="1540"/>
 								</InputField>
 								<InputField name="ТаблицаОбщихЗадачАвтор" id="1376">
 									<DataPath>ТаблицаОбщихЗадач.Автор</DataPath>
@@ -4822,6 +4833,17 @@
 						<v8:Type>cfg:TaskRef.ЗадачиОбщие</v8:Type>
 					</Type>
 				</Column>
+				<Column name="Исполнитель" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Исполнитель</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Пользователи</v8:Type>
+					</Type>
+				</Column>
 			</Columns>
 		</Attribute>
 		<Attribute name="ВнешнееПроизводство" id="25">
@@ -5174,12 +5196,11 @@
 			</ToolTip>
 			<Action>ОбщиеМоиЗадачи</Action>
 		</Command>
-		<Command name="Команда1" id="13"/>
 		<Command name="ОбщиеДляМеня" id="14">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Общие для меня</v8:content>
+					<v8:content>Для меня</v8:content>
 				</v8:item>
 			</Title>
 			<ToolTip>
