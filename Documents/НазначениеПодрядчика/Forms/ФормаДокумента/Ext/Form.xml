@@ -5,6 +5,7 @@
 	<RepostOnWrite>true</RepostOnWrite>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
 	<Events>
+		<Event name="BeforeWrite">ПередЗаписью</Event>
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 	</Events>
 	<ChildItems>
@@ -72,6 +73,13 @@
 			<ContextMenu name="ДеревоКомплектовКонтекстноеМеню" id="45"/>
 			<AutoCommandBar name="ДеревоКомплектовКоманднаяПанель" id="46">
 				<Autofill>false</Autofill>
+				<ChildItems>
+					<Button name="ДеревоКомплектовЗаполнить" id="66">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.Заполнить</CommandName>
+						<ExtendedTooltip name="ДеревоКомплектовЗаполнитьРасширеннаяПодсказка" id="67"/>
+					</Button>
+				</ChildItems>
 			</AutoCommandBar>
 			<ExtendedTooltip name="ДеревоКомплектовРасширеннаяПодсказка" id="47"/>
 			<SearchStringAddition name="ДеревоКомплектовСтрокаПоиска" id="48">
@@ -99,15 +107,9 @@
 				<ExtendedTooltip name="ДеревоКомплектовУправлениеПоискомРасширеннаяПодсказка" id="56"/>
 			</SearchControlAddition>
 			<ChildItems>
-				<InputField name="ДеревоКомплектовКомпозиция" id="57">
-					<DataPath>ДеревоКомплектов.Композиция</DataPath>
-					<EditMode>EnterOnInput</EditMode>
-					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-					<ContextMenu name="ДеревоКомплектовКомпозицияКонтекстноеМеню" id="58"/>
-					<ExtendedTooltip name="ДеревоКомплектовКомпозицияРасширеннаяПодсказка" id="59"/>
-				</InputField>
 				<InputField name="ДеревоКомплектовКомплект" id="60">
 					<DataPath>ДеревоКомплектов.Комплект</DataPath>
+					<ReadOnly>true</ReadOnly>
 					<EditMode>EnterOnInput</EditMode>
 					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 					<ContextMenu name="ДеревоКомплектовКомплектКонтекстноеМеню" id="61"/>
@@ -116,9 +118,15 @@
 				<InputField name="ДеревоКомплектовТипВнешнегоПроизводства" id="63">
 					<DataPath>ДеревоКомплектов.ТипВнешнегоПроизводства</DataPath>
 					<EditMode>EnterOnInput</EditMode>
+					<ListChoiceMode>true</ListChoiceMode>
 					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ChooseType>false</ChooseType>
 					<ContextMenu name="ДеревоКомплектовТипВнешнегоПроизводстваКонтекстноеМеню" id="64"/>
 					<ExtendedTooltip name="ДеревоКомплектовТипВнешнегоПроизводстваРасширеннаяПодсказка" id="65"/>
+					<Events>
+						<Event name="OnChange">ДеревоКомплектовТипВнешнегоПроизводстваПриИзменении</Event>
+						<Event name="StartChoice">ДеревоКомплектовТипВнешнегоПроизводстваНачалоВыбора</Event>
+					</Events>
 				</InputField>
 			</ChildItems>
 		</Table>
@@ -132,7 +140,7 @@
 	<Attributes>
 		<Attribute name="Объект" id="1">
 			<Type>
-				<v8:Type>cfg:DocumentObject.НазначениеВнешнегоПроизводства</v8:Type>
+				<v8:Type>cfg:DocumentObject.НазначениеПодрядчика</v8:Type>
 			</Type>
 			<MainAttribute>true</MainAttribute>
 			<SavedData>true</SavedData>
@@ -151,17 +159,6 @@
 				<v8:Type>v8:ValueTree</v8:Type>
 			</Type>
 			<Columns>
-				<Column name="Композиция" id="1">
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Композиция</v8:content>
-						</v8:item>
-					</Title>
-					<Type>
-						<v8:Type>cfg:CatalogRef.Композиции</v8:Type>
-					</Type>
-				</Column>
 				<Column name="Комплект" id="2">
 					<Title>
 						<v8:item>
@@ -170,6 +167,7 @@
 						</v8:item>
 					</Title>
 					<Type>
+						<v8:Type>cfg:CatalogRef.Композиции</v8:Type>
 						<v8:Type>cfg:CatalogRef.ИзделияКомплект</v8:Type>
 					</Type>
 				</Column>
@@ -181,27 +179,33 @@
 						</v8:item>
 					</Title>
 					<Type>
-						<v8:Type>cfg:EnumRef.ТипыДанныхКэшаПрограммныхИнтерфейсов</v8:Type>
-					</Type>
-				</Column>
-				<Column name="НельзяПередоватьКомпозицию" id="4">
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Нельзя передовать композицию</v8:content>
-						</v8:item>
-					</Title>
-					<Type>
-						<v8:Type>xs:boolean</v8:Type>
+						<v8:Type>cfg:EnumRef.ТипыВнешнегоПроизводства</v8:Type>
 					</Type>
 				</Column>
 			</Columns>
 		</Attribute>
 	</Attributes>
+	<Commands>
+		<Command name="Заполнить" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Заполнить</Action>
+		</Command>
+	</Commands>
 	<CommandInterface>
 		<NavigationPanel>
 			<Item>
-				<Command>InformationRegister.ВнешнееПроизводство.StandardCommand.OpenByValue.РегистраторДвижения</Command>
+				<Command>4:56ed104b-7487-4849-9d45-587e6a00c613</Command>
 				<Type>Auto</Type>
 				<CommandGroup>FormNavigationPanelGoTo</CommandGroup>
 				<DefaultVisible>false</DefaultVisible>

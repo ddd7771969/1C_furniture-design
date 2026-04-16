@@ -2,33 +2,33 @@
 <MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
 	<Document uuid="c2689d05-aec7-4e42-88ed-535668371ab6">
 		<InternalInfo>
-			<xr:GeneratedType name="DocumentObject.НазначениеВнешнегоПроизводства" category="Object">
+			<xr:GeneratedType name="DocumentObject.НазначениеПодрядчика" category="Object">
 				<xr:TypeId>46274c1f-a6e3-43bb-bd38-65aa42e5c209</xr:TypeId>
 				<xr:ValueId>f063457d-f1ce-4e64-9373-85879460e9ff</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="DocumentRef.НазначениеВнешнегоПроизводства" category="Ref">
+			<xr:GeneratedType name="DocumentRef.НазначениеПодрядчика" category="Ref">
 				<xr:TypeId>4cfac4d4-3fce-496d-97e3-1610e251e372</xr:TypeId>
 				<xr:ValueId>d29e884b-7540-4173-a318-9e0b359cf13e</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="DocumentSelection.НазначениеВнешнегоПроизводства" category="Selection">
+			<xr:GeneratedType name="DocumentSelection.НазначениеПодрядчика" category="Selection">
 				<xr:TypeId>1041f665-81f0-41f8-8077-f7da5d2962b9</xr:TypeId>
 				<xr:ValueId>b8bbb91c-c0bd-4aa7-9c21-105461070c9a</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="DocumentList.НазначениеВнешнегоПроизводства" category="List">
+			<xr:GeneratedType name="DocumentList.НазначениеПодрядчика" category="List">
 				<xr:TypeId>4cfe0127-d823-4dc3-b6b8-cbf00f763b47</xr:TypeId>
 				<xr:ValueId>b5a8efb8-7c0e-4a03-9aba-2bd1ff7d4fd3</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="DocumentManager.НазначениеВнешнегоПроизводства" category="Manager">
+			<xr:GeneratedType name="DocumentManager.НазначениеПодрядчика" category="Manager">
 				<xr:TypeId>9aafdac8-9c9b-466e-b2d9-65cf43b9f7ff</xr:TypeId>
 				<xr:ValueId>938f6a25-7a54-4c9b-aa6b-a502961b2d7a</xr:ValueId>
 			</xr:GeneratedType>
 		</InternalInfo>
 		<Properties>
-			<Name>НазначениеВнешнегоПроизводства</Name>
+			<Name>НазначениеПодрядчика</Name>
 			<Synonym>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Назначение внешнего производства</v8:content>
+					<v8:content>Назначение подрядчика</v8:content>
 				</v8:item>
 			</Synonym>
 			<Comment/>
@@ -43,19 +43,19 @@
 			<Characteristics/>
 			<BasedOn/>
 			<InputByString>
-				<xr:Field>Document.НазначениеВнешнегоПроизводства.StandardAttribute.Number</xr:Field>
+				<xr:Field>Document.НазначениеПодрядчика.StandardAttribute.Number</xr:Field>
 			</InputByString>
 			<CreateOnInput>Use</CreateOnInput>
 			<SearchStringModeOnInputByString>Begin</SearchStringModeOnInputByString>
 			<FullTextSearchOnInputByString>DontUse</FullTextSearchOnInputByString>
 			<ChoiceDataGetModeOnInputByString>Directly</ChoiceDataGetModeOnInputByString>
-			<DefaultObjectForm>Document.НазначениеВнешнегоПроизводства.Form.ФормаДокумента</DefaultObjectForm>
+			<DefaultObjectForm>Document.НазначениеПодрядчика.Form.ФормаДокумента</DefaultObjectForm>
 			<DefaultListForm/>
 			<DefaultChoiceForm/>
 			<AuxiliaryObjectForm/>
 			<AuxiliaryListForm/>
 			<AuxiliaryChoiceForm/>
-			<Posting>Allow</Posting>
+			<Posting>Deny</Posting>
 			<RealTimePosting>Deny</RealTimePosting>
 			<RegisterRecordsDeletion>AutoDeleteOff</RegisterRecordsDeletion>
 			<RegisterRecordsWritingOnPost>WriteSelected</RegisterRecordsWritingOnPost>
@@ -203,11 +203,11 @@
 			<Form>ФормаПодбор</Form>
 			<TabularSection uuid="994f81e8-0af3-493c-999c-2021747ee7ef">
 				<InternalInfo>
-					<xr:GeneratedType name="DocumentTabularSection.НазначениеВнешнегоПроизводства.Комплекты" category="TabularSection">
+					<xr:GeneratedType name="DocumentTabularSection.НазначениеПодрядчика.Комплекты" category="TabularSection">
 						<xr:TypeId>986fced4-e996-4aef-85dd-d4ff671dda41</xr:TypeId>
 						<xr:ValueId>a8828269-9383-4476-9685-f75c1f6c388d</xr:ValueId>
 					</xr:GeneratedType>
-					<xr:GeneratedType name="DocumentTabularSectionRow.НазначениеВнешнегоПроизводства.Комплекты" category="TabularSectionRow">
+					<xr:GeneratedType name="DocumentTabularSectionRow.НазначениеПодрядчика.Комплекты" category="TabularSectionRow">
 						<xr:TypeId>2be3f9c6-edbd-4b48-93d8-2d84b9089283</xr:TypeId>
 						<xr:ValueId>cc42920b-2da7-45f3-b5c2-52de6c7e44af</xr:ValueId>
 					</xr:GeneratedType>
@@ -287,7 +287,7 @@
 							<ExtendedEdit>false</ExtendedEdit>
 							<MinValue xsi:nil="true"/>
 							<MaxValue xsi:nil="true"/>
-							<FillChecking>ShowError</FillChecking>
+							<FillChecking>DontCheck</FillChecking>
 							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
 							<ChoiceParameterLinks/>
 							<ChoiceParameters/>
