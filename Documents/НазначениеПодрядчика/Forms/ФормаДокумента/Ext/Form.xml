@@ -3,7 +3,20 @@
 	<AutoTime>CurrentOrLast</AutoTime>
 	<UsePostingMode>Auto</UsePostingMode>
 	<RepostOnWrite>true</RepostOnWrite>
-	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ФормаПечать" id="77">
+				<Type>CommandBarButton</Type>
+				<Representation>PictureAndText</Representation>
+				<CommandName>Form.Command.Печать</CommandName>
+				<Picture>
+					<xr:Ref>StdPicture.Print</xr:Ref>
+					<xr:LoadTransparent>true</xr:LoadTransparent>
+				</Picture>
+				<ExtendedTooltip name="ФормаПечатьРасширеннаяПодсказка" id="78"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
 	<Events>
 		<Event name="BeforeWrite">ПередЗаписью</Event>
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
@@ -50,7 +63,7 @@
 							<ContextMenu name="ПроектКонтекстноеМеню" id="35"/>
 							<ExtendedTooltip name="ПроектРасширеннаяПодсказка" id="36"/>
 							<Events>
-								<Event name="StartChoice">ПроектНачалоВыбора</Event>
+								<Event name="OnChange">ПроектПриИзменении</Event>
 							</Events>
 						</InputField>
 					</ChildItems>
@@ -239,6 +252,21 @@
 				</v8:item>
 			</ToolTip>
 			<Action>Заполнить</Action>
+		</Command>
+		<Command name="Печать" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Печать</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Печать</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Печать</Action>
 		</Command>
 	</Commands>
 	<CommandInterface>

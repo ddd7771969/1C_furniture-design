@@ -4881,9 +4881,11 @@
 	И ВЫБОР
 			КОГДА &amp;Дизйнер
 				ТОГДА ЗадачаЗадачаВнешнееПроизводство.ТипЗадачи = ЗНАЧЕНИЕ(Перечисление.ТипыЗадачКонструирования.ВнешнееСогласование)
+						И ЗадачаЗадачаВнешнееПроизводство.ПКД
 			КОГДА &amp;ВедКон
 				ТОГДА ЗадачаЗадачаВнешнееПроизводство.ТипЗадачи = ЗНАЧЕНИЕ(Перечисление.ТипыЗадачКонструирования.ВнешнееПКД)
 						И НЕ ЗадачаЗадачаВнешнееПроизводство.Исполнитель = ЗНАЧЕНИЕ(Справочник.Контрагенты.ПустаяСсылка)
+						И ЗадачаЗадачаВнешнееПроизводство.ПКД
 			ИНАЧЕ ИСТИНА
 		КОНЕЦ</QueryText>
 				<Field xsi:type="dcssch:DataSetFieldField">
@@ -4945,6 +4947,10 @@
 				<Field xsi:type="dcssch:DataSetFieldField">
 					<dcssch:dataPath>ТипЗадачи</dcssch:dataPath>
 					<dcssch:field>ТипЗадачи</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ПКД</dcssch:dataPath>
+					<dcssch:field>ПКД</dcssch:field>
 				</Field>
 				<Parameter>
 					<dcssch:name>Дизйнер</dcssch:name>
