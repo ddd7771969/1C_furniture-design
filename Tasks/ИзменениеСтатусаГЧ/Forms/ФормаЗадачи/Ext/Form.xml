@@ -20,6 +20,7 @@
 		<Event name="AfterWrite">ПослеЗаписи</Event>
 		<Event name="OnOpen">ПриОткрытии</Event>
 		<Event name="BeforeWrite">ПередЗаписью</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 		<Event name="BeforeExecute">ПередВыполнением</Event>
 	</Events>
 	<ChildItems>
@@ -58,6 +59,11 @@
 					<Type>UsualButton</Type>
 					<CommandName>Form.Command.ВыполнитьЗадачу</CommandName>
 					<ExtendedTooltip name="ВыполнитьЗадачуРасширеннаяПодсказка" id="56"/>
+				</Button>
+				<Button name="ПеревестиЗадачуРКДВОжидание" id="57">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.ЗадачуРКДВОжидание</CommandName>
+					<ExtendedTooltip name="ПеревестиЗадачуРКДВОжиданиеРасширеннаяПодсказка" id="58"/>
 				</Button>
 			</ChildItems>
 		</UsualGroup>
@@ -309,6 +315,21 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ВыполнитьЗадачу</Action>
+		</Command>
+		<Command name="ЗадачуРКДВОжидание" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Задачу РКД в ожидание</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Задачу РКДВОжидание</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗадачуРКДВОжидание</Action>
 		</Command>
 	</Commands>
 	<CommandInterface>
