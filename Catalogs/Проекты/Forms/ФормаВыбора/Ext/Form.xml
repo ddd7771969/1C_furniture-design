@@ -164,6 +164,11 @@
 			КОГДА &amp;ИспользоватьОтбор
 				ТОГДА СправочникСделки.Ссылка В (&amp;НеСуществуютВПланировании)
 			ИНАЧЕ ИСТИНА
+		КОНЕЦ
+	И ВЫБОР
+			КОГДА &amp;НеВыводитьНаДиаграмму
+				ТОГДА НЕ СправочникСделки.НеВыводитьНаДиаграмму
+			ИНАЧЕ ИСТИНА
 		КОНЕЦ</QueryText>
 				<Field xsi:type="dcssch:DataSetFieldField">
 					<dcssch:dataPath>Ссылка</dcssch:dataPath>
@@ -313,6 +318,38 @@
 					<dcssch:dataPath>НеВыводитьНаДиаграмму</dcssch:dataPath>
 					<dcssch:field>НеВыводитьНаДиаграмму</dcssch:field>
 				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ВедущийКонструктор</dcssch:dataPath>
+					<dcssch:field>ВедущийКонструктор</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ДлинаРазрываДляГанта</dcssch:dataPath>
+					<dcssch:field>ДлинаРазрываДляГанта</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>МатериалыПроекта</dcssch:dataPath>
+					<dcssch:field>МатериалыПроекта</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Замерщик</dcssch:dataPath>
+					<dcssch:field>Замерщик</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ИмяКорневойПапкиВPDM</dcssch:dataPath>
+					<dcssch:field>ИмяКорневойПапкиВPDM</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ИмяПапкиКомпозицииВPDM</dcssch:dataPath>
+					<dcssch:field>ИмяПапкиКомпозицииВPDM</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ИмяПапкиГЧВPDM</dcssch:dataPath>
+					<dcssch:field>ИмяПапкиГЧВPDM</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Менеджер</dcssch:dataPath>
+					<dcssch:field>Менеджер</dcssch:field>
+				</Field>
 				<Parameter>
 					<dcssch:name>ИспользоватьОтбор</dcssch:name>
 					<dcssch:title xsi:type="v8:LocalStringType">
@@ -341,6 +378,20 @@
 					<dcssch:value xsi:nil="true"/>
 					<dcssch:useRestriction>true</dcssch:useRestriction>
 					<dcssch:valueListAllowed>true</dcssch:valueListAllowed>
+				</Parameter>
+				<Parameter>
+					<dcssch:name>НеВыводитьНаДиаграмму</dcssch:name>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Не выводить на диаграмму</v8:content>
+						</v8:item>
+					</dcssch:title>
+					<dcssch:valueType>
+						<v8:Type>xs:boolean</v8:Type>
+					</dcssch:valueType>
+					<dcssch:value xsi:type="xs:boolean">false</dcssch:value>
+					<dcssch:useRestriction>true</dcssch:useRestriction>
 				</Parameter>
 				<MainTable>Catalog.Проекты</MainTable>
 				<ListSettings>

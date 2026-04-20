@@ -84,7 +84,7 @@
 			</SearchControlAddition>
 			<ChildItems>
 				<LabelField name="Наименование" id="16">
-					<DataPath>Список.Наименование</DataPath>
+					<DataPath>~Список.Наименование</DataPath>
 					<DefaultItem>true</DefaultItem>
 					<ContextMenu name="НаименованиеКонтекстноеМеню" id="17"/>
 					<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="18"/>
@@ -95,7 +95,7 @@
 					<ExtendedTooltip name="СделкаРасширеннаяПодсказка" id="27"/>
 				</LabelField>
 				<LabelField name="СделкаНомер" id="28">
-					<DataPath>Список.СделкаНомер</DataPath>
+					<DataPath>~Список.СделкаНомер</DataPath>
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -106,12 +106,12 @@
 					<ExtendedTooltip name="СделкаНомерРасширеннаяПодсказка" id="30"/>
 				</LabelField>
 				<LabelField name="ОсновноеПомещение" id="22">
-					<DataPath>Список.ОсновноеПомещение</DataPath>
+					<DataPath>~Список.ОсновноеПомещение</DataPath>
 					<ContextMenu name="ОсновноеПомещениеКонтекстноеМеню" id="23"/>
 					<ExtendedTooltip name="ОсновноеПомещениеРасширеннаяПодсказка" id="24"/>
 				</LabelField>
 				<LabelField name="Код" id="19">
-					<DataPath>Список.Код</DataPath>
+					<DataPath>~Список.Код</DataPath>
 					<ContextMenu name="КодКонтекстноеМеню" id="20"/>
 					<ExtendedTooltip name="КодРасширеннаяПодсказка" id="21"/>
 				</LabelField>
@@ -432,6 +432,7 @@
 						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 							<dcscor:use>false</dcscor:use>
 							<dcscor:parameter>НеПоказыватьВВыборе</dcscor:parameter>
+							<dcscor:value xsi:nil="true"/>
 						</dcscor:item>
 					</dcsset:dataParameters>
 					<dcsset:order>

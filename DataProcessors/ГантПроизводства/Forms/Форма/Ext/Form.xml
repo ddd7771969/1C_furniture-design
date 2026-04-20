@@ -39,6 +39,16 @@
 					<ContextMenu name="ВыводитьПроектКонтекстноеМеню" id="38"/>
 					<ExtendedTooltip name="ВыводитьПроектРасширеннаяПодсказка" id="39"/>
 				</CheckBoxField>
+				<Button name="ДобавитьПроект" id="40">
+					<Type>UsualButton</Type>
+					<Representation>PictureAndText</Representation>
+					<CommandName>Form.Command.ДобавитьПроект</CommandName>
+					<Picture>
+						<xr:Ref>StdPicture.CreateListItem</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</Picture>
+					<ExtendedTooltip name="ДобавитьПроектРасширеннаяПодсказка" id="41"/>
+				</Button>
 			</ChildItems>
 		</UsualGroup>
 		<GanttChartField name="Диаграмма" id="12">
@@ -170,4 +180,21 @@
 			</Type>
 		</Attribute>
 	</Attributes>
+	<Commands>
+		<Command name="ДобавитьПроект" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить проект</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить проект</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ДобавитьПроект</Action>
+		</Command>
+	</Commands>
 </Form>
