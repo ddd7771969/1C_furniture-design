@@ -6,6 +6,7 @@
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
 	<Events>
 		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="BeforeWrite">ПередЗаписью</Event>
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 	</Events>
 	<ChildItems>
@@ -401,21 +402,31 @@
 			<Events>
 				<Event name="BeforeAddRow">ДеревоКомплектовПередНачаломДобавления</Event>
 				<Event name="BeforeDeleteRow">ДеревоКомплектовПередУдалением</Event>
+				<Event name="OnActivateRow">ДеревоКомплектовПриАктивизацииСтроки</Event>
+				<Event name="OnActivateField">ДеревоКомплектовПриАктивизацииПоля</Event>
+				<Event name="BeforeRowChange">ДеревоКомплектовПередНачаломИзменения</Event>
+				<Event name="OnActivateCell">ДревоКомплектовПриАктивизацииЯчейки</Event>
 			</Events>
 			<ChildItems>
 				<InputField name="ДеревоКомплектовКомплект" id="123">
 					<DataPath>ДеревоКомплектов.Комплект</DataPath>
 					<EditMode>EnterOnInput</EditMode>
+					<ListChoiceMode>true</ListChoiceMode>
 					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ChooseType>false</ChooseType>
+					<TextEdit>false</TextEdit>
 					<ContextMenu name="ДеревоКомплектовКомплектКонтекстноеМеню" id="124"/>
 					<ExtendedTooltip name="ДеревоКомплектовКомплектРасширеннаяПодсказка" id="125"/>
+					<Events>
+						<Event name="StartChoice">ДеревоКомплектовКомплектНачалоВыбора</Event>
+					</Events>
 				</InputField>
-				<InputField name="ДеревоКомплектовПродолжительностьМонтажа" id="126">
-					<DataPath>ДеревоКомплектов.ПродолжительностьМонтажа</DataPath>
+				<InputField name="ДеревоКомплектовПродолжительностьТЗ" id="141">
+					<DataPath>ДеревоКомплектов.ПродолжительностьТЗ</DataPath>
 					<EditMode>EnterOnInput</EditMode>
 					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-					<ContextMenu name="ДеревоКомплектовПродолжительностьМонтажаКонтекстноеМеню" id="127"/>
-					<ExtendedTooltip name="ДеревоКомплектовПродолжительностьМонтажаРасширеннаяПодсказка" id="128"/>
+					<ContextMenu name="ДеревоКомплектовПродолжительностьТЗКонтекстноеМеню" id="142"/>
+					<ExtendedTooltip name="ДеревоКомплектовПродолжительностьТЗРасширеннаяПодсказка" id="143"/>
 				</InputField>
 				<InputField name="ДеревоКомплектовПродолжительностьПроектирования" id="129">
 					<DataPath>ДеревоКомплектов.ПродолжительностьПроектирования</DataPath>
@@ -424,12 +435,12 @@
 					<ContextMenu name="ДеревоКомплектовПродолжительностьПроектированияКонтекстноеМеню" id="130"/>
 					<ExtendedTooltip name="ДеревоКомплектовПродолжительностьПроектированияРасширеннаяПодсказка" id="131"/>
 				</InputField>
-				<InputField name="ДеревоКомплектовПродолжительностьПроизводства" id="132">
-					<DataPath>ДеревоКомплектов.ПродолжительностьПроизводства</DataPath>
+				<InputField name="ДеревоКомплектовПродолжительностьСогласования" id="138">
+					<DataPath>ДеревоКомплектов.ПродолжительностьСогласования</DataPath>
 					<EditMode>EnterOnInput</EditMode>
 					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-					<ContextMenu name="ДеревоКомплектовПродолжительностьПроизводстваКонтекстноеМеню" id="133"/>
-					<ExtendedTooltip name="ДеревоКомплектовПродолжительностьПроизводстваРасширеннаяПодсказка" id="134"/>
+					<ContextMenu name="ДеревоКомплектовПродолжительностьСогласованияКонтекстноеМеню" id="139"/>
+					<ExtendedTooltip name="ДеревоКомплектовПродолжительностьСогласованияРасширеннаяПодсказка" id="140"/>
 				</InputField>
 				<InputField name="ДеревоКомплектовПродолжительностьРКД" id="135">
 					<DataPath>ДеревоКомплектов.ПродолжительностьРКД</DataPath>
@@ -438,19 +449,19 @@
 					<ContextMenu name="ДеревоКомплектовПродолжительностьРКДКонтекстноеМеню" id="136"/>
 					<ExtendedTooltip name="ДеревоКомплектовПродолжительностьРКДРасширеннаяПодсказка" id="137"/>
 				</InputField>
-				<InputField name="ДеревоКомплектовПродолжительностьСогласования" id="138">
-					<DataPath>ДеревоКомплектов.ПродолжительностьСогласования</DataPath>
+				<InputField name="ДеревоКомплектовПродолжительностьПроизводства" id="132">
+					<DataPath>ДеревоКомплектов.ПродолжительностьПроизводства</DataPath>
 					<EditMode>EnterOnInput</EditMode>
 					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-					<ContextMenu name="ДеревоКомплектовПродолжительностьСогласованияКонтекстноеМеню" id="139"/>
-					<ExtendedTooltip name="ДеревоКомплектовПродолжительностьСогласованияРасширеннаяПодсказка" id="140"/>
+					<ContextMenu name="ДеревоКомплектовПродолжительностьПроизводстваКонтекстноеМеню" id="133"/>
+					<ExtendedTooltip name="ДеревоКомплектовПродолжительностьПроизводстваРасширеннаяПодсказка" id="134"/>
 				</InputField>
-				<InputField name="ДеревоКомплектовПродолжительностьТЗ" id="141">
-					<DataPath>ДеревоКомплектов.ПродолжительностьТЗ</DataPath>
+				<InputField name="ДеревоКомплектовПродолжительностьМонтажа" id="126">
+					<DataPath>ДеревоКомплектов.ПродолжительностьМонтажа</DataPath>
 					<EditMode>EnterOnInput</EditMode>
 					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-					<ContextMenu name="ДеревоКомплектовПродолжительностьТЗКонтекстноеМеню" id="142"/>
-					<ExtendedTooltip name="ДеревоКомплектовПродолжительностьТЗРасширеннаяПодсказка" id="143"/>
+					<ContextMenu name="ДеревоКомплектовПродолжительностьМонтажаКонтекстноеМеню" id="127"/>
+					<ExtendedTooltip name="ДеревоКомплектовПродолжительностьМонтажаРасширеннаяПодсказка" id="128"/>
 				</InputField>
 			</ChildItems>
 		</Table>
