@@ -84,7 +84,7 @@
 			</SearchControlAddition>
 			<ChildItems>
 				<LabelField name="Наименование" id="16">
-					<DataPath>~Список.Наименование</DataPath>
+					<DataPath>Список.Наименование</DataPath>
 					<DefaultItem>true</DefaultItem>
 					<ContextMenu name="НаименованиеКонтекстноеМеню" id="17"/>
 					<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="18"/>
@@ -95,7 +95,7 @@
 					<ExtendedTooltip name="СделкаРасширеннаяПодсказка" id="27"/>
 				</LabelField>
 				<LabelField name="СделкаНомер" id="28">
-					<DataPath>~Список.СделкаНомер</DataPath>
+					<DataPath>Список.СделкаНомер</DataPath>
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -106,12 +106,12 @@
 					<ExtendedTooltip name="СделкаНомерРасширеннаяПодсказка" id="30"/>
 				</LabelField>
 				<LabelField name="ОсновноеПомещение" id="22">
-					<DataPath>~Список.ОсновноеПомещение</DataPath>
+					<DataPath>Список.ОсновноеПомещение</DataPath>
 					<ContextMenu name="ОсновноеПомещениеКонтекстноеМеню" id="23"/>
 					<ExtendedTooltip name="ОсновноеПомещениеРасширеннаяПодсказка" id="24"/>
 				</LabelField>
 				<LabelField name="Код" id="19">
-					<DataPath>~Список.Код</DataPath>
+					<DataPath>Список.Код</DataPath>
 					<ContextMenu name="КодКонтекстноеМеню" id="20"/>
 					<ExtendedTooltip name="КодРасширеннаяПодсказка" id="21"/>
 				</LabelField>
@@ -137,13 +137,8 @@
 	СправочникИзделияКомплект.ДатаОкончания КАК ДатаОкончания,
 	СправочникИзделияКомплект.Комментарий КАК Комментарий,
 	СправочникИзделияКомплект.Конструктор КАК Конструктор,
-	СправочникИзделияКомплект.КрайПКД КАК КрайПКД,
-	СправочникИзделияКомплект.КрайРКД КАК КрайРКД,
-	СправочникИзделияКомплект.КрайТЗ КАК КрайТЗ,
 	СправочникИзделияКомплект.НаименованиеКомплекта КАК НаименованиеКомплекта,
 	СправочникИзделияКомплект.НомерВерсииКанбан КАК НомерВерсииКанбан,
-	СправочникИзделияКомплект.НормаВремени_ПКД КАК НормаВремени_ПКД,
-	СправочникИзделияКомплект.НормаВремени_РКД КАК НормаВремени_РКД,
 	СправочникИзделияКомплект.ОсновноеПомещение КАК ОсновноеПомещение,
 	СправочникИзделияКомплект.ПланПКД КАК ПланПКД,
 	СправочникИзделияКомплект.ПланРКД КАК ПланРКД,
@@ -176,24 +171,12 @@
 			ИНАЧЕ ИСТИНА
 		КОНЕЦ</QueryText>
 				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>Направление</dcssch:dataPath>
-					<dcssch:field>Направление</dcssch:field>
-				</Field>
-				<Field xsi:type="dcssch:DataSetFieldField">
 					<dcssch:dataPath>НормаВремени_ПКД</dcssch:dataPath>
 					<dcssch:field>НормаВремени_ПКД</dcssch:field>
 				</Field>
 				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>КрайПКД</dcssch:dataPath>
-					<dcssch:field>КрайПКД</dcssch:field>
-				</Field>
-				<Field xsi:type="dcssch:DataSetFieldField">
 					<dcssch:dataPath>НормаВремени_Производства</dcssch:dataPath>
 					<dcssch:field>НормаВремени_Производства</dcssch:field>
-				</Field>
-				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>КрайПроизводства</dcssch:dataPath>
-					<dcssch:field>КрайПроизводства</dcssch:field>
 				</Field>
 				<Field xsi:type="dcssch:DataSetFieldField">
 					<dcssch:dataPath>ГабаритныйЧертеж</dcssch:dataPath>
@@ -232,8 +215,8 @@
 					<dcssch:field>НормаВремени_Монтажа</dcssch:field>
 				</Field>
 				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>ПланМалярка</dcssch:dataPath>
-					<dcssch:field>ПланМалярка</dcssch:field>
+					<dcssch:dataPath>НормаВремени_РКД</dcssch:dataPath>
+					<dcssch:field>НормаВремени_РКД</dcssch:field>
 				</Field>
 				<Field xsi:type="dcssch:DataSetFieldField">
 					<dcssch:dataPath>ИзделияЭлемент.ИзделиеЭлемент</dcssch:dataPath>
@@ -248,40 +231,8 @@
 					<dcssch:field>ПланПодряд</dcssch:field>
 				</Field>
 				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>КрайТЗ</dcssch:dataPath>
-					<dcssch:field>КрайТЗ</dcssch:field>
-				</Field>
-				<Field xsi:type="dcssch:DataSetFieldField">
 					<dcssch:dataPath>ПланПроизводства</dcssch:dataPath>
 					<dcssch:field>ПланПроизводства</dcssch:field>
-				</Field>
-				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>ПланСтолярка</dcssch:dataPath>
-					<dcssch:field>ПланСтолярка</dcssch:field>
-				</Field>
-				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>НаименованиеКомплекта</dcssch:dataPath>
-					<dcssch:field>НаименованиеКомплекта</dcssch:field>
-				</Field>
-				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>ДатаОкончания</dcssch:dataPath>
-					<dcssch:field>ДатаОкончания</dcssch:field>
-				</Field>
-				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>ПутьКПапкеPDM</dcssch:dataPath>
-					<dcssch:field>ПутьКПапкеPDM</dcssch:field>
-				</Field>
-				<Field xsi:type="dcssch:DataSetFieldNestedDataSet">
-					<dcssch:dataPath>ИзделияЭлемент</dcssch:dataPath>
-					<dcssch:field>ИзделияЭлемент</dcssch:field>
-				</Field>
-				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>Производство</dcssch:dataPath>
-					<dcssch:field>Производство</dcssch:field>
-				</Field>
-				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>Приоритеты</dcssch:dataPath>
-					<dcssch:field>Приоритеты</dcssch:field>
 				</Field>
 				<Field xsi:type="dcssch:DataSetFieldField">
 					<dcssch:dataPath>ИмяПредопределенныхДанных</dcssch:dataPath>
@@ -320,12 +271,12 @@
 					<dcssch:field>Наименование</dcssch:field>
 				</Field>
 				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>НормаВремени_РКД</dcssch:dataPath>
-					<dcssch:field>НормаВремени_РКД</dcssch:field>
+					<dcssch:dataPath>НаименованиеКомплекта</dcssch:dataPath>
+					<dcssch:field>НаименованиеКомплекта</dcssch:field>
 				</Field>
 				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>КрайРКД</dcssch:dataPath>
-					<dcssch:field>КрайРКД</dcssch:field>
+					<dcssch:dataPath>ДатаОкончания</dcssch:dataPath>
+					<dcssch:field>ДатаОкончания</dcssch:field>
 				</Field>
 				<Field xsi:type="dcssch:DataSetFieldField">
 					<dcssch:dataPath>НомерВерсииКанбан</dcssch:dataPath>
@@ -350,6 +301,10 @@
 				<Field xsi:type="dcssch:DataSetFieldField">
 					<dcssch:dataPath>ИзделияЭлемент.Основное</dcssch:dataPath>
 					<dcssch:field>ИзделияЭлемент.Основное</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldNestedDataSet">
+					<dcssch:dataPath>ИзделияЭлемент</dcssch:dataPath>
+					<dcssch:field>ИзделияЭлемент</dcssch:field>
 				</Field>
 				<Field xsi:type="dcssch:DataSetFieldField">
 					<dcssch:dataPath>Предопределенный</dcssch:dataPath>
@@ -432,7 +387,6 @@
 						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
 							<dcscor:use>false</dcscor:use>
 							<dcscor:parameter>НеПоказыватьВВыборе</dcscor:parameter>
-							<dcscor:value xsi:nil="true"/>
 						</dcscor:item>
 					</dcsset:dataParameters>
 					<dcsset:order>
