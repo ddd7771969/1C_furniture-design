@@ -24,16 +24,15 @@
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГруппаФильтрыРасширеннаяПодсказка" id="2"/>
 			<ChildItems>
-				<Button name="Обновить" id="44">
+				<Button name="Записать" id="46">
 					<Type>UsualButton</Type>
-					<Representation>Picture</Representation>
-					<Width>3</Width>
-					<CommandName>Form.Command.Обновить</CommandName>
+					<Representation>PictureAndText</Representation>
+					<CommandName>Form.Command.Записать</CommandName>
 					<Picture>
-						<xr:Ref>StdPicture.Refresh</xr:Ref>
+						<xr:Ref>StdPicture.Write</xr:Ref>
 						<xr:LoadTransparent>true</xr:LoadTransparent>
 					</Picture>
-					<ExtendedTooltip name="ОбновитьРасширеннаяПодсказка" id="45"/>
+					<ExtendedTooltip name="ЗаписатьРасширеннаяПодсказка" id="47"/>
 				</Button>
 				<InputField name="Проект" id="9">
 					<DataPath>Проекты</DataPath>
@@ -46,6 +45,17 @@
 					<Type>UsualButton</Type>
 					<CommandName>Form.Command.ЗаполнитьПроекты</CommandName>
 					<ExtendedTooltip name="ЗаполнитьПроектыРасширеннаяПодсказка" id="43"/>
+				</Button>
+				<Button name="Обновить" id="44">
+					<Type>UsualButton</Type>
+					<Representation>Picture</Representation>
+					<Width>3</Width>
+					<CommandName>Form.Command.Обновить</CommandName>
+					<Picture>
+						<xr:Ref>StdPicture.Refresh</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</Picture>
+					<ExtendedTooltip name="ОбновитьРасширеннаяПодсказка" id="45"/>
 				</Button>
 				<CheckBoxField name="ВыводитьПроект" id="37">
 					<DataPath>ВыводитьПроект</DataPath>
@@ -296,6 +306,21 @@
 				</v8:item>
 			</ToolTip>
 			<Action>Обновить</Action>
+		</Command>
+		<Command name="Записать" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Записать</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Записать</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Записать</Action>
 		</Command>
 	</Commands>
 </Form>
