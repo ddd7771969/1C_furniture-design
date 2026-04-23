@@ -428,13 +428,47 @@
 					<ContextMenu name="ДеревоКомплектовПродолжительностьТЗКонтекстноеМеню" id="142"/>
 					<ExtendedTooltip name="ДеревоКомплектовПродолжительностьТЗРасширеннаяПодсказка" id="143"/>
 				</InputField>
-				<InputField name="ДеревоКомплектовПродолжительностьПроектирования" id="129">
-					<DataPath>ДеревоКомплектов.ПродолжительностьПроектирования</DataPath>
-					<EditMode>EnterOnInput</EditMode>
-					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-					<ContextMenu name="ДеревоКомплектовПродолжительностьПроектированияКонтекстноеМеню" id="130"/>
-					<ExtendedTooltip name="ДеревоКомплектовПродолжительностьПроектированияРасширеннаяПодсказка" id="131"/>
-				</InputField>
+				<ColumnGroup name="ДеревоКомплектовГруппаПКД" id="151">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ПКД</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дерево комплектов группа ПКД</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Horizontal</Group>
+					<ShowInHeader>true</ShowInHeader>
+					<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+					<ExtendedTooltip name="ДеревоКомплектовГруппаПКДРасширеннаяПодсказка" id="152"/>
+					<ChildItems>
+						<InputField name="ДеревоКомплектовПродолжительностьПроектирования" id="129">
+							<DataPath>ДеревоКомплектов.ПродолжительностьПроектирования</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ДеревоКомплектовПродолжительностьПроектированияКонтекстноеМеню" id="130"/>
+							<ExtendedTooltip name="ДеревоКомплектовПродолжительностьПроектированияРасширеннаяПодсказка" id="131"/>
+						</InputField>
+						<CheckBoxField name="ДеревоКомплектовПодрядПКД" id="153">
+							<DataPath>ДеревоКомплектов.ПодрядПКД</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Подряд</v8:content>
+								</v8:item>
+							</Title>
+							<EditMode>EnterOnInput</EditMode>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ДеревоКомплектовПодрядПКДКонтекстноеМеню" id="154"/>
+							<ExtendedTooltip name="ДеревоКомплектовПодрядПКДРасширеннаяПодсказка" id="155"/>
+						</CheckBoxField>
+					</ChildItems>
+				</ColumnGroup>
 				<InputField name="ДеревоКомплектовПродолжительностьСогласования" id="138">
 					<DataPath>ДеревоКомплектов.ПродолжительностьСогласования</DataPath>
 					<EditMode>EnterOnInput</EditMode>
@@ -442,21 +476,94 @@
 					<ContextMenu name="ДеревоКомплектовПродолжительностьСогласованияКонтекстноеМеню" id="139"/>
 					<ExtendedTooltip name="ДеревоКомплектовПродолжительностьСогласованияРасширеннаяПодсказка" id="140"/>
 				</InputField>
-				<InputField name="ДеревоКомплектовПродолжительностьРКД" id="135">
-					<DataPath>ДеревоКомплектов.ПродолжительностьРКД</DataPath>
-					<EditMode>EnterOnInput</EditMode>
-					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-					<ContextMenu name="ДеревоКомплектовПродолжительностьРКДКонтекстноеМеню" id="136"/>
-					<ExtendedTooltip name="ДеревоКомплектовПродолжительностьРКДРасширеннаяПодсказка" id="137"/>
-				</InputField>
-				<InputField name="ДеревоКомплектовПродолжительностьПроизводства" id="132">
-					<DataPath>ДеревоКомплектов.ПродолжительностьПроизводства</DataPath>
-					<ReadOnly>true</ReadOnly>
-					<EditMode>EnterOnInput</EditMode>
-					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-					<ContextMenu name="ДеревоКомплектовПродолжительностьПроизводстваКонтекстноеМеню" id="133"/>
-					<ExtendedTooltip name="ДеревоКомплектовПродолжительностьПроизводстваРасширеннаяПодсказка" id="134"/>
-				</InputField>
+				<ColumnGroup name="ДеревоКомплектовГруппаРКД" id="146">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>РКД</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дерево комплектов группа РКД</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Horizontal</Group>
+					<ShowInHeader>true</ShowInHeader>
+					<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+					<ExtendedTooltip name="ДеревоКомплектовГруппаРКДРасширеннаяПодсказка" id="147"/>
+					<ChildItems>
+						<InputField name="ДеревоКомплектовПродолжительностьРКД" id="135">
+							<DataPath>ДеревоКомплектов.ПродолжительностьРКД</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>В нед.</v8:content>
+								</v8:item>
+							</Title>
+							<EditMode>EnterOnInput</EditMode>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ДеревоКомплектовПродолжительностьРКДКонтекстноеМеню" id="136"/>
+							<ExtendedTooltip name="ДеревоКомплектовПродолжительностьРКДРасширеннаяПодсказка" id="137"/>
+						</InputField>
+						<CheckBoxField name="ДеревоКомплектовПодрядРКД" id="148">
+							<DataPath>ДеревоКомплектов.ПодрядРКД</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Подряд</v8:content>
+								</v8:item>
+							</Title>
+							<EditMode>EnterOnInput</EditMode>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ДеревоКомплектовПодрядРКДКонтекстноеМеню" id="149"/>
+							<ExtendedTooltip name="ДеревоКомплектовПодрядРКДРасширеннаяПодсказка" id="150"/>
+						</CheckBoxField>
+					</ChildItems>
+				</ColumnGroup>
+				<ColumnGroup name="ДеревоКомплектовГруппаПроизводство" id="156">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Производство</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дерево комплектов группа производство</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Horizontal</Group>
+					<ShowInHeader>true</ShowInHeader>
+					<HeaderHorizontalAlign>Center</HeaderHorizontalAlign>
+					<ExtendedTooltip name="ДеревоКомплектовГруппаПроизводствоРасширеннаяПодсказка" id="157"/>
+					<ChildItems>
+						<InputField name="ДеревоКомплектовПродолжительностьПроизводства" id="132">
+							<DataPath>ДеревоКомплектов.ПродолжительностьПроизводства</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ДеревоКомплектовПродолжительностьПроизводстваКонтекстноеМеню" id="133"/>
+							<ExtendedTooltip name="ДеревоКомплектовПродолжительностьПроизводстваРасширеннаяПодсказка" id="134"/>
+						</InputField>
+						<CheckBoxField name="ДеревоКомплектовПодрядПроизводство" id="158">
+							<DataPath>ДеревоКомплектов.ПодрядПроизводство</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Подряд</v8:content>
+								</v8:item>
+							</Title>
+							<EditMode>EnterOnInput</EditMode>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ДеревоКомплектовПодрядПроизводствоКонтекстноеМеню" id="159"/>
+							<ExtendedTooltip name="ДеревоКомплектовПодрядПроизводствоРасширеннаяПодсказка" id="160"/>
+						</CheckBoxField>
+					</ChildItems>
+				</ColumnGroup>
 				<InputField name="ДеревоКомплектовПродолжительностьМонтажа" id="126">
 					<DataPath>ДеревоКомплектов.ПродолжительностьМонтажа</DataPath>
 					<EditMode>EnterOnInput</EditMode>
@@ -528,7 +635,7 @@
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Проектирование (в нед.)</v8:content>
+							<v8:content>В нед.</v8:content>
 						</v8:item>
 					</Title>
 					<Type>
@@ -544,7 +651,7 @@
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Производство (в нед.)</v8:content>
+							<v8:content>В нед.</v8:content>
 						</v8:item>
 					</Title>
 					<Type>
@@ -602,6 +709,39 @@
 							<v8:FractionDigits>0</v8:FractionDigits>
 							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
 						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ПодрядПроизводство" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Подряд производство</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ПодрядРКД" id="9">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Подряд РКД</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ПодрядПКД" id="10">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Подряд ПКД</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
 					</Type>
 				</Column>
 			</Columns>
