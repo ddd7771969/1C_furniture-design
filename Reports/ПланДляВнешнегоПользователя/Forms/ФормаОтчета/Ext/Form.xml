@@ -38,6 +38,22 @@
 					</Picture>
 					<ExtendedTooltip name="ПечатьРасширеннаяПодсказка" id="54"/>
 				</Button>
+				<Button name="ПечатьПолная" id="55">
+					<Type>UsualButton</Type>
+					<Representation>PictureAndText</Representation>
+					<CommandName>Form.Command.ПечатьПолная</CommandName>
+					<Picture>
+						<xr:Ref>StdPicture.Print</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</Picture>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Полная</v8:content>
+						</v8:item>
+					</Title>
+					<ExtendedTooltip name="ПечатьПолнаяРасширеннаяПодсказка" id="56"/>
+				</Button>
 			</ChildItems>
 		</UsualGroup>
 		<GanttChartField name="Диаграмма" id="1">
@@ -720,6 +736,21 @@
 				</v8:item>
 			</ToolTip>
 			<Action>Печать</Action>
+		</Command>
+		<Command name="ПечатьПолная" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Печать полная</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Печать полная</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПечатьПолная</Action>
 		</Command>
 	</Commands>
 </Form>
