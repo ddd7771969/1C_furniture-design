@@ -15,6 +15,16 @@
 				</Picture>
 				<ExtendedTooltip name="ФормаЗаписатьРасширеннаяПодсказка" id="99"/>
 			</Button>
+			<Button name="ФормаТаймингЗадачи" id="305">
+				<Type>CommandBarButton</Type>
+				<Representation>Picture</Representation>
+				<CommandName>Form.Command.ТаймингЗадачи</CommandName>
+				<Picture>
+					<xr:Ref>CommonPicture.ИсторияВерсий</xr:Ref>
+					<xr:LoadTransparent>true</xr:LoadTransparent>
+				</Picture>
+				<ExtendedTooltip name="ФормаТаймингЗадачиРасширеннаяПодсказка" id="306"/>
+			</Button>
 			<Button name="ФормаСправка" id="291">
 				<Type>CommandBarButton</Type>
 				<CommandName>Form.StandardCommand.Help</CommandName>
@@ -1753,6 +1763,21 @@
 				</v8:item>
 			</ToolTip>
 			<Action>УстановитьВыполнение</Action>
+		</Command>
+		<Command name="ТаймингЗадачи" id="33">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тайминг задачи</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тайминг задачи</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ТаймингЗадачи</Action>
 		</Command>
 	</Commands>
 	<CommandInterface>
