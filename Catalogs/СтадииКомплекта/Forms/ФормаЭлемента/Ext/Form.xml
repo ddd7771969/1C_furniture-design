@@ -80,6 +80,18 @@
 					<ContextMenu name="НомерПоПорядкуКонтекстноеМеню" id="17"/>
 					<ExtendedTooltip name="НомерПоПорядкуРасширеннаяПодсказка" id="18"/>
 				</InputField>
+				<InputField name="НормаВремени" id="69">
+					<DataPath>Объект.НормаВремени</DataPath>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="НормаВремениКонтекстноеМеню" id="70"/>
+					<ExtendedTooltip name="НормаВремениРасширеннаяПодсказка" id="71"/>
+				</InputField>
+				<CheckBoxField name="Ожидание" id="72">
+					<DataPath>Объект.Ожидание</DataPath>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ОжиданиеКонтекстноеМеню" id="73"/>
+					<ExtendedTooltip name="ОжиданиеРасширеннаяПодсказка" id="74"/>
+				</CheckBoxField>
 			</ChildItems>
 		</UsualGroup>
 		<Table name="РеквизитыСтадии" id="25">

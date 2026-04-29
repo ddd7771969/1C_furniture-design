@@ -127,7 +127,6 @@
 	СправочникСделки.ЕстьДоговор КАК ЕстьДоговор,
 	СправочникСделки.Номер КАК Номер,
 	СправочникСделки.Префикс КАК Префикс,
-	СправочникСделки.СтатусОбъекта КАК СтатусОбъекта,
 	СправочникСделки.КонтактнаяИнформация.(
 		Ссылка КАК Ссылка,
 		НомерСтроки КАК НомерСтроки,
@@ -171,32 +170,104 @@
 			ИНАЧЕ ИСТИНА
 		КОНЕЦ</QueryText>
 				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>Ссылка</dcssch:dataPath>
-					<dcssch:field>Ссылка</dcssch:field>
-				</Field>
-				<Field xsi:type="dcssch:DataSetFieldField">
 					<dcssch:dataPath>ПометкаУдаления</dcssch:dataPath>
 					<dcssch:field>ПометкаУдаления</dcssch:field>
 				</Field>
 				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>Код</dcssch:dataPath>
-					<dcssch:field>Код</dcssch:field>
+					<dcssch:dataPath>ВедущийКонструктор</dcssch:dataPath>
+					<dcssch:field>ВедущийКонструктор</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ДлинаРазрываДляГанта</dcssch:dataPath>
+					<dcssch:field>ДлинаРазрываДляГанта</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>МатериалыПроекта</dcssch:dataPath>
+					<dcssch:field>МатериалыПроекта</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldNestedDataSet">
+					<dcssch:dataPath>ДополнительныеРеквизиты</dcssch:dataPath>
+					<dcssch:field>ДополнительныеРеквизиты</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>КонтактнаяИнформация.Значение</dcssch:dataPath>
+					<dcssch:field>КонтактнаяИнформация.Значение</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Замерщик</dcssch:dataPath>
+					<dcssch:field>Замерщик</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>КонтактнаяИнформация.Страна</dcssch:dataPath>
+					<dcssch:field>КонтактнаяИнформация.Страна</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ИмяКорневойПапкиВPDM</dcssch:dataPath>
+					<dcssch:field>ИмяКорневойПапкиВPDM</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ИмяПапкиКомпозицииВPDM</dcssch:dataPath>
+					<dcssch:field>ИмяПапкиКомпозицииВPDM</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>КонтактнаяИнформация.НомерСтроки</dcssch:dataPath>
+					<dcssch:field>КонтактнаяИнформация.НомерСтроки</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ИмяПапкиГЧВPDM</dcssch:dataPath>
+					<dcssch:field>ИмяПапкиГЧВPDM</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ИмяПредопределенныхДанных</dcssch:dataPath>
+					<dcssch:field>ИмяПредопределенныхДанных</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Ссылка</dcssch:dataPath>
+					<dcssch:field>Ссылка</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Дизайнер</dcssch:dataPath>
+					<dcssch:field>Дизайнер</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Менеджер</dcssch:dataPath>
+					<dcssch:field>Менеджер</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>КонтактнаяИнформация.Регион</dcssch:dataPath>
+					<dcssch:field>КонтактнаяИнформация.Регион</dcssch:field>
 				</Field>
 				<Field xsi:type="dcssch:DataSetFieldField">
 					<dcssch:dataPath>Родитель</dcssch:dataPath>
 					<dcssch:field>Родитель</dcssch:field>
 				</Field>
 				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>Номер</dcssch:dataPath>
-					<dcssch:field>Номер</dcssch:field>
-				</Field>
-				<Field xsi:type="dcssch:DataSetFieldField">
 					<dcssch:dataPath>ЭтоГруппа</dcssch:dataPath>
 					<dcssch:field>ЭтоГруппа</dcssch:field>
 				</Field>
 				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>НеВыводитьНаДиаграмму</dcssch:dataPath>
+					<dcssch:field>НеВыводитьНаДиаграмму</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Код</dcssch:dataPath>
+					<dcssch:field>Код</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
 					<dcssch:dataPath>Наименование</dcssch:dataPath>
 					<dcssch:field>Наименование</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ЕстьДоговор</dcssch:dataPath>
+					<dcssch:field>ЕстьДоговор</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Номер</dcssch:dataPath>
+					<dcssch:field>Номер</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ДополнительныеРеквизиты.Ссылка</dcssch:dataPath>
+					<dcssch:field>ДополнительныеРеквизиты.Ссылка</dcssch:field>
 				</Field>
 				<Field xsi:type="dcssch:DataSetFieldNestedDataSet">
 					<dcssch:dataPath>КонтактнаяИнформация</dcssch:dataPath>
@@ -207,24 +278,8 @@
 					<dcssch:field>Префикс</dcssch:field>
 				</Field>
 				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>ЕстьДоговор</dcssch:dataPath>
-					<dcssch:field>ЕстьДоговор</dcssch:field>
-				</Field>
-				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>СтатусОбъекта</dcssch:dataPath>
-					<dcssch:field>СтатусОбъекта</dcssch:field>
-				</Field>
-				<Field xsi:type="dcssch:DataSetFieldField">
 					<dcssch:dataPath>КонтактнаяИнформация.Ссылка</dcssch:dataPath>
 					<dcssch:field>КонтактнаяИнформация.Ссылка</dcssch:field>
-				</Field>
-				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>ДополнительныеРеквизиты.Ссылка</dcssch:dataPath>
-					<dcssch:field>ДополнительныеРеквизиты.Ссылка</dcssch:field>
-				</Field>
-				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>КонтактнаяИнформация.НомерСтроки</dcssch:dataPath>
-					<dcssch:field>КонтактнаяИнформация.НомерСтроки</dcssch:field>
 				</Field>
 				<Field xsi:type="dcssch:DataSetFieldField">
 					<dcssch:dataPath>КонтактнаяИнформация.Тип</dcssch:dataPath>
@@ -237,6 +292,10 @@
 				<Field xsi:type="dcssch:DataSetFieldField">
 					<dcssch:dataPath>КонтактнаяИнформация.Вид</dcssch:dataPath>
 					<dcssch:field>КонтактнаяИнформация.Вид</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ДополнительныеРеквизиты.НомерСтроки</dcssch:dataPath>
+					<dcssch:field>ДополнительныеРеквизиты.НомерСтроки</dcssch:field>
 				</Field>
 				<Field xsi:type="dcssch:DataSetFieldField">
 					<dcssch:dataPath>КонтактнаяИнформация.ВидДляСписка</dcssch:dataPath>
@@ -255,14 +314,6 @@
 					<dcssch:field>КонтактнаяИнформация.ЗначенияПолей</dcssch:field>
 				</Field>
 				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>КонтактнаяИнформация.Страна</dcssch:dataPath>
-					<dcssch:field>КонтактнаяИнформация.Страна</dcssch:field>
-				</Field>
-				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>КонтактнаяИнформация.Регион</dcssch:dataPath>
-					<dcssch:field>КонтактнаяИнформация.Регион</dcssch:field>
-				</Field>
-				<Field xsi:type="dcssch:DataSetFieldField">
 					<dcssch:dataPath>КонтактнаяИнформация.АдресЭП</dcssch:dataPath>
 					<dcssch:field>КонтактнаяИнформация.АдресЭП</dcssch:field>
 				</Field>
@@ -278,18 +329,6 @@
 					<dcssch:dataPath>КонтактнаяИнформация.НомерТелефонаБезКодов</dcssch:dataPath>
 					<dcssch:field>КонтактнаяИнформация.НомерТелефонаБезКодов</dcssch:field>
 				</Field>
-				<Field xsi:type="dcssch:DataSetFieldNestedDataSet">
-					<dcssch:dataPath>ДополнительныеРеквизиты</dcssch:dataPath>
-					<dcssch:field>ДополнительныеРеквизиты</dcssch:field>
-				</Field>
-				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>КонтактнаяИнформация.Значение</dcssch:dataPath>
-					<dcssch:field>КонтактнаяИнформация.Значение</dcssch:field>
-				</Field>
-				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>ДополнительныеРеквизиты.НомерСтроки</dcssch:dataPath>
-					<dcssch:field>ДополнительныеРеквизиты.НомерСтроки</dcssch:field>
-				</Field>
 				<Field xsi:type="dcssch:DataSetFieldField">
 					<dcssch:dataPath>ДополнительныеРеквизиты.Свойство</dcssch:dataPath>
 					<dcssch:field>ДополнительныеРеквизиты.Свойство</dcssch:field>
@@ -303,52 +342,8 @@
 					<dcssch:field>Предопределенный</dcssch:field>
 				</Field>
 				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>ИмяПредопределенныхДанных</dcssch:dataPath>
-					<dcssch:field>ИмяПредопределенныхДанных</dcssch:field>
-				</Field>
-				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>Дизайнер</dcssch:dataPath>
-					<dcssch:field>Дизайнер</dcssch:field>
-				</Field>
-				<Field xsi:type="dcssch:DataSetFieldField">
 					<dcssch:dataPath>Сметчик</dcssch:dataPath>
 					<dcssch:field>Сметчик</dcssch:field>
-				</Field>
-				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>НеВыводитьНаДиаграмму</dcssch:dataPath>
-					<dcssch:field>НеВыводитьНаДиаграмму</dcssch:field>
-				</Field>
-				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>ВедущийКонструктор</dcssch:dataPath>
-					<dcssch:field>ВедущийКонструктор</dcssch:field>
-				</Field>
-				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>ДлинаРазрываДляГанта</dcssch:dataPath>
-					<dcssch:field>ДлинаРазрываДляГанта</dcssch:field>
-				</Field>
-				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>МатериалыПроекта</dcssch:dataPath>
-					<dcssch:field>МатериалыПроекта</dcssch:field>
-				</Field>
-				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>Замерщик</dcssch:dataPath>
-					<dcssch:field>Замерщик</dcssch:field>
-				</Field>
-				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>ИмяКорневойПапкиВPDM</dcssch:dataPath>
-					<dcssch:field>ИмяКорневойПапкиВPDM</dcssch:field>
-				</Field>
-				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>ИмяПапкиКомпозицииВPDM</dcssch:dataPath>
-					<dcssch:field>ИмяПапкиКомпозицииВPDM</dcssch:field>
-				</Field>
-				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>ИмяПапкиГЧВPDM</dcssch:dataPath>
-					<dcssch:field>ИмяПапкиГЧВPDM</dcssch:field>
-				</Field>
-				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>Менеджер</dcssch:dataPath>
-					<dcssch:field>Менеджер</dcssch:field>
 				</Field>
 				<Parameter>
 					<dcssch:name>ИспользоватьОтбор</dcssch:name>
@@ -356,6 +351,20 @@
 						<v8:item>
 							<v8:lang>ru</v8:lang>
 							<v8:content>Использовать отбор</v8:content>
+						</v8:item>
+					</dcssch:title>
+					<dcssch:valueType>
+						<v8:Type>xs:boolean</v8:Type>
+					</dcssch:valueType>
+					<dcssch:value xsi:type="xs:boolean">false</dcssch:value>
+					<dcssch:useRestriction>true</dcssch:useRestriction>
+				</Parameter>
+				<Parameter>
+					<dcssch:name>НеВыводитьНаДиаграмму</dcssch:name>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Не выводить на диаграмму</v8:content>
 						</v8:item>
 					</dcssch:title>
 					<dcssch:valueType>
@@ -379,26 +388,18 @@
 					<dcssch:useRestriction>true</dcssch:useRestriction>
 					<dcssch:valueListAllowed>true</dcssch:valueListAllowed>
 				</Parameter>
-				<Parameter>
-					<dcssch:name>НеВыводитьНаДиаграмму</dcssch:name>
-					<dcssch:title xsi:type="v8:LocalStringType">
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Не выводить на диаграмму</v8:content>
-						</v8:item>
-					</dcssch:title>
-					<dcssch:valueType>
-						<v8:Type>xs:boolean</v8:Type>
-					</dcssch:valueType>
-					<dcssch:value xsi:type="xs:boolean">false</dcssch:value>
-					<dcssch:useRestriction>true</dcssch:useRestriction>
-				</Parameter>
 				<MainTable>Catalog.Проекты</MainTable>
 				<ListSettings>
 					<dcsset:filter>
 						<dcsset:viewMode>Normal</dcsset:viewMode>
 						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
 					</dcsset:filter>
+					<dcsset:dataParameters>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:use>false</dcscor:use>
+							<dcscor:parameter>НеСуществуютВПланировании</dcscor:parameter>
+						</dcscor:item>
+					</dcsset:dataParameters>
 					<dcsset:order>
 						<dcsset:viewMode>Normal</dcsset:viewMode>
 						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
