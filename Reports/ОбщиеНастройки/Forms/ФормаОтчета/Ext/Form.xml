@@ -648,30 +648,76 @@
 					</ToolTip>
 					<ExtendedTooltip name="ГруппаНормыВремениРасширеннаяПодсказка" id="158"/>
 					<ChildItems>
-						<InputField name="ПлюсДнейПКД" id="165">
-							<DataPath>ПлюсДнейПКД</DataPath>
-							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-							<ContextMenu name="ПлюсДнейПКДКонтекстноеМеню" id="166"/>
-							<ExtendedTooltip name="ПлюсДнейПКДРасширеннаяПодсказка" id="167"/>
-						</InputField>
-						<InputField name="ПлюсДнейРКД" id="159">
-							<DataPath>ПлюсДнейРКД</DataPath>
-							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-							<ContextMenu name="ПлюсДнейРКДКонтекстноеМеню" id="160"/>
-							<ExtendedTooltip name="ПлюсДнейРКДРасширеннаяПодсказка" id="161"/>
-						</InputField>
-						<InputField name="КоличествоЗадачПКДВРаботе" id="214">
-							<DataPath>КоличествоЗадачПКДВРаботе</DataPath>
-							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-							<ContextMenu name="КоличествоЗадачПКДВРаботеКонтекстноеМеню" id="215"/>
-							<ExtendedTooltip name="КоличествоЗадачПКДВРаботеРасширеннаяПодсказка" id="216"/>
-						</InputField>
-						<InputField name="КоличествоЗадачНаПаузе" id="257">
-							<DataPath>КоличествоЗадачНаПаузе</DataPath>
-							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-							<ContextMenu name="КоличествоЗадачНаПаузеКонтекстноеМеню" id="258"/>
-							<ExtendedTooltip name="КоличествоЗадачНаПаузеРасширеннаяПодсказка" id="259"/>
-						</InputField>
+						<UsualGroup name="Группа6" id="266">
+							<Group>AlwaysHorizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа6РасширеннаяПодсказка" id="267"/>
+							<ChildItems>
+								<UsualGroup name="ГруппаЛевая" id="268">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа левая</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа левая</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Vertical</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаЛеваяРасширеннаяПодсказка" id="269"/>
+									<ChildItems>
+										<InputField name="ПлюсДнейПКД" id="165">
+											<DataPath>ПлюсДнейПКД</DataPath>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="ПлюсДнейПКДКонтекстноеМеню" id="166"/>
+											<ExtendedTooltip name="ПлюсДнейПКДРасширеннаяПодсказка" id="167"/>
+										</InputField>
+										<InputField name="ПлюсДнейРКД" id="159">
+											<DataPath>ПлюсДнейРКД</DataPath>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="ПлюсДнейРКДКонтекстноеМеню" id="160"/>
+											<ExtendedTooltip name="ПлюсДнейРКДРасширеннаяПодсказка" id="161"/>
+										</InputField>
+										<InputField name="КоличествоЗадачПКДВРаботе" id="214">
+											<DataPath>КоличествоЗадачПКДВРаботе</DataPath>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="КоличествоЗадачПКДВРаботеКонтекстноеМеню" id="215"/>
+											<ExtendedTooltip name="КоличествоЗадачПКДВРаботеРасширеннаяПодсказка" id="216"/>
+										</InputField>
+										<InputField name="КоличествоЗадачНаПаузе" id="257">
+											<DataPath>КоличествоЗадачНаПаузе</DataPath>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="КоличествоЗадачНаПаузеКонтекстноеМеню" id="258"/>
+											<ExtendedTooltip name="КоличествоЗадачНаПаузеРасширеннаяПодсказка" id="259"/>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаПравая" id="270">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа правая</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа правая</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Vertical</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаПраваяРасширеннаяПодсказка" id="271"/>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
 					</ChildItems>
 				</Page>
 				<Page name="ГруппаСообщения" id="192">
@@ -1690,6 +1736,28 @@
 				<v8:item>
 					<v8:lang>ru</v8:lang>
 					<v8:content>Хранение на складе</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.СтадииКомплекта</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Стадия_разработка_ПКД" id="52">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Стадия разработка ПКД</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.СтадииКомплекта</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Стадия_разработка_РКД" id="53">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Стадия разработка РКД</v8:content>
 				</v8:item>
 			</Title>
 			<Type>

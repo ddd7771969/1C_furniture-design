@@ -423,6 +423,41 @@
 						</Table>
 					</ChildItems>
 				</Page>
+				<Page name="ГруппаНормы" id="557">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Нормы</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа нормы</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаНормыРасширеннаяПодсказка" id="558"/>
+					<ChildItems>
+						<InputField name="НормаВремени_ПКД" id="559">
+							<DataPath>НормаВремени_ПКД</DataPath>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="НормаВремени_ПКДКонтекстноеМеню" id="560"/>
+							<ExtendedTooltip name="НормаВремени_ПКДРасширеннаяПодсказка" id="561"/>
+							<Events>
+								<Event name="OnChange">НормаВремени_ПКДПриИзменении</Event>
+							</Events>
+						</InputField>
+						<InputField name="НормаВремени_РКД" id="562">
+							<DataPath>НормаВремени_РКД</DataPath>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="НормаВремени_РКДКонтекстноеМеню" id="563"/>
+							<ExtendedTooltip name="НормаВремени_РКДРасширеннаяПодсказка" id="564"/>
+							<Events>
+								<Event name="OnChange">НормаВремени_РКДПриИзменении</Event>
+							</Events>
+						</InputField>
+					</ChildItems>
+				</Page>
 				<Page name="ГруппаЗадачи" id="484">
 					<Title>
 						<v8:item>
@@ -812,7 +847,7 @@
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Норма времени ПКД</v8:content>
+					<v8:content>Норма времени ПКД (в днях)</v8:content>
 				</v8:item>
 			</Title>
 			<Type>
@@ -828,7 +863,7 @@
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Норма времени РКД</v8:content>
+					<v8:content>Норма времени РКД (в днях)</v8:content>
 				</v8:item>
 			</Title>
 			<Type>
