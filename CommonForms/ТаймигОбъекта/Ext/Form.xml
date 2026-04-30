@@ -83,14 +83,6 @@
 					<ContextMenu name="ТаблицаТаймингаДатаНачалаКонтекстноеМеню" id="21"/>
 					<ExtendedTooltip name="ТаблицаТаймингаДатаНачалаРасширеннаяПодсказка" id="22"/>
 				</InputField>
-				<InputField name="ТаблицаТаймингаПродолжительность" id="26">
-					<DataPath>ТаблицаТайминга.Продолжительность</DataPath>
-					<ReadOnly>true</ReadOnly>
-					<EditMode>EnterOnInput</EditMode>
-					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-					<ContextMenu name="ТаблицаТаймингаПродолжительностьКонтекстноеМеню" id="27"/>
-					<ExtendedTooltip name="ТаблицаТаймингаПродолжительностьРасширеннаяПодсказка" id="28"/>
-				</InputField>
 				<InputField name="ТаблицаТаймингаСотрудник" id="29">
 					<DataPath>ТаблицаТайминга.Сотрудник</DataPath>
 					<ReadOnly>true</ReadOnly>
@@ -98,6 +90,14 @@
 					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 					<ContextMenu name="ТаблицаТаймингаСотрудникКонтекстноеМеню" id="30"/>
 					<ExtendedTooltip name="ТаблицаТаймингаСотрудникРасширеннаяПодсказка" id="31"/>
+				</InputField>
+				<InputField name="ТаблицаТаймингаПродолжительность" id="26">
+					<DataPath>ТаблицаТайминга.Продолжительность</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ТаблицаТаймингаПродолжительностьКонтекстноеМеню" id="27"/>
+					<ExtendedTooltip name="ТаблицаТаймингаПродолжительностьРасширеннаяПодсказка" id="28"/>
 				</InputField>
 				<InputField name="ТаблицаТаймингаНорматив" id="32">
 					<DataPath>ТаблицаТайминга.Норматив</DataPath>
