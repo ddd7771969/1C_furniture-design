@@ -104,6 +104,13 @@
 					<ExtendedTooltip name="ДиаграммаТаблицаУправлениеПоискомРасширеннаяПодсказка" id="16"/>
 				</SearchControlAddition>
 				<ChildItems>
+					<InputField name="ДиаграммаТаблицаСтадия" id="57">
+						<DataPath>Диаграмма.Стадия</DataPath>
+						<EditMode>EnterOnInput</EditMode>
+						<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+						<ContextMenu name="ДиаграммаТаблицаСтадияКонтекстноеМеню" id="58"/>
+						<ExtendedTooltip name="ДиаграммаТаблицаСтадияРасширеннаяПодсказка" id="59"/>
+					</InputField>
 					<InputField name="ДиаграммаТаблицаТочка" id="17">
 						<DataPath>Диаграмма.Point</DataPath>
 						<EditMode>EnterOnInput</EditMode>
@@ -238,6 +245,23 @@
 			<Type>
 				<v8:Type xmlns:d5p1="http://v8.1c.ru/8.2/data/chart">d5p1:GanttChart</v8:Type>
 			</Type>
+			<Columns>
+				<Column name="Стадия" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Стадия</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
 			<Settings xmlns:d4p1="http://v8.1c.ru/8.2/data/chart" xsi:type="d4p1:GanttChart">
 				<d4p1:chart>
 					<d4p1:seriesCurId>1</d4p1:seriesCurId>
