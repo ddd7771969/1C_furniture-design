@@ -100,7 +100,7 @@
 					<ExtendedTooltip name="ТаблицаТаймингаПродолжительностьРасширеннаяПодсказка" id="28"/>
 				</InputField>
 				<InputField name="ТаблицаТаймингаНорматив" id="32">
-					<DataPath>ТаблицаТайминга.Норматив</DataPath>
+					<DataPath>ТаблицаТайминга.НормаВремени</DataPath>
 					<ReadOnly>true</ReadOnly>
 					<EditMode>EnterOnInput</EditMode>
 					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
@@ -212,11 +212,11 @@
 						<v8:Type>cfg:CatalogRef.Сотрудники</v8:Type>
 					</Type>
 				</Column>
-				<Column name="Норматив" id="6">
+				<Column name="НормаВремени" id="6">
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Норматив</v8:content>
+							<v8:content>Норма времени</v8:content>
 						</v8:item>
 					</Title>
 					<Type>
@@ -329,6 +329,15 @@
 							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
 						</v8:NumberQualifiers>
 					</Type>
+				</Column>
+				<Column name="Задача" id="14">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Задача</v8:content>
+						</v8:item>
+					</Title>
+					<Type/>
 				</Column>
 			</Columns>
 		</Attribute>

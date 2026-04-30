@@ -79,6 +79,28 @@
 					<ContextMenu name="ПолноеНаименованиеКонтекстноеМеню" id="23"/>
 					<ExtendedTooltip name="ПолноеНаименованиеРасширеннаяПодсказка" id="24"/>
 				</LabelField>
+				<LabelField name="НомерПоПорядку" id="28">
+					<DataPath>Список.НомерПоПорядку</DataPath>
+					<ContextMenu name="НомерПоПорядкуКонтекстноеМеню" id="29"/>
+					<ExtendedTooltip name="НомерПоПорядкуРасширеннаяПодсказка" id="30"/>
+				</LabelField>
+				<LabelField name="НормаВремени" id="37">
+					<DataPath>Список.НормаВремени</DataPath>
+					<ContextMenu name="НормаВремениКонтекстноеМеню" id="38"/>
+					<ExtendedTooltip name="НормаВремениРасширеннаяПодсказка" id="39"/>
+				</LabelField>
+				<CheckBoxField name="Ожидание" id="31">
+					<DataPath>Список.Ожидание</DataPath>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ОжиданиеКонтекстноеМеню" id="32"/>
+					<ExtendedTooltip name="ОжиданиеРасширеннаяПодсказка" id="33"/>
+				</CheckBoxField>
+				<CheckBoxField name="ОграниченныйПоказ" id="34">
+					<DataPath>Список.ОграниченныйПоказ</DataPath>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ОграниченныйПоказКонтекстноеМеню" id="35"/>
+					<ExtendedTooltip name="ОграниченныйПоказРасширеннаяПодсказка" id="36"/>
+				</CheckBoxField>
 				<LabelField name="РеквизитыСтрокой" id="25">
 					<DataPath>Список.РеквизитыСтрокой</DataPath>
 					<ContextMenu name="РеквизитыСтрокойКонтекстноеМеню" id="26"/>
