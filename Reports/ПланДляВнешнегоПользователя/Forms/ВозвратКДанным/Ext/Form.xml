@@ -1,0 +1,713 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<Title>
+		<v8:item>
+			<v8:lang>ru</v8:lang>
+			<v8:content>Изменение дат </v8:content>
+		</v8:item>
+	</Title>
+	<AutoTitle>false</AutoTitle>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+		<ChildItems>
+			<Button name="ФормаУстановитьНаТекущуюДату" id="98">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.УстановитьНаТекущуюДату</CommandName>
+				<ExtendedTooltip name="ФормаУстановитьНаТекущуюДатуРасширеннаяПодсказка" id="99"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Группа2" id="93">
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="94"/>
+			<ChildItems>
+				<InputField name="Проект" id="88">
+					<DataPath>Проект</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ПроектКонтекстноеМеню" id="89"/>
+					<ExtendedTooltip name="ПроектРасширеннаяПодсказка" id="90"/>
+				</InputField>
+				<InputField name="Автор" id="95">
+					<DataPath>Автор</DataPath>
+					<ClearButton>true</ClearButton>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="АвторКонтекстноеМеню" id="96"/>
+					<ExtendedTooltip name="АвторРасширеннаяПодсказка" id="97"/>
+					<Events>
+						<Event name="OnChange">АвторПриИзменении</Event>
+					</Events>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Группа1" id="7">
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="8"/>
+			<ChildItems>
+				<Button name="Обновить" id="91">
+					<Type>UsualButton</Type>
+					<Representation>Picture</Representation>
+					<CommandName>Form.Command.Обновить</CommandName>
+					<Picture>
+						<xr:Ref>StdPicture.Refresh</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</Picture>
+					<ExtendedTooltip name="ОбновитьРасширеннаяПодсказка" id="92"/>
+				</Button>
+				<InputField name="Год" id="1">
+					<DataPath>Год</DataPath>
+					<ListChoiceMode>true</ListChoiceMode>
+					<EditFormat>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ЧЦ=4; ЧДЦ=0; ЧРГ=; ЧГ=0</v8:content>
+						</v8:item>
+					</EditFormat>
+					<ChooseType>false</ChooseType>
+					<ContextMenu name="ГодКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="ГодРасширеннаяПодсказка" id="3"/>
+					<Events>
+						<Event name="OnChange">ГодПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="Месяц" id="4">
+					<DataPath>Месяц</DataPath>
+					<SpinButton>false</SpinButton>
+					<OpenButton>false</OpenButton>
+					<ListChoiceMode>true</ListChoiceMode>
+					<QuickChoice>true</QuickChoice>
+					<ChooseType>false</ChooseType>
+					<ContextMenu name="МесяцКонтекстноеМеню" id="5"/>
+					<ExtendedTooltip name="МесяцРасширеннаяПодсказка" id="6"/>
+					<Events>
+						<Event name="OnChange">МесяцПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="День" id="9">
+					<DataPath>День</DataPath>
+					<ListChoiceMode>true</ListChoiceMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ChooseType>false</ChooseType>
+					<ContextMenu name="ДеньКонтекстноеМеню" id="10"/>
+					<ExtendedTooltip name="ДеньРасширеннаяПодсказка" id="11"/>
+					<Events>
+						<Event name="OnChange">ДеньПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="Час" id="12">
+					<DataPath>Час</DataPath>
+					<ListChoiceMode>true</ListChoiceMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ChooseType>false</ChooseType>
+					<ContextMenu name="ЧасКонтекстноеМеню" id="13"/>
+					<ExtendedTooltip name="ЧасРасширеннаяПодсказка" id="14"/>
+					<Events>
+						<Event name="OnChange">ЧасПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="Минута" id="15">
+					<DataPath>Минута</DataPath>
+					<ListChoiceMode>true</ListChoiceMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ChooseType>false</ChooseType>
+					<ContextMenu name="МинутаКонтекстноеМеню" id="16"/>
+					<ExtendedTooltip name="МинутаРасширеннаяПодсказка" id="17"/>
+					<Events>
+						<Event name="OnChange">МинутаПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="Секунда" id="18">
+					<DataPath>Секунда</DataPath>
+					<ListChoiceMode>true</ListChoiceMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ChooseType>false</ChooseType>
+					<ContextMenu name="СекундаКонтекстноеМеню" id="19"/>
+					<ExtendedTooltip name="СекундаРасширеннаяПодсказка" id="20"/>
+					<Events>
+						<Event name="OnChange">СекундаПриИзменении</Event>
+					</Events>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<Table name="ДанныеРегистра" id="21">
+			<Representation>List</Representation>
+			<ReadOnly>true</ReadOnly>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>ДанныеРегистра</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ДанныеРегистраКонтекстноеМеню" id="22"/>
+			<AutoCommandBar name="ДанныеРегистраКоманднаяПанель" id="23">
+				<Autofill>false</Autofill>
+			</AutoCommandBar>
+			<ExtendedTooltip name="ДанныеРегистраРасширеннаяПодсказка" id="24"/>
+			<SearchStringAddition name="ДанныеРегистраСтрокаПоиска" id="25">
+				<AdditionSource>
+					<Item>ДанныеРегистра</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ДанныеРегистраСтрокаПоискаКонтекстноеМеню" id="26"/>
+				<ExtendedTooltip name="ДанныеРегистраСтрокаПоискаРасширеннаяПодсказка" id="27"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ДанныеРегистраСостояниеПросмотра" id="28">
+				<AdditionSource>
+					<Item>ДанныеРегистра</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ДанныеРегистраСостояниеПросмотраКонтекстноеМеню" id="29"/>
+				<ExtendedTooltip name="ДанныеРегистраСостояниеПросмотраРасширеннаяПодсказка" id="30"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ДанныеРегистраУправлениеПоиском" id="31">
+				<AdditionSource>
+					<Item>ДанныеРегистра</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ДанныеРегистраУправлениеПоискомКонтекстноеМеню" id="32"/>
+				<ExtendedTooltip name="ДанныеРегистраУправлениеПоискомРасширеннаяПодсказка" id="33"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<InputField name="ДанныеРегистраКомплект" id="82">
+					<DataPath>ДанныеРегистра.Комплект</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ДанныеРегистраКомплектКонтекстноеМеню" id="83"/>
+					<ExtendedTooltip name="ДанныеРегистраКомплектРасширеннаяПодсказка" id="84"/>
+				</InputField>
+				<InputField name="ДанныеРегистраВнешняяДатаНачалоТЗ" id="49">
+					<DataPath>ДанныеРегистра.ВнешняяДатаНачалоТЗ</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ДанныеРегистраВнешняяДатаНачалоТЗКонтекстноеМеню" id="50"/>
+					<ExtendedTooltip name="ДанныеРегистраВнешняяДатаНачалоТЗРасширеннаяПодсказка" id="51"/>
+				</InputField>
+				<InputField name="ДанныеРегистраВнешняяДатаОкончаниеТЗ" id="67">
+					<DataPath>ДанныеРегистра.ВнешняяДатаОкончаниеТЗ</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ДанныеРегистраВнешняяДатаОкончаниеТЗКонтекстноеМеню" id="68"/>
+					<ExtendedTooltip name="ДанныеРегистраВнешняяДатаОкончаниеТЗРасширеннаяПодсказка" id="69"/>
+				</InputField>
+				<InputField name="ДанныеРегистраВнешняяДатаНачалоПроектирования" id="37">
+					<DataPath>ДанныеРегистра.ВнешняяДатаНачалоПроектирования</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ДанныеРегистраВнешняяДатаНачалоПроектированияКонтекстноеМеню" id="38"/>
+					<ExtendedTooltip name="ДанныеРегистраВнешняяДатаНачалоПроектированияРасширеннаяПодсказка" id="39"/>
+				</InputField>
+				<InputField name="ДанныеРегистраВнешняяДатаОкончаниеПроектирования" id="55">
+					<DataPath>ДанныеРегистра.ВнешняяДатаОкончаниеПроектирования</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ДанныеРегистраВнешняяДатаОкончаниеПроектированияКонтекстноеМеню" id="56"/>
+					<ExtendedTooltip name="ДанныеРегистраВнешняяДатаОкончаниеПроектированияРасширеннаяПодсказка" id="57"/>
+				</InputField>
+				<InputField name="ДанныеРегистраВнешняяДатаНачалоСогласования" id="46">
+					<DataPath>ДанныеРегистра.ВнешняяДатаНачалоСогласования</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ДанныеРегистраВнешняяДатаНачалоСогласованияКонтекстноеМеню" id="47"/>
+					<ExtendedTooltip name="ДанныеРегистраВнешняяДатаНачалоСогласованияРасширеннаяПодсказка" id="48"/>
+				</InputField>
+				<InputField name="ДанныеРегистраВнешняяДатаОкончаниеСогласования" id="64">
+					<DataPath>ДанныеРегистра.ВнешняяДатаОкончаниеСогласования</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ДанныеРегистраВнешняяДатаОкончаниеСогласованияКонтекстноеМеню" id="65"/>
+					<ExtendedTooltip name="ДанныеРегистраВнешняяДатаОкончаниеСогласованияРасширеннаяПодсказка" id="66"/>
+				</InputField>
+				<InputField name="ДанныеРегистраВнешняяДатаНачалоРКД" id="43">
+					<DataPath>ДанныеРегистра.ВнешняяДатаНачалоРКД</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ДанныеРегистраВнешняяДатаНачалоРКДКонтекстноеМеню" id="44"/>
+					<ExtendedTooltip name="ДанныеРегистраВнешняяДатаНачалоРКДРасширеннаяПодсказка" id="45"/>
+				</InputField>
+				<InputField name="ДанныеРегистраВнешняяДатаОкончаниеРКД" id="61">
+					<DataPath>ДанныеРегистра.ВнешняяДатаОкончаниеРКД</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ДанныеРегистраВнешняяДатаОкончаниеРКДКонтекстноеМеню" id="62"/>
+					<ExtendedTooltip name="ДанныеРегистраВнешняяДатаОкончаниеРКДРасширеннаяПодсказка" id="63"/>
+				</InputField>
+				<InputField name="ДанныеРегистраВнешняяДатаНачалоПроизводства" id="40">
+					<DataPath>ДанныеРегистра.ВнешняяДатаНачалоПроизводства</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ДанныеРегистраВнешняяДатаНачалоПроизводстваКонтекстноеМеню" id="41"/>
+					<ExtendedTooltip name="ДанныеРегистраВнешняяДатаНачалоПроизводстваРасширеннаяПодсказка" id="42"/>
+				</InputField>
+				<InputField name="ДанныеРегистраВнешняяДатаОкончаниеПроизводства" id="58">
+					<DataPath>ДанныеРегистра.ВнешняяДатаОкончаниеПроизводства</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ДанныеРегистраВнешняяДатаОкончаниеПроизводстваКонтекстноеМеню" id="59"/>
+					<ExtendedTooltip name="ДанныеРегистраВнешняяДатаОкончаниеПроизводстваРасширеннаяПодсказка" id="60"/>
+				</InputField>
+				<InputField name="ДанныеРегистраВнешняяДатаНачалоМонтажа" id="34">
+					<DataPath>ДанныеРегистра.ВнешняяДатаНачалоМонтажа</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ДанныеРегистраВнешняяДатаНачалоМонтажаКонтекстноеМеню" id="35"/>
+					<ExtendedTooltip name="ДанныеРегистраВнешняяДатаНачалоМонтажаРасширеннаяПодсказка" id="36"/>
+				</InputField>
+				<InputField name="ДанныеРегистраВнешняяДатаОкончаниеМонтажа" id="52">
+					<DataPath>ДанныеРегистра.ВнешняяДатаОкончаниеМонтажа</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ДанныеРегистраВнешняяДатаОкончаниеМонтажаКонтекстноеМеню" id="53"/>
+					<ExtendedTooltip name="ДанныеРегистраВнешняяДатаОкончаниеМонтажаРасширеннаяПодсказка" id="54"/>
+				</InputField>
+				<InputField name="ДанныеРегистраВнешняяПродолжительностьПроизводства" id="70">
+					<DataPath>ДанныеРегистра.ВнешняяПродолжительностьПроизводства</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ДанныеРегистраВнешняяПродолжительностьПроизводстваКонтекстноеМеню" id="71"/>
+					<ExtendedTooltip name="ДанныеРегистраВнешняяПродолжительностьПроизводстваРасширеннаяПодсказка" id="72"/>
+				</InputField>
+				<InputField name="ДанныеРегистраКонструктор" id="73">
+					<DataPath>ДанныеРегистра.Конструктор</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ДанныеРегистраКонструкторКонтекстноеМеню" id="74"/>
+					<ExtendedTooltip name="ДанныеРегистраКонструкторРасширеннаяПодсказка" id="75"/>
+				</InputField>
+				<InputField name="ДанныеРегистраПриоритет" id="76">
+					<DataPath>ДанныеРегистра.Приоритет</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ДанныеРегистраПриоритетКонтекстноеМеню" id="77"/>
+					<ExtendedTooltip name="ДанныеРегистраПриоритетРасширеннаяПодсказка" id="78"/>
+				</InputField>
+				<InputField name="ДанныеРегистраТекущаяСтадия" id="79">
+					<DataPath>ДанныеРегистра.ТекущаяСтадия</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ДанныеРегистраТекущаяСтадияКонтекстноеМеню" id="80"/>
+					<ExtendedTooltip name="ДанныеРегистраТекущаяСтадияРасширеннаяПодсказка" id="81"/>
+				</InputField>
+				<InputField name="ДанныеРегистраАвтор" id="85">
+					<DataPath>ДанныеРегистра.Автор</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ДанныеРегистраАвторКонтекстноеМеню" id="86"/>
+					<ExtendedTooltip name="ДанныеРегистраАвторРасширеннаяПодсказка" id="87"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Год" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Год</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>4</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Месяц" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Месяц</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>2</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="День" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>День</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>2</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Час" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Час</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>2</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Минута" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Минута</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>2</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Секунда" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Секунда</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>2</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ДанныеРегистра" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Данные регистра</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="ВнешняяДатаНачалоМонтажа" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Начало монтажа</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="ВнешняяДатаНачалоПроектирования" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Начало проектирования</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="ВнешняяДатаНачалоПроизводства" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Начало производства</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="ВнешняяДатаНачалоРКД" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Начало РКД</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="ВнешняяДатаНачалоСогласования" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Начало согласования</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="ВнешняяДатаНачалоТЗ" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Начало ТЗ</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="ВнешняяДатаОкончаниеМонтажа" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Окончание монтажа</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="ВнешняяДатаОкончаниеПроектирования" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Окончание проектирования</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="ВнешняяДатаОкончаниеПроизводства" id="9">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Окончание производства</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="ВнешняяДатаОкончаниеРКД" id="10">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Окончание РКД</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="ВнешняяДатаОкончаниеСогласования" id="11">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Окончание согласования</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="ВнешняяДатаОкончаниеТЗ" id="12">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Окончание ТЗ</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="ВнешняяПродолжительностьПроизводства" id="13">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Продолжительность производства</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>3</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="Конструктор" id="14">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Конструктор</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Сотрудники</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Приоритет" id="15">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Приоритет</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Приоритеты</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ТекущаяСтадия" id="16">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Текущая стадия</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.СтадииКомплекта</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Комплект" id="17">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Комплект</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Композиции</v8:Type>
+						<v8:Type>cfg:CatalogRef.ИзделияКомплект</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Автор" id="18">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Автор</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Пользователи</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="Проект" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проект</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Проекты</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Автор" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Автор</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Пользователи</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="Обновить" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Обновить</Action>
+		</Command>
+		<Command name="УстановитьНаТекущуюДату" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить на текущую дату</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить на текущую дату</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>УстановитьНаТекущуюДату</Action>
+		</Command>
+	</Commands>
+</Form>
