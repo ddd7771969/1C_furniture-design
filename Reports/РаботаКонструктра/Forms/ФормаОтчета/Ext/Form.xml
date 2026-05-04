@@ -14,6 +14,16 @@
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="5"/>
 			<ChildItems>
+				<Button name="Обновить" id="12">
+					<Type>UsualButton</Type>
+					<Representation>Picture</Representation>
+					<CommandName>Form.Command.Обновить</CommandName>
+					<Picture>
+						<xr:Ref>StdPicture.Refresh</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</Picture>
+					<ExtendedTooltip name="ОбновитьРасширеннаяПодсказка" id="13"/>
+				</Button>
 				<InputField name="Конструктор" id="1">
 					<DataPath>Конструктор</DataPath>
 					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
@@ -28,6 +38,12 @@
 				</InputField>
 			</ChildItems>
 		</UsualGroup>
+		<SpreadSheetDocumentField name="ПолеВывода" id="9">
+			<DataPath>ПолеВывода</DataPath>
+			<TitleLocation>None</TitleLocation>
+			<ContextMenu name="ПолеВыводаКонтекстноеМеню" id="10"/>
+			<ExtendedTooltip name="ПолеВыводаРасширеннаяПодсказка" id="11"/>
+		</SpreadSheetDocumentField>
 	</ChildItems>
 	<Attributes>
 		<Attribute name="Отчет" id="1">
@@ -58,14 +74,33 @@
 				<v8:Type>v8:StandardPeriod</v8:Type>
 			</Type>
 		</Attribute>
-		<Attribute name="Реквизит1" id="4">
+		<Attribute name="ПолеВывода" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Поле вывода</v8:content>
+				</v8:item>
+			</Title>
 			<Type>
-				<v8:Type>xs:string</v8:Type>
-				<v8:StringQualifiers>
-					<v8:Length>0</v8:Length>
-					<v8:AllowedLength>Variable</v8:AllowedLength>
-				</v8:StringQualifiers>
+				<v8:Type xmlns:mxl="http://v8.1c.ru/8.2/data/spreadsheet">mxl:SpreadsheetDocument</v8:Type>
 			</Type>
 		</Attribute>
 	</Attributes>
+	<Commands>
+		<Command name="Обновить" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Обновить</Action>
+		</Command>
+	</Commands>
 </Form>
