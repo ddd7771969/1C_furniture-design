@@ -92,6 +92,46 @@
 			<ExecuteAfterWriteDataHistoryVersionProcessing>false</ExecuteAfterWriteDataHistoryVersionProcessing>
 		</Properties>
 		<ChildObjects>
+			<Attribute uuid="5318bea1-1807-42b9-ace3-5248bbebef67">
+				<Properties>
+					<Name>Доработка</Name>
+					<Synonym>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Доработка</v8:content>
+						</v8:item>
+					</Synonym>
+					<Comment/>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+					<PasswordMode>false</PasswordMode>
+					<Format/>
+					<EditFormat/>
+					<ToolTip/>
+					<MarkNegatives>false</MarkNegatives>
+					<Mask/>
+					<MultiLine>false</MultiLine>
+					<ExtendedEdit>false</ExtendedEdit>
+					<MinValue xsi:nil="true"/>
+					<MaxValue xsi:nil="true"/>
+					<FillFromFillingValue>false</FillFromFillingValue>
+					<FillValue xsi:nil="true"/>
+					<FillChecking>DontCheck</FillChecking>
+					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
+					<ChoiceParameterLinks/>
+					<ChoiceParameters/>
+					<QuickChoice>Auto</QuickChoice>
+					<CreateOnInput>Auto</CreateOnInput>
+					<ChoiceForm/>
+					<LinkByType/>
+					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
+					<Use>ForItem</Use>
+					<Indexing>DontIndex</Indexing>
+					<FullTextSearch>Use</FullTextSearch>
+					<DataHistory>Use</DataHistory>
+				</Properties>
+			</Attribute>
 			<Attribute uuid="2950a72f-1662-473e-956a-c5fff9d08ff2">
 				<Properties>
 					<Name>НомерПоПорядку</Name>
@@ -386,13 +426,13 @@
 					<DataHistory>Use</DataHistory>
 				</Properties>
 			</Attribute>
-			<Attribute uuid="c0ca8068-4040-497c-8d52-f6ce24b47244">
+			<Attribute uuid="efe3c9a3-e648-48cf-89a5-7964e2116f70">
 				<Properties>
-					<Name>ШаблонНаименования</Name>
+					<Name>РеквизитыСтрокой</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Шаблон наименования</v8:content>
+							<v8:content>Реквизиты строкой</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -430,13 +470,13 @@
 					<DataHistory>Use</DataHistory>
 				</Properties>
 			</Attribute>
-			<Attribute uuid="efe3c9a3-e648-48cf-89a5-7964e2116f70">
+			<Attribute uuid="c0ca8068-4040-497c-8d52-f6ce24b47244">
 				<Properties>
-					<Name>РеквизитыСтрокой</Name>
+					<Name>ШаблонНаименования</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Реквизиты строкой</v8:content>
+							<v8:content>Шаблон наименования</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
