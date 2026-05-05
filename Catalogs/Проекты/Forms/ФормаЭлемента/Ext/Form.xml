@@ -196,6 +196,12 @@
 											<ContextMenu name="ЗамерщикКонтекстноеМеню" id="214"/>
 											<ExtendedTooltip name="ЗамерщикРасширеннаяПодсказка" id="215"/>
 										</InputField>
+										<CheckBoxField name="ГантПроизводстваЗафиксирован" id="222">
+											<DataPath>ГантПроизводстваЗафиксирован</DataPath>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="ГантПроизводстваЗафиксированКонтекстноеМеню" id="223"/>
+											<ExtendedTooltip name="ГантПроизводстваЗафиксированРасширеннаяПодсказка" id="224"/>
+										</CheckBoxField>
 									</ChildItems>
 								</UsualGroup>
 							</ChildItems>
@@ -1091,6 +1097,17 @@
 				</v8:NumberQualifiers>
 			</Type>
 		</Attribute>
+		<Attribute name="ГантПроизводстваЗафиксирован" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Гант производства зафиксирован</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
 		<ConditionalAppearance>
 			<dcsset:item>
 				<dcsset:selection>
@@ -1352,6 +1369,16 @@
 				<Type>Auto</Type>
 				<CommandGroup>FormNavigationPanelGoTo</CommandGroup>
 				<Index>14</Index>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>InformationRegister.АктивностьПользователей.StandardCommand.OpenByValue.Проект</Command>
+				<Type>Auto</Type>
+				<CommandGroup>FormNavigationPanelGoTo</CommandGroup>
+				<Index>16</Index>
 				<DefaultVisible>false</DefaultVisible>
 				<Visible>
 					<xr:Common>false</xr:Common>
