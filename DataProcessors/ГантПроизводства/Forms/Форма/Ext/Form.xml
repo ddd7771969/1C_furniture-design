@@ -28,6 +28,8 @@
 				<Button name="Записать" id="46">
 					<Type>UsualButton</Type>
 					<Representation>PictureAndText</Representation>
+					<Width>11</Width>
+					<AutoMaxWidth>false</AutoMaxWidth>
 					<CommandName>Form.Command.Записать</CommandName>
 					<Picture>
 						<xr:Ref>StdPicture.Write</xr:Ref>
@@ -57,6 +59,18 @@
 						<xr:LoadTransparent>true</xr:LoadTransparent>
 					</Picture>
 					<ExtendedTooltip name="ОбновитьРасширеннаяПодсказка" id="45"/>
+				</Button>
+				<Button name="Печать" id="48">
+					<Type>UsualButton</Type>
+					<Representation>Picture</Representation>
+					<Width>3</Width>
+					<AutoMaxWidth>false</AutoMaxWidth>
+					<CommandName>Form.Command.Печать</CommandName>
+					<Picture>
+						<xr:Ref>StdPicture.Print</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</Picture>
+					<ExtendedTooltip name="ПечатьРасширеннаяПодсказка" id="49"/>
 				</Button>
 				<CheckBoxField name="ВыводитьПроект" id="37">
 					<DataPath>ВыводитьПроект</DataPath>
@@ -322,6 +336,21 @@
 				</v8:item>
 			</ToolTip>
 			<Action>Записать</Action>
+		</Command>
+		<Command name="Печать" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Печать</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Печать</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Печать</Action>
 		</Command>
 	</Commands>
 </Form>
