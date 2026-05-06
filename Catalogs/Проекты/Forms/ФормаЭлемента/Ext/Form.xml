@@ -206,58 +206,103 @@
 								</UsualGroup>
 							</ChildItems>
 						</UsualGroup>
-						<UsualGroup name="ГруппаПапкиВPDM" id="171">
-							<Title>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Папки  в PDM</v8:content>
-								</v8:item>
-							</Title>
-							<ToolTip>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Группа папки ВPDM</v8:content>
-								</v8:item>
-							</ToolTip>
-							<Representation>StrongSeparation</Representation>
-							<ExtendedTooltip name="ГруппаПапкиВPDMРасширеннаяПодсказка" id="172"/>
+						<UsualGroup name="Группа5" id="225">
+							<Group>AlwaysHorizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа5РасширеннаяПодсказка" id="226"/>
 							<ChildItems>
-								<InputField name="ИмяКорневойПапкиВPDM" id="168">
-									<DataPath>Объект.ИмяКорневойПапкиВPDM</DataPath>
+								<UsualGroup name="ГруппаПапкиВPDM" id="171">
 									<Title>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
-											<v8:content>Корневая</v8:content>
+											<v8:content>Папки  в PDM</v8:content>
 										</v8:item>
 									</Title>
-									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-									<ContextMenu name="ИмяКорневойПапкиВPDMКонтекстноеМеню" id="169"/>
-									<ExtendedTooltip name="ИмяКорневойПапкиВPDMРасширеннаяПодсказка" id="170"/>
-								</InputField>
-								<InputField name="ИмяПапкиГЧВPDM" id="173">
-									<DataPath>Объект.ИмяПапкиГЧВPDM</DataPath>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа папки ВPDM</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Representation>StrongSeparation</Representation>
+									<ExtendedTooltip name="ГруппаПапкиВPDMРасширеннаяПодсказка" id="172"/>
+									<ChildItems>
+										<InputField name="ИмяКорневойПапкиВPDM" id="168">
+											<DataPath>Объект.ИмяКорневойПапкиВPDM</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Корневая</v8:content>
+												</v8:item>
+											</Title>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="ИмяКорневойПапкиВPDMКонтекстноеМеню" id="169"/>
+											<ExtendedTooltip name="ИмяКорневойПапкиВPDMРасширеннаяПодсказка" id="170"/>
+										</InputField>
+										<InputField name="ИмяПапкиГЧВPDM" id="173">
+											<DataPath>Объект.ИмяПапкиГЧВPDM</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>ГЧ</v8:content>
+												</v8:item>
+											</Title>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="ИмяПапкиГЧВPDMКонтекстноеМеню" id="174"/>
+											<ExtendedTooltip name="ИмяПапкиГЧВPDMРасширеннаяПодсказка" id="175"/>
+										</InputField>
+										<InputField name="ИмяПапкиКомпозицииВPDM" id="176">
+											<DataPath>Объект.ИмяПапкиКомпозицииВPDM</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Композиции</v8:content>
+												</v8:item>
+											</Title>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="ИмяПапкиКомпозицииВPDMКонтекстноеМеню" id="177"/>
+											<ExtendedTooltip name="ИмяПапкиКомпозицииВPDMРасширеннаяПодсказка" id="178"/>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+								<UsualGroup name="ГруппаДатаКрай" id="227">
 									<Title>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
-											<v8:content>ГЧ</v8:content>
+											<v8:content>Дата край</v8:content>
 										</v8:item>
 									</Title>
-									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-									<ContextMenu name="ИмяПапкиГЧВPDMКонтекстноеМеню" id="174"/>
-									<ExtendedTooltip name="ИмяПапкиГЧВPDMРасширеннаяПодсказка" id="175"/>
-								</InputField>
-								<InputField name="ИмяПапкиКомпозицииВPDM" id="176">
-									<DataPath>Объект.ИмяПапкиКомпозицииВPDM</DataPath>
-									<Title>
+									<ToolTip>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
-											<v8:content>Композиции</v8:content>
+											<v8:content>Группа дата край</v8:content>
 										</v8:item>
-									</Title>
-									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-									<ContextMenu name="ИмяПапкиКомпозицииВPDMКонтекстноеМеню" id="177"/>
-									<ExtendedTooltip name="ИмяПапкиКомпозицииВPDMРасширеннаяПодсказка" id="178"/>
-								</InputField>
+									</ToolTip>
+									<Group>Vertical</Group>
+									<Representation>StrongSeparation</Representation>
+									<ExtendedTooltip name="ГруппаДатаКрайРасширеннаяПодсказка" id="228"/>
+									<ChildItems>
+										<InputField name="КрайПКД" id="229">
+											<DataPath>Объект.КрайПКД</DataPath>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="КрайПКДКонтекстноеМеню" id="230"/>
+											<ExtendedTooltip name="КрайПКДРасширеннаяПодсказка" id="231"/>
+										</InputField>
+										<InputField name="КрайПроизводства" id="232">
+											<DataPath>Объект.КрайПроизводства</DataPath>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="КрайПроизводстваКонтекстноеМеню" id="233"/>
+											<ExtendedTooltip name="КрайПроизводстваРасширеннаяПодсказка" id="234"/>
+										</InputField>
+										<InputField name="КрайМонтажа" id="235">
+											<DataPath>Объект.КрайМонтажа</DataPath>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="КрайМонтажаКонтекстноеМеню" id="236"/>
+											<ExtendedTooltip name="КрайМонтажаРасширеннаяПодсказка" id="237"/>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
 							</ChildItems>
 						</UsualGroup>
 					</ChildItems>
