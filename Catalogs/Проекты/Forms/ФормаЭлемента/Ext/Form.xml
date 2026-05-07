@@ -301,6 +301,11 @@
 											<ContextMenu name="КрайМонтажаКонтекстноеМеню" id="236"/>
 											<ExtendedTooltip name="КрайМонтажаРасширеннаяПодсказка" id="237"/>
 										</InputField>
+										<Button name="ЗаполнитьИзДоговора" id="238">
+											<Type>UsualButton</Type>
+											<CommandName>Form.Command.ЗаполнитьИзДоговора</CommandName>
+											<ExtendedTooltip name="ЗаполнитьИзДоговораРасширеннаяПодсказка" id="239"/>
+										</Button>
 									</ChildItems>
 								</UsualGroup>
 							</ChildItems>
@@ -1240,6 +1245,21 @@
 				</v8:item>
 			</ToolTip>
 			<Action>УстановитьКодPDM</Action>
+		</Command>
+		<Command name="ЗаполнитьИзДоговора" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить из договора</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Заполнить из договора</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗаполнитьИзДоговора</Action>
 		</Command>
 	</Commands>
 	<CommandInterface>
