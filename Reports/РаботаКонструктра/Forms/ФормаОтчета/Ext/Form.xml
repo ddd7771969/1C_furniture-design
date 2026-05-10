@@ -8,6 +8,7 @@
 		<Autofill>false</Autofill>
 	</AutoCommandBar>
 	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 	</Events>
 	<ChildItems>
@@ -32,6 +33,9 @@
 					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 					<ContextMenu name="КонструкторКонтекстноеМеню" id="2"/>
 					<ExtendedTooltip name="КонструкторРасширеннаяПодсказка" id="3"/>
+					<Events>
+						<Event name="OnChange">КонструкторПриИзменении</Event>
+					</Events>
 				</InputField>
 				<InputField name="Период" id="6">
 					<DataPath>Период</DataPath>

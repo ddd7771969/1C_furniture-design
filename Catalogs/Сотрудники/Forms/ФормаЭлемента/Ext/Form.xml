@@ -66,18 +66,46 @@
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="Группа4РасширеннаяПодсказка" id="109"/>
 			<ChildItems>
-				<InputField name="НачалаРабочегоДня" id="110">
-					<DataPath>Объект.НачалаРабочегоДня</DataPath>
-					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-					<ContextMenu name="НачалаРабочегоДняКонтекстноеМеню" id="111"/>
-					<ExtendedTooltip name="НачалаРабочегоДняРасширеннаяПодсказка" id="112"/>
-				</InputField>
-				<InputField name="ОкончаниеРабочегоДня" id="113">
-					<DataPath>Объект.ОкончаниеРабочегоДня</DataPath>
-					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-					<ContextMenu name="ОкончаниеРабочегоДняКонтекстноеМеню" id="114"/>
-					<ExtendedTooltip name="ОкончаниеРабочегоДняРасширеннаяПодсказка" id="115"/>
-				</InputField>
+				<UsualGroup name="Группа5" id="116">
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа5РасширеннаяПодсказка" id="117"/>
+					<ChildItems>
+						<InputField name="НачалаРабочегоДня" id="110">
+							<DataPath>Объект.НачалаРабочегоДня</DataPath>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="НачалаРабочегоДняКонтекстноеМеню" id="111"/>
+							<ExtendedTooltip name="НачалаРабочегоДняРасширеннаяПодсказка" id="112"/>
+						</InputField>
+						<InputField name="ОкончаниеРабочегоДня" id="113">
+							<DataPath>Объект.ОкончаниеРабочегоДня</DataPath>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ОкончаниеРабочегоДняКонтекстноеМеню" id="114"/>
+							<ExtendedTooltip name="ОкончаниеРабочегоДняРасширеннаяПодсказка" id="115"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="Группа6" id="118">
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа6РасширеннаяПодсказка" id="119"/>
+					<ChildItems>
+						<InputField name="НачалаПерерыва" id="120">
+							<DataPath>Объект.НачалаПерерыва</DataPath>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="НачалаПерерываКонтекстноеМеню" id="121"/>
+							<ExtendedTooltip name="НачалаПерерываРасширеннаяПодсказка" id="122"/>
+						</InputField>
+						<InputField name="ОкончаниеПерерыва" id="123">
+							<DataPath>Объект.ОкончаниеПерерыва</DataPath>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ОкончаниеПерерываКонтекстноеМеню" id="124"/>
+							<ExtendedTooltip name="ОкончаниеПерерываРасширеннаяПодсказка" id="125"/>
+						</InputField>
+					</ChildItems>
+				</UsualGroup>
 			</ChildItems>
 		</UsualGroup>
 		<UsualGroup name="ГруппаPDM" id="94">

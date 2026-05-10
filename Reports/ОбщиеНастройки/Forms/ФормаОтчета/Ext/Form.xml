@@ -307,34 +307,102 @@
 										</Button>
 									</ChildItems>
 								</UsualGroup>
-								<UsualGroup name="ГруппаAPI" id="187">
-									<Title>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>API</v8:content>
-										</v8:item>
-									</Title>
-									<ToolTip>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>Группа API</v8:content>
-										</v8:item>
-									</ToolTip>
+								<UsualGroup name="Группа7" id="272">
 									<Group>Vertical</Group>
-									<ExtendedTooltip name="ГруппаAPIРасширеннаяПодсказка" id="188"/>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="Группа7РасширеннаяПодсказка" id="273"/>
 									<ChildItems>
-										<InputField name="ИмяХранилищаPDM" id="189">
-											<DataPath>ИмяХранилищаPDM</DataPath>
-											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-											<ContextMenu name="ИмяХранилищаPDMКонтекстноеМеню" id="190"/>
-											<ExtendedTooltip name="ИмяХранилищаPDMРасширеннаяПодсказка" id="191"/>
-										</InputField>
-										<InputField name="Адрес_API_Telegramm" id="197">
-											<DataPath>Адрес_API_Telegramm</DataPath>
-											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-											<ContextMenu name="Адрес_API_TelegrammКонтекстноеМеню" id="198"/>
-											<ExtendedTooltip name="Адрес_API_TelegrammРасширеннаяПодсказка" id="199"/>
-										</InputField>
+										<UsualGroup name="ГруппаВремя" id="274">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Время</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа время</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Group>AlwaysHorizontal</Group>
+											<Representation>StrongSeparation</Representation>
+											<ExtendedTooltip name="ГруппаВремяРасширеннаяПодсказка" id="275"/>
+											<ChildItems>
+												<UsualGroup name="Группа8" id="282">
+													<Group>Vertical</Group>
+													<Representation>None</Representation>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="Группа8РасширеннаяПодсказка" id="283"/>
+													<ChildItems>
+														<InputField name="НачалаРабочегоДня" id="276">
+															<DataPath>НачалаРабочегоДня</DataPath>
+															<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+															<ContextMenu name="НачалаРабочегоДняКонтекстноеМеню" id="277"/>
+															<ExtendedTooltip name="НачалаРабочегоДняРасширеннаяПодсказка" id="278"/>
+														</InputField>
+														<InputField name="ОкончаниеРабочегоДня" id="279">
+															<DataPath>ОкончаниеРабочегоДня</DataPath>
+															<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+															<ContextMenu name="ОкончаниеРабочегоДняКонтекстноеМеню" id="280"/>
+															<ExtendedTooltip name="ОкончаниеРабочегоДняРасширеннаяПодсказка" id="281"/>
+														</InputField>
+													</ChildItems>
+												</UsualGroup>
+												<UsualGroup name="Группа9" id="284">
+													<Group>Vertical</Group>
+													<Representation>None</Representation>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="Группа9РасширеннаяПодсказка" id="285"/>
+													<ChildItems>
+														<InputField name="НачалаПерерыва" id="286">
+															<DataPath>НачалаПерерыва</DataPath>
+															<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+															<ContextMenu name="НачалаПерерываКонтекстноеМеню" id="287"/>
+															<ExtendedTooltip name="НачалаПерерываРасширеннаяПодсказка" id="288"/>
+														</InputField>
+														<InputField name="ОкончаниеПерерыва" id="289">
+															<DataPath>ОкончаниеПерерыва</DataPath>
+															<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+															<ContextMenu name="ОкончаниеПерерываКонтекстноеМеню" id="290"/>
+															<ExtendedTooltip name="ОкончаниеПерерываРасширеннаяПодсказка" id="291"/>
+														</InputField>
+													</ChildItems>
+												</UsualGroup>
+											</ChildItems>
+										</UsualGroup>
+										<UsualGroup name="ГруппаAPI" id="187">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>API</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа API</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Group>Vertical</Group>
+											<Representation>StrongSeparation</Representation>
+											<ExtendedTooltip name="ГруппаAPIРасширеннаяПодсказка" id="188"/>
+											<ChildItems>
+												<InputField name="ИмяХранилищаPDM" id="189">
+													<DataPath>ИмяХранилищаPDM</DataPath>
+													<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+													<ContextMenu name="ИмяХранилищаPDMКонтекстноеМеню" id="190"/>
+													<ExtendedTooltip name="ИмяХранилищаPDMРасширеннаяПодсказка" id="191"/>
+												</InputField>
+												<InputField name="Адрес_API_Telegramm" id="197">
+													<DataPath>Адрес_API_Telegramm</DataPath>
+													<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+													<ContextMenu name="Адрес_API_TelegrammКонтекстноеМеню" id="198"/>
+													<ExtendedTooltip name="Адрес_API_TelegrammРасширеннаяПодсказка" id="199"/>
+												</InputField>
+											</ChildItems>
+										</UsualGroup>
 									</ChildItems>
 								</UsualGroup>
 							</ChildItems>
@@ -1762,6 +1830,62 @@
 			</Title>
 			<Type>
 				<v8:Type>cfg:CatalogRef.СтадииКомплекта</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="НачалаРабочегоДня" id="54">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Начала рабочего дня</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>Time</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ОкончаниеРабочегоДня" id="55">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Окончание рабочего дня</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>Time</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="НачалаПерерыва" id="56">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Начала перерыва</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>Time</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ОкончаниеПерерыва" id="57">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Окончание перерыва</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>Time</v8:DateFractions>
+				</v8:DateQualifiers>
 			</Type>
 		</Attribute>
 	</Attributes>
