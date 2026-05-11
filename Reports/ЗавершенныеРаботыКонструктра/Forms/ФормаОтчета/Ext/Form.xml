@@ -50,6 +50,9 @@
 			<TitleLocation>None</TitleLocation>
 			<ContextMenu name="ПолеВыводаКонтекстноеМеню" id="10"/>
 			<ExtendedTooltip name="ПолеВыводаРасширеннаяПодсказка" id="11"/>
+			<Events>
+				<Event name="DetailProcessing">ПолеВыводаОбработкаРасшифровки</Event>
+			</Events>
 		</SpreadSheetDocumentField>
 	</ChildItems>
 	<Attributes>

@@ -821,7 +821,8 @@
 			</c>
 			<c>
 				<c>
-					<f>35</f>
+					<f>34</f>
+					<parameter>ФактЧасы</parameter>
 				</c>
 			</c>
 			<c>
@@ -832,10 +833,60 @@
 			</c>
 		</row>
 	</rowsItem>
+	<rowsItem>
+		<index>30</index>
+		<row>
+			<empty>true</empty>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>31</index>
+		<row>
+			<c>
+				<i>1</i>
+				<c>
+					<f>35</f>
+					<parameter>СтадияНаименование</parameter>
+					<detailParameter>Задача</detailParameter>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>36</f>
+					<parameter>ДатаСтрокой</parameter>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>37</f>
+					<parameter>Норма</parameter>
+					<detailParameter>СтруктураНорма</detailParameter>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>38</f>
+					<parameter>Факт</parameter>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>38</f>
+					<parameter>ФактЧасы</parameter>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>37</f>
+					<parameter>План</parameter>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
 	<templateMode>true</templateMode>
 	<defaultFormatIndex>10</defaultFormatIndex>
-	<height>30</height>
-	<vgRows>30</vgRows>
+	<height>32</height>
+	<vgRows>32</vgRows>
 	<merge>
 		<r>3</r>
 		<c>1</c>
@@ -897,6 +948,16 @@
 			<type>Rows</type>
 			<beginRow>29</beginRow>
 			<endRow>29</endRow>
+			<beginColumn>-1</beginColumn>
+			<endColumn>-1</endColumn>
+		</area>
+	</namedItem>
+	<namedItem xsi:type="NamedItemCells">
+		<name>ДругиеРаботы</name>
+		<area>
+			<type>Rows</type>
+			<beginRow>31</beginRow>
+			<endRow>31</endRow>
 			<beginColumn>-1</beginColumn>
 			<endColumn>-1</endColumn>
 		</area>
@@ -1281,13 +1342,56 @@
 		</format>
 	</format>
 	<format>
+		<leftBorder>0</leftBorder>
+		<topBorder>0</topBorder>
+		<bottomBorder>0</bottomBorder>
+		<borderColor>#000000</borderColor>
+		<width>277</width>
+		<horizontalAlignment>Left</horizontalAlignment>
+		<verticalAlignment>Bottom</verticalAlignment>
+		<textColor>#000000</textColor>
+		<backColor>#FEFFE4</backColor>
+		<textPlacement>Auto</textPlacement>
+		<fillType>Parameter</fillType>
+	</format>
+	<format>
 		<border>0</border>
 		<borderColor>#000000</borderColor>
 		<width>72</width>
 		<horizontalAlignment>Center</horizontalAlignment>
 		<verticalAlignment>Center</verticalAlignment>
 		<textColor>#000000</textColor>
-		<backColor>#EFFFEB</backColor>
+		<backColor>#FEFFE4</backColor>
 		<textPlacement>Auto</textPlacement>
+		<fillType>Parameter</fillType>
+		<format/>
+	</format>
+	<format>
+		<border>0</border>
+		<borderColor>#000000</borderColor>
+		<width>72</width>
+		<horizontalAlignment>Center</horizontalAlignment>
+		<verticalAlignment>Center</verticalAlignment>
+		<textColor>#000000</textColor>
+		<backColor>#FEFFE4</backColor>
+		<textPlacement>Auto</textPlacement>
+		<fillType>Parameter</fillType>
+	</format>
+	<format>
+		<border>0</border>
+		<borderColor>#000000</borderColor>
+		<width>72</width>
+		<horizontalAlignment>Center</horizontalAlignment>
+		<verticalAlignment>Center</verticalAlignment>
+		<textColor>#000000</textColor>
+		<backColor>#FEFFE4</backColor>
+		<textPlacement>Auto</textPlacement>
+		<fillType>Parameter</fillType>
+		<format>
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>ЧДЦ=1</v8:content>
+			</v8:item>
+		</format>
 	</format>
 </document>
