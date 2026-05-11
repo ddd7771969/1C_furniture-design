@@ -283,29 +283,119 @@
 									<Representation>StrongSeparation</Representation>
 									<ExtendedTooltip name="ГруппаДатаКрайРасширеннаяПодсказка" id="228"/>
 									<ChildItems>
-										<InputField name="КрайПКД" id="229">
-											<DataPath>Объект.КрайПКД</DataPath>
-											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-											<ContextMenu name="КрайПКДКонтекстноеМеню" id="230"/>
-											<ExtendedTooltip name="КрайПКДРасширеннаяПодсказка" id="231"/>
-										</InputField>
-										<InputField name="КрайПроизводства" id="232">
-											<DataPath>Объект.КрайПроизводства</DataPath>
-											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-											<ContextMenu name="КрайПроизводстваКонтекстноеМеню" id="233"/>
-											<ExtendedTooltip name="КрайПроизводстваРасширеннаяПодсказка" id="234"/>
-										</InputField>
-										<InputField name="КрайМонтажа" id="235">
-											<DataPath>Объект.КрайМонтажа</DataPath>
-											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-											<ContextMenu name="КрайМонтажаКонтекстноеМеню" id="236"/>
-											<ExtendedTooltip name="КрайМонтажаРасширеннаяПодсказка" id="237"/>
-										</InputField>
-										<Button name="ЗаполнитьИзДоговора" id="238">
-											<Type>UsualButton</Type>
-											<CommandName>Form.Command.ЗаполнитьИзДоговора</CommandName>
-											<ExtendedTooltip name="ЗаполнитьИзДоговораРасширеннаяПодсказка" id="239"/>
-										</Button>
+										<UsualGroup name="Группа6" id="271">
+											<Group>AlwaysHorizontal</Group>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="Группа6РасширеннаяПодсказка" id="272"/>
+											<ChildItems>
+												<UsualGroup name="Группа7" id="273">
+													<Group>Vertical</Group>
+													<Representation>None</Representation>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="Группа7РасширеннаяПодсказка" id="274"/>
+													<ChildItems>
+														<InputField name="КрайПКД" id="229">
+															<DataPath>Объект.КрайПКД</DataPath>
+															<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+															<ContextMenu name="КрайПКДКонтекстноеМеню" id="230"/>
+															<ExtendedTooltip name="КрайПКДРасширеннаяПодсказка" id="231"/>
+														</InputField>
+														<InputField name="КрайПроизводства" id="232">
+															<DataPath>Объект.КрайПроизводства</DataPath>
+															<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+															<ContextMenu name="КрайПроизводстваКонтекстноеМеню" id="233"/>
+															<ExtendedTooltip name="КрайПроизводстваРасширеннаяПодсказка" id="234"/>
+														</InputField>
+														<InputField name="КрайМонтажа" id="235">
+															<DataPath>Объект.КрайМонтажа</DataPath>
+															<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+															<ContextMenu name="КрайМонтажаКонтекстноеМеню" id="236"/>
+															<ExtendedTooltip name="КрайМонтажаРасширеннаяПодсказка" id="237"/>
+														</InputField>
+													</ChildItems>
+												</UsualGroup>
+												<Button name="ЗаполнитьИзДоговора" id="238">
+													<Type>UsualButton</Type>
+													<CommandName>Form.Command.ЗаполнитьИзДоговора</CommandName>
+													<ExtendedTooltip name="ЗаполнитьИзДоговораРасширеннаяПодсказка" id="239"/>
+												</Button>
+											</ChildItems>
+										</UsualGroup>
+										<Table name="ИсторияДатаКрай" id="240">
+											<ReadOnly>true</ReadOnly>
+											<AutoInsertNewRow>true</AutoInsertNewRow>
+											<EnableStartDrag>true</EnableStartDrag>
+											<EnableDrag>true</EnableDrag>
+											<DataPath>Объект.ИсторияДатаКрай</DataPath>
+											<RowFilter xsi:nil="true"/>
+											<ContextMenu name="ИсторияДатаКрайКонтекстноеМеню" id="241"/>
+											<AutoCommandBar name="ИсторияДатаКрайКоманднаяПанель" id="242">
+												<Autofill>false</Autofill>
+											</AutoCommandBar>
+											<ExtendedTooltip name="ИсторияДатаКрайРасширеннаяПодсказка" id="243"/>
+											<SearchStringAddition name="ИсторияДатаКрайСтрокаПоиска" id="244">
+												<AdditionSource>
+													<Item>ИсторияДатаКрай</Item>
+													<Type>SearchStringRepresentation</Type>
+												</AdditionSource>
+												<ContextMenu name="ИсторияДатаКрайСтрокаПоискаКонтекстноеМеню" id="245"/>
+												<ExtendedTooltip name="ИсторияДатаКрайСтрокаПоискаРасширеннаяПодсказка" id="246"/>
+											</SearchStringAddition>
+											<ViewStatusAddition name="ИсторияДатаКрайСостояниеПросмотра" id="247">
+												<AdditionSource>
+													<Item>ИсторияДатаКрай</Item>
+													<Type>ViewStatusRepresentation</Type>
+												</AdditionSource>
+												<ContextMenu name="ИсторияДатаКрайСостояниеПросмотраКонтекстноеМеню" id="248"/>
+												<ExtendedTooltip name="ИсторияДатаКрайСостояниеПросмотраРасширеннаяПодсказка" id="249"/>
+											</ViewStatusAddition>
+											<SearchControlAddition name="ИсторияДатаКрайУправлениеПоиском" id="250">
+												<AdditionSource>
+													<Item>ИсторияДатаКрай</Item>
+													<Type>SearchControl</Type>
+												</AdditionSource>
+												<ContextMenu name="ИсторияДатаКрайУправлениеПоискомКонтекстноеМеню" id="251"/>
+												<ExtendedTooltip name="ИсторияДатаКрайУправлениеПоискомРасширеннаяПодсказка" id="252"/>
+											</SearchControlAddition>
+											<ChildItems>
+												<InputField name="ИсторияДатаКрайДата" id="259">
+													<DataPath>Объект.ИсторияДатаКрай.Дата</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+													<ContextMenu name="ИсторияДатаКрайДатаКонтекстноеМеню" id="260"/>
+													<ExtendedTooltip name="ИсторияДатаКрайДатаРасширеннаяПодсказка" id="261"/>
+												</InputField>
+												<InputField name="ИсторияДатаКрайКрайМонтажа" id="262">
+													<DataPath>Объект.ИсторияДатаКрай.КрайМонтажа</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+													<ContextMenu name="ИсторияДатаКрайКрайМонтажаКонтекстноеМеню" id="263"/>
+													<ExtendedTooltip name="ИсторияДатаКрайКрайМонтажаРасширеннаяПодсказка" id="264"/>
+												</InputField>
+												<InputField name="ИсторияДатаКрайКрайПКД" id="265">
+													<DataPath>Объект.ИсторияДатаКрай.КрайПКД</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+													<ContextMenu name="ИсторияДатаКрайКрайПКДКонтекстноеМеню" id="266"/>
+													<ExtendedTooltip name="ИсторияДатаКрайКрайПКДРасширеннаяПодсказка" id="267"/>
+												</InputField>
+												<InputField name="ИсторияДатаКрайКрайПроизводства" id="268">
+													<DataPath>Объект.ИсторияДатаКрай.КрайПроизводства</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+													<ContextMenu name="ИсторияДатаКрайКрайПроизводстваКонтекстноеМеню" id="269"/>
+													<ExtendedTooltip name="ИсторияДатаКрайКрайПроизводстваРасширеннаяПодсказка" id="270"/>
+												</InputField>
+												<InputField name="ИсторияДатаКрайАвтор" id="256">
+													<DataPath>Объект.ИсторияДатаКрай.Автор</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+													<ContextMenu name="ИсторияДатаКрайАвторКонтекстноеМеню" id="257"/>
+													<ExtendedTooltip name="ИсторияДатаКрайАвторРасширеннаяПодсказка" id="258"/>
+												</InputField>
+											</ChildItems>
+										</Table>
 									</ChildItems>
 								</UsualGroup>
 							</ChildItems>
