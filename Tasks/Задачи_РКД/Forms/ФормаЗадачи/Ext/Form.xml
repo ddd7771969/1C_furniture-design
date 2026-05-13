@@ -412,6 +412,54 @@
 													<ContextMenu name="КомментарийКонтекстноеМеню" id="11"/>
 													<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="12"/>
 												</InputField>
+												<UsualGroup name="ГруппаИсполнители" id="132">
+													<Title>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа исполнители</v8:content>
+														</v8:item>
+													</Title>
+													<ToolTip>
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Группа исполнители</v8:content>
+														</v8:item>
+													</ToolTip>
+													<Group>Vertical</Group>
+													<Representation>None</Representation>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="ГруппаИсполнителиРасширеннаяПодсказка" id="133"/>
+													<ChildItems>
+														<InputField name="Замерщик" id="134">
+															<DataPath>Замерщик</DataPath>
+															<ReadOnly>true</ReadOnly>
+															<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+															<ContextMenu name="ЗамерщикКонтекстноеМеню" id="135"/>
+															<ExtendedTooltip name="ЗамерщикРасширеннаяПодсказка" id="136"/>
+														</InputField>
+														<InputField name="ВедущийКонструктор" id="137">
+															<DataPath>ВедущийКонструктор</DataPath>
+															<ReadOnly>true</ReadOnly>
+															<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+															<ContextMenu name="ВедущийКонструкторКонтекстноеМеню" id="138"/>
+															<ExtendedTooltip name="ВедущийКонструкторРасширеннаяПодсказка" id="139"/>
+														</InputField>
+														<InputField name="Менеджер" id="140">
+															<DataPath>Менеджер</DataPath>
+															<ReadOnly>true</ReadOnly>
+															<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+															<ContextMenu name="МенеджерКонтекстноеМеню" id="141"/>
+															<ExtendedTooltip name="МенеджерРасширеннаяПодсказка" id="142"/>
+														</InputField>
+														<InputField name="Дизайнер" id="143">
+															<DataPath>Дизайнер</DataPath>
+															<ReadOnly>true</ReadOnly>
+															<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+															<ContextMenu name="ДизайнерКонтекстноеМеню" id="144"/>
+															<ExtendedTooltip name="ДизайнерРасширеннаяПодсказка" id="145"/>
+														</InputField>
+													</ChildItems>
+												</UsualGroup>
 											</ChildItems>
 										</UsualGroup>
 									</ChildItems>
@@ -632,6 +680,50 @@
 			</Title>
 			<Type>
 				<v8:Type>cfg:CatalogRef.ГабаритныеЧертежи</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ВедущийКонструктор" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ведущий конструктор</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Сотрудники</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Дизайнер" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дизайнер</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Сотрудники</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Замерщик" id="15">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Замерщик</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Сотрудники</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Менеджер" id="16">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Менеджер</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Сотрудники</v8:Type>
 			</Type>
 		</Attribute>
 	</Attributes>

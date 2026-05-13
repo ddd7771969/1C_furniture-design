@@ -252,11 +252,23 @@
 							<ContextMenu name="КомпозицияКонтекстноеМеню" id="405"/>
 							<ExtendedTooltip name="КомпозицияРасширеннаяПодсказка" id="406"/>
 						</InputField>
-						<UsualGroup name="Группа16" id="445">
+						<UsualGroup name="ГруппаЗадачаПКД" id="445">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа задача ПКД</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа задача ПКД</v8:content>
+								</v8:item>
+							</ToolTip>
 							<Group>AlwaysHorizontal</Group>
 							<Representation>None</Representation>
 							<ShowTitle>false</ShowTitle>
-							<ExtendedTooltip name="Группа16РасширеннаяПодсказка" id="446"/>
+							<ExtendedTooltip name="ГруппаЗадачаПКДРасширеннаяПодсказка" id="446"/>
 							<ChildItems>
 								<InputField name="ЗадачаПКД" id="439">
 									<DataPath>ЗадачаПКД</DataPath>
@@ -428,11 +440,23 @@
 										</LabelField>
 									</ChildItems>
 								</Table>
-								<UsualGroup name="Группа8" id="567">
+								<UsualGroup name="ГруппаИсполнители" id="567">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа исполнители</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа исполнители</v8:content>
+										</v8:item>
+									</ToolTip>
 									<Group>Vertical</Group>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
-									<ExtendedTooltip name="Группа8РасширеннаяПодсказка" id="568"/>
+									<ExtendedTooltip name="ГруппаИсполнителиРасширеннаяПодсказка" id="568"/>
 									<ChildItems>
 										<InputField name="Замерщик" id="578">
 											<DataPath>Замерщик</DataPath>
