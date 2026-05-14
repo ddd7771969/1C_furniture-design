@@ -3473,7 +3473,6 @@
 		Наблюдатель КАК Наблюдатель
 	) КАК Наблюдатели,
 	ЕСТЬNULL(ДатыКомплекта.КрайПКД, ДАТАВРЕМЯ(1, 1, 1)) КАК КрайПКД,
-	ЕСТЬNULL(ДатыКомплекта.ПереходПредставление, "") КАК ПереходПредставление,
 	ЕСТЬNULL(НаличиеФайлов.ЕстьФайлы, ЛОЖЬ) КАК ЕстьФайлы,
 	ДанныеКомплекта.Конструктор КАК Конструктор
 ИЗ
@@ -3504,10 +3503,6 @@
 					<dcssch:field>ДополнительноеСвойство</dcssch:field>
 				</Field>
 				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>Номер</dcssch:dataPath>
-					<dcssch:field>Номер</dcssch:field>
-				</Field>
-				<Field xsi:type="dcssch:DataSetFieldField">
 					<dcssch:dataPath>ЧекЛист</dcssch:dataPath>
 					<dcssch:field>ЧекЛист</dcssch:field>
 				</Field>
@@ -3530,6 +3525,10 @@
 				<Field xsi:type="dcssch:DataSetFieldField">
 					<dcssch:dataPath>КоличествоНеВыполненыхВопросовЧекЛиста</dcssch:dataPath>
 					<dcssch:field>КоличествоНеВыполненыхВопросовЧекЛиста</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>КороткаяСрочнаяЗадача</dcssch:dataPath>
+					<dcssch:field>КороткаяСрочнаяЗадача</dcssch:field>
 				</Field>
 				<Field xsi:type="dcssch:DataSetFieldField">
 					<dcssch:dataPath>ЕстьФайлы</dcssch:dataPath>
@@ -3556,6 +3555,10 @@
 				<Field xsi:type="dcssch:DataSetFieldField">
 					<dcssch:dataPath>ПометкаУдаления</dcssch:dataPath>
 					<dcssch:field>ПометкаУдаления</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Номер</dcssch:dataPath>
+					<dcssch:field>Номер</dcssch:field>
 				</Field>
 				<Field xsi:type="dcssch:DataSetFieldField">
 					<dcssch:dataPath>Дата</dcssch:dataPath>
@@ -3623,20 +3626,6 @@
 						</v8:item>
 					</dcssch:title>
 				</Field>
-				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>ПереходПредставление</dcssch:dataPath>
-					<dcssch:field>ПереходПредставление</dcssch:field>
-					<dcssch:title xsi:type="v8:LocalStringType">
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Переход представление</v8:content>
-						</v8:item>
-					</dcssch:title>
-				</Field>
-				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>КороткаяСрочнаяЗадача</dcssch:dataPath>
-					<dcssch:field>КороткаяСрочнаяЗадача</dcssch:field>
-				</Field>
 				<Parameter>
 					<dcssch:name>Период</dcssch:name>
 					<dcssch:title xsi:type="v8:LocalStringType">
@@ -3703,6 +3692,12 @@
 						<dcsset:viewMode>Normal</dcsset:viewMode>
 						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
 					</dcsset:filter>
+					<dcsset:dataParameters>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:use>false</dcscor:use>
+							<dcscor:parameter>ТипыЗадачКонструирования</dcscor:parameter>
+						</dcscor:item>
+					</dcsset:dataParameters>
 					<dcsset:order>
 						<dcsset:viewMode>Normal</dcsset:viewMode>
 						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
@@ -4482,7 +4477,6 @@
 				<DynamicDataRead>true</DynamicDataRead>
 				<QueryText>ВЫБРАТЬ
 	ЕСТЬNULL(ДатыКомплекта.КрайРКД, ДАТАВРЕМЯ(1, 1, 1)) КАК КрайРКД,
-	ЕСТЬNULL(ДатыКомплекта.ПереходПредставление, "") КАК ПереходПредставление,
 	Задачи_РКД.Ссылка КАК Ссылка,
 	Задачи_РКД.Наименование КАК Наименование,
 	Задачи_РКД.Исполнитель КАК Исполнитель,
@@ -4557,16 +4551,6 @@
 						<v8:item>
 							<v8:lang>ru</v8:lang>
 							<v8:content>Край РКД</v8:content>
-						</v8:item>
-					</dcssch:title>
-				</Field>
-				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>ПереходПредставление</dcssch:dataPath>
-					<dcssch:field>ПереходПредставление</dcssch:field>
-					<dcssch:title xsi:type="v8:LocalStringType">
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Переход представление</v8:content>
 						</v8:item>
 					</dcssch:title>
 				</Field>
@@ -4664,6 +4648,12 @@
 						<dcsset:viewMode>Normal</dcsset:viewMode>
 						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
 					</dcsset:filter>
+					<dcsset:dataParameters>
+						<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+							<dcscor:use>false</dcscor:use>
+							<dcscor:parameter>ТипыЗадачКонструирования</dcscor:parameter>
+						</dcscor:item>
+					</dcsset:dataParameters>
 					<dcsset:order>
 						<dcsset:viewMode>Normal</dcsset:viewMode>
 						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
