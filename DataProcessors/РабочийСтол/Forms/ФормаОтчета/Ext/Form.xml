@@ -771,7 +771,7 @@
 									<UseAlternationRowColor>true</UseAlternationRowColor>
 									<EnableStartDrag>true</EnableStartDrag>
 									<DataPath>ПодтверждениеПКД</DataPath>
-									<RowPictureDataPath>ПодтверждениеПКД.DefaultPicture</RowPictureDataPath>
+									<RowPictureDataPath>~ПодтверждениеПКД.DefaultPicture</RowPictureDataPath>
 									<Title>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
@@ -1332,11 +1332,12 @@
 									<HeightInTableRows>8</HeightInTableRows>
 									<HeightControlVariant>UseHeightInTableRows</HeightControlVariant>
 									<MaxRowsCount>8</MaxRowsCount>
+									<SelectionMode>SingleRow</SelectionMode>
 									<UseAlternationRowColor>true</UseAlternationRowColor>
 									<VerticalStretch>false</VerticalStretch>
 									<EnableStartDrag>true</EnableStartDrag>
 									<DataPath>ПодтверждениеПКД</DataPath>
-									<RowPictureDataPath>ПодтверждениеПКД.DefaultPicture</RowPictureDataPath>
+									<RowPictureDataPath>~ПодтверждениеПКД.DefaultPicture</RowPictureDataPath>
 									<Title>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
@@ -1386,6 +1387,9 @@
 										<ContextMenu name="ПодтверждениеПКДУправлениеПоискомКонтекстноеМеню" id="439"/>
 										<ExtendedTooltip name="ПодтверждениеПКДУправлениеПоискомРасширеннаяПодсказка" id="440"/>
 									</SearchControlAddition>
+									<Events>
+										<Event name="Selection">ПодтверждениеПКДВыбор</Event>
+									</Events>
 									<ChildItems>
 										<PictureField name="ПодтверждениеПКДЕстьФайлы" id="1138">
 											<DataPath>ПодтверждениеПКД.ЕстьФайлы</DataPath>
@@ -1401,16 +1405,17 @@
 											<ContextMenu name="ПодтверждениеПКДЕстьФайлыКонтекстноеМеню" id="1139"/>
 											<ExtendedTooltip name="ПодтверждениеПКДЕстьФайлыРасширеннаяПодсказка" id="1140"/>
 										</PictureField>
-										<LabelField name="ПодтверждениеПКДНаименование" id="462">
-											<DataPath>ПодтверждениеПКД.Наименование</DataPath>
-											<Title>
-												<v8:item>
-													<v8:lang>ru</v8:lang>
-													<v8:content>Задача</v8:content>
-												</v8:item>
-											</Title>
-											<ContextMenu name="ПодтверждениеПКДНаименованиеКонтекстноеМеню" id="463"/>
-											<ExtendedTooltip name="ПодтверждениеПКДНаименованиеРасширеннаяПодсказка" id="464"/>
+										<InputField name="ПодтверждениеПКДСсылка" id="1546">
+											<DataPath>ПодтверждениеПКД.Ссылка</DataPath>
+											<SkipOnInput>false</SkipOnInput>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="ПодтверждениеПКДСсылкаКонтекстноеМеню" id="1547"/>
+											<ExtendedTooltip name="ПодтверждениеПКДСсылкаРасширеннаяПодсказка" id="1548"/>
+										</InputField>
+										<LabelField name="ПодтверждениеПКДПредыдущаяСтадия" id="1543">
+											<DataPath>ПодтверждениеПКД.ПредыдущаяСтадия</DataPath>
+											<ContextMenu name="ПодтверждениеПКДПредыдущаяСтадияКонтекстноеМеню" id="1544"/>
+											<ExtendedTooltip name="ПодтверждениеПКДПредыдущаяСтадияРасширеннаяПодсказка" id="1545"/>
 										</LabelField>
 										<LabelField name="ПодтверждениеПКДКонструктор" id="1246">
 											<DataPath>ПодтверждениеПКД.Конструктор</DataPath>
@@ -1421,16 +1426,6 @@
 											<DataPath>ПодтверждениеПКД.Исполнитель</DataPath>
 											<ContextMenu name="ПодтверждениеПКДИсполнительКонтекстноеМеню" id="451"/>
 											<ExtendedTooltip name="ПодтверждениеПКДИсполнительРасширеннаяПодсказка" id="452"/>
-										</LabelField>
-										<LabelField name="ПодтверждениеПКДКрайПКД" id="1083">
-											<DataPath>ПодтверждениеПКД.КрайПКД</DataPath>
-											<ContextMenu name="ПодтверждениеПКДКрайПКДКонтекстноеМеню" id="1084"/>
-											<ExtendedTooltip name="ПодтверждениеПКДКрайПКДРасширеннаяПодсказка" id="1085"/>
-										</LabelField>
-										<LabelField name="ПодтверждениеПКДКомпозиция" id="456">
-											<DataPath>ПодтверждениеПКД.Композиция</DataPath>
-											<ContextMenu name="ПодтверждениеПКДКомпозицияКонтекстноеМеню" id="457"/>
-											<ExtendedTooltip name="ПодтверждениеПКДКомпозицияРасширеннаяПодсказка" id="458"/>
 										</LabelField>
 										<LabelField name="ПодтверждениеПКДДата" id="447">
 											<DataPath>ПодтверждениеПКД.Дата</DataPath>
@@ -3456,7 +3451,7 @@
 			</Type>
 			<Settings xsi:type="DynamicList">
 				<ManualQuery>true</ManualQuery>
-				<DynamicDataRead>true</DynamicDataRead>
+				<DynamicDataRead>false</DynamicDataRead>
 				<QueryText>ВЫБРАТЬ
 	ЗадачаЗадачи_ПКД.Ссылка КАК Ссылка,
 	ЗадачаЗадачи_ПКД.ПометкаУдаления КАК ПометкаУдаления,
@@ -3472,14 +3467,11 @@
 	ЗадачаЗадачи_ПКД.Проект КАК Проект,
 	ЗадачаЗадачи_ПКД.ТипЗадачи КАК ТипЗадачи,
 	ЗадачаЗадачи_ПКД.Исполнитель КАК Исполнитель,
-	ЗадачаЗадачи_ПКД.Наблюдатели.(
-		Ссылка КАК Ссылка,
-		НомерСтроки КАК НомерСтроки,
-		Наблюдатель КАК Наблюдатель
-	) КАК Наблюдатели,
 	ЕСТЬNULL(ДатыКомплекта.КрайПКД, ДАТАВРЕМЯ(1, 1, 1)) КАК КрайПКД,
 	ЕСТЬNULL(НаличиеФайлов.ЕстьФайлы, ЛОЖЬ) КАК ЕстьФайлы,
-	ДанныеКомплекта.Конструктор КАК Конструктор
+	ДанныеКомплекта.Конструктор КАК Конструктор,
+	ДанныеКомплекта.Период КАК Период
+ПОМЕСТИТЬ вт
 ИЗ
 	Задача.Задачи_ПКД КАК ЗадачаЗадачи_ПКД
 		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ДатыКомплекта КАК ДатыКомплекта
@@ -3502,64 +3494,91 @@
 			ИНАЧЕ ЗадачаЗадачи_ПКД.Исполнитель = &amp;Исполнитель
 		КОНЕЦ
 	И НЕ ЗадачаЗадачи_ПКД.ОбобщеннаяЗадача
-	И НЕ ДанныеКомплекта.ТекущаяСтадия.ОграниченныйПоказ</QueryText>
+	И НЕ ДанныеКомплекта.ТекущаяСтадия.ОграниченныйПоказ
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	ДанныеКомплекта.Комплект КАК Комплект,
+	МАКСИМУМ(ДанныеКомплекта.Период) КАК Период,
+	ДанныеКомплекта.ТекущаяСтадия КАК ТекущаяСтадия
+ПОМЕСТИТЬ втПредыдущий
+ИЗ
+	вт КАК вт
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ДанныеКомплекта КАК ДанныеКомплекта
+		ПО вт.ОбъектТЗ = ДанныеКомплекта.Комплект
+ГДЕ
+	ДанныеКомплекта.Период &lt; вт.Период
+
+СГРУППИРОВАТЬ ПО
+	ДанныеКомплекта.Комплект,
+	ДанныеКомплекта.ТекущаяСтадия
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	вт.Ссылка КАК Ссылка,
+	вт.ПометкаУдаления КАК ПометкаУдаления,
+	вт.Номер КАК Номер,
+	вт.Дата КАК Дата,
+	вт.Наименование КАК Наименование,
+	вт.Выполнена КАК Выполнена,
+	вт.Автор КАК Автор,
+	вт.Комментарий КАК Комментарий,
+	вт.Композиция КАК Композиция,
+	вт.ОбъектТЗ КАК ОбъектТЗ,
+	вт.Основание КАК Основание,
+	вт.Проект КАК Проект,
+	вт.ТипЗадачи КАК ТипЗадачи,
+	вт.Исполнитель КАК Исполнитель,
+	вт.КрайПКД КАК КрайПКД,
+	вт.ЕстьФайлы КАК ЕстьФайлы,
+	вт.Конструктор КАК Конструктор,
+	вт.Период КАК Период,
+	втПредыдущий.ТекущаяСтадия КАК ПредыдущаяСтадия
+ИЗ
+	вт КАК вт
+		ЛЕВОЕ СОЕДИНЕНИЕ втПредыдущий КАК втПредыдущий
+		ПО вт.ОбъектТЗ = втПредыдущий.Комплект</QueryText>
 				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>ДополнительноеСвойство</dcssch:dataPath>
-					<dcssch:field>ДополнительноеСвойство</dcssch:field>
+					<dcssch:dataPath>Автор</dcssch:dataPath>
+					<dcssch:field>Автор</dcssch:field>
 				</Field>
 				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>ЧекЛист</dcssch:dataPath>
-					<dcssch:field>ЧекЛист</dcssch:field>
+					<dcssch:dataPath>Конструктор</dcssch:dataPath>
+					<dcssch:field>Конструктор</dcssch:field>
 				</Field>
 				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>Изменение</dcssch:dataPath>
-					<dcssch:field>Изменение</dcssch:field>
+					<dcssch:dataPath>Комплект</dcssch:dataPath>
+					<dcssch:field>Комплект</dcssch:field>
 				</Field>
 				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>Ссылка</dcssch:dataPath>
-					<dcssch:field>Ссылка</dcssch:field>
+					<dcssch:dataPath>Период</dcssch:dataPath>
+					<dcssch:field>Период</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ОбъектТЗ</dcssch:dataPath>
+					<dcssch:field>ОбъектТЗ</dcssch:field>
 				</Field>
 				<Field xsi:type="dcssch:DataSetFieldField">
 					<dcssch:dataPath>Проект</dcssch:dataPath>
 					<dcssch:field>Проект</dcssch:field>
 				</Field>
 				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>Автор</dcssch:dataPath>
-					<dcssch:field>Автор</dcssch:field>
+					<dcssch:dataPath>Ссылка</dcssch:dataPath>
+					<dcssch:field>Ссылка</dcssch:field>
 				</Field>
 				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>КоличествоНеВыполненыхВопросовЧекЛиста</dcssch:dataPath>
-					<dcssch:field>КоличествоНеВыполненыхВопросовЧекЛиста</dcssch:field>
-				</Field>
-				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>КороткаяСрочнаяЗадача</dcssch:dataPath>
-					<dcssch:field>КороткаяСрочнаяЗадача</dcssch:field>
-				</Field>
-				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>ЕстьФайлы</dcssch:dataPath>
-					<dcssch:field>ЕстьФайлы</dcssch:field>
-					<dcssch:title xsi:type="v8:LocalStringType">
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Есть файлы</v8:content>
-						</v8:item>
-					</dcssch:title>
-				</Field>
-				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>ОбобщеннаяЗадача</dcssch:dataPath>
-					<dcssch:field>ОбобщеннаяЗадача</dcssch:field>
-				</Field>
-				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>ТипЗадачи</dcssch:dataPath>
-					<dcssch:field>ТипЗадачи</dcssch:field>
-				</Field>
-				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>СтатусЗадачи</dcssch:dataPath>
-					<dcssch:field>СтатусЗадачи</dcssch:field>
+					<dcssch:dataPath>Комментарий</dcssch:dataPath>
+					<dcssch:field>Комментарий</dcssch:field>
 				</Field>
 				<Field xsi:type="dcssch:DataSetFieldField">
 					<dcssch:dataPath>ПометкаУдаления</dcssch:dataPath>
 					<dcssch:field>ПометкаУдаления</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Выполнена</dcssch:dataPath>
+					<dcssch:field>Выполнена</dcssch:field>
 				</Field>
 				<Field xsi:type="dcssch:DataSetFieldField">
 					<dcssch:dataPath>Номер</dcssch:dataPath>
@@ -3574,52 +3593,20 @@
 					<dcssch:field>Наименование</dcssch:field>
 				</Field>
 				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>Выполнена</dcssch:dataPath>
-					<dcssch:field>Выполнена</dcssch:field>
-				</Field>
-				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>Конструктор</dcssch:dataPath>
-					<dcssch:field>Конструктор</dcssch:field>
-				</Field>
-				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>Комментарий</dcssch:dataPath>
-					<dcssch:field>Комментарий</dcssch:field>
-				</Field>
-				<Field xsi:type="dcssch:DataSetFieldField">
 					<dcssch:dataPath>Композиция</dcssch:dataPath>
 					<dcssch:field>Композиция</dcssch:field>
-				</Field>
-				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>Комплект</dcssch:dataPath>
-					<dcssch:field>Комплект</dcssch:field>
-				</Field>
-				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>ОбъектТЗ</dcssch:dataPath>
-					<dcssch:field>ОбъектТЗ</dcssch:field>
-				</Field>
-				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>Наблюдатели.НомерСтроки</dcssch:dataPath>
-					<dcssch:field>Наблюдатели.НомерСтроки</dcssch:field>
 				</Field>
 				<Field xsi:type="dcssch:DataSetFieldField">
 					<dcssch:dataPath>Основание</dcssch:dataPath>
 					<dcssch:field>Основание</dcssch:field>
 				</Field>
 				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ТипЗадачи</dcssch:dataPath>
+					<dcssch:field>ТипЗадачи</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
 					<dcssch:dataPath>Исполнитель</dcssch:dataPath>
 					<dcssch:field>Исполнитель</dcssch:field>
-				</Field>
-				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>Наблюдатели.Ссылка</dcssch:dataPath>
-					<dcssch:field>Наблюдатели.Ссылка</dcssch:field>
-				</Field>
-				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>Наблюдатели.Наблюдатель</dcssch:dataPath>
-					<dcssch:field>Наблюдатели.Наблюдатель</dcssch:field>
-				</Field>
-				<Field xsi:type="dcssch:DataSetFieldNestedDataSet">
-					<dcssch:dataPath>Наблюдатели</dcssch:dataPath>
-					<dcssch:field>Наблюдатели</dcssch:field>
 				</Field>
 				<Field xsi:type="dcssch:DataSetFieldField">
 					<dcssch:dataPath>КрайПКД</dcssch:dataPath>
@@ -3628,6 +3615,26 @@
 						<v8:item>
 							<v8:lang>ru</v8:lang>
 							<v8:content>Край ПКД</v8:content>
+						</v8:item>
+					</dcssch:title>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ЕстьФайлы</dcssch:dataPath>
+					<dcssch:field>ЕстьФайлы</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Есть файлы</v8:content>
+						</v8:item>
+					</dcssch:title>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ПредыдущаяСтадия</dcssch:dataPath>
+					<dcssch:field>ПредыдущаяСтадия</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Предыдущая стадия</v8:content>
 						</v8:item>
 					</dcssch:title>
 				</Field>
@@ -3691,7 +3698,6 @@
 					<dcssch:useRestriction>true</dcssch:useRestriction>
 					<dcssch:valueListAllowed>true</dcssch:valueListAllowed>
 				</Parameter>
-				<MainTable>Task.Задачи_ПКД</MainTable>
 				<ListSettings>
 					<dcsset:filter>
 						<dcsset:viewMode>Normal</dcsset:viewMode>
