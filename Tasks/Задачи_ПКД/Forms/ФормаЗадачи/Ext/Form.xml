@@ -346,34 +346,106 @@
 											<ShowTitle>false</ShowTitle>
 											<ExtendedTooltip name="ГруппаИсполнителиРасширеннаяПодсказка" id="310"/>
 											<ChildItems>
-												<InputField name="Замерщик" id="311">
-													<DataPath>Замерщик</DataPath>
-													<ReadOnly>true</ReadOnly>
-													<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-													<ContextMenu name="ЗамерщикКонтекстноеМеню" id="312"/>
-													<ExtendedTooltip name="ЗамерщикРасширеннаяПодсказка" id="313"/>
-												</InputField>
-												<InputField name="ВедущийКонструктор" id="314">
-													<DataPath>ВедущийКонструктор</DataPath>
-													<ReadOnly>true</ReadOnly>
-													<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-													<ContextMenu name="ВедущийКонструкторКонтекстноеМеню" id="315"/>
-													<ExtendedTooltip name="ВедущийКонструкторРасширеннаяПодсказка" id="316"/>
-												</InputField>
-												<InputField name="Менеджер" id="317">
-													<DataPath>Менеджер</DataPath>
-													<ReadOnly>true</ReadOnly>
-													<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-													<ContextMenu name="МенеджерКонтекстноеМеню" id="318"/>
-													<ExtendedTooltip name="МенеджерРасширеннаяПодсказка" id="319"/>
-												</InputField>
-												<InputField name="Дизайнер" id="320">
-													<DataPath>Дизайнер</DataPath>
-													<ReadOnly>true</ReadOnly>
-													<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-													<ContextMenu name="ДизайнерКонтекстноеМеню" id="321"/>
-													<ExtendedTooltip name="ДизайнерРасширеннаяПодсказка" id="322"/>
-												</InputField>
+												<UsualGroup name="Группа17" id="323">
+													<Group>AlwaysHorizontal</Group>
+													<Representation>None</Representation>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="Группа17РасширеннаяПодсказка" id="324"/>
+													<ChildItems>
+														<InputField name="Замерщик" id="311">
+															<DataPath>Замерщик</DataPath>
+															<ReadOnly>true</ReadOnly>
+															<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+															<ContextMenu name="ЗамерщикКонтекстноеМеню" id="312"/>
+															<ExtendedTooltip name="ЗамерщикРасширеннаяПодсказка" id="313"/>
+														</InputField>
+														<Button name="СоздатьОбщуюЗадачуЗамерщик" id="325">
+															<Type>UsualButton</Type>
+															<Representation>Picture</Representation>
+															<CommandName>Form.Command.СоздатьОбщуюЗадачу</CommandName>
+															<Picture>
+																<xr:Ref>StdPicture.Task</xr:Ref>
+																<xr:LoadTransparent>true</xr:LoadTransparent>
+															</Picture>
+															<ExtendedTooltip name="СоздатьОбщуюЗадачуЗамерщикРасширеннаяПодсказка" id="326"/>
+														</Button>
+													</ChildItems>
+												</UsualGroup>
+												<UsualGroup name="Группа18" id="327">
+													<Group>AlwaysHorizontal</Group>
+													<Representation>None</Representation>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="Группа18РасширеннаяПодсказка" id="328"/>
+													<ChildItems>
+														<InputField name="ВедущийКонструктор" id="314">
+															<DataPath>ВедущийКонструктор</DataPath>
+															<ReadOnly>true</ReadOnly>
+															<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+															<ContextMenu name="ВедущийКонструкторКонтекстноеМеню" id="315"/>
+															<ExtendedTooltip name="ВедущийКонструкторРасширеннаяПодсказка" id="316"/>
+														</InputField>
+														<Button name="СоздатьОбщуюЗадачуВедущему" id="329">
+															<Type>UsualButton</Type>
+															<Representation>Picture</Representation>
+															<CommandName>Form.Command.СоздатьОбщуюЗадачу</CommandName>
+															<Picture>
+																<xr:Ref>StdPicture.Task</xr:Ref>
+																<xr:LoadTransparent>true</xr:LoadTransparent>
+															</Picture>
+															<ExtendedTooltip name="СоздатьОбщуюЗадачуВедущемуРасширеннаяПодсказка" id="330"/>
+														</Button>
+													</ChildItems>
+												</UsualGroup>
+												<UsualGroup name="Группа19" id="331">
+													<Group>AlwaysHorizontal</Group>
+													<Representation>None</Representation>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="Группа19РасширеннаяПодсказка" id="332"/>
+													<ChildItems>
+														<InputField name="Менеджер" id="317">
+															<DataPath>Менеджер</DataPath>
+															<ReadOnly>true</ReadOnly>
+															<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+															<ContextMenu name="МенеджерКонтекстноеМеню" id="318"/>
+															<ExtendedTooltip name="МенеджерРасширеннаяПодсказка" id="319"/>
+														</InputField>
+														<Button name="СоздатьОбщуюЗадачуМенеджеру" id="333">
+															<Type>UsualButton</Type>
+															<Representation>Picture</Representation>
+															<CommandName>Form.Command.СоздатьОбщуюЗадачу</CommandName>
+															<Picture>
+																<xr:Ref>StdPicture.Task</xr:Ref>
+																<xr:LoadTransparent>true</xr:LoadTransparent>
+															</Picture>
+															<ExtendedTooltip name="СоздатьОбщуюЗадачуМенеджеруРасширеннаяПодсказка" id="334"/>
+														</Button>
+													</ChildItems>
+												</UsualGroup>
+												<UsualGroup name="Группа20" id="335">
+													<Group>AlwaysHorizontal</Group>
+													<Representation>None</Representation>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="Группа20РасширеннаяПодсказка" id="336"/>
+													<ChildItems>
+														<InputField name="Дизайнер" id="320">
+															<DataPath>Дизайнер</DataPath>
+															<ReadOnly>true</ReadOnly>
+															<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+															<ContextMenu name="ДизайнерКонтекстноеМеню" id="321"/>
+															<ExtendedTooltip name="ДизайнерРасширеннаяПодсказка" id="322"/>
+														</InputField>
+														<Button name="СоздатьОбщуюЗадачуДизайнеру" id="337">
+															<Type>UsualButton</Type>
+															<Representation>Picture</Representation>
+															<CommandName>Form.Command.СоздатьОбщуюЗадачу</CommandName>
+															<Picture>
+																<xr:Ref>StdPicture.Task</xr:Ref>
+																<xr:LoadTransparent>true</xr:LoadTransparent>
+															</Picture>
+															<ExtendedTooltip name="СоздатьОбщуюЗадачуДизайнеруРасширеннаяПодсказка" id="338"/>
+														</Button>
+													</ChildItems>
+												</UsualGroup>
 											</ChildItems>
 										</UsualGroup>
 										<Table name="ПодчиненыеКомплекты" id="129">
@@ -1878,6 +1950,21 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ТаймингЗадачи</Action>
+		</Command>
+		<Command name="СоздатьОбщуюЗадачу" id="34">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать общую задачу</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать общую задачу</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СоздатьОбщуюЗадачу</Action>
 		</Command>
 	</Commands>
 	<CommandInterface>
