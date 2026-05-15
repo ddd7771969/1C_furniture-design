@@ -28,6 +28,7 @@
 		</UsualGroup>
 		<Table name="ЗадачиОжиданияГЧ" id="1">
 			<Representation>List</Representation>
+			<ReadOnly>true</ReadOnly>
 			<AutoInsertNewRow>true</AutoInsertNewRow>
 			<EnableStartDrag>true</EnableStartDrag>
 			<EnableDrag>true</EnableDrag>
@@ -82,6 +83,20 @@
 					<ContextMenu name="ЗадачиОжиданияГЧКонструкторКонтекстноеМеню" id="18"/>
 					<ExtendedTooltip name="ЗадачиОжиданияГЧКонструкторРасширеннаяПодсказка" id="19"/>
 				</InputField>
+				<CheckBoxField name="ЗадачиОжиданияГЧВПроизводстве" id="27">
+					<DataPath>ЗадачиОжиданияГЧ.ВПроизводстве</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ЗадачиОжиданияГЧВПроизводствеКонтекстноеМеню" id="28"/>
+					<ExtendedTooltip name="ЗадачиОжиданияГЧВПроизводствеРасширеннаяПодсказка" id="29"/>
+				</CheckBoxField>
+				<CheckBoxField name="ЗадачиОжиданияГЧВМонтаже" id="30">
+					<DataPath>ЗадачиОжиданияГЧ.ВМонтаже</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ЗадачиОжиданияГЧВМонтажеКонтекстноеМеню" id="31"/>
+					<ExtendedTooltip name="ЗадачиОжиданияГЧВМонтажеРасширеннаяПодсказка" id="32"/>
+				</CheckBoxField>
 			</ChildItems>
 		</Table>
 	</ChildItems>
@@ -123,6 +138,28 @@
 					</Title>
 					<Type>
 						<v8:Type>cfg:CatalogRef.Сотрудники</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ВПроизводстве" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>В производстве</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ВМонтаже" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>В монтаже</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
 					</Type>
 				</Column>
 			</Columns>
