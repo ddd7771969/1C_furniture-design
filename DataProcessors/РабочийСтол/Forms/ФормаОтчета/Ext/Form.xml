@@ -1564,6 +1564,11 @@
 											<CommandName>Form.Command.ОткрытьГрафикЗамеров</CommandName>
 											<ExtendedTooltip name="ОткрытьГрафикЗамеровРасширеннаяПодсказка" id="1275"/>
 										</Button>
+										<Button name="Ожидание_ГЧ_кнопка" id="1541">
+											<Type>UsualButton</Type>
+											<CommandName>Form.Command.ОжиданиеГЧ</CommandName>
+											<ExtendedTooltip name="Ожидание_ГЧ_кнопкаРасширеннаяПодсказка" id="1542"/>
+										</Button>
 										<Button name="ОткрытьПлан" id="1278">
 											<Type>UsualButton</Type>
 											<Enabled>false</Enabled>
@@ -5207,6 +5212,21 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ОбщиеДляМеня</Action>
+		</Command>
+		<Command name="ОжиданиеГЧ" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ожидание ГЧ</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ожидание ГЧ</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОжиданиеГЧ</Action>
 		</Command>
 	</Commands>
 </Form>
