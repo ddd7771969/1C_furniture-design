@@ -26,79 +26,250 @@
 				</Button>
 			</ChildItems>
 		</UsualGroup>
-		<Table name="ЗадачиОжиданияГЧ" id="1">
-			<Representation>List</Representation>
-			<ReadOnly>true</ReadOnly>
-			<AutoInsertNewRow>true</AutoInsertNewRow>
-			<EnableStartDrag>true</EnableStartDrag>
-			<EnableDrag>true</EnableDrag>
-			<DataPath>ЗадачиОжиданияГЧ</DataPath>
-			<RowFilter xsi:nil="true"/>
-			<ContextMenu name="ЗадачиОжиданияГЧКонтекстноеМеню" id="2"/>
-			<AutoCommandBar name="ЗадачиОжиданияГЧКоманднаяПанель" id="3">
-				<Autofill>false</Autofill>
-			</AutoCommandBar>
-			<ExtendedTooltip name="ЗадачиОжиданияГЧРасширеннаяПодсказка" id="4"/>
-			<SearchStringAddition name="ЗадачиОжиданияГЧСтрокаПоиска" id="5">
-				<AdditionSource>
-					<Item>ЗадачиОжиданияГЧ</Item>
-					<Type>SearchStringRepresentation</Type>
-				</AdditionSource>
-				<ContextMenu name="ЗадачиОжиданияГЧСтрокаПоискаКонтекстноеМеню" id="6"/>
-				<ExtendedTooltip name="ЗадачиОжиданияГЧСтрокаПоискаРасширеннаяПодсказка" id="7"/>
-			</SearchStringAddition>
-			<ViewStatusAddition name="ЗадачиОжиданияГЧСостояниеПросмотра" id="8">
-				<AdditionSource>
-					<Item>ЗадачиОжиданияГЧ</Item>
-					<Type>ViewStatusRepresentation</Type>
-				</AdditionSource>
-				<ContextMenu name="ЗадачиОжиданияГЧСостояниеПросмотраКонтекстноеМеню" id="9"/>
-				<ExtendedTooltip name="ЗадачиОжиданияГЧСостояниеПросмотраРасширеннаяПодсказка" id="10"/>
-			</ViewStatusAddition>
-			<SearchControlAddition name="ЗадачиОжиданияГЧУправлениеПоиском" id="11">
-				<AdditionSource>
-					<Item>ЗадачиОжиданияГЧ</Item>
-					<Type>SearchControl</Type>
-				</AdditionSource>
-				<ContextMenu name="ЗадачиОжиданияГЧУправлениеПоискомКонтекстноеМеню" id="12"/>
-				<ExtendedTooltip name="ЗадачиОжиданияГЧУправлениеПоискомРасширеннаяПодсказка" id="13"/>
-			</SearchControlAddition>
-			<Events>
-				<Event name="BeforeAddRow">ЗадачиОжиданияГЧПередНачаломДобавления</Event>
-				<Event name="BeforeDeleteRow">ЗадачиОжиданияГЧПередУдалением</Event>
-				<Event name="OnActivateRow">ЗадачиОжиданияГЧПриАктивизацииСтроки</Event>
-			</Events>
+		<Pages name="Группа2" id="33">
+			<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="34"/>
 			<ChildItems>
-				<InputField name="ЗадачиОжиданияГЧЗадачаРКД" id="14">
-					<DataPath>ЗадачиОжиданияГЧ.ЗадачаРКД</DataPath>
-					<EditMode>EnterOnInput</EditMode>
-					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-					<ContextMenu name="ЗадачиОжиданияГЧЗадачаРКДКонтекстноеМеню" id="15"/>
-					<ExtendedTooltip name="ЗадачиОжиданияГЧЗадачаРКДРасширеннаяПодсказка" id="16"/>
-				</InputField>
-				<InputField name="ЗадачиОжиданияГЧКонструктор" id="17">
-					<DataPath>ЗадачиОжиданияГЧ.Конструктор</DataPath>
-					<EditMode>EnterOnInput</EditMode>
-					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-					<ContextMenu name="ЗадачиОжиданияГЧКонструкторКонтекстноеМеню" id="18"/>
-					<ExtendedTooltip name="ЗадачиОжиданияГЧКонструкторРасширеннаяПодсказка" id="19"/>
-				</InputField>
-				<CheckBoxField name="ЗадачиОжиданияГЧВПроизводстве" id="27">
-					<DataPath>ЗадачиОжиданияГЧ.ВПроизводстве</DataPath>
-					<EditMode>EnterOnInput</EditMode>
-					<CheckBoxType>Auto</CheckBoxType>
-					<ContextMenu name="ЗадачиОжиданияГЧВПроизводствеКонтекстноеМеню" id="28"/>
-					<ExtendedTooltip name="ЗадачиОжиданияГЧВПроизводствеРасширеннаяПодсказка" id="29"/>
-				</CheckBoxField>
-				<CheckBoxField name="ЗадачиОжиданияГЧВМонтаже" id="30">
-					<DataPath>ЗадачиОжиданияГЧ.ВМонтаже</DataPath>
-					<EditMode>EnterOnInput</EditMode>
-					<CheckBoxType>Auto</CheckBoxType>
-					<ContextMenu name="ЗадачиОжиданияГЧВМонтажеКонтекстноеМеню" id="31"/>
-					<ExtendedTooltip name="ЗадачиОжиданияГЧВМонтажеРасширеннаяПодсказка" id="32"/>
-				</CheckBoxField>
+				<Page name="ГруппаЗадачи" id="35">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Задачи</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа задачи</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаЗадачиРасширеннаяПодсказка" id="36"/>
+					<ChildItems>
+						<Table name="ЗадачиОжиданияГЧ" id="1">
+							<Representation>List</Representation>
+							<ReadOnly>true</ReadOnly>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>ЗадачиОжиданияГЧ</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ЗадачиОжиданияГЧКонтекстноеМеню" id="2"/>
+							<AutoCommandBar name="ЗадачиОжиданияГЧКоманднаяПанель" id="3">
+								<Autofill>false</Autofill>
+							</AutoCommandBar>
+							<ExtendedTooltip name="ЗадачиОжиданияГЧРасширеннаяПодсказка" id="4"/>
+							<SearchStringAddition name="ЗадачиОжиданияГЧСтрокаПоиска" id="5">
+								<AdditionSource>
+									<Item>ЗадачиОжиданияГЧ</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ЗадачиОжиданияГЧСтрокаПоискаКонтекстноеМеню" id="6"/>
+								<ExtendedTooltip name="ЗадачиОжиданияГЧСтрокаПоискаРасширеннаяПодсказка" id="7"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ЗадачиОжиданияГЧСостояниеПросмотра" id="8">
+								<AdditionSource>
+									<Item>ЗадачиОжиданияГЧ</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ЗадачиОжиданияГЧСостояниеПросмотраКонтекстноеМеню" id="9"/>
+								<ExtendedTooltip name="ЗадачиОжиданияГЧСостояниеПросмотраРасширеннаяПодсказка" id="10"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ЗадачиОжиданияГЧУправлениеПоиском" id="11">
+								<AdditionSource>
+									<Item>ЗадачиОжиданияГЧ</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ЗадачиОжиданияГЧУправлениеПоискомКонтекстноеМеню" id="12"/>
+								<ExtendedTooltip name="ЗадачиОжиданияГЧУправлениеПоискомРасширеннаяПодсказка" id="13"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="BeforeAddRow">ЗадачиОжиданияГЧПередНачаломДобавления</Event>
+								<Event name="BeforeDeleteRow">ЗадачиОжиданияГЧПередУдалением</Event>
+								<Event name="OnActivateRow">ЗадачиОжиданияГЧПриАктивизацииСтроки</Event>
+							</Events>
+							<ChildItems>
+								<InputField name="ЗадачиОжиданияГЧЗадачаРКД" id="14">
+									<DataPath>ЗадачиОжиданияГЧ.ЗадачаРКД</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ЗадачиОжиданияГЧЗадачаРКДКонтекстноеМеню" id="15"/>
+									<ExtendedTooltip name="ЗадачиОжиданияГЧЗадачаРКДРасширеннаяПодсказка" id="16"/>
+								</InputField>
+								<InputField name="ЗадачиОжиданияГЧКонструктор" id="17">
+									<DataPath>ЗадачиОжиданияГЧ.Конструктор</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ЗадачиОжиданияГЧКонструкторКонтекстноеМеню" id="18"/>
+									<ExtendedTooltip name="ЗадачиОжиданияГЧКонструкторРасширеннаяПодсказка" id="19"/>
+								</InputField>
+								<InputField name="ЗадачиОжиданияГЧВедКон" id="85">
+									<DataPath>ЗадачиОжиданияГЧ.ВедКон</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ЗадачиОжиданияГЧВедКонКонтекстноеМеню" id="86"/>
+									<ExtendedTooltip name="ЗадачиОжиданияГЧВедКонРасширеннаяПодсказка" id="87"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаПроизводство" id="37">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Производство</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа производство</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаПроизводствоРасширеннаяПодсказка" id="38"/>
+					<ChildItems>
+						<Table name="ЗадачиВПроизводствеГЧ" id="39">
+							<Representation>List</Representation>
+							<ReadOnly>true</ReadOnly>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>ЗадачиВПроизводствеГЧ</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ЗадачиВПроизводствеГЧКонтекстноеМеню" id="40"/>
+							<AutoCommandBar name="ЗадачиВПроизводствеГЧКоманднаяПанель" id="41">
+								<Autofill>false</Autofill>
+							</AutoCommandBar>
+							<ExtendedTooltip name="ЗадачиВПроизводствеГЧРасширеннаяПодсказка" id="42"/>
+							<SearchStringAddition name="ЗадачиВПроизводствеГЧСтрокаПоиска" id="43">
+								<AdditionSource>
+									<Item>ЗадачиВПроизводствеГЧ</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ЗадачиВПроизводствеГЧСтрокаПоискаКонтекстноеМеню" id="44"/>
+								<ExtendedTooltip name="ЗадачиВПроизводствеГЧСтрокаПоискаРасширеннаяПодсказка" id="45"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ЗадачиВПроизводствеГЧСостояниеПросмотра" id="46">
+								<AdditionSource>
+									<Item>ЗадачиВПроизводствеГЧ</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ЗадачиВПроизводствеГЧСостояниеПросмотраКонтекстноеМеню" id="47"/>
+								<ExtendedTooltip name="ЗадачиВПроизводствеГЧСостояниеПросмотраРасширеннаяПодсказка" id="48"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ЗадачиВПроизводствеГЧУправлениеПоиском" id="49">
+								<AdditionSource>
+									<Item>ЗадачиВПроизводствеГЧ</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ЗадачиВПроизводствеГЧУправлениеПоискомКонтекстноеМеню" id="50"/>
+								<ExtendedTooltip name="ЗадачиВПроизводствеГЧУправлениеПоискомРасширеннаяПодсказка" id="51"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<InputField name="ЗадачиВПроизводствеГЧЗадачаРКД" id="52">
+									<DataPath>ЗадачиВПроизводствеГЧ.ЗадачаРКД</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ЗадачиВПроизводствеГЧЗадачаРКДКонтекстноеМеню" id="53"/>
+									<ExtendedTooltip name="ЗадачиВПроизводствеГЧЗадачаРКДРасширеннаяПодсказка" id="54"/>
+								</InputField>
+								<InputField name="ЗадачиВПроизводствеГЧКонструктор" id="55">
+									<DataPath>ЗадачиВПроизводствеГЧ.Конструктор</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ЗадачиВПроизводствеГЧКонструкторКонтекстноеМеню" id="56"/>
+									<ExtendedTooltip name="ЗадачиВПроизводствеГЧКонструкторРасширеннаяПодсказка" id="57"/>
+								</InputField>
+								<CheckBoxField name="ЗадачиВПроизводствеГЧВПроизводстве" id="82">
+									<DataPath>ЗадачиВПроизводствеГЧ.ВПроизводстве</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ЗадачиВПроизводствеГЧВПроизводствеКонтекстноеМеню" id="83"/>
+									<ExtendedTooltip name="ЗадачиВПроизводствеГЧВПроизводствеРасширеннаяПодсказка" id="84"/>
+								</CheckBoxField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаМонтаж" id="58">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Монтаж</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа монтаж</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаМонтажРасширеннаяПодсказка" id="59"/>
+					<ChildItems>
+						<Table name="ЗадачиМонтажГЧ" id="60">
+							<Representation>List</Representation>
+							<ReadOnly>true</ReadOnly>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>ЗадачиМонтажГЧ</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ЗадачиМонтажГЧКонтекстноеМеню" id="61"/>
+							<AutoCommandBar name="ЗадачиМонтажГЧКоманднаяПанель" id="62">
+								<Autofill>false</Autofill>
+							</AutoCommandBar>
+							<ExtendedTooltip name="ЗадачиМонтажГЧРасширеннаяПодсказка" id="63"/>
+							<SearchStringAddition name="ЗадачиМонтажГЧСтрокаПоиска" id="64">
+								<AdditionSource>
+									<Item>ЗадачиМонтажГЧ</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ЗадачиМонтажГЧСтрокаПоискаКонтекстноеМеню" id="65"/>
+								<ExtendedTooltip name="ЗадачиМонтажГЧСтрокаПоискаРасширеннаяПодсказка" id="66"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ЗадачиМонтажГЧСостояниеПросмотра" id="67">
+								<AdditionSource>
+									<Item>ЗадачиМонтажГЧ</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ЗадачиМонтажГЧСостояниеПросмотраКонтекстноеМеню" id="68"/>
+								<ExtendedTooltip name="ЗадачиМонтажГЧСостояниеПросмотраРасширеннаяПодсказка" id="69"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ЗадачиМонтажГЧУправлениеПоиском" id="70">
+								<AdditionSource>
+									<Item>ЗадачиМонтажГЧ</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ЗадачиМонтажГЧУправлениеПоискомКонтекстноеМеню" id="71"/>
+								<ExtendedTooltip name="ЗадачиМонтажГЧУправлениеПоискомРасширеннаяПодсказка" id="72"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<InputField name="ЗадачиМонтажГЧЗадачаРКД" id="73">
+									<DataPath>ЗадачиМонтажГЧ.ЗадачаРКД</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ЗадачиМонтажГЧЗадачаРКДКонтекстноеМеню" id="74"/>
+									<ExtendedTooltip name="ЗадачиМонтажГЧЗадачаРКДРасширеннаяПодсказка" id="75"/>
+								</InputField>
+								<InputField name="ЗадачиМонтажГЧКонструктор" id="76">
+									<DataPath>ЗадачиМонтажГЧ.Конструктор</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ЗадачиМонтажГЧКонструкторКонтекстноеМеню" id="77"/>
+									<ExtendedTooltip name="ЗадачиМонтажГЧКонструкторРасширеннаяПодсказка" id="78"/>
+								</InputField>
+								<CheckBoxField name="ЗадачиМонтажГЧВМонтаже" id="79">
+									<DataPath>ЗадачиМонтажГЧ.ВМонтаже</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ЗадачиМонтажГЧВМонтажеКонтекстноеМеню" id="80"/>
+									<ExtendedTooltip name="ЗадачиМонтажГЧВМонтажеРасширеннаяПодсказка" id="81"/>
+								</CheckBoxField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
 			</ChildItems>
-		</Table>
+		</Pages>
 	</ChildItems>
 	<Attributes>
 		<Attribute name="Объект" id="1">
@@ -108,6 +279,63 @@
 			<MainAttribute>true</MainAttribute>
 		</Attribute>
 		<Attribute name="ЗадачиОжиданияГЧ" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Задачи ожидания ГЧ</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="ЗадачаРКД" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Задача РКД</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:TaskRef.Задачи_РКД</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Конструктор" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Конструктор</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Сотрудники</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ВедКон" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Вед кон</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Сотрудники</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ВыбраннаяЗадача" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбранная задача</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:TaskRef.Задачи_РКД</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ЗадачиВПроизводствеГЧ" id="4">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -151,6 +379,41 @@
 						<v8:Type>xs:boolean</v8:Type>
 					</Type>
 				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ЗадачиМонтажГЧ" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Задачи ожидания ГЧ</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="ЗадачаРКД" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Задача РКД</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:TaskRef.Задачи_РКД</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Конструктор" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Конструктор</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Сотрудники</v8:Type>
+					</Type>
+				</Column>
 				<Column name="ВМонтаже" id="4">
 					<Title>
 						<v8:item>
@@ -163,17 +426,6 @@
 					</Type>
 				</Column>
 			</Columns>
-		</Attribute>
-		<Attribute name="ВыбраннаяЗадача" id="3">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Выбранная задача</v8:content>
-				</v8:item>
-			</Title>
-			<Type>
-				<v8:Type>cfg:TaskRef.Задачи_РКД</v8:Type>
-			</Type>
 		</Attribute>
 	</Attributes>
 	<Commands>
