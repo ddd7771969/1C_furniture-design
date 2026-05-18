@@ -158,16 +158,36 @@
 												<Event name="OnChange">ПланРазработкиВДняхПриИзменении</Event>
 											</Events>
 										</InputField>
-										<LabelDecoration name="ДекорацияПроектноеВремя" id="149">
-											<Title formatted="false">
-												<v8:item>
-													<v8:lang>ru</v8:lang>
-													<v8:content>Декорация проектное время</v8:content>
-												</v8:item>
-											</Title>
-											<ContextMenu name="ДекорацияПроектноеВремяКонтекстноеМеню" id="150"/>
-											<ExtendedTooltip name="ДекорацияПроектноеВремяРасширеннаяПодсказка" id="151"/>
-										</LabelDecoration>
+										<UsualGroup name="Группа13" id="154">
+											<Group>AlwaysHorizontal</Group>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="Группа13РасширеннаяПодсказка" id="155"/>
+											<ChildItems>
+												<LabelDecoration name="ДекорацияПроектноеВремя" id="149">
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Декорация проектное время</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="ДекорацияПроектноеВремяКонтекстноеМеню" id="150"/>
+													<ExtendedTooltip name="ДекорацияПроектноеВремяРасширеннаяПодсказка" id="151"/>
+												</LabelDecoration>
+												<LabelDecoration name="ДекорацияДатаОкончания" id="156">
+													<Visible>false</Visible>
+													<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+													<Title formatted="false">
+														<v8:item>
+															<v8:lang>ru</v8:lang>
+															<v8:content>Декорация дата окончания</v8:content>
+														</v8:item>
+													</Title>
+													<ContextMenu name="ДекорацияДатаОкончанияКонтекстноеМеню" id="157"/>
+													<ExtendedTooltip name="ДекорацияДатаОкончанияРасширеннаяПодсказка" id="158"/>
+												</LabelDecoration>
+											</ChildItems>
+										</UsualGroup>
 									</ChildItems>
 								</UsualGroup>
 								<LabelDecoration name="ДекорацияНетВозможностиЗапустить" id="127">
