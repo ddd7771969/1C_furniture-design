@@ -137,6 +137,39 @@
 									</Picture>
 									<ExtendedTooltip name="КнопкаНачатьВыполнениеКонструкторРасширеннаяПодсказка" id="49"/>
 								</Button>
+								<UsualGroup name="Группа12" id="152">
+									<Group>Vertical</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="Группа12РасширеннаяПодсказка" id="153"/>
+									<ChildItems>
+										<InputField name="ПланРазработкиВДнях" id="146">
+											<DataPath>ПланРазработкиВДнях</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>План разработки в днях</v8:content>
+												</v8:item>
+											</Title>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="ПланРазработкиВДняхКонтекстноеМеню" id="147"/>
+											<ExtendedTooltip name="ПланРазработкиВДняхРасширеннаяПодсказка" id="148"/>
+											<Events>
+												<Event name="OnChange">ПланРазработкиВДняхПриИзменении</Event>
+											</Events>
+										</InputField>
+										<LabelDecoration name="ДекорацияПроектноеВремя" id="149">
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Декорация проектное время</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="ДекорацияПроектноеВремяКонтекстноеМеню" id="150"/>
+											<ExtendedTooltip name="ДекорацияПроектноеВремяРасширеннаяПодсказка" id="151"/>
+										</LabelDecoration>
+									</ChildItems>
+								</UsualGroup>
 								<LabelDecoration name="ДекорацияНетВозможностиЗапустить" id="127">
 									<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
 									<Title formatted="false">
@@ -723,6 +756,22 @@
 			</Title>
 			<Type>
 				<v8:Type>cfg:CatalogRef.Сотрудники</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ПланРазработкиВДнях" id="17">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>План разработки в днях</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>4</v8:Digits>
+					<v8:FractionDigits>1</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
 			</Type>
 		</Attribute>
 	</Attributes>
