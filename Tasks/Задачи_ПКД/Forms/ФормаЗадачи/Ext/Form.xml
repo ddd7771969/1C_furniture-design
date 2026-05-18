@@ -42,7 +42,7 @@
 	</Events>
 	<ChildItems>
 		<UsualGroup name="Группа7" id="110">
-			<Group>AlwaysHorizontal</Group>
+			<Group>Vertical</Group>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="Группа7РасширеннаяПодсказка" id="111"/>
@@ -1116,13 +1116,85 @@
 							</Picture>
 							<ExtendedTooltip name="ЗакрытьИсториюРасширеннаяПодсказка" id="77"/>
 						</Button>
-						<HTMLDocumentField name="История" id="73">
-							<DataPath>История</DataPath>
-							<TitleLocation>None</TitleLocation>
-							<AutoMaxHeight>false</AutoMaxHeight>
-							<ContextMenu name="ИсторияКонтекстноеМеню" id="74"/>
-							<ExtendedTooltip name="ИсторияРасширеннаяПодсказка" id="75"/>
-						</HTMLDocumentField>
+						<Table name="ИсторияВопросов" id="339">
+							<Representation>List</Representation>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>ИсторияВопросов</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ИсторияВопросовКонтекстноеМеню" id="340"/>
+							<AutoCommandBar name="ИсторияВопросовКоманднаяПанель" id="341">
+								<Autofill>false</Autofill>
+							</AutoCommandBar>
+							<ExtendedTooltip name="ИсторияВопросовРасширеннаяПодсказка" id="342"/>
+							<SearchStringAddition name="ИсторияВопросовСтрокаПоиска" id="343">
+								<AdditionSource>
+									<Item>ИсторияВопросов</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ИсторияВопросовСтрокаПоискаКонтекстноеМеню" id="344"/>
+								<ExtendedTooltip name="ИсторияВопросовСтрокаПоискаРасширеннаяПодсказка" id="345"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ИсторияВопросовСостояниеПросмотра" id="346">
+								<AdditionSource>
+									<Item>ИсторияВопросов</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ИсторияВопросовСостояниеПросмотраКонтекстноеМеню" id="347"/>
+								<ExtendedTooltip name="ИсторияВопросовСостояниеПросмотраРасширеннаяПодсказка" id="348"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ИсторияВопросовУправлениеПоиском" id="349">
+								<AdditionSource>
+									<Item>ИсторияВопросов</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ИсторияВопросовУправлениеПоискомКонтекстноеМеню" id="350"/>
+								<ExtendedTooltip name="ИсторияВопросовУправлениеПоискомРасширеннаяПодсказка" id="351"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="BeforeAddRow">ИсторияВопросовПередНачаломДобавления</Event>
+								<Event name="BeforeDeleteRow">ИсторияВопросовПередУдалением</Event>
+								<Event name="BeforeRowChange">ИсторияВопросовПередНачаломИзменения</Event>
+							</Events>
+							<ChildItems>
+								<InputField name="ИсторияВопросовДата" id="352">
+									<DataPath>ИсторияВопросов.Дата</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ИсторияВопросовДатаКонтекстноеМеню" id="353"/>
+									<ExtendedTooltip name="ИсторияВопросовДатаРасширеннаяПодсказка" id="354"/>
+								</InputField>
+								<InputField name="ИсторияВопросовАвтор" id="358">
+									<DataPath>ИсторияВопросов.Автор</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ИсторияВопросовАвторКонтекстноеМеню" id="359"/>
+									<ExtendedTooltip name="ИсторияВопросовАвторРасширеннаяПодсказка" id="360"/>
+								</InputField>
+								<InputField name="ИсторияВопросовАвторИсполнения" id="361">
+									<DataPath>ИсторияВопросов.АвторИсполнения</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ИсторияВопросовАвторИсполненияКонтекстноеМеню" id="362"/>
+									<ExtendedTooltip name="ИсторияВопросовАвторИсполненияРасширеннаяПодсказка" id="363"/>
+								</InputField>
+								<InputField name="ИсторияВопросовИсполнение" id="364">
+									<DataPath>ИсторияВопросов.Исполнение</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ИсторияВопросовИсполнениеКонтекстноеМеню" id="365"/>
+									<ExtendedTooltip name="ИсторияВопросовИсполнениеРасширеннаяПодсказка" id="366"/>
+								</InputField>
+								<InputField name="ИсторияВопросовСообщение" id="367">
+									<DataPath>ИсторияВопросов.Сообщение</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ИсторияВопросовСообщениеКонтекстноеМеню" id="368"/>
+									<ExtendedTooltip name="ИсторияВопросовСообщениеРасширеннаяПодсказка" id="369"/>
+								</InputField>
+							</ChildItems>
+						</Table>
 						<UsualGroup name="ГруппаСлужебная" id="164">
 							<Title>
 								<v8:item>
@@ -1192,21 +1264,6 @@
 			</Type>
 			<MainAttribute>true</MainAttribute>
 			<SavedData>true</SavedData>
-		</Attribute>
-		<Attribute name="История" id="3">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>История</v8:content>
-				</v8:item>
-			</Title>
-			<Type>
-				<v8:Type>xs:string</v8:Type>
-				<v8:StringQualifiers>
-					<v8:Length>0</v8:Length>
-					<v8:AllowedLength>Variable</v8:AllowedLength>
-				</v8:StringQualifiers>
-			</Type>
 		</Attribute>
 		<Attribute name="ТекущиеСостояние" id="4">
 			<Title>
@@ -1435,6 +1492,96 @@
 			<Type>
 				<v8:Type>cfg:CatalogRef.Сотрудники</v8:Type>
 			</Type>
+		</Attribute>
+		<Attribute name="ИсторияВопросов" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>История вопросов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Дата" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="Задача" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Задача</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:TaskRef.ЗадачиОбщие</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Автор" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Автор</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Пользователи</v8:Type>
+					</Type>
+				</Column>
+				<Column name="АвторИсполнения" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Автор исполнения</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Пользователи</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Исполнение" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Исполнение</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>200</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Сообщение" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сообщение</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>200</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
 		</Attribute>
 		<ConditionalAppearance>
 			<dcsset:item>
