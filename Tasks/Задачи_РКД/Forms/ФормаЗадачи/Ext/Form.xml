@@ -239,6 +239,19 @@
 									</Picture>
 									<ExtendedTooltip name="КнопкаОтложитьКонструкторРасширеннаяПодсказка" id="55"/>
 								</Button>
+								<Button name="КнопкаСбросКонструктором" id="159">
+									<Type>UsualButton</Type>
+									<Representation>Picture</Representation>
+									<Width>4</Width>
+									<Height>2</Height>
+									<CommandName>Form.Command.СбросКонструктором</CommandName>
+									<Picture>
+										<xr:Ref>CommonPicture.Сброс50х50</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<PictureLocation>Left</PictureLocation>
+									<ExtendedTooltip name="КнопкаСбросКонструкторомРасширеннаяПодсказка" id="160"/>
+								</Button>
 							</ChildItems>
 						</UsualGroup>
 						<Button name="КнопкаИстория" id="60">
@@ -990,6 +1003,21 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ТаймингЗадачи</Action>
+		</Command>
+		<Command name="СбросКонструктором" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сброс конструктором</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сброс конструктором</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СбросКонструктором</Action>
 		</Command>
 	</Commands>
 	<CommandInterface>
