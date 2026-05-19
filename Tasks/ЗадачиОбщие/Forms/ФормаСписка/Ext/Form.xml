@@ -160,7 +160,7 @@
 	ДанныеЗадачи.Исполнитель КАК Исполнитель
 ИЗ
 	Задача.ЗадачиОбщие КАК ЗадачаЗадачиОбщие
-		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ДанныеЗадачи КАК ДанныеЗадачи
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ДанныеЗадачи.СрезПоследних КАК ДанныеЗадачи
 		ПО ДанныеЗадачи.Задача = ЗадачаЗадачиОбщие.Ссылка</QueryText>
 				<Field xsi:type="dcssch:DataSetFieldField">
 					<dcssch:dataPath>Исполнение</dcssch:dataPath>
@@ -238,6 +238,39 @@
 					<dcssch:dataPath>Исполнитель</dcssch:dataPath>
 					<dcssch:field>Исполнитель</dcssch:field>
 				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Наблюдатели</dcssch:dataPath>
+					<dcssch:field>Наблюдатели</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ДатаВыполнения</dcssch:dataPath>
+					<dcssch:field>ДатаВыполнения</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Отменена</dcssch:dataPath>
+					<dcssch:field>Отменена</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Задача</dcssch:dataPath>
+					<dcssch:field>Задача</dcssch:field>
+				</Field>
+				<Parameter>
+					<dcssch:name>Период</dcssch:name>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Период</v8:content>
+						</v8:item>
+					</dcssch:title>
+					<dcssch:valueType>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>DateTime</v8:DateFractions>
+						</v8:DateQualifiers>
+					</dcssch:valueType>
+					<dcssch:value xsi:type="xs:dateTime">0001-01-01T00:00:00</dcssch:value>
+					<dcssch:useRestriction>false</dcssch:useRestriction>
+				</Parameter>
 				<MainTable>Task.ЗадачиОбщие</MainTable>
 				<ListSettings>
 					<dcsset:filter>

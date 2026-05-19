@@ -303,6 +303,12 @@
 										<CommandName>Form.Command.ОбщиеДляМеня</CommandName>
 										<ExtendedTooltip name="ТаблицаОбщихЗадачОбщиеДляМеняРасширеннаяПодсказка" id="1537"/>
 									</Button>
+									<Button name="ТаблицаОбщихЗадачОбщиеНаблюдатель" id="1557">
+										<Type>CommandBarButton</Type>
+										<Check>true</Check>
+										<CommandName>Form.Command.ОбщиеНаблюдатель</CommandName>
+										<ExtendedTooltip name="ТаблицаОбщихЗадачОбщиеНаблюдательРасширеннаяПодсказка" id="1558"/>
+									</Button>
 								</ChildItems>
 							</AutoCommandBar>
 							<ExtendedTooltip name="ТаблицаОбщихЗадачРасширеннаяПодсказка" id="1363"/>
@@ -336,6 +342,18 @@
 								<Event name="BeforeRowChange">ОбщиеЗадачиПередНачаломИзменения</Event>
 							</Events>
 							<ChildItems>
+								<PictureField name="ТаблицаОбщихЗадачКартинка" id="1559">
+									<DataPath>ТаблицаОбщихЗадач.Картинка</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content> </v8:content>
+										</v8:item>
+									</Title>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ТаблицаОбщихЗадачКартинкаКонтекстноеМеню" id="1560"/>
+									<ExtendedTooltip name="ТаблицаОбщихЗадачКартинкаРасширеннаяПодсказка" id="1561"/>
+								</PictureField>
 								<InputField name="ТаблицаОбщихЗадачДата" id="1373">
 									<DataPath>ТаблицаОбщихЗадач.Дата</DataPath>
 									<EditMode>EnterOnInput</EditMode>
@@ -4866,6 +4884,22 @@
 						<v8:Type>cfg:CatalogRef.Пользователи</v8:Type>
 					</Type>
 				</Column>
+				<Column name="Картинка" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Картинка</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>1</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
 			</Columns>
 		</Attribute>
 		<Attribute name="ВнешнееПроизводство" id="25">
@@ -5268,6 +5302,21 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ТаймингПКД</Action>
+		</Command>
+		<Command name="ОбщиеНаблюдатель" id="16">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Наблюдатель</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Общие мои задачи</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбщиеНаблюдатель</Action>
 		</Command>
 	</Commands>
 </Form>
