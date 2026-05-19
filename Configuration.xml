@@ -1654,7 +1654,7 @@
 			<CommonCommand>УстановитьРасширениеДляРаботыС1СПредприятием</CommonCommand>
 			<CommonCommand>ФайлыВТоме</CommonCommand>
 			<CommandGroup>Взаимодействия</CommandGroup>
-			<CommandGroup>ДокументыКонструирования</CommandGroup>
+			<CommandGroup>Документы</CommandGroup>
 			<CommandGroup>ЗамерыДокументы</CommandGroup>
 			<CommandGroup>ЗамерыОтчеты</CommandGroup>
 			<CommandGroup>ЗамерыСправочники</CommandGroup>
@@ -1662,7 +1662,7 @@
 			<CommandGroup>Органайзер</CommandGroup>
 			<CommandGroup>Печать</CommandGroup>
 			<CommandGroup>Подрядчики</CommandGroup>
-			<CommandGroup>СправочникиКонструирования</CommandGroup>
+			<CommandGroup>Справочники</CommandGroup>
 			<Constant>Адрес_API_Telegramm</Constant>
 			<Constant>АдресаСерверовМетокВремени</Constant>
 			<Constant>АдресПубликацииИнформационнойБазыВИнтернете</Constant>
@@ -1955,6 +1955,7 @@
 			<Catalog>ТелеграммБоты</Catalog>
 			<Catalog>ТелефонныйЗвонокПрисоединенныеФайлы</Catalog>
 			<Catalog>ТипыКомплектов</Catalog>
+			<Catalog>ТипыРабочихДней</Catalog>
 			<Catalog>ТомаХраненияФайлов</Catalog>
 			<Catalog>УслугиПриложенияДоговора</Catalog>
 			<Catalog>УчетныеЗаписиСинхронизацииФайлов</Catalog>
@@ -1982,8 +1983,8 @@
 			<Document>ИзделиеПредварительный</Document>
 			<Document>ИзменениеДатыВозвратаИзПодряда</Document>
 			<Document>КомплектыПодрядчикамПлан</Document>
-			<Document>НазначениеПодрядчика</Document>
 			<Document>НазначениеКонструктора</Document>
+			<Document>НазначениеПодрядчика</Document>
 			<Document>ОбещанияВыполения</Document>
 			<Document>ОзнакомительныйВыезд</Document>
 			<Document>ОтгрузкаГотовойПродукции</Document>
@@ -1999,6 +2000,7 @@
 			<Document>ПоступлениеМатериалов</Document>
 			<Document>ПотребностьВМатериалах</Document>
 			<Document>ПредварительнаяСмета</Document>
+			<Document>ПриемНаРаботу</Document>
 			<Document>ПриостановкаИзделияЗаказчика</Document>
 			<Document>ПриостановкаИзделияКомплект</Document>
 			<Document>ПродолжениеПроизводства</Document>
@@ -2010,6 +2012,7 @@
 			<Document>СрокиПроектаМонтаж</Document>
 			<Document>СрокиПроектаПроизводство</Document>
 			<Document>ТелефонныйЗвонок</Document>
+			<Document>УвольнениеСРаботы</Document>
 			<Document>УстановкаЦены</Document>
 			<Document>ЦеныНоменклатурыДокументов</Document>
 			<Document>ЭлектронноеПисьмоВходящее</Document>
@@ -2096,7 +2099,6 @@
 			<Enum>ТипыОтчетов</Enum>
 			<Enum>ТипыПодписиКриптографии</Enum>
 			<Enum>ТипыПредопределенныхПапокПисем</Enum>
-			<Enum>ТипыРабочихДней</Enum>
 			<Enum>ТипыСобытий</Enum>
 			<Enum>ТипыСобытияЗамеров</Enum>
 			<Enum>ТипыТекстовЭлектронныхПисем</Enum>
@@ -2169,6 +2171,7 @@
 			<Report>СостояниеПроектов</Report>
 			<Report>СтруктураОрганизации</Report>
 			<Report>УниверсальныйОтчет</Report>
+			<Report>СтруктураПредпириятия</Report>
 			<DataProcessor>АвтоматическоеИзвлечениеТекстов</DataProcessor>
 			<DataProcessor>АктивироватьКонтактнуюИнформацию</DataProcessor>
 			<DataProcessor>АктивныеПользователи</DataProcessor>
@@ -2394,6 +2397,7 @@
 			<InformationRegister>ЧастичныйПодряд</InformationRegister>
 			<InformationRegister>ЭлектронныеПодписи</InformationRegister>
 			<InformationRegister>ЭлектронныеПодписиМЧД</InformationRegister>
+			<InformationRegister>ПриемНаРаботу</InformationRegister>
 			<AccumulationRegister>ЗаказПоставщику</AccumulationRegister>
 			<AccumulationRegister>ИзделияУПодрядчика</AccumulationRegister>
 			<AccumulationRegister>КомплектыУПодрядчика</AccumulationRegister>
