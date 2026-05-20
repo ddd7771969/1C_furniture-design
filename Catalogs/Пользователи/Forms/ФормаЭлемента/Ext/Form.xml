@@ -1418,6 +1418,36 @@
 						</InputField>
 					</ChildItems>
 				</Page>
+				<Page name="ГруппаДоступы" id="482">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Доступы</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа доступы</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаДоступыРасширеннаяПодсказка" id="483"/>
+					<ChildItems>
+						<InputField name="БазаЗнанийЛогин" id="484">
+							<DataPath>Объект.БазаЗнанийЛогин</DataPath>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="БазаЗнанийЛогинКонтекстноеМеню" id="485"/>
+							<ExtendedTooltip name="БазаЗнанийЛогинРасширеннаяПодсказка" id="486"/>
+						</InputField>
+						<InputField name="БазаЗнанийПароль" id="487">
+							<DataPath>Объект.БазаЗнанийПароль</DataPath>
+							<PasswordMode>true</PasswordMode>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="БазаЗнанийПарольКонтекстноеМеню" id="488"/>
+							<ExtendedTooltip name="БазаЗнанийПарольРасширеннаяПодсказка" id="489"/>
+						</InputField>
+					</ChildItems>
+				</Page>
 			</ChildItems>
 		</Pages>
 	</ChildItems>

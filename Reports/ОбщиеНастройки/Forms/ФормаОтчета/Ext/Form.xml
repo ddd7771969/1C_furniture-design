@@ -657,49 +657,6 @@
 						</Table>
 					</ChildItems>
 				</Page>
-				<Page name="API_Битрикс" id="170">
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>API битрикс</v8:content>
-						</v8:item>
-					</Title>
-					<ToolTip>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>API битрикс</v8:content>
-						</v8:item>
-					</ToolTip>
-					<ExtendedTooltip name="API_БитриксРасширеннаяПодсказка" id="171"/>
-					<ChildItems>
-						<InputField name="СекретныйКлючAPI" id="172">
-							<DataPath>СекретныйКлючAPI</DataPath>
-							<PasswordMode>true</PasswordMode>
-							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-							<ContextMenu name="СекретныйКлючAPIКонтекстноеМеню" id="173"/>
-							<ExtendedTooltip name="СекретныйКлючAPIРасширеннаяПодсказка" id="174"/>
-						</InputField>
-						<InputField name="ВремяЖизниКлючаAPI" id="175">
-							<DataPath>ВремяЖизниКлючаAPI</DataPath>
-							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-							<ContextMenu name="ВремяЖизниКлючаAPIКонтекстноеМеню" id="176"/>
-							<ExtendedTooltip name="ВремяЖизниКлючаAPIРасширеннаяПодсказка" id="177"/>
-						</InputField>
-						<InputField name="КодПриложенияAPI" id="178">
-							<DataPath>КодПриложенияAPI</DataPath>
-							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-							<ContextMenu name="КодПриложенияAPIКонтекстноеМеню" id="179"/>
-							<ExtendedTooltip name="КодПриложенияAPIРасширеннаяПодсказка" id="180"/>
-						</InputField>
-						<InputField name="КлючПриложенияAPI" id="181">
-							<DataPath>КлючПриложенияAPI</DataPath>
-							<PasswordMode>true</PasswordMode>
-							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-							<ContextMenu name="КлючПриложенияAPIКонтекстноеМеню" id="182"/>
-							<ExtendedTooltip name="КлючПриложенияAPIРасширеннаяПодсказка" id="183"/>
-						</InputField>
-					</ChildItems>
-				</Page>
 				<Page name="ГруппаНормыВремени" id="157">
 					<Title>
 						<v8:item>
@@ -1003,6 +960,29 @@
 								</UsualGroup>
 							</ChildItems>
 						</UsualGroup>
+					</ChildItems>
+				</Page>
+				<Page name="ГруппаДоступы" id="292">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Доступы</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа доступы</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаДоступыРасширеннаяПодсказка" id="293"/>
+					<ChildItems>
+						<InputField name="URLБазыЗнаний" id="294">
+							<DataPath>URLБазыЗнаний</DataPath>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="URLБазыЗнанийКонтекстноеМеню" id="295"/>
+							<ExtendedTooltip name="URLБазыЗнанийРасширеннаяПодсказка" id="296"/>
+						</InputField>
 					</ChildItems>
 				</Page>
 			</ChildItems>
@@ -1447,67 +1427,6 @@
 				</v8:NumberQualifiers>
 			</Type>
 		</Attribute>
-		<Attribute name="СекретныйКлючAPI" id="27">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Секретный ключ API</v8:content>
-				</v8:item>
-			</Title>
-			<Type>
-				<v8:Type>xs:string</v8:Type>
-				<v8:StringQualifiers>
-					<v8:Length>200</v8:Length>
-					<v8:AllowedLength>Variable</v8:AllowedLength>
-				</v8:StringQualifiers>
-			</Type>
-		</Attribute>
-		<Attribute name="ВремяЖизниКлючаAPI" id="28">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Время жизни ключа API (в сек)</v8:content>
-				</v8:item>
-			</Title>
-			<Type>
-				<v8:Type>xs:decimal</v8:Type>
-				<v8:NumberQualifiers>
-					<v8:Digits>10</v8:Digits>
-					<v8:FractionDigits>0</v8:FractionDigits>
-					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
-				</v8:NumberQualifiers>
-			</Type>
-		</Attribute>
-		<Attribute name="КодПриложенияAPI" id="29">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Код приложения API</v8:content>
-				</v8:item>
-			</Title>
-			<Type>
-				<v8:Type>xs:string</v8:Type>
-				<v8:StringQualifiers>
-					<v8:Length>0</v8:Length>
-					<v8:AllowedLength>Variable</v8:AllowedLength>
-				</v8:StringQualifiers>
-			</Type>
-		</Attribute>
-		<Attribute name="КлючПриложенияAPI" id="30">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Ключ приложения API</v8:content>
-				</v8:item>
-			</Title>
-			<Type>
-				<v8:Type>xs:string</v8:Type>
-				<v8:StringQualifiers>
-					<v8:Length>0</v8:Length>
-					<v8:AllowedLength>Variable</v8:AllowedLength>
-				</v8:StringQualifiers>
-			</Type>
-		</Attribute>
 		<Attribute name="КореньПапкиPDM" id="26">
 			<Title>
 				<v8:item>
@@ -1885,6 +1804,21 @@
 				<v8:DateQualifiers>
 					<v8:DateFractions>Time</v8:DateFractions>
 				</v8:DateQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="URLБазыЗнаний" id="27">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>URL базы знаний</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
 			</Type>
 		</Attribute>
 	</Attributes>
