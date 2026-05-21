@@ -11,6 +11,16 @@
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="5"/>
 			<ChildItems>
+				<Button name="Обновить" id="20">
+					<Type>UsualButton</Type>
+					<Representation>Picture</Representation>
+					<CommandName>Form.Command.Обновить</CommandName>
+					<Picture>
+						<xr:Ref>StdPicture.Refresh</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</Picture>
+					<ExtendedTooltip name="ОбновитьРасширеннаяПодсказка" id="21"/>
+				</Button>
 				<InputField name="Месяц" id="9">
 					<DataPath>Месяц</DataPath>
 					<SpinButton>true</SpinButton>
@@ -199,6 +209,21 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ОткрытьКалендарь</Action>
+		</Command>
+		<Command name="Обновить" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Обновить</Action>
 		</Command>
 	</Commands>
 </Form>
