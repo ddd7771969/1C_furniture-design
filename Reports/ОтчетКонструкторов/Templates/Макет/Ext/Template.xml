@@ -10,7 +10,7 @@
 		</languageInfo>
 	</languageSettings>
 	<columns>
-		<size>11</size>
+		<size>10</size>
 		<columnsItem>
 			<index>0</index>
 			<column>
@@ -227,17 +227,6 @@
 					</tl>
 				</c>
 			</c>
-			<c>
-				<c>
-					<f>18</f>
-					<tl>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Рабочих дней</v8:content>
-						</v8:item>
-					</tl>
-				</c>
-			</c>
 		</row>
 	</rowsItem>
 	<rowsItem>
@@ -247,12 +236,6 @@
 				<i>4</i>
 				<c>
 					<f>10</f>
-				</c>
-			</c>
-			<c>
-				<i>10</i>
-				<c>
-					<f>9</f>
 				</c>
 			</c>
 		</row>
@@ -266,12 +249,6 @@
 					<f>10</f>
 				</c>
 			</c>
-			<c>
-				<i>10</i>
-				<c>
-					<f>9</f>
-				</c>
-			</c>
 		</row>
 	</rowsItem>
 	<rowsItem>
@@ -280,26 +257,26 @@
 			<c>
 				<i>1</i>
 				<c>
-					<f>19</f>
+					<f>18</f>
 					<parameter>СотрудникНаименование</parameter>
 					<detailParameter>Сотрудник</detailParameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>20</f>
+					<f>19</f>
 					<parameter>Ф</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>20</f>
-					<parameter>РД</parameter>
+					<f>19</f>
+					<parameter>РабочихДней</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>21</f>
+					<f>20</f>
 					<parameter>Оклад</parameter>
 					<detailParameter>СтруктураНорма</detailParameter>
 				</c>
@@ -313,45 +290,50 @@
 			</c>
 			<c>
 				<c>
-					<f>21</f>
+					<f>22</f>
 					<parameter>ВыработкаНорматив</parameter>
 					<detailParameter>СтруктураНорма</detailParameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>21</f>
+					<f>22</f>
 					<parameter>ВыработкаЭффективная</parameter>
 					<detailParameter>СтруктураНорма</detailParameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>21</f>
+					<f>20</f>
 					<parameter>Стоимость</parameter>
 					<detailParameter>СтруктураНорма</detailParameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>21</f>
+					<f>20</f>
 					<parameter>СтоимостьЭффективная</parameter>
-					<detailParameter>СтруктураНорма</detailParameter>
-				</c>
-			</c>
-			<c>
-				<c>
-					<f>21</f>
-					<parameter>РабочихДней</parameter>
 					<detailParameter>СтруктураНорма</detailParameter>
 				</c>
 			</c>
 		</row>
 	</rowsItem>
+	<rowsItem>
+		<index>6</index>
+		<row>
+			<c>
+				<i>8</i>
+				<c>
+					<f>0</f>
+					<tl/>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
 	<templateMode>true</templateMode>
-	<defaultFormatIndex>22</defaultFormatIndex>
-	<height>6</height>
-	<vgRows>6</vgRows>
+	<defaultFormatIndex>23</defaultFormatIndex>
+	<height>7</height>
+	<vgRows>7</vgRows>
 	<namedItem xsi:type="NamedItemCells">
 		<name>Строка</name>
 		<area>
@@ -382,7 +364,7 @@
 		<width>17</width>
 	</format>
 	<format>
-		<width>175</width>
+		<width>71</width>
 	</format>
 	<format>
 		<width>121</width>
@@ -468,18 +450,6 @@
 		<textPlacement>Wrap</textPlacement>
 	</format>
 	<format>
-		<font>2</font>
-		<border>0</border>
-		<height>184</height>
-		<borderColor>#000000</borderColor>
-		<width>138</width>
-		<horizontalAlignment>Center</horizontalAlignment>
-		<verticalAlignment>Center</verticalAlignment>
-		<textColor>#000000</textColor>
-		<textPlacement>Wrap</textPlacement>
-		<hidden>false</hidden>
-	</format>
-	<format>
 		<border>0</border>
 		<borderColor>#000000</borderColor>
 		<width>277</width>
@@ -509,6 +479,38 @@
 		<textColor>#000000</textColor>
 		<textPlacement>Auto</textPlacement>
 		<fillType>Parameter</fillType>
+	</format>
+	<format>
+		<border>0</border>
+		<borderColor>#000000</borderColor>
+		<width>72</width>
+		<horizontalAlignment>Center</horizontalAlignment>
+		<verticalAlignment>Center</verticalAlignment>
+		<textColor>#000000</textColor>
+		<textPlacement>Auto</textPlacement>
+		<fillType>Parameter</fillType>
+		<format>
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>ЧДЦ=1</v8:content>
+			</v8:item>
+		</format>
+	</format>
+	<format>
+		<border>0</border>
+		<borderColor>#000000</borderColor>
+		<width>72</width>
+		<horizontalAlignment>Center</horizontalAlignment>
+		<verticalAlignment>Center</verticalAlignment>
+		<textColor>#000000</textColor>
+		<textPlacement>Auto</textPlacement>
+		<fillType>Parameter</fillType>
+		<format>
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>ЧДЦ=2</v8:content>
+			</v8:item>
+		</format>
 	</format>
 	<format>
 		<width>72</width>
