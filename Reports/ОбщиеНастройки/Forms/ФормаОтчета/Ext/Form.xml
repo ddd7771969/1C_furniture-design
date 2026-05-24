@@ -540,12 +540,26 @@
 					</ToolTip>
 					<ExtendedTooltip name="ГруппаВыгрузкаРасширеннаяПодсказка" id="123"/>
 					<ChildItems>
-						<InputField name="КореньПапкиPDM" id="184">
-							<DataPath>КореньПапкиPDM</DataPath>
-							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-							<ContextMenu name="КореньПапкиPDMКонтекстноеМеню" id="185"/>
-							<ExtendedTooltip name="КореньПапкиPDMРасширеннаяПодсказка" id="186"/>
-						</InputField>
+						<UsualGroup name="Группа10" id="297">
+							<Group>AlwaysHorizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа10РасширеннаяПодсказка" id="298"/>
+							<ChildItems>
+								<InputField name="КореньПапкиPDM" id="184">
+									<DataPath>КореньПапкиPDM</DataPath>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="КореньПапкиPDMКонтекстноеМеню" id="185"/>
+									<ExtendedTooltip name="КореньПапкиPDMРасширеннаяПодсказка" id="186"/>
+								</InputField>
+								<InputField name="ВремяОпросаФайлов" id="299">
+									<DataPath>ВремяОпросаФайлов</DataPath>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ВремяОпросаФайловКонтекстноеМеню" id="300"/>
+									<ExtendedTooltip name="ВремяОпросаФайловРасширеннаяПодсказка" id="301"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
 						<Table name="тзВыгрузка_в_PDM" id="124">
 							<Representation>List</Representation>
 							<AutoInsertNewRow>true</AutoInsertNewRow>
@@ -1819,6 +1833,22 @@
 					<v8:Length>0</v8:Length>
 					<v8:AllowedLength>Variable</v8:AllowedLength>
 				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ВремяОпросаФайлов" id="28">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Время опроса файлов (сек)</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>3</v8:Digits>
+					<v8:FractionDigits>1</v8:FractionDigits>
+					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
 			</Type>
 		</Attribute>
 	</Attributes>
