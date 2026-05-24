@@ -259,6 +259,7 @@
 			<Subsystem>PDM</Subsystem>
 			<Subsystem>Scrum</Subsystem>
 			<Subsystem>Администрирование</Subsystem>
+			<Subsystem>БазаЗнаний</Subsystem>
 			<Subsystem>Доступы</Subsystem>
 			<Subsystem>Замеры</Subsystem>
 			<Subsystem>КадровыйУчет</Subsystem>
@@ -588,7 +589,6 @@
 			<CommonPicture>НезавершившаясяПроверка</CommonPicture>
 			<CommonPicture>НетГраницы</CommonPicture>
 			<CommonPicture>ОбновитьФайлИзФайлаНаДиске</CommonPicture>
-			<CommonPicture>ОбщаяКартинка1</CommonPicture>
 			<CommonPicture>ОбщиеЗадачи</CommonPicture>
 			<CommonPicture>ОбъединитьЯчейки</CommonPicture>
 			<CommonPicture>ОбычныйДоступСФлажком</CommonPicture>
@@ -834,6 +834,7 @@
 			<SessionParameter>ВыполняетсяУдалениеОбъектов</SessionParameter>
 			<SessionParameter>ДействующиеДатыЗапретаИзменения</SessionParameter>
 			<SessionParameter>ДлительныеОперации</SessionParameter>
+			<SessionParameter>ЕстьВизуализацияСообщений</SessionParameter>
 			<SessionParameter>ИнтерактивнаяПроверкаЗаполненияКонтактнойИнформации</SessionParameter>
 			<SessionParameter>ИнтерактивнаяПроверкаЗаполненияСвойств</SessionParameter>
 			<SessionParameter>КлючДанныхПовторногоИспользования</SessionParameter>
@@ -862,7 +863,6 @@
 			<SessionParameter>ТекущийПользователь</SessionParameter>
 			<SessionParameter>ТипыВладельцевНастроекПрав</SessionParameter>
 			<SessionParameter>УстановленныеРасширения</SessionParameter>
-			<SessionParameter>ЕстьВизуализацияСообщений</SessionParameter>
 			<Role>Messenger</Role>
 			<Role>Scrum</Role>
 			<Role>АдминистраторКанбан</Role>
@@ -1133,6 +1133,7 @@
 			<CommonModule>омPDM</CommonModule>
 			<CommonModule>омPDMНаСервере</CommonModule>
 			<CommonModule>омPDMНаСервереПовтор</CommonModule>
+			<CommonModule>омБазаЗнанийПовтор</CommonModule>
 			<CommonModule>омВнешнееПроизводство</CommonModule>
 			<CommonModule>омВыгрузкаCRMНаКлиенте</CommonModule>
 			<CommonModule>омВыгрузкаCRMНаСевере</CommonModule>
@@ -1491,6 +1492,7 @@
 			<EventSubscription>ОпределитьФормуПрисоединенногоФайлаМЧД</EventSubscription>
 			<EventSubscription>ОпределитьФормуПрисоединенногоФайлаШаблоныСообщений</EventSubscription>
 			<EventSubscription>ОтключитьРассылкиПередУдалениемТипаПолучателейРассылки</EventSubscription>
+			<EventSubscription>ОтменаПроведенияПланоВыедатыПомещений</EventSubscription>
 			<EventSubscription>ОчиститьИнформациюОбАвтореВерсии</EventSubscription>
 			<EventSubscription>ПолучениеПолейПредставленияВзаимодействия</EventSubscription>
 			<EventSubscription>ПолучениеПредставленияВзаимодействия</EventSubscription>
@@ -1509,7 +1511,6 @@
 			<EventSubscription>УстановитьПометкуУдаленияПрисоединенныхФайловДокументовВзаимодействия</EventSubscription>
 			<EventSubscription>УстановитьСнятьПометкуУдаленияЗаметок</EventSubscription>
 			<EventSubscription>УстановитьСтатусИзмененияПометкиУдаленияПользователя</EventSubscription>
-			<EventSubscription>ОтменаПроведенияПлановыедатыПомещений</EventSubscription>
 			<ScheduledJob>ЗагрузкаКурсовВалют</ScheduledJob>
 			<ScheduledJob>ЗаполнениеПараметровРаботыРасширений</ScheduledJob>
 			<ScheduledJob>ЗапускОчередиPDM</ScheduledJob>
@@ -1861,6 +1862,7 @@
 			<CommonForm>ФормаПереносНаЭтап</CommonForm>
 			<CommonForm>ФормаПоиска</CommonForm>
 			<CommonForm>ЭлектроннаяПодпись</CommonForm>
+			<Catalog>БазаЗнанийСсылки</Catalog>
 			<Catalog>Бригады</Catalog>
 			<Catalog>Валюты</Catalog>
 			<Catalog>ВариантыОтчетов</Catalog>
