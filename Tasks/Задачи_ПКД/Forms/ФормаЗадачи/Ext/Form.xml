@@ -306,6 +306,12 @@
 									</Picture>
 									<ExtendedTooltip name="ОбновитьИсполнителяРасширеннаяПодсказка" id="268"/>
 								</Button>
+								<LabelField name="ОписаниеОбменаСПДМ" id="370">
+									<DataPath>ОписаниеОбменаСПДМ</DataPath>
+									<TitleLocation>None</TitleLocation>
+									<ContextMenu name="ОписаниеОбменаСПДМКонтекстноеМеню" id="371"/>
+									<ExtendedTooltip name="ОписаниеОбменаСПДМРасширеннаяПодсказка" id="372"/>
+								</LabelField>
 							</ChildItems>
 						</UsualGroup>
 						<UsualGroup name="Группа8" id="127">
@@ -1582,6 +1588,21 @@
 					</Type>
 				</Column>
 			</Columns>
+		</Attribute>
+		<Attribute name="ОписаниеОбменаСПДМ" id="16">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Описание обмена с ПДМ</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
 		</Attribute>
 		<ConditionalAppearance>
 			<dcsset:item>
