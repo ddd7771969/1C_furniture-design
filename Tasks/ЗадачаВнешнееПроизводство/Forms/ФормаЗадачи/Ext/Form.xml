@@ -108,12 +108,6 @@
 									<ContextMenu name="ДатаОкончанияПКДКонтекстноеМеню" id="59"/>
 									<ExtendedTooltip name="ДатаОкончанияПКДРасширеннаяПодсказка" id="60"/>
 								</InputField>
-								<CheckBoxField name="ДоставкаНаСклад" id="38">
-									<DataPath>Объект.ДоставкаНаСклад</DataPath>
-									<CheckBoxType>Auto</CheckBoxType>
-									<ContextMenu name="ДоставкаНаСкладКонтекстноеМеню" id="39"/>
-									<ExtendedTooltip name="ДоставкаНаСкладРасширеннаяПодсказка" id="40"/>
-								</CheckBoxField>
 							</ChildItems>
 						</UsualGroup>
 						<UsualGroup name="Группа5" id="61">
@@ -128,13 +122,48 @@
 									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 									<ContextMenu name="ИсполнительКонтекстноеМеню" id="23"/>
 									<ExtendedTooltip name="ИсполнительРасширеннаяПодсказка" id="24"/>
+									<Events>
+										<Event name="OnChange">ИсполнительПриИзменении</Event>
+									</Events>
 								</InputField>
-								<InputField name="ТипВнешнегоПроизводства" id="63">
+								<LabelField name="ТипВнешнегоПроизводства" id="63">
 									<DataPath>ТипВнешнегоПроизводства</DataPath>
 									<ReadOnly>true</ReadOnly>
-									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<TitleLocation>None</TitleLocation>
 									<ContextMenu name="ТипВнешнегоПроизводстваКонтекстноеМеню" id="64"/>
 									<ExtendedTooltip name="ТипВнешнегоПроизводстваРасширеннаяПодсказка" id="65"/>
+								</LabelField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="ГруппаПользователи" id="70">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа пользователи</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа пользователи</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>AlwaysHorizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаПользователиРасширеннаяПодсказка" id="71"/>
+							<ChildItems>
+								<InputField name="ВедущийКонструктор" id="72">
+									<DataPath>Объект.ВедущийКонструктор</DataPath>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ВедущийКонструкторКонтекстноеМеню" id="73"/>
+									<ExtendedTooltip name="ВедущийКонструкторРасширеннаяПодсказка" id="74"/>
+								</InputField>
+								<InputField name="Дизайнер" id="75">
+									<DataPath>Объект.Дизайнер</DataPath>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ДизайнерКонтекстноеМеню" id="76"/>
+									<ExtendedTooltip name="ДизайнерРасширеннаяПодсказка" id="77"/>
 								</InputField>
 							</ChildItems>
 						</UsualGroup>
@@ -220,6 +249,45 @@
 			<ContextMenu name="АвторКонтекстноеМеню" id="11"/>
 			<ExtendedTooltip name="АвторРасширеннаяПодсказка" id="12"/>
 		</InputField>
+		<UsualGroup name="ГруппаРедактирование" id="78">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа редактирование</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа редактирование</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Behavior>Collapsible</Behavior>
+			<Collapsed>true</Collapsed>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаРедактированиеРасширеннаяПодсказка" id="79"/>
+			<ChildItems>
+				<InputField name="ТипЗадачи1" id="80">
+					<DataPath>Объект.ТипЗадачи</DataPath>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ТипЗадачи1КонтекстноеМеню" id="81"/>
+					<ExtendedTooltip name="ТипЗадачи1РасширеннаяПодсказка" id="82"/>
+				</InputField>
+				<CheckBoxField name="ПКД" id="83">
+					<DataPath>Объект.ПКД</DataPath>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ПКДКонтекстноеМеню" id="84"/>
+					<ExtendedTooltip name="ПКДРасширеннаяПодсказка" id="85"/>
+				</CheckBoxField>
+				<CheckBoxField name="Выполнена" id="86">
+					<DataPath>Объект.Executed</DataPath>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ВыполненаКонтекстноеМеню" id="87"/>
+					<ExtendedTooltip name="ВыполненаРасширеннаяПодсказка" id="88"/>
+				</CheckBoxField>
+			</ChildItems>
+		</UsualGroup>
 	</ChildItems>
 	<Attributes>
 		<Attribute name="Объект" id="1">
@@ -237,7 +305,11 @@
 				</v8:item>
 			</Title>
 			<Type>
-				<v8:TypeId>a2e76c74-ea76-44ac-a261-6f05fc5a3d8d</v8:TypeId>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
 			</Type>
 		</Attribute>
 		<Attribute name="Комментарий" id="3">

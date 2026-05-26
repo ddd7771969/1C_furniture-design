@@ -916,10 +916,17 @@
 									</ChildItems>
 								</Table>
 								<Table name="ВнешнееПроизводство1" id="1445">
+									<TitleLocation>Top</TitleLocation>
 									<UseAlternationRowColor>true</UseAlternationRowColor>
 									<EnableStartDrag>true</EnableStartDrag>
 									<DataPath>ВнешнееПроизводство</DataPath>
 									<RowPictureDataPath>ВнешнееПроизводство.DefaultPicture</RowPictureDataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Внешнее производство</v8:content>
+										</v8:item>
+									</Title>
 									<AutoRefresh>false</AutoRefresh>
 									<AutoRefreshPeriod>60</AutoRefreshPeriod>
 									<Period>
@@ -1006,7 +1013,7 @@
 											<ExtendedTooltip name="ВнешнееПроизводствоКомментарий1РасширеннаяПодсказка" id="1478"/>
 										</LabelField>
 										<CheckBoxField name="ВнешнееПроизводствоДоставкаНаСклад1" id="1479">
-											<DataPath>ВнешнееПроизводство.ДоставкаНаСклад</DataPath>
+											<DataPath>~ВнешнееПроизводство.ДоставкаНаСклад</DataPath>
 											<CheckBoxType>Auto</CheckBoxType>
 											<ContextMenu name="ВнешнееПроизводствоДоставкаНаСклад1КонтекстноеМеню" id="1480"/>
 											<ExtendedTooltip name="ВнешнееПроизводствоДоставкаНаСклад1РасширеннаяПодсказка" id="1481"/>
@@ -1015,6 +1022,16 @@
 											<DataPath>ВнешнееПроизводство.ТипЗадачи</DataPath>
 											<ContextMenu name="ВнешнееПроизводствоТипЗадачи1КонтекстноеМеню" id="1483"/>
 											<ExtendedTooltip name="ВнешнееПроизводствоТипЗадачи1РасширеннаяПодсказка" id="1484"/>
+										</LabelField>
+										<LabelField name="ВнешнееПроизводство1ВедущийКонструктор" id="1580">
+											<DataPath>ВнешнееПроизводство.ВедущийКонструктор</DataPath>
+											<ContextMenu name="ВнешнееПроизводство1ВедущийКонструкторКонтекстноеМеню" id="1581"/>
+											<ExtendedTooltip name="ВнешнееПроизводство1ВедущийКонструкторРасширеннаяПодсказка" id="1582"/>
+										</LabelField>
+										<LabelField name="ВнешнееПроизводство1Дизайнер" id="1577">
+											<DataPath>ВнешнееПроизводство.Дизайнер</DataPath>
+											<ContextMenu name="ВнешнееПроизводство1ДизайнерКонтекстноеМеню" id="1578"/>
+											<ExtendedTooltip name="ВнешнееПроизводство1ДизайнерРасширеннаяПодсказка" id="1579"/>
 										</LabelField>
 										<LabelField name="ВнешнееПроизводствоАвтор1" id="1485">
 											<DataPath>ВнешнееПроизводство.Автор</DataPath>
@@ -1816,6 +1833,12 @@
 									<EnableStartDrag>true</EnableStartDrag>
 									<DataPath>ВнешнееПроизводство</DataPath>
 									<RowPictureDataPath>ВнешнееПроизводство.DefaultPicture</RowPictureDataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Внешнее производство</v8:content>
+										</v8:item>
+									</Title>
 									<AutoRefresh>false</AutoRefresh>
 									<AutoRefreshPeriod>60</AutoRefreshPeriod>
 									<Period>
@@ -1902,7 +1925,7 @@
 											<ExtendedTooltip name="ВнешнееПроизводствоКомментарий2РасширеннаяПодсказка" id="1521"/>
 										</LabelField>
 										<CheckBoxField name="ВнешнееПроизводствоДоставкаНаСклад2" id="1522">
-											<DataPath>ВнешнееПроизводство.ДоставкаНаСклад</DataPath>
+											<DataPath>~ВнешнееПроизводство.ДоставкаНаСклад</DataPath>
 											<CheckBoxType>Auto</CheckBoxType>
 											<ContextMenu name="ВнешнееПроизводствоДоставкаНаСклад2КонтекстноеМеню" id="1523"/>
 											<ExtendedTooltip name="ВнешнееПроизводствоДоставкаНаСклад2РасширеннаяПодсказка" id="1524"/>
@@ -1911,6 +1934,16 @@
 											<DataPath>ВнешнееПроизводство.ТипЗадачи</DataPath>
 											<ContextMenu name="ВнешнееПроизводствоТипЗадачи2КонтекстноеМеню" id="1526"/>
 											<ExtendedTooltip name="ВнешнееПроизводствоТипЗадачи2РасширеннаяПодсказка" id="1527"/>
+										</LabelField>
+										<LabelField name="ВнешнееПроизводство2Дизайнер" id="1574">
+											<DataPath>ВнешнееПроизводство.Дизайнер</DataPath>
+											<ContextMenu name="ВнешнееПроизводство2ДизайнерКонтекстноеМеню" id="1575"/>
+											<ExtendedTooltip name="ВнешнееПроизводство2ДизайнерРасширеннаяПодсказка" id="1576"/>
+										</LabelField>
+										<LabelField name="ВнешнееПроизводство2ВедущийКонструктор" id="1571">
+											<DataPath>ВнешнееПроизводство.ВедущийКонструктор</DataPath>
+											<ContextMenu name="ВнешнееПроизводство2ВедущийКонструкторКонтекстноеМеню" id="1572"/>
+											<ExtendedTooltip name="ВнешнееПроизводство2ВедущийКонструкторРасширеннаяПодсказка" id="1573"/>
 										</LabelField>
 										<LabelField name="ВнешнееПроизводствоАвтор2" id="1528">
 											<DataPath>ВнешнееПроизводство.Автор</DataPath>
@@ -2429,6 +2462,7 @@
 					</ChildItems>
 				</Table>
 				<Table name="ВнешнееПроизводство" id="1388">
+					<TitleLocation>Top</TitleLocation>
 					<UseAlternationRowColor>true</UseAlternationRowColor>
 					<EnableStartDrag>true</EnableStartDrag>
 					<DataPath>ВнешнееПроизводство</DataPath>
@@ -2514,7 +2548,7 @@
 							<ExtendedTooltip name="ВнешнееПроизводствоКомментарийРасширеннаяПодсказка" id="1421"/>
 						</LabelField>
 						<CheckBoxField name="ВнешнееПроизводствоДоставкаНаСклад" id="1413">
-							<DataPath>ВнешнееПроизводство.ДоставкаНаСклад</DataPath>
+							<DataPath>~ВнешнееПроизводство.ДоставкаНаСклад</DataPath>
 							<CheckBoxType>Auto</CheckBoxType>
 							<ContextMenu name="ВнешнееПроизводствоДоставкаНаСкладКонтекстноеМеню" id="1414"/>
 							<ExtendedTooltip name="ВнешнееПроизводствоДоставкаНаСкладРасширеннаяПодсказка" id="1415"/>
@@ -2523,6 +2557,16 @@
 							<DataPath>ВнешнееПроизводство.ТипЗадачи</DataPath>
 							<ContextMenu name="ВнешнееПроизводствоТипЗадачиКонтекстноеМеню" id="1441"/>
 							<ExtendedTooltip name="ВнешнееПроизводствоТипЗадачиРасширеннаяПодсказка" id="1442"/>
+						</LabelField>
+						<LabelField name="ВнешнееПроизводствоВедущийКонструктор" id="1568">
+							<DataPath>ВнешнееПроизводство.ВедущийКонструктор</DataPath>
+							<ContextMenu name="ВнешнееПроизводствоВедущийКонструкторКонтекстноеМеню" id="1569"/>
+							<ExtendedTooltip name="ВнешнееПроизводствоВедущийКонструкторРасширеннаяПодсказка" id="1570"/>
+						</LabelField>
+						<LabelField name="ВнешнееПроизводствоДизайнер" id="1565">
+							<DataPath>ВнешнееПроизводство.Дизайнер</DataPath>
+							<ContextMenu name="ВнешнееПроизводствоДизайнерКонтекстноеМеню" id="1566"/>
+							<ExtendedTooltip name="ВнешнееПроизводствоДизайнерРасширеннаяПодсказка" id="1567"/>
 						</LabelField>
 						<LabelField name="ВнешнееПроизводствоАвтор" id="1401">
 							<DataPath>ВнешнееПроизводство.Автор</DataPath>
@@ -4949,11 +4993,12 @@
 	ЗадачаЗадачаВнешнееПроизводство.Выполнена КАК Выполнена,
 	ЗадачаЗадачаВнешнееПроизводство.Автор КАК Автор,
 	ЗадачаЗадачаВнешнееПроизводство.ДатаОжидаемогоОкончанияПодрядчиком КАК ДатаОжидаемогоОкончанияПодрядчиком,
-	ЗадачаЗадачаВнешнееПроизводство.ДоставкаНаСклад КАК ДоставкаНаСклад,
 	ЗадачаЗадачаВнешнееПроизводство.ОбъектТЗ КАК ОбъектТЗ,
 	ЗадачаЗадачаВнешнееПроизводство.Проект КАК Проект,
 	ЗадачаЗадачаВнешнееПроизводство.ТипЗадачи КАК ТипЗадачи,
-	ЗадачаЗадачаВнешнееПроизводство.Исполнитель КАК Исполнитель
+	ЗадачаЗадачаВнешнееПроизводство.Исполнитель КАК Исполнитель,
+	ЗадачаЗадачаВнешнееПроизводство.Дизайнер КАК Дизайнер,
+	ЗадачаЗадачаВнешнееПроизводство.ВедущийКонструктор КАК ВедущийКонструктор
 ИЗ
 	Задача.ЗадачаВнешнееПроизводство КАК ЗадачаЗадачаВнешнееПроизводство
 ГДЕ
@@ -4962,12 +5007,26 @@
 			КОГДА &amp;Дизйнер
 				ТОГДА ЗадачаЗадачаВнешнееПроизводство.ТипЗадачи = ЗНАЧЕНИЕ(Перечисление.ТипыЗадачКонструирования.ВнешнееСогласование)
 						И ЗадачаЗадачаВнешнееПроизводство.ПКД
+						И ВЫБОР
+							КОГДА &amp;Исполнитель = ЗНАЧЕНИЕ(Справочник.Пользователи.ПустаяСсылка)
+								ТОГДА ИСТИНА
+							ИНАЧЕ ЗадачаЗадачаВнешнееПроизводство.Дизайнер = &amp;Исполнитель
+						КОНЕЦ
 			КОГДА &amp;ВедКон
 				ТОГДА ЗадачаЗадачаВнешнееПроизводство.ТипЗадачи = ЗНАЧЕНИЕ(Перечисление.ТипыЗадачКонструирования.ВнешнееПКД)
 						И НЕ ЗадачаЗадачаВнешнееПроизводство.Исполнитель = ЗНАЧЕНИЕ(Справочник.Контрагенты.ПустаяСсылка)
 						И ЗадачаЗадачаВнешнееПроизводство.ПКД
+						И ВЫБОР
+							КОГДА &amp;Исполнитель = ЗНАЧЕНИЕ(Справочник.Пользователи.ПустаяСсылка)
+								ТОГДА ИСТИНА
+							ИНАЧЕ ЗадачаЗадачаВнешнееПроизводство.ВедущийКонструктор = &amp;Исполнитель
+						КОНЕЦ
 			ИНАЧЕ ИСТИНА
 		КОНЕЦ</QueryText>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ПКД</dcssch:dataPath>
+					<dcssch:field>ПКД</dcssch:field>
+				</Field>
 				<Field xsi:type="dcssch:DataSetFieldField">
 					<dcssch:dataPath>Наименование</dcssch:dataPath>
 					<dcssch:field>Наименование</dcssch:field>
@@ -4989,14 +5048,6 @@
 					<dcssch:field>Комментарии</dcssch:field>
 				</Field>
 				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>Проект</dcssch:dataPath>
-					<dcssch:field>Проект</dcssch:field>
-				</Field>
-				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>Автор</dcssch:dataPath>
-					<dcssch:field>Автор</dcssch:field>
-				</Field>
-				<Field xsi:type="dcssch:DataSetFieldField">
 					<dcssch:dataPath>Ссылка</dcssch:dataPath>
 					<dcssch:field>Ссылка</dcssch:field>
 				</Field>
@@ -5009,16 +5060,16 @@
 					<dcssch:field>Дата</dcssch:field>
 				</Field>
 				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Проект</dcssch:dataPath>
+					<dcssch:field>Проект</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Автор</dcssch:dataPath>
+					<dcssch:field>Автор</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
 					<dcssch:dataPath>ДатаОжидаемогоОкончанияПодрядчиком</dcssch:dataPath>
 					<dcssch:field>ДатаОжидаемогоОкончанияПодрядчиком</dcssch:field>
-				</Field>
-				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>Исполнитель</dcssch:dataPath>
-					<dcssch:field>Исполнитель</dcssch:field>
-				</Field>
-				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>ДоставкаНаСклад</dcssch:dataPath>
-					<dcssch:field>ДоставкаНаСклад</dcssch:field>
 				</Field>
 				<Field xsi:type="dcssch:DataSetFieldField">
 					<dcssch:dataPath>ОбъектТЗ</dcssch:dataPath>
@@ -5029,9 +5080,31 @@
 					<dcssch:field>ТипЗадачи</dcssch:field>
 				</Field>
 				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>ПКД</dcssch:dataPath>
-					<dcssch:field>ПКД</dcssch:field>
+					<dcssch:dataPath>Исполнитель</dcssch:dataPath>
+					<dcssch:field>Исполнитель</dcssch:field>
 				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Дизайнер</dcssch:dataPath>
+					<dcssch:field>Дизайнер</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ВедущийКонструктор</dcssch:dataPath>
+					<dcssch:field>ВедущийКонструктор</dcssch:field>
+				</Field>
+				<Parameter>
+					<dcssch:name>ВедКон</dcssch:name>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Вед кон</v8:content>
+						</v8:item>
+					</dcssch:title>
+					<dcssch:valueType>
+						<v8:Type>xs:boolean</v8:Type>
+					</dcssch:valueType>
+					<dcssch:value xsi:type="xs:boolean">false</dcssch:value>
+					<dcssch:useRestriction>true</dcssch:useRestriction>
+				</Parameter>
 				<Parameter>
 					<dcssch:name>Дизйнер</dcssch:name>
 					<dcssch:title xsi:type="v8:LocalStringType">
@@ -5047,17 +5120,17 @@
 					<dcssch:useRestriction>true</dcssch:useRestriction>
 				</Parameter>
 				<Parameter>
-					<dcssch:name>ВедКон</dcssch:name>
+					<dcssch:name>Исполнитель</dcssch:name>
 					<dcssch:title xsi:type="v8:LocalStringType">
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Вед кон</v8:content>
+							<v8:content>Исполнитель</v8:content>
 						</v8:item>
 					</dcssch:title>
 					<dcssch:valueType>
-						<v8:Type>xs:boolean</v8:Type>
+						<v8:Type>cfg:CatalogRef.Пользователи</v8:Type>
 					</dcssch:valueType>
-					<dcssch:value xsi:type="xs:boolean">false</dcssch:value>
+					<dcssch:value xsi:nil="true"/>
 					<dcssch:useRestriction>true</dcssch:useRestriction>
 				</Parameter>
 				<MainTable>Task.ЗадачаВнешнееПроизводство</MainTable>
