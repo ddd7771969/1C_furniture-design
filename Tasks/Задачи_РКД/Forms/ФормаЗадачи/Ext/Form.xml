@@ -585,6 +585,12 @@
 									<ContextMenu name="СостояниеКонтекстноеМеню" id="87"/>
 									<ExtendedTooltip name="СостояниеРасширеннаяПодсказка" id="88"/>
 								</InputField>
+								<CheckBoxField name="НеИзменяетСтадию" id="161">
+									<DataPath>Объект.НеИзменяетСтадию</DataPath>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="НеИзменяетСтадиюКонтекстноеМеню" id="162"/>
+									<ExtendedTooltip name="НеИзменяетСтадиюРасширеннаяПодсказка" id="163"/>
+								</CheckBoxField>
 								<Button name="СнятьСВыполнения" id="91">
 									<Type>UsualButton</Type>
 									<CommandName>Form.Command.СнятьСВыполнения</CommandName>
