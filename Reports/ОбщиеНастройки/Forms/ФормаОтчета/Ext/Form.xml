@@ -921,6 +921,12 @@
 											<ContextMenu name="ОжиданиеПроизводстваКонтекстноеМеню" id="249"/>
 											<ExtendedTooltip name="ОжиданиеПроизводстваРасширеннаяПодсказка" id="250"/>
 										</InputField>
+										<InputField name="ПриостановкаПроизводства" id="302">
+											<DataPath>ПриостановкаПроизводства</DataPath>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="ПриостановкаПроизводстваКонтекстноеМеню" id="303"/>
+											<ExtendedTooltip name="ПриостановкаПроизводстваРасширеннаяПодсказка" id="304"/>
+										</InputField>
 										<InputField name="ПроизводствоВМонтаж" id="245">
 											<DataPath>ПроизводствоВМонтаж</DataPath>
 											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
@@ -1849,6 +1855,21 @@
 					<v8:FractionDigits>1</v8:FractionDigits>
 					<v8:AllowedSign>Any</v8:AllowedSign>
 				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПриостановкаПроизводства" id="29">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Приостановка производства</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
 			</Type>
 		</Attribute>
 	</Attributes>
