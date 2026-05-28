@@ -1,38 +1,8 @@
-﻿&НаСервере
-Функция ПолучитьПользователейИзПДМ() Экспорт
-	Запрос = Новый Запрос;
-	Запрос.Текст = 
-		"ВЫБРАТЬ
-		|	dbo_Users.Ссылка КАК Ссылка,
-		|	dbo_Users.UserID КАК UserID,
-		|	dbo_Users.Username КАК Username,
-		|	dbo_Users.Enabled КАК Enabled,
-		|	dbo_Users.Email КАК Email,
-		|	dbo_Users.FullName КАК FullName,
-		|	dbo_Users.Title КАК Title,
-		|	dbo_Users.LastName КАК LastName,
-		|	dbo_Users.Telephone КАК Telephone,
-		|	dbo_Users.HomePhone КАК HomePhone,
-		|	dbo_Users.Email2 КАК Email2,
-		|	dbo_Users.Email3 КАК Email3
-		|ИЗ
-		|	ВнешнийИсточникДанных.PDM.Таблица.dbo_Users КАК dbo_Users";
-	
-	РезультатЗапроса = Запрос.Выполнить();
-	
-	ВыборкаДетальныеЗаписи = РезультатЗапроса.Выбрать();
-	
-	Пока ВыборкаДетальныеЗаписи.Следующий() Цикл
-		// Вставить обработку выборки ВыборкаДетальныеЗаписи
-	КонецЦикла;
-	
-КонецФункции // ПолучитьПользователейИзПДМ()
-
-
+﻿
 &НаСервере
 Функция ПолучитьДанныеСотрудникаИзПДМ(Сотрудник) Экспорт
 	
-	стВозврата = Новый Структура("UserID,EnabledPDM,Username",0,Ложь,"");
+	стВозврата = Новый Структура("UserID, EnabledPDM, Username", 0, Ложь, "");
 	Если НЕ ЗначениеЗаполнено(Сотрудник) Тогда
 		Возврат стВозврата;
 	КонецЕсли;
