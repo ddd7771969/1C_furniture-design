@@ -9,6 +9,11 @@
 				<CommandName>Form.Command.ВыгрузкаВPDM</CommandName>
 				<ExtendedTooltip name="ФормаВыгрузкаВCRMРасширеннаяПодсказка" id="204"/>
 			</Button>
+			<Button name="ФормаДанныеИзPDM" id="586">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ДанныеИзPDM</CommandName>
+				<ExtendedTooltip name="ФормаДанныеИзPDMРасширеннаяПодсказка" id="587"/>
+			</Button>
 			<Button name="ФормаМатериалыКомплекта" id="251">
 				<Type>CommandBarButton</Type>
 				<Visible>false</Visible>
@@ -1768,6 +1773,21 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ТаймингЗадачи</Action>
+		</Command>
+		<Command name="ДанныеИзPDM" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Данные из PDM</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Данные из PDM</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ДанныеИзPDM</Action>
 		</Command>
 	</Commands>
 	<CommandInterface>

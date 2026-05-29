@@ -1,0 +1,393 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="Комплект" id="1">
+			<DataPath>Комплект</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="КомплектКонтекстноеМеню" id="2"/>
+			<ExtendedTooltip name="КомплектРасширеннаяПодсказка" id="3"/>
+		</InputField>
+		<PictureDecoration name="ДекорацияДлительноеОжидание" id="4">
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Декорация длительное ожидание</v8:content>
+				</v8:item>
+			</Title>
+			<Picture>
+				<xr:Ref>CommonPicture.ДлительнаяОперация48</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<ContextMenu name="ДекорацияДлительноеОжиданиеКонтекстноеМеню" id="5"/>
+			<ExtendedTooltip name="ДекорацияДлительноеОжиданиеРасширеннаяПодсказка" id="6"/>
+		</PictureDecoration>
+		<UsualGroup name="ГруппаДанных" id="32">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа данных</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа данных</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаДанныхРасширеннаяПодсказка" id="33"/>
+			<ChildItems>
+				<LabelField name="ИмяФайла" id="7">
+					<DataPath>ИмяФайла</DataPath>
+					<ContextMenu name="ИмяФайлаКонтекстноеМеню" id="8"/>
+					<ExtendedTooltip name="ИмяФайлаРасширеннаяПодсказка" id="9"/>
+				</LabelField>
+				<UsualGroup name="Группа3" id="66">
+					<Group>AlwaysHorizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="67"/>
+					<ChildItems>
+						<LabelField name="Версия" id="27">
+							<DataPath>Версия</DataPath>
+							<ContextMenu name="ВерсияКонтекстноеМеню" id="28"/>
+							<ExtendedTooltip name="ВерсияРасширеннаяПодсказка" id="29"/>
+						</LabelField>
+						<LabelField name="ДатаФайла" id="47">
+							<DataPath>ДатаФайла</DataPath>
+							<ContextMenu name="ДатаФайлаКонтекстноеМеню" id="48"/>
+							<ExtendedTooltip name="ДатаФайлаРасширеннаяПодсказка" id="49"/>
+						</LabelField>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="Группа1" id="13">
+					<Group>AlwaysHorizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="14"/>
+					<ChildItems>
+						<InputField name="ПутьКФайлу" id="10">
+							<DataPath>ПутьКФайлу</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<Height>2</Height>
+							<MultiLine>true</MultiLine>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<HeightControlVariant>UseContentHeight</HeightControlVariant>
+							<ContextMenu name="ПутьКФайлуКонтекстноеМеню" id="11"/>
+							<ExtendedTooltip name="ПутьКФайлуРасширеннаяПодсказка" id="12"/>
+						</InputField>
+						<Button name="ОткрытьФайл" id="15">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.ОткрытьФайл</CommandName>
+							<ExtendedTooltip name="ОткрытьФайлРасширеннаяПодсказка" id="16"/>
+						</Button>
+						<LabelDecoration name="ДекорацияФайлНеСуществует" id="44">
+							<TextColor>#FF0000</TextColor>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>локальный файл не существует</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ДекорацияФайлНеСуществуетКонтекстноеМеню" id="45"/>
+							<ExtendedTooltip name="ДекорацияФайлНеСуществуетРасширеннаяПодсказка" id="46"/>
+						</LabelDecoration>
+					</ChildItems>
+				</UsualGroup>
+				<Table name="Пути_к_каталогам" id="50">
+					<Representation>List</Representation>
+					<Height>6</Height>
+					<AutoMaxHeight>false</AutoMaxHeight>
+					<AutoInsertNewRow>true</AutoInsertNewRow>
+					<EnableStartDrag>true</EnableStartDrag>
+					<EnableDrag>true</EnableDrag>
+					<DataPath>Пути_к_каталогам</DataPath>
+					<RowFilter xsi:nil="true"/>
+					<ContextMenu name="Пути_к_каталогамКонтекстноеМеню" id="51"/>
+					<AutoCommandBar name="Пути_к_каталогамКоманднаяПанель" id="52">
+						<Autofill>false</Autofill>
+					</AutoCommandBar>
+					<ExtendedTooltip name="Пути_к_каталогамРасширеннаяПодсказка" id="53"/>
+					<SearchStringAddition name="Пути_к_каталогамСтрокаПоиска" id="54">
+						<AdditionSource>
+							<Item>Пути_к_каталогам</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="Пути_к_каталогамСтрокаПоискаКонтекстноеМеню" id="55"/>
+						<ExtendedTooltip name="Пути_к_каталогамСтрокаПоискаРасширеннаяПодсказка" id="56"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="Пути_к_каталогамСостояниеПросмотра" id="57">
+						<AdditionSource>
+							<Item>Пути_к_каталогам</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="Пути_к_каталогамСостояниеПросмотраКонтекстноеМеню" id="58"/>
+						<ExtendedTooltip name="Пути_к_каталогамСостояниеПросмотраРасширеннаяПодсказка" id="59"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="Пути_к_каталогамУправлениеПоиском" id="60">
+						<AdditionSource>
+							<Item>Пути_к_каталогам</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="Пути_к_каталогамУправлениеПоискомКонтекстноеМеню" id="61"/>
+						<ExtendedTooltip name="Пути_к_каталогамУправлениеПоискомРасширеннаяПодсказка" id="62"/>
+					</SearchControlAddition>
+					<Events>
+						<Event name="BeforeAddRow">ПутКФайлуПередНачаломДобавления</Event>
+						<Event name="BeforeDeleteRow">ПутКФайлуПередУдалением</Event>
+						<Event name="BeforeRowChange">ПутКФайлуПередНачаломИзменения</Event>
+					</Events>
+					<ChildItems>
+						<InputField name="Пути_к_каталогамПуть" id="63">
+							<DataPath>Пути_к_каталогам.Путь</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="Пути_к_каталогамПутьКонтекстноеМеню" id="64"/>
+							<ExtendedTooltip name="Пути_к_каталогамПутьРасширеннаяПодсказка" id="65"/>
+						</InputField>
+					</ChildItems>
+				</Table>
+				<UsualGroup name="ГруппаБлокировка" id="20">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа блокировка</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа блокировка</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаБлокировкаРасширеннаяПодсказка" id="21"/>
+					<ChildItems>
+						<UsualGroup name="Группа2" id="30">
+							<Group>AlwaysHorizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="31"/>
+							<ChildItems>
+								<LabelField name="КемЗаблокирован" id="17">
+									<DataPath>КемЗаблокирован</DataPath>
+									<ContextMenu name="КемЗаблокированКонтекстноеМеню" id="18"/>
+									<ExtendedTooltip name="КемЗаблокированРасширеннаяПодсказка" id="19"/>
+								</LabelField>
+								<Button name="НаписатьСообщение" id="22">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.НаписатьСообщение</CommandName>
+									<ExtendedTooltip name="НаписатьСообщениеРасширеннаяПодсказка" id="23"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+						<LabelField name="ИмяКомпьютера" id="24">
+							<DataPath>ИмяКомпьютера</DataPath>
+							<ContextMenu name="ИмяКомпьютераКонтекстноеМеню" id="25"/>
+							<ExtendedTooltip name="ИмяКомпьютераРасширеннаяПодсказка" id="26"/>
+						</LabelField>
+					</ChildItems>
+				</UsualGroup>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Комплект" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Комплект</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Композиции</v8:Type>
+				<v8:Type>cfg:CatalogRef.ИзделияКомплект</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ЗаданиеУникальныйИдентификатор" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Задание уникальный идентификатор</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:UUID</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ИмяФайла" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Имя файла</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ПутьКФайлу" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Путь к файлу</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="КемЗаблокирован" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Кем заблокирован</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Версия" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Версия</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ИмяКомпьютера" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Имя компьютера</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="АдресРезультата" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Адрес результата</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ДатаФайла" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дата файла</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:dateTime</v8:Type>
+				<v8:DateQualifiers>
+					<v8:DateFractions>DateTime</v8:DateFractions>
+				</v8:DateQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="Пути_к_каталогам" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пути к каталогам</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Путь" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Путь</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="ОткрытьФайл" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть файл</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть файл</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОткрытьФайл</Action>
+		</Command>
+		<Command name="НаписатьСообщение" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Написать сообщение</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Написать сообщение</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>НаписатьСообщение</Action>
+		</Command>
+	</Commands>
+</Form>
