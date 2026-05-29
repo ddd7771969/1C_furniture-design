@@ -1,6 +1,19 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
-	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<ChildItems>
+			<Button name="ФормаЗакрыть" id="73">
+				<Type>CommandBarButton</Type>
+				<Representation>PictureAndText</Representation>
+				<CommandName>Form.Command.Закрыть</CommandName>
+				<Picture>
+					<xr:Ref>StdPicture.Close</xr:Ref>
+					<xr:LoadTransparent>true</xr:LoadTransparent>
+				</Picture>
+				<ExtendedTooltip name="ФормаЗакрытьРасширеннаяПодсказка" id="74"/>
+			</Button>
+		</ChildItems>
+	</AutoCommandBar>
 	<Events>
 		<Event name="OnOpen">ПриОткрытии</Event>
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
@@ -68,6 +81,49 @@
 						</LabelField>
 					</ChildItems>
 				</UsualGroup>
+				<UsualGroup name="ГруппаБлокировка" id="20">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа блокировка</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа блокировка</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаБлокировкаРасширеннаяПодсказка" id="21"/>
+					<ChildItems>
+						<UsualGroup name="Группа2" id="30">
+							<Group>AlwaysHorizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="31"/>
+							<ChildItems>
+								<LabelField name="КемЗаблокирован" id="17">
+									<DataPath>КемЗаблокирован</DataPath>
+									<ContextMenu name="КемЗаблокированКонтекстноеМеню" id="18"/>
+									<ExtendedTooltip name="КемЗаблокированРасширеннаяПодсказка" id="19"/>
+								</LabelField>
+								<Button name="НаписатьСообщение" id="22">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.НаписатьСообщение</CommandName>
+									<ExtendedTooltip name="НаписатьСообщениеРасширеннаяПодсказка" id="23"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+						<LabelField name="ИмяКомпьютера" id="24">
+							<DataPath>ИмяКомпьютера</DataPath>
+							<ContextMenu name="ИмяКомпьютераКонтекстноеМеню" id="25"/>
+							<ExtendedTooltip name="ИмяКомпьютераРасширеннаяПодсказка" id="26"/>
+						</LabelField>
+					</ChildItems>
+				</UsualGroup>
 				<UsualGroup name="Группа1" id="13">
 					<Group>AlwaysHorizontal</Group>
 					<Representation>None</Representation>
@@ -84,28 +140,38 @@
 							<ContextMenu name="ПутьКФайлуКонтекстноеМеню" id="11"/>
 							<ExtendedTooltip name="ПутьКФайлуРасширеннаяПодсказка" id="12"/>
 						</InputField>
-						<Button name="ОткрытьФайл" id="15">
-							<Type>UsualButton</Type>
-							<CommandName>Form.Command.ОткрытьФайл</CommandName>
-							<ExtendedTooltip name="ОткрытьФайлРасширеннаяПодсказка" id="16"/>
-						</Button>
-						<LabelDecoration name="ДекорацияФайлНеСуществует" id="44">
-							<TextColor>#FF0000</TextColor>
-							<Title formatted="false">
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>локальный файл не существует</v8:content>
-								</v8:item>
-							</Title>
-							<ContextMenu name="ДекорацияФайлНеСуществуетКонтекстноеМеню" id="45"/>
-							<ExtendedTooltip name="ДекорацияФайлНеСуществуетРасширеннаяПодсказка" id="46"/>
-						</LabelDecoration>
+						<UsualGroup name="Группа4" id="68">
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа4РасширеннаяПодсказка" id="69"/>
+							<ChildItems>
+								<Button name="ОткрытьФайл" id="15">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.ОткрытьФайл</CommandName>
+									<ExtendedTooltip name="ОткрытьФайлРасширеннаяПодсказка" id="16"/>
+								</Button>
+								<LabelDecoration name="Декорация1" id="70">
+									<TextColor>#1128F8</TextColor>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Двойной клик по строке таблицы откроет заданный путь в проводнике</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="Декорация1КонтекстноеМеню" id="71"/>
+									<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="72"/>
+								</LabelDecoration>
+							</ChildItems>
+						</UsualGroup>
 					</ChildItems>
 				</UsualGroup>
 				<Table name="Пути_к_каталогам" id="50">
 					<Representation>List</Representation>
 					<Height>6</Height>
 					<AutoMaxHeight>false</AutoMaxHeight>
+					<MaxHeight>6</MaxHeight>
+					<HeightControlVariant>UseHeightInTableRows</HeightControlVariant>
 					<AutoInsertNewRow>true</AutoInsertNewRow>
 					<EnableStartDrag>true</EnableStartDrag>
 					<EnableDrag>true</EnableDrag>
@@ -155,49 +221,6 @@
 						</InputField>
 					</ChildItems>
 				</Table>
-				<UsualGroup name="ГруппаБлокировка" id="20">
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Группа блокировка</v8:content>
-						</v8:item>
-					</Title>
-					<ToolTip>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Группа блокировка</v8:content>
-						</v8:item>
-					</ToolTip>
-					<Group>Vertical</Group>
-					<Representation>None</Representation>
-					<ShowTitle>false</ShowTitle>
-					<ExtendedTooltip name="ГруппаБлокировкаРасширеннаяПодсказка" id="21"/>
-					<ChildItems>
-						<UsualGroup name="Группа2" id="30">
-							<Group>AlwaysHorizontal</Group>
-							<Representation>None</Representation>
-							<ShowTitle>false</ShowTitle>
-							<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="31"/>
-							<ChildItems>
-								<LabelField name="КемЗаблокирован" id="17">
-									<DataPath>КемЗаблокирован</DataPath>
-									<ContextMenu name="КемЗаблокированКонтекстноеМеню" id="18"/>
-									<ExtendedTooltip name="КемЗаблокированРасширеннаяПодсказка" id="19"/>
-								</LabelField>
-								<Button name="НаписатьСообщение" id="22">
-									<Type>UsualButton</Type>
-									<CommandName>Form.Command.НаписатьСообщение</CommandName>
-									<ExtendedTooltip name="НаписатьСообщениеРасширеннаяПодсказка" id="23"/>
-								</Button>
-							</ChildItems>
-						</UsualGroup>
-						<LabelField name="ИмяКомпьютера" id="24">
-							<DataPath>ИмяКомпьютера</DataPath>
-							<ContextMenu name="ИмяКомпьютераКонтекстноеМеню" id="25"/>
-							<ExtendedTooltip name="ИмяКомпьютераРасширеннаяПодсказка" id="26"/>
-						</LabelField>
-					</ChildItems>
-				</UsualGroup>
 			</ChildItems>
 		</UsualGroup>
 	</ChildItems>
@@ -388,6 +411,21 @@
 				</v8:item>
 			</ToolTip>
 			<Action>НаписатьСообщение</Action>
+		</Command>
+		<Command name="Закрыть" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Закрыть</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Закрыть</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ФормуЗакрыть</Action>
 		</Command>
 	</Commands>
 </Form>
