@@ -32,39 +32,61 @@
 				</InputField>
 			</ChildItems>
 		</UsualGroup>
-		<InputField name="Проект" id="7">
-			<DataPath>Объект.Проект</DataPath>
-			<EditMode>EnterOnInput</EditMode>
-			<ListChoiceMode>true</ListChoiceMode>
-			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-			<QuickChoice>true</QuickChoice>
-			<ChooseType>false</ChooseType>
-			<ContextMenu name="ПроектКонтекстноеМеню" id="8"/>
-			<ExtendedTooltip name="ПроектРасширеннаяПодсказка" id="9"/>
-			<Events>
-				<Event name="OnChange">ПроектПриИзменении</Event>
-				<Event name="StartChoice">ПроектНачалоВыбора</Event>
-			</Events>
-		</InputField>
-		<InputField name="Комплект" id="13">
-			<DataPath>Объект.Комплект</DataPath>
-			<EditMode>EnterOnInput</EditMode>
-			<ListChoiceMode>true</ListChoiceMode>
-			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-			<ChooseType>false</ChooseType>
-			<ContextMenu name="КомплектКонтекстноеМеню" id="14"/>
-			<ExtendedTooltip name="КомплектРасширеннаяПодсказка" id="15"/>
-			<Events>
-				<Event name="OnChange">КомплектПриИзменении</Event>
-				<Event name="StartChoice">КомплектНачалоВыбора</Event>
-			</Events>
-		</InputField>
-		<InputField name="Конструктор" id="29">
-			<DataPath>Объект.Конструктор</DataPath>
-			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-			<ContextMenu name="КонструкторКонтекстноеМеню" id="30"/>
-			<ExtendedTooltip name="КонструкторРасширеннаяПодсказка" id="31"/>
-		</InputField>
+		<UsualGroup name="Группа3" id="35">
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="36"/>
+			<ChildItems>
+				<InputField name="Проект" id="7">
+					<DataPath>Объект.Проект</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ListChoiceMode>true</ListChoiceMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<QuickChoice>true</QuickChoice>
+					<ChooseType>false</ChooseType>
+					<ContextMenu name="ПроектКонтекстноеМеню" id="8"/>
+					<ExtendedTooltip name="ПроектРасширеннаяПодсказка" id="9"/>
+					<Events>
+						<Event name="OnChange">ПроектПриИзменении</Event>
+						<Event name="StartChoice">ПроектНачалоВыбора</Event>
+					</Events>
+				</InputField>
+				<InputField name="Комплект" id="13">
+					<DataPath>Объект.Комплект</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ListChoiceMode>true</ListChoiceMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ChooseType>false</ChooseType>
+					<ContextMenu name="КомплектКонтекстноеМеню" id="14"/>
+					<ExtendedTooltip name="КомплектРасширеннаяПодсказка" id="15"/>
+					<Events>
+						<Event name="OnChange">КомплектПриИзменении</Event>
+						<Event name="StartChoice">КомплектНачалоВыбора</Event>
+					</Events>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Группа4" id="37">
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа4РасширеннаяПодсказка" id="38"/>
+			<ChildItems>
+				<InputField name="ВедущийКонструктор" id="39">
+					<DataPath>Объект.ВедущийКонструктор</DataPath>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ВедущийКонструкторКонтекстноеМеню" id="40"/>
+					<ExtendedTooltip name="ВедущийКонструкторРасширеннаяПодсказка" id="41"/>
+				</InputField>
+				<InputField name="Конструктор" id="29">
+					<DataPath>Объект.Конструктор</DataPath>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="КонструкторКонтекстноеМеню" id="30"/>
+					<ExtendedTooltip name="КонструкторРасширеннаяПодсказка" id="31"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
 		<InputField name="Причина" id="32">
 			<DataPath>Объект.Причина</DataPath>
 			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
