@@ -5,6 +5,7 @@
 	<RepostOnWrite>true</RepostOnWrite>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
 	<Events>
+		<Event name="AfterWrite">ПослеЗаписи</Event>
 		<Event name="BeforeWriteAtServer">ПередЗаписьюНаСервере</Event>
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 	</Events>
@@ -96,6 +97,10 @@
 		<InputField name="Комментарий" id="16">
 			<DataPath>Объект.Комментарий</DataPath>
 			<EditMode>EnterOnInput</EditMode>
+			<Height>3</Height>
+			<AutoMaxHeight>false</AutoMaxHeight>
+			<MaxHeight>6</MaxHeight>
+			<VerticalStretch>false</VerticalStretch>
 			<MultiLine>true</MultiLine>
 			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 			<ContextMenu name="КомментарийКонтекстноеМеню" id="17"/>
@@ -117,12 +122,6 @@
 				<CheckBoxField name="РКДВыполнено" id="26">
 					<DataPath>Объект.РКДВыполнено</DataPath>
 					<ReadOnly>true</ReadOnly>
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Рекламация выполнена</v8:content>
-						</v8:item>
-					</Title>
 					<CheckBoxType>Auto</CheckBoxType>
 					<ContextMenu name="РКДВыполненоКонтекстноеМеню" id="27"/>
 					<ExtendedTooltip name="РКДВыполненоРасширеннаяПодсказка" id="28"/>
@@ -141,7 +140,7 @@
 	<Attributes>
 		<Attribute name="Объект" id="1">
 			<Type>
-				<v8:Type>cfg:DocumentObject.Рекламация</v8:Type>
+				<v8:Type>cfg:DocumentObject.Рекламации</v8:Type>
 			</Type>
 			<MainAttribute>true</MainAttribute>
 			<SavedData>true</SavedData>
