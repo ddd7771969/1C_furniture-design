@@ -75,6 +75,11 @@
 							<CommandName>Form.Command.СнятьТегГЧПереведенВРабочее</CommandName>
 							<ExtendedTooltip name="СнятьТегГЧПереведенВРабочееРасширеннаяПодсказка" id="5"/>
 						</Button>
+						<Button name="СнятьТегРекламация" id="50">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.СнятьТегРекламация</CommandName>
+							<ExtendedTooltip name="СнятьТегРекламацияРасширеннаяПодсказка" id="51"/>
+						</Button>
 					</ChildItems>
 				</UsualGroup>
 				<UsualGroup name="ГруппаЧастичнаяОтгрузка" id="37">
@@ -381,6 +386,21 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ЗакрытьОтчет</Action>
+		</Command>
+		<Command name="СнятьТегРекламация" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Снять тег рекламация</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Снять тег рекламация</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СнятьТегРекламация</Action>
 		</Command>
 	</Commands>
 </Form>
