@@ -68,14 +68,9 @@
 				<ExtendedTooltip name="СписокУправлениеПоискомРасширеннаяПодсказка" id="15"/>
 			</SearchControlAddition>
 			<ChildItems>
-				<CheckBoxField name="Выполнена1" id="49">
-					<DataPath>Список.Выполнена</DataPath>
-					<CheckBoxType>Auto</CheckBoxType>
-					<ContextMenu name="Выполнена1КонтекстноеМеню" id="50"/>
-					<ExtendedTooltip name="Выполнена1РасширеннаяПодсказка" id="51"/>
-				</CheckBoxField>
 				<LabelField name="Наименование" id="19">
 					<DataPath>Список.Наименование</DataPath>
+					<DefaultItem>true</DefaultItem>
 					<ContextMenu name="НаименованиеКонтекстноеМеню" id="20"/>
 					<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="21"/>
 				</LabelField>
@@ -128,7 +123,6 @@
 				</CheckBoxField>
 				<LabelField name="Номер" id="16">
 					<DataPath>Список.Номер</DataPath>
-					<DefaultItem>true</DefaultItem>
 					<ContextMenu name="НомерКонтекстноеМеню" id="17"/>
 					<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="18"/>
 				</LabelField>
