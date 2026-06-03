@@ -2188,6 +2188,123 @@
 								</InputField>
 							</ChildItems>
 						</Table>
+						<UsualGroup name="ГруппаКнопкиКомплектыКонструктора" id="1588">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа кнопки комплекты конструктора</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа кнопки комплекты конструктора</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>Vertical</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаКнопкиКомплектыКонструктораРасширеннаяПодсказка" id="1589"/>
+							<ChildItems>
+								<Button name="ФормаТаймингЗадачи" id="1590">
+									<Type>UsualButton</Type>
+									<Representation>Picture</Representation>
+									<CommandName>Form.Command.ТаймингКомплектыКонструктора</CommandName>
+									<Picture>
+										<xr:Ref>CommonPicture.ИсторияВерсий</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ExtendedTooltip name="ФормаТаймингЗадачиРасширеннаяПодсказка" id="1591"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="Группа17" id="1592">
+					<Group>AlwaysHorizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа17РасширеннаяПодсказка" id="1593"/>
+					<ChildItems>
+						<GanttChartField name="Диаграмма" id="1307">
+							<DataPath>Диаграмма</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<AutoMaxWidth>false</AutoMaxWidth>
+							<AutoMaxHeight>false</AutoMaxHeight>
+							<ContextMenu name="ДиаграммаКонтекстноеМеню" id="1308"/>
+							<ExtendedTooltip name="ДиаграммаРасширеннаяПодсказка" id="1309"/>
+							<Table name="ДиаграммаТаблица" id="1310">
+								<Representation>Tree</Representation>
+								<Visible>false</Visible>
+								<CommandBarLocation>None</CommandBarLocation>
+								<Height>10</Height>
+								<AutoMaxHeight>false</AutoMaxHeight>
+								<HeightControlVariant>UseHeightInFormRows</HeightControlVariant>
+								<VerticalScrollBar>DontUse</VerticalScrollBar>
+								<InitialListView>Beginning</InitialListView>
+								<InitialTreeView>ExpandAllLevels</InitialTreeView>
+								<DataPath>Диаграмма</DataPath>
+								<SearchStringLocation>None</SearchStringLocation>
+								<ViewStatusLocation>None</ViewStatusLocation>
+								<SearchControlLocation>None</SearchControlLocation>
+								<ContextMenu name="ДиаграммаТаблицаКонтекстноеМеню" id="1311"/>
+								<AutoCommandBar name="ДиаграммаТаблицаКоманднаяПанель" id="1312">
+									<Autofill>false</Autofill>
+								</AutoCommandBar>
+								<ExtendedTooltip name="ДиаграммаТаблицаРасширеннаяПодсказка" id="1313"/>
+								<SearchStringAddition name="ДиаграммаТаблицаСтрокаПоиска" id="1314">
+									<AdditionSource>
+										<Item>ДиаграммаТаблица</Item>
+										<Type>SearchStringRepresentation</Type>
+									</AdditionSource>
+									<ContextMenu name="ДиаграммаТаблицаСтрокаПоискаКонтекстноеМеню" id="1315"/>
+									<ExtendedTooltip name="ДиаграммаТаблицаСтрокаПоискаРасширеннаяПодсказка" id="1316"/>
+								</SearchStringAddition>
+								<ViewStatusAddition name="ДиаграммаТаблицаСостояниеПросмотра" id="1317">
+									<AdditionSource>
+										<Item>ДиаграммаТаблица</Item>
+										<Type>ViewStatusRepresentation</Type>
+									</AdditionSource>
+									<ContextMenu name="ДиаграммаТаблицаСостояниеПросмотраКонтекстноеМеню" id="1318"/>
+									<ExtendedTooltip name="ДиаграммаТаблицаСостояниеПросмотраРасширеннаяПодсказка" id="1319"/>
+								</ViewStatusAddition>
+								<SearchControlAddition name="ДиаграммаТаблицаУправлениеПоиском" id="1320">
+									<AdditionSource>
+										<Item>ДиаграммаТаблица</Item>
+										<Type>SearchControl</Type>
+									</AdditionSource>
+									<ContextMenu name="ДиаграммаТаблицаУправлениеПоискомКонтекстноеМеню" id="1321"/>
+									<ExtendedTooltip name="ДиаграммаТаблицаУправлениеПоискомРасширеннаяПодсказка" id="1322"/>
+								</SearchControlAddition>
+								<ChildItems>
+									<InputField name="ДиаграммаТаблицаТочка" id="1323">
+										<DataPath>Диаграмма.Point</DataPath>
+										<EditMode>EnterOnInput</EditMode>
+										<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+										<ContextMenu name="ДиаграммаТаблицаТочкаКонтекстноеМеню" id="1324"/>
+										<ExtendedTooltip name="ДиаграммаТаблицаТочкаРасширеннаяПодсказка" id="1325"/>
+									</InputField>
+									<InputField name="ДиаграммаТаблицаТекст" id="1326">
+										<DataPath>Диаграмма.Text</DataPath>
+										<EditMode>EnterOnInput</EditMode>
+										<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+										<ContextMenu name="ДиаграммаТаблицаТекстКонтекстноеМеню" id="1327"/>
+										<ExtendedTooltip name="ДиаграммаТаблицаТекстРасширеннаяПодсказка" id="1328"/>
+									</InputField>
+									<InputField name="ДиаграммаТаблицаПереходы" id="1329">
+										<EditMode>EnterOnInput</EditMode>
+										<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+										<ContextMenu name="ДиаграммаТаблицаПереходыКонтекстноеМеню" id="1330"/>
+										<ExtendedTooltip name="ДиаграммаТаблицаПереходыРасширеннаяПодсказка" id="1331"/>
+									</InputField>
+								</ChildItems>
+							</Table>
+							<Events>
+								<Event name="Selection">ДиаграммаВыбор</Event>
+								<Event name="DetailProcessing">ДиаграммаОбработкаРасшифровки</Event>
+								<Event name="OnIntervalEditEnd">ДиаграммаПриОкончанииРедактированияИнтервала</Event>
+							</Events>
+						</GanttChartField>
 						<Button name="ОбновитьГантКонструктора" id="1332">
 							<Type>UsualButton</Type>
 							<Representation>Picture</Representation>
@@ -2200,82 +2317,6 @@
 						</Button>
 					</ChildItems>
 				</UsualGroup>
-				<GanttChartField name="Диаграмма" id="1307">
-					<DataPath>Диаграмма</DataPath>
-					<TitleLocation>None</TitleLocation>
-					<AutoMaxWidth>false</AutoMaxWidth>
-					<AutoMaxHeight>false</AutoMaxHeight>
-					<ContextMenu name="ДиаграммаКонтекстноеМеню" id="1308"/>
-					<ExtendedTooltip name="ДиаграммаРасширеннаяПодсказка" id="1309"/>
-					<Table name="ДиаграммаТаблица" id="1310">
-						<Representation>Tree</Representation>
-						<Visible>false</Visible>
-						<Height>10</Height>
-						<AutoMaxHeight>false</AutoMaxHeight>
-						<HeightControlVariant>UseHeightInFormRows</HeightControlVariant>
-						<VerticalScrollBar>DontUse</VerticalScrollBar>
-						<InitialListView>Beginning</InitialListView>
-						<InitialTreeView>ExpandAllLevels</InitialTreeView>
-						<DataPath>Диаграмма</DataPath>
-						<SearchStringLocation>None</SearchStringLocation>
-						<ViewStatusLocation>None</ViewStatusLocation>
-						<SearchControlLocation>None</SearchControlLocation>
-						<ContextMenu name="ДиаграммаТаблицаКонтекстноеМеню" id="1311"/>
-						<AutoCommandBar name="ДиаграммаТаблицаКоманднаяПанель" id="1312"/>
-						<ExtendedTooltip name="ДиаграммаТаблицаРасширеннаяПодсказка" id="1313"/>
-						<SearchStringAddition name="ДиаграммаТаблицаСтрокаПоиска" id="1314">
-							<AdditionSource>
-								<Item>ДиаграммаТаблица</Item>
-								<Type>SearchStringRepresentation</Type>
-							</AdditionSource>
-							<ContextMenu name="ДиаграммаТаблицаСтрокаПоискаКонтекстноеМеню" id="1315"/>
-							<ExtendedTooltip name="ДиаграммаТаблицаСтрокаПоискаРасширеннаяПодсказка" id="1316"/>
-						</SearchStringAddition>
-						<ViewStatusAddition name="ДиаграммаТаблицаСостояниеПросмотра" id="1317">
-							<AdditionSource>
-								<Item>ДиаграммаТаблица</Item>
-								<Type>ViewStatusRepresentation</Type>
-							</AdditionSource>
-							<ContextMenu name="ДиаграммаТаблицаСостояниеПросмотраКонтекстноеМеню" id="1318"/>
-							<ExtendedTooltip name="ДиаграммаТаблицаСостояниеПросмотраРасширеннаяПодсказка" id="1319"/>
-						</ViewStatusAddition>
-						<SearchControlAddition name="ДиаграммаТаблицаУправлениеПоиском" id="1320">
-							<AdditionSource>
-								<Item>ДиаграммаТаблица</Item>
-								<Type>SearchControl</Type>
-							</AdditionSource>
-							<ContextMenu name="ДиаграммаТаблицаУправлениеПоискомКонтекстноеМеню" id="1321"/>
-							<ExtendedTooltip name="ДиаграммаТаблицаУправлениеПоискомРасширеннаяПодсказка" id="1322"/>
-						</SearchControlAddition>
-						<ChildItems>
-							<InputField name="ДиаграммаТаблицаТочка" id="1323">
-								<DataPath>Диаграмма.Point</DataPath>
-								<EditMode>EnterOnInput</EditMode>
-								<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-								<ContextMenu name="ДиаграммаТаблицаТочкаКонтекстноеМеню" id="1324"/>
-								<ExtendedTooltip name="ДиаграммаТаблицаТочкаРасширеннаяПодсказка" id="1325"/>
-							</InputField>
-							<InputField name="ДиаграммаТаблицаТекст" id="1326">
-								<DataPath>Диаграмма.Text</DataPath>
-								<EditMode>EnterOnInput</EditMode>
-								<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-								<ContextMenu name="ДиаграммаТаблицаТекстКонтекстноеМеню" id="1327"/>
-								<ExtendedTooltip name="ДиаграммаТаблицаТекстРасширеннаяПодсказка" id="1328"/>
-							</InputField>
-							<InputField name="ДиаграммаТаблицаПереходы" id="1329">
-								<EditMode>EnterOnInput</EditMode>
-								<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-								<ContextMenu name="ДиаграммаТаблицаПереходыКонтекстноеМеню" id="1330"/>
-								<ExtendedTooltip name="ДиаграммаТаблицаПереходыРасширеннаяПодсказка" id="1331"/>
-							</InputField>
-						</ChildItems>
-					</Table>
-					<Events>
-						<Event name="Selection">ДиаграммаВыбор</Event>
-						<Event name="DetailProcessing">ДиаграммаОбработкаРасшифровки</Event>
-						<Event name="OnIntervalEditEnd">ДиаграммаПриОкончанииРедактированияИнтервала</Event>
-					</Events>
-				</GanttChartField>
 			</ChildItems>
 		</UsualGroup>
 		<UsualGroup name="ГруппаФиндиректор" id="881">
@@ -5487,6 +5528,21 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ОткрытьБазуЗнаний</Action>
+		</Command>
+		<Command name="ТаймингКомплектыКонструктора" id="18">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тайминг комплекты конструктора</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тайминг комплекты конструктора</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ТаймингКомплектыКонструктора</Action>
 		</Command>
 	</Commands>
 </Form>

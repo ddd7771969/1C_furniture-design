@@ -19,6 +19,7 @@
 	<Events>
 		<Event name="AfterWrite">ПослеЗаписи</Event>
 		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 	</Events>
 	<ChildItems>
 		<UsualGroup name="Группа2" id="29">
@@ -91,6 +92,9 @@
 							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 							<ContextMenu name="ГабаритныйЧертежКонтекстноеМеню" id="14"/>
 							<ExtendedTooltip name="ГабаритныйЧертежРасширеннаяПодсказка" id="15"/>
+							<Events>
+								<Event name="OnChange">ГабаритныйЧертежПриИзменении</Event>
+							</Events>
 						</InputField>
 						<InputField name="Проект" id="36">
 							<DataPath>Объект.Проект</DataPath>

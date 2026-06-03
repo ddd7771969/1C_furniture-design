@@ -1246,16 +1246,30 @@
 										<Event name="OnChange">СостояниеПриИзменении</Event>
 									</Events>
 								</InputField>
-								<Button name="СнятьСВыполнения" id="192">
-									<Type>UsualButton</Type>
-									<CommandName>Form.Command.СнятьСВыполнения</CommandName>
-									<ExtendedTooltip name="СнятьСВыполненияРасширеннаяПодсказка" id="193"/>
-								</Button>
-								<Button name="УстановитьВыполнение" id="282">
-									<Type>UsualButton</Type>
-									<CommandName>Form.Command.УстановитьВыполнение</CommandName>
-									<ExtendedTooltip name="УстановитьВыполнениеРасширеннаяПодсказка" id="283"/>
-								</Button>
+								<UsualGroup name="Группа21" id="373">
+									<Group>AlwaysHorizontal</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="Группа21РасширеннаяПодсказка" id="374"/>
+									<ChildItems>
+										<Button name="СнятьСВыполнения" id="192">
+											<Type>UsualButton</Type>
+											<CommandName>Form.Command.СнятьСВыполнения</CommandName>
+											<ExtendedTooltip name="СнятьСВыполненияРасширеннаяПодсказка" id="193"/>
+										</Button>
+										<Button name="УстановитьВыполнение" id="282">
+											<Type>UsualButton</Type>
+											<CommandName>Form.Command.УстановитьВыполнение</CommandName>
+											<ExtendedTooltip name="УстановитьВыполнениеРасширеннаяПодсказка" id="283"/>
+										</Button>
+										<CheckBoxField name="ОбобщеннаяЗадача" id="375">
+											<DataPath>Объект.ОбобщеннаяЗадача</DataPath>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="ОбобщеннаяЗадачаКонтекстноеМеню" id="376"/>
+											<ExtendedTooltip name="ОбобщеннаяЗадачаРасширеннаяПодсказка" id="377"/>
+										</CheckBoxField>
+									</ChildItems>
+								</UsualGroup>
 							</ChildItems>
 						</UsualGroup>
 					</ChildItems>
