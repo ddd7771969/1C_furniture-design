@@ -847,16 +847,12 @@
 													<ShowTitle>false</ShowTitle>
 													<ExtendedTooltip name="Группа11РасширеннаяПодсказка" id="261"/>
 													<ChildItems>
-														<LabelDecoration name="ДекорацияПроектноеВремя" id="257">
-															<Title formatted="false">
-																<v8:item>
-																	<v8:lang>ru</v8:lang>
-																	<v8:content>Декорация проектное время</v8:content>
-																</v8:item>
-															</Title>
-															<ContextMenu name="ДекорацияПроектноеВремяКонтекстноеМеню" id="258"/>
-															<ExtendedTooltip name="ДекорацияПроектноеВремяРасширеннаяПодсказка" id="259"/>
-														</LabelDecoration>
+														<InputField name="НормаВремени" id="378">
+															<DataPath>Объект.НормаВремени</DataPath>
+															<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+															<ContextMenu name="НормаВремениКонтекстноеМеню" id="379"/>
+															<ExtendedTooltip name="НормаВремениРасширеннаяПодсказка" id="380"/>
+														</InputField>
 														<LabelDecoration name="ДекорацияДатаОкончания" id="262">
 															<Visible>false</Visible>
 															<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
