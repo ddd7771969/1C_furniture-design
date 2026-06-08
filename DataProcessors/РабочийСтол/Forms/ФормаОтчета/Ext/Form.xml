@@ -1642,6 +1642,11 @@
 											<CommandName>Form.Command.ОткрытьПлан</CommandName>
 											<ExtendedTooltip name="ОткрытьПланРасширеннаяПодсказка" id="1279"/>
 										</Button>
+										<Button name="ОткрытьРекламации" id="1594">
+											<Type>Hyperlink</Type>
+											<CommandName>Form.Command.ОткрытьРекламации</CommandName>
+											<ExtendedTooltip name="ОткрытьРекламацииРасширеннаяПодсказка" id="1595"/>
+										</Button>
 									</ChildItems>
 								</UsualGroup>
 								<Table name="ЗадачиВРаботеВедущийКонструктор" id="853">
@@ -5547,6 +5552,21 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ТаймингКомплектыКонструктора</Action>
+		</Command>
+		<Command name="ОткрытьРекламации" id="19">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть рекламации</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть рекламации</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОткрытьРекламации</Action>
 		</Command>
 	</Commands>
 </Form>

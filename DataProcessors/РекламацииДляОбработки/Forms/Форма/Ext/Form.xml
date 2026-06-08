@@ -1,0 +1,320 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Группа1" id="47">
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="48"/>
+			<ChildItems>
+				<InputField name="Проект" id="49">
+					<DataPath>Проект</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ПроектКонтекстноеМеню" id="50"/>
+					<ExtendedTooltip name="ПроектРасширеннаяПодсказка" id="51"/>
+				</InputField>
+				<InputField name="ВедущийКонструктор" id="38">
+					<DataPath>ВедущийКонструктор</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ВедущийКонструкторКонтекстноеМеню" id="39"/>
+					<ExtendedTooltip name="ВедущийКонструкторРасширеннаяПодсказка" id="40"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<Table name="Рекламации" id="1">
+			<Representation>List</Representation>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>Рекламации</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="РекламацииКонтекстноеМеню" id="2"/>
+			<AutoCommandBar name="РекламацииКоманднаяПанель" id="3">
+				<Autofill>false</Autofill>
+			</AutoCommandBar>
+			<ExtendedTooltip name="РекламацииРасширеннаяПодсказка" id="4"/>
+			<SearchStringAddition name="РекламацииСтрокаПоиска" id="5">
+				<AdditionSource>
+					<Item>Рекламации</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="РекламацииСтрокаПоискаКонтекстноеМеню" id="6"/>
+				<ExtendedTooltip name="РекламацииСтрокаПоискаРасширеннаяПодсказка" id="7"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="РекламацииСостояниеПросмотра" id="8">
+				<AdditionSource>
+					<Item>Рекламации</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="РекламацииСостояниеПросмотраКонтекстноеМеню" id="9"/>
+				<ExtendedTooltip name="РекламацииСостояниеПросмотраРасширеннаяПодсказка" id="10"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="РекламацииУправлениеПоиском" id="11">
+				<AdditionSource>
+					<Item>Рекламации</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="РекламацииУправлениеПоискомКонтекстноеМеню" id="12"/>
+				<ExtendedTooltip name="РекламацииУправлениеПоискомРасширеннаяПодсказка" id="13"/>
+			</SearchControlAddition>
+			<Events>
+				<Event name="BeforeAddRow">РекламацииПередНачаломДобавления</Event>
+				<Event name="BeforeDeleteRow">РекламацииПередУдалением</Event>
+				<Event name="BeforeRowChange">РекламацииПередНачаломИзменения</Event>
+			</Events>
+			<ChildItems>
+				<InputField name="РекламацииДата" id="35">
+					<DataPath>Рекламации.Дата</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="РекламацииДатаКонтекстноеМеню" id="36"/>
+					<ExtendedTooltip name="РекламацииДатаРасширеннаяПодсказка" id="37"/>
+				</InputField>
+				<InputField name="РекламацииПроект" id="26">
+					<DataPath>Рекламации.Проект</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="РекламацииПроектКонтекстноеМеню" id="27"/>
+					<ExtendedTooltip name="РекламацииПроектРасширеннаяПодсказка" id="28"/>
+				</InputField>
+				<InputField name="РекламацииКомплект" id="52">
+					<DataPath>Рекламации.Комплект</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="РекламацииКомплектКонтекстноеМеню" id="53"/>
+					<ExtendedTooltip name="РекламацииКомплектРасширеннаяПодсказка" id="54"/>
+				</InputField>
+				<InputField name="РекламацииВедущийКонструктор" id="17">
+					<DataPath>Рекламации.ВедущийКонструктор</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="РекламацииВедущийКонструкторКонтекстноеМеню" id="18"/>
+					<ExtendedTooltip name="РекламацииВедущийКонструкторРасширеннаяПодсказка" id="19"/>
+				</InputField>
+				<InputField name="РекламацииКонструктор" id="20">
+					<DataPath>Рекламации.Конструктор</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="РекламацииКонструкторКонтекстноеМеню" id="21"/>
+					<ExtendedTooltip name="РекламацииКонструкторРасширеннаяПодсказка" id="22"/>
+				</InputField>
+				<InputField name="РекламацииЗадача" id="41">
+					<DataPath>Рекламации.Задача</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="РекламацииЗадачаКонтекстноеМеню" id="42"/>
+					<ExtendedTooltip name="РекламацииЗадачаРасширеннаяПодсказка" id="43"/>
+				</InputField>
+				<InputField name="РекламацииТекущаяСтадияПолноеНаименование" id="44">
+					<DataPath>Рекламации.ТекущаяСтадияПолноеНаименование</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="РекламацииТекущаяСтадияПолноеНаименованиеКонтекстноеМеню" id="45"/>
+					<ExtendedTooltip name="РекламацииТекущаяСтадияПолноеНаименованиеРасширеннаяПодсказка" id="46"/>
+				</InputField>
+				<InputField name="РекламацииПричина" id="23">
+					<DataPath>Рекламации.Причина</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="РекламацииПричинаКонтекстноеМеню" id="24"/>
+					<ExtendedTooltip name="РекламацииПричинаРасширеннаяПодсказка" id="25"/>
+				</InputField>
+				<InputField name="РекламацииКомментарий" id="32">
+					<DataPath>Рекламации.Комментарий</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="РекламацииКомментарийКонтекстноеМеню" id="33"/>
+					<ExtendedTooltip name="РекламацииКомментарийРасширеннаяПодсказка" id="34"/>
+				</InputField>
+				<CheckBoxField name="РекламацииОстановитьПроизводство" id="29">
+					<DataPath>Рекламации.ОстановитьПроизводство</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="РекламацииОстановитьПроизводствоКонтекстноеМеню" id="30"/>
+					<ExtendedTooltip name="РекламацииОстановитьПроизводствоРасширеннаяПодсказка" id="31"/>
+				</CheckBoxField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.РекламацииДляОбработки</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="Рекламации" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Рекламации</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Рекламация" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Рекламация</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:DocumentRef.Рекламации</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ВедущийКонструктор" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ведущий конструктор</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Пользователи</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Конструктор" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Конструктор</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Пользователи</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Причина" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Причина</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ПричиныРекламации</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Проект" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Проект</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Проекты</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ОстановитьПроизводство" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Остановить производство</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Комментарий" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Комментарий</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Дата" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>DateTime</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="Задача" id="9">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Задача</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:TaskRef.Задачи_РКД</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ТекущаяСтадияПолноеНаименование" id="10">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Текущая стадия</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Комплект" id="11">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Комплект</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ИзделияКомплект</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ВедущийКонструктор" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ведущий конструктор</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Пользователи</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Проект" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проект</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Проекты</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+</Form>
