@@ -55,6 +55,11 @@
 							<CommandName>Form.Command.ОтгрузкаКомплекта</CommandName>
 							<ExtendedTooltip name="ОтгрузкаКомплектаРасширеннаяПодсказка" id="7"/>
 						</Button>
+						<Button name="Рекламация" id="52">
+							<Type>UsualButton</Type>
+							<CommandName>Form.Command.Рекламация</CommandName>
+							<ExtendedTooltip name="РекламацияРасширеннаяПодсказка" id="53"/>
+						</Button>
 						<Button name="ПередачаВЧастичныйПодряд" id="8">
 							<Type>UsualButton</Type>
 							<CommandName>Form.Command.ПередачаВЧастичныйПодряд</CommandName>
@@ -79,6 +84,14 @@
 							<Type>UsualButton</Type>
 							<CommandName>Form.Command.СнятьТегРекламация</CommandName>
 							<ExtendedTooltip name="СнятьТегРекламацияРасширеннаяПодсказка" id="51"/>
+						</Button>
+						<Button name="История" id="54">
+							<Type>UsualButton</Type>
+							<Representation>PictureAndText</Representation>
+							<Width>23</Width>
+							<Height>1</Height>
+							<CommandName>Form.Command.История</CommandName>
+							<ExtendedTooltip name="ИсторияРасширеннаяПодсказка" id="55"/>
 						</Button>
 					</ChildItems>
 				</UsualGroup>
@@ -401,6 +414,40 @@
 				</v8:item>
 			</ToolTip>
 			<Action>СнятьТегРекламация</Action>
+		</Command>
+		<Command name="Рекламация" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Рекламация</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Рекламация</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Рекламация</Action>
+		</Command>
+		<Command name="История" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>История</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>История</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Picture>
+				<xr:Ref>CommonPicture.История50х50</xr:Ref>
+				<xr:LoadTransparent>true</xr:LoadTransparent>
+			</Picture>
+			<Action>История</Action>
 		</Command>
 	</Commands>
 </Form>

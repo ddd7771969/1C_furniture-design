@@ -1,0 +1,210 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<Table name="ТаймингКомплекта" id="1">
+			<Representation>List</Representation>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>ТаймингКомплекта</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ТаймингКомплектаКонтекстноеМеню" id="2"/>
+			<AutoCommandBar name="ТаймингКомплектаКоманднаяПанель" id="3">
+				<Autofill>false</Autofill>
+			</AutoCommandBar>
+			<ExtendedTooltip name="ТаймингКомплектаРасширеннаяПодсказка" id="4"/>
+			<SearchStringAddition name="ТаймингКомплектаСтрокаПоиска" id="5">
+				<AdditionSource>
+					<Item>ТаймингКомплекта</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаймингКомплектаСтрокаПоискаКонтекстноеМеню" id="6"/>
+				<ExtendedTooltip name="ТаймингКомплектаСтрокаПоискаРасширеннаяПодсказка" id="7"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ТаймингКомплектаСостояниеПросмотра" id="8">
+				<AdditionSource>
+					<Item>ТаймингКомплекта</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаймингКомплектаСостояниеПросмотраКонтекстноеМеню" id="9"/>
+				<ExtendedTooltip name="ТаймингКомплектаСостояниеПросмотраРасширеннаяПодсказка" id="10"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ТаймингКомплектаУправлениеПоиском" id="11">
+				<AdditionSource>
+					<Item>ТаймингКомплекта</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаймингКомплектаУправлениеПоискомКонтекстноеМеню" id="12"/>
+				<ExtendedTooltip name="ТаймингКомплектаУправлениеПоискомРасширеннаяПодсказка" id="13"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<InputField name="ТаймингКомплектаСтадия" id="14">
+					<DataPath>ТаймингКомплекта.Стадия</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ТаймингКомплектаСтадияКонтекстноеМеню" id="15"/>
+					<ExtendedTooltip name="ТаймингКомплектаСтадияРасширеннаяПодсказка" id="16"/>
+				</InputField>
+				<InputField name="ТаймингКомплектаДатаНачала" id="17">
+					<DataPath>ТаймингКомплекта.ДатаНачала</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ТаймингКомплектаДатаНачалаКонтекстноеМеню" id="18"/>
+					<ExtendedTooltip name="ТаймингКомплектаДатаНачалаРасширеннаяПодсказка" id="19"/>
+				</InputField>
+				<InputField name="ТаймингКомплектаСотрудник" id="20">
+					<DataPath>ТаймингКомплекта.Сотрудник</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ТаймингКомплектаСотрудникКонтекстноеМеню" id="21"/>
+					<ExtendedTooltip name="ТаймингКомплектаСотрудникРасширеннаяПодсказка" id="22"/>
+				</InputField>
+				<InputField name="ТаймингКомплектаПродолжительность" id="23">
+					<DataPath>ТаймингКомплекта.Продолжительность</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ТаймингКомплектаПродолжительностьКонтекстноеМеню" id="24"/>
+					<ExtendedTooltip name="ТаймингКомплектаПродолжительностьРасширеннаяПодсказка" id="25"/>
+				</InputField>
+				<InputField name="ТаймингКомплектаВРаботе" id="26">
+					<DataPath>ТаймингКомплекта.ВРаботе</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ТаймингКомплектаВРаботеКонтекстноеМеню" id="27"/>
+					<ExtendedTooltip name="ТаймингКомплектаВРаботеРасширеннаяПодсказка" id="28"/>
+				</InputField>
+				<InputField name="ТаймингКомплектаДополнительныеСведения" id="29">
+					<DataPath>ТаймингКомплекта.ДополнительныеСведения</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ТаймингКомплектаДополнительныеСведенияКонтекстноеМеню" id="30"/>
+					<ExtendedTooltip name="ТаймингКомплектаДополнительныеСведенияРасширеннаяПодсказка" id="31"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+		<InputField name="Комплект" id="32">
+			<DataPath>Комплект</DataPath>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="КомплектКонтекстноеМеню" id="33"/>
+			<ExtendedTooltip name="КомплектРасширеннаяПодсказка" id="34"/>
+		</InputField>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Объект" id="1">
+			<Type>
+				<v8:Type>cfg:DataProcessorObject.ИсторияКарточкиКанбан</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+		</Attribute>
+		<Attribute name="ТаймингКомплекта" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тайминг комплекта</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Стадия" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Стадия</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.СтадииКомплекта</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ДатаНачала" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата начала</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>DateTime</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="Сотрудник" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сотрудник</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Пользователи</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Продолжительность" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Продолжительность (в днях)</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>6</v8:Digits>
+							<v8:FractionDigits>1</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ВРаботе" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>В работе</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ДополнительныеСведения" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дополнительные сведения</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="Комплект" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Комплект</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.ИзделияКомплект</v8:Type>
+			</Type>
+		</Attribute>
+	</Attributes>
+</Form>
