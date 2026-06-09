@@ -5,6 +5,13 @@
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 	</Events>
 	<ChildItems>
+		<InputField name="Комплект" id="32">
+			<DataPath>Комплект</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="КомплектКонтекстноеМеню" id="33"/>
+			<ExtendedTooltip name="КомплектРасширеннаяПодсказка" id="34"/>
+		</InputField>
 		<Table name="ТаймингКомплекта" id="1">
 			<Representation>List</Representation>
 			<AutoInsertNewRow>true</AutoInsertNewRow>
@@ -42,12 +49,18 @@
 				<ExtendedTooltip name="ТаймингКомплектаУправлениеПоискомРасширеннаяПодсказка" id="13"/>
 			</SearchControlAddition>
 			<ChildItems>
-				<InputField name="ТаймингКомплектаСтадия" id="14">
-					<DataPath>ТаймингКомплекта.Стадия</DataPath>
+				<InputField name="ТаймингКомплектаСтадияПолноеНаименование" id="35">
+					<DataPath>ТаймингКомплекта.СтадияПолноеНаименование</DataPath>
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Стадия</v8:content>
+						</v8:item>
+					</Title>
 					<EditMode>EnterOnInput</EditMode>
 					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-					<ContextMenu name="ТаймингКомплектаСтадияКонтекстноеМеню" id="15"/>
-					<ExtendedTooltip name="ТаймингКомплектаСтадияРасширеннаяПодсказка" id="16"/>
+					<ContextMenu name="ТаймингКомплектаСтадияПолноеНаименованиеКонтекстноеМеню" id="36"/>
+					<ExtendedTooltip name="ТаймингКомплектаСтадияПолноеНаименованиеРасширеннаяПодсказка" id="37"/>
 				</InputField>
 				<InputField name="ТаймингКомплектаДатаНачала" id="17">
 					<DataPath>ТаймингКомплекта.ДатаНачала</DataPath>
@@ -57,7 +70,7 @@
 					<ExtendedTooltip name="ТаймингКомплектаДатаНачалаРасширеннаяПодсказка" id="19"/>
 				</InputField>
 				<InputField name="ТаймингКомплектаСотрудник" id="20">
-					<DataPath>ТаймингКомплекта.Сотрудник</DataPath>
+					<DataPath>ТаймингКомплекта.Пользователь</DataPath>
 					<EditMode>EnterOnInput</EditMode>
 					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 					<ContextMenu name="ТаймингКомплектаСотрудникКонтекстноеМеню" id="21"/>
@@ -86,12 +99,6 @@
 				</InputField>
 			</ChildItems>
 		</Table>
-		<InputField name="Комплект" id="32">
-			<DataPath>Комплект</DataPath>
-			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-			<ContextMenu name="КомплектКонтекстноеМеню" id="33"/>
-			<ExtendedTooltip name="КомплектРасширеннаяПодсказка" id="34"/>
-		</InputField>
 	</ChildItems>
 	<Attributes>
 		<Attribute name="Объект" id="1">
@@ -136,11 +143,11 @@
 						</v8:DateQualifiers>
 					</Type>
 				</Column>
-				<Column name="Сотрудник" id="3">
+				<Column name="Пользователь" id="3">
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Сотрудник</v8:content>
+							<v8:content>Пользователь</v8:content>
 						</v8:item>
 					</Title>
 					<Type>
@@ -171,11 +178,7 @@
 						</v8:item>
 					</Title>
 					<Type>
-						<v8:Type>xs:string</v8:Type>
-						<v8:StringQualifiers>
-							<v8:Length>0</v8:Length>
-							<v8:AllowedLength>Variable</v8:AllowedLength>
-						</v8:StringQualifiers>
+						<v8:Type>xs:boolean</v8:Type>
 					</Type>
 				</Column>
 				<Column name="ДополнительныеСведения" id="6">
@@ -183,6 +186,21 @@
 						<v8:item>
 							<v8:lang>ru</v8:lang>
 							<v8:content>Дополнительные сведения</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="СтадияПолноеНаименование" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Стадия полное наименование</v8:content>
 						</v8:item>
 					</Title>
 					<Type>
@@ -206,5 +224,27 @@
 				<v8:Type>cfg:CatalogRef.ИзделияКомплект</v8:Type>
 			</Type>
 		</Attribute>
+		<ConditionalAppearance>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ТаймингКомплекта</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">ТаймингКомплекта.ВРаботе</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Шрифт</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+		</ConditionalAppearance>
 	</Attributes>
 </Form>
