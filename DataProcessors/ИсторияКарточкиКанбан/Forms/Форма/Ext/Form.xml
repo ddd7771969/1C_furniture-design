@@ -48,6 +48,11 @@
 				<ContextMenu name="ТаймингКомплектаУправлениеПоискомКонтекстноеМеню" id="12"/>
 				<ExtendedTooltip name="ТаймингКомплектаУправлениеПоискомРасширеннаяПодсказка" id="13"/>
 			</SearchControlAddition>
+			<Events>
+				<Event name="BeforeAddRow">ТаймингКомплектаПередНачаломДобавления</Event>
+				<Event name="BeforeDeleteRow">ТаймингКомплектаПередУдалением</Event>
+				<Event name="BeforeRowChange">ТаймингКомплектаПередНачаломИзменения</Event>
+			</Events>
 			<ChildItems>
 				<InputField name="ТаймингКомплектаСтадияПолноеНаименование" id="35">
 					<DataPath>ТаймингКомплекта.СтадияПолноеНаименование</DataPath>
@@ -211,6 +216,21 @@
 						</v8:StringQualifiers>
 					</Type>
 				</Column>
+				<Column name="УИДКудаКолонка" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>УИДКуда колонка</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>36</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
 			</Columns>
 		</Attribute>
 		<Attribute name="Комплект" id="3">
@@ -222,6 +242,21 @@
 			</Title>
 			<Type>
 				<v8:Type>cfg:CatalogRef.ИзделияКомплект</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="УИДКарточка" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>УИДКарточка</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>36</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
 			</Type>
 		</Attribute>
 		<ConditionalAppearance>
