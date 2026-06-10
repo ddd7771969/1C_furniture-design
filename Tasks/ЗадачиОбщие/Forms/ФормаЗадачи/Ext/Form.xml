@@ -40,11 +40,20 @@
 				<CommandName>Form.Command.ЗагрузитьКартинку</CommandName>
 				<ExtendedTooltip name="ФормаЗагрузитьКартинкуРасширеннаяПодсказка" id="151"/>
 			</Button>
+			<Button name="ФормаДобавитьКартинку" id="152">
+				<Type>CommandBarButton</Type>
+				<Representation>PictureAndText</Representation>
+				<CommandName>Form.Command.ДобавитьКартинку</CommandName>
+				<Picture>
+					<xr:Ref>StdPicture.Picture</xr:Ref>
+					<xr:LoadTransparent>true</xr:LoadTransparent>
+				</Picture>
+				<ExtendedTooltip name="ФормаДобавитьКартинкуРасширеннаяПодсказка" id="153"/>
+			</Button>
 		</ChildItems>
 	</AutoCommandBar>
 	<Events>
 		<Event name="AfterWrite">ПослеЗаписи</Event>
-		<Event name="OnPasteFromClipboard">ПриВставкеИзБуфераОбмена</Event>
 		<Event name="OnOpen">ПриОткрытии</Event>
 		<Event name="BeforeWrite">ПередЗаписью</Event>
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
@@ -999,6 +1008,21 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ЗагрузитьКартинку</Action>
+		</Command>
+		<Command name="ДобавитьКартинку" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить картинку</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить картинку</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ДобавитьКартинку</Action>
 		</Command>
 	</Commands>
 	<CommandInterface>

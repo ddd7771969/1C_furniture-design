@@ -92,16 +92,16 @@
 					<ContextMenu name="КонструкторКонтекстноеМеню" id="38"/>
 					<ExtendedTooltip name="КонструкторРасширеннаяПодсказка" id="39"/>
 				</LabelField>
-				<LabelField name="СделкаНомер" id="31">
-					<DataPath>Список.СделкаНомер</DataPath>
+				<LabelField name="ПроектаНомер" id="31">
+					<DataPath>Список.ПроектаНомер</DataPath>
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Номер сделки</v8:content>
+							<v8:content>Номер проекта</v8:content>
 						</v8:item>
 					</Title>
-					<ContextMenu name="СделкаНомерКонтекстноеМеню" id="32"/>
-					<ExtendedTooltip name="СделкаНомерРасширеннаяПодсказка" id="33"/>
+					<ContextMenu name="ПроектаНомерКонтекстноеМеню" id="32"/>
+					<ExtendedTooltip name="ПроектаНомерРасширеннаяПодсказка" id="33"/>
 				</LabelField>
 				<InputField name="Код_в_PDM" id="34">
 					<DataPath>Список.Код_в_PDM</DataPath>
@@ -147,7 +147,7 @@
 		КОГДА СправочникКомпозиции.ЭтоГруппа
 			ТОГДА СправочникКомпозиции.Проект.Номер
 		ИНАЧЕ 0
-	КОНЕЦ КАК СделкаНомер,
+	КОНЕЦ КАК ПроектаНомер,
 	ДатыКомплекта.Код_в_PDM КАК Код_в_PDM,
 	СправочникКомпозиции.Конструктор КАК Конструктор,
 	СправочникКомпозиции.ОсновноеПомещение КАК ОсновноеПомещение
@@ -196,16 +196,6 @@
 					<dcssch:field>Предопределенный</dcssch:field>
 				</Field>
 				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>СделкаНомер</dcssch:dataPath>
-					<dcssch:field>СделкаНомер</dcssch:field>
-					<dcssch:title xsi:type="v8:LocalStringType">
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Сделка номер</v8:content>
-						</v8:item>
-					</dcssch:title>
-				</Field>
-				<Field xsi:type="dcssch:DataSetFieldField">
 					<dcssch:dataPath>Код_в_PDM</dcssch:dataPath>
 					<dcssch:field>Код_в_PDM</dcssch:field>
 				</Field>
@@ -216,6 +206,16 @@
 				<Field xsi:type="dcssch:DataSetFieldField">
 					<dcssch:dataPath>ОсновноеПомещение</dcssch:dataPath>
 					<dcssch:field>ОсновноеПомещение</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ПроектаНомер</dcssch:dataPath>
+					<dcssch:field>ПроектаНомер</dcssch:field>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Проекта номер</v8:content>
+						</v8:item>
+					</dcssch:title>
 				</Field>
 				<MainTable>Catalog.Композиции</MainTable>
 				<ListSettings>
