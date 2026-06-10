@@ -13,7 +13,7 @@
 			<ContextMenu name="Проект1КонтекстноеМеню" id="32"/>
 			<ExtendedTooltip name="Проект1РасширеннаяПодсказка" id="33"/>
 			<Events>
-				<Event name="OnChange">Сделка1ПриИзменении</Event>
+				<Event name="OnChange">Проект1ПриИзменении</Event>
 			</Events>
 		</InputField>
 		<UsualGroup name="СписокКомпоновщикНастроекПользовательскиеНастройки" id="1">
@@ -94,16 +94,16 @@
 					<ContextMenu name="СделкаКонтекстноеМеню" id="26"/>
 					<ExtendedTooltip name="СделкаРасширеннаяПодсказка" id="27"/>
 				</LabelField>
-				<LabelField name="СделкаНомер" id="28">
-					<DataPath>Список.СделкаНомер</DataPath>
+				<LabelField name="ПроектНомер" id="28">
+					<DataPath>Список.ПроектНомер</DataPath>
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Номер сделки</v8:content>
+							<v8:content>Номер проекта</v8:content>
 						</v8:item>
 					</Title>
-					<ContextMenu name="СделкаНомерКонтекстноеМеню" id="29"/>
-					<ExtendedTooltip name="СделкаНомерРасширеннаяПодсказка" id="30"/>
+					<ContextMenu name="ПроектНомерКонтекстноеМеню" id="29"/>
+					<ExtendedTooltip name="ПроектНомерРасширеннаяПодсказка" id="30"/>
 				</LabelField>
 				<LabelField name="ОсновноеПомещение" id="22">
 					<DataPath>Список.ОсновноеПомещение</DataPath>
@@ -151,7 +151,7 @@
 	) КАК ИзделияЭлемент,
 	СправочникИзделияКомплект.Предопределенный КАК Предопределенный,
 	СправочникИзделияКомплект.ИмяПредопределенныхДанных КАК ИмяПредопределенныхДанных,
-	СправочникИзделияКомплект.Проект.Номер КАК СделкаНомер
+	СправочникИзделияКомплект.Проект.Номер КАК ПроектНомер
 ИЗ
 	Справочник.ИзделияКомплект КАК СправочникИзделияКомплект
 ГДЕ
@@ -311,14 +311,8 @@
 					<dcssch:field>Предопределенный</dcssch:field>
 				</Field>
 				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>СделкаНомер</dcssch:dataPath>
-					<dcssch:field>СделкаНомер</dcssch:field>
-					<dcssch:title xsi:type="v8:LocalStringType">
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Сделка номер</v8:content>
-						</v8:item>
-					</dcssch:title>
+					<dcssch:dataPath>ПроектНомер</dcssch:dataPath>
+					<dcssch:field>ПроектНомер</dcssch:field>
 				</Field>
 				<Parameter>
 					<dcssch:name>ИспользоватьНеПоказыватьВВыборе</dcssch:name>
