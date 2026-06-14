@@ -1011,6 +1011,82 @@
 						</InputField>
 					</ChildItems>
 				</Page>
+				<Page name="ГруппаФайлы" id="308">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Файлы</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа файлы</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаФайлыРасширеннаяПодсказка" id="309"/>
+					<ChildItems>
+						<LabelDecoration name="Декорация2" id="326">
+							<TextColor>#0000FF</TextColor>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Расширение файлов вводятся без точки.</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="Декорация2КонтекстноеМеню" id="327"/>
+							<ExtendedTooltip name="Декорация2РасширеннаяПодсказка" id="328"/>
+						</LabelDecoration>
+						<Table name="РасширениеФайловКартинк" id="310">
+							<Representation>List</Representation>
+							<Header>false</Header>
+							<HorizontalLines>false</HorizontalLines>
+							<VerticalLines>false</VerticalLines>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<DataPath>РасширениеФайловКартинк</DataPath>
+							<RowPictureDataPath>РасширениеФайловКартинк.Picture</RowPictureDataPath>
+							<ContextMenu name="РасширениеФайловКартинкКонтекстноеМеню" id="311"/>
+							<AutoCommandBar name="РасширениеФайловКартинкКоманднаяПанель" id="312"/>
+							<ExtendedTooltip name="РасширениеФайловКартинкРасширеннаяПодсказка" id="313"/>
+							<SearchStringAddition name="РасширениеФайловКартинкСтрокаПоиска" id="314">
+								<AdditionSource>
+									<Item>РасширениеФайловКартинк</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="РасширениеФайловКартинкСтрокаПоискаКонтекстноеМеню" id="315"/>
+								<ExtendedTooltip name="РасширениеФайловКартинкСтрокаПоискаРасширеннаяПодсказка" id="316"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="РасширениеФайловКартинкСостояниеПросмотра" id="317">
+								<AdditionSource>
+									<Item>РасширениеФайловКартинк</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="РасширениеФайловКартинкСостояниеПросмотраКонтекстноеМеню" id="318"/>
+								<ExtendedTooltip name="РасширениеФайловКартинкСостояниеПросмотраРасширеннаяПодсказка" id="319"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="РасширениеФайловКартинкУправлениеПоиском" id="320">
+								<AdditionSource>
+									<Item>РасширениеФайловКартинк</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="РасширениеФайловКартинкУправлениеПоискомКонтекстноеМеню" id="321"/>
+								<ExtendedTooltip name="РасширениеФайловКартинкУправлениеПоискомРасширеннаяПодсказка" id="322"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="OnChange">РасширениеФайловКартинкПриИзменении</Event>
+							</Events>
+							<ChildItems>
+								<InputField name="РасширениеФайловКартинкЗначение" id="323">
+									<DataPath>РасширениеФайловКартинк.Value</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="РасширениеФайловКартинкЗначениеКонтекстноеМеню" id="324"/>
+									<ExtendedTooltip name="РасширениеФайловКартинкЗначениеРасширеннаяПодсказка" id="325"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
 			</ChildItems>
 		</Pages>
 	</ChildItems>
@@ -1888,6 +1964,24 @@
 			<Type>
 				<v8:Type>cfg:CatalogRef.Пользователи</v8:Type>
 			</Type>
+		</Attribute>
+		<Attribute name="РасширениеФайловКартинк" id="58">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Расширение файлов картинк</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+			<Settings xsi:type="v8:TypeDescription">
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Settings>
 		</Attribute>
 	</Attributes>
 	<Commands>

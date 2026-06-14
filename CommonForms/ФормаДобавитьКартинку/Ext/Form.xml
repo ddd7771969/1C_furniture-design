@@ -16,45 +16,27 @@
 			<ContextMenu name="ДекорацияЛегендаКонтекстноеМеню" id="5"/>
 			<ExtendedTooltip name="ДекорацияЛегендаРасширеннаяПодсказка" id="6"/>
 		</LabelDecoration>
-		<PictureField name="ПолеКартинки" id="1">
-			<DataPath>ПолеКартинки</DataPath>
-			<EnableDrag>true</EnableDrag>
-			<ContextMenu name="ПолеКартинкиКонтекстноеМеню" id="2"/>
-			<ExtendedTooltip name="ПолеКартинкиРасширеннаяПодсказка" id="3"/>
-			<Events>
-				<Event name="DragCheck">ПолеКартинкиПроверкаПеретаскивания</Event>
-				<Event name="Drag">ПолеКартинкиПеретаскивание</Event>
-				<Event name="DragEnd">ПолеКартинкиОкончаниеПеретаскивания</Event>
-			</Events>
-		</PictureField>
 		<Button name="КартинкаИзБуфера" id="10">
 			<Type>UsualButton</Type>
 			<CommandName>Form.Command.КартинкаИзБуфера</CommandName>
 			<ExtendedTooltip name="КартинкаИзБуфераРасширеннаяПодсказка" id="11"/>
 		</Button>
-		<PictureField name="Скриншот" id="7">
-			<DataPath>Скриншот</DataPath>
-			<ContextMenu name="СкриншотКонтекстноеМеню" id="8"/>
-			<ExtendedTooltip name="СкриншотРасширеннаяПодсказка" id="9"/>
+		<PictureField name="Картинка" id="7">
+			<DataPath>Картинка</DataPath>
+			<EnableDrag>true</EnableDrag>
+			<ContextMenu name="КартинкаКонтекстноеМеню" id="8"/>
+			<ExtendedTooltip name="КартинкаРасширеннаяПодсказка" id="9"/>
+			<Events>
+				<Event name="Drag">КартинкаПеретаскивание</Event>
+			</Events>
 		</PictureField>
 	</ChildItems>
 	<Attributes>
-		<Attribute name="ПолеКартинки" id="1">
+		<Attribute name="Картинка" id="2">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Поле картинки</v8:content>
-				</v8:item>
-			</Title>
-			<Type>
-				<v8:Type>v8ui:Picture</v8:Type>
-			</Type>
-		</Attribute>
-		<Attribute name="Скриншот" id="2">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Скриншот</v8:content>
+					<v8:content>Картинка</v8:content>
 				</v8:item>
 			</Title>
 			<Type>
