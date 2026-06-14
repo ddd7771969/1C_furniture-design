@@ -1039,12 +1039,16 @@
 						</LabelDecoration>
 						<Table name="РасширениеФайловКартинк" id="310">
 							<Representation>List</Representation>
+							<TitleLocation>Top</TitleLocation>
 							<Header>false</Header>
 							<HorizontalLines>false</HorizontalLines>
 							<VerticalLines>false</VerticalLines>
 							<AutoInsertNewRow>true</AutoInsertNewRow>
 							<DataPath>РасширениеФайловКартинк</DataPath>
 							<RowPictureDataPath>РасширениеФайловКартинк.Picture</RowPictureDataPath>
+							<CommandSet>
+								<ExcludedCommand>Pickup</ExcludedCommand>
+							</CommandSet>
 							<ContextMenu name="РасширениеФайловКартинкКонтекстноеМеню" id="311"/>
 							<AutoCommandBar name="РасширениеФайловКартинкКоманднаяПанель" id="312"/>
 							<ExtendedTooltip name="РасширениеФайловКартинкРасширеннаяПодсказка" id="313"/>
@@ -1082,6 +1086,85 @@
 									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 									<ContextMenu name="РасширениеФайловКартинкЗначениеКонтекстноеМеню" id="324"/>
 									<ExtendedTooltip name="РасширениеФайловКартинкЗначениеРасширеннаяПодсказка" id="325"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</Page>
+				<Page name="СтраницаPDM" id="329">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>PDM</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Страница PDM</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="СтраницаPDMРасширеннаяПодсказка" id="330"/>
+					<ChildItems>
+						<LabelDecoration name="Декорация3" id="347">
+							<TextColor>#0000FF</TextColor>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Наименование каталогов вводятся без слеша.</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="Декорация3КонтекстноеМеню" id="348"/>
+							<ExtendedTooltip name="Декорация3РасширеннаяПодсказка" id="349"/>
+						</LabelDecoration>
+						<Table name="СтруктураПапокИзделия" id="350">
+							<Representation>List</Representation>
+							<Header>false</Header>
+							<HorizontalLines>false</HorizontalLines>
+							<VerticalLines>false</VerticalLines>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<DataPath>СтруктураПапокИзделия</DataPath>
+							<RowPictureDataPath>СтруктураПапокИзделия.Picture</RowPictureDataPath>
+							<CommandSet>
+								<ExcludedCommand>Pickup</ExcludedCommand>
+							</CommandSet>
+							<ContextMenu name="СтруктураПапокИзделияКонтекстноеМеню" id="351"/>
+							<AutoCommandBar name="СтруктураПапокИзделияКоманднаяПанель" id="352"/>
+							<ExtendedTooltip name="СтруктураПапокИзделияРасширеннаяПодсказка" id="353"/>
+							<SearchStringAddition name="СтруктураПапокИзделияСтрокаПоиска" id="354">
+								<AdditionSource>
+									<Item>СтруктураПапокИзделия</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СтруктураПапокИзделияСтрокаПоискаКонтекстноеМеню" id="355"/>
+								<ExtendedTooltip name="СтруктураПапокИзделияСтрокаПоискаРасширеннаяПодсказка" id="356"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="СтруктураПапокИзделияСостояниеПросмотра" id="357">
+								<AdditionSource>
+									<Item>СтруктураПапокИзделия</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СтруктураПапокИзделияСостояниеПросмотраКонтекстноеМеню" id="358"/>
+								<ExtendedTooltip name="СтруктураПапокИзделияСостояниеПросмотраРасширеннаяПодсказка" id="359"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="СтруктураПапокИзделияУправлениеПоиском" id="360">
+								<AdditionSource>
+									<Item>СтруктураПапокИзделия</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="СтруктураПапокИзделияУправлениеПоискомКонтекстноеМеню" id="361"/>
+								<ExtendedTooltip name="СтруктураПапокИзделияУправлениеПоискомРасширеннаяПодсказка" id="362"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="OnChange">СтруктураПапокИзделияПриИзменении</Event>
+							</Events>
+							<ChildItems>
+								<InputField name="СтруктураПапокИзделияЗначение" id="363">
+									<DataPath>СтруктураПапокИзделия.Value</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="СтруктураПапокИзделияЗначениеКонтекстноеМеню" id="364"/>
+									<ExtendedTooltip name="СтруктураПапокИзделияЗначениеРасширеннаяПодсказка" id="365"/>
 								</InputField>
 							</ChildItems>
 						</Table>
@@ -1970,6 +2053,24 @@
 				<v8:item>
 					<v8:lang>ru</v8:lang>
 					<v8:content>Расширение файлов картинк</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+			<Settings xsi:type="v8:TypeDescription">
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Settings>
+		</Attribute>
+		<Attribute name="СтруктураПапокИзделия" id="59">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Структура папок изделия</v8:content>
 				</v8:item>
 			</Title>
 			<Type>
