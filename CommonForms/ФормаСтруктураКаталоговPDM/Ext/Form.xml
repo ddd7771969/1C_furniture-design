@@ -1,0 +1,443 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="Группа1" id="59">
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="60"/>
+			<ChildItems>
+				<UsualGroup name="Группа2" id="64">
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="65"/>
+					<ChildItems>
+						<LabelDecoration name="ДекорацияДействие" id="4">
+							<TextColor>#0000FF</TextColor>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Декорация действие</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="ДекорацияДействиеКонтекстноеМеню" id="5"/>
+							<ExtendedTooltip name="ДекорацияДействиеРасширеннаяПодсказка" id="6"/>
+						</LabelDecoration>
+						<InputField name="Комплект" id="1">
+							<DataPath>Комплект</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<OpenButton>true</OpenButton>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="КомплектКонтекстноеМеню" id="2"/>
+							<ExtendedTooltip name="КомплектРасширеннаяПодсказка" id="3"/>
+						</InputField>
+						<UsualGroup name="Группа3" id="66">
+							<Group>AlwaysHorizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="67"/>
+							<ChildItems>
+								<InputField name="КореневаяПапка" id="7">
+									<DataPath>КореневаяПапка</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<OpenButton>true</OpenButton>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="КореневаяПапкаКонтекстноеМеню" id="8"/>
+									<ExtendedTooltip name="КореневаяПапкаРасширеннаяПодсказка" id="9"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+					</ChildItems>
+				</UsualGroup>
+				<PictureDecoration name="ДекорацияДлительноеОжидание" id="61">
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Декорация длительное ожидание</v8:content>
+						</v8:item>
+					</Title>
+					<Picture>
+						<xr:Ref>CommonPicture.ДлительнаяОперация48</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</Picture>
+					<ContextMenu name="ДекорацияДлительноеОжиданиеКонтекстноеМеню" id="62"/>
+					<ExtendedTooltip name="ДекорацияДлительноеОжиданиеРасширеннаяПодсказка" id="63"/>
+				</PictureDecoration>
+			</ChildItems>
+		</UsualGroup>
+		<Table name="СтруктураКаталогов" id="10">
+			<Representation>Tree</Representation>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<DataPath>СтруктураКаталогов</DataPath>
+			<ContextMenu name="СтруктураКаталоговКонтекстноеМеню" id="11"/>
+			<AutoCommandBar name="СтруктураКаталоговКоманднаяПанель" id="12">
+				<Autofill>false</Autofill>
+			</AutoCommandBar>
+			<ExtendedTooltip name="СтруктураКаталоговРасширеннаяПодсказка" id="13"/>
+			<SearchStringAddition name="СтруктураКаталоговСтрокаПоиска" id="14">
+				<AdditionSource>
+					<Item>СтруктураКаталогов</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СтруктураКаталоговСтрокаПоискаКонтекстноеМеню" id="15"/>
+				<ExtendedTooltip name="СтруктураКаталоговСтрокаПоискаРасширеннаяПодсказка" id="16"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="СтруктураКаталоговСостояниеПросмотра" id="17">
+				<AdditionSource>
+					<Item>СтруктураКаталогов</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="СтруктураКаталоговСостояниеПросмотраКонтекстноеМеню" id="18"/>
+				<ExtendedTooltip name="СтруктураКаталоговСостояниеПросмотраРасширеннаяПодсказка" id="19"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="СтруктураКаталоговУправлениеПоиском" id="20">
+				<AdditionSource>
+					<Item>СтруктураКаталогов</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="СтруктураКаталоговУправлениеПоискомКонтекстноеМеню" id="21"/>
+				<ExtendedTooltip name="СтруктураКаталоговУправлениеПоискомРасширеннаяПодсказка" id="22"/>
+			</SearchControlAddition>
+			<Events>
+				<Event name="BeforeAddRow">СтруктураКаталоговПередНачаломДобавления</Event>
+				<Event name="BeforeDeleteRow">СтруктураКаталоговПередУдалением</Event>
+				<Event name="BeforeRowChange">СтруктураКаталоговПередНачаломИзменения</Event>
+			</Events>
+			<ChildItems>
+				<InputField name="СтруктураКаталоговName" id="23">
+					<DataPath>СтруктураКаталогов.Name</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="СтруктураКаталоговNameКонтекстноеМеню" id="24"/>
+					<ExtendedTooltip name="СтруктураКаталоговNameРасширеннаяПодсказка" id="25"/>
+				</InputField>
+				<CheckBoxField name="СтруктураКаталоговThis_folder" id="26">
+					<DataPath>СтруктураКаталогов.This_folder</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="СтруктураКаталоговThis_folderКонтекстноеМеню" id="27"/>
+					<ExtendedTooltip name="СтруктураКаталоговThis_folderРасширеннаяПодсказка" id="28"/>
+				</CheckBoxField>
+				<InputField name="СтруктураКаталоговID" id="29">
+					<DataPath>СтруктураКаталогов.ID</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="СтруктураКаталоговIDКонтекстноеМеню" id="30"/>
+					<ExtendedTooltip name="СтруктураКаталоговIDРасширеннаяПодсказка" id="31"/>
+				</InputField>
+				<InputField name="СтруктураКаталоговLocalPath" id="32">
+					<DataPath>СтруктураКаталогов.local_path</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="СтруктураКаталоговLocalPathКонтекстноеМеню" id="33"/>
+					<ExtendedTooltip name="СтруктураКаталоговLocalPathРасширеннаяПодсказка" id="34"/>
+				</InputField>
+				<CheckBoxField name="СтруктураКаталоговIsLocked" id="35">
+					<DataPath>СтруктураКаталогов.IsLocked</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="СтруктураКаталоговIsLockedКонтекстноеМеню" id="36"/>
+					<ExtendedTooltip name="СтруктураКаталоговIsLockedРасширеннаяПодсказка" id="37"/>
+				</CheckBoxField>
+				<InputField name="СтруктураКаталоговLockedByUser" id="38">
+					<DataPath>СтруктураКаталогов.LockedByUserName</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="СтруктураКаталоговLockedByUserКонтекстноеМеню" id="39"/>
+					<ExtendedTooltip name="СтруктураКаталоговLockedByUserРасширеннаяПодсказка" id="40"/>
+				</InputField>
+				<InputField name="СтруктураКаталоговLockedOnComputer" id="41">
+					<DataPath>СтруктураКаталогов.LockedOnComputer</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="СтруктураКаталоговLockedOnComputerКонтекстноеМеню" id="42"/>
+					<ExtendedTooltip name="СтруктураКаталоговLockedOnComputerРасширеннаяПодсказка" id="43"/>
+				</InputField>
+				<InputField name="СтруктураКаталоговCurrentState" id="44">
+					<DataPath>СтруктураКаталогов.CurrentState</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="СтруктураКаталоговCurrentStateКонтекстноеМеню" id="45"/>
+					<ExtendedTooltip name="СтруктураКаталоговCurrentStateРасширеннаяПодсказка" id="46"/>
+				</InputField>
+				<InputField name="СтруктураКаталоговFileSize" id="47">
+					<DataPath>СтруктураКаталогов.FileSize</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="СтруктураКаталоговFileSizeКонтекстноеМеню" id="48"/>
+					<ExtendedTooltip name="СтруктураКаталоговFileSizeРасширеннаяПодсказка" id="49"/>
+				</InputField>
+				<InputField name="СтруктураКаталоговFileDate" id="50">
+					<DataPath>СтруктураКаталогов.FileDate</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="СтруктураКаталоговFileDateКонтекстноеМеню" id="51"/>
+					<ExtendedTooltip name="СтруктураКаталоговFileDateРасширеннаяПодсказка" id="52"/>
+				</InputField>
+				<InputField name="СтруктураКаталоговVersion" id="53">
+					<DataPath>СтруктураКаталогов.Version</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="СтруктураКаталоговVersionКонтекстноеМеню" id="54"/>
+					<ExtendedTooltip name="СтруктураКаталоговVersionРасширеннаяПодсказка" id="55"/>
+				</InputField>
+				<InputField name="СтруктураКаталоговWorkflowID" id="68">
+					<DataPath>СтруктураКаталогов.WorkflowID</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="СтруктураКаталоговWorkflowIDКонтекстноеМеню" id="69"/>
+					<ExtendedTooltip name="СтруктураКаталоговWorkflowIDРасширеннаяПодсказка" id="70"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="СтруктураКаталогов" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Структура каталогов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTree</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Name" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Наименование</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="This_folder" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>This folder</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ID" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>ID</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="local_path" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Local path</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="IsLocked" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Is locked</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="LockedByUserName" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Locked by user name</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="LockedOnComputer" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Locked on computer</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="CurrentState" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Current state</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="FileSize" id="9">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>File size</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="FileDate" id="10">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>File date</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>DateTime</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="Version" id="11">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Version</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="WorkflowID" id="12">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Workflow ID</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>10</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="Комплект" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Комплект</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Композиции</v8:Type>
+				<v8:Type>cfg:CatalogRef.ИзделияКомплект</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="КореневаяПапка" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Кореневая папка</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ЗаданиеУникальныйИдентификатор" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Задание уникальный идентификатор</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:UUID</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="АдресРезультата" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Адрес результата</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+	</Attributes>
+</Form>

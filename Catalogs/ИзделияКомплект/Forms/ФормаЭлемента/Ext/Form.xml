@@ -29,6 +29,11 @@
 						<CommandName>Form.Command.ДанныеИзPDM</CommandName>
 						<ExtendedTooltip name="ФормаДанныеИзPDMРасширеннаяПодсказка" id="587"/>
 					</Button>
+					<Button name="ФормаСтруктураКаталога" id="592">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.СтруктураКаталога</CommandName>
+						<ExtendedTooltip name="ФормаСтруктураКаталогаРасширеннаяПодсказка" id="593"/>
+					</Button>
 					<Button name="ФормаКонтрольСтруктурыПапок" id="590">
 						<Type>CommandBarButton</Type>
 						<CommandName>Form.Command.КонтрольСтруктурыПапок</CommandName>
@@ -1825,6 +1830,21 @@
 				</v8:item>
 			</ToolTip>
 			<Action>КонтрольСтруктурыПапок</Action>
+		</Command>
+		<Command name="СтруктураКаталога" id="16">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Структура каталога</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Структура каталога</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СтруктураКаталога</Action>
 		</Command>
 	</Commands>
 	<CommandInterface>

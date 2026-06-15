@@ -58,11 +58,24 @@
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="ГруппаДанныхРасширеннаяПодсказка" id="33"/>
 			<ChildItems>
-				<LabelField name="ИмяФайла" id="7">
-					<DataPath>ИмяФайла</DataPath>
-					<ContextMenu name="ИмяФайлаКонтекстноеМеню" id="8"/>
-					<ExtendedTooltip name="ИмяФайлаРасширеннаяПодсказка" id="9"/>
-				</LabelField>
+				<UsualGroup name="Группа5" id="75">
+					<Group>AlwaysHorizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа5РасширеннаяПодсказка" id="76"/>
+					<ChildItems>
+						<LabelField name="ИмяФайла" id="7">
+							<DataPath>ИмяФайла</DataPath>
+							<ContextMenu name="ИмяФайлаКонтекстноеМеню" id="8"/>
+							<ExtendedTooltip name="ИмяФайлаРасширеннаяПодсказка" id="9"/>
+						</LabelField>
+						<LabelField name="Статус" id="77">
+							<DataPath>Статус</DataPath>
+							<ContextMenu name="СтатусКонтекстноеМеню" id="78"/>
+							<ExtendedTooltip name="СтатусРасширеннаяПодсказка" id="79"/>
+						</LabelField>
+					</ChildItems>
+				</UsualGroup>
 				<UsualGroup name="Группа3" id="66">
 					<Group>AlwaysHorizontal</Group>
 					<Representation>None</Representation>
@@ -379,6 +392,21 @@
 					</Type>
 				</Column>
 			</Columns>
+		</Attribute>
+		<Attribute name="Статус" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Статус</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
 		</Attribute>
 	</Attributes>
 	<Commands>
