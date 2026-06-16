@@ -51,6 +51,15 @@
 									<ContextMenu name="КореневаяПапкаКонтекстноеМеню" id="8"/>
 									<ExtendedTooltip name="КореневаяПапкаРасширеннаяПодсказка" id="9"/>
 								</InputField>
+								<LabelField name="РезультатЗагрузки" id="71">
+									<DataPath>РезультатЗагрузки</DataPath>
+									<TitleLocation>None</TitleLocation>
+									<AutoMaxWidth>false</AutoMaxWidth>
+									<HorizontalStretch>true</HorizontalStretch>
+									<TextColor>#800080</TextColor>
+									<ContextMenu name="РезультатЗагрузкиКонтекстноеМеню" id="72"/>
+									<ExtendedTooltip name="РезультатЗагрузкиРасширеннаяПодсказка" id="73"/>
+								</LabelField>
 							</ChildItems>
 						</UsualGroup>
 					</ChildItems>
@@ -429,6 +438,21 @@
 				<v8:item>
 					<v8:lang>ru</v8:lang>
 					<v8:content>Адрес результата</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="РезультатЗагрузки" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Результат загрузки</v8:content>
 				</v8:item>
 			</Title>
 			<Type>
