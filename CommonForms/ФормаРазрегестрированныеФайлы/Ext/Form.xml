@@ -1,19 +1,266 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
-	<Attributes>
-		<Attribute name="РазрегестрированныеФайлы" id="1">
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<InputField name="Задача" id="36">
+			<DataPath>Задача</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ЗадачаКонтекстноеМеню" id="37"/>
+			<ExtendedTooltip name="ЗадачаРасширеннаяПодсказка" id="38"/>
+		</InputField>
+		<UsualGroup name="ГруппаОжидание" id="1">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Разрегестрированные файлы</v8:content>
+					<v8:content>Группа ожидание</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа ожидание</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаОжиданиеРасширеннаяПодсказка" id="2"/>
+			<ChildItems>
+				<PictureDecoration name="Декорация1" id="3">
+					<Picture>
+						<xr:Ref>CommonPicture.ДлительнаяОперация48</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</Picture>
+					<ContextMenu name="Декорация1КонтекстноеМеню" id="4"/>
+					<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="5"/>
+				</PictureDecoration>
+				<LabelDecoration name="ДекорацияНадпись" id="6">
+					<TextColor>#0000FF</TextColor>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Поиск разрегестрированных файлов</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ДекорацияНадписьКонтекстноеМеню" id="7"/>
+					<ExtendedTooltip name="ДекорацияНадписьРасширеннаяПодсказка" id="8"/>
+				</LabelDecoration>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаРазрегестрированные" id="9">
+			<Visible>false</Visible>
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа разрегестрированные</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа разрегестрированные</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаРазрегестрированныеРасширеннаяПодсказка" id="10"/>
+			<ChildItems>
+				<Table name="ТаблицаРазрегестрированных" id="11">
+					<Representation>List</Representation>
+					<AutoInsertNewRow>true</AutoInsertNewRow>
+					<EnableStartDrag>true</EnableStartDrag>
+					<EnableDrag>true</EnableDrag>
+					<DataPath>ТаблицаРазрегестрированных</DataPath>
+					<RowFilter xsi:nil="true"/>
+					<ContextMenu name="ТаблицаРазрегестрированныхКонтекстноеМеню" id="12"/>
+					<AutoCommandBar name="ТаблицаРазрегестрированныхКоманднаяПанель" id="13">
+						<Autofill>false</Autofill>
+					</AutoCommandBar>
+					<ExtendedTooltip name="ТаблицаРазрегестрированныхРасширеннаяПодсказка" id="14"/>
+					<SearchStringAddition name="ТаблицаРазрегестрированныхСтрокаПоиска" id="15">
+						<AdditionSource>
+							<Item>ТаблицаРазрегестрированных</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ТаблицаРазрегестрированныхСтрокаПоискаКонтекстноеМеню" id="16"/>
+						<ExtendedTooltip name="ТаблицаРазрегестрированныхСтрокаПоискаРасширеннаяПодсказка" id="17"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="ТаблицаРазрегестрированныхСостояниеПросмотра" id="18">
+						<AdditionSource>
+							<Item>ТаблицаРазрегестрированных</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ТаблицаРазрегестрированныхСостояниеПросмотраКонтекстноеМеню" id="19"/>
+						<ExtendedTooltip name="ТаблицаРазрегестрированныхСостояниеПросмотраРасширеннаяПодсказка" id="20"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="ТаблицаРазрегестрированныхУправлениеПоиском" id="21">
+						<AdditionSource>
+							<Item>ТаблицаРазрегестрированных</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="ТаблицаРазрегестрированныхУправлениеПоискомКонтекстноеМеню" id="22"/>
+						<ExtendedTooltip name="ТаблицаРазрегестрированныхУправлениеПоискомРасширеннаяПодсказка" id="23"/>
+					</SearchControlAddition>
+					<Events>
+						<Event name="BeforeAddRow">ТаблицаРазрегестрированныхПередНачаломДобавления</Event>
+						<Event name="BeforeDeleteRow">ТаблицаРазрегестрированныхПередУдалением</Event>
+						<Event name="BeforeRowChange">ТаблицаРазрегестрированныхПередНачаломИзменения</Event>
+					</Events>
+					<ChildItems>
+						<InputField name="ТаблицаРазрегестрированныхИмяФайла" id="24">
+							<DataPath>ТаблицаРазрегестрированных.ИмяФайла</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ТаблицаРазрегестрированныхИмяФайлаКонтекстноеМеню" id="25"/>
+							<ExtendedTooltip name="ТаблицаРазрегестрированныхИмяФайлаРасширеннаяПодсказка" id="26"/>
+						</InputField>
+						<InputField name="ТаблицаРазрегестрированныхПутьКФайлу" id="27">
+							<DataPath>ТаблицаРазрегестрированных.ПутьКФайлу</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ТаблицаРазрегестрированныхПутьКФайлуКонтекстноеМеню" id="28"/>
+							<ExtendedTooltip name="ТаблицаРазрегестрированныхПутьКФайлуРасширеннаяПодсказка" id="29"/>
+						</InputField>
+						<InputField name="ТаблицаРазрегестрированныхКтоЗаблокировал" id="30">
+							<DataPath>ТаблицаРазрегестрированных.КтоЗаблокировал</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ТаблицаРазрегестрированныхКтоЗаблокировалКонтекстноеМеню" id="31"/>
+							<ExtendedTooltip name="ТаблицаРазрегестрированныхКтоЗаблокировалРасширеннаяПодсказка" id="32"/>
+						</InputField>
+						<InputField name="ТаблицаРазрегестрированныхКомпьютер" id="33">
+							<DataPath>ТаблицаРазрегестрированных.Компьютер</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ТаблицаРазрегестрированныхКомпьютерКонтекстноеМеню" id="34"/>
+							<ExtendedTooltip name="ТаблицаРазрегестрированныхКомпьютерРасширеннаяПодсказка" id="35"/>
+						</InputField>
+					</ChildItems>
+				</Table>
+			</ChildItems>
+		</UsualGroup>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Комплект" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Комплект</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Композиции</v8:Type>
+				<v8:Type>cfg:CatalogRef.ИзделияКомплект</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ТаблицаРазрегестрированных" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Таблица разрегестрированных</v8:content>
 				</v8:item>
 			</Title>
 			<Type>
 				<v8:Type>v8:ValueTable</v8:Type>
 			</Type>
+			<Columns>
+				<Column name="ИмяФайла" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Имя файла</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ПутьКФайлу" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Путь к файлу</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="КтоЗаблокировал" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Кто заблокировал</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Компьютер" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Компьютер</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
 		</Attribute>
-		<Attribute name="Реквизит1" id="2">
+		<Attribute name="Задача" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Задача</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:TaskRef.Задачи_ПКД</v8:Type>
+				<v8:Type>cfg:TaskRef.Задачи_РКД</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ЗаданиеУникальныйИдентификатор" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Задание уникальный идентификатор</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:UUID</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="АдресРезультата" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Адрес результата</v8:content>
+				</v8:item>
+			</Title>
 			<Type>
 				<v8:Type>xs:string</v8:Type>
 				<v8:StringQualifiers>
