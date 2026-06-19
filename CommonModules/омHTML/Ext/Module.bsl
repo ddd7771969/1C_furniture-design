@@ -123,6 +123,15 @@
 			|	border: 3px solid rgb(43, 129, 17);
 			|}</style>
 			|"	
+	ИначеЕсли НомерСтиля = 3 Тогда //Комменарий  
+		
+		Возврат "<style>
+			|td {
+			|  overflow-wrap: break-word;
+			|  word-break: break-word;
+			|}
+			|</style>
+			|"	
 	КонецЕсли;	
 	
 	Возврат "";
