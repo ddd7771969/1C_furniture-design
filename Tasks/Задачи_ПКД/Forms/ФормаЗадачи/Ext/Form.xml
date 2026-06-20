@@ -25,9 +25,19 @@
 				</Picture>
 				<ExtendedTooltip name="ФормаТаймингЗадачиРасширеннаяПодсказка" id="306"/>
 			</Button>
+			<Button name="ФормаСообщитьООшибке" id="384">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.СообщитьООшибке</CommandName>
+				<ExtendedTooltip name="ФормаСообщитьООшибкеРасширеннаяПодсказка" id="385"/>
+			</Button>
 			<Button name="ФормаСправка" id="291">
 				<Type>CommandBarButton</Type>
+				<Representation>Picture</Representation>
 				<CommandName>Form.StandardCommand.Help</CommandName>
+				<Picture>
+					<xr:Ref>StdPicture.FormHelp</xr:Ref>
+					<xr:LoadTransparent>true</xr:LoadTransparent>
+				</Picture>
 				<ExtendedTooltip name="ФормаСправкаРасширеннаяПодсказка" id="292"/>
 			</Button>
 		</ChildItems>
@@ -2167,6 +2177,21 @@
 				</v8:item>
 			</ToolTip>
 			<Action>СоздатьОбщуюЗадачу</Action>
+		</Command>
+		<Command name="СообщитьООшибке" id="35">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сообщить о ошибке</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сообщить о ошибке</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СообщитьООшибке</Action>
 		</Command>
 	</Commands>
 	<CommandInterface>
