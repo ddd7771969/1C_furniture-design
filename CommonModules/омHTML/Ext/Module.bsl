@@ -52,14 +52,14 @@
 		Возврат "<style>
 			|body {
 			|    display: flex;
-			|    align-items: center;
+			|    align-items: flex-start;
 			|    justify-content: center;
 			|    min-height: 100vh;
 			|    padding: 50px;
 			|    background-color: #101030;
 			|    color: #e6dfdf;
 			|    font-family: ""Roboto"", sans-serif;
-			|  }
+			|}
 			|
 			|table {
 			|  width: 650px;
@@ -126,9 +126,39 @@
 	ИначеЕсли НомерСтиля = 3 Тогда //Комменарий  
 		
 		Возврат "<style>
+			|  body {
+			|    display: flex;
+			|    align-items: flex-start;
+			|    justify-content: center;
+			|    min-height: 100vh;
+			|    padding: 5px;
+			|    background-color: #FFFFFF;
+			|    color: #102010;
+			|    font-family: ""Roboto"", sans-serif;
+			|  }
+			|
+			|body::-webkit-scrollbar {
+			|	display: none;
+			|}		
+			|table {
+			|  width: 100%;
+			|  border-top: 7px solid rgb(43, 129, 17);
+			|  border-collapse: collapse;
+			|  text-align: center;
+			|  margin-bottom: 20px;
+			|  border: 1px solid #dddddd;
+			|}
 			|td {
 			|  overflow-wrap: break-word;
 			|  word-break: break-word;
+			|  text-align: left;
+			|  padding: 5px;
+			|  border: 2px solid rgb(43, 129, 17);
+			|} 
+			|th {
+			|  text-align: center;
+			|  padding: 5px;
+			|  border: 2px solid rgb(43, 129, 17);
 			|}
 			|</style>
 			|"	
