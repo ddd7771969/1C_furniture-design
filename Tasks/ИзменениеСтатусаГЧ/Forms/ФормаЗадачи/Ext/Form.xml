@@ -24,6 +24,18 @@
 		<Event name="BeforeExecute">ПередВыполнением</Event>
 	</Events>
 	<ChildItems>
+		<LabelDecoration name="ДекорацияЗадачаВыполнена" id="59">
+			<TextColor>#008000</TextColor>
+			<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Задача выполнена</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="ДекорацияЗадачаВыполненаКонтекстноеМеню" id="60"/>
+			<ExtendedTooltip name="ДекорацияЗадачаВыполненаРасширеннаяПодсказка" id="61"/>
+		</LabelDecoration>
 		<UsualGroup name="Группа1" id="31">
 			<Group>AlwaysHorizontal</Group>
 			<Representation>None</Representation>
@@ -92,6 +104,9 @@
 							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 							<ContextMenu name="ГабаритныйЧертежКонтекстноеМеню" id="11"/>
 							<ExtendedTooltip name="ГабаритныйЧертежРасширеннаяПодсказка" id="12"/>
+							<Events>
+								<Event name="OnChange">ГабаритныйЧертежПриИзменении</Event>
+							</Events>
 						</InputField>
 						<InputField name="НовыйСтатус" id="19">
 							<DataPath>Объект.НовыйСтатус</DataPath>
