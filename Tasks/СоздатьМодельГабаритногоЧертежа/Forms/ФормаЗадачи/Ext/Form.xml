@@ -86,7 +86,7 @@
 							<ExtendedTooltip name="ИсполнительРасширеннаяПодсказка" id="24"/>
 						</InputField>
 						<InputField name="ГабаритныйЧертеж" id="13">
-							<DataPath>Объект.ГабаритныйЧертеж</DataPath>
+							<DataPath>Объект.ОбъектТЗ</DataPath>
 							<ReadOnly>true</ReadOnly>
 							<EditMode>EnterOnInput</EditMode>
 							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
@@ -115,57 +115,62 @@
 				</InputField>
 			</ChildItems>
 		</UsualGroup>
-		<UsualGroup name="ГруппаСоздание" id="27">
-			<ReadOnly>true</ReadOnly>
+		<UsualGroup name="ГруппаКнопки" id="43">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Создание</v8:content>
+					<v8:content>Группа кнопки</v8:content>
 				</v8:item>
 			</Title>
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Группа создание</v8:content>
+					<v8:content>Группа кнопки</v8:content>
 				</v8:item>
 			</ToolTip>
-			<Group>AlwaysHorizontal</Group>
-			<Representation>StrongSeparation</Representation>
-			<ExtendedTooltip name="ГруппаСозданиеРасширеннаяПодсказка" id="28"/>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаКнопкиРасширеннаяПодсказка" id="44"/>
 			<ChildItems>
-				<InputField name="ДатаСоздания" id="16">
-					<DataPath>Объект.ДатаСоздания</DataPath>
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Дата</v8:content>
-						</v8:item>
-					</Title>
-					<EditMode>EnterOnInput</EditMode>
-					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-					<ContextMenu name="ДатаСозданияКонтекстноеМеню" id="17"/>
-					<ExtendedTooltip name="ДатаСозданияРасширеннаяПодсказка" id="18"/>
-				</InputField>
-				<InputField name="АвторСоздания" id="10">
-					<DataPath>Объект.АвторСоздания</DataPath>
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Автор</v8:content>
-						</v8:item>
-					</Title>
-					<EditMode>EnterOnInput</EditMode>
-					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-					<ContextMenu name="АвторСозданияКонтекстноеМеню" id="11"/>
-					<ExtendedTooltip name="АвторСозданияРасширеннаяПодсказка" id="12"/>
-				</InputField>
+				<Button name="КнопкаНачатьВыполнениеКонструктор" id="45">
+					<Type>UsualButton</Type>
+					<Representation>Picture</Representation>
+					<Width>4</Width>
+					<Height>2</Height>
+					<CommandName>Form.Command.НачатьВыполнение</CommandName>
+					<Picture>
+						<xr:Ref>CommonPicture.Пуск50х50</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</Picture>
+					<ExtendedTooltip name="КнопкаНачатьВыполнениеКонструкторРасширеннаяПодсказка" id="46"/>
+				</Button>
+				<Button name="КнопкаЗавершитьВыполнениеКонструктор" id="47">
+					<Type>UsualButton</Type>
+					<Representation>Picture</Representation>
+					<Width>4</Width>
+					<Height>2</Height>
+					<CommandName>Form.Command.ЗавершитьВыполнение</CommandName>
+					<Picture>
+						<xr:Ref>CommonPicture.Стоп50х50</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</Picture>
+					<ExtendedTooltip name="КнопкаЗавершитьВыполнениеКонструкторРасширеннаяПодсказка" id="48"/>
+				</Button>
+				<Button name="КнопкаСбросКонструктором" id="49">
+					<Type>UsualButton</Type>
+					<Representation>Picture</Representation>
+					<Width>4</Width>
+					<Height>2</Height>
+					<CommandName>Form.Command.Сброс</CommandName>
+					<Picture>
+						<xr:Ref>CommonPicture.Сброс50х50</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</Picture>
+					<PictureLocation>Left</PictureLocation>
+					<ExtendedTooltip name="КнопкаСбросКонструкторомРасширеннаяПодсказка" id="50"/>
+				</Button>
 			</ChildItems>
 		</UsualGroup>
-		<Button name="Выполнить" id="41">
-			<Type>UsualButton</Type>
-			<CommandName>Form.Command.Выполнить</CommandName>
-			<ExtendedTooltip name="ВыполнитьРасширеннаяПодсказка" id="42"/>
-		</Button>
 	</ChildItems>
 	<Attributes>
 		<Attribute name="Объект" id="1">
@@ -192,20 +197,50 @@
 			</ToolTip>
 			<Action>КомандаЗаписать</Action>
 		</Command>
-		<Command name="Выполнить" id="2">
+		<Command name="НачатьВыполнение" id="3">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Выполнить</v8:content>
+					<v8:content>Начать выполнение</v8:content>
 				</v8:item>
 			</Title>
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Выполнить</v8:content>
+					<v8:content>Начать выполнение</v8:content>
 				</v8:item>
 			</ToolTip>
-			<Action>ВыполнитьЗадачу</Action>
+			<Action>НачатьВыполнение</Action>
+		</Command>
+		<Command name="ЗавершитьВыполнение" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Завершить выполнение</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Завершить выполнение</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗавершитьВыполнение</Action>
+		</Command>
+		<Command name="Сброс" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сброс</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сброс</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Сброс</Action>
 		</Command>
 	</Commands>
 	<CommandInterface>
