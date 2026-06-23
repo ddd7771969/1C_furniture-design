@@ -4,6 +4,11 @@
 	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
 		<ChildItems>
+			<Button name="ФормаЗагрузитьТЗ" id="478">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ЗагрузитьТЗ</CommandName>
+				<ExtendedTooltip name="ФормаЗагрузитьТЗРасширеннаяПодсказка" id="479"/>
+			</Button>
 			<Button name="ФормаВыгрузкаВCRM" id="203">
 				<Type>CommandBarButton</Type>
 				<CommandName>Form.Command.ВыгрузкаВPDM</CommandName>
@@ -24,6 +29,16 @@
 				</ToolTip>
 				<ExtendedTooltip name="ФормаГруппаPDMРасширеннаяПодсказка" id="589"/>
 				<ChildItems>
+					<Button name="ОткрытьФайлПДМ" id="437">
+						<Type>CommandBarButton</Type>
+						<Representation>PictureAndText</Representation>
+						<CommandName>Form.Command.ОткрытьФайлПДМ</CommandName>
+						<Picture>
+							<xr:Ref>StdPicture.OpenFile</xr:Ref>
+							<xr:LoadTransparent>true</xr:LoadTransparent>
+						</Picture>
+						<ExtendedTooltip name="ОткрытьФайлПДМРасширеннаяПодсказка" id="438"/>
+					</Button>
 					<Button name="ФормаДанныеИзPDM" id="586">
 						<Type>CommandBarButton</Type>
 						<CommandName>Form.Command.ДанныеИзPDM</CommandName>
@@ -38,6 +53,11 @@
 						<Type>CommandBarButton</Type>
 						<CommandName>Form.Command.КонтрольСтруктурыПапок</CommandName>
 						<ExtendedTooltip name="ФормаКонтрольСтруктурыПапокРасширеннаяПодсказка" id="591"/>
+					</Button>
+					<Button name="РазрегестрированыеФайлы" id="594">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.РазрегестрированыеФайлы</CommandName>
+						<ExtendedTooltip name="РазрегестрированыеФайлыРасширеннаяПодсказка" id="595"/>
 					</Button>
 				</ChildItems>
 			</Popup>
@@ -64,11 +84,6 @@
 				</Title>
 				<ExtendedTooltip name="ФормаИзменитьКонструктораВPDMРасширеннаяПодсказка" id="394"/>
 			</Button>
-			<Button name="ФормаЗагрузитьТЗ" id="478">
-				<Type>CommandBarButton</Type>
-				<CommandName>Form.Command.ЗагрузитьТЗ</CommandName>
-				<ExtendedTooltip name="ФормаЗагрузитьТЗРасширеннаяПодсказка" id="479"/>
-			</Button>
 			<Button name="ФормаИзменитСтатус" id="480">
 				<Type>CommandBarButton</Type>
 				<CommandName>Form.Command.ИзменитСтатус</CommandName>
@@ -81,12 +96,18 @@
 			</Button>
 			<Button name="ФормаТаймингЗадачи" id="555">
 				<Type>CommandBarButton</Type>
-				<Representation>Picture</Representation>
+				<Representation>PictureAndText</Representation>
 				<CommandName>Form.Command.ТаймингЗадачи</CommandName>
 				<Picture>
 					<xr:Ref>CommonPicture.ИсторияВерсий</xr:Ref>
 					<xr:LoadTransparent>true</xr:LoadTransparent>
 				</Picture>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>История</v8:content>
+					</v8:item>
+				</Title>
 				<ExtendedTooltip name="ФормаТаймингЗадачиРасширеннаяПодсказка" id="556"/>
 			</Button>
 		</ChildItems>
@@ -238,16 +259,6 @@
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="Группа18РасширеннаяПодсказка" id="475"/>
 							<ChildItems>
-								<Button name="ОткрытьФайлПДМ" id="437">
-									<Type>UsualButton</Type>
-									<Representation>PictureAndText</Representation>
-									<CommandName>Form.Command.ОткрытьФайлПДМ</CommandName>
-									<Picture>
-										<xr:Ref>StdPicture.OpenFile</xr:Ref>
-										<xr:LoadTransparent>true</xr:LoadTransparent>
-									</Picture>
-									<ExtendedTooltip name="ОткрытьФайлПДМРасширеннаяПодсказка" id="438"/>
-								</Button>
 								<Button name="ОткрытьТЗ" id="476">
 									<Type>UsualButton</Type>
 									<Representation>PictureAndText</Representation>
@@ -287,6 +298,8 @@
 									<v8:content>Текущая стадия</v8:content>
 								</v8:item>
 							</Title>
+							<TitleFont ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+							<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
 							<ContextMenu name="ТекущаяСтадияПНКонтекстноеМеню" id="356"/>
 							<ExtendedTooltip name="ТекущаяСтадияПНРасширеннаяПодсказка" id="357"/>
 						</LabelField>
@@ -780,6 +793,7 @@
 					</ChildItems>
 				</Page>
 				<Page name="ГруппаИстория" id="531">
+					<Visible>false</Visible>
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -1845,6 +1859,21 @@
 				</v8:item>
 			</ToolTip>
 			<Action>СтруктураКаталога</Action>
+		</Command>
+		<Command name="РазрегестрированыеФайлы" id="17">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Разрегестрированые файлы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Разрегестрированые файлы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗаблокированныеФайлы</Action>
 		</Command>
 	</Commands>
 	<CommandInterface>

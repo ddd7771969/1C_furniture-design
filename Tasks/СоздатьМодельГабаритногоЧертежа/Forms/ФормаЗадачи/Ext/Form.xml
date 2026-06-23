@@ -84,6 +84,9 @@
 							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 							<ContextMenu name="ИсполнительКонтекстноеМеню" id="23"/>
 							<ExtendedTooltip name="ИсполнительРасширеннаяПодсказка" id="24"/>
+							<Events>
+								<Event name="OnChange">ИсполнительПриИзменении</Event>
+							</Events>
 						</InputField>
 						<InputField name="ГабаритныйЧертеж" id="13">
 							<DataPath>Объект.ОбъектТЗ</DataPath>
@@ -169,6 +172,17 @@
 					<PictureLocation>Left</PictureLocation>
 					<ExtendedTooltip name="КнопкаСбросКонструкторомРасширеннаяПодсказка" id="50"/>
 				</Button>
+				<LabelDecoration name="ДекорацияЗапущеныеЗадания" id="51">
+					<TextColor>#FF0000</TextColor>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Есть задачи в работу </v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ДекорацияЗапущеныеЗаданияКонтекстноеМеню" id="52"/>
+					<ExtendedTooltip name="ДекорацияЗапущеныеЗаданияРасширеннаяПодсказка" id="53"/>
+				</LabelDecoration>
 			</ChildItems>
 		</UsualGroup>
 	</ChildItems>
@@ -179,6 +193,22 @@
 			</Type>
 			<MainAttribute>true</MainAttribute>
 			<SavedData>true</SavedData>
+		</Attribute>
+		<Attribute name="МаксимальноеКоличествоЗадачСоздание" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Максимальное количество задач создание</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>2</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
 		</Attribute>
 	</Attributes>
 	<Commands>

@@ -44,7 +44,7 @@
 					<Title formatted="false">
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Поиск разрегестрированных файлов</v8:content>
+							<v8:content>Поиск разрегестрированых файлов</v8:content>
 						</v8:item>
 					</Title>
 					<ContextMenu name="ДекорацияНадписьКонтекстноеМеню" id="7"/>
@@ -52,89 +52,133 @@
 				</LabelDecoration>
 			</ChildItems>
 		</UsualGroup>
-		<UsualGroup name="ГруппаРазрегестрированные" id="9">
+		<UsualGroup name="ГруппаРазрегестрированые" id="9">
 			<Visible>false</Visible>
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Группа разрегестрированные</v8:content>
+					<v8:content>Группа разрегестрированые</v8:content>
 				</v8:item>
 			</Title>
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Группа разрегестрированные</v8:content>
+					<v8:content>Группа разрегестрированые</v8:content>
 				</v8:item>
 			</ToolTip>
+			<Group>Vertical</Group>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
-			<ExtendedTooltip name="ГруппаРазрегестрированныеРасширеннаяПодсказка" id="10"/>
+			<ExtendedTooltip name="ГруппаРазрегестрированыеРасширеннаяПодсказка" id="10"/>
 			<ChildItems>
-				<Table name="ТаблицаРазрегестрированных" id="11">
+				<UsualGroup name="Группа1" id="42">
+					<Group>AlwaysHorizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="43"/>
+					<ChildItems>
+						<LabelDecoration name="Декорация2" id="39">
+							<TextColor>#0000FF</TextColor>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Двойной клик по таблице откроет файл.</v8:content>
+								</v8:item>
+							</Title>
+							<ContextMenu name="Декорация2КонтекстноеМеню" id="40"/>
+							<ExtendedTooltip name="Декорация2РасширеннаяПодсказка" id="41"/>
+						</LabelDecoration>
+						<LabelDecoration name="Декорация3" id="44">
+							<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+							<Title formatted="false">
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Файлы разрегестрированы на локальном компьютере</v8:content>
+								</v8:item>
+							</Title>
+							<BackColor>#D7EFD0</BackColor>
+							<ContextMenu name="Декорация3КонтекстноеМеню" id="45"/>
+							<ExtendedTooltip name="Декорация3РасширеннаяПодсказка" id="46"/>
+						</LabelDecoration>
+					</ChildItems>
+				</UsualGroup>
+				<Table name="ТаблицаРазрегестрированых" id="11">
 					<Representation>List</Representation>
 					<AutoInsertNewRow>true</AutoInsertNewRow>
 					<EnableStartDrag>true</EnableStartDrag>
 					<EnableDrag>true</EnableDrag>
-					<DataPath>ТаблицаРазрегестрированных</DataPath>
+					<DataPath>ТаблицаРазрегестрированых</DataPath>
 					<RowFilter xsi:nil="true"/>
-					<ContextMenu name="ТаблицаРазрегестрированныхКонтекстноеМеню" id="12"/>
-					<AutoCommandBar name="ТаблицаРазрегестрированныхКоманднаяПанель" id="13">
+					<ContextMenu name="ТаблицаРазрегестрированыхКонтекстноеМеню" id="12"/>
+					<AutoCommandBar name="ТаблицаРазрегестрированыхКоманднаяПанель" id="13">
 						<Autofill>false</Autofill>
+						<ChildItems>
+							<Button name="ФормаОбновить" id="47">
+								<Type>CommandBarButton</Type>
+								<Representation>Picture</Representation>
+								<CommandName>Form.Command.Обновить</CommandName>
+								<Picture>
+									<xr:Ref>StdPicture.Refresh</xr:Ref>
+									<xr:LoadTransparent>true</xr:LoadTransparent>
+								</Picture>
+								<ExtendedTooltip name="ФормаОбновитьРасширеннаяПодсказка" id="48"/>
+							</Button>
+						</ChildItems>
 					</AutoCommandBar>
-					<ExtendedTooltip name="ТаблицаРазрегестрированныхРасширеннаяПодсказка" id="14"/>
-					<SearchStringAddition name="ТаблицаРазрегестрированныхСтрокаПоиска" id="15">
+					<ExtendedTooltip name="ТаблицаРазрегестрированыхРасширеннаяПодсказка" id="14"/>
+					<SearchStringAddition name="ТаблицаРазрегестрированыхСтрокаПоиска" id="15">
 						<AdditionSource>
-							<Item>ТаблицаРазрегестрированных</Item>
+							<Item>ТаблицаРазрегестрированых</Item>
 							<Type>SearchStringRepresentation</Type>
 						</AdditionSource>
-						<ContextMenu name="ТаблицаРазрегестрированныхСтрокаПоискаКонтекстноеМеню" id="16"/>
-						<ExtendedTooltip name="ТаблицаРазрегестрированныхСтрокаПоискаРасширеннаяПодсказка" id="17"/>
+						<ContextMenu name="ТаблицаРазрегестрированыхСтрокаПоискаКонтекстноеМеню" id="16"/>
+						<ExtendedTooltip name="ТаблицаРазрегестрированыхСтрокаПоискаРасширеннаяПодсказка" id="17"/>
 					</SearchStringAddition>
-					<ViewStatusAddition name="ТаблицаРазрегестрированныхСостояниеПросмотра" id="18">
+					<ViewStatusAddition name="ТаблицаРазрегестрированыхСостояниеПросмотра" id="18">
 						<AdditionSource>
-							<Item>ТаблицаРазрегестрированных</Item>
+							<Item>ТаблицаРазрегестрированых</Item>
 							<Type>ViewStatusRepresentation</Type>
 						</AdditionSource>
-						<ContextMenu name="ТаблицаРазрегестрированныхСостояниеПросмотраКонтекстноеМеню" id="19"/>
-						<ExtendedTooltip name="ТаблицаРазрегестрированныхСостояниеПросмотраРасширеннаяПодсказка" id="20"/>
+						<ContextMenu name="ТаблицаРазрегестрированыхСостояниеПросмотраКонтекстноеМеню" id="19"/>
+						<ExtendedTooltip name="ТаблицаРазрегестрированыхСостояниеПросмотраРасширеннаяПодсказка" id="20"/>
 					</ViewStatusAddition>
-					<SearchControlAddition name="ТаблицаРазрегестрированныхУправлениеПоиском" id="21">
+					<SearchControlAddition name="ТаблицаРазрегестрированыхУправлениеПоиском" id="21">
 						<AdditionSource>
-							<Item>ТаблицаРазрегестрированных</Item>
+							<Item>ТаблицаРазрегестрированых</Item>
 							<Type>SearchControl</Type>
 						</AdditionSource>
-						<ContextMenu name="ТаблицаРазрегестрированныхУправлениеПоискомКонтекстноеМеню" id="22"/>
-						<ExtendedTooltip name="ТаблицаРазрегестрированныхУправлениеПоискомРасширеннаяПодсказка" id="23"/>
+						<ContextMenu name="ТаблицаРазрегестрированыхУправлениеПоискомКонтекстноеМеню" id="22"/>
+						<ExtendedTooltip name="ТаблицаРазрегестрированыхУправлениеПоискомРасширеннаяПодсказка" id="23"/>
 					</SearchControlAddition>
 					<Events>
-						<Event name="BeforeAddRow">ТаблицаРазрегестрированныхПередНачаломДобавления</Event>
-						<Event name="BeforeDeleteRow">ТаблицаРазрегестрированныхПередУдалением</Event>
-						<Event name="BeforeRowChange">ТаблицаРазрегестрированныхПередНачаломИзменения</Event>
+						<Event name="BeforeAddRow">ТаблицаРазрегестрированыхПередНачаломДобавления</Event>
+						<Event name="BeforeDeleteRow">ТаблицаРазрегестрированыхПередУдалением</Event>
+						<Event name="BeforeRowChange">ТаблицаРазрегестрированыхПередНачаломИзменения</Event>
 					</Events>
 					<ChildItems>
 						<InputField name="ТаблицаРазрегестрированныхИмяФайла" id="24">
-							<DataPath>ТаблицаРазрегестрированных.ИмяФайла</DataPath>
+							<DataPath>ТаблицаРазрегестрированых.ИмяФайла</DataPath>
 							<EditMode>EnterOnInput</EditMode>
 							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 							<ContextMenu name="ТаблицаРазрегестрированныхИмяФайлаКонтекстноеМеню" id="25"/>
 							<ExtendedTooltip name="ТаблицаРазрегестрированныхИмяФайлаРасширеннаяПодсказка" id="26"/>
 						</InputField>
 						<InputField name="ТаблицаРазрегестрированныхПутьКФайлу" id="27">
-							<DataPath>ТаблицаРазрегестрированных.ПутьКФайлу</DataPath>
+							<DataPath>ТаблицаРазрегестрированых.ПутьКФайлу</DataPath>
 							<EditMode>EnterOnInput</EditMode>
 							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 							<ContextMenu name="ТаблицаРазрегестрированныхПутьКФайлуКонтекстноеМеню" id="28"/>
 							<ExtendedTooltip name="ТаблицаРазрегестрированныхПутьКФайлуРасширеннаяПодсказка" id="29"/>
 						</InputField>
 						<InputField name="ТаблицаРазрегестрированныхКтоЗаблокировал" id="30">
-							<DataPath>ТаблицаРазрегестрированных.КтоЗаблокировал</DataPath>
+							<DataPath>ТаблицаРазрегестрированых.КтоЗаблокировал</DataPath>
 							<EditMode>EnterOnInput</EditMode>
 							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 							<ContextMenu name="ТаблицаРазрегестрированныхКтоЗаблокировалКонтекстноеМеню" id="31"/>
 							<ExtendedTooltip name="ТаблицаРазрегестрированныхКтоЗаблокировалРасширеннаяПодсказка" id="32"/>
 						</InputField>
 						<InputField name="ТаблицаРазрегестрированныхКомпьютер" id="33">
-							<DataPath>ТаблицаРазрегестрированных.Компьютер</DataPath>
+							<DataPath>ТаблицаРазрегестрированых.Компьютер</DataPath>
 							<EditMode>EnterOnInput</EditMode>
 							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 							<ContextMenu name="ТаблицаРазрегестрированныхКомпьютерКонтекстноеМеню" id="34"/>
@@ -158,11 +202,11 @@
 				<v8:Type>cfg:CatalogRef.ИзделияКомплект</v8:Type>
 			</Type>
 		</Attribute>
-		<Attribute name="ТаблицаРазрегестрированных" id="3">
+		<Attribute name="ТаблицаРазрегестрированых" id="3">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Таблица разрегестрированных</v8:content>
+					<v8:content>Таблица разрегестрированых</v8:content>
 				</v8:item>
 			</Title>
 			<Type>
@@ -229,6 +273,17 @@
 						</v8:StringQualifiers>
 					</Type>
 				</Column>
+				<Column name="НаЛокальномКомпе" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>На локальном компе</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
 			</Columns>
 		</Attribute>
 		<Attribute name="Задача" id="1">
@@ -280,5 +335,48 @@
 				<v8:Type>xs:boolean</v8:Type>
 			</Type>
 		</Attribute>
+		<ConditionalAppearance>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ТаблицаРазрегестрированых</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">ТаблицаРазрегестрированых.НаЛокальномКомпе</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветФона</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">#D7EFD0</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Шрифт</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+		</ConditionalAppearance>
 	</Attributes>
+	<Commands>
+		<Command name="Обновить" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Обновить</Action>
+		</Command>
+	</Commands>
 </Form>
