@@ -78,16 +78,29 @@
 							<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
 							<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
 						</InputField>
-						<InputField name="Исполнитель" id="22">
-							<DataPath>Объект.Исполнитель</DataPath>
-							<EditMode>EnterOnInput</EditMode>
-							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-							<ContextMenu name="ИсполнительКонтекстноеМеню" id="23"/>
-							<ExtendedTooltip name="ИсполнительРасширеннаяПодсказка" id="24"/>
-							<Events>
-								<Event name="OnChange">ИсполнительПриИзменении</Event>
-							</Events>
-						</InputField>
+						<UsualGroup name="Группа4" id="54">
+							<Group>AlwaysHorizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа4РасширеннаяПодсказка" id="55"/>
+							<ChildItems>
+								<InputField name="Исполнитель" id="22">
+									<DataPath>Объект.Исполнитель</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ИсполнительКонтекстноеМеню" id="23"/>
+									<ExtendedTooltip name="ИсполнительРасширеннаяПодсказка" id="24"/>
+									<Events>
+										<Event name="OnChange">ИсполнительПриИзменении</Event>
+									</Events>
+								</InputField>
+								<Button name="Я_исполнитель" id="56">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.Я_исполнитель</CommandName>
+									<ExtendedTooltip name="Я_исполнительРасширеннаяПодсказка" id="57"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
 						<InputField name="ГабаритныйЧертеж" id="13">
 							<DataPath>Объект.ОбъектТЗ</DataPath>
 							<ReadOnly>true</ReadOnly>
@@ -225,7 +238,7 @@
 					<v8:content>Записать</v8:content>
 				</v8:item>
 			</ToolTip>
-			<Action>КомандаЗаписать</Action>
+			<Action>ЗаписатьЗадачу</Action>
 		</Command>
 		<Command name="НачатьВыполнение" id="3">
 			<Title>
@@ -271,6 +284,21 @@
 				</v8:item>
 			</ToolTip>
 			<Action>Сброс</Action>
+		</Command>
+		<Command name="Я_исполнитель" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Я</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Я исполнитель</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Я_исполнитель</Action>
 		</Command>
 	</Commands>
 	<CommandInterface>

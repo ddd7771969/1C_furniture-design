@@ -22,9 +22,7 @@
 			<ExtendedTooltip name="КартинкаИзБуфераРасширеннаяПодсказка" id="11"/>
 		</Button>
 		<PictureField name="Картинка" id="7">
-			<DataPath>АдресКартинки</DataPath>
-			<TitleLocation>None</TitleLocation>
-			<PictureSize>Stretch</PictureSize>
+			<DataPath>Картинка</DataPath>
 			<EnableDrag>true</EnableDrag>
 			<ContextMenu name="КартинкаКонтекстноеМеню" id="8"/>
 			<ExtendedTooltip name="КартинкаРасширеннаяПодсказка" id="9"/>
@@ -34,26 +32,11 @@
 		</PictureField>
 	</ChildItems>
 	<Attributes>
-		<Attribute name="АдресКартинки" id="2">
+		<Attribute name="Картинка" id="2">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Адрес картинки</v8:content>
-				</v8:item>
-			</Title>
-			<Type>
-				<v8:Type>xs:string</v8:Type>
-				<v8:StringQualifiers>
-					<v8:Length>0</v8:Length>
-					<v8:AllowedLength>Variable</v8:AllowedLength>
-				</v8:StringQualifiers>
-			</Type>
-		</Attribute>
-		<Attribute name="ПутьККартинке" id="1">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Путь к картинке</v8:content>
+					<v8:content>Картинка</v8:content>
 				</v8:item>
 			</Title>
 			<Type>

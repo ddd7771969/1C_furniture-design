@@ -3,31 +3,7 @@
 	<AutoTime>CurrentOrLast</AutoTime>
 	<UsePostingMode>Auto</UsePostingMode>
 	<RepostOnWrite>true</RepostOnWrite>
-	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
-		<ChildItems>
-			<Button name="ФормаСоздатьКомпозицииИГЧ" id="191">
-				<Type>CommandBarButton</Type>
-				<CommandName>Form.Command.СоздатьКомпозицииИГЧ</CommandName>
-				<ExtendedTooltip name="ФормаСоздатьКомпозицииИГЧРасширеннаяПодсказка" id="192"/>
-			</Button>
-			<Button name="ФормаВыгрузитьВPDM" id="155">
-				<Type>CommandBarButton</Type>
-				<CommandName>Form.Command.ВыгрузитьВPDM</CommandName>
-				<Title>
-					<v8:item>
-						<v8:lang>ru</v8:lang>
-						<v8:content>Выгрузить в PDM</v8:content>
-					</v8:item>
-				</Title>
-				<ExtendedTooltip name="ФормаВыгрузитьВPDMРасширеннаяПодсказка" id="156"/>
-			</Button>
-			<Button name="ФормаСоздатьЗадачиПланирования" id="184">
-				<Type>CommandBarButton</Type>
-				<CommandName>Form.Command.СоздатьЗадачиПланирования</CommandName>
-				<ExtendedTooltip name="ФормаСоздатьЗадачиПланированияРасширеннаяПодсказка" id="185"/>
-			</Button>
-		</ChildItems>
-	</AutoCommandBar>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
 	<Events>
 		<Event name="AfterWrite">ПослеЗаписи</Event>
 		<Event name="AfterWriteAtServer">ПослеЗаписиНаСервере</Event>
@@ -265,11 +241,6 @@
 			<ContextMenu name="КомплектыКонтекстноеМеню" id="17"/>
 			<AutoCommandBar name="КомплектыКоманднаяПанель" id="18">
 				<ChildItems>
-					<Button name="КомплектыЗаполнитьКомплекты" id="54">
-						<Type>CommandBarButton</Type>
-						<CommandName>Form.Command.ЗаполнитьКомплекты</CommandName>
-						<ExtendedTooltip name="КомплектыЗаполнитьКомплектыРасширеннаяПодсказка" id="55"/>
-					</Button>
 					<Button name="КомплектыСортировать" id="189">
 						<Type>CommandBarButton</Type>
 						<CommandName>Form.Command.Сортировать</CommandName>
@@ -280,6 +251,32 @@
 						<Visible>false</Visible>
 						<CommandName>Form.Command.ИзменитьВсе</CommandName>
 						<ExtendedTooltip name="КомплектыИзменитьВсеРасширеннаяПодсказка" id="161"/>
+					</Button>
+					<Button name="КомплектыЗаполнитьКомплекты" id="54">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ЗаполнитьКомплекты</CommandName>
+						<ExtendedTooltip name="КомплектыЗаполнитьКомплектыРасширеннаяПодсказка" id="55"/>
+					</Button>
+					<Button name="ФормаСоздатьКомпозицииИГЧ" id="191">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.СоздатьКомпозицииИГЧ</CommandName>
+						<ExtendedTooltip name="ФормаСоздатьКомпозицииИГЧРасширеннаяПодсказка" id="192"/>
+					</Button>
+					<Button name="ФормаВыгрузитьВPDM" id="155">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ВыгрузитьВPDM</CommandName>
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Выгрузить в PDM</v8:content>
+							</v8:item>
+						</Title>
+						<ExtendedTooltip name="ФормаВыгрузитьВPDMРасширеннаяПодсказка" id="156"/>
+					</Button>
+					<Button name="ФормаСоздатьЗадачиПланирования" id="184">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.СоздатьЗадачиПланирования</CommandName>
+						<ExtendedTooltip name="ФормаСоздатьЗадачиПланированияРасширеннаяПодсказка" id="185"/>
 					</Button>
 				</ChildItems>
 			</AutoCommandBar>
