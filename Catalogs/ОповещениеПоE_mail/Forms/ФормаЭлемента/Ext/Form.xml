@@ -48,6 +48,12 @@
 			<ContextMenu name="УчетнаяЗаписьКонтекстноеМеню" id="14"/>
 			<ExtendedTooltip name="УчетнаяЗаписьРасширеннаяПодсказка" id="15"/>
 		</InputField>
+		<InputField name="Тема" id="68">
+			<DataPath>Объект.Тема</DataPath>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ТемаКонтекстноеМеню" id="69"/>
+			<ExtendedTooltip name="ТемаРасширеннаяПодсказка" id="70"/>
+		</InputField>
 		<InputField name="Шаблон" id="16">
 			<DataPath>Объект.Шаблон</DataPath>
 			<EditMode>EnterOnInput</EditMode>
