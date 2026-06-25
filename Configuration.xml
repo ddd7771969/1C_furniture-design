@@ -1003,6 +1003,8 @@
 			<CommonModule>АдресныйКлассификаторСлужебный</CommonModule>
 			<CommonModule>АнализЖурналаРегистрацииКлиент</CommonModule>
 			<CommonModule>АнализЖурналаРегистрацииСлужебный</CommonModule>
+			<CommonModule>БизнесПроцессыИЗадачиПереопределяемый</CommonModule>
+			<CommonModule>БизнесПроцессыИЗадачиСервер</CommonModule>
 			<CommonModule>БлокировкаРаботыСВнешнимиРесурсами</CommonModule>
 			<CommonModule>БлокировкаРаботыСВнешнимиРесурсамиПереопределяемый</CommonModule>
 			<CommonModule>ВариантыОтчетов</CommonModule>
@@ -1063,6 +1065,7 @@
 			<CommonModule>ЗапретРедактированияРеквизитовОбъектовПереопределяемый</CommonModule>
 			<CommonModule>ЗапретРедактированияРеквизитовОбъектовСлужебный</CommonModule>
 			<CommonModule>ЗапретРедактированияРеквизитовОбъектовСлужебныйКлиент</CommonModule>
+			<CommonModule>ЗарплатаКадры</CommonModule>
 			<CommonModule>ЗаявлениеНаСертификатПереопределяемый</CommonModule>
 			<CommonModule>ИнтеграцияПодсистемБСП</CommonModule>
 			<CommonModule>ИнтеграцияПодсистемБСПКлиент</CommonModule>
@@ -1102,6 +1105,7 @@
 			<CommonModule>НастройкиПрограммы</CommonModule>
 			<CommonModule>НастройкиПрограммыКлиент</CommonModule>
 			<CommonModule>НастройкиПрограммыПереопределяемый</CommonModule>
+			<CommonModule>ОбновлениеБЗК</CommonModule>
 			<CommonModule>ОбновлениеИнформационнойБазы</CommonModule>
 			<CommonModule>ОбновлениеИнформационнойБазыБСП</CommonModule>
 			<CommonModule>ОбновлениеИнформационнойБазыВызовСервера</CommonModule>
@@ -1525,6 +1529,7 @@
 			<ScheduledJob>ИзмененияНачалаПланЗадач</ScheduledJob>
 			<ScheduledJob>ИсправлениеУстаревшихАдресов</ScheduledJob>
 			<ScheduledJob>КонтрольУдаленияПомеченныхОбъектов</ScheduledJob>
+			<ScheduledJob>МониторингЗадач</ScheduledJob>
 			<ScheduledJob>ОбновлениеИндексаППД</ScheduledJob>
 			<ScheduledJob>ОбновлениеПредопределенныхВариантовОтчетов</ScheduledJob>
 			<ScheduledJob>ОбновлениеСостоянияЗаявленияНаВыпускСертификата</ScheduledJob>
@@ -1546,10 +1551,12 @@
 			<ScheduledJob>РасчетТабеля</ScheduledJob>
 			<ScheduledJob>СинхронизацияФайлов</ScheduledJob>
 			<ScheduledJob>СлияниеИндексаППД</ScheduledJob>
+			<ScheduledJob>УведомлениеИсполнителейОНовыхЗадачах</ScheduledJob>
 			<ScheduledJob>УдалениеПомеченныхОбъектов</ScheduledJob>
 			<ScheduledJob>УдалениеУстаревшихПараметровРаботыВерсийРасширений</ScheduledJob>
 			<ScheduledJob>УстановкаПорядкаОтложенногоОбновленияВМоделиСервиса</ScheduledJob>
 			<ScheduledJob>ЭкспортОценкиПроизводительности</ScheduledJob>
+			<ScheduledJob>ОповещениеПоEMail</ScheduledJob>
 			<SettingsStorage>ХранилищеВариантовОтчетов</SettingsStorage>
 			<FunctionalOption>ВариантыВерсионированияОбъектов</FunctionalOption>
 			<FunctionalOption>ВыполнятьЗамерыПроизводительности</FunctionalOption>
@@ -1931,6 +1938,7 @@
 			<Catalog>Оборудование</Catalog>
 			<Catalog>ОбщиеЗадачиПрисоединенныеФайлы</Catalog>
 			<Catalog>ОбъектыПрисоединенныеФайлы</Catalog>
+			<Catalog>ОповещениеПоE_mail</Catalog>
 			<Catalog>Организации</Catalog>
 			<Catalog>ПапкиФайлов</Catalog>
 			<Catalog>ПапкиЭлектронныхПисем</Catalog>
@@ -2061,6 +2069,7 @@
 			<Enum>ВидыСвойств</Enum>
 			<Enum>ВозможностьПередоверияМЧД</Enum>
 			<Enum>ДействияСФайламиПоДвойномуЩелчку</Enum>
+			<Enum>ДниНедели</Enum>
 			<Enum>Должности</Enum>
 			<Enum>ДоступныеПериодыОтчета</Enum>
 			<Enum>Интервалы</Enum>
@@ -2068,6 +2077,7 @@
 			<Enum>НазначенияВариантовОтчетов</Enum>
 			<Enum>ОбъектыЗадач</Enum>
 			<Enum>ОсновныеЭтапы</Enum>
+			<Enum>ОтчетыБазы</Enum>
 			<Enum>ПериодичностиРасписанийРассылокОтчетов</Enum>
 			<Enum>ПериодОчисткиФайлов</Enum>
 			<Enum>ПорядокОбработчиковОбновления</Enum>
@@ -2080,6 +2090,7 @@
 			<Enum>РежимыИспользованияПрограммыЭлектроннойПодписи</Enum>
 			<Enum>РежимыОчисткиФайлов</Enum>
 			<Enum>СобытиеКомплекта</Enum>
+			<Enum>СобытияОповещения</Enum>
 			<Enum>СостоянияБизнесПроцессов</Enum>
 			<Enum>СостоянияДокументаСообщениеSMS</Enum>
 			<Enum>СостоянияЗадач</Enum>
