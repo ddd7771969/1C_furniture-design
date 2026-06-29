@@ -25,6 +25,16 @@
 				</Picture>
 				<ExtendedTooltip name="ФормаТаймингЗадачиРасширеннаяПодсказка" id="306"/>
 			</Button>
+			<Button name="ОткрытьФайлПДМ" id="248">
+				<Type>CommandBarButton</Type>
+				<Representation>PictureAndText</Representation>
+				<CommandName>Form.Command.ОткрытьФайлПДМ</CommandName>
+				<Picture>
+					<xr:Ref>StdPicture.OpenFile</xr:Ref>
+					<xr:LoadTransparent>true</xr:LoadTransparent>
+				</Picture>
+				<ExtendedTooltip name="ОткрытьФайлПДМРасширеннаяПодсказка" id="249"/>
+			</Button>
 			<Button name="ФормаСообщитьООшибке" id="384">
 				<Type>CommandBarButton</Type>
 				<Representation>Picture</Representation>
@@ -308,16 +318,6 @@
 									<ContextMenu name="ОбъектТЗКонтекстноеМеню" id="20"/>
 									<ExtendedTooltip name="ОбъектТЗРасширеннаяПодсказка" id="21"/>
 								</InputField>
-								<Button name="ОткрытьФайлПДМ" id="248">
-									<Type>UsualButton</Type>
-									<Representation>PictureAndText</Representation>
-									<CommandName>Form.Command.ОткрытьФайлПДМ</CommandName>
-									<Picture>
-										<xr:Ref>StdPicture.OpenFile</xr:Ref>
-										<xr:LoadTransparent>true</xr:LoadTransparent>
-									</Picture>
-									<ExtendedTooltip name="ОткрытьФайлПДМРасширеннаяПодсказка" id="249"/>
-								</Button>
 								<InputField name="Композиция" id="92">
 									<DataPath>Объект.Композиция</DataPath>
 									<ReadOnly>true</ReadOnly>
@@ -1307,6 +1307,12 @@
 											<CheckBoxType>Auto</CheckBoxType>
 											<ContextMenu name="ОбобщеннаяЗадачаКонтекстноеМеню" id="376"/>
 											<ExtendedTooltip name="ОбобщеннаяЗадачаРасширеннаяПодсказка" id="377"/>
+										</CheckBoxField>
+										<CheckBoxField name="КороткаяСрочнаяЗадача2" id="394">
+											<DataPath>Объект.КороткаяСрочнаяЗадача</DataPath>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="КороткаяСрочнаяЗадача2КонтекстноеМеню" id="395"/>
+											<ExtendedTooltip name="КороткаяСрочнаяЗадача2РасширеннаяПодсказка" id="396"/>
 										</CheckBoxField>
 									</ChildItems>
 								</UsualGroup>

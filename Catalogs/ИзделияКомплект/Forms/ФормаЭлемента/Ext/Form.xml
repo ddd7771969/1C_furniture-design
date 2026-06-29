@@ -9,6 +9,16 @@
 				<CommandName>Form.Command.ЗагрузитьТЗ</CommandName>
 				<ExtendedTooltip name="ФормаЗагрузитьТЗРасширеннаяПодсказка" id="479"/>
 			</Button>
+			<Button name="ОткрытьФайлПДМ" id="437">
+				<Type>CommandBarButton</Type>
+				<Representation>PictureAndText</Representation>
+				<CommandName>Form.Command.ОткрытьФайлПДМ</CommandName>
+				<Picture>
+					<xr:Ref>StdPicture.OpenFile</xr:Ref>
+					<xr:LoadTransparent>true</xr:LoadTransparent>
+				</Picture>
+				<ExtendedTooltip name="ОткрытьФайлПДМРасширеннаяПодсказка" id="438"/>
+			</Button>
 			<Button name="ФормаВыгрузкаВCRM" id="203">
 				<Type>CommandBarButton</Type>
 				<CommandName>Form.Command.ВыгрузкаВPDM</CommandName>
@@ -29,16 +39,6 @@
 				</ToolTip>
 				<ExtendedTooltip name="ФормаГруппаPDMРасширеннаяПодсказка" id="589"/>
 				<ChildItems>
-					<Button name="ОткрытьФайлПДМ" id="437">
-						<Type>CommandBarButton</Type>
-						<Representation>PictureAndText</Representation>
-						<CommandName>Form.Command.ОткрытьФайлПДМ</CommandName>
-						<Picture>
-							<xr:Ref>StdPicture.OpenFile</xr:Ref>
-							<xr:LoadTransparent>true</xr:LoadTransparent>
-						</Picture>
-						<ExtendedTooltip name="ОткрытьФайлПДМРасширеннаяПодсказка" id="438"/>
-					</Button>
 					<Button name="ФормаДанныеИзPDM" id="586">
 						<Type>CommandBarButton</Type>
 						<CommandName>Form.Command.ДанныеИзPDM</CommandName>
