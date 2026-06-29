@@ -27,9 +27,46 @@
 			</Button>
 			<Button name="ФормаСообщитьООшибке" id="384">
 				<Type>CommandBarButton</Type>
+				<Representation>Picture</Representation>
 				<CommandName>Form.Command.СообщитьООшибке</CommandName>
+				<Picture>
+					<xr:Ref>CommonPicture.СообщениеООшибке</xr:Ref>
+					<xr:LoadTransparent>true</xr:LoadTransparent>
+				</Picture>
 				<ExtendedTooltip name="ФормаСообщитьООшибкеРасширеннаяПодсказка" id="385"/>
 			</Button>
+			<Popup name="ФормаГруппаПДМ" id="386">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>PDM</v8:content>
+					</v8:item>
+				</Title>
+				<ToolTip>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Форма группа ПДМ</v8:content>
+					</v8:item>
+				</ToolTip>
+				<ExtendedTooltip name="ФормаГруппаПДМРасширеннаяПодсказка" id="387"/>
+				<ChildItems>
+					<Button name="ФормаДанныеИзPDM" id="388">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ДанныеИзPDM</CommandName>
+						<ExtendedTooltip name="ФормаДанныеИзPDMРасширеннаяПодсказка" id="389"/>
+					</Button>
+					<Button name="РазрегестрированыеФайлы" id="392">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.РазрегестрированыеФайлы</CommandName>
+						<ExtendedTooltip name="РазрегестрированыеФайлыРасширеннаяПодсказка" id="393"/>
+					</Button>
+					<Button name="ФормаСтруктураКаталога" id="390">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.СтруктураКаталога</CommandName>
+						<ExtendedTooltip name="ФормаСтруктураКаталогаРасширеннаяПодсказка" id="391"/>
+					</Button>
+				</ChildItems>
+			</Popup>
 			<Button name="ФормаСправка" id="291">
 				<Type>CommandBarButton</Type>
 				<Representation>Picture</Representation>
@@ -2173,7 +2210,7 @@
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Создать общую задачу</v8:content>
+					<v8:content>Задать вопрос</v8:content>
 				</v8:item>
 			</ToolTip>
 			<Action>СоздатьОбщуюЗадачу</Action>
@@ -2192,6 +2229,51 @@
 				</v8:item>
 			</ToolTip>
 			<Action>СообщитьООшибке</Action>
+		</Command>
+		<Command name="ДанныеИзPDM" id="36">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Данные из PDM</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Данные из PDM</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ДанныеИзPDM</Action>
+		</Command>
+		<Command name="СтруктураКаталога" id="37">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Структура каталога</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Структура каталога</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СтруктураКаталога</Action>
+		</Command>
+		<Command name="РазрегестрированыеФайлы" id="38">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Разрегестрированые файлы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Разрегестрированые файлы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗаблокированныеФайлы</Action>
 		</Command>
 	</Commands>
 	<CommandInterface>

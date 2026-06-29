@@ -34,12 +34,6 @@
 				</Picture>
 				<ExtendedTooltip name="ФормаОтменитьРасширеннаяПодсказка" id="77"/>
 			</Button>
-			<Button name="ФормаЗагрузитьКартинку" id="150">
-				<Type>CommandBarButton</Type>
-				<Visible>false</Visible>
-				<CommandName>Form.Command.ЗагрузитьКартинку</CommandName>
-				<ExtendedTooltip name="ФормаЗагрузитьКартинкуРасширеннаяПодсказка" id="151"/>
-			</Button>
 			<Button name="ФормаДобавитьКартинку" id="152">
 				<Type>CommandBarButton</Type>
 				<Representation>PictureAndText</Representation>
@@ -172,9 +166,13 @@
 								<InputField name="Исполнитель" id="22">
 									<DataPath>Исполнитель</DataPath>
 									<EditMode>EnterOnInput</EditMode>
+									<ClearButton>true</ClearButton>
 									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 									<ContextMenu name="ИсполнительКонтекстноеМеню" id="23"/>
 									<ExtendedTooltip name="ИсполнительРасширеннаяПодсказка" id="24"/>
+									<Events>
+										<Event name="OnChange">ИсполнительПриИзменении</Event>
+									</Events>
 								</InputField>
 								<InputField name="ДолжностьИсполнителя" id="54">
 									<DataPath>Объект.ДолжностьИсполнителя</DataPath>
@@ -234,6 +232,13 @@
 									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 									<ContextMenu name="ИсполнениеКонтекстноеМеню" id="42"/>
 									<ExtendedTooltip name="ИсполнениеРасширеннаяПодсказка" id="43"/>
+								</InputField>
+								<InputField name="ОписаниеИсполнения" id="154">
+									<DataPath>ОписаниеИсполнения</DataPath>
+									<MultiLine>true</MultiLine>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ОписаниеИсполненияКонтекстноеМеню" id="155"/>
+									<ExtendedTooltip name="ОписаниеИсполненияРасширеннаяПодсказка" id="156"/>
 								</InputField>
 							</ChildItems>
 						</UsualGroup>
@@ -857,6 +862,21 @@
 				</v8:StringQualifiers>
 			</Type>
 		</Attribute>
+		<Attribute name="ОписаниеИсполнения" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Описание исполнения</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
 	</Attributes>
 	<Commands>
 		<Command name="Записать" id="1">
@@ -994,21 +1014,6 @@
 			</ToolTip>
 			<Action>Переадресация</Action>
 		</Command>
-		<Command name="ЗагрузитьКартинку" id="10">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Загрузить картинку</v8:content>
-				</v8:item>
-			</Title>
-			<ToolTip>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Загрузить картинку</v8:content>
-				</v8:item>
-			</ToolTip>
-			<Action>ЗагрузитьКартинку</Action>
-		</Command>
 		<Command name="ДобавитьКартинку" id="11">
 			<Title>
 				<v8:item>
@@ -1071,6 +1076,16 @@
 				<Type>Auto</Type>
 				<CommandGroup>FormNavigationPanelGoTo</CommandGroup>
 				<Index>4</Index>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>InformationRegister.КартинкиНоменклатуры.StandardCommand.OpenByValue.ИзделиеЭлемент</Command>
+				<Type>Auto</Type>
+				<CommandGroup>FormNavigationPanelGoTo</CommandGroup>
+				<Index>5</Index>
 				<DefaultVisible>false</DefaultVisible>
 				<Visible>
 					<xr:Common>false</xr:Common>
