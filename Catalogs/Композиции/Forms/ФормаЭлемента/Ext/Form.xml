@@ -25,6 +25,28 @@
 				<CommandName>Form.Command.ИзменитСтатус</CommandName>
 				<ExtendedTooltip name="ФормаИзменитСтатусРасширеннаяПодсказка" id="116"/>
 			</Button>
+			<Popup name="ФормаPDM" id="141">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>PDM</v8:content>
+					</v8:item>
+				</Title>
+				<ToolTip>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Форма PDM</v8:content>
+					</v8:item>
+				</ToolTip>
+				<ExtendedTooltip name="ФормаPDMРасширеннаяПодсказка" id="142"/>
+				<ChildItems>
+					<Button name="ФормаРазрегестрированыеФайлы" id="143">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.РазрегестрированыеФайлы</CommandName>
+						<ExtendedTooltip name="ФормаРазрегестрированыеФайлыРасширеннаяПодсказка" id="144"/>
+					</Button>
+				</ChildItems>
+			</Popup>
 		</ChildItems>
 	</AutoCommandBar>
 	<Events>
@@ -699,6 +721,21 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ДанныеИзPDM</Action>
+		</Command>
+		<Command name="РазрегестрированыеФайлы" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Разрегестрированые файлы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Разрегестрированые файлы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗаблокированныеФайлы</Action>
 		</Command>
 	</Commands>
 	<CommandInterface>
