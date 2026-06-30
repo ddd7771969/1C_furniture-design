@@ -15,6 +15,16 @@
 				</Picture>
 				<ExtendedTooltip name="ФормаЗаписатьРасширеннаяПодсказка" id="90"/>
 			</Button>
+			<Button name="ОткрытьФайлПДМ" id="96">
+				<Type>CommandBarButton</Type>
+				<Representation>PictureAndText</Representation>
+				<CommandName>Form.Command.ОткрытьФайлПДМ</CommandName>
+				<Picture>
+					<xr:Ref>StdPicture.OpenFile</xr:Ref>
+					<xr:LoadTransparent>true</xr:LoadTransparent>
+				</Picture>
+				<ExtendedTooltip name="ОткрытьФайлПДМРасширеннаяПодсказка" id="97"/>
+			</Button>
 			<Button name="ФормаТаймингЗадачи" id="130">
 				<Type>CommandBarButton</Type>
 				<Representation>Picture</Representation>
@@ -452,16 +462,6 @@
 																	<ContextMenu name="ГабаритныйЧертежКонтекстноеМеню" id="120"/>
 																	<ExtendedTooltip name="ГабаритныйЧертежРасширеннаяПодсказка" id="121"/>
 																</InputField>
-																<Button name="ОткрытьФайлПДМ" id="96">
-																	<Type>UsualButton</Type>
-																	<Representation>PictureAndText</Representation>
-																	<CommandName>Form.Command.ОткрытьФайлПДМ</CommandName>
-																	<Picture>
-																		<xr:Ref>StdPicture.OpenFile</xr:Ref>
-																		<xr:LoadTransparent>true</xr:LoadTransparent>
-																	</Picture>
-																	<ExtendedTooltip name="ОткрытьФайлПДМРасширеннаяПодсказка" id="97"/>
-																</Button>
 															</ChildItems>
 														</UsualGroup>
 													</ChildItems>
