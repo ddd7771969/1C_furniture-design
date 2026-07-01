@@ -100,6 +100,16 @@
 					<ContextMenu name="ПроектНомерКонтекстноеМеню" id="23"/>
 					<ExtendedTooltip name="ПроектНомерРасширеннаяПодсказка" id="24"/>
 				</LabelField>
+				<LabelField name="Конструктор" id="28">
+					<DataPath>Список.Конструктор</DataPath>
+					<ContextMenu name="КонструкторКонтекстноеМеню" id="29"/>
+					<ExtendedTooltip name="КонструкторРасширеннаяПодсказка" id="30"/>
+				</LabelField>
+				<LabelField name="ТекущаяСтадия" id="31">
+					<DataPath>Список.ТекущаяСтадия</DataPath>
+					<ContextMenu name="ТекущаяСтадияКонтекстноеМеню" id="32"/>
+					<ExtendedTooltip name="ТекущаяСтадияРасширеннаяПодсказка" id="33"/>
+				</LabelField>
 				<LabelField name="Код" id="19">
 					<DataPath>Список.Код</DataPath>
 					<ContextMenu name="КодКонтекстноеМеню" id="20"/>
@@ -116,7 +126,7 @@
 			<MainAttribute>true</MainAttribute>
 			<Settings xsi:type="DynamicList">
 				<ManualQuery>true</ManualQuery>
-				<DynamicDataRead>true</DynamicDataRead>
+				<DynamicDataRead>false</DynamicDataRead>
 				<QueryText>ВЫБРАТЬ
 	СправочникКомпозиции.Ссылка КАК Ссылка,
 	СправочникКомпозиции.ПометкаУдаления КАК ПометкаУдаления,
@@ -125,14 +135,17 @@
 	СправочникКомпозиции.Код КАК Код,
 	СправочникКомпозиции.Наименование КАК Наименование,
 	СправочникКомпозиции.ГабаритныйЧертеж КАК ГабаритныйЧертеж,
-	СправочникКомпозиции.Конструктор КАК Конструктор,
 	СправочникКомпозиции.ОсновноеПомещение КАК ОсновноеПомещение,
 	СправочникКомпозиции.Проект КАК Проект,
 	СправочникКомпозиции.Предопределенный КАК Предопределенный,
 	СправочникКомпозиции.ИмяПредопределенныхДанных КАК ИмяПредопределенныхДанных,
-	СправочникКомпозиции.Проект.Номер КАК ПроектНомер
+	СправочникКомпозиции.Проект.Номер КАК ПроектНомер,
+	ДанныеКомплектаСрезПоследних.Конструктор КАК Конструктор,
+	ДанныеКомплектаСрезПоследних.ТекущаяСтадия КАК ТекущаяСтадия
 ИЗ
 	Справочник.Композиции КАК СправочникКомпозиции
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ДанныеКомплекта.СрезПоследних КАК ДанныеКомплектаСрезПоследних
+		ПО ДанныеКомплектаСрезПоследних.Комплект = СправочникКомпозиции.Ссылка
 ГДЕ
 	ВЫБОР
 			КОГДА &amp;ИспользоватьОтбор
@@ -192,6 +205,14 @@
 					<dcssch:dataPath>ПроектНомер</dcssch:dataPath>
 					<dcssch:field>ПроектНомер</dcssch:field>
 				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Комплект</dcssch:dataPath>
+					<dcssch:field>Комплект</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ТекущаяСтадия</dcssch:dataPath>
+					<dcssch:field>ТекущаяСтадия</dcssch:field>
+				</Field>
 				<Parameter>
 					<dcssch:name>ИспользоватьОтбор</dcssch:name>
 					<dcssch:title xsi:type="v8:LocalStringType">
@@ -219,6 +240,23 @@
 					</dcssch:valueType>
 					<dcssch:value xsi:nil="true"/>
 					<dcssch:useRestriction>true</dcssch:useRestriction>
+				</Parameter>
+				<Parameter>
+					<dcssch:name>Период</dcssch:name>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Период</v8:content>
+						</v8:item>
+					</dcssch:title>
+					<dcssch:valueType>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>DateTime</v8:DateFractions>
+						</v8:DateQualifiers>
+					</dcssch:valueType>
+					<dcssch:value xsi:type="xs:dateTime">0001-01-01T00:00:00</dcssch:value>
+					<dcssch:useRestriction>false</dcssch:useRestriction>
 				</Parameter>
 				<MainTable>Catalog.Композиции</MainTable>
 				<ListSettings>

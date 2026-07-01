@@ -9,6 +9,43 @@
 				<CommandName>Form.Command.ОткрытьБазуЗнаний</CommandName>
 				<ExtendedTooltip name="ФормаОткрытьБазуЗнанийРасширеннаяПодсказка" id="1587"/>
 			</Button>
+			<Popup name="ФормаГруппаСервис" id="1603">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Сервис</v8:content>
+					</v8:item>
+				</Title>
+				<ToolTip>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Форма группа сервис</v8:content>
+					</v8:item>
+				</ToolTip>
+				<ExtendedTooltip name="ФормаГруппаСервисРасширеннаяПодсказка" id="1604"/>
+				<ChildItems>
+					<Button name="ФормаСообщитьООшибке" id="1601">
+						<Type>CommandBarButton</Type>
+						<Representation>Picture</Representation>
+						<CommandName>Form.Command.СообщитьООшибке</CommandName>
+						<Picture>
+							<xr:Ref>CommonPicture.СообщениеООшибке</xr:Ref>
+							<xr:LoadTransparent>true</xr:LoadTransparent>
+						</Picture>
+						<ExtendedTooltip name="ФормаСообщитьООшибкеРасширеннаяПодсказка" id="1602"/>
+					</Button>
+					<Button name="ФормаНастройкаРабочегоСтола" id="1599">
+						<Type>CommandBarButton</Type>
+						<Representation>Picture</Representation>
+						<CommandName>Form.Command.НастройкаРабочегоСтола</CommandName>
+						<Picture>
+							<xr:Ref>CommonPicture.РазделАдминистрирование</xr:Ref>
+							<xr:LoadTransparent>true</xr:LoadTransparent>
+						</Picture>
+						<ExtendedTooltip name="ФормаНастройкаРабочегоСтолаРасширеннаяПодсказка" id="1600"/>
+					</Button>
+				</ChildItems>
+			</Popup>
 		</ChildItems>
 	</AutoCommandBar>
 	<Events>
@@ -303,12 +340,24 @@
 									<Button name="ТаблицаОбщихЗадачОбщиеМоиЗадачи" id="1534">
 										<Type>CommandBarButton</Type>
 										<CommandName>Form.Command.ОбщиеМоиЗадачи</CommandName>
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Исходящие</v8:content>
+											</v8:item>
+										</Title>
 										<ExtendedTooltip name="ТаблицаОбщихЗадачОбщиеМоиЗадачиРасширеннаяПодсказка" id="1535"/>
 									</Button>
 									<Button name="ТаблицаОбщихЗадачОбщиеДляМеня" id="1536">
 										<Type>CommandBarButton</Type>
 										<Check>true</Check>
 										<CommandName>Form.Command.ОбщиеДляМеня</CommandName>
+										<Title>
+											<v8:item>
+												<v8:lang>ru</v8:lang>
+												<v8:content>Входящие</v8:content>
+											</v8:item>
+										</Title>
 										<ExtendedTooltip name="ТаблицаОбщихЗадачОбщиеДляМеняРасширеннаяПодсказка" id="1537"/>
 									</Button>
 									<Button name="ТаблицаОбщихЗадачОбщиеНаблюдатель" id="1557">
@@ -5647,6 +5696,36 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ОткрытьРекламации</Action>
+		</Command>
+		<Command name="НастройкаРабочегоСтола" id="20">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройка рабочего стола</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройка рабочего стола</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>НастройкаРабочегоСтола</Action>
+		</Command>
+		<Command name="СообщитьООшибке" id="21">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сообщить о ошибке</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сообщить о ошибке</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СообщитьООшибке</Action>
 		</Command>
 	</Commands>
 </Form>

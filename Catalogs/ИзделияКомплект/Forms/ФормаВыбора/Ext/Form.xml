@@ -105,6 +105,16 @@
 					<ContextMenu name="ПроектНомерКонтекстноеМеню" id="29"/>
 					<ExtendedTooltip name="ПроектНомерРасширеннаяПодсказка" id="30"/>
 				</LabelField>
+				<LabelField name="Конструктор" id="34">
+					<DataPath>Список.Конструктор</DataPath>
+					<ContextMenu name="КонструкторКонтекстноеМеню" id="35"/>
+					<ExtendedTooltip name="КонструкторРасширеннаяПодсказка" id="36"/>
+				</LabelField>
+				<LabelField name="ТекущаяСтадия" id="37">
+					<DataPath>Список.ТекущаяСтадия</DataPath>
+					<ContextMenu name="ТекущаяСтадияКонтекстноеМеню" id="38"/>
+					<ExtendedTooltip name="ТекущаяСтадияРасширеннаяПодсказка" id="39"/>
+				</LabelField>
 				<LabelField name="ОсновноеПомещение" id="22">
 					<DataPath>Список.ОсновноеПомещение</DataPath>
 					<ContextMenu name="ОсновноеПомещениеКонтекстноеМеню" id="23"/>
@@ -136,7 +146,6 @@
 	СправочникИзделияКомплект.Наименование КАК Наименование,
 	СправочникИзделияКомплект.ДатаОкончания КАК ДатаОкончания,
 	СправочникИзделияКомплект.Комментарий КАК Комментарий,
-	СправочникИзделияКомплект.Конструктор КАК Конструктор,
 	СправочникИзделияКомплект.НаименованиеКомплекта КАК НаименованиеКомплекта,
 	СправочникИзделияКомплект.НомерВерсииКанбан КАК НомерВерсииКанбан,
 	СправочникИзделияКомплект.ОсновноеПомещение КАК ОсновноеПомещение,
@@ -151,9 +160,13 @@
 	) КАК ИзделияЭлемент,
 	СправочникИзделияКомплект.Предопределенный КАК Предопределенный,
 	СправочникИзделияКомплект.ИмяПредопределенныхДанных КАК ИмяПредопределенныхДанных,
-	СправочникИзделияКомплект.Проект.Номер КАК ПроектНомер
+	СправочникИзделияКомплект.Проект.Номер КАК ПроектНомер,
+	ДанныеКомплектаСрезПоследних.Конструктор КАК Конструктор,
+	ДанныеКомплектаСрезПоследних.ТекущаяСтадия КАК ТекущаяСтадия
 ИЗ
 	Справочник.ИзделияКомплект КАК СправочникИзделияКомплект
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ДанныеКомплекта.СрезПоследних КАК ДанныеКомплектаСрезПоследних
+		ПО (ДанныеКомплектаСрезПоследних.Комплект = СправочникИзделияКомплект.Ссылка)
 ГДЕ
 	ВЫБОР
 			КОГДА &amp;ИспользоватьОтбор
@@ -171,22 +184,6 @@
 			ИНАЧЕ ИСТИНА
 		КОНЕЦ</QueryText>
 				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>НормаВремени_ПКД</dcssch:dataPath>
-					<dcssch:field>НормаВремени_ПКД</dcssch:field>
-				</Field>
-				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>НормаВремени_Производства</dcssch:dataPath>
-					<dcssch:field>НормаВремени_Производства</dcssch:field>
-				</Field>
-				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>ГабаритныйЧертеж</dcssch:dataPath>
-					<dcssch:field>ГабаритныйЧертеж</dcssch:field>
-				</Field>
-				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>НаСогласование</dcssch:dataPath>
-					<dcssch:field>НаСогласование</dcssch:field>
-				</Field>
-				<Field xsi:type="dcssch:DataSetFieldField">
 					<dcssch:dataPath>Конструктор</dcssch:dataPath>
 					<dcssch:field>Конструктор</dcssch:field>
 				</Field>
@@ -195,44 +192,8 @@
 					<dcssch:field>Комментарий</dcssch:field>
 				</Field>
 				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>ДатаВнешнегоСоглосования</dcssch:dataPath>
-					<dcssch:field>ДатаВнешнегоСоглосования</dcssch:field>
-				</Field>
-				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>НаУтверждение</dcssch:dataPath>
-					<dcssch:field>НаУтверждение</dcssch:field>
-				</Field>
-				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>КодКомпозиции</dcssch:dataPath>
-					<dcssch:field>КодКомпозиции</dcssch:field>
-				</Field>
-				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>Композиция</dcssch:dataPath>
-					<dcssch:field>Композиция</dcssch:field>
-				</Field>
-				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>НормаВремени_Монтажа</dcssch:dataPath>
-					<dcssch:field>НормаВремени_Монтажа</dcssch:field>
-				</Field>
-				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>НормаВремени_РКД</dcssch:dataPath>
-					<dcssch:field>НормаВремени_РКД</dcssch:field>
-				</Field>
-				<Field xsi:type="dcssch:DataSetFieldField">
 					<dcssch:dataPath>ИзделияЭлемент.ИзделиеЭлемент</dcssch:dataPath>
 					<dcssch:field>ИзделияЭлемент.ИзделиеЭлемент</dcssch:field>
-				</Field>
-				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>ПланМонтажа</dcssch:dataPath>
-					<dcssch:field>ПланМонтажа</dcssch:field>
-				</Field>
-				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>ПланПодряд</dcssch:dataPath>
-					<dcssch:field>ПланПодряд</dcssch:field>
-				</Field>
-				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>ПланПроизводства</dcssch:dataPath>
-					<dcssch:field>ПланПроизводства</dcssch:field>
 				</Field>
 				<Field xsi:type="dcssch:DataSetFieldField">
 					<dcssch:dataPath>ИмяПредопределенныхДанных</dcssch:dataPath>
@@ -314,6 +275,66 @@
 					<dcssch:dataPath>ПроектНомер</dcssch:dataPath>
 					<dcssch:field>ПроектНомер</dcssch:field>
 				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Комплект</dcssch:dataPath>
+					<dcssch:field>Комплект</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>НормаВремени_ПКД</dcssch:dataPath>
+					<dcssch:field>НормаВремени_ПКД</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>НормаВремени_Производства</dcssch:dataPath>
+					<dcssch:field>НормаВремени_Производства</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ГабаритныйЧертеж</dcssch:dataPath>
+					<dcssch:field>ГабаритныйЧертеж</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>НаСогласование</dcssch:dataPath>
+					<dcssch:field>НаСогласование</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ДатаВнешнегоСоглосования</dcssch:dataPath>
+					<dcssch:field>ДатаВнешнегоСоглосования</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>НаУтверждение</dcssch:dataPath>
+					<dcssch:field>НаУтверждение</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>КодКомпозиции</dcssch:dataPath>
+					<dcssch:field>КодКомпозиции</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Композиция</dcssch:dataPath>
+					<dcssch:field>Композиция</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>НормаВремени_Монтажа</dcssch:dataPath>
+					<dcssch:field>НормаВремени_Монтажа</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>НормаВремени_РКД</dcssch:dataPath>
+					<dcssch:field>НормаВремени_РКД</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ПланМонтажа</dcssch:dataPath>
+					<dcssch:field>ПланМонтажа</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ПланПодряд</dcssch:dataPath>
+					<dcssch:field>ПланПодряд</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ПланПроизводства</dcssch:dataPath>
+					<dcssch:field>ПланПроизводства</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ТекущаяСтадия</dcssch:dataPath>
+					<dcssch:field>ТекущаяСтадия</dcssch:field>
+				</Field>
 				<Parameter>
 					<dcssch:name>ИспользоватьНеПоказыватьВВыборе</dcssch:name>
 					<dcssch:title xsi:type="v8:LocalStringType">
@@ -370,6 +391,23 @@
 					</dcssch:valueType>
 					<dcssch:value xsi:nil="true"/>
 					<dcssch:useRestriction>true</dcssch:useRestriction>
+				</Parameter>
+				<Parameter>
+					<dcssch:name>Период</dcssch:name>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Период</v8:content>
+						</v8:item>
+					</dcssch:title>
+					<dcssch:valueType>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>DateTime</v8:DateFractions>
+						</v8:DateQualifiers>
+					</dcssch:valueType>
+					<dcssch:value xsi:type="xs:dateTime">0001-01-01T00:00:00</dcssch:value>
+					<dcssch:useRestriction>false</dcssch:useRestriction>
 				</Parameter>
 				<MainTable>Catalog.ИзделияКомплект</MainTable>
 				<ListSettings>
