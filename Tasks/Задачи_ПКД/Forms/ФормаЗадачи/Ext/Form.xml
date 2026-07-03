@@ -2,6 +2,7 @@
 <Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
 	<WindowOpeningMode>LockOwnerWindow</WindowOpeningMode>
 	<AutoTitle>false</AutoTitle>
+	<Group>AlwaysHorizontal</Group>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
 		<Autofill>false</Autofill>
 		<ChildItems>
@@ -1322,6 +1323,122 @@
 				</UsualGroup>
 			</ChildItems>
 		</UsualGroup>
+		<UsualGroup name="ГруппаPDF" id="397">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа PDF</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа PDF</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаPDFРасширеннаяПодсказка" id="398"/>
+			<ChildItems>
+				<Table name="СписокФайловТЗ" id="399">
+					<Representation>List</Representation>
+					<TitleLocation>Top</TitleLocation>
+					<CommandBarLocation>Top</CommandBarLocation>
+					<Height>4</Height>
+					<AutoMaxHeight>false</AutoMaxHeight>
+					<AutoInsertNewRow>true</AutoInsertNewRow>
+					<EnableStartDrag>true</EnableStartDrag>
+					<EnableDrag>true</EnableDrag>
+					<DataPath>СписокФайловТЗ</DataPath>
+					<RowFilter xsi:nil="true"/>
+					<ContextMenu name="СписокФайловТЗКонтекстноеМеню" id="400"/>
+					<AutoCommandBar name="СписокФайловТЗКоманднаяПанель" id="401">
+						<Autofill>false</Autofill>
+						<ChildItems>
+							<Button name="СписокФайловТЗОткрытьФайлPDF" id="427">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.ОткрытьФайлPDF</CommandName>
+								<ExtendedTooltip name="СписокФайловТЗОткрытьФайлPDFРасширеннаяПодсказка" id="428"/>
+							</Button>
+							<Button name="СписокФайловТЗПоказатьФайлPDFВОтдельномОкне" id="432">
+								<Type>CommandBarButton</Type>
+								<CommandName>Form.Command.ПоказатьФайлPDFВОтдельномОкне</CommandName>
+								<ExtendedTooltip name="СписокФайловТЗПоказатьФайлPDFВОтдельномОкнеРасширеннаяПодсказка" id="433"/>
+							</Button>
+						</ChildItems>
+					</AutoCommandBar>
+					<ExtendedTooltip name="СписокФайловТЗРасширеннаяПодсказка" id="402"/>
+					<SearchStringAddition name="СписокФайловТЗСтрокаПоиска" id="403">
+						<AdditionSource>
+							<Item>СписокФайловТЗ</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="СписокФайловТЗСтрокаПоискаКонтекстноеМеню" id="404"/>
+						<ExtendedTooltip name="СписокФайловТЗСтрокаПоискаРасширеннаяПодсказка" id="405"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="СписокФайловТЗСостояниеПросмотра" id="406">
+						<AdditionSource>
+							<Item>СписокФайловТЗ</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="СписокФайловТЗСостояниеПросмотраКонтекстноеМеню" id="407"/>
+						<ExtendedTooltip name="СписокФайловТЗСостояниеПросмотраРасширеннаяПодсказка" id="408"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="СписокФайловТЗУправлениеПоиском" id="409">
+						<AdditionSource>
+							<Item>СписокФайловТЗ</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="СписокФайловТЗУправлениеПоискомКонтекстноеМеню" id="410"/>
+						<ExtendedTooltip name="СписокФайловТЗУправлениеПоискомРасширеннаяПодсказка" id="411"/>
+					</SearchControlAddition>
+					<ChildItems>
+						<InputField name="СписокФайловТЗИмяФайла" id="412">
+							<DataPath>СписокФайловТЗ.ИмяФайла</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="СписокФайловТЗИмяФайлаКонтекстноеМеню" id="413"/>
+							<ExtendedTooltip name="СписокФайловТЗИмяФайлаРасширеннаяПодсказка" id="414"/>
+						</InputField>
+						<InputField name="СписокФайловТЗДатаСоздания" id="415">
+							<DataPath>СписокФайловТЗ.ДатаСоздания</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="СписокФайловТЗДатаСозданияКонтекстноеМеню" id="416"/>
+							<ExtendedTooltip name="СписокФайловТЗДатаСозданияРасширеннаяПодсказка" id="417"/>
+						</InputField>
+						<InputField name="СписокФайловТЗРазмерВКилобайтах" id="418">
+							<DataPath>СписокФайловТЗ.РазмерВКилобайтах</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="СписокФайловТЗРазмерВКилобайтахКонтекстноеМеню" id="419"/>
+							<ExtendedTooltip name="СписокФайловТЗРазмерВКилобайтахРасширеннаяПодсказка" id="420"/>
+						</InputField>
+						<InputField name="СписокФайловТЗПутьКФайлу" id="429">
+							<DataPath>СписокФайловТЗ.ПутьКФайлу</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="СписокФайловТЗПутьКФайлуКонтекстноеМеню" id="430"/>
+							<ExtendedTooltip name="СписокФайловТЗПутьКФайлуРасширеннаяПодсказка" id="431"/>
+						</InputField>
+					</ChildItems>
+				</Table>
+				<PDFDocumentField name="ПросмотрPDF" id="421">
+					<DataPath>ПросмотрPDF</DataPath>
+					<ContextMenu name="ПросмотрPDFКонтекстноеМеню" id="422"/>
+					<ExtendedTooltip name="ПросмотрPDFРасширеннаяПодсказка" id="423"/>
+					<ViewStatusAddition name="ПросмотрPDFСостояниеПросмотра" id="424">
+						<AdditionSource>
+							<Item>ПросмотрPDF</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ПросмотрPDFСостояниеПросмотраКонтекстноеМеню" id="425"/>
+						<ExtendedTooltip name="ПросмотрPDFСостояниеПросмотраРасширеннаяПодсказка" id="426"/>
+					</ViewStatusAddition>
+				</PDFDocumentField>
+			</ChildItems>
+		</UsualGroup>
 	</ChildItems>
 	<Attributes>
 		<Attribute name="Объект" id="1">
@@ -1689,6 +1806,90 @@
 			</Title>
 			<Type>
 				<v8:Type>cfg:EnumRef.ТипыЗадачКонструирования</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="СписокФайловТЗ" id="19">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Список файлов ТЗ</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="ИмяФайла" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Имя файла</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ДатаСоздания" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата создания</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>DateTime</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="РазмерВКилобайтах" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Размер (кБ)</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>8</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Any</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ПутьКФайлу" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Путь к файлу</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ПросмотрPDF" id="20">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Просмотр PDF</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type xmlns:pdfdoc="http://v8.1c.ru/8.3/data/pdf">pdfdoc:PDFDocument</v8:Type>
 			</Type>
 		</Attribute>
 		<ConditionalAppearance>
@@ -2280,6 +2481,36 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ЗаблокированныеФайлы</Action>
+		</Command>
+		<Command name="ОткрытьФайлPDF" id="39">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть файл PDF</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть файл PDF</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОткрытьФайлPDF</Action>
+		</Command>
+		<Command name="ПоказатьФайлPDFВОтдельномОкне" id="40">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать файл PDF в отдельном окне</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать файл PDFВОтдельном окне</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПоказатьФайлPDFВОтдельномОкне</Action>
 		</Command>
 	</Commands>
 	<CommandInterface>
