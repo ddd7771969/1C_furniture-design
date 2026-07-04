@@ -2290,11 +2290,28 @@
 						</UsualGroup>
 					</ChildItems>
 				</UsualGroup>
-				<UsualGroup name="Группа17" id="1592">
+				<Button name="ПоказатьГант" id="1605">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.ПоказатьГант</CommandName>
+					<ExtendedTooltip name="ПоказатьГантРасширеннаяПодсказка" id="1606"/>
+				</Button>
+				<UsualGroup name="ГруппаГантКонструкторский" id="1592">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа гант конструкторский</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа гант конструкторский</v8:content>
+						</v8:item>
+					</ToolTip>
 					<Group>AlwaysHorizontal</Group>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
-					<ExtendedTooltip name="Группа17РасширеннаяПодсказка" id="1593"/>
+					<ExtendedTooltip name="ГруппаГантКонструкторскийРасширеннаяПодсказка" id="1593"/>
 					<ChildItems>
 						<GanttChartField name="Диаграмма" id="1307">
 							<DataPath>Диаграмма</DataPath>
@@ -5726,6 +5743,21 @@
 				</v8:item>
 			</ToolTip>
 			<Action>СообщитьООшибке</Action>
+		</Command>
+		<Command name="ПоказатьГант" id="22">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать гант</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Показать гант</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПоказатьГант</Action>
 		</Command>
 	</Commands>
 </Form>
