@@ -25,6 +25,7 @@
 		</ChildItems>
 	</AutoCommandBar>
 	<Events>
+		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
 		<Event name="OnOpen">ПриОткрытии</Event>
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 	</Events>
@@ -80,6 +81,43 @@
 							<ContextMenu name="НовыйКонструкторКонтекстноеМеню" id="8"/>
 							<ExtendedTooltip name="НовыйКонструкторРасширеннаяПодсказка" id="9"/>
 						</InputField>
+						<UsualGroup name="ГруппаКомпозицияКомплекта" id="72">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа композиция комплекта</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа композиция комплекта</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>AlwaysHorizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаКомпозицияКомплектаРасширеннаяПодсказка" id="73"/>
+							<ChildItems>
+								<LabelDecoration name="ДекорацияКомпозиция" id="69">
+									<TextColor>#993366</TextColor>
+									<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+									<Title formatted="false">
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Декорация композиция</v8:content>
+										</v8:item>
+									</Title>
+									<ContextMenu name="ДекорацияКомпозицияКонтекстноеМеню" id="70"/>
+									<ExtendedTooltip name="ДекорацияКомпозицияРасширеннаяПодсказка" id="71"/>
+								</LabelDecoration>
+								<Button name="НазначитьКомпозиции" id="74">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.НазначитьКомпозиции</CommandName>
+									<ExtendedTooltip name="НазначитьКомпозицииРасширеннаяПодсказка" id="75"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
 						<InputField name="Комплект" id="10">
 							<DataPath>Объект.Комплект</DataPath>
 							<EditMode>EnterOnInput</EditMode>
@@ -364,6 +402,21 @@
 				</v8:item>
 			</ToolTip>
 			<Action>Обновить</Action>
+		</Command>
+		<Command name="НазначитьКомпозиции" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Назначить композиции</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Назначить композиции</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>НазначитьКомпозиции</Action>
 		</Command>
 	</Commands>
 </Form>
