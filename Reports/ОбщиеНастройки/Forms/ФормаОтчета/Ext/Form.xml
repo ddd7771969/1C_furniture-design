@@ -799,13 +799,81 @@
 					</ToolTip>
 					<ExtendedTooltip name="ГруппаСообщенияРасширеннаяПодсказка" id="193"/>
 					<ChildItems>
-						<InputField name="ИнтервалОпросаСообщений" id="194">
-							<DataPath>ИнтервалОпросаСообщений</DataPath>
-							<SpinButton>true</SpinButton>
-							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-							<ContextMenu name="ИнтервалОпросаСообщенийКонтекстноеМеню" id="195"/>
-							<ExtendedTooltip name="ИнтервалОпросаСообщенийРасширеннаяПодсказка" id="196"/>
-						</InputField>
+						<UsualGroup name="Группа11" id="377">
+							<Group>AlwaysHorizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа11РасширеннаяПодсказка" id="378"/>
+							<ChildItems>
+								<UsualGroup name="Группа12" id="379">
+									<Group>Vertical</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="Группа12РасширеннаяПодсказка" id="380"/>
+								</UsualGroup>
+								<InputField name="ИнтервалОпросаСообщений" id="194">
+									<DataPath>ИнтервалОпросаСообщений</DataPath>
+									<SpinButton>true</SpinButton>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ИнтервалОпросаСообщенийКонтекстноеМеню" id="195"/>
+									<ExtendedTooltip name="ИнтервалОпросаСообщенийРасширеннаяПодсказка" id="196"/>
+								</InputField>
+								<UsualGroup name="ГруппаОтправкаВзаимодействия" id="381">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Отправка взаимодействия</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа отправка взаимодействия</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Vertical</Group>
+									<Representation>StrongSeparation</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаОтправкаВзаимодействияРасширеннаяПодсказка" id="382"/>
+									<ChildItems>
+										<InputField name="УчетнаяЗаписьОтправкиСообщения" id="383">
+											<DataPath>УчетнаяЗаписьОтправкиСообщения</DataPath>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="УчетнаяЗаписьОтправкиСообщенияКонтекстноеМеню" id="384"/>
+											<ExtendedTooltip name="УчетнаяЗаписьОтправкиСообщенияРасширеннаяПодсказка" id="385"/>
+										</InputField>
+										<InputField name="ТемаОтправкиСообщения" id="386">
+											<DataPath>ТемаОтправкиСообщения</DataPath>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="ТемаОтправкиСообщенияКонтекстноеМеню" id="387"/>
+											<ExtendedTooltip name="ТемаОтправкиСообщенияРасширеннаяПодсказка" id="388"/>
+										</InputField>
+										<InputField name="ШаблонОтправкиТекстаСообщения" id="389">
+											<DataPath>ШаблонОтправкиТекстаСообщения</DataPath>
+											<Height>3</Height>
+											<AutoMaxHeight>false</AutoMaxHeight>
+											<MaxHeight>3</MaxHeight>
+											<VerticalStretch>false</VerticalStretch>
+											<MultiLine>true</MultiLine>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="ШаблонОтправкиТекстаСообщенияКонтекстноеМеню" id="390"/>
+											<ExtendedTooltip name="ШаблонОтправкиТекстаСообщенияРасширеннаяПодсказка" id="391"/>
+										</InputField>
+										<LabelDecoration name="ДекорацияЗаполнениеШаблона" id="392">
+											<TextColor>#0000FF</TextColor>
+											<Title formatted="false">
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>%1 Дата шаблона, %2 Автор шаблона, %3 Сообщение шаблона, %4 Наименование шаблона, %5 Объект адресации</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="ДекорацияЗаполнениеШаблонаКонтекстноеМеню" id="393"/>
+											<ExtendedTooltip name="ДекорацияЗаполнениеШаблонаРасширеннаяПодсказка" id="394"/>
+										</LabelDecoration>
+									</ChildItems>
+								</UsualGroup>
+							</ChildItems>
+						</UsualGroup>
 					</ChildItems>
 				</Page>
 				<Page name="ГруппаКанбан" id="200">
@@ -2166,6 +2234,47 @@
 					<v8:FractionDigits>0</v8:FractionDigits>
 					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
 				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="УчетнаяЗаписьОтправкиСообщения" id="63">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Учетная запись отправки сообщения</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.УчетныеЗаписиЭлектроннойПочты</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ТемаОтправкиСообщения" id="64">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тема отправки сообщения</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>100</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ШаблонОтправкиТекстаСообщения" id="65">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Шаблон отправки текста сообщения</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>250</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
 			</Type>
 		</Attribute>
 	</Attributes>
