@@ -2284,7 +2284,18 @@
 										<xr:Ref>CommonPicture.ИсторияВерсий</xr:Ref>
 										<xr:LoadTransparent>true</xr:LoadTransparent>
 									</Picture>
+									<ToolTipRepresentation>Balloon</ToolTipRepresentation>
 									<ExtendedTooltip name="ФормаТаймингЗадачиРасширеннаяПодсказка" id="1591"/>
+								</Button>
+								<Button name="ОтчетКонструктора" id="1607">
+									<Type>UsualButton</Type>
+									<Representation>Picture</Representation>
+									<CommandName>Form.Command.ОтчетКонструктора</CommandName>
+									<Picture>
+										<xr:Ref>CommonPicture.ЗапланированноеВзаимодействие</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ExtendedTooltip name="ОтчетКонструктораРасширеннаяПодсказка" id="1608"/>
 								</Button>
 							</ChildItems>
 						</UsualGroup>
@@ -5710,7 +5721,7 @@
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Тайминг комплекты конструктора</v8:content>
+					<v8:content>Тайминг</v8:content>
 				</v8:item>
 			</ToolTip>
 			<Action>ТаймингКомплектыКонструктора</Action>
@@ -5774,6 +5785,21 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ПоказатьГант</Action>
+		</Command>
+		<Command name="ОтчетКонструктора" id="23">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отчет конструктора</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отчет конструктора</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОтчетКонструктора</Action>
 		</Command>
 	</Commands>
 </Form>
