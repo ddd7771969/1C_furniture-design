@@ -1,0 +1,356 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
+	<ChildItems>
+		<Table name="ТаблицаОбщихЗадач" id="1">
+			<Representation>List</Representation>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>ТаблицаОбщихЗадач</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ТаблицаОбщихЗадачКонтекстноеМеню" id="2"/>
+			<AutoCommandBar name="ТаблицаОбщихЗадачКоманднаяПанель" id="3">
+				<ChildItems>
+					<Button name="ТаблицаОбщихЗадачСоздатьОбщуюЗадачу" id="38">
+						<Type>CommandBarButton</Type>
+						<Representation>Picture</Representation>
+						<CommandName>Form.Command.СоздатьОбщуюЗадачу</CommandName>
+						<Picture>
+							<xr:Ref>StdPicture.CreateListItem</xr:Ref>
+							<xr:LoadTransparent>true</xr:LoadTransparent>
+						</Picture>
+						<ExtendedTooltip name="ТаблицаОбщихЗадачСоздатьОбщуюЗадачуРасширеннаяПодсказка" id="39"/>
+					</Button>
+					<Button name="ТаблицаОбщихЗадачОбновитьОбщиеЗадачи" id="40">
+						<Type>CommandBarButton</Type>
+						<Representation>Picture</Representation>
+						<CommandName>11:409b9a53-7f7e-4178-86c1-33176c7c7a7a</CommandName>
+						<Picture>
+							<xr:Ref>StdPicture.Refresh</xr:Ref>
+							<xr:LoadTransparent>true</xr:LoadTransparent>
+						</Picture>
+						<ExtendedTooltip name="ТаблицаОбщихЗадачОбновитьОбщиеЗадачиРасширеннаяПодсказка" id="41"/>
+					</Button>
+					<Button name="ТаблицаОбщихЗадачОбщиеМоиЗадачи" id="42">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Command.ОбщиеМоиЗадачи</CommandName>
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Исходящие</v8:content>
+							</v8:item>
+						</Title>
+						<ExtendedTooltip name="ТаблицаОбщихЗадачОбщиеМоиЗадачиРасширеннаяПодсказка" id="43"/>
+					</Button>
+					<Button name="ТаблицаОбщихЗадачОбщиеДляМеня" id="44">
+						<Type>CommandBarButton</Type>
+						<Check>true</Check>
+						<CommandName>Form.Command.ОбщиеДляМеня</CommandName>
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Входящие</v8:content>
+							</v8:item>
+						</Title>
+						<ExtendedTooltip name="ТаблицаОбщихЗадачОбщиеДляМеняРасширеннаяПодсказка" id="45"/>
+					</Button>
+					<Button name="ТаблицаОбщихЗадачОбщиеНаблюдатель" id="46">
+						<Type>CommandBarButton</Type>
+						<Check>true</Check>
+						<CommandName>Form.Command.ОбщиеНаблюдатель</CommandName>
+						<ExtendedTooltip name="ТаблицаОбщихЗадачОбщиеНаблюдательРасширеннаяПодсказка" id="47"/>
+					</Button>
+				</ChildItems>
+			</AutoCommandBar>
+			<ExtendedTooltip name="ТаблицаОбщихЗадачРасширеннаяПодсказка" id="4"/>
+			<SearchStringAddition name="ТаблицаОбщихЗадачСтрокаПоиска" id="5">
+				<AdditionSource>
+					<Item>ТаблицаОбщихЗадач</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицаОбщихЗадачСтрокаПоискаКонтекстноеМеню" id="6"/>
+				<ExtendedTooltip name="ТаблицаОбщихЗадачСтрокаПоискаРасширеннаяПодсказка" id="7"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ТаблицаОбщихЗадачСостояниеПросмотра" id="8">
+				<AdditionSource>
+					<Item>ТаблицаОбщихЗадач</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицаОбщихЗадачСостояниеПросмотраКонтекстноеМеню" id="9"/>
+				<ExtendedTooltip name="ТаблицаОбщихЗадачСостояниеПросмотраРасширеннаяПодсказка" id="10"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ТаблицаОбщихЗадачУправлениеПоиском" id="11">
+				<AdditionSource>
+					<Item>ТаблицаОбщихЗадач</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ТаблицаОбщихЗадачУправлениеПоискомКонтекстноеМеню" id="12"/>
+				<ExtendedTooltip name="ТаблицаОбщихЗадачУправлениеПоискомРасширеннаяПодсказка" id="13"/>
+			</SearchControlAddition>
+			<Events>
+				<Event name="BeforeAddRow">ОбщиеЗадачиПередНачаломДобавления</Event>
+				<Event name="BeforeDeleteRow">ОбщиеЗадачиПередУдалением</Event>
+				<Event name="BeforeRowChange">ОбщиеЗадачиПередНачаломИзменения</Event>
+			</Events>
+			<ChildItems>
+				<InputField name="ТаблицаОбщихЗадачКартинка" id="29">
+					<DataPath>ТаблицаОбщихЗадач.Картинка</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ТаблицаОбщихЗадачКартинкаКонтекстноеМеню" id="30"/>
+					<ExtendedTooltip name="ТаблицаОбщихЗадачКартинкаРасширеннаяПодсказка" id="31"/>
+				</InputField>
+				<InputField name="ТаблицаОбщихЗадачДата" id="14">
+					<DataPath>ТаблицаОбщихЗадач.Дата</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ТаблицаОбщихЗадачДатаКонтекстноеМеню" id="15"/>
+					<ExtendedTooltip name="ТаблицаОбщихЗадачДатаРасширеннаяПодсказка" id="16"/>
+				</InputField>
+				<InputField name="ТаблицаОбщихЗадачАвтор" id="17">
+					<DataPath>ТаблицаОбщихЗадач.Автор</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ТаблицаОбщихЗадачАвторКонтекстноеМеню" id="18"/>
+					<ExtendedTooltip name="ТаблицаОбщихЗадачАвторРасширеннаяПодсказка" id="19"/>
+				</InputField>
+				<InputField name="ТаблицаОбщихЗадачСообщение" id="20">
+					<DataPath>ТаблицаОбщихЗадач.Сообщение</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ТаблицаОбщихЗадачСообщениеКонтекстноеМеню" id="21"/>
+					<ExtendedTooltip name="ТаблицаОбщихЗадачСообщениеРасширеннаяПодсказка" id="22"/>
+				</InputField>
+				<InputField name="ТаблицаОбщихЗадачЗадача" id="23">
+					<DataPath>ТаблицаОбщихЗадач.Задача</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ТаблицаОбщихЗадачЗадачаКонтекстноеМеню" id="24"/>
+					<ExtendedTooltip name="ТаблицаОбщихЗадачЗадачаРасширеннаяПодсказка" id="25"/>
+				</InputField>
+				<InputField name="ТаблицаОбщихЗадачИсполнитель" id="26">
+					<DataPath>ТаблицаОбщихЗадач.Исполнитель</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ТаблицаОбщихЗадачИсполнительКонтекстноеМеню" id="27"/>
+					<ExtendedTooltip name="ТаблицаОбщихЗадачИсполнительРасширеннаяПодсказка" id="28"/>
+				</InputField>
+				<InputField name="ТаблицаОбщихЗадачОжидаемаяДатаВыполнения" id="32">
+					<DataPath>ТаблицаОбщихЗадач.ОжидаемаяДатаВыполнения</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ТаблицаОбщихЗадачОжидаемаяДатаВыполненияКонтекстноеМеню" id="33"/>
+					<ExtendedTooltip name="ТаблицаОбщихЗадачОжидаемаяДатаВыполненияРасширеннаяПодсказка" id="34"/>
+				</InputField>
+				<InputField name="ТаблицаОбщихЗадачНомерЗадачи" id="35">
+					<DataPath>ТаблицаОбщихЗадач.НомерЗадачи</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ТаблицаОбщихЗадачНомерЗадачиКонтекстноеМеню" id="36"/>
+					<ExtendedTooltip name="ТаблицаОбщихЗадачНомерЗадачиРасширеннаяПодсказка" id="37"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="ТаблицаОбщихЗадач" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Таблица общих задач</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Дата" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>DateTime</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="Автор" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Автор</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Пользователи</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Сообщение" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Сообщение</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>200</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Задача" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Задача</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:TaskRef.ЗадачиОбщие</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Исполнитель" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Исполнитель</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Пользователи</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Картинка" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Картинка</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>1</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="ОжидаемаяДатаВыполнения" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ожидаемая дата выполнения</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="НомерЗадачи" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Номер задачи</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>9</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+	</Attributes>
+	<Commands>
+		<Command name="СоздатьОбщуюЗадачу" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать общую задачу</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Создать общую задачу</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СоздатьОбщуюЗадачу</Action>
+		</Command>
+		<Command name="ОбновитьОбщиеЗадачи" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить общие задачи</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить общие задачи</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбновитьОбщиеЗадачи</Action>
+		</Command>
+		<Command name="ОбщиеМоиЗадачи" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Мои задачи</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Общие мои задачи</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбщиеМоиЗадачи</Action>
+		</Command>
+		<Command name="ОбщиеДляМеня" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Для меня</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Общие для меня</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбщиеДляМеня</Action>
+		</Command>
+		<Command name="ОбщиеНаблюдатель" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Наблюдатель</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Общие мои задачи</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбщиеНаблюдатель</Action>
+		</Command>
+	</Commands>
+</Form>

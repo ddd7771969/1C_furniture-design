@@ -20,6 +20,7 @@
 		</ChildItems>
 	</AutoCommandBar>
 	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 	</Events>
 	<ChildItems>
@@ -39,15 +40,36 @@
 						<Event name="OnChange">ПроектПриИзменении</Event>
 					</Events>
 				</InputField>
-				<InputField name="Конструктор" id="11">
-					<DataPath>Конструктор</DataPath>
+				<InputField name="ВедущийКонструктор" id="14">
+					<DataPath>ВедущийКонструктор</DataPath>
 					<ClearButton>true</ClearButton>
+					<CreateButton>false</CreateButton>
+					<ListChoiceMode>true</ListChoiceMode>
 					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-					<ContextMenu name="КонструкторКонтекстноеМеню" id="12"/>
-					<ExtendedTooltip name="КонструкторРасширеннаяПодсказка" id="13"/>
+					<ChooseType>false</ChooseType>
+					<ContextMenu name="ВедущийКонструкторКонтекстноеМеню" id="15"/>
+					<ExtendedTooltip name="ВедущийКонструкторРасширеннаяПодсказка" id="16"/>
 					<Events>
-						<Event name="OnChange">КонструкторПриИзменении</Event>
+						<Event name="OnChange">ВедущийКонструкторПриИзменении</Event>
 					</Events>
+				</InputField>
+				<InputField name="Конструкторы" id="17">
+					<DataPath>Конструкторы</DataPath>
+					<ClearButton>true</ClearButton>
+					<CreateButton>false</CreateButton>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="КонструкторыКонтекстноеМеню" id="18"/>
+					<ExtendedTooltip name="КонструкторыРасширеннаяПодсказка" id="19"/>
+					<Events>
+						<Event name="OnChange">КонструкторыПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="Подразделение" id="22">
+					<DataPath>Подразделение</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ПодразделениеКонтекстноеМеню" id="23"/>
+					<ExtendedTooltip name="ПодразделениеРасширеннаяПодсказка" id="24"/>
 				</InputField>
 			</ChildItems>
 		</UsualGroup>
@@ -90,15 +112,40 @@
 				<v8:Type>cfg:CatalogRef.Проекты</v8:Type>
 			</Type>
 		</Attribute>
-		<Attribute name="Конструктор" id="4">
+		<Attribute name="Конструкторы" id="5">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Конструктор</v8:content>
+					<v8:content>Конструкторы</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+			<Settings xsi:type="v8:TypeDescription">
+				<v8:Type>cfg:CatalogRef.Пользователи</v8:Type>
+			</Settings>
+		</Attribute>
+		<Attribute name="ВедущийКонструктор" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ведущий конструктор</v8:content>
 				</v8:item>
 			</Title>
 			<Type>
 				<v8:Type>cfg:CatalogRef.Пользователи</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="Подразделение" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Подразделение</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Подразделения</v8:Type>
 			</Type>
 		</Attribute>
 	</Attributes>

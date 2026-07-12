@@ -461,6 +461,11 @@
 							<ContextMenu name="Декорация1КонтекстноеМеню" id="1584"/>
 							<ExtendedTooltip name="Декорация1РасширеннаяПодсказка" id="1585"/>
 						</PictureDecoration>
+						<Button name="ОткрытьФормуВзаимодействия" id="1609">
+							<Type>Hyperlink</Type>
+							<CommandName>0</CommandName>
+							<ExtendedTooltip name="ОткрытьФормуВзаимодействияРасширеннаяПодсказка" id="1610"/>
+						</Button>
 					</ChildItems>
 				</UsualGroup>
 			</ChildItems>
@@ -1690,6 +1695,11 @@
 											<Enabled>false</Enabled>
 											<CommandName>Form.Command.ОткрытьПлан</CommandName>
 											<ExtendedTooltip name="ОткрытьПланРасширеннаяПодсказка" id="1279"/>
+										</Button>
+										<Button name="КомплектыКонтструктора" id="1611">
+											<Type>UsualButton</Type>
+											<CommandName>Form.Command.КомплектыКонтструктора</CommandName>
+											<ExtendedTooltip name="КомплектыКонтструктораРасширеннаяПодсказка" id="1612"/>
 										</Button>
 										<Button name="ОткрытьРекламации" id="1594">
 											<Type>Hyperlink</Type>
@@ -5800,6 +5810,21 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ОтчетКонструктора</Action>
+		</Command>
+		<Command name="КомплектыКонтструктора" id="24">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Комплекты контструктора</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Комплекты контструктора</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КомплектыКонтструктора</Action>
 		</Command>
 	</Commands>
 </Form>
