@@ -181,7 +181,7 @@
 			|}		
 			|table {
 			|  width: 100%;
-			|  border-top: 7px solid rgb(43, 129, 17);
+			|  border-top: 7px solid rgb(43, 17, 129);
 			|  border-collapse: collapse;
 			|  text-align: center;
 			|  margin-bottom: 20px;
@@ -192,12 +192,12 @@
 			|  word-break: break-word;
 			|  text-align: left;
 			|  padding: 5px;
-			|  border: 2px solid rgb(43, 129, 17);
+			|  border: 2px solid rgb(43, 17, 129);
 			|} 
 			|th {
 			|  text-align: center;
 			|  padding: 5px;
-			|  border: 2px solid rgb(43, 129, 17);
+			|  border: 2px solid rgb(43, 17, 129);
 			|}
 			|</style>
 			|";	
