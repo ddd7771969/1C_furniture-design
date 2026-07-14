@@ -94,7 +94,6 @@
 		<Event name="AfterWrite">ПослеЗаписи</Event>
 		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
 		<Event name="OnOpen">ПриОткрытии</Event>
-		<Event name="BeforeWrite">ПередЗаписью</Event>
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 		<Event name="BeforeWriteAtServer">ПередЗаписьюНаСервере</Event>
 	</Events>
@@ -1320,6 +1319,24 @@
 							</ChildItems>
 						</UsualGroup>
 					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаДлительныеОперации" id="434">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа длительные операции</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа длительные операции</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>AlwaysHorizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаДлительныеОперацииРасширеннаяПодсказка" id="435"/>
 				</UsualGroup>
 			</ChildItems>
 		</UsualGroup>
