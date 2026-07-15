@@ -1362,6 +1362,18 @@
 							<ContextMenu name="ДополнительныеЗадачиКонтекстноеМеню" id="441"/>
 							<AutoCommandBar name="ДополнительныеЗадачиКоманднаяПанель" id="442">
 								<Autofill>false</Autofill>
+								<ChildItems>
+									<Button name="ДополнительныеЗадачиОбновитьДополнительныеЗадачи" id="474">
+										<Type>CommandBarButton</Type>
+										<Representation>Picture</Representation>
+										<CommandName>Form.Command.ОбновитьДополнительныеЗадачи</CommandName>
+										<Picture>
+											<xr:Ref>StdPicture.Refresh</xr:Ref>
+											<xr:LoadTransparent>true</xr:LoadTransparent>
+										</Picture>
+										<ExtendedTooltip name="ДополнительныеЗадачиОбновитьДополнительныеЗадачиРасширеннаяПодсказка" id="475"/>
+									</Button>
+								</ChildItems>
 							</AutoCommandBar>
 							<ExtendedTooltip name="ДополнительныеЗадачиРасширеннаяПодсказка" id="443"/>
 							<SearchStringAddition name="ДополнительныеЗадачиСтрокаПоиска" id="444">
@@ -2741,6 +2753,21 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ПоказатьФайлPDFВОтдельномОкне</Action>
+		</Command>
+		<Command name="ОбновитьДополнительныеЗадачи" id="41">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить дополнительные задачи</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить дополнительные задачи</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбновитьДополнительныеЗадачи</Action>
 		</Command>
 	</Commands>
 	<CommandInterface>
