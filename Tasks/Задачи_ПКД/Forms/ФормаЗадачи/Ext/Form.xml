@@ -1337,6 +1337,111 @@
 					<ShowTitle>false</ShowTitle>
 					<ExtendedTooltip name="ГруппаДлительныеДействияРасширеннаяПодсказка" id="437"/>
 				</UsualGroup>
+				<UsualGroup name="ГруппаДополнительныеЗадачи" id="438">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дополнительные задачи</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа дополнительные задачи</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ExtendedTooltip name="ГруппаДополнительныеЗадачиРасширеннаяПодсказка" id="439"/>
+					<ChildItems>
+						<Table name="ДополнительныеЗадачи" id="440">
+							<Representation>List</Representation>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>ДополнительныеЗадачи</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ДополнительныеЗадачиКонтекстноеМеню" id="441"/>
+							<AutoCommandBar name="ДополнительныеЗадачиКоманднаяПанель" id="442">
+								<Autofill>false</Autofill>
+							</AutoCommandBar>
+							<ExtendedTooltip name="ДополнительныеЗадачиРасширеннаяПодсказка" id="443"/>
+							<SearchStringAddition name="ДополнительныеЗадачиСтрокаПоиска" id="444">
+								<AdditionSource>
+									<Item>ДополнительныеЗадачи</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ДополнительныеЗадачиСтрокаПоискаКонтекстноеМеню" id="445"/>
+								<ExtendedTooltip name="ДополнительныеЗадачиСтрокаПоискаРасширеннаяПодсказка" id="446"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ДополнительныеЗадачиСостояниеПросмотра" id="447">
+								<AdditionSource>
+									<Item>ДополнительныеЗадачи</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ДополнительныеЗадачиСостояниеПросмотраКонтекстноеМеню" id="448"/>
+								<ExtendedTooltip name="ДополнительныеЗадачиСостояниеПросмотраРасширеннаяПодсказка" id="449"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ДополнительныеЗадачиУправлениеПоиском" id="450">
+								<AdditionSource>
+									<Item>ДополнительныеЗадачи</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ДополнительныеЗадачиУправлениеПоискомКонтекстноеМеню" id="451"/>
+								<ExtendedTooltip name="ДополнительныеЗадачиУправлениеПоискомРасширеннаяПодсказка" id="452"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<InputField name="ДополнительныеЗадачиНомерЗадачи" id="453">
+									<DataPath>ДополнительныеЗадачи.НомерЗадачи</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ДополнительныеЗадачиНомерЗадачиКонтекстноеМеню" id="454"/>
+									<ExtendedTooltip name="ДополнительныеЗадачиНомерЗадачиРасширеннаяПодсказка" id="455"/>
+								</InputField>
+								<InputField name="ДополнительныеЗадачиНачалоЗадачи" id="456">
+									<DataPath>ДополнительныеЗадачи.НачалоЗадачи</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ДополнительныеЗадачиНачалоЗадачиКонтекстноеМеню" id="457"/>
+									<ExtendedTooltip name="ДополнительныеЗадачиНачалоЗадачиРасширеннаяПодсказка" id="458"/>
+								</InputField>
+								<InputField name="ДополнительныеЗадачиАвторЗадачи" id="459">
+									<DataPath>ДополнительныеЗадачи.АвторЗадачи</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ДополнительныеЗадачиАвторЗадачиКонтекстноеМеню" id="460"/>
+									<ExtendedTooltip name="ДополнительныеЗадачиАвторЗадачиРасширеннаяПодсказка" id="461"/>
+								</InputField>
+								<InputField name="ДополнительныеЗадачиФайлВPDM" id="462">
+									<DataPath>ДополнительныеЗадачи.ФайлВPDM</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ДополнительныеЗадачиФайлВPDMКонтекстноеМеню" id="463"/>
+									<ExtendedTooltip name="ДополнительныеЗадачиФайлВPDMРасширеннаяПодсказка" id="464"/>
+								</InputField>
+								<InputField name="ДополнительныеЗадачиЗавершениеЗадачи" id="465">
+									<DataPath>ДополнительныеЗадачи.ЗавершениеЗадачи</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ДополнительныеЗадачиЗавершениеЗадачиКонтекстноеМеню" id="466"/>
+									<ExtendedTooltip name="ДополнительныеЗадачиЗавершениеЗадачиРасширеннаяПодсказка" id="467"/>
+								</InputField>
+								<InputField name="ДополнительныеЗадачиАвторЗавершения" id="468">
+									<DataPath>ДополнительныеЗадачи.АвторЗавершения</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ДополнительныеЗадачиАвторЗавершенияКонтекстноеМеню" id="469"/>
+									<ExtendedTooltip name="ДополнительныеЗадачиАвторЗавершенияРасширеннаяПодсказка" id="470"/>
+								</InputField>
+								<InputField name="ДополнительныеЗадачиКомментарий" id="471">
+									<DataPath>ДополнительныеЗадачи.Комментарий</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ДополнительныеЗадачиКомментарийКонтекстноеМеню" id="472"/>
+									<ExtendedTooltip name="ДополнительныеЗадачиКомментарийРасширеннаяПодсказка" id="473"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</UsualGroup>
 			</ChildItems>
 		</UsualGroup>
 		<UsualGroup name="ГруппаPDF" id="397">
@@ -1907,6 +2012,115 @@
 			<Type>
 				<v8:Type xmlns:pdfdoc="http://v8.1c.ru/8.3/data/pdf">pdfdoc:PDFDocument</v8:Type>
 			</Type>
+		</Attribute>
+		<Attribute name="ДополнительныеЗадачи" id="21">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дополнительные задачи</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="НомерЗадачи" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Номер задачи</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>3</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="НачалоЗадачи" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Начало задачи</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>DateTime</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="АвторЗадачи" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Автор задачи</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Пользователи</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ФайлВPDM" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Файл ВPDM</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>250</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="ЗавершениеЗадачи" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Завершение задачи</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>DateTime</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="АвторЗавершения" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Автор завершения</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Пользователи</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Комментарий" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Комментарий</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>250</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+			</Columns>
 		</Attribute>
 		<ConditionalAppearance>
 			<dcsset:item>
