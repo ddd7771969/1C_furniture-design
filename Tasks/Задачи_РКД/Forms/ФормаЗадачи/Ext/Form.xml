@@ -730,11 +730,24 @@
 													<ContextMenu name="НеИзменяетСтадиюКонтекстноеМеню" id="162"/>
 													<ExtendedTooltip name="НеИзменяетСтадиюРасширеннаяПодсказка" id="163"/>
 												</CheckBoxField>
-												<Button name="СнятьСВыполнения" id="91">
-													<Type>UsualButton</Type>
-													<CommandName>Form.Command.СнятьСВыполнения</CommandName>
-													<ExtendedTooltip name="СнятьСВыполненияРасширеннаяПодсказка" id="92"/>
-												</Button>
+												<UsualGroup name="Группа9" id="197">
+													<Group>AlwaysHorizontal</Group>
+													<Representation>None</Representation>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="Группа9РасширеннаяПодсказка" id="198"/>
+													<ChildItems>
+														<Button name="УстановитьВыполнение" id="195">
+															<Type>UsualButton</Type>
+															<CommandName>Form.Command.УстановитьВыполнение</CommandName>
+															<ExtendedTooltip name="УстановитьВыполнениеРасширеннаяПодсказка" id="196"/>
+														</Button>
+														<Button name="СнятьСВыполнения" id="91">
+															<Type>UsualButton</Type>
+															<CommandName>Form.Command.СнятьСВыполнения</CommandName>
+															<ExtendedTooltip name="СнятьСВыполненияРасширеннаяПодсказка" id="92"/>
+														</Button>
+													</ChildItems>
+												</UsualGroup>
 											</ChildItems>
 										</UsualGroup>
 									</ChildItems>
@@ -1230,6 +1243,21 @@
 				</v8:item>
 			</ToolTip>
 			<Action>СоздатьОбщуюЗадачу</Action>
+		</Command>
+		<Command name="УстановитьВыполнение" id="17">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить выполнение</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Установить выполнение</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>УстановитьВыполнение</Action>
 		</Command>
 	</Commands>
 	<CommandInterface>

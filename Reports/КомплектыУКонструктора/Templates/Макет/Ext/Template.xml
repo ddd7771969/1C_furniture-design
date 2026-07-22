@@ -10,7 +10,7 @@
 		</languageInfo>
 	</languageSettings>
 	<columns>
-		<size>4</size>
+		<size>5</size>
 		<columnsItem>
 			<index>0</index>
 			<column>
@@ -35,11 +35,22 @@
 				<formatIndex>4</formatIndex>
 			</column>
 		</columnsItem>
+		<columnsItem>
+			<index>4</index>
+			<column>
+				<formatIndex>5</formatIndex>
+			</column>
+		</columnsItem>
 	</columns>
 	<rowsItem>
 		<index>0</index>
 		<row>
-			<empty>true</empty>
+			<c>
+				<i>4</i>
+				<c>
+					<f>4</f>
+				</c>
+			</c>
 		</row>
 	</rowsItem>
 	<rowsItem>
@@ -48,8 +59,14 @@
 			<c>
 				<i>1</i>
 				<c>
-					<f>5</f>
+					<f>6</f>
 					<parameter>ДатаПечати</parameter>
+				</c>
+			</c>
+			<c>
+				<i>4</i>
+				<c>
+					<f>4</f>
 				</c>
 			</c>
 		</row>
@@ -60,7 +77,7 @@
 			<c>
 				<i>1</i>
 				<c>
-					<f>6</f>
+					<f>7</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -71,7 +88,7 @@
 			</c>
 			<c>
 				<c>
-					<f>7</f>
+					<f>8</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
@@ -82,11 +99,22 @@
 			</c>
 			<c>
 				<c>
-					<f>7</f>
+					<f>8</f>
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
 							<v8:content>Текущая стадия</v8:content>
+						</v8:item>
+					</tl>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>8</f>
+					<tl>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ожидание ГЧ</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -96,7 +124,12 @@
 	<rowsItem>
 		<index>3</index>
 		<row>
-			<empty>true</empty>
+			<c>
+				<i>4</i>
+				<c>
+					<f>4</f>
+				</c>
+			</c>
 		</row>
 	</rowsItem>
 	<rowsItem>
@@ -105,18 +138,39 @@
 			<c>
 				<i>1</i>
 				<c>
-					<f>8</f>
+					<f>9</f>
 					<parameter>СотрудникНаименование</parameter>
 					<detailParameter>Сотрудник</detailParameter>
+				</c>
+			</c>
+			<c>
+				<i>4</i>
+				<c>
+					<f>4</f>
 				</c>
 			</c>
 		</row>
 	</rowsItem>
 	<rowsItem>
 		<index>5</index>
-		<indexTo>6</indexTo>
 		<row>
-			<empty>true</empty>
+			<c>
+				<i>4</i>
+				<c>
+					<f>4</f>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>6</index>
+		<row>
+			<c>
+				<i>4</i>
+				<c>
+					<f>4</f>
+				</c>
+			</c>
 		</row>
 	</rowsItem>
 	<rowsItem>
@@ -125,30 +179,51 @@
 			<c>
 				<i>1</i>
 				<c>
-					<f>9</f>
+					<f>10</f>
 					<parameter>Номер</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>10</f>
+					<f>11</f>
 					<parameter>ОбъектТЗНаименование</parameter>
 					<detailParameter>Комплект</detailParameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>10</f>
+					<f>11</f>
 					<parameter>ТекущаяСтадияПолноеНаименование</parameter>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>12</f>
+					<parameter>ОжиданиеГЧ</parameter>
 				</c>
 			</c>
 		</row>
 	</rowsItem>
 	<rowsItem>
 		<index>8</index>
-		<indexTo>9</indexTo>
 		<row>
-			<empty>true</empty>
+			<c>
+				<i>4</i>
+				<c>
+					<f>4</f>
+				</c>
+			</c>
+		</row>
+	</rowsItem>
+	<rowsItem>
+		<index>9</index>
+		<row>
+			<c>
+				<i>4</i>
+				<c>
+					<f>4</f>
+				</c>
+			</c>
 		</row>
 	</rowsItem>
 	<rowsItem>
@@ -157,27 +232,33 @@
 			<c>
 				<i>1</i>
 				<c>
-					<f>11</f>
+					<f>13</f>
 					<parameter>Номер</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>12</f>
+					<f>14</f>
 					<parameter>ОбъектТЗНаименование</parameter>
 					<detailParameter>Комплект</detailParameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>12</f>
+					<f>14</f>
 					<parameter>ТекущаяСтадияПолноеНаименование</parameter>
+				</c>
+			</c>
+			<c>
+				<c>
+					<f>15</f>
+					<parameter>ОжиданиеГЧ</parameter>
 				</c>
 			</c>
 		</row>
 	</rowsItem>
 	<templateMode>true</templateMode>
-	<defaultFormatIndex>13</defaultFormatIndex>
+	<defaultFormatIndex>16</defaultFormatIndex>
 	<height>11</height>
 	<vgRows>11</vgRows>
 	<merge>
@@ -243,6 +324,9 @@
 		<width>181</width>
 	</format>
 	<format>
+		<width>119</width>
+	</format>
+	<format>
 		<font>0</font>
 		<fillType>Parameter</fillType>
 	</format>
@@ -288,6 +372,20 @@
 		<width>59</width>
 		<horizontalAlignment>Center</horizontalAlignment>
 		<verticalAlignment>Center</verticalAlignment>
+		<textPlacement>Wrap</textPlacement>
+		<fillType>Parameter</fillType>
+		<format>
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>БЛ=' '; БИ=V</v8:content>
+			</v8:item>
+		</format>
+	</format>
+	<format>
+		<border>0</border>
+		<width>59</width>
+		<horizontalAlignment>Center</horizontalAlignment>
+		<verticalAlignment>Center</verticalAlignment>
 		<backColor>#E5FFE4</backColor>
 		<textPlacement>Wrap</textPlacement>
 		<fillType>Parameter</fillType>
@@ -300,6 +398,21 @@
 		<backColor>#E5FFE4</backColor>
 		<textPlacement>Wrap</textPlacement>
 		<fillType>Parameter</fillType>
+	</format>
+	<format>
+		<border>0</border>
+		<width>59</width>
+		<horizontalAlignment>Center</horizontalAlignment>
+		<verticalAlignment>Center</verticalAlignment>
+		<backColor>#E5FFE4</backColor>
+		<textPlacement>Wrap</textPlacement>
+		<fillType>Parameter</fillType>
+		<format>
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>БЛ=' '; БИ=V</v8:content>
+			</v8:item>
+		</format>
 	</format>
 	<format>
 		<width>72</width>

@@ -32,6 +32,7 @@
 			<ChildItems>
 				<InputField name="Проект" id="6">
 					<DataPath>Проект</DataPath>
+					<TitleFont ref="style:NormalTextFont" height="10" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
 					<ClearButton>true</ClearButton>
 					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 					<ContextMenu name="ПроектКонтекстноеМеню" id="7"/>
@@ -40,8 +41,21 @@
 						<Event name="OnChange">ПроектПриИзменении</Event>
 					</Events>
 				</InputField>
+				<InputField name="Конструкторы" id="17">
+					<DataPath>Конструкторы</DataPath>
+					<TitleFont ref="style:NormalTextFont" height="10" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+					<ClearButton>true</ClearButton>
+					<CreateButton>false</CreateButton>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="КонструкторыКонтекстноеМеню" id="18"/>
+					<ExtendedTooltip name="КонструкторыРасширеннаяПодсказка" id="19"/>
+					<Events>
+						<Event name="OnChange">КонструкторыПриИзменении</Event>
+					</Events>
+				</InputField>
 				<InputField name="ВедущийКонструктор" id="14">
 					<DataPath>ВедущийКонструктор</DataPath>
+					<TitleFont ref="style:NormalTextFont" height="10" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
 					<ClearButton>true</ClearButton>
 					<CreateButton>false</CreateButton>
 					<ListChoiceMode>true</ListChoiceMode>
@@ -53,24 +67,17 @@
 						<Event name="OnChange">ВедущийКонструкторПриИзменении</Event>
 					</Events>
 				</InputField>
-				<InputField name="Конструкторы" id="17">
-					<DataPath>Конструкторы</DataPath>
-					<ClearButton>true</ClearButton>
-					<CreateButton>false</CreateButton>
-					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-					<ContextMenu name="КонструкторыКонтекстноеМеню" id="18"/>
-					<ExtendedTooltip name="КонструкторыРасширеннаяПодсказка" id="19"/>
+				<CheckBoxField name="ВПроизводстве" id="20">
+					<DataPath>ВПроизводстве</DataPath>
+					<Visible>false</Visible>
+					<TitleFont ref="style:NormalTextFont" height="10" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ВПроизводствеКонтекстноеМеню" id="21"/>
+					<ExtendedTooltip name="ВПроизводствеРасширеннаяПодсказка" id="22"/>
 					<Events>
-						<Event name="OnChange">КонструкторыПриИзменении</Event>
+						<Event name="OnChange">ВПроизводствеПриИзменении</Event>
 					</Events>
-				</InputField>
-				<InputField name="Подразделение" id="22">
-					<DataPath>Подразделение</DataPath>
-					<ReadOnly>true</ReadOnly>
-					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-					<ContextMenu name="ПодразделениеКонтекстноеМеню" id="23"/>
-					<ExtendedTooltip name="ПодразделениеРасширеннаяПодсказка" id="24"/>
-				</InputField>
+				</CheckBoxField>
 			</ChildItems>
 		</UsualGroup>
 		<SpreadSheetDocumentField name="ПолеВывода" id="1">
@@ -146,6 +153,17 @@
 			</Title>
 			<Type>
 				<v8:Type>cfg:CatalogRef.Подразделения</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ВПроизводстве" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>В производстве</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
 			</Type>
 		</Attribute>
 	</Attributes>
