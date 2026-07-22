@@ -54,6 +54,12 @@
 				<Event name="OnChange">ВидПереносаПриИзменении</Event>
 			</Events>
 		</RadioButtonField>
+		<Button name="ПеренестиФайлВPDM" id="19">
+			<Type>UsualButton</Type>
+			<Enabled>false</Enabled>
+			<CommandName>Form.Command.ПеренестиФайлВPDM</CommandName>
+			<ExtendedTooltip name="ПеренестиФайлВPDMРасширеннаяПодсказка" id="20"/>
+		</Button>
 		<UsualGroup name="ГруппаФайл" id="10">
 			<Title>
 				<v8:item>
@@ -100,12 +106,6 @@
 								<xr:LoadTransparent>true</xr:LoadTransparent>
 							</Picture>
 							<ExtendedTooltip name="ВыбратьФайлРасширеннаяПодсказка" id="16"/>
-						</Button>
-						<Button name="ПеренестиФайлВPDM" id="19">
-							<Type>UsualButton</Type>
-							<Enabled>false</Enabled>
-							<CommandName>Form.Command.ПеренестиФайлВPDM</CommandName>
-							<ExtendedTooltip name="ПеренестиФайлВPDMРасширеннаяПодсказка" id="20"/>
 						</Button>
 						<Button name="ПоказатьФайлPDFВОтдельномОкне" id="28">
 							<Type>UsualButton</Type>
