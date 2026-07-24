@@ -5,27 +5,60 @@
 		<Autofill>false</Autofill>
 	</AutoCommandBar>
 	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 	</Events>
 	<ChildItems>
-		<InputField name="Проект" id="1">
-			<DataPath>Проект</DataPath>
-			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-			<ContextMenu name="ПроектКонтекстноеМеню" id="2"/>
-			<ExtendedTooltip name="ПроектРасширеннаяПодсказка" id="3"/>
-			<Events>
-				<Event name="OnChange">ПроектПриИзменении</Event>
-			</Events>
-		</InputField>
-		<InputField name="ВыбранноеЗначение" id="31">
-			<DataPath>ВыбранноеЗначение</DataPath>
-			<ReadOnly>true</ReadOnly>
-			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-			<ContextMenu name="ВыбранноеЗначениеКонтекстноеМеню" id="32"/>
-			<ExtendedTooltip name="ВыбранноеЗначениеРасширеннаяПодсказка" id="33"/>
-		</InputField>
+		<UsualGroup name="Группа1" id="34">
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="35"/>
+			<ChildItems>
+				<InputField name="Проект" id="1">
+					<DataPath>Проект</DataPath>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ПроектКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="ПроектРасширеннаяПодсказка" id="3"/>
+					<Events>
+						<Event name="OnChange">ПроектПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="ВыбранноеЗначение" id="31">
+					<DataPath>ВыбранноеЗначение</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<TitleFont ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+					<ChoiceButton>false</ChoiceButton>
+					<OpenButton>true</OpenButton>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+					<ContextMenu name="ВыбранноеЗначениеКонтекстноеМеню" id="32"/>
+					<ExtendedTooltip name="ВыбранноеЗначениеРасширеннаяПодсказка" id="33"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="Группа2" id="63">
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="64"/>
+			<ChildItems>
+				<Button name="ДобавитьИзменения" id="61">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.ДобавитьИзменения</CommandName>
+					<ExtendedTooltip name="ДобавитьИзмененияРасширеннаяПодсказка" id="62"/>
+				</Button>
+				<CheckBoxField name="ТребуетсяПересогласование" id="65">
+					<DataPath>ТребуетсяПересогласование</DataPath>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ТребуетсяПересогласованиеКонтекстноеМеню" id="66"/>
+					<ExtendedTooltip name="ТребуетсяПересогласованиеРасширеннаяПодсказка" id="67"/>
+				</CheckBoxField>
+			</ChildItems>
+		</UsualGroup>
 		<Table name="ЗадачиПКД" id="9">
 			<Representation>List</Representation>
+			<TitleLocation>Left</TitleLocation>
 			<AutoInsertNewRow>true</AutoInsertNewRow>
 			<EnableStartDrag>true</EnableStartDrag>
 			<EnableDrag>true</EnableDrag>
@@ -86,6 +119,79 @@
 					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 					<ContextMenu name="ЗадачиПКДТекущаяСтадияКонтекстноеМеню" id="29"/>
 					<ExtendedTooltip name="ЗадачиПКДТекущаяСтадияРасширеннаяПодсказка" id="30"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+		<Table name="ЗадачиРКД" id="36">
+			<Representation>List</Representation>
+			<TitleLocation>Left</TitleLocation>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>ЗадачиРКД</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ЗадачиРКДКонтекстноеМеню" id="37"/>
+			<AutoCommandBar name="ЗадачиРКДКоманднаяПанель" id="38">
+				<Autofill>false</Autofill>
+			</AutoCommandBar>
+			<ExtendedTooltip name="ЗадачиРКДРасширеннаяПодсказка" id="39"/>
+			<SearchStringAddition name="ЗадачиРКДСтрокаПоиска" id="40">
+				<AdditionSource>
+					<Item>ЗадачиРКД</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ЗадачиРКДСтрокаПоискаКонтекстноеМеню" id="41"/>
+				<ExtendedTooltip name="ЗадачиРКДСтрокаПоискаРасширеннаяПодсказка" id="42"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ЗадачиРКДСостояниеПросмотра" id="43">
+				<AdditionSource>
+					<Item>ЗадачиРКД</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ЗадачиРКДСостояниеПросмотраКонтекстноеМеню" id="44"/>
+				<ExtendedTooltip name="ЗадачиРКДСостояниеПросмотраРасширеннаяПодсказка" id="45"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ЗадачиРКДУправлениеПоиском" id="46">
+				<AdditionSource>
+					<Item>ЗадачиРКД</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ЗадачиРКДУправлениеПоискомКонтекстноеМеню" id="47"/>
+				<ExtendedTooltip name="ЗадачиРКДУправлениеПоискомРасширеннаяПодсказка" id="48"/>
+			</SearchControlAddition>
+			<Events>
+				<Event name="BeforeAddRow">ЗадачиРКДПередНачаломДобавления</Event>
+				<Event name="BeforeDeleteRow">ЗадачиРКДПередУдалением</Event>
+				<Event name="BeforeRowChange">ЗадачиРКДПередНачаломИзменения</Event>
+			</Events>
+			<ChildItems>
+				<InputField name="ЗадачиРКДОбъектТЗ" id="49">
+					<DataPath>ЗадачиРКД.ОбъектТЗ</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ЗадачиРКДОбъектТЗКонтекстноеМеню" id="50"/>
+					<ExtendedTooltip name="ЗадачиРКДОбъектТЗРасширеннаяПодсказка" id="51"/>
+				</InputField>
+				<InputField name="ЗадачиРКДКонструктор" id="52">
+					<DataPath>ЗадачиРКД.Конструктор</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ЗадачиРКДКонструкторКонтекстноеМеню" id="53"/>
+					<ExtendedTooltip name="ЗадачиРКДКонструкторРасширеннаяПодсказка" id="54"/>
+				</InputField>
+				<InputField name="ЗадачиРКДТекущаяСтадия" id="55">
+					<DataPath>ЗадачиРКД.ТекущаяСтадия</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ЗадачиРКДТекущаяСтадияКонтекстноеМеню" id="56"/>
+					<ExtendedTooltip name="ЗадачиРКДТекущаяСтадияРасширеннаяПодсказка" id="57"/>
+				</InputField>
+				<InputField name="ЗадачиРКДЗадача" id="58">
+					<DataPath>ЗадачиРКД.Задача</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ЗадачиРКДЗадачаКонтекстноеМеню" id="59"/>
+					<ExtendedTooltip name="ЗадачиРКДЗадачаРасширеннаяПодсказка" id="60"/>
 				</InputField>
 			</ChildItems>
 		</Table>
@@ -177,7 +283,11 @@
 						</v8:item>
 					</Title>
 					<Type>
-						<v8:Type>cfg:CatalogRef.СтадииКомплекта</v8:Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
 					</Type>
 				</Column>
 				<Column name="Задача" id="4">
@@ -189,6 +299,17 @@
 					</Title>
 					<Type>
 						<v8:Type>cfg:TaskRef.Задачи_ПКД</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ТипЗадачи" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Тип задачи</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:EnumRef.ТипыЗадачКонструирования</v8:Type>
 					</Type>
 				</Column>
 			</Columns>
@@ -207,5 +328,106 @@
 				<v8:Type>cfg:TaskRef.Задачи_РКД</v8:Type>
 			</Type>
 		</Attribute>
+		<Attribute name="ЗадачиРКД" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Задачи РКД</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="ОбъектТЗ" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Объект</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Композиции</v8:Type>
+						<v8:Type>cfg:CatalogRef.ИзделияКомплект</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Конструктор" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Конструктор</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Сотрудники</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ТекущаяСтадия" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Текущая стадия</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Задача" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Задача</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:TaskRef.Задачи_РКД</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ТипЗадачи" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Тип задачи</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:EnumRef.ТипыЗадачКонструирования</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ТребуетсяПересогласование" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Требуется пересогласование</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+		</Attribute>
 	</Attributes>
+	<Commands>
+		<Command name="ДобавитьИзменения" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить изменения</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Добавить изменения</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ДобавитьИзменения</Action>
+		</Command>
+	</Commands>
 </Form>
