@@ -17,6 +17,13 @@
 				<Event name="OnChange">ПроектПриИзменении</Event>
 			</Events>
 		</InputField>
+		<InputField name="ВыбранноеЗначение" id="31">
+			<DataPath>ВыбранноеЗначение</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ВыбранноеЗначениеКонтекстноеМеню" id="32"/>
+			<ExtendedTooltip name="ВыбранноеЗначениеРасширеннаяПодсказка" id="33"/>
+		</InputField>
 		<Table name="ЗадачиПКД" id="9">
 			<Representation>List</Representation>
 			<AutoInsertNewRow>true</AutoInsertNewRow>
@@ -55,6 +62,7 @@
 			</SearchControlAddition>
 			<Events>
 				<Event name="BeforeAddRow">ЗадачиПКДПередНачаломДобавления</Event>
+				<Event name="BeforeDeleteRow">ЗадачиПКДПередУдалением</Event>
 				<Event name="BeforeRowChange">ЗадачиПКДПередНачаломИзменения</Event>
 			</Events>
 			<ChildItems>
@@ -172,7 +180,32 @@
 						<v8:Type>cfg:CatalogRef.СтадииКомплекта</v8:Type>
 					</Type>
 				</Column>
+				<Column name="Задача" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Задача</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:TaskRef.Задачи_ПКД</v8:Type>
+					</Type>
+				</Column>
 			</Columns>
+		</Attribute>
+		<Attribute name="ВыбранноеЗначение" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбранное значение</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:CatalogRef.Композиции</v8:Type>
+				<v8:Type>cfg:TaskRef.Задачи_ПКД</v8:Type>
+				<v8:Type>cfg:CatalogRef.ИзделияКомплект</v8:Type>
+				<v8:Type>cfg:TaskRef.Задачи_РКД</v8:Type>
+			</Type>
 		</Attribute>
 	</Attributes>
 </Form>
