@@ -24,17 +24,82 @@
 						<Event name="OnChange">ПроектПриИзменении</Event>
 					</Events>
 				</InputField>
-				<InputField name="ВыбранноеЗначение" id="31">
-					<DataPath>ВыбранноеЗначение</DataPath>
-					<ReadOnly>true</ReadOnly>
-					<TitleFont ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
-					<ChoiceButton>false</ChoiceButton>
-					<OpenButton>true</OpenButton>
-					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-					<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
-					<ContextMenu name="ВыбранноеЗначениеКонтекстноеМеню" id="32"/>
-					<ExtendedTooltip name="ВыбранноеЗначениеРасширеннаяПодсказка" id="33"/>
-				</InputField>
+				<UsualGroup name="Группа4" id="100">
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа4РасширеннаяПодсказка" id="101"/>
+					<ChildItems>
+						<InputField name="ВыбранноеЗначение" id="31">
+							<DataPath>ВыбранноеЗначение</DataPath>
+							<ReadOnly>true</ReadOnly>
+							<TitleFont ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+							<ChoiceButton>false</ChoiceButton>
+							<OpenButton>true</OpenButton>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+							<ContextMenu name="ВыбранноеЗначениеКонтекстноеМеню" id="32"/>
+							<ExtendedTooltip name="ВыбранноеЗначениеРасширеннаяПодсказка" id="33"/>
+						</InputField>
+						<Table name="ВыбранноеЗначениеСписок" id="102">
+							<Representation>List</Representation>
+							<Height>3</Height>
+							<AutoMaxHeight>false</AutoMaxHeight>
+							<HeightInTableRows>1</HeightInTableRows>
+							<AutoMaxRowsCount>false</AutoMaxRowsCount>
+							<MaxRowsCount>3</MaxRowsCount>
+							<Header>false</Header>
+							<HorizontalLines>false</HorizontalLines>
+							<VerticalLines>false</VerticalLines>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<DataPath>ВыбранноеЗначениеСписок</DataPath>
+							<RowPictureDataPath>ВыбранноеЗначениеСписок.Picture</RowPictureDataPath>
+							<ContextMenu name="ВыбранноеЗначениеСписокКонтекстноеМеню" id="103"/>
+							<AutoCommandBar name="ВыбранноеЗначениеСписокКоманднаяПанель" id="104">
+								<Autofill>false</Autofill>
+							</AutoCommandBar>
+							<ExtendedTooltip name="ВыбранноеЗначениеСписокРасширеннаяПодсказка" id="105"/>
+							<SearchStringAddition name="ВыбранноеЗначениеСписокСтрокаПоиска" id="106">
+								<AdditionSource>
+									<Item>ВыбранноеЗначениеСписок</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ВыбранноеЗначениеСписокСтрокаПоискаКонтекстноеМеню" id="107"/>
+								<ExtendedTooltip name="ВыбранноеЗначениеСписокСтрокаПоискаРасширеннаяПодсказка" id="108"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ВыбранноеЗначениеСписокСостояниеПросмотра" id="109">
+								<AdditionSource>
+									<Item>ВыбранноеЗначениеСписок</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ВыбранноеЗначениеСписокСостояниеПросмотраКонтекстноеМеню" id="110"/>
+								<ExtendedTooltip name="ВыбранноеЗначениеСписокСостояниеПросмотраРасширеннаяПодсказка" id="111"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ВыбранноеЗначениеСписокУправлениеПоиском" id="112">
+								<AdditionSource>
+									<Item>ВыбранноеЗначениеСписок</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ВыбранноеЗначениеСписокУправлениеПоискомКонтекстноеМеню" id="113"/>
+								<ExtendedTooltip name="ВыбранноеЗначениеСписокУправлениеПоискомРасширеннаяПодсказка" id="114"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<InputField name="ВыбранноеЗначениеСписокЗначение" id="115">
+									<DataPath>ВыбранноеЗначениеСписок.Value</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<Height>3</Height>
+									<AutoMaxHeight>false</AutoMaxHeight>
+									<MaxHeight>3</MaxHeight>
+									<VerticalStretch>false</VerticalStretch>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ChoiceListHeight>3</ChoiceListHeight>
+									<ContextMenu name="ВыбранноеЗначениеСписокЗначениеКонтекстноеМеню" id="116"/>
+									<ExtendedTooltip name="ВыбранноеЗначениеСписокЗначениеРасширеннаяПодсказка" id="117"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</UsualGroup>
 			</ChildItems>
 		</UsualGroup>
 		<UsualGroup name="Группа2" id="63">
@@ -48,12 +113,6 @@
 					<CommandName>Form.Command.ДобавитьИзменения</CommandName>
 					<ExtendedTooltip name="ДобавитьИзмененияРасширеннаяПодсказка" id="62"/>
 				</Button>
-				<CheckBoxField name="ТребуетсяПересогласование" id="65">
-					<DataPath>ТребуетсяПересогласование</DataPath>
-					<CheckBoxType>Auto</CheckBoxType>
-					<ContextMenu name="ТребуетсяПересогласованиеКонтекстноеМеню" id="66"/>
-					<ExtendedTooltip name="ТребуетсяПересогласованиеРасширеннаяПодсказка" id="67"/>
-				</CheckBoxField>
 			</ChildItems>
 		</UsualGroup>
 		<Table name="ЗадачиПКД" id="9">
@@ -122,79 +181,222 @@
 				</InputField>
 			</ChildItems>
 		</Table>
-		<Table name="ЗадачиРКД" id="36">
-			<Representation>List</Representation>
-			<TitleLocation>Left</TitleLocation>
-			<AutoInsertNewRow>true</AutoInsertNewRow>
-			<EnableStartDrag>true</EnableStartDrag>
-			<EnableDrag>true</EnableDrag>
-			<DataPath>ЗадачиРКД</DataPath>
-			<RowFilter xsi:nil="true"/>
-			<ContextMenu name="ЗадачиРКДКонтекстноеМеню" id="37"/>
-			<AutoCommandBar name="ЗадачиРКДКоманднаяПанель" id="38">
-				<Autofill>false</Autofill>
-			</AutoCommandBar>
-			<ExtendedTooltip name="ЗадачиРКДРасширеннаяПодсказка" id="39"/>
-			<SearchStringAddition name="ЗадачиРКДСтрокаПоиска" id="40">
-				<AdditionSource>
-					<Item>ЗадачиРКД</Item>
-					<Type>SearchStringRepresentation</Type>
-				</AdditionSource>
-				<ContextMenu name="ЗадачиРКДСтрокаПоискаКонтекстноеМеню" id="41"/>
-				<ExtendedTooltip name="ЗадачиРКДСтрокаПоискаРасширеннаяПодсказка" id="42"/>
-			</SearchStringAddition>
-			<ViewStatusAddition name="ЗадачиРКДСостояниеПросмотра" id="43">
-				<AdditionSource>
-					<Item>ЗадачиРКД</Item>
-					<Type>ViewStatusRepresentation</Type>
-				</AdditionSource>
-				<ContextMenu name="ЗадачиРКДСостояниеПросмотраКонтекстноеМеню" id="44"/>
-				<ExtendedTooltip name="ЗадачиРКДСостояниеПросмотраРасширеннаяПодсказка" id="45"/>
-			</ViewStatusAddition>
-			<SearchControlAddition name="ЗадачиРКДУправлениеПоиском" id="46">
-				<AdditionSource>
-					<Item>ЗадачиРКД</Item>
-					<Type>SearchControl</Type>
-				</AdditionSource>
-				<ContextMenu name="ЗадачиРКДУправлениеПоискомКонтекстноеМеню" id="47"/>
-				<ExtendedTooltip name="ЗадачиРКДУправлениеПоискомРасширеннаяПодсказка" id="48"/>
-			</SearchControlAddition>
-			<Events>
-				<Event name="BeforeAddRow">ЗадачиРКДПередНачаломДобавления</Event>
-				<Event name="BeforeDeleteRow">ЗадачиРКДПередУдалением</Event>
-				<Event name="BeforeRowChange">ЗадачиРКДПередНачаломИзменения</Event>
-			</Events>
+		<UsualGroup name="ГруппаРКД" id="71">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа РКД</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа РКД</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>Vertical</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаРКДРасширеннаяПодсказка" id="72"/>
 			<ChildItems>
-				<InputField name="ЗадачиРКДОбъектТЗ" id="49">
-					<DataPath>ЗадачиРКД.ОбъектТЗ</DataPath>
-					<EditMode>EnterOnInput</EditMode>
-					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-					<ContextMenu name="ЗадачиРКДОбъектТЗКонтекстноеМеню" id="50"/>
-					<ExtendedTooltip name="ЗадачиРКДОбъектТЗРасширеннаяПодсказка" id="51"/>
-				</InputField>
-				<InputField name="ЗадачиРКДКонструктор" id="52">
-					<DataPath>ЗадачиРКД.Конструктор</DataPath>
-					<EditMode>EnterOnInput</EditMode>
-					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-					<ContextMenu name="ЗадачиРКДКонструкторКонтекстноеМеню" id="53"/>
-					<ExtendedTooltip name="ЗадачиРКДКонструкторРасширеннаяПодсказка" id="54"/>
-				</InputField>
-				<InputField name="ЗадачиРКДТекущаяСтадия" id="55">
-					<DataPath>ЗадачиРКД.ТекущаяСтадия</DataPath>
-					<EditMode>EnterOnInput</EditMode>
-					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-					<ContextMenu name="ЗадачиРКДТекущаяСтадияКонтекстноеМеню" id="56"/>
-					<ExtendedTooltip name="ЗадачиРКДТекущаяСтадияРасширеннаяПодсказка" id="57"/>
-				</InputField>
-				<InputField name="ЗадачиРКДЗадача" id="58">
-					<DataPath>ЗадачиРКД.Задача</DataPath>
-					<EditMode>EnterOnInput</EditMode>
-					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-					<ContextMenu name="ЗадачиРКДЗадачаКонтекстноеМеню" id="59"/>
-					<ExtendedTooltip name="ЗадачиРКДЗадачаРасширеннаяПодсказка" id="60"/>
-				</InputField>
+				<LabelDecoration name="ДекорацияКомпозиция" id="68">
+					<HorizontalStretch>true</HorizontalStretch>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Композиции отмечены жирным шрифтом </v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ДекорацияКомпозицияКонтекстноеМеню" id="69"/>
+					<ExtendedTooltip name="ДекорацияКомпозицияРасширеннаяПодсказка" id="70"/>
+				</LabelDecoration>
+				<CheckBoxField name="ТребуетсяПересогласование" id="65">
+					<DataPath>ТребуетсяПересогласование</DataPath>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ТребуетсяПересогласованиеКонтекстноеМеню" id="66"/>
+					<ExtendedTooltip name="ТребуетсяПересогласованиеРасширеннаяПодсказка" id="67"/>
+					<Events>
+						<Event name="OnChange">ТребуетсяПересогласованиеПриИзменении</Event>
+					</Events>
+				</CheckBoxField>
+				<UsualGroup name="Группа3" id="98">
+					<Group>AlwaysHorizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="99"/>
+					<ChildItems>
+						<Table name="ЗадачиРКД" id="36">
+							<Representation>List</Representation>
+							<TitleLocation>Left</TitleLocation>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>ЗадачиРКД</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ЗадачиРКДКонтекстноеМеню" id="37"/>
+							<AutoCommandBar name="ЗадачиРКДКоманднаяПанель" id="38">
+								<Autofill>false</Autofill>
+							</AutoCommandBar>
+							<ExtendedTooltip name="ЗадачиРКДРасширеннаяПодсказка" id="39"/>
+							<SearchStringAddition name="ЗадачиРКДСтрокаПоиска" id="40">
+								<AdditionSource>
+									<Item>ЗадачиРКД</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ЗадачиРКДСтрокаПоискаКонтекстноеМеню" id="41"/>
+								<ExtendedTooltip name="ЗадачиРКДСтрокаПоискаРасширеннаяПодсказка" id="42"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ЗадачиРКДСостояниеПросмотра" id="43">
+								<AdditionSource>
+									<Item>ЗадачиРКД</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ЗадачиРКДСостояниеПросмотраКонтекстноеМеню" id="44"/>
+								<ExtendedTooltip name="ЗадачиРКДСостояниеПросмотраРасширеннаяПодсказка" id="45"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ЗадачиРКДУправлениеПоиском" id="46">
+								<AdditionSource>
+									<Item>ЗадачиРКД</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ЗадачиРКДУправлениеПоискомКонтекстноеМеню" id="47"/>
+								<ExtendedTooltip name="ЗадачиРКДУправлениеПоискомРасширеннаяПодсказка" id="48"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="BeforeAddRow">ЗадачиРКДПередНачаломДобавления</Event>
+								<Event name="BeforeDeleteRow">ЗадачиРКДПередУдалением</Event>
+								<Event name="OnActivateRow">ЗадачиРКДПриАктивизацииСтроки</Event>
+								<Event name="BeforeRowChange">ЗадачиРКДПередНачаломИзменения</Event>
+							</Events>
+							<ChildItems>
+								<InputField name="ЗадачиРКДОбъектТЗ" id="49">
+									<DataPath>ЗадачиРКД.ОбъектТЗ</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ЗадачиРКДОбъектТЗКонтекстноеМеню" id="50"/>
+									<ExtendedTooltip name="ЗадачиРКДОбъектТЗРасширеннаяПодсказка" id="51"/>
+								</InputField>
+								<InputField name="ЗадачиРКДКонструктор" id="52">
+									<DataPath>ЗадачиРКД.Конструктор</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ЗадачиРКДКонструкторКонтекстноеМеню" id="53"/>
+									<ExtendedTooltip name="ЗадачиРКДКонструкторРасширеннаяПодсказка" id="54"/>
+								</InputField>
+								<InputField name="ЗадачиРКДТекущаяСтадия" id="55">
+									<DataPath>ЗадачиРКД.ТекущаяСтадия</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ЗадачиРКДТекущаяСтадияКонтекстноеМеню" id="56"/>
+									<ExtendedTooltip name="ЗадачиРКДТекущаяСтадияРасширеннаяПодсказка" id="57"/>
+								</InputField>
+								<InputField name="ЗадачиРКДЗадача" id="58">
+									<DataPath>ЗадачиРКД.Задача</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ЗадачиРКДЗадачаКонтекстноеМеню" id="59"/>
+									<ExtendedTooltip name="ЗадачиРКДЗадачаРасширеннаяПодсказка" id="60"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+						<Table name="СоставКомпозиции" id="73">
+							<Representation>List</Representation>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>СоставКомпозиции</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="СоставКомпозицииКонтекстноеМеню" id="74"/>
+							<AutoCommandBar name="СоставКомпозицииКоманднаяПанель" id="75">
+								<Autofill>false</Autofill>
+								<ChildItems>
+									<Button name="СоставКомпозицииВыбратьВсеКомплекты" id="118">
+										<Type>CommandBarButton</Type>
+										<Representation>Picture</Representation>
+										<CommandName>Form.Command.ОтметиитьВсеКомплекты</CommandName>
+										<Picture>
+											<xr:Ref>StdPicture.CheckAll</xr:Ref>
+											<xr:LoadTransparent>true</xr:LoadTransparent>
+										</Picture>
+										<ExtendedTooltip name="СоставКомпозицииВыбратьВсеКомплектыРасширеннаяПодсказка" id="119"/>
+									</Button>
+									<Button name="СоставКомпозицииСброситьВсеКомплекты" id="120">
+										<Type>CommandBarButton</Type>
+										<Representation>Picture</Representation>
+										<CommandName>Form.Command.СброситьВсеКомплекты</CommandName>
+										<Picture>
+											<xr:Ref>StdPicture.UncheckAll</xr:Ref>
+											<xr:LoadTransparent>true</xr:LoadTransparent>
+										</Picture>
+										<ExtendedTooltip name="СоставКомпозицииСброситьВсеКомплектыРасширеннаяПодсказка" id="121"/>
+									</Button>
+								</ChildItems>
+							</AutoCommandBar>
+							<ExtendedTooltip name="СоставКомпозицииРасширеннаяПодсказка" id="76"/>
+							<SearchStringAddition name="СоставКомпозицииСтрокаПоиска" id="77">
+								<AdditionSource>
+									<Item>СоставКомпозиции</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СоставКомпозицииСтрокаПоискаКонтекстноеМеню" id="78"/>
+								<ExtendedTooltip name="СоставКомпозицииСтрокаПоискаРасширеннаяПодсказка" id="79"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="СоставКомпозицииСостояниеПросмотра" id="80">
+								<AdditionSource>
+									<Item>СоставКомпозиции</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="СоставКомпозицииСостояниеПросмотраКонтекстноеМеню" id="81"/>
+								<ExtendedTooltip name="СоставКомпозицииСостояниеПросмотраРасширеннаяПодсказка" id="82"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="СоставКомпозицииУправлениеПоиском" id="83">
+								<AdditionSource>
+									<Item>СоставКомпозиции</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="СоставКомпозицииУправлениеПоискомКонтекстноеМеню" id="84"/>
+								<ExtendedTooltip name="СоставКомпозицииУправлениеПоискомРасширеннаяПодсказка" id="85"/>
+							</SearchControlAddition>
+							<Events>
+								<Event name="BeforeAddRow">СоставКомпозицииПередНачаломДобавления</Event>
+								<Event name="BeforeDeleteRow">СоставКомпозицииПередУдалением</Event>
+								<Event name="BeforeRowChange">СоставКомпозицииПередНачаломИзменения</Event>
+							</Events>
+							<ChildItems>
+								<CheckBoxField name="СоставКомпозицииОтметка" id="95">
+									<DataPath>СоставКомпозиции.Отметка</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="СоставКомпозицииОтметкаКонтекстноеМеню" id="96"/>
+									<ExtendedTooltip name="СоставКомпозицииОтметкаРасширеннаяПодсказка" id="97"/>
+								</CheckBoxField>
+								<InputField name="СоставКомпозицииКомплект" id="86">
+									<DataPath>СоставКомпозиции.Комплект</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="СоставКомпозицииКомплектКонтекстноеМеню" id="87"/>
+									<ExtendedTooltip name="СоставКомпозицииКомплектРасширеннаяПодсказка" id="88"/>
+								</InputField>
+								<InputField name="СоставКомпозицииТекущаяСтадия" id="89">
+									<DataPath>СоставКомпозиции.ТекущаяСтадия</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="СоставКомпозицииТекущаяСтадияКонтекстноеМеню" id="90"/>
+									<ExtendedTooltip name="СоставКомпозицииТекущаяСтадияРасширеннаяПодсказка" id="91"/>
+								</InputField>
+								<InputField name="СоставКомпозицииЗадача" id="92">
+									<DataPath>СоставКомпозиции.Задача</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="СоставКомпозицииЗадачаКонтекстноеМеню" id="93"/>
+									<ExtendedTooltip name="СоставКомпозицииЗадачаРасширеннаяПодсказка" id="94"/>
+								</InputField>
+							</ChildItems>
+						</Table>
+					</ChildItems>
+				</UsualGroup>
 			</ChildItems>
-		</Table>
+		</UsualGroup>
 	</ChildItems>
 	<Attributes>
 		<Attribute name="Объект" id="1">
@@ -385,6 +587,7 @@
 						</v8:item>
 					</Title>
 					<Type>
+						<v8:Type>cfg:TaskRef.Задачи_ПКД</v8:Type>
 						<v8:Type>cfg:TaskRef.Задачи_РКД</v8:Type>
 					</Type>
 				</Column>
@@ -397,6 +600,28 @@
 					</Title>
 					<Type>
 						<v8:Type>cfg:EnumRef.ТипыЗадачКонструирования</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ЭтоКомпозиция" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Это композиция</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ЗадачаВыполнена" id="8">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Задача выполнена</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
 					</Type>
 				</Column>
 			</Columns>
@@ -412,6 +637,120 @@
 				<v8:Type>xs:boolean</v8:Type>
 			</Type>
 		</Attribute>
+		<Attribute name="СоставКомпозиции" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Состав композиции</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Комплект" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Комплект</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.ИзделияКомплект</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ТекущаяСтадия" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Текущая стадия</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Задача" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Задача</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:TaskRef.Задачи_РКД</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Отметка" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Отметка</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ВыбранноеЗначениеСписок" id="10">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выбранное значение</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueListType</v8:Type>
+			</Type>
+		</Attribute>
+		<ConditionalAppearance>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ЗадачиРКД</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">ЗадачиРКД.ЭтоКомпозиция</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Шрифт</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>СоставКомпозиции</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">СоставКомпозиции.Отметка</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Шрифт</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+		</ConditionalAppearance>
 	</Attributes>
 	<Commands>
 		<Command name="ДобавитьИзменения" id="1">
@@ -428,6 +767,36 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ДобавитьИзменения</Action>
+		</Command>
+		<Command name="ОтметиитьВсеКомплекты" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отметиить все комплекты</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Отметиить все комплекты</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОтметиитьВсеКомплекты</Action>
+		</Command>
+		<Command name="СброситьВсеКомплекты" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сбросить все комплекты</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сбросить все комплекты</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СброситьВсеКомплекты</Action>
 		</Command>
 	</Commands>
 </Form>
