@@ -1,34 +1,34 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
-	<Task uuid="dd22d9d2-0d23-43a1-95d2-7c5476681ed8">
+	<Task uuid="c8c9d0bc-cf09-4f56-9143-214b2e7e2534">
 		<InternalInfo>
-			<xr:GeneratedType name="TaskObject.ПринятьТЗ" category="Object">
-				<xr:TypeId>b128dc59-5bce-4b3c-8186-41d1580738f3</xr:TypeId>
-				<xr:ValueId>b3ad6af3-250e-44f9-87fb-cf843e463d17</xr:ValueId>
+			<xr:GeneratedType name="TaskObject.ПересогласованиеКомпозиции" category="Object">
+				<xr:TypeId>fa4fcfcc-6f27-4d5a-aeea-cbd11a6af743</xr:TypeId>
+				<xr:ValueId>62945c79-e8e6-4231-8d30-426d646d87d9</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="TaskRef.ПринятьТЗ" category="Ref">
-				<xr:TypeId>b78340b0-a302-4cac-aaa9-dd623407ebb1</xr:TypeId>
-				<xr:ValueId>dfd6fa81-086c-48ca-81b2-76fd2ab07349</xr:ValueId>
+			<xr:GeneratedType name="TaskRef.ПересогласованиеКомпозиции" category="Ref">
+				<xr:TypeId>1d351a81-59b1-48a4-9e06-9e7f32ffd10e</xr:TypeId>
+				<xr:ValueId>dc851c5b-02d7-44ed-8cd9-383c51998745</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="TaskSelection.ПринятьТЗ" category="Selection">
-				<xr:TypeId>db0221d8-b970-42ee-8566-fa749690404f</xr:TypeId>
-				<xr:ValueId>63c32861-70db-4532-b3ca-2c91c0bc6b36</xr:ValueId>
+			<xr:GeneratedType name="TaskSelection.ПересогласованиеКомпозиции" category="Selection">
+				<xr:TypeId>c5f7e17e-07f7-4cfb-b714-bcee51bba88c</xr:TypeId>
+				<xr:ValueId>03e54276-2572-4bb7-9873-b8d03d590e07</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="TaskList.ПринятьТЗ" category="List">
-				<xr:TypeId>aff8b3d5-65e6-4459-bf9e-9d42e1d0dc17</xr:TypeId>
-				<xr:ValueId>64b901d0-0ccd-4adf-8c6c-2748b7491d1a</xr:ValueId>
+			<xr:GeneratedType name="TaskList.ПересогласованиеКомпозиции" category="List">
+				<xr:TypeId>6b83d1b8-2bb1-41ea-b70f-38d39d5eaa05</xr:TypeId>
+				<xr:ValueId>5167cf32-ca9d-4b94-b859-08681ccdab57</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="TaskManager.ПринятьТЗ" category="Manager">
-				<xr:TypeId>8cfcd241-f6e7-4155-acbc-6bc986cc95c2</xr:TypeId>
-				<xr:ValueId>3223e0e9-8187-4f14-a9e4-6aa083d372af</xr:ValueId>
+			<xr:GeneratedType name="TaskManager.ПересогласованиеКомпозиции" category="Manager">
+				<xr:TypeId>398bf480-f572-4964-abf3-7eca681235c6</xr:TypeId>
+				<xr:ValueId>c3805ebb-c6ce-4f0a-af22-25976148db01</xr:ValueId>
 			</xr:GeneratedType>
 		</InternalInfo>
 		<Properties>
-			<Name>ПринятьТЗ</Name>
+			<Name>ПересогласованиеКомпозиции</Name>
 			<Synonym>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Принять ТЗ</v8:content>
+					<v8:content>Пересогласование композиции</v8:content>
 				</v8:item>
 			</Synonym>
 			<Comment/>
@@ -39,23 +39,241 @@
 			<CheckUnique>true</CheckUnique>
 			<Autonumbering>true</Autonumbering>
 			<TaskNumberAutoPrefix>DontUse</TaskNumberAutoPrefix>
-			<DescriptionLength>100</DescriptionLength>
+			<DescriptionLength>25</DescriptionLength>
 			<Addressing/>
 			<MainAddressingAttribute/>
 			<CurrentPerformer/>
 			<BasedOn/>
+			<StandardAttributes>
+				<xr:StandardAttribute name="Executed">
+					<xr:LinkByType/>
+					<xr:FillChecking>DontCheck</xr:FillChecking>
+					<xr:MultiLine>false</xr:MultiLine>
+					<xr:FillFromFillingValue>false</xr:FillFromFillingValue>
+					<xr:CreateOnInput>Auto</xr:CreateOnInput>
+					<xr:TypeReductionMode>TransformValues</xr:TypeReductionMode>
+					<xr:MaxValue xsi:nil="true"/>
+					<xr:ToolTip/>
+					<xr:ExtendedEdit>false</xr:ExtendedEdit>
+					<xr:Format/>
+					<xr:ChoiceForm/>
+					<xr:QuickChoice>Auto</xr:QuickChoice>
+					<xr:ChoiceHistoryOnInput>Auto</xr:ChoiceHistoryOnInput>
+					<xr:EditFormat/>
+					<xr:PasswordMode>false</xr:PasswordMode>
+					<xr:DataHistory>Use</xr:DataHistory>
+					<xr:MarkNegatives>false</xr:MarkNegatives>
+					<xr:MinValue xsi:nil="true"/>
+					<xr:Synonym/>
+					<xr:Comment/>
+					<xr:FullTextSearch>Use</xr:FullTextSearch>
+					<xr:ChoiceParameterLinks/>
+					<xr:FillValue xsi:nil="true"/>
+					<xr:Mask/>
+					<xr:ChoiceParameters/>
+				</xr:StandardAttribute>
+				<xr:StandardAttribute name="Description">
+					<xr:LinkByType/>
+					<xr:FillChecking>DontCheck</xr:FillChecking>
+					<xr:MultiLine>false</xr:MultiLine>
+					<xr:FillFromFillingValue>false</xr:FillFromFillingValue>
+					<xr:CreateOnInput>Auto</xr:CreateOnInput>
+					<xr:TypeReductionMode>TransformValues</xr:TypeReductionMode>
+					<xr:MaxValue xsi:nil="true"/>
+					<xr:ToolTip/>
+					<xr:ExtendedEdit>false</xr:ExtendedEdit>
+					<xr:Format/>
+					<xr:ChoiceForm/>
+					<xr:QuickChoice>Auto</xr:QuickChoice>
+					<xr:ChoiceHistoryOnInput>Auto</xr:ChoiceHistoryOnInput>
+					<xr:EditFormat/>
+					<xr:PasswordMode>false</xr:PasswordMode>
+					<xr:DataHistory>Use</xr:DataHistory>
+					<xr:MarkNegatives>false</xr:MarkNegatives>
+					<xr:MinValue xsi:nil="true"/>
+					<xr:Synonym/>
+					<xr:Comment/>
+					<xr:FullTextSearch>Use</xr:FullTextSearch>
+					<xr:ChoiceParameterLinks/>
+					<xr:FillValue xsi:nil="true"/>
+					<xr:Mask/>
+					<xr:ChoiceParameters/>
+				</xr:StandardAttribute>
+				<xr:StandardAttribute name="RoutePoint">
+					<xr:LinkByType/>
+					<xr:FillChecking>DontCheck</xr:FillChecking>
+					<xr:MultiLine>false</xr:MultiLine>
+					<xr:FillFromFillingValue>false</xr:FillFromFillingValue>
+					<xr:CreateOnInput>Auto</xr:CreateOnInput>
+					<xr:TypeReductionMode>TransformValues</xr:TypeReductionMode>
+					<xr:MaxValue xsi:nil="true"/>
+					<xr:ToolTip/>
+					<xr:ExtendedEdit>false</xr:ExtendedEdit>
+					<xr:Format/>
+					<xr:ChoiceForm/>
+					<xr:QuickChoice>Auto</xr:QuickChoice>
+					<xr:ChoiceHistoryOnInput>Auto</xr:ChoiceHistoryOnInput>
+					<xr:EditFormat/>
+					<xr:PasswordMode>false</xr:PasswordMode>
+					<xr:DataHistory>Use</xr:DataHistory>
+					<xr:MarkNegatives>false</xr:MarkNegatives>
+					<xr:MinValue xsi:nil="true"/>
+					<xr:Synonym/>
+					<xr:Comment/>
+					<xr:FullTextSearch>Use</xr:FullTextSearch>
+					<xr:ChoiceParameterLinks/>
+					<xr:FillValue xsi:nil="true"/>
+					<xr:Mask/>
+					<xr:ChoiceParameters/>
+				</xr:StandardAttribute>
+				<xr:StandardAttribute name="BusinessProcess">
+					<xr:LinkByType/>
+					<xr:FillChecking>DontCheck</xr:FillChecking>
+					<xr:MultiLine>false</xr:MultiLine>
+					<xr:FillFromFillingValue>false</xr:FillFromFillingValue>
+					<xr:CreateOnInput>Auto</xr:CreateOnInput>
+					<xr:TypeReductionMode>TransformValues</xr:TypeReductionMode>
+					<xr:MaxValue xsi:nil="true"/>
+					<xr:ToolTip/>
+					<xr:ExtendedEdit>false</xr:ExtendedEdit>
+					<xr:Format/>
+					<xr:ChoiceForm/>
+					<xr:QuickChoice>Auto</xr:QuickChoice>
+					<xr:ChoiceHistoryOnInput>Auto</xr:ChoiceHistoryOnInput>
+					<xr:EditFormat/>
+					<xr:PasswordMode>false</xr:PasswordMode>
+					<xr:DataHistory>Use</xr:DataHistory>
+					<xr:MarkNegatives>false</xr:MarkNegatives>
+					<xr:MinValue xsi:nil="true"/>
+					<xr:Synonym/>
+					<xr:Comment/>
+					<xr:FullTextSearch>Use</xr:FullTextSearch>
+					<xr:ChoiceParameterLinks/>
+					<xr:FillValue xsi:nil="true"/>
+					<xr:Mask/>
+					<xr:ChoiceParameters/>
+				</xr:StandardAttribute>
+				<xr:StandardAttribute name="Ref">
+					<xr:LinkByType/>
+					<xr:FillChecking>DontCheck</xr:FillChecking>
+					<xr:MultiLine>false</xr:MultiLine>
+					<xr:FillFromFillingValue>false</xr:FillFromFillingValue>
+					<xr:CreateOnInput>Auto</xr:CreateOnInput>
+					<xr:TypeReductionMode>TransformValues</xr:TypeReductionMode>
+					<xr:MaxValue xsi:nil="true"/>
+					<xr:ToolTip/>
+					<xr:ExtendedEdit>false</xr:ExtendedEdit>
+					<xr:Format/>
+					<xr:ChoiceForm/>
+					<xr:QuickChoice>Auto</xr:QuickChoice>
+					<xr:ChoiceHistoryOnInput>Auto</xr:ChoiceHistoryOnInput>
+					<xr:EditFormat/>
+					<xr:PasswordMode>false</xr:PasswordMode>
+					<xr:DataHistory>Use</xr:DataHistory>
+					<xr:MarkNegatives>false</xr:MarkNegatives>
+					<xr:MinValue xsi:nil="true"/>
+					<xr:Synonym/>
+					<xr:Comment/>
+					<xr:FullTextSearch>Use</xr:FullTextSearch>
+					<xr:ChoiceParameterLinks/>
+					<xr:FillValue xsi:nil="true"/>
+					<xr:Mask/>
+					<xr:ChoiceParameters/>
+				</xr:StandardAttribute>
+				<xr:StandardAttribute name="DeletionMark">
+					<xr:LinkByType/>
+					<xr:FillChecking>DontCheck</xr:FillChecking>
+					<xr:MultiLine>false</xr:MultiLine>
+					<xr:FillFromFillingValue>false</xr:FillFromFillingValue>
+					<xr:CreateOnInput>Auto</xr:CreateOnInput>
+					<xr:TypeReductionMode>TransformValues</xr:TypeReductionMode>
+					<xr:MaxValue xsi:nil="true"/>
+					<xr:ToolTip/>
+					<xr:ExtendedEdit>false</xr:ExtendedEdit>
+					<xr:Format/>
+					<xr:ChoiceForm/>
+					<xr:QuickChoice>Auto</xr:QuickChoice>
+					<xr:ChoiceHistoryOnInput>Auto</xr:ChoiceHistoryOnInput>
+					<xr:EditFormat/>
+					<xr:PasswordMode>false</xr:PasswordMode>
+					<xr:DataHistory>Use</xr:DataHistory>
+					<xr:MarkNegatives>false</xr:MarkNegatives>
+					<xr:MinValue xsi:nil="true"/>
+					<xr:Synonym/>
+					<xr:Comment/>
+					<xr:FullTextSearch>Use</xr:FullTextSearch>
+					<xr:ChoiceParameterLinks/>
+					<xr:FillValue xsi:nil="true"/>
+					<xr:Mask/>
+					<xr:ChoiceParameters/>
+				</xr:StandardAttribute>
+				<xr:StandardAttribute name="Date">
+					<xr:LinkByType/>
+					<xr:FillChecking>DontCheck</xr:FillChecking>
+					<xr:MultiLine>false</xr:MultiLine>
+					<xr:FillFromFillingValue>false</xr:FillFromFillingValue>
+					<xr:CreateOnInput>Auto</xr:CreateOnInput>
+					<xr:TypeReductionMode>TransformValues</xr:TypeReductionMode>
+					<xr:MaxValue xsi:nil="true"/>
+					<xr:ToolTip/>
+					<xr:ExtendedEdit>false</xr:ExtendedEdit>
+					<xr:Format/>
+					<xr:ChoiceForm/>
+					<xr:QuickChoice>Auto</xr:QuickChoice>
+					<xr:ChoiceHistoryOnInput>Auto</xr:ChoiceHistoryOnInput>
+					<xr:EditFormat/>
+					<xr:PasswordMode>false</xr:PasswordMode>
+					<xr:DataHistory>Use</xr:DataHistory>
+					<xr:MarkNegatives>false</xr:MarkNegatives>
+					<xr:MinValue xsi:nil="true"/>
+					<xr:Synonym/>
+					<xr:Comment/>
+					<xr:FullTextSearch>Use</xr:FullTextSearch>
+					<xr:ChoiceParameterLinks/>
+					<xr:FillValue xsi:nil="true"/>
+					<xr:Mask/>
+					<xr:ChoiceParameters/>
+				</xr:StandardAttribute>
+				<xr:StandardAttribute name="Number">
+					<xr:LinkByType/>
+					<xr:FillChecking>DontCheck</xr:FillChecking>
+					<xr:MultiLine>false</xr:MultiLine>
+					<xr:FillFromFillingValue>false</xr:FillFromFillingValue>
+					<xr:CreateOnInput>Auto</xr:CreateOnInput>
+					<xr:TypeReductionMode>TransformValues</xr:TypeReductionMode>
+					<xr:MaxValue xsi:nil="true"/>
+					<xr:ToolTip/>
+					<xr:ExtendedEdit>false</xr:ExtendedEdit>
+					<xr:Format/>
+					<xr:ChoiceForm/>
+					<xr:QuickChoice>Auto</xr:QuickChoice>
+					<xr:ChoiceHistoryOnInput>Auto</xr:ChoiceHistoryOnInput>
+					<xr:EditFormat/>
+					<xr:PasswordMode>false</xr:PasswordMode>
+					<xr:DataHistory>Use</xr:DataHistory>
+					<xr:MarkNegatives>false</xr:MarkNegatives>
+					<xr:MinValue xsi:nil="true"/>
+					<xr:Synonym/>
+					<xr:Comment/>
+					<xr:FullTextSearch>Use</xr:FullTextSearch>
+					<xr:ChoiceParameterLinks/>
+					<xr:FillValue xsi:nil="true"/>
+					<xr:Mask/>
+					<xr:ChoiceParameters/>
+				</xr:StandardAttribute>
+			</StandardAttributes>
 			<Characteristics/>
 			<DefaultPresentation>AsDescription</DefaultPresentation>
 			<EditType>InDialog</EditType>
 			<InputByString>
-				<xr:Field>Task.ПринятьТЗ.StandardAttribute.Description</xr:Field>
-				<xr:Field>Task.ПринятьТЗ.StandardAttribute.Number</xr:Field>
+				<xr:Field>Task.ПересогласованиеКомпозиции.StandardAttribute.Description</xr:Field>
+				<xr:Field>Task.ПересогласованиеКомпозиции.StandardAttribute.Number</xr:Field>
 			</InputByString>
 			<SearchStringModeOnInputByString>Begin</SearchStringModeOnInputByString>
 			<FullTextSearchOnInputByString>DontUse</FullTextSearchOnInputByString>
 			<ChoiceDataGetModeOnInputByString>Directly</ChoiceDataGetModeOnInputByString>
 			<CreateOnInput>DontUse</CreateOnInput>
-			<DefaultObjectForm>Task.ПринятьТЗ.Form.ФормаЗадачи</DefaultObjectForm>
+			<DefaultObjectForm>Task.ПересогласованиеКомпозиции.Form.ФормаЗадачи</DefaultObjectForm>
 			<DefaultListForm/>
 			<DefaultChoiceForm/>
 			<AuxiliaryObjectForm/>
@@ -76,51 +294,7 @@
 			<ExecuteAfterWriteDataHistoryVersionProcessing>false</ExecuteAfterWriteDataHistoryVersionProcessing>
 		</Properties>
 		<ChildObjects>
-			<Attribute uuid="07cbac29-735f-4fca-90f1-484c973dab34">
-				<Properties>
-					<Name>Версия</Name>
-					<Synonym>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Версия</v8:content>
-						</v8:item>
-					</Synonym>
-					<Comment/>
-					<Type>
-						<v8:Type>xs:decimal</v8:Type>
-						<v8:NumberQualifiers>
-							<v8:Digits>6</v8:Digits>
-							<v8:FractionDigits>0</v8:FractionDigits>
-							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
-						</v8:NumberQualifiers>
-					</Type>
-					<PasswordMode>false</PasswordMode>
-					<Format/>
-					<EditFormat/>
-					<ToolTip/>
-					<MarkNegatives>false</MarkNegatives>
-					<Mask/>
-					<MultiLine>false</MultiLine>
-					<ExtendedEdit>false</ExtendedEdit>
-					<MinValue xsi:nil="true"/>
-					<MaxValue xsi:nil="true"/>
-					<FillFromFillingValue>false</FillFromFillingValue>
-					<FillValue xsi:nil="true"/>
-					<FillChecking>DontCheck</FillChecking>
-					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
-					<ChoiceParameterLinks/>
-					<ChoiceParameters/>
-					<QuickChoice>Auto</QuickChoice>
-					<CreateOnInput>Auto</CreateOnInput>
-					<ChoiceForm/>
-					<LinkByType/>
-					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
-					<Indexing>Index</Indexing>
-					<FullTextSearch>Use</FullTextSearch>
-					<DataHistory>Use</DataHistory>
-				</Properties>
-			</Attribute>
-			<Attribute uuid="92d6e310-0821-49c8-849e-6a2f32c9fdb0">
+			<Attribute uuid="45587226-0ca0-4df8-a068-fc23e5203623">
 				<Properties>
 					<Name>Заголовок</Name>
 					<Synonym>
@@ -163,7 +337,7 @@
 					<DataHistory>Use</DataHistory>
 				</Properties>
 			</Attribute>
-			<Attribute uuid="4fb1adf6-17a6-4e11-b197-d89de4ac1d08">
+			<Attribute uuid="a54cdb89-406a-4a0e-b692-0137f3480ee1">
 				<Properties>
 					<Name>Комментарий</Name>
 					<Synonym>
@@ -206,7 +380,7 @@
 					<DataHistory>Use</DataHistory>
 				</Properties>
 			</Attribute>
-			<Attribute uuid="ef5b709e-22e6-4624-8824-223805585266">
+			<Attribute uuid="70d7d296-ad37-4384-87b7-7307dd79fa26">
 				<Properties>
 					<Name>КрайняяДатаИсполнения</Name>
 					<Synonym>
@@ -248,7 +422,7 @@
 					<DataHistory>Use</DataHistory>
 				</Properties>
 			</Attribute>
-			<Attribute uuid="1a270746-e45c-41cb-bcba-4095fa31df7c">
+			<Attribute uuid="d7d70094-5d44-48e1-ab95-a9901ff834bf">
 				<Properties>
 					<Name>ОбъектТЗ</Name>
 					<Synonym>
@@ -260,7 +434,6 @@
 					<Comment/>
 					<Type>
 						<v8:Type>cfg:CatalogRef.Композиции</v8:Type>
-						<v8:Type>cfg:CatalogRef.ИзделияКомплект</v8:Type>
 					</Type>
 					<PasswordMode>false</PasswordMode>
 					<Format/>
@@ -274,7 +447,7 @@
 					<MaxValue xsi:nil="true"/>
 					<FillFromFillingValue>false</FillFromFillingValue>
 					<FillValue xsi:nil="true"/>
-					<FillChecking>DontCheck</FillChecking>
+					<FillChecking>ShowError</FillChecking>
 					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
 					<ChoiceParameterLinks/>
 					<ChoiceParameters/>
@@ -288,7 +461,7 @@
 					<DataHistory>Use</DataHistory>
 				</Properties>
 			</Attribute>
-			<Attribute uuid="b9d6011e-6b04-4db6-8955-a3ffd613bc3a">
+			<Attribute uuid="e6460539-7d2f-4826-8a89-737bbce99dd1">
 				<Properties>
 					<Name>Проект</Name>
 					<Synonym>
@@ -327,59 +500,15 @@
 					<DataHistory>Use</DataHistory>
 				</Properties>
 			</Attribute>
-			<Attribute uuid="5a3d8987-b559-4a45-853f-edb871ba70df">
-				<Properties>
-					<Name>Статус</Name>
-					<Synonym>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Статус</v8:content>
-						</v8:item>
-					</Synonym>
-					<Comment>1 принят, 2 отказ, 0 Ожидание, -1 новый</Comment>
-					<Type>
-						<v8:Type>xs:decimal</v8:Type>
-						<v8:NumberQualifiers>
-							<v8:Digits>1</v8:Digits>
-							<v8:FractionDigits>0</v8:FractionDigits>
-							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
-						</v8:NumberQualifiers>
-					</Type>
-					<PasswordMode>false</PasswordMode>
-					<Format/>
-					<EditFormat/>
-					<ToolTip/>
-					<MarkNegatives>false</MarkNegatives>
-					<Mask/>
-					<MultiLine>false</MultiLine>
-					<ExtendedEdit>false</ExtendedEdit>
-					<MinValue xsi:nil="true"/>
-					<MaxValue xsi:nil="true"/>
-					<FillFromFillingValue>false</FillFromFillingValue>
-					<FillValue xsi:nil="true"/>
-					<FillChecking>DontCheck</FillChecking>
-					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
-					<ChoiceParameterLinks/>
-					<ChoiceParameters/>
-					<QuickChoice>Auto</QuickChoice>
-					<CreateOnInput>Auto</CreateOnInput>
-					<ChoiceForm/>
-					<LinkByType/>
-					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
-					<Indexing>DontIndex</Indexing>
-					<FullTextSearch>Use</FullTextSearch>
-					<DataHistory>Use</DataHistory>
-				</Properties>
-			</Attribute>
-			<TabularSection uuid="4c38eacb-0e8a-48f8-b636-4145db15c635">
+			<TabularSection uuid="8d4a52b9-a525-4547-af89-41b60c090971">
 				<InternalInfo>
-					<xr:GeneratedType name="TaskTabularSection.ПринятьТЗ.Комментарии" category="TabularSection">
-						<xr:TypeId>b7206a3e-6f95-4f43-afd8-7e3f008fa26d</xr:TypeId>
-						<xr:ValueId>629500a3-6ab0-4c30-adb1-5979dc22e81c</xr:ValueId>
+					<xr:GeneratedType name="TaskTabularSection.ПересогласованиеКомпозиции.Комментарии" category="TabularSection">
+						<xr:TypeId>08fc9d8c-7f05-49ab-a4cc-80da34f298a2</xr:TypeId>
+						<xr:ValueId>58fe4454-888f-42f7-8f4b-961877080c9c</xr:ValueId>
 					</xr:GeneratedType>
-					<xr:GeneratedType name="TaskTabularSectionRow.ПринятьТЗ.Комментарии" category="TabularSectionRow">
-						<xr:TypeId>7e3ac1a2-84b1-45e4-ad0a-3c6e73b3c2f3</xr:TypeId>
-						<xr:ValueId>3726899f-1b12-4a37-9fca-58076cef0df9</xr:ValueId>
+					<xr:GeneratedType name="TaskTabularSectionRow.ПересогласованиеКомпозиции.Комментарии" category="TabularSectionRow">
+						<xr:TypeId>e7965288-de1f-4779-97dc-05de5859577e</xr:TypeId>
+						<xr:ValueId>f371a6fc-c625-4ebd-beb9-a6ea47ac411d</xr:ValueId>
 					</xr:GeneratedType>
 				</InternalInfo>
 				<Properties>
@@ -425,7 +554,7 @@
 					<LineNumberLength>9</LineNumberLength>
 				</Properties>
 				<ChildObjects>
-					<Attribute uuid="518718f5-698b-407d-8abf-30df101f760e">
+					<Attribute uuid="1f259171-c281-4d58-b8f7-e325949f7033">
 						<Properties>
 							<Name>Автор</Name>
 							<Synonym>
@@ -462,7 +591,7 @@
 							<DataHistory>Use</DataHistory>
 						</Properties>
 					</Attribute>
-					<Attribute uuid="cf3eb24d-197e-40d7-bf85-b365f186a821">
+					<Attribute uuid="acbf7b49-1381-4796-b079-9494900a85f6">
 						<Properties>
 							<Name>Дата</Name>
 							<Synonym>
@@ -502,7 +631,7 @@
 							<DataHistory>Use</DataHistory>
 						</Properties>
 					</Attribute>
-					<Attribute uuid="128f37a2-61f5-4d14-bc9a-db67a3e54e09">
+					<Attribute uuid="7e1d1d75-af94-4592-9dad-3e035d4bda98">
 						<Properties>
 							<Name>Текст</Name>
 							<Synonym>
@@ -543,7 +672,7 @@
 							<DataHistory>Use</DataHistory>
 						</Properties>
 					</Attribute>
-					<Attribute uuid="72c70c0b-45ae-492c-b39a-c7bc7d0313aa">
+					<Attribute uuid="bb4bc56a-c802-42bc-a074-5f9eb6d9fbf3">
 						<Properties>
 							<Name>ТипКомментария</Name>
 							<Synonym>
@@ -586,116 +715,23 @@
 					</Attribute>
 				</ChildObjects>
 			</TabularSection>
-			<TabularSection uuid="365e4ba4-317d-47df-a369-7b14d79afc86">
+			<TabularSection uuid="2a0c082f-5e97-42e3-a4d1-562828cb8fee">
 				<InternalInfo>
-					<xr:GeneratedType name="TaskTabularSection.ПринятьТЗ.Наблюдатели" category="TabularSection">
-						<xr:TypeId>73d950c2-cce2-4134-bdc1-36ade813b90e</xr:TypeId>
-						<xr:ValueId>9aef5222-9a1a-402c-bf0b-a43f6387deb6</xr:ValueId>
+					<xr:GeneratedType name="TaskTabularSection.ПересогласованиеКомпозиции.Комплекты" category="TabularSection">
+						<xr:TypeId>c640f1f6-fb3c-45c8-b9e5-ee2a4adbfcb8</xr:TypeId>
+						<xr:ValueId>c10ce8c4-ab0b-4f16-9501-3aec904410a3</xr:ValueId>
 					</xr:GeneratedType>
-					<xr:GeneratedType name="TaskTabularSectionRow.ПринятьТЗ.Наблюдатели" category="TabularSectionRow">
-						<xr:TypeId>2aae3a46-9cdf-4901-baf1-fc8c61ceb39b</xr:TypeId>
-						<xr:ValueId>d7ecfe9e-c156-4c4d-84ba-86809ce22da3</xr:ValueId>
+					<xr:GeneratedType name="TaskTabularSectionRow.ПересогласованиеКомпозиции.Комплекты" category="TabularSectionRow">
+						<xr:TypeId>4ada9f56-ae5b-4947-a21a-b9efa5fb95bb</xr:TypeId>
+						<xr:ValueId>ee1452c4-fe22-4943-a1b2-9cb4877703be</xr:ValueId>
 					</xr:GeneratedType>
 				</InternalInfo>
 				<Properties>
-					<Name>Наблюдатели</Name>
+					<Name>Комплекты</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Наблюдатели</v8:content>
-						</v8:item>
-					</Synonym>
-					<Comment/>
-					<ToolTip/>
-					<FillChecking>DontCheck</FillChecking>
-					<StandardAttributes>
-						<xr:StandardAttribute name="LineNumber">
-							<xr:LinkByType/>
-							<xr:FillChecking>DontCheck</xr:FillChecking>
-							<xr:MultiLine>false</xr:MultiLine>
-							<xr:FillFromFillingValue>false</xr:FillFromFillingValue>
-							<xr:CreateOnInput>Auto</xr:CreateOnInput>
-							<xr:TypeReductionMode>TransformValues</xr:TypeReductionMode>
-							<xr:MaxValue xsi:nil="true"/>
-							<xr:ToolTip/>
-							<xr:ExtendedEdit>false</xr:ExtendedEdit>
-							<xr:Format/>
-							<xr:ChoiceForm/>
-							<xr:QuickChoice>Auto</xr:QuickChoice>
-							<xr:ChoiceHistoryOnInput>Auto</xr:ChoiceHistoryOnInput>
-							<xr:EditFormat/>
-							<xr:PasswordMode>false</xr:PasswordMode>
-							<xr:DataHistory>Use</xr:DataHistory>
-							<xr:MarkNegatives>false</xr:MarkNegatives>
-							<xr:MinValue xsi:nil="true"/>
-							<xr:Synonym/>
-							<xr:Comment/>
-							<xr:FullTextSearch>Use</xr:FullTextSearch>
-							<xr:ChoiceParameterLinks/>
-							<xr:FillValue xsi:nil="true"/>
-							<xr:Mask/>
-							<xr:ChoiceParameters/>
-						</xr:StandardAttribute>
-					</StandardAttributes>
-					<LineNumberLength>5</LineNumberLength>
-				</Properties>
-				<ChildObjects>
-					<Attribute uuid="ca922a57-6c36-468e-8bcf-cd62aedd28b0">
-						<Properties>
-							<Name>Наблюдатель</Name>
-							<Synonym>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Наблюдатель</v8:content>
-								</v8:item>
-							</Synonym>
-							<Comment/>
-							<Type>
-								<v8:Type>cfg:CatalogRef.Пользователи</v8:Type>
-							</Type>
-							<PasswordMode>false</PasswordMode>
-							<Format/>
-							<EditFormat/>
-							<ToolTip/>
-							<MarkNegatives>false</MarkNegatives>
-							<Mask/>
-							<MultiLine>false</MultiLine>
-							<ExtendedEdit>false</ExtendedEdit>
-							<MinValue xsi:nil="true"/>
-							<MaxValue xsi:nil="true"/>
-							<FillChecking>DontCheck</FillChecking>
-							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
-							<ChoiceParameterLinks/>
-							<ChoiceParameters/>
-							<QuickChoice>Auto</QuickChoice>
-							<CreateOnInput>Auto</CreateOnInput>
-							<ChoiceForm/>
-							<LinkByType/>
-							<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
-							<Indexing>DontIndex</Indexing>
-							<FullTextSearch>Use</FullTextSearch>
-							<DataHistory>Use</DataHistory>
-						</Properties>
-					</Attribute>
-				</ChildObjects>
-			</TabularSection>
-			<TabularSection uuid="7caf525a-e453-4384-bcd3-58c8b21c03d5">
-				<InternalInfo>
-					<xr:GeneratedType name="TaskTabularSection.ПринятьТЗ.ЧекЛистКонструктора" category="TabularSection">
-						<xr:TypeId>75446d50-4321-4176-a3b1-f086811ff6fd</xr:TypeId>
-						<xr:ValueId>a63ccc1b-9411-4902-bbaa-8794da8316a7</xr:ValueId>
-					</xr:GeneratedType>
-					<xr:GeneratedType name="TaskTabularSectionRow.ПринятьТЗ.ЧекЛистКонструктора" category="TabularSectionRow">
-						<xr:TypeId>71b6372b-0b50-42bb-878b-6b8f6746cc2f</xr:TypeId>
-						<xr:ValueId>889b4349-1701-4b00-b102-4ecaf53ba5b1</xr:ValueId>
-					</xr:GeneratedType>
-				</InternalInfo>
-				<Properties>
-					<Name>ЧекЛистКонструктора</Name>
-					<Synonym>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Чек лист конструктора</v8:content>
+							<v8:content>Комплекты</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
@@ -704,59 +740,18 @@
 					<LineNumberLength>9</LineNumberLength>
 				</Properties>
 				<ChildObjects>
-					<Attribute uuid="ec792646-fd9d-4171-8ac5-ed1c34956d1a">
+					<Attribute uuid="9fc0ae3e-4a80-4f57-88e3-409abcc40032">
 						<Properties>
-							<Name>Выполнено</Name>
+							<Name>Комплект</Name>
 							<Synonym>
 								<v8:item>
 									<v8:lang>ru</v8:lang>
-									<v8:content>Выполнено</v8:content>
+									<v8:content>Комплект</v8:content>
 								</v8:item>
 							</Synonym>
 							<Comment/>
 							<Type>
-								<v8:Type>xs:boolean</v8:Type>
-							</Type>
-							<PasswordMode>false</PasswordMode>
-							<Format/>
-							<EditFormat/>
-							<ToolTip/>
-							<MarkNegatives>false</MarkNegatives>
-							<Mask/>
-							<MultiLine>false</MultiLine>
-							<ExtendedEdit>false</ExtendedEdit>
-							<MinValue xsi:nil="true"/>
-							<MaxValue xsi:nil="true"/>
-							<FillChecking>DontCheck</FillChecking>
-							<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
-							<ChoiceParameterLinks/>
-							<ChoiceParameters/>
-							<QuickChoice>Auto</QuickChoice>
-							<CreateOnInput>Auto</CreateOnInput>
-							<ChoiceForm/>
-							<LinkByType/>
-							<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
-							<Indexing>DontIndex</Indexing>
-							<FullTextSearch>Use</FullTextSearch>
-							<DataHistory>Use</DataHistory>
-						</Properties>
-					</Attribute>
-					<Attribute uuid="f4d630d7-79dd-4c26-bf63-17eaff077cd6">
-						<Properties>
-							<Name>Описание</Name>
-							<Synonym>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Описание</v8:content>
-								</v8:item>
-							</Synonym>
-							<Comment/>
-							<Type>
-								<v8:Type>xs:string</v8:Type>
-								<v8:StringQualifiers>
-									<v8:Length>150</v8:Length>
-									<v8:AllowedLength>Variable</v8:AllowedLength>
-								</v8:StringQualifiers>
+								<v8:Type>cfg:CatalogRef.ИзделияКомплект</v8:Type>
 							</Type>
 							<PasswordMode>false</PasswordMode>
 							<Format/>
@@ -785,7 +780,7 @@
 				</ChildObjects>
 			</TabularSection>
 			<Form>ФормаЗадачи</Form>
-			<AddressingAttribute uuid="1f4e0833-75e2-462f-9be3-6a3cd9d1c097">
+			<AddressingAttribute uuid="2719a00c-21a1-4425-98bf-763d75a810ec">
 				<Properties>
 					<Name>Исполнитель</Name>
 					<Synonym>
@@ -810,7 +805,7 @@
 					<MaxValue xsi:nil="true"/>
 					<FillFromFillingValue>false</FillFromFillingValue>
 					<FillValue xsi:nil="true"/>
-					<FillChecking>DontCheck</FillChecking>
+					<FillChecking>ShowError</FillChecking>
 					<ChoiceFoldersAndItems>Items</ChoiceFoldersAndItems>
 					<ChoiceParameterLinks/>
 					<ChoiceParameters/>

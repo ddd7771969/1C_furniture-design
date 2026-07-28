@@ -574,6 +574,7 @@
 							<EnableStartDrag>true</EnableStartDrag>
 							<DataPath>ОжиданиеГЧ</DataPath>
 							<RowPictureDataPath>~ОжиданиеГЧ.DefaultPicture</RowPictureDataPath>
+							<TitleFont ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
 							<AutoRefresh>false</AutoRefresh>
 							<AutoRefreshPeriod>60</AutoRefreshPeriod>
 							<Period>
@@ -878,6 +879,7 @@
 											<v8:content>ПКД.Контроль</v8:content>
 										</v8:item>
 									</Title>
+									<TitleFont ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
 									<AutoRefresh>false</AutoRefresh>
 									<AutoRefreshPeriod>60</AutoRefreshPeriod>
 									<Period>
@@ -998,6 +1000,7 @@
 											<v8:content>Внешнее производство</v8:content>
 										</v8:item>
 									</Title>
+									<TitleFont ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
 									<AutoRefresh>false</AutoRefresh>
 									<AutoRefreshPeriod>60</AutoRefreshPeriod>
 									<Period>
@@ -1131,6 +1134,7 @@
 											<v8:content>Согласования</v8:content>
 										</v8:item>
 									</Title>
+									<TitleFont ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
 									<AutoRefresh>false</AutoRefresh>
 									<AutoRefreshPeriod>60</AutoRefreshPeriod>
 									<Period>
@@ -1237,6 +1241,7 @@
 											<v8:content>Задачи Прочие</v8:content>
 										</v8:item>
 									</Title>
+									<TitleFont ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
 									<RowFilter xsi:nil="true"/>
 									<ContextMenu name="тзЗадачиДизайнераКонтекстноеМеню" id="295"/>
 									<AutoCommandBar name="тзЗадачиДизайнераКоманднаяПанель" id="296">
@@ -1344,13 +1349,14 @@
 									<VerticalStretch>false</VerticalStretch>
 									<EnableStartDrag>true</EnableStartDrag>
 									<DataPath>ПроверкаТЗ</DataPath>
-									<RowPictureDataPath>ПроверкаТЗ.DefaultPicture</RowPictureDataPath>
+									<RowPictureDataPath>~ПроверкаТЗ.DefaultPicture</RowPictureDataPath>
 									<Title>
 										<v8:item>
 											<v8:lang>ru</v8:lang>
-											<v8:content>Проверка.ТЗ</v8:content>
+											<v8:content>Принять.ТЗ</v8:content>
 										</v8:item>
 									</Title>
+									<TitleFont ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
 									<AutoRefresh>false</AutoRefresh>
 									<AutoRefreshPeriod>60</AutoRefreshPeriod>
 									<Period>
@@ -1458,6 +1464,7 @@
 											<v8:content>Проверка.ПКД</v8:content>
 										</v8:item>
 									</Title>
+									<TitleFont ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
 									<AutoRefresh>false</AutoRefresh>
 									<AutoRefreshPeriod>60</AutoRefreshPeriod>
 									<Period>
@@ -1578,6 +1585,7 @@
 											<v8:content>Утверждение.РКД</v8:content>
 										</v8:item>
 									</Title>
+									<TitleFont ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
 									<AutoRefresh>false</AutoRefresh>
 									<AutoRefreshPeriod>60</AutoRefreshPeriod>
 									<Period>
@@ -1825,6 +1833,7 @@
 											<v8:content>Перевод в проектное</v8:content>
 										</v8:item>
 									</Title>
+									<TitleFont ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
 									<AutoRefresh>false</AutoRefresh>
 									<AutoRefreshPeriod>60</AutoRefreshPeriod>
 									<Period>
@@ -1936,6 +1945,7 @@
 											<v8:content>Внешнее производство</v8:content>
 										</v8:item>
 									</Title>
+									<TitleFont ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
 									<AutoRefresh>false</AutoRefresh>
 									<AutoRefreshPeriod>60</AutoRefreshPeriod>
 									<Period>
@@ -2633,6 +2643,7 @@
 					<EnableStartDrag>true</EnableStartDrag>
 					<DataPath>ВнешнееПроизводство</DataPath>
 					<RowPictureDataPath>ВнешнееПроизводство.DefaultPicture</RowPictureDataPath>
+					<TitleFont ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
 					<AutoRefresh>false</AutoRefresh>
 					<AutoRefreshPeriod>60</AutoRefreshPeriod>
 					<Period>
@@ -3323,7 +3334,7 @@
 			</Type>
 			<Settings xsi:type="DynamicList">
 				<ManualQuery>true</ManualQuery>
-				<DynamicDataRead>true</DynamicDataRead>
+				<DynamicDataRead>false</DynamicDataRead>
 				<QueryText>ВЫБРАТЬ
 	ЗадачаПринятьТЗ.Ссылка КАК Задача,
 	МАКСИМУМ(СостояниеЗамераСрезПоследних.Период) КАК Период
@@ -3411,22 +3422,72 @@
 	вт.Задача.Заголовок КАК Заголовок,
 	ЕСТЬNULL(вт.Период, ДАТАВРЕМЯ(1, 1, 1)) КАК ДатаЗамера,
 	ЕСТЬNULL(втМоделиГЧ.Выполнена, ЛОЖЬ) КАК ЕстьМодельГЧ
+ПОМЕСТИТЬ втВсеЗадачи
 ИЗ
 	втЗадача КАК вт
 		ВНУТРЕННЕЕ СОЕДИНЕНИЕ Задача.ПринятьТЗ КАК ЗадачаПринятьТЗ
 			ЛЕВОЕ СОЕДИНЕНИЕ втМоделиГЧ КАК втМоделиГЧ
 			ПО (втМоделиГЧ.Задача = ЗадачаПринятьТЗ.Ссылка)
-		ПО вт.Задача = ЗадачаПринятьТЗ.Ссылка</QueryText>
-				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>ПометкаУдаления1</dcssch:dataPath>
-					<dcssch:field>ПометкаУдаления1</dcssch:field>
-					<dcssch:title xsi:type="v8:LocalStringType">
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Пометка удаления1</v8:content>
-						</v8:item>
-					</dcssch:title>
-				</Field>
+		ПО вт.Задача = ЗадачаПринятьТЗ.Ссылка
+
+ОБЪЕДИНИТЬ ВСЕ
+
+ВЫБРАТЬ
+	ПересогласованиеКомпозиции.Ссылка,
+	ПересогласованиеКомпозиции.ПометкаУдаления,
+	ПересогласованиеКомпозиции.Номер,
+	ПересогласованиеКомпозиции.Дата,
+	ПересогласованиеКомпозиции.Наименование,
+	ПересогласованиеКомпозиции.Выполнена,
+	NULL,
+	ПересогласованиеКомпозиции.Комментарий,
+	ПересогласованиеКомпозиции.КрайняяДатаИсполнения,
+	ПересогласованиеКомпозиции.ОбъектТЗ,
+	ПересогласованиеКомпозиции.Проект,
+	NULL,
+	ПересогласованиеКомпозиции.Исполнитель,
+	ПересогласованиеКомпозиции.Заголовок,
+	NULL,
+	NULL
+ИЗ
+	Задача.ПересогласованиеКомпозиции КАК ПересогласованиеКомпозиции
+ГДЕ
+	НЕ ПересогласованиеКомпозиции.Выполнена
+	И ВЫБОР
+			КОГДА &amp;Исполнитель = ЗНАЧЕНИЕ(Справочник.Пользователи.ПустаяСсылка)
+				ТОГДА ИСТИНА
+			ИНАЧЕ ПересогласованиеКомпозиции.Исполнитель = &amp;Исполнитель
+		КОНЕЦ
+	И ВЫБОР
+			КОГДА &amp;Проект = ЗНАЧЕНИЕ(Справочник.Проекты.ПустаяСсылка)
+				ТОГДА ИСТИНА
+			ИНАЧЕ ПересогласованиеКомпозиции.Проект = &amp;Проект
+		КОНЕЦ
+;
+
+////////////////////////////////////////////////////////////////////////////////
+ВЫБРАТЬ
+	втВсеЗадачи.Ссылка КАК Ссылка,
+	втВсеЗадачи.ПометкаУдаления КАК ПометкаУдаления,
+	втВсеЗадачи.Номер КАК Номер,
+	втВсеЗадачи.Дата КАК Дата,
+	втВсеЗадачи.Наименование КАК Наименование,
+	втВсеЗадачи.Выполнена КАК Выполнена,
+	втВсеЗадачи.Версия КАК Версия,
+	втВсеЗадачи.Комментарий КАК Комментарий,
+	втВсеЗадачи.КрайняяДатаИсполнения КАК КрайняяДатаИсполнения,
+	втВсеЗадачи.ОбъектТЗ КАК ОбъектТЗ,
+	втВсеЗадачи.Проект КАК Проект,
+	втВсеЗадачи.Статус КАК Статус,
+	втВсеЗадачи.Исполнитель КАК Исполнитель,
+	втВсеЗадачи.Заголовок КАК Заголовок,
+	втВсеЗадачи.ДатаЗамера КАК ДатаЗамера,
+	втВсеЗадачи.ЕстьМодельГЧ КАК ЕстьМодельГЧ
+ИЗ
+	втВсеЗадачи КАК втВсеЗадачи
+
+УПОРЯДОЧИТЬ ПО
+	Дата</QueryText>
 				<Field xsi:type="dcssch:DataSetFieldField">
 					<dcssch:dataPath>ОбъектЗамера</dcssch:dataPath>
 					<dcssch:field>ОбъектЗамера</dcssch:field>
@@ -3444,34 +3505,6 @@
 				<Field xsi:type="dcssch:DataSetFieldField">
 					<dcssch:dataPath>ОбъектИзменения</dcssch:dataPath>
 					<dcssch:field>ОбъектИзменения</dcssch:field>
-				</Field>
-				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>Дата1</dcssch:dataPath>
-					<dcssch:field>Дата1</dcssch:field>
-					<dcssch:title xsi:type="v8:LocalStringType">
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Дата1</v8:content>
-						</v8:item>
-					</dcssch:title>
-				</Field>
-				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>Ссылка1</dcssch:dataPath>
-					<dcssch:field>Ссылка1</dcssch:field>
-					<dcssch:title xsi:type="v8:LocalStringType">
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Ссылка1</v8:content>
-						</v8:item>
-					</dcssch:title>
-				</Field>
-				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>ЧекЛистКонструктора</dcssch:dataPath>
-					<dcssch:field>ЧекЛистКонструктора</dcssch:field>
-				</Field>
-				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>Наблюдатели</dcssch:dataPath>
-					<dcssch:field>Наблюдатели</dcssch:field>
 				</Field>
 				<Field xsi:type="dcssch:DataSetFieldField">
 					<dcssch:dataPath>ДатаЗамера</dcssch:dataPath>
@@ -3668,7 +3701,6 @@
 					<dcssch:value xsi:nil="true"/>
 					<dcssch:useRestriction>true</dcssch:useRestriction>
 				</Parameter>
-				<MainTable>Task.ПринятьТЗ</MainTable>
 				<ListSettings>
 					<dcsset:filter>
 						<dcsset:viewMode>Normal</dcsset:viewMode>
