@@ -81,7 +81,7 @@
 							</Events>
 						</InputField>
 						<InputField name="КонструкторКомпозиции" id="80">
-							<DataPath>КонструкторКомпозиции</DataPath>
+							<DataPath>Объект.КонструкторКомпозиции</DataPath>
 							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 							<ContextMenu name="КонструкторКомпозицииКонтекстноеМеню" id="81"/>
 							<ExtendedTooltip name="КонструкторКомпозицииРасширеннаяПодсказка" id="82"/>
@@ -231,32 +231,19 @@
 			<MainAttribute>true</MainAttribute>
 			<SavedData>true</SavedData>
 			<Columns>
-				<AdditionalColumns table="Объект.Комплекты">
-					<Column name="Конструктор" id="1">
-						<Title>
-							<v8:item>
-								<v8:lang>ru</v8:lang>
-								<v8:content>Конструктор</v8:content>
-							</v8:item>
-						</Title>
-						<Type>
-							<v8:Type>cfg:CatalogRef.Сотрудники</v8:Type>
-						</Type>
-					</Column>
-				</AdditionalColumns>
+				<AdditionalColumns table="Объект.Комплекты"/>
 			</Columns>
 		</Attribute>
-		<Attribute name="КонструкторКомпозиции" id="2">
+		<Attribute name="Копирование" id="2">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Конструктор композиции</v8:content>
+					<v8:content>Копирование</v8:content>
 				</v8:item>
 			</Title>
 			<Type>
-				<v8:Type>cfg:CatalogRef.Сотрудники</v8:Type>
+				<v8:Type>xs:boolean</v8:Type>
 			</Type>
-			<FillCheck>ShowError</FillCheck>
 		</Attribute>
 	</Attributes>
 	<Commands>
