@@ -293,6 +293,7 @@
 						</Table>
 						<Table name="СоставКомпозиции" id="73">
 							<Representation>List</Representation>
+							<ReadOnly>true</ReadOnly>
 							<AutoInsertNewRow>true</AutoInsertNewRow>
 							<EnableStartDrag>true</EnableStartDrag>
 							<EnableDrag>true</EnableDrag>
@@ -304,6 +305,7 @@
 								<ChildItems>
 									<Button name="СоставКомпозицииВыбратьВсеКомплекты" id="118">
 										<Type>CommandBarButton</Type>
+										<Visible>false</Visible>
 										<Representation>Picture</Representation>
 										<CommandName>Form.Command.ОтметиитьВсеКомплекты</CommandName>
 										<Picture>
@@ -314,6 +316,7 @@
 									</Button>
 									<Button name="СоставКомпозицииСброситьВсеКомплекты" id="120">
 										<Type>CommandBarButton</Type>
+										<Visible>false</Visible>
 										<Representation>Picture</Representation>
 										<CommandName>Form.Command.СброситьВсеКомплекты</CommandName>
 										<Picture>

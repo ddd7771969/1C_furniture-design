@@ -1400,6 +1400,9 @@
 										<ContextMenu name="ПроверкаТЗУправлениеПоискомКонтекстноеМеню" id="391"/>
 										<ExtendedTooltip name="ПроверкаТЗУправлениеПоискомРасширеннаяПодсказка" id="392"/>
 									</SearchControlAddition>
+									<Events>
+										<Event name="BeforeRowChange">ПроверкаТЗПередНачаломИзменения</Event>
+									</Events>
 									<ChildItems>
 										<LabelField name="КонтрольТЗНаименование" id="1080">
 											<DataPath>ПроверкаТЗ.Наименование</DataPath>
@@ -1443,6 +1446,11 @@
 											<DataPath>ПроверкаТЗ.КрайняяДатаИсполнения</DataPath>
 											<ContextMenu name="КонтрольТЗКрайняяДатаИсполненияКонтекстноеМеню" id="412"/>
 											<ExtendedTooltip name="КонтрольТЗКрайняяДатаИсполненияРасширеннаяПодсказка" id="413"/>
+										</LabelField>
+										<LabelField name="ПроверкаТЗСсылка" id="1613">
+											<DataPath>ПроверкаТЗ.Ссылка</DataPath>
+											<ContextMenu name="ПроверкаТЗСсылкаКонтекстноеМеню" id="1614"/>
+											<ExtendedTooltip name="ПроверкаТЗСсылкаРасширеннаяПодсказка" id="1615"/>
 										</LabelField>
 									</ChildItems>
 								</Table>
@@ -3830,7 +3838,10 @@
 ИЗ
 	вт КАК вт
 		ЛЕВОЕ СОЕДИНЕНИЕ втПредыдущий КАК втПредыдущий
-		ПО вт.ОбъектТЗ = втПредыдущий.Комплект</QueryText>
+		ПО вт.ОбъектТЗ = втПредыдущий.Комплект
+
+УПОРЯДОЧИТЬ ПО
+	Наименование</QueryText>
 				<Field xsi:type="dcssch:DataSetFieldField">
 					<dcssch:dataPath>Автор</dcssch:dataPath>
 					<dcssch:field>Автор</dcssch:field>
@@ -4904,6 +4915,14 @@
 					<dcssch:dataPath>Дата</dcssch:dataPath>
 					<dcssch:field>Дата</dcssch:field>
 				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>НеИзменяетСтадию</dcssch:dataPath>
+					<dcssch:field>НеИзменяетСтадию</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Комментарии</dcssch:dataPath>
+					<dcssch:field>Комментарии</dcssch:field>
+				</Field>
 				<Parameter>
 					<dcssch:name>Период</dcssch:name>
 					<dcssch:title xsi:type="v8:LocalStringType">
@@ -4977,6 +4996,10 @@
 						</dcscor:item>
 					</dcsset:dataParameters>
 					<dcsset:order>
+						<dcsset:item xsi:type="dcsset:OrderItemField">
+							<dcsset:field>Наименование</dcsset:field>
+							<dcsset:orderType>Asc</dcsset:orderType>
+						</dcsset:item>
 						<dcsset:viewMode>Normal</dcsset:viewMode>
 						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
 					</dcsset:order>
