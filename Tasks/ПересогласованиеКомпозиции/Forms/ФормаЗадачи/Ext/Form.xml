@@ -76,22 +76,40 @@
 					</ToolTip>
 					<ExtendedTooltip name="ГруппаОсновнаяРасширеннаяПодсказка" id="55"/>
 					<ChildItems>
-						<InputField name="ОбъектТЗ" id="13">
-							<DataPath>Объект.ОбъектТЗ</DataPath>
-							<Title>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Композиция</v8:content>
-								</v8:item>
-							</Title>
-							<EditMode>EnterOnInput</EditMode>
-							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-							<ContextMenu name="ОбъектТЗКонтекстноеМеню" id="14"/>
-							<ExtendedTooltip name="ОбъектТЗРасширеннаяПодсказка" id="15"/>
-							<Events>
-								<Event name="OnChange">ОбъектТЗПриИзменении</Event>
-							</Events>
-						</InputField>
+						<UsualGroup name="Группа3" id="103">
+							<Group>AlwaysHorizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="104"/>
+							<ChildItems>
+								<InputField name="ОбъектТЗ" id="13">
+									<DataPath>Объект.ОбъектТЗ</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Композиция</v8:content>
+										</v8:item>
+									</Title>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ОбъектТЗКонтекстноеМеню" id="14"/>
+									<ExtendedTooltip name="ОбъектТЗРасширеннаяПодсказка" id="15"/>
+									<Events>
+										<Event name="OnChange">ОбъектТЗПриИзменении</Event>
+									</Events>
+								</InputField>
+								<Button name="ФормаПринять" id="85">
+									<Type>UsualButton</Type>
+									<Representation>PictureAndText</Representation>
+									<CommandName>Form.Command.Принять</CommandName>
+									<Picture>
+										<xr:Ref>StdPicture.AppearanceCheckIcon</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ExtendedTooltip name="ФормаПринятьРасширеннаяПодсказка" id="86"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
 						<InputField name="КонструкторКомпозиции" id="80">
 							<DataPath>Объект.КонструкторКомпозиции</DataPath>
 							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
@@ -134,16 +152,6 @@
 							<ContextMenu name="ИсполнительКонтекстноеМеню" id="20"/>
 							<ExtendedTooltip name="ИсполнительРасширеннаяПодсказка" id="21"/>
 						</InputField>
-						<Button name="ФормаПринять" id="85">
-							<Type>UsualButton</Type>
-							<Representation>PictureAndText</Representation>
-							<CommandName>Form.Command.Принять</CommandName>
-							<Picture>
-								<xr:Ref>StdPicture.AppearanceCheckIcon</xr:Ref>
-								<xr:LoadTransparent>true</xr:LoadTransparent>
-							</Picture>
-							<ExtendedTooltip name="ФормаПринятьРасширеннаяПодсказка" id="86"/>
-						</Button>
 						<Table name="Комплекты" id="56">
 							<Representation>List</Representation>
 							<AutoInsertNewRow>true</AutoInsertNewRow>
@@ -154,6 +162,18 @@
 							<ContextMenu name="КомплектыКонтекстноеМеню" id="57"/>
 							<AutoCommandBar name="КомплектыКоманднаяПанель" id="58">
 								<Autofill>false</Autofill>
+								<ChildItems>
+									<Button name="ОбновитьСтадии" id="101">
+										<Type>CommandBarButton</Type>
+										<Representation>Picture</Representation>
+										<CommandName>Form.Command.ОбновитьСтадии</CommandName>
+										<Picture>
+											<xr:Ref>StdPicture.Refresh</xr:Ref>
+											<xr:LoadTransparent>true</xr:LoadTransparent>
+										</Picture>
+										<ExtendedTooltip name="ОбновитьСтадииРасширеннаяПодсказка" id="102"/>
+									</Button>
+								</ChildItems>
 							</AutoCommandBar>
 							<ExtendedTooltip name="КомплектыРасширеннаяПодсказка" id="59"/>
 							<SearchStringAddition name="КомплектыСтрокаПоиска" id="60">
@@ -183,6 +203,7 @@
 							<Events>
 								<Event name="BeforeAddRow">КомплектыПередНачаломДобавления</Event>
 								<Event name="BeforeDeleteRow">КомплектыПередУдалением</Event>
+								<Event name="BeforeRowChange">КомплектыПередНачаломИзменения</Event>
 							</Events>
 							<ChildItems>
 								<LabelField name="КомплектыНомерСтроки" id="69">
@@ -191,9 +212,15 @@
 									<ContextMenu name="КомплектыНомерСтрокиКонтекстноеМеню" id="70"/>
 									<ExtendedTooltip name="КомплектыНомерСтрокиРасширеннаяПодсказка" id="71"/>
 								</LabelField>
+								<CheckBoxField name="КомплектыВыбрать" id="92">
+									<DataPath>Объект.Комплекты.Выбрать</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="КомплектыВыбратьКонтекстноеМеню" id="93"/>
+									<ExtendedTooltip name="КомплектыВыбратьРасширеннаяПодсказка" id="94"/>
+								</CheckBoxField>
 								<InputField name="КомплектыКомплект" id="72">
 									<DataPath>Объект.Комплекты.Комплект</DataPath>
-									<ReadOnly>true</ReadOnly>
 									<EditMode>EnterOnInput</EditMode>
 									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 									<ContextMenu name="КомплектыКомплектКонтекстноеМеню" id="73"/>
@@ -213,6 +240,21 @@
 									<ContextMenu name="КомплектыКонструкторКонтекстноеМеню" id="88"/>
 									<ExtendedTooltip name="КомплектыКонструкторРасширеннаяПодсказка" id="89"/>
 								</InputField>
+								<InputField name="КомплектыСтадии" id="95">
+									<DataPath>Объект.Комплекты.ТекущаяСтадия</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="КомплектыСтадииКонтекстноеМеню" id="96"/>
+									<ExtendedTooltip name="КомплектыСтадииРасширеннаяПодсказка" id="97"/>
+								</InputField>
+								<CheckBoxField name="КомплектыУКонструктора" id="98">
+									<DataPath>Объект.Комплекты.УКонструктора</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="КомплектыУКонструктораКонтекстноеМеню" id="99"/>
+									<ExtendedTooltip name="КомплектыУКонструктораРасширеннаяПодсказка" id="100"/>
+								</CheckBoxField>
 							</ChildItems>
 						</Table>
 					</ChildItems>
@@ -243,7 +285,34 @@
 			<MainAttribute>true</MainAttribute>
 			<SavedData>true</SavedData>
 			<Columns>
-				<AdditionalColumns table="Объект.Комплекты"/>
+				<AdditionalColumns table="Объект.Комплекты">
+					<Column name="ТекущаяСтадия" id="1">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Текущая стадия</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:string</v8:Type>
+							<v8:StringQualifiers>
+								<v8:Length>50</v8:Length>
+								<v8:AllowedLength>Variable</v8:AllowedLength>
+							</v8:StringQualifiers>
+						</Type>
+					</Column>
+					<Column name="УКонструктора" id="2">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>У конструктора</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:boolean</v8:Type>
+						</Type>
+					</Column>
+				</AdditionalColumns>
 			</Columns>
 		</Attribute>
 		<Attribute name="Копирование" id="2">
@@ -257,6 +326,40 @@
 				<v8:Type>xs:boolean</v8:Type>
 			</Type>
 		</Attribute>
+		<ConditionalAppearance>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>Комплекты</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemGroup">
+						<dcsset:groupType>AndGroup</dcsset:groupType>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">Объект.Комплекты.Выбрать</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+						</dcsset:item>
+						<dcsset:item xsi:type="dcsset:FilterItemComparison">
+							<dcsset:left xsi:type="dcscor:Field">Объект.Комплекты.УКонструктора</dcsset:left>
+							<dcsset:comparisonType>Equal</dcsset:comparisonType>
+							<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+						</dcsset:item>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветТекста</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">style:SpecialTextColor</dcscor:value>
+					</dcscor:item>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Шрифт</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+		</ConditionalAppearance>
 	</Attributes>
 	<Commands>
 		<Command name="Принять" id="1">
@@ -289,5 +392,43 @@
 			</ToolTip>
 			<Action>ЗаписатьЗадачу</Action>
 		</Command>
+		<Command name="ОбновитьСтадии" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить стадии</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить стадии</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОбновитьСтадии</Action>
+		</Command>
 	</Commands>
+	<CommandInterface>
+		<NavigationPanel>
+			<Item>
+				<Command>InformationRegister.СтатусыЗадач.StandardCommand.OpenByValue.Задача</Command>
+				<Type>Auto</Type>
+				<CommandGroup>FormNavigationPanelGoTo</CommandGroup>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>InformationRegister.ТаймингЗадач.StandardCommand.OpenByValue.Задача</Command>
+				<Type>Auto</Type>
+				<CommandGroup>FormNavigationPanelGoTo</CommandGroup>
+				<Index>1</Index>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+		</NavigationPanel>
+	</CommandInterface>
 </Form>
