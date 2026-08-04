@@ -226,13 +226,6 @@
 									<ContextMenu name="КомплектыКомплектКонтекстноеМеню" id="73"/>
 									<ExtendedTooltip name="КомплектыКомплектРасширеннаяПодсказка" id="74"/>
 								</InputField>
-								<InputField name="КомплектыИсполнитель" id="75">
-									<DataPath>1/0:2a0c082f-5e97-42e3-a4d1-562828cb8fee/0:f12f0300-3c9a-48a8-bb4a-8699563649f4</DataPath>
-									<EditMode>EnterOnInput</EditMode>
-									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-									<ContextMenu name="КомплектыИсполнительКонтекстноеМеню" id="76"/>
-									<ExtendedTooltip name="КомплектыИсполнительРасширеннаяПодсказка" id="77"/>
-								</InputField>
 								<InputField name="КомплектыКонструктор" id="87">
 									<DataPath>Объект.Комплекты.Конструктор</DataPath>
 									<EditMode>EnterOnInput</EditMode>
@@ -250,6 +243,7 @@
 								</InputField>
 								<CheckBoxField name="КомплектыУКонструктора" id="98">
 									<DataPath>Объект.Комплекты.УКонструктора</DataPath>
+									<ReadOnly>true</ReadOnly>
 									<EditMode>EnterOnInput</EditMode>
 									<CheckBoxType>Auto</CheckBoxType>
 									<ContextMenu name="КомплектыУКонструктораКонтекстноеМеню" id="99"/>
