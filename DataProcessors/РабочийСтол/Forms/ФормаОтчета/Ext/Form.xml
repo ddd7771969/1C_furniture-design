@@ -941,6 +941,17 @@
 											<ContextMenu name="ЕстьФайлыКонтекстноеМеню" id="1133"/>
 											<ExtendedTooltip name="ЕстьФайлыРасширеннаяПодсказка" id="1134"/>
 										</PictureField>
+										<LabelField name="ПодтверждениеПКД1Наименование" id="1616">
+											<DataPath>ПодтверждениеПКД.Наименование</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Задача</v8:content>
+												</v8:item>
+											</Title>
+											<ContextMenu name="ПодтверждениеПКД1НаименованиеКонтекстноеМеню" id="1617"/>
+											<ExtendedTooltip name="ПодтверждениеПКД1НаименованиеРасширеннаяПодсказка" id="1618"/>
+										</LabelField>
 										<PictureField name="ПодтверждениеПКД1ЕстьФайлы" id="1135">
 											<DataPath>ПодтверждениеПКД.ЕстьФайлы</DataPath>
 											<TitleLocation>None</TitleLocation>
@@ -955,11 +966,6 @@
 											<ContextMenu name="ПодтверждениеПКД1ЕстьФайлыКонтекстноеМеню" id="1136"/>
 											<ExtendedTooltip name="ПодтверждениеПКД1ЕстьФайлыРасширеннаяПодсказка" id="1137"/>
 										</PictureField>
-										<LabelField name="ПодтверждениеПКД1Ссылка" id="1551">
-											<DataPath>ПодтверждениеПКД.Ссылка</DataPath>
-											<ContextMenu name="ПодтверждениеПКД1СсылкаКонтекстноеМеню" id="1552"/>
-											<ExtendedTooltip name="ПодтверждениеПКД1СсылкаРасширеннаяПодсказка" id="1553"/>
-										</LabelField>
 										<LabelField name="ПодтверждениеПКД1Конструктор" id="1237">
 											<DataPath>ПодтверждениеПКД.Конструктор</DataPath>
 											<ContextMenu name="ПодтверждениеПКД1КонструкторКонтекстноеМеню" id="1238"/>
@@ -985,6 +991,12 @@
 											</Format>
 											<ContextMenu name="ПодтверждениеПКДДата1КонтекстноеМеню" id="506"/>
 											<ExtendedTooltip name="ПодтверждениеПКДДата1РасширеннаяПодсказка" id="507"/>
+										</LabelField>
+										<LabelField name="ПодтверждениеПКД1Ссылка" id="1551">
+											<DataPath>ПодтверждениеПКД.Ссылка</DataPath>
+											<Visible>false</Visible>
+											<ContextMenu name="ПодтверждениеПКД1СсылкаКонтекстноеМеню" id="1552"/>
+											<ExtendedTooltip name="ПодтверждениеПКД1СсылкаРасширеннаяПодсказка" id="1553"/>
 										</LabelField>
 									</ChildItems>
 								</Table>
