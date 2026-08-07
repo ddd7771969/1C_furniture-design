@@ -166,7 +166,7 @@
 					<tl>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Дата готовности </v8:content>
+							<v8:content>Выдача чертежей</v8:content>
 						</v8:item>
 					</tl>
 				</c>
@@ -248,45 +248,45 @@
 			</c>
 			<c>
 				<c>
-					<f>24</f>
+					<f>25</f>
 					<parameter>КомплектКомпозицияНаименование</parameter>
 					<detailParameter>КомплектКомпозиция</detailParameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>25</f>
+					<f>26</f>
 					<parameter>ИзделиеЗаказчика</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>26</f>
+					<f>27</f>
 					<parameter>ПомещениеНаименование</parameter>
 					<detailParameter>Помещение</detailParameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>25</f>
+					<f>28</f>
 					<parameter>СогласованоАрхитектор</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>24</f>
+					<f>25</f>
 					<parameter>Конструктор</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>24</f>
+					<f>25</f>
 					<parameter>СостояниеСтрока</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>27</f>
+					<f>29</f>
 					<parameter>ДатаГотовностиЧертежа</parameter>
 				</c>
 			</c>
@@ -298,38 +298,38 @@
 			<c>
 				<i>2</i>
 				<c>
-					<f>28</f>
+					<f>30</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>28</f>
+					<f>30</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>29</f>
+					<f>31</f>
 					<parameter>СтатусПомещения</parameter>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>28</f>
+					<f>30</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>28</f>
+					<f>30</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>28</f>
+					<f>30</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>28</f>
+					<f>30</f>
 				</c>
 			</c>
 		</row>
@@ -340,12 +340,12 @@
 			<c>
 				<i>3</i>
 				<c>
-					<f>30</f>
+					<f>32</f>
 				</c>
 			</c>
 			<c>
 				<c>
-					<f>30</f>
+					<f>32</f>
 				</c>
 			</c>
 		</row>
@@ -363,14 +363,14 @@
 			<c>
 				<i>1</i>
 				<c>
-					<f>31</f>
+					<f>33</f>
 					<parameter>ПроектНаименование</parameter>
 				</c>
 			</c>
 		</row>
 	</rowsItem>
 	<templateMode>true</templateMode>
-	<defaultFormatIndex>32</defaultFormatIndex>
+	<defaultFormatIndex>34</defaultFormatIndex>
 	<height>10</height>
 	<vgRows>10</vgRows>
 	<merge>
@@ -787,7 +787,15 @@
 	<format>
 		<border>1</border>
 		<width>33</width>
-		<horizontalAlignment>Center</horizontalAlignment>
+		<horizontalAlignment>Left</horizontalAlignment>
+		<verticalAlignment>Center</verticalAlignment>
+		<textPlacement>Wrap</textPlacement>
+		<fillType>Parameter</fillType>
+	</format>
+	<format>
+		<border>1</border>
+		<width>33</width>
+		<horizontalAlignment>Left</horizontalAlignment>
 		<verticalAlignment>Center</verticalAlignment>
 		<textPlacement>Wrap</textPlacement>
 		<fillType>Parameter</fillType>
@@ -803,10 +811,24 @@
 		<topBorder>1</topBorder>
 		<rightBorder>1</rightBorder>
 		<width>33</width>
+		<horizontalAlignment>Left</horizontalAlignment>
+		<verticalAlignment>Center</verticalAlignment>
+		<textPlacement>Wrap</textPlacement>
+		<fillType>Parameter</fillType>
+	</format>
+	<format>
+		<border>1</border>
+		<width>33</width>
 		<horizontalAlignment>Center</horizontalAlignment>
 		<verticalAlignment>Center</verticalAlignment>
 		<textPlacement>Wrap</textPlacement>
 		<fillType>Parameter</fillType>
+		<format>
+			<v8:item>
+				<v8:lang>ru</v8:lang>
+				<v8:content>ДФ=dd.MM.yyyy</v8:content>
+			</v8:item>
+		</format>
 	</format>
 	<format>
 		<border>1</border>
@@ -830,7 +852,7 @@
 		<rightBorder>1</rightBorder>
 		<bottomBorder>1</bottomBorder>
 		<width>33</width>
-		<horizontalAlignment>Center</horizontalAlignment>
+		<horizontalAlignment>Left</horizontalAlignment>
 		<verticalAlignment>Center</verticalAlignment>
 		<textPlacement>Wrap</textPlacement>
 		<fillType>Parameter</fillType>
