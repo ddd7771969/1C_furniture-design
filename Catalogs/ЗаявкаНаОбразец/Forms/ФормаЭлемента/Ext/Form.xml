@@ -33,27 +33,43 @@
 					<ShowTitle>false</ShowTitle>
 					<ExtendedTooltip name="ГруппаЛеваяРасширеннаяПодсказка" id="19"/>
 					<ChildItems>
-						<InputField name="Код" id="1">
-							<DataPath>Объект.Code</DataPath>
-							<EditMode>EnterOnInput</EditMode>
+						<UsualGroup name="Группа3" id="33">
+							<Group>AlwaysHorizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="34"/>
+							<ChildItems>
+								<InputField name="Наименование" id="4">
+									<DataPath>Объект.Description</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
+									<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
+								</InputField>
+								<InputField name="Код" id="1">
+									<DataPath>Объект.Code</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="КодКонтекстноеМеню" id="2"/>
+									<ExtendedTooltip name="КодРасширеннаяПодсказка" id="3"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<InputField name="Проект" id="30">
+							<DataPath>Объект.Проект</DataPath>
 							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-							<ContextMenu name="КодКонтекстноеМеню" id="2"/>
-							<ExtendedTooltip name="КодРасширеннаяПодсказка" id="3"/>
+							<ContextMenu name="ПроектКонтекстноеМеню" id="31"/>
+							<ExtendedTooltip name="ПроектРасширеннаяПодсказка" id="32"/>
 						</InputField>
-						<InputField name="Наименование" id="4">
-							<DataPath>Объект.Description</DataPath>
-							<EditMode>EnterOnInput</EditMode>
+						<InputField name="ИзделиеЗаказчика" id="27">
+							<DataPath>Объект.ИзделиеЗаказчика</DataPath>
 							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-							<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
-							<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="6"/>
-						</InputField>
-						<InputField name="Автор" id="10">
-							<DataPath>Объект.Автор</DataPath>
-							<ReadOnly>true</ReadOnly>
-							<EditMode>EnterOnInput</EditMode>
-							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-							<ContextMenu name="АвторКонтекстноеМеню" id="11"/>
-							<ExtendedTooltip name="АвторРасширеннаяПодсказка" id="12"/>
+							<ContextMenu name="ИзделиеЗаказчикаКонтекстноеМеню" id="28"/>
+							<ExtendedTooltip name="ИзделиеЗаказчикаРасширеннаяПодсказка" id="29"/>
+							<Events>
+								<Event name="OnChange">ИзделиеЗаказчикаПриИзменении</Event>
+							</Events>
 						</InputField>
 					</ChildItems>
 				</UsualGroup>
@@ -97,14 +113,65 @@
 					<ContextMenu name="РецептКонтекстноеМеню" id="14"/>
 					<ExtendedTooltip name="РецептРасширеннаяПодсказка" id="15"/>
 				</InputField>
-				<InputField name="РецептПокрытия" id="27">
-					<DataPath>Объект.РецептПокрытия</DataPath>
-					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-					<ContextMenu name="РецептПокрытияКонтекстноеМеню" id="28"/>
-					<ExtendedTooltip name="РецептПокрытияРасширеннаяПодсказка" id="29"/>
-				</InputField>
+				<Table name="Рецепт1" id="35">
+					<AutoInsertNewRow>true</AutoInsertNewRow>
+					<EnableStartDrag>true</EnableStartDrag>
+					<EnableDrag>true</EnableDrag>
+					<DataPath>Объект.ТочныйРецепт</DataPath>
+					<RowFilter xsi:nil="true"/>
+					<ContextMenu name="Рецепт1КонтекстноеМеню" id="36"/>
+					<AutoCommandBar name="Рецепт1КоманднаяПанель" id="37"/>
+					<ExtendedTooltip name="Рецепт1РасширеннаяПодсказка" id="38"/>
+					<SearchStringAddition name="Рецепт1СтрокаПоиска" id="39">
+						<AdditionSource>
+							<Item>Рецепт1</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="Рецепт1СтрокаПоискаКонтекстноеМеню" id="40"/>
+						<ExtendedTooltip name="Рецепт1СтрокаПоискаРасширеннаяПодсказка" id="41"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="Рецепт1СостояниеПросмотра" id="42">
+						<AdditionSource>
+							<Item>Рецепт1</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="Рецепт1СостояниеПросмотраКонтекстноеМеню" id="43"/>
+						<ExtendedTooltip name="Рецепт1СостояниеПросмотраРасширеннаяПодсказка" id="44"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="Рецепт1УправлениеПоиском" id="45">
+						<AdditionSource>
+							<Item>Рецепт1</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="Рецепт1УправлениеПоискомКонтекстноеМеню" id="46"/>
+						<ExtendedTooltip name="Рецепт1УправлениеПоискомРасширеннаяПодсказка" id="47"/>
+					</SearchControlAddition>
+					<ChildItems>
+						<LabelField name="Рецепт1НомерСтроки" id="48">
+							<DataPath>Объект.ТочныйРецепт.LineNumber</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="Рецепт1НомерСтрокиКонтекстноеМеню" id="49"/>
+							<ExtendedTooltip name="Рецепт1НомерСтрокиРасширеннаяПодсказка" id="50"/>
+						</LabelField>
+						<InputField name="Рецепт1Номенклатура" id="51">
+							<DataPath>Объект.ТочныйРецепт.Номенклатура</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="Рецепт1НоменклатураКонтекстноеМеню" id="52"/>
+							<ExtendedTooltip name="Рецепт1НоменклатураРасширеннаяПодсказка" id="53"/>
+						</InputField>
+					</ChildItems>
+				</Table>
 			</ChildItems>
 		</UsualGroup>
+		<InputField name="Автор" id="10">
+			<DataPath>Объект.Автор</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<EditMode>EnterOnInput</EditMode>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="АвторКонтекстноеМеню" id="11"/>
+			<ExtendedTooltip name="АвторРасширеннаяПодсказка" id="12"/>
+		</InputField>
 	</ChildItems>
 	<Attributes>
 		<Attribute name="Объект" id="1">
