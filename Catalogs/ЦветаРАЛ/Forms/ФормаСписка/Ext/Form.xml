@@ -18,6 +18,15 @@
 			<ShowTitle>false</ShowTitle>
 			<ExtendedTooltip name="СписокКомпоновщикНастроекПользовательскиеНастройкиРасширеннаяПодсказка" id="2"/>
 		</UsualGroup>
+		<InputField name="ТипRAL" id="22">
+			<DataPath>ТипRAL</DataPath>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<ContextMenu name="ТипRALКонтекстноеМеню" id="23"/>
+			<ExtendedTooltip name="ТипRALРасширеннаяПодсказка" id="24"/>
+			<Events>
+				<Event name="OnChange">ТипRALПриИзменении</Event>
+			</Events>
+		</InputField>
 		<Table name="Список" id="3">
 			<CommandBarLocation>None</CommandBarLocation>
 			<DefaultItem>true</DefaultItem>
@@ -74,15 +83,15 @@
 			</SearchControlAddition>
 			<ChildItems>
 				<LabelField name="Наименование" id="16">
-					<DataPath>Список.Description</DataPath>
+					<DataPath>Список.Наименование</DataPath>
 					<DefaultItem>true</DefaultItem>
 					<ContextMenu name="НаименованиеКонтекстноеМеню" id="17"/>
 					<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="18"/>
 				</LabelField>
-				<LabelField name="Код" id="19">
-					<DataPath>Список.Code</DataPath>
-					<ContextMenu name="КодКонтекстноеМеню" id="20"/>
-					<ExtendedTooltip name="КодРасширеннаяПодсказка" id="21"/>
+				<LabelField name="КодRAL" id="25">
+					<DataPath>Список.КодRAL</DataPath>
+					<ContextMenu name="КодRALКонтекстноеМеню" id="26"/>
+					<ExtendedTooltip name="КодRALРасширеннаяПодсказка" id="27"/>
 				</LabelField>
 			</ChildItems>
 		</Table>
@@ -94,8 +103,92 @@
 			</Type>
 			<MainAttribute>true</MainAttribute>
 			<Settings xsi:type="DynamicList">
-				<ManualQuery>false</ManualQuery>
+				<ManualQuery>true</ManualQuery>
 				<DynamicDataRead>true</DynamicDataRead>
+				<QueryText>ВЫБРАТЬ
+	СправочникЦветаРАЛ.Ссылка КАК Ссылка,
+	СправочникЦветаРАЛ.ПометкаУдаления КАК ПометкаУдаления,
+	СправочникЦветаРАЛ.Родитель КАК Родитель,
+	СправочникЦветаРАЛ.ЭтоГруппа КАК ЭтоГруппа,
+	СправочникЦветаРАЛ.Код КАК Код,
+	СправочникЦветаРАЛ.Наименование КАК Наименование,
+	СправочникЦветаРАЛ.КодЗеленый КАК КодЗеленый,
+	СправочникЦветаРАЛ.КодКрасный КАК КодКрасный,
+	СправочникЦветаРАЛ.КодСиний КАК КодСиний,
+	СправочникЦветаРАЛ.ТипRAL КАК ТипRAL,
+	СправочникЦветаРАЛ.КодRAL КАК КодRAL,
+	СправочникЦветаРАЛ.Предопределенный КАК Предопределенный,
+	СправочникЦветаРАЛ.ИмяПредопределенныхДанных КАК ИмяПредопределенныхДанных
+ИЗ
+	Справочник.ЦветаРАЛ КАК СправочникЦветаРАЛ
+ГДЕ
+	СправочникЦветаРАЛ.ТипRAL = &amp;ТипRAL</QueryText>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Ссылка</dcssch:dataPath>
+					<dcssch:field>Ссылка</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ПометкаУдаления</dcssch:dataPath>
+					<dcssch:field>ПометкаУдаления</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Код</dcssch:dataPath>
+					<dcssch:field>Код</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Родитель</dcssch:dataPath>
+					<dcssch:field>Родитель</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>КодКрасный</dcssch:dataPath>
+					<dcssch:field>КодКрасный</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ЭтоГруппа</dcssch:dataPath>
+					<dcssch:field>ЭтоГруппа</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Наименование</dcssch:dataPath>
+					<dcssch:field>Наименование</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ИмяПредопределенныхДанных</dcssch:dataPath>
+					<dcssch:field>ИмяПредопределенныхДанных</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>КодЗеленый</dcssch:dataPath>
+					<dcssch:field>КодЗеленый</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>КодСиний</dcssch:dataPath>
+					<dcssch:field>КодСиний</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ТипRAL</dcssch:dataPath>
+					<dcssch:field>ТипRAL</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>КодRAL</dcssch:dataPath>
+					<dcssch:field>КодRAL</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Предопределенный</dcssch:dataPath>
+					<dcssch:field>Предопределенный</dcssch:field>
+				</Field>
+				<Parameter>
+					<dcssch:name>ТипRAL</dcssch:name>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Тип RAL</v8:content>
+						</v8:item>
+					</dcssch:title>
+					<dcssch:valueType>
+						<v8:Type>cfg:EnumRef.ТипыRAL</v8:Type>
+					</dcssch:valueType>
+					<dcssch:value xsi:nil="true"/>
+					<dcssch:useRestriction>true</dcssch:useRestriction>
+				</Parameter>
 				<MainTable>Catalog.ЦветаРАЛ</MainTable>
 				<ListSettings>
 					<dcsset:filter>
@@ -114,6 +207,17 @@
 					<dcsset:itemsUserSettingID>911b6018-f537-43e8-a417-da56b22f9aec</dcsset:itemsUserSettingID>
 				</ListSettings>
 			</Settings>
+		</Attribute>
+		<Attribute name="ТипRAL" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тип RAL</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:EnumRef.ТипыRAL</v8:Type>
+			</Type>
 		</Attribute>
 	</Attributes>
 </Form>
