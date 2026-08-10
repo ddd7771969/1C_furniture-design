@@ -201,22 +201,6 @@
 										<Event name="OnChange">СортировкаПриИзменении</Event>
 									</Events>
 								</RadioButtonField>
-								<CheckBoxField name="НеВыполненные" id="16">
-									<DataPath>НеВыполненныеЗамеры</DataPath>
-									<ReadOnly>true</ReadOnly>
-									<Title>
-										<v8:item>
-											<v8:lang>ru</v8:lang>
-											<v8:content>Не выполненные</v8:content>
-										</v8:item>
-									</Title>
-									<CheckBoxType>Auto</CheckBoxType>
-									<ContextMenu name="НеВыполненныеКонтекстноеМеню" id="17"/>
-									<ExtendedTooltip name="НеВыполненныеРасширеннаяПодсказка" id="18"/>
-									<Events>
-										<Event name="OnChange">НеВыполненныеПриИзменении</Event>
-									</Events>
-								</CheckBoxField>
 							</ChildItems>
 						</UsualGroup>
 					</ChildItems>
@@ -551,14 +535,6 @@
 									<ContextMenu name="ЗадачиИсполнительКонтекстноеМеню" id="36"/>
 									<ExtendedTooltip name="ЗадачиИсполнительРасширеннаяПодсказка" id="37"/>
 								</InputField>
-								<CheckBoxField name="ЗадачиВыполнена" id="38">
-									<DataPath>тзЗадачи.Выполнена</DataPath>
-									<ReadOnly>true</ReadOnly>
-									<EditMode>EnterOnInput</EditMode>
-									<CheckBoxType>Auto</CheckBoxType>
-									<ContextMenu name="ЗадачиВыполненаКонтекстноеМеню" id="39"/>
-									<ExtendedTooltip name="ЗадачиВыполненаРасширеннаяПодсказка" id="40"/>
-								</CheckBoxField>
 								<InputField name="тзЗадачиКрайняяДата" id="56">
 									<DataPath>тзЗадачи.КрайняяДата</DataPath>
 									<EditMode>EnterOnInput</EditMode>
@@ -2822,17 +2798,6 @@
 				<v8:Type>cfg:CatalogRef.Пользователи</v8:Type>
 			</Type>
 		</Attribute>
-		<Attribute name="НеВыполненныеЗамеры" id="5">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Не выполненные замеры</v8:content>
-				</v8:item>
-			</Title>
-			<Type>
-				<v8:Type>xs:boolean</v8:Type>
-			</Type>
-		</Attribute>
 		<Attribute name="тзЗадачи" id="6">
 			<Title>
 				<v8:item>
@@ -2864,17 +2829,6 @@
 					</Title>
 					<Type>
 						<v8:Type>cfg:CatalogRef.Пользователи</v8:Type>
-					</Type>
-				</Column>
-				<Column name="Выполнена" id="3">
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Выполнена</v8:content>
-						</v8:item>
-					</Title>
-					<Type>
-						<v8:Type>xs:boolean</v8:Type>
 					</Type>
 				</Column>
 				<Column name="Проект" id="7">

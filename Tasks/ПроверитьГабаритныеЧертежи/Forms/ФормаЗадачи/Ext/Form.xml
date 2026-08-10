@@ -12,7 +12,6 @@
 		</ChildItems>
 	</AutoCommandBar>
 	<Events>
-		<Event name="AfterWrite">ПослеЗаписи</Event>
 		<Event name="OnOpen">ПриОткрытии</Event>
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 	</Events>
@@ -47,6 +46,12 @@
 					<ContextMenu name="КрайняяДатаИсполненияКонтекстноеМеню" id="54"/>
 					<ExtendedTooltip name="КрайняяДатаИсполненияРасширеннаяПодсказка" id="55"/>
 				</LabelField>
+				<CheckBoxField name="ВыполненаБезКорректировки" id="77">
+					<DataPath>Объект.ВыполненаБезКорректировки</DataPath>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ВыполненаБезКорректировкиКонтекстноеМеню" id="78"/>
+					<ExtendedTooltip name="ВыполненаБезКорректировкиРасширеннаяПодсказка" id="79"/>
+				</CheckBoxField>
 			</ChildItems>
 		</UsualGroup>
 		<UsualGroup name="Группа2" id="38">
@@ -154,44 +159,6 @@
 			<Representation>StrongSeparation</Representation>
 			<ExtendedTooltip name="ГруппаКорректировкаРасширеннаяПодсказка" id="28"/>
 			<ChildItems>
-				<RadioButtonField name="БылаКорректировка" id="35">
-					<DataPath>Объект.БылаКорректировка</DataPath>
-					<TitleLocation>None</TitleLocation>
-					<RadioButtonType>Auto</RadioButtonType>
-					<ChoiceList>
-						<xr:Item>
-							<xr:Presentation/>
-							<xr:CheckState>0</xr:CheckState>
-							<xr:Value xsi:type="FormChoiceListDesTimeValue">
-								<Presentation>
-									<v8:item>
-										<v8:lang>ru</v8:lang>
-										<v8:content>Корректировка сделана</v8:content>
-									</v8:item>
-								</Presentation>
-								<Value xsi:type="xs:decimal">1</Value>
-							</xr:Value>
-						</xr:Item>
-						<xr:Item>
-							<xr:Presentation/>
-							<xr:CheckState>0</xr:CheckState>
-							<xr:Value xsi:type="FormChoiceListDesTimeValue">
-								<Presentation>
-									<v8:item>
-										<v8:lang>ru</v8:lang>
-										<v8:content>Корректировка не нужна</v8:content>
-									</v8:item>
-								</Presentation>
-								<Value xsi:type="xs:decimal">2</Value>
-							</xr:Value>
-						</xr:Item>
-					</ChoiceList>
-					<ContextMenu name="БылаКорректировкаКонтекстноеМеню" id="36"/>
-					<ExtendedTooltip name="БылаКорректировкаРасширеннаяПодсказка" id="37"/>
-					<Events>
-						<Event name="OnChange">БылаКорректировкаПриИзменении</Event>
-					</Events>
-				</RadioButtonField>
 				<InputField name="ДатаКорректировки" id="16">
 					<DataPath>Объект.ДатаПроверки</DataPath>
 					<ReadOnly>true</ReadOnly>
@@ -251,6 +218,11 @@
 					</Picture>
 					<ExtendedTooltip name="КнопкаНачатьВыполнениеРасширеннаяПодсказка" id="65"/>
 				</Button>
+				<Button name="КнопкаКорректировкаНеНужна" id="75">
+					<Type>UsualButton</Type>
+					<CommandName>Form.Command.КорректировкаНеНужна</CommandName>
+					<ExtendedTooltip name="КнопкаКорректировкаНеНужнаРасширеннаяПодсказка" id="76"/>
+				</Button>
 				<Button name="КнопкаЗавершитьВыполнение" id="66">
 					<Type>UsualButton</Type>
 					<Representation>Picture</Representation>
@@ -288,6 +260,23 @@
 					<ExtendedTooltip name="ДекорацияЗапущеныеЗаданияРасширеннаяПодсказка" id="72"/>
 				</LabelDecoration>
 			</ChildItems>
+		</UsualGroup>
+		<UsualGroup name="ГруппаДлительныеДействия" id="73">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа длительные действия</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа длительные действия</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаДлительныеДействияРасширеннаяПодсказка" id="74"/>
 		</UsualGroup>
 	</ChildItems>
 	<Attributes>
@@ -375,6 +364,21 @@
 				</v8:item>
 			</ToolTip>
 			<Action>Сброс</Action>
+		</Command>
+		<Command name="КорректировкаНеНужна" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Корректировка не нужна</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Корректировка не нужна</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>КорректировкаНеНужна</Action>
 		</Command>
 	</Commands>
 	<CommandInterface>
