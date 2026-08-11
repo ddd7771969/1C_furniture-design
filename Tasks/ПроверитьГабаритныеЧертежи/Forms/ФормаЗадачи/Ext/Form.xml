@@ -220,7 +220,14 @@
 				</Button>
 				<Button name="КнопкаКорректировкаНеНужна" id="75">
 					<Type>UsualButton</Type>
+					<Representation>Picture</Representation>
+					<Width>4</Width>
+					<Height>2</Height>
 					<CommandName>Form.Command.КорректировкаНеНужна</CommandName>
+					<Picture>
+						<xr:Ref>CommonPicture.ДокументПроведенКоннекторНиз</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</Picture>
 					<ExtendedTooltip name="КнопкаКорректировкаНеНужнаРасширеннаяПодсказка" id="76"/>
 				</Button>
 				<Button name="КнопкаЗавершитьВыполнение" id="66">
