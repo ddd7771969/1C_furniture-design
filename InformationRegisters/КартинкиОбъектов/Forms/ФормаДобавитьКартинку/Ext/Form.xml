@@ -5,11 +5,13 @@
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 	</Events>
 	<ChildItems>
-		<LabelField name="ОбъектТЗ" id="1">
+		<InputField name="ОбъектТЗ" id="1">
 			<DataPath>ОбъектТЗ</DataPath>
+			<ReadOnly>true</ReadOnly>
+			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 			<ContextMenu name="ОбъектТЗКонтекстноеМеню" id="2"/>
 			<ExtendedTooltip name="ОбъектТЗРасширеннаяПодсказка" id="3"/>
-		</LabelField>
+		</InputField>
 		<UsualGroup name="Группа1" id="4">
 			<Group>AlwaysHorizontal</Group>
 			<Representation>None</Representation>
@@ -76,8 +78,7 @@
 				</v8:item>
 			</Title>
 			<Type>
-				<v8:Type>cfg:CatalogRef.Образец</v8:Type>
-				<v8:Type>cfg:DocumentRef.ЗаявкаНаИзготовлениеОбразца</v8:Type>
+				<v8:TypeSet>cfg:DefinedType.ОбъектыДляКартинок</v8:TypeSet>
 			</Type>
 		</Attribute>
 		<Attribute name="ОписаниеФайла" id="2">

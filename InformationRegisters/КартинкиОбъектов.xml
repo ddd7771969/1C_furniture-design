@@ -287,8 +287,7 @@
 					</Synonym>
 					<Comment/>
 					<Type>
-						<v8:Type>cfg:CatalogRef.Образец</v8:Type>
-						<v8:Type>cfg:DocumentRef.ЗаявкаНаИзготовлениеОбразца</v8:Type>
+						<v8:TypeSet>cfg:DefinedType.ОбъектыДляКартинок</v8:TypeSet>
 					</Type>
 					<PasswordMode>false</PasswordMode>
 					<Format/>
@@ -369,6 +368,8 @@
 				</Properties>
 			</Dimension>
 			<Form>ФормаДобавитьКартинку</Form>
+			<Form>ФормаСохранитьКартинку</Form>
+			<Form>ФормаУдалитьКартинку</Form>
 		</ChildObjects>
 	</InformationRegister>
 </MetaDataObject>

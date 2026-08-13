@@ -92,75 +92,75 @@
 								</InputField>
 							</ChildItems>
 						</UsualGroup>
-						<Table name="Образцы" id="22">
-							<Representation>List</Representation>
-							<AutoInsertNewRow>true</AutoInsertNewRow>
-							<EnableStartDrag>true</EnableStartDrag>
-							<EnableDrag>true</EnableDrag>
-							<DataPath>Объект.Образцы</DataPath>
-							<RowFilter xsi:nil="true"/>
-							<ContextMenu name="ОбразцыКонтекстноеМеню" id="23"/>
-							<AutoCommandBar name="ОбразцыКоманднаяПанель" id="24"/>
-							<ExtendedTooltip name="ОбразцыРасширеннаяПодсказка" id="25"/>
-							<SearchStringAddition name="ОбразцыСтрокаПоиска" id="26">
-								<AdditionSource>
-									<Item>Образцы</Item>
-									<Type>SearchStringRepresentation</Type>
-								</AdditionSource>
-								<ContextMenu name="ОбразцыСтрокаПоискаКонтекстноеМеню" id="27"/>
-								<ExtendedTooltip name="ОбразцыСтрокаПоискаРасширеннаяПодсказка" id="28"/>
-							</SearchStringAddition>
-							<ViewStatusAddition name="ОбразцыСостояниеПросмотра" id="29">
-								<AdditionSource>
-									<Item>Образцы</Item>
-									<Type>ViewStatusRepresentation</Type>
-								</AdditionSource>
-								<ContextMenu name="ОбразцыСостояниеПросмотраКонтекстноеМеню" id="30"/>
-								<ExtendedTooltip name="ОбразцыСостояниеПросмотраРасширеннаяПодсказка" id="31"/>
-							</ViewStatusAddition>
-							<SearchControlAddition name="ОбразцыУправлениеПоиском" id="32">
-								<AdditionSource>
-									<Item>Образцы</Item>
-									<Type>SearchControl</Type>
-								</AdditionSource>
-								<ContextMenu name="ОбразцыУправлениеПоискомКонтекстноеМеню" id="33"/>
-								<ExtendedTooltip name="ОбразцыУправлениеПоискомРасширеннаяПодсказка" id="34"/>
-							</SearchControlAddition>
-							<ChildItems>
-								<LabelField name="ОбразцыНомерСтроки" id="35">
-									<DataPath>Объект.Образцы.LineNumber</DataPath>
-									<EditMode>EnterOnInput</EditMode>
-									<ContextMenu name="ОбразцыНомерСтрокиКонтекстноеМеню" id="36"/>
-									<ExtendedTooltip name="ОбразцыНомерСтрокиРасширеннаяПодсказка" id="37"/>
-								</LabelField>
-								<InputField name="ОбразцыОбразец" id="56">
-									<DataPath>Объект.Образцы.Образец</DataPath>
-									<EditMode>EnterOnInput</EditMode>
-									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-									<ContextMenu name="ОбразцыОбразецКонтекстноеМеню" id="57"/>
-									<ExtendedTooltip name="ОбразцыОбразецРасширеннаяПодсказка" id="58"/>
-								</InputField>
-							</ChildItems>
-						</Table>
+						<UsualGroup name="ГруппаКартинки" id="59">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа картинки</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа картинки</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="ГруппаКартинкиРасширеннаяПодсказка" id="60"/>
+						</UsualGroup>
 					</ChildItems>
 				</UsualGroup>
-				<UsualGroup name="ГруппаКартинки" id="59">
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Группа картинки</v8:content>
-						</v8:item>
-					</Title>
-					<ToolTip>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Группа картинки</v8:content>
-						</v8:item>
-					</ToolTip>
-					<Representation>None</Representation>
-					<ShowTitle>false</ShowTitle>
-					<ExtendedTooltip name="ГруппаКартинкиРасширеннаяПодсказка" id="60"/>
-				</UsualGroup>
+				<Table name="Образцы" id="22">
+					<Representation>List</Representation>
+					<AutoInsertNewRow>true</AutoInsertNewRow>
+					<EnableStartDrag>true</EnableStartDrag>
+					<EnableDrag>true</EnableDrag>
+					<DataPath>Объект.Образцы</DataPath>
+					<RowFilter xsi:nil="true"/>
+					<ContextMenu name="ОбразцыКонтекстноеМеню" id="23"/>
+					<AutoCommandBar name="ОбразцыКоманднаяПанель" id="24"/>
+					<ExtendedTooltip name="ОбразцыРасширеннаяПодсказка" id="25"/>
+					<SearchStringAddition name="ОбразцыСтрокаПоиска" id="26">
+						<AdditionSource>
+							<Item>Образцы</Item>
+							<Type>SearchStringRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ОбразцыСтрокаПоискаКонтекстноеМеню" id="27"/>
+						<ExtendedTooltip name="ОбразцыСтрокаПоискаРасширеннаяПодсказка" id="28"/>
+					</SearchStringAddition>
+					<ViewStatusAddition name="ОбразцыСостояниеПросмотра" id="29">
+						<AdditionSource>
+							<Item>Образцы</Item>
+							<Type>ViewStatusRepresentation</Type>
+						</AdditionSource>
+						<ContextMenu name="ОбразцыСостояниеПросмотраКонтекстноеМеню" id="30"/>
+						<ExtendedTooltip name="ОбразцыСостояниеПросмотраРасширеннаяПодсказка" id="31"/>
+					</ViewStatusAddition>
+					<SearchControlAddition name="ОбразцыУправлениеПоиском" id="32">
+						<AdditionSource>
+							<Item>Образцы</Item>
+							<Type>SearchControl</Type>
+						</AdditionSource>
+						<ContextMenu name="ОбразцыУправлениеПоискомКонтекстноеМеню" id="33"/>
+						<ExtendedTooltip name="ОбразцыУправлениеПоискомРасширеннаяПодсказка" id="34"/>
+					</SearchControlAddition>
+					<ChildItems>
+						<LabelField name="ОбразцыНомерСтроки" id="35">
+							<DataPath>Объект.Образцы.LineNumber</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ContextMenu name="ОбразцыНомерСтрокиКонтекстноеМеню" id="36"/>
+							<ExtendedTooltip name="ОбразцыНомерСтрокиРасширеннаяПодсказка" id="37"/>
+						</LabelField>
+						<InputField name="ОбразцыОбразец" id="56">
+							<DataPath>Объект.Образцы.Образец</DataPath>
+							<EditMode>EnterOnInput</EditMode>
+							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+							<ContextMenu name="ОбразцыОбразецКонтекстноеМеню" id="57"/>
+							<ExtendedTooltip name="ОбразцыОбразецРасширеннаяПодсказка" id="58"/>
+						</InputField>
+					</ChildItems>
+				</Table>
 			</ChildItems>
 		</UsualGroup>
 		<InputField name="Автор" id="19">
