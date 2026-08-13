@@ -5,140 +5,162 @@
 	<RepostOnWrite>true</RepostOnWrite>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
 	<Events>
+		<Event name="AfterWrite">ПослеЗаписи</Event>
+		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 	</Events>
 	<ChildItems>
-		<UsualGroup name="Группа1" id="50">
+		<UsualGroup name="Группа4" id="61">
 			<Group>AlwaysHorizontal</Group>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
-			<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="51"/>
+			<ExtendedTooltip name="Группа4РасширеннаяПодсказка" id="62"/>
 			<ChildItems>
-				<InputField name="Номер" id="1">
-					<DataPath>Объект.Number</DataPath>
-					<ReadOnly>true</ReadOnly>
-					<EditMode>EnterOnInput</EditMode>
-					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-					<ContextMenu name="НомерКонтекстноеМеню" id="2"/>
-					<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="3"/>
-				</InputField>
-				<InputField name="Дата" id="4">
-					<DataPath>Объект.Date</DataPath>
-					<EditMode>EnterOnInput</EditMode>
-					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-					<ContextMenu name="ДатаКонтекстноеМеню" id="5"/>
-					<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="6"/>
-				</InputField>
-			</ChildItems>
-		</UsualGroup>
-		<UsualGroup name="Группа2" id="52">
-			<Group>AlwaysHorizontal</Group>
-			<Representation>None</Representation>
-			<ShowTitle>false</ShowTitle>
-			<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="53"/>
-			<ChildItems>
-				<UsualGroup name="Группа3" id="54">
+				<UsualGroup name="Группа5" id="63">
 					<Group>Vertical</Group>
 					<Representation>None</Representation>
 					<ShowTitle>false</ShowTitle>
-					<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="55"/>
+					<ExtendedTooltip name="Группа5РасширеннаяПодсказка" id="64"/>
 					<ChildItems>
-						<InputField name="Заказчик" id="10">
-							<DataPath>Объект.Заказчик</DataPath>
-							<EditMode>EnterOnInput</EditMode>
-							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-							<ContextMenu name="ЗаказчикКонтекстноеМеню" id="11"/>
-							<ExtendedTooltip name="ЗаказчикРасширеннаяПодсказка" id="12"/>
-						</InputField>
-						<InputField name="Проект" id="7">
-							<DataPath>Объект.Проект</DataPath>
-							<EditMode>EnterOnInput</EditMode>
-							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-							<ContextMenu name="ПроектКонтекстноеМеню" id="8"/>
-							<ExtendedTooltip name="ПроектРасширеннаяПодсказка" id="9"/>
-						</InputField>
-						<InputField name="ИзделиеЗаказчика" id="13">
-							<DataPath>Объект.ИзделиеЗаказчика</DataPath>
-							<EditMode>EnterOnInput</EditMode>
-							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-							<ContextMenu name="ИзделиеЗаказчикаКонтекстноеМеню" id="14"/>
-							<ExtendedTooltip name="ИзделиеЗаказчикаРасширеннаяПодсказка" id="15"/>
-						</InputField>
+						<UsualGroup name="Группа1" id="50">
+							<Group>AlwaysHorizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа1РасширеннаяПодсказка" id="51"/>
+							<ChildItems>
+								<InputField name="Номер" id="1">
+									<DataPath>Объект.Number</DataPath>
+									<ReadOnly>true</ReadOnly>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="НомерКонтекстноеМеню" id="2"/>
+									<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="3"/>
+								</InputField>
+								<InputField name="Дата" id="4">
+									<DataPath>Объект.Date</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ДатаКонтекстноеМеню" id="5"/>
+									<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="6"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<UsualGroup name="Группа2" id="52">
+							<Group>AlwaysHorizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="53"/>
+							<ChildItems>
+								<UsualGroup name="Группа3" id="54">
+									<Group>Vertical</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="55"/>
+									<ChildItems>
+										<InputField name="Заказчик" id="10">
+											<DataPath>Объект.Заказчик</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="ЗаказчикКонтекстноеМеню" id="11"/>
+											<ExtendedTooltip name="ЗаказчикРасширеннаяПодсказка" id="12"/>
+										</InputField>
+										<InputField name="Проект" id="7">
+											<DataPath>Объект.Проект</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="ПроектКонтекстноеМеню" id="8"/>
+											<ExtendedTooltip name="ПроектРасширеннаяПодсказка" id="9"/>
+										</InputField>
+										<InputField name="ИзделиеЗаказчика" id="13">
+											<DataPath>Объект.ИзделиеЗаказчика</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="ИзделиеЗаказчикаКонтекстноеМеню" id="14"/>
+											<ExtendedTooltip name="ИзделиеЗаказчикаРасширеннаяПодсказка" id="15"/>
+										</InputField>
+									</ChildItems>
+								</UsualGroup>
+								<InputField name="Комментарий" id="16">
+									<DataPath>Объект.Комментарий</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<MultiLine>true</MultiLine>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="КомментарийКонтекстноеМеню" id="17"/>
+									<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="18"/>
+								</InputField>
+							</ChildItems>
+						</UsualGroup>
+						<Table name="Образцы" id="22">
+							<Representation>List</Representation>
+							<AutoInsertNewRow>true</AutoInsertNewRow>
+							<EnableStartDrag>true</EnableStartDrag>
+							<EnableDrag>true</EnableDrag>
+							<DataPath>Объект.Образцы</DataPath>
+							<RowFilter xsi:nil="true"/>
+							<ContextMenu name="ОбразцыКонтекстноеМеню" id="23"/>
+							<AutoCommandBar name="ОбразцыКоманднаяПанель" id="24"/>
+							<ExtendedTooltip name="ОбразцыРасширеннаяПодсказка" id="25"/>
+							<SearchStringAddition name="ОбразцыСтрокаПоиска" id="26">
+								<AdditionSource>
+									<Item>Образцы</Item>
+									<Type>SearchStringRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ОбразцыСтрокаПоискаКонтекстноеМеню" id="27"/>
+								<ExtendedTooltip name="ОбразцыСтрокаПоискаРасширеннаяПодсказка" id="28"/>
+							</SearchStringAddition>
+							<ViewStatusAddition name="ОбразцыСостояниеПросмотра" id="29">
+								<AdditionSource>
+									<Item>Образцы</Item>
+									<Type>ViewStatusRepresentation</Type>
+								</AdditionSource>
+								<ContextMenu name="ОбразцыСостояниеПросмотраКонтекстноеМеню" id="30"/>
+								<ExtendedTooltip name="ОбразцыСостояниеПросмотраРасширеннаяПодсказка" id="31"/>
+							</ViewStatusAddition>
+							<SearchControlAddition name="ОбразцыУправлениеПоиском" id="32">
+								<AdditionSource>
+									<Item>Образцы</Item>
+									<Type>SearchControl</Type>
+								</AdditionSource>
+								<ContextMenu name="ОбразцыУправлениеПоискомКонтекстноеМеню" id="33"/>
+								<ExtendedTooltip name="ОбразцыУправлениеПоискомРасширеннаяПодсказка" id="34"/>
+							</SearchControlAddition>
+							<ChildItems>
+								<LabelField name="ОбразцыНомерСтроки" id="35">
+									<DataPath>Объект.Образцы.LineNumber</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ContextMenu name="ОбразцыНомерСтрокиКонтекстноеМеню" id="36"/>
+									<ExtendedTooltip name="ОбразцыНомерСтрокиРасширеннаяПодсказка" id="37"/>
+								</LabelField>
+								<InputField name="ОбразцыОбразец" id="56">
+									<DataPath>Объект.Образцы.Образец</DataPath>
+									<EditMode>EnterOnInput</EditMode>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="ОбразцыОбразецКонтекстноеМеню" id="57"/>
+									<ExtendedTooltip name="ОбразцыОбразецРасширеннаяПодсказка" id="58"/>
+								</InputField>
+							</ChildItems>
+						</Table>
 					</ChildItems>
 				</UsualGroup>
-				<InputField name="Комментарий" id="16">
-					<DataPath>Объект.Комментарий</DataPath>
-					<EditMode>EnterOnInput</EditMode>
-					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-					<ContextMenu name="КомментарийКонтекстноеМеню" id="17"/>
-					<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="18"/>
-				</InputField>
+				<UsualGroup name="ГруппаКартинки" id="59">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа картинки</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа картинки</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="ГруппаКартинкиРасширеннаяПодсказка" id="60"/>
+				</UsualGroup>
 			</ChildItems>
 		</UsualGroup>
-		<Table name="Образцы" id="22">
-			<Representation>List</Representation>
-			<AutoInsertNewRow>true</AutoInsertNewRow>
-			<EnableStartDrag>true</EnableStartDrag>
-			<EnableDrag>true</EnableDrag>
-			<DataPath>Объект.Образцы</DataPath>
-			<RowFilter xsi:nil="true"/>
-			<ContextMenu name="ОбразцыКонтекстноеМеню" id="23"/>
-			<AutoCommandBar name="ОбразцыКоманднаяПанель" id="24"/>
-			<ExtendedTooltip name="ОбразцыРасширеннаяПодсказка" id="25"/>
-			<SearchStringAddition name="ОбразцыСтрокаПоиска" id="26">
-				<AdditionSource>
-					<Item>Образцы</Item>
-					<Type>SearchStringRepresentation</Type>
-				</AdditionSource>
-				<ContextMenu name="ОбразцыСтрокаПоискаКонтекстноеМеню" id="27"/>
-				<ExtendedTooltip name="ОбразцыСтрокаПоискаРасширеннаяПодсказка" id="28"/>
-			</SearchStringAddition>
-			<ViewStatusAddition name="ОбразцыСостояниеПросмотра" id="29">
-				<AdditionSource>
-					<Item>Образцы</Item>
-					<Type>ViewStatusRepresentation</Type>
-				</AdditionSource>
-				<ContextMenu name="ОбразцыСостояниеПросмотраКонтекстноеМеню" id="30"/>
-				<ExtendedTooltip name="ОбразцыСостояниеПросмотраРасширеннаяПодсказка" id="31"/>
-			</ViewStatusAddition>
-			<SearchControlAddition name="ОбразцыУправлениеПоиском" id="32">
-				<AdditionSource>
-					<Item>Образцы</Item>
-					<Type>SearchControl</Type>
-				</AdditionSource>
-				<ContextMenu name="ОбразцыУправлениеПоискомКонтекстноеМеню" id="33"/>
-				<ExtendedTooltip name="ОбразцыУправлениеПоискомРасширеннаяПодсказка" id="34"/>
-			</SearchControlAddition>
-			<ChildItems>
-				<LabelField name="ОбразцыНомерСтроки" id="35">
-					<DataPath>Объект.Образцы.LineNumber</DataPath>
-					<EditMode>EnterOnInput</EditMode>
-					<ContextMenu name="ОбразцыНомерСтрокиКонтекстноеМеню" id="36"/>
-					<ExtendedTooltip name="ОбразцыНомерСтрокиРасширеннаяПодсказка" id="37"/>
-				</LabelField>
-				<InputField name="ОбразцыОписаниеОбразца" id="38">
-					<DataPath>Объект.Образцы.ОписаниеОбразца</DataPath>
-					<EditMode>EnterOnInput</EditMode>
-					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-					<ContextMenu name="ОбразцыОписаниеОбразцаКонтекстноеМеню" id="39"/>
-					<ExtendedTooltip name="ОбразцыОписаниеОбразцаРасширеннаяПодсказка" id="40"/>
-				</InputField>
-				<CheckBoxField name="ОбразцыПроизведен" id="44">
-					<DataPath>Объект.Образцы.Произведен</DataPath>
-					<EditMode>EnterOnInput</EditMode>
-					<CheckBoxType>Auto</CheckBoxType>
-					<ContextMenu name="ОбразцыПроизведенКонтекстноеМеню" id="45"/>
-					<ExtendedTooltip name="ОбразцыПроизведенРасширеннаяПодсказка" id="46"/>
-				</CheckBoxField>
-				<CheckBoxField name="ОбразцыОтказ" id="47">
-					<DataPath>Объект.Образцы.Отказ</DataPath>
-					<EditMode>EnterOnInput</EditMode>
-					<CheckBoxType>Auto</CheckBoxType>
-					<ContextMenu name="ОбразцыОтказКонтекстноеМеню" id="48"/>
-					<ExtendedTooltip name="ОбразцыОтказРасширеннаяПодсказка" id="49"/>
-				</CheckBoxField>
-			</ChildItems>
-		</Table>
 		<InputField name="Автор" id="19">
 			<DataPath>Объект.Автор</DataPath>
 			<ReadOnly>true</ReadOnly>

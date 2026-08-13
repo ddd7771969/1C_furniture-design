@@ -899,6 +899,93 @@
 										</Table>
 									</ChildItems>
 								</Page>
+								<Page name="ГруппаОбразцы" id="602">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Образцы</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа образцы</v8:content>
+										</v8:item>
+									</ToolTip>
+									<ExtendedTooltip name="ГруппаОбразцыРасширеннаяПодсказка" id="603"/>
+									<ChildItems>
+										<Table name="Образцы" id="604">
+											<AutoInsertNewRow>true</AutoInsertNewRow>
+											<EnableStartDrag>true</EnableStartDrag>
+											<EnableDrag>true</EnableDrag>
+											<DataPath>Объект.Образцы</DataPath>
+											<RowFilter xsi:nil="true"/>
+											<ContextMenu name="ОбразцыКонтекстноеМеню" id="605"/>
+											<AutoCommandBar name="ОбразцыКоманднаяПанель" id="606"/>
+											<ExtendedTooltip name="ОбразцыРасширеннаяПодсказка" id="607"/>
+											<SearchStringAddition name="ОбразцыСтрокаПоиска" id="608">
+												<AdditionSource>
+													<Item>Образцы</Item>
+													<Type>SearchStringRepresentation</Type>
+												</AdditionSource>
+												<ContextMenu name="ОбразцыСтрокаПоискаКонтекстноеМеню" id="609"/>
+												<ExtendedTooltip name="ОбразцыСтрокаПоискаРасширеннаяПодсказка" id="610"/>
+											</SearchStringAddition>
+											<ViewStatusAddition name="ОбразцыСостояниеПросмотра" id="611">
+												<AdditionSource>
+													<Item>Образцы</Item>
+													<Type>ViewStatusRepresentation</Type>
+												</AdditionSource>
+												<ContextMenu name="ОбразцыСостояниеПросмотраКонтекстноеМеню" id="612"/>
+												<ExtendedTooltip name="ОбразцыСостояниеПросмотраРасширеннаяПодсказка" id="613"/>
+											</ViewStatusAddition>
+											<SearchControlAddition name="ОбразцыУправлениеПоиском" id="614">
+												<AdditionSource>
+													<Item>Образцы</Item>
+													<Type>SearchControl</Type>
+												</AdditionSource>
+												<ContextMenu name="ОбразцыУправлениеПоискомКонтекстноеМеню" id="615"/>
+												<ExtendedTooltip name="ОбразцыУправлениеПоискомРасширеннаяПодсказка" id="616"/>
+											</SearchControlAddition>
+											<ChildItems>
+												<LabelField name="ОбразцыНомерСтроки" id="617">
+													<DataPath>Объект.Образцы.LineNumber</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ContextMenu name="ОбразцыНомерСтрокиКонтекстноеМеню" id="618"/>
+													<ExtendedTooltip name="ОбразцыНомерСтрокиРасширеннаяПодсказка" id="619"/>
+												</LabelField>
+												<InputField name="ОбразцыОписаниеДетали" id="620">
+													<DataPath>Объект.Образцы.ОписаниеДетали</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+													<ContextMenu name="ОбразцыОписаниеДеталиКонтекстноеМеню" id="621"/>
+													<ExtendedTooltip name="ОбразцыОписаниеДеталиРасширеннаяПодсказка" id="622"/>
+												</InputField>
+												<InputField name="ОбразцыКомментарий" id="623">
+													<DataPath>Объект.Образцы.Комментарий</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+													<ContextMenu name="ОбразцыКомментарийКонтекстноеМеню" id="624"/>
+													<ExtendedTooltip name="ОбразцыКомментарийРасширеннаяПодсказка" id="625"/>
+												</InputField>
+												<CheckBoxField name="ОбразцыТребуетсяОбразец" id="626">
+													<DataPath>Объект.Образцы.ТребуетсяОбразец</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<CheckBoxType>Auto</CheckBoxType>
+													<ContextMenu name="ОбразцыТребуетсяОбразецКонтекстноеМеню" id="627"/>
+													<ExtendedTooltip name="ОбразцыТребуетсяОбразецРасширеннаяПодсказка" id="628"/>
+												</CheckBoxField>
+												<InputField name="ОбразцыОбразец" id="629">
+													<DataPath>Объект.Образцы.Образец</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+													<ContextMenu name="ОбразцыОбразецКонтекстноеМеню" id="630"/>
+													<ExtendedTooltip name="ОбразцыОбразецРасширеннаяПодсказка" id="631"/>
+												</InputField>
+											</ChildItems>
+										</Table>
+									</ChildItems>
+								</Page>
 							</ChildItems>
 						</Pages>
 					</ChildItems>
