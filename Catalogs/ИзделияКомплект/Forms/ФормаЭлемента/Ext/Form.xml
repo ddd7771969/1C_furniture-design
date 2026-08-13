@@ -954,19 +954,19 @@
 													<ContextMenu name="ОбразцыНомерСтрокиКонтекстноеМеню" id="618"/>
 													<ExtendedTooltip name="ОбразцыНомерСтрокиРасширеннаяПодсказка" id="619"/>
 												</LabelField>
-												<InputField name="ОбразцыОписаниеДетали" id="620">
-													<DataPath>Объект.Образцы.ОписаниеДетали</DataPath>
+												<InputField name="ОбразцыКомпонентИзделия" id="632">
+													<DataPath>Объект.Образцы.КомпонентИзделия</DataPath>
 													<EditMode>EnterOnInput</EditMode>
 													<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-													<ContextMenu name="ОбразцыОписаниеДеталиКонтекстноеМеню" id="621"/>
-													<ExtendedTooltip name="ОбразцыОписаниеДеталиРасширеннаяПодсказка" id="622"/>
+													<ContextMenu name="ОбразцыКомпонентИзделияКонтекстноеМеню" id="633"/>
+													<ExtendedTooltip name="ОбразцыКомпонентИзделияРасширеннаяПодсказка" id="634"/>
 												</InputField>
-												<InputField name="ОбразцыКомментарий" id="623">
-													<DataPath>Объект.Образцы.Комментарий</DataPath>
+												<InputField name="ОбразцыОписаниеОтделки" id="635">
+													<DataPath>Объект.Образцы.ОписаниеОтделки</DataPath>
 													<EditMode>EnterOnInput</EditMode>
 													<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-													<ContextMenu name="ОбразцыКомментарийКонтекстноеМеню" id="624"/>
-													<ExtendedTooltip name="ОбразцыКомментарийРасширеннаяПодсказка" id="625"/>
+													<ContextMenu name="ОбразцыОписаниеОтделкиКонтекстноеМеню" id="636"/>
+													<ExtendedTooltip name="ОбразцыОписаниеОтделкиРасширеннаяПодсказка" id="637"/>
 												</InputField>
 												<CheckBoxField name="ОбразцыТребуетсяОбразец" id="626">
 													<DataPath>Объект.Образцы.ТребуетсяОбразец</DataPath>
@@ -981,6 +981,13 @@
 													<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 													<ContextMenu name="ОбразцыОбразецКонтекстноеМеню" id="630"/>
 													<ExtendedTooltip name="ОбразцыОбразецРасширеннаяПодсказка" id="631"/>
+												</InputField>
+												<InputField name="ОбразцыКомментарий" id="623">
+													<DataPath>Объект.Образцы.Комментарий</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+													<ContextMenu name="ОбразцыКомментарийКонтекстноеМеню" id="624"/>
+													<ExtendedTooltip name="ОбразцыКомментарийРасширеннаяПодсказка" id="625"/>
 												</InputField>
 											</ChildItems>
 										</Table>
