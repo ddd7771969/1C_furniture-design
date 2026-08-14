@@ -200,6 +200,7 @@
 											</SearchControlAddition>
 											<Events>
 												<Event name="OnActivateRow">ОбразцыПриАктивизацииСтроки</Event>
+												<Event name="OnChange">ОбразцыПриИзменении</Event>
 											</Events>
 											<ChildItems>
 												<LabelField name="ОбразцыНомерСтроки" id="35">
@@ -234,11 +235,11 @@
 															<CommandName>Form.Command.КартинкаВлево</CommandName>
 															<ExtendedTooltip name="КартинкаВЛевоРасширеннаяПодсказка" id="85"/>
 														</Button>
-														<LabelField name="НомерКартинки" id="86">
+														<LabelField name="ОписаниеНомерКартинки" id="86">
 															<DataPath>ОписаниеНомерКартинки</DataPath>
 															<TitleLocation>None</TitleLocation>
-															<ContextMenu name="НомерКартинкиКонтекстноеМеню" id="87"/>
-															<ExtendedTooltip name="НомерКартинкиРасширеннаяПодсказка" id="88"/>
+															<ContextMenu name="ОписаниеНомерКартинкиКонтекстноеМеню" id="87"/>
+															<ExtendedTooltip name="ОписаниеНомерКартинкиРасширеннаяПодсказка" id="88"/>
 														</LabelField>
 														<Button name="КартинкаВПраво" id="93">
 															<Type>UsualButton</Type>
