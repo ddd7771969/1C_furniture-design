@@ -12,6 +12,17 @@
 		<Event name="OnClose">ПриЗакрытии</Event>
 	</Events>
 	<ChildItems>
+		<LabelDecoration name="ДекорацияНеобходимоЗаписать" id="65">
+			<TextColor>#0000FF</TextColor>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Для добавления картинок необходимо записать Заявку.</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="ДекорацияНеобходимоЗаписатьКонтекстноеМеню" id="66"/>
+			<ExtendedTooltip name="ДекорацияНеобходимоЗаписатьРасширеннаяПодсказка" id="67"/>
+		</LabelDecoration>
 		<UsualGroup name="Группа4" id="61">
 			<Group>AlwaysHorizontal</Group>
 			<Representation>None</Representation>
@@ -45,6 +56,12 @@
 									<ContextMenu name="ДатаКонтекстноеМеню" id="5"/>
 									<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="6"/>
 								</InputField>
+								<CheckBoxField name="ЗаявкаВыполнена" id="68">
+									<DataPath>Объект.ЗаявкаВыполнена</DataPath>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ЗаявкаВыполненаКонтекстноеМеню" id="69"/>
+									<ExtendedTooltip name="ЗаявкаВыполненаРасширеннаяПодсказка" id="70"/>
+								</CheckBoxField>
 							</ChildItems>
 						</UsualGroup>
 						<UsualGroup name="Группа2" id="52">
