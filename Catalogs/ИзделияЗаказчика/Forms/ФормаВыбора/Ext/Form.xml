@@ -177,6 +177,11 @@
 				ТОГДА ИСТИНА
 			ИНАЧЕ спрЭлементыСделки.Проект = &amp;Проект
 		КОНЕЦ
+	И ВЫБОР
+			КОГДА &amp;ПоказыватьПапки
+				ТОГДА ИСТИНА
+			ИНАЧЕ НЕ спрЭлементыСделки.ЭтоГруппа
+		КОНЕЦ
 
 СГРУППИРОВАТЬ ПО
 	спрЭлементыСделки.Ссылка,
@@ -316,6 +321,20 @@
 						<v8:Type>cfg:CatalogRef.Проекты</v8:Type>
 					</dcssch:valueType>
 					<dcssch:value xsi:nil="true"/>
+					<dcssch:useRestriction>true</dcssch:useRestriction>
+				</Parameter>
+				<Parameter>
+					<dcssch:name>ПоказыватьПапки</dcssch:name>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Показывать папки</v8:content>
+						</v8:item>
+					</dcssch:title>
+					<dcssch:valueType>
+						<v8:Type>xs:boolean</v8:Type>
+					</dcssch:valueType>
+					<dcssch:value xsi:type="xs:boolean">false</dcssch:value>
 					<dcssch:useRestriction>true</dcssch:useRestriction>
 				</Parameter>
 				<MainTable>Catalog.ИзделияЗаказчика</MainTable>

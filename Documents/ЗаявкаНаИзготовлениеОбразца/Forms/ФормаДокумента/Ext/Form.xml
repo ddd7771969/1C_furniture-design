@@ -70,61 +70,82 @@
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="53"/>
 							<ChildItems>
-								<UsualGroup name="Группа3" id="54">
+								<UsualGroup name="Группа6" id="73">
 									<Group>Vertical</Group>
 									<Representation>None</Representation>
 									<ShowTitle>false</ShowTitle>
-									<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="55"/>
+									<ExtendedTooltip name="Группа6РасширеннаяПодсказка" id="74"/>
 									<ChildItems>
-										<InputField name="Заказчик" id="10">
-											<DataPath>Объект.Заказчик</DataPath>
-											<EditMode>EnterOnInput</EditMode>
-											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-											<ContextMenu name="ЗаказчикКонтекстноеМеню" id="11"/>
-											<ExtendedTooltip name="ЗаказчикРасширеннаяПодсказка" id="12"/>
-										</InputField>
-										<InputField name="Проект" id="7">
-											<DataPath>Объект.Проект</DataPath>
-											<EditMode>EnterOnInput</EditMode>
-											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-											<ContextMenu name="ПроектКонтекстноеМеню" id="8"/>
-											<ExtendedTooltip name="ПроектРасширеннаяПодсказка" id="9"/>
-										</InputField>
-										<InputField name="ИзделиеЗаказчика" id="13">
-											<DataPath>Объект.ИзделиеЗаказчика</DataPath>
-											<EditMode>EnterOnInput</EditMode>
-											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-											<ContextMenu name="ИзделиеЗаказчикаКонтекстноеМеню" id="14"/>
-											<ExtendedTooltip name="ИзделиеЗаказчикаРасширеннаяПодсказка" id="15"/>
-										</InputField>
+										<UsualGroup name="Группа3" id="54">
+											<Group>Vertical</Group>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="55"/>
+											<ChildItems>
+												<InputField name="Заказчик" id="10">
+													<DataPath>Объект.Заказчик</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+													<ContextMenu name="ЗаказчикКонтекстноеМеню" id="11"/>
+													<ExtendedTooltip name="ЗаказчикРасширеннаяПодсказка" id="12"/>
+												</InputField>
+												<InputField name="Проект" id="7">
+													<DataPath>Объект.Проект</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+													<ContextMenu name="ПроектКонтекстноеМеню" id="8"/>
+													<ExtendedTooltip name="ПроектРасширеннаяПодсказка" id="9"/>
+												</InputField>
+												<InputField name="ИзделиеЗаказчика" id="13">
+													<DataPath>Объект.ИзделиеЗаказчика</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+													<ContextMenu name="ИзделиеЗаказчикаКонтекстноеМеню" id="14"/>
+													<ExtendedTooltip name="ИзделиеЗаказчикаРасширеннаяПодсказка" id="15"/>
+													<Events>
+														<Event name="StartChoice">ИзделиеЗаказчикаНачалоВыбора</Event>
+													</Events>
+												</InputField>
+											</ChildItems>
+										</UsualGroup>
+										<UsualGroup name="ГруппаКартинки" id="59">
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа картинки</v8:content>
+												</v8:item>
+											</Title>
+											<ToolTip>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Группа картинки</v8:content>
+												</v8:item>
+											</ToolTip>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="ГруппаКартинкиРасширеннаяПодсказка" id="60"/>
+										</UsualGroup>
 									</ChildItems>
 								</UsualGroup>
-								<InputField name="Комментарий" id="16">
-									<DataPath>Объект.Комментарий</DataPath>
-									<EditMode>EnterOnInput</EditMode>
-									<MultiLine>true</MultiLine>
-									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-									<ContextMenu name="КомментарийКонтекстноеМеню" id="17"/>
-									<ExtendedTooltip name="КомментарийРасширеннаяПодсказка" id="18"/>
-								</InputField>
+								<UsualGroup name="ГруппаКомментарий" id="71">
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа комментарий</v8:content>
+										</v8:item>
+									</Title>
+									<ToolTip>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Группа комментарий</v8:content>
+										</v8:item>
+									</ToolTip>
+									<Group>Vertical</Group>
+									<Representation>None</Representation>
+									<ShowTitle>false</ShowTitle>
+									<ExtendedTooltip name="ГруппаКомментарийРасширеннаяПодсказка" id="72"/>
+								</UsualGroup>
 							</ChildItems>
-						</UsualGroup>
-						<UsualGroup name="ГруппаКартинки" id="59">
-							<Title>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Группа картинки</v8:content>
-								</v8:item>
-							</Title>
-							<ToolTip>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>Группа картинки</v8:content>
-								</v8:item>
-							</ToolTip>
-							<Representation>None</Representation>
-							<ShowTitle>false</ShowTitle>
-							<ExtendedTooltip name="ГруппаКартинкиРасширеннаяПодсказка" id="60"/>
 						</UsualGroup>
 					</ChildItems>
 				</UsualGroup>
