@@ -110,6 +110,13 @@
 						<Event name="OnChange">ТаблицаТаймингаНормативПриИзменении</Event>
 					</Events>
 				</InputField>
+				<InputField name="ТаблицаТаймингаАвтор" id="49">
+					<DataPath>ТаблицаТайминга.Автор</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ТаблицаТаймингаАвторКонтекстноеМеню" id="50"/>
+					<ExtendedTooltip name="ТаблицаТаймингаАвторРасширеннаяПодсказка" id="51"/>
+				</InputField>
 				<InputField name="ТаблицаТаймингаПлан" id="35">
 					<DataPath>ТаблицаТайминга.ПлановоеЗначение</DataPath>
 					<ReadOnly>true</ReadOnly>
@@ -338,6 +345,17 @@
 						</v8:item>
 					</Title>
 					<Type/>
+				</Column>
+				<Column name="Автор" id="15">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Автор</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Пользователи</v8:Type>
+					</Type>
 				</Column>
 			</Columns>
 		</Attribute>
