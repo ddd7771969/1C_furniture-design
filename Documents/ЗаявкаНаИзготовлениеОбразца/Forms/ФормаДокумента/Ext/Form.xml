@@ -62,7 +62,7 @@
 									<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="53"/>
 									<ChildItems>
 										<UsualGroup name="Группа6" id="73">
-											<Group>Vertical</Group>
+											<Group>AlwaysHorizontal</Group>
 											<Representation>None</Representation>
 											<ShowTitle>false</ShowTitle>
 											<ExtendedTooltip name="Группа6РасширеннаяПодсказка" id="74"/>
@@ -122,6 +122,16 @@
 													<ShowTitle>false</ShowTitle>
 													<ExtendedTooltip name="ГруппаКартинкиРасширеннаяПодсказка" id="60"/>
 												</UsualGroup>
+												<InputField name="Описание" id="147">
+													<DataPath>Объект.Описание</DataPath>
+													<Height>4</Height>
+													<AutoMaxHeight>false</AutoMaxHeight>
+													<VerticalStretch>false</VerticalStretch>
+													<MultiLine>true</MultiLine>
+													<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+													<ContextMenu name="ОписаниеКонтекстноеМеню" id="148"/>
+													<ExtendedTooltip name="ОписаниеРасширеннаяПодсказка" id="149"/>
+												</InputField>
 											</ChildItems>
 										</UsualGroup>
 									</ChildItems>
