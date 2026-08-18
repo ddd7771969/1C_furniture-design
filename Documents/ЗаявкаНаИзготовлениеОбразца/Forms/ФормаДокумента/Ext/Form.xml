@@ -5,6 +5,49 @@
 	<RepostOnWrite>true</RepostOnWrite>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
 		<Autofill>false</Autofill>
+		<ChildItems>
+			<Button name="ЗаписатДокумент" id="138">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.ЗаписатьДокумент</CommandName>
+				<ExtendedTooltip name="ЗаписатДокументРасширеннаяПодсказка" id="139"/>
+			</Button>
+			<Button name="Производство" id="140">
+				<Type>CommandBarButton</Type>
+				<CommandName>Form.Command.Производство</CommandName>
+				<ExtendedTooltip name="ПроизводствоРасширеннаяПодсказка" id="141"/>
+			</Button>
+			<ButtonGroup name="ФормаПринятие" id="154">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Форма принятие</v8:content>
+					</v8:item>
+				</Title>
+				<ToolTip>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Форма принятие</v8:content>
+					</v8:item>
+				</ToolTip>
+				<HorizontalStretch>true</HorizontalStretch>
+				<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+				<ExtendedTooltip name="ФормаПринятиеРасширеннаяПодсказка" id="155"/>
+				<ChildItems>
+					<Button name="ФормаДополнение" id="152">
+						<Type>CommandBarButton</Type>
+						<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+						<CommandName>Form.Command.Дополнение</CommandName>
+						<ExtendedTooltip name="ФормаДополнениеРасширеннаяПодсказка" id="153"/>
+					</Button>
+					<Button name="ФормаПринять" id="150">
+						<Type>CommandBarButton</Type>
+						<GroupHorizontalAlign>Right</GroupHorizontalAlign>
+						<CommandName>Form.Command.Принять</CommandName>
+						<ExtendedTooltip name="ФормаПринятьРасширеннаяПодсказка" id="151"/>
+					</Button>
+				</ChildItems>
+			</ButtonGroup>
+		</ChildItems>
 	</AutoCommandBar>
 	<Events>
 		<Event name="AfterWrite">ПослеЗаписи</Event>
@@ -62,16 +105,16 @@
 									<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="53"/>
 									<ChildItems>
 										<UsualGroup name="Группа6" id="73">
-											<Group>AlwaysHorizontal</Group>
+											<Group>Vertical</Group>
 											<Representation>None</Representation>
 											<ShowTitle>false</ShowTitle>
 											<ExtendedTooltip name="Группа6РасширеннаяПодсказка" id="74"/>
 											<ChildItems>
-												<UsualGroup name="Группа3" id="54">
-													<Group>Vertical</Group>
+												<UsualGroup name="Группа13" id="156">
+													<Group>AlwaysHorizontal</Group>
 													<Representation>None</Representation>
 													<ShowTitle>false</ShowTitle>
-													<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="55"/>
+													<ExtendedTooltip name="Группа13РасширеннаяПодсказка" id="157"/>
 													<ChildItems>
 														<InputField name="КраткоеНаименование" id="106">
 															<DataPath>Объект.КраткоеНаименование</DataPath>
@@ -79,29 +122,61 @@
 															<ContextMenu name="КраткоеНаименованиеКонтекстноеМеню" id="107"/>
 															<ExtendedTooltip name="КраткоеНаименованиеРасширеннаяПодсказка" id="108"/>
 														</InputField>
-														<InputField name="Заказчик" id="10">
-															<DataPath>Объект.Заказчик</DataPath>
-															<EditMode>EnterOnInput</EditMode>
+														<LabelField name="СтатусЗаявки" id="158">
+															<DataPath>Объект.СтатусЗаявки</DataPath>
+															<TitleLocation>None</TitleLocation>
+															<ContextMenu name="СтатусЗаявкиКонтекстноеМеню" id="159"/>
+															<ExtendedTooltip name="СтатусЗаявкиРасширеннаяПодсказка" id="160"/>
+														</LabelField>
+													</ChildItems>
+												</UsualGroup>
+												<UsualGroup name="Группа15" id="161">
+													<Group>AlwaysHorizontal</Group>
+													<Representation>None</Representation>
+													<ShowTitle>false</ShowTitle>
+													<ExtendedTooltip name="Группа15РасширеннаяПодсказка" id="162"/>
+													<ChildItems>
+														<UsualGroup name="Группа3" id="54">
+															<Group>Vertical</Group>
+															<Representation>None</Representation>
+															<ShowTitle>false</ShowTitle>
+															<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="55"/>
+															<ChildItems>
+																<InputField name="Заказчик" id="10">
+																	<DataPath>Объект.Заказчик</DataPath>
+																	<EditMode>EnterOnInput</EditMode>
+																	<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+																	<ContextMenu name="ЗаказчикКонтекстноеМеню" id="11"/>
+																	<ExtendedTooltip name="ЗаказчикРасширеннаяПодсказка" id="12"/>
+																</InputField>
+																<InputField name="Проект" id="7">
+																	<DataPath>Объект.Проект</DataPath>
+																	<EditMode>EnterOnInput</EditMode>
+																	<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+																	<ContextMenu name="ПроектКонтекстноеМеню" id="8"/>
+																	<ExtendedTooltip name="ПроектРасширеннаяПодсказка" id="9"/>
+																</InputField>
+																<InputField name="ИзделиеЗаказчика" id="13">
+																	<DataPath>Объект.ИзделиеЗаказчика</DataPath>
+																	<EditMode>EnterOnInput</EditMode>
+																	<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+																	<ContextMenu name="ИзделиеЗаказчикаКонтекстноеМеню" id="14"/>
+																	<ExtendedTooltip name="ИзделиеЗаказчикаРасширеннаяПодсказка" id="15"/>
+																	<Events>
+																		<Event name="StartChoice">ИзделиеЗаказчикаНачалоВыбора</Event>
+																	</Events>
+																</InputField>
+															</ChildItems>
+														</UsualGroup>
+														<InputField name="Описание" id="147">
+															<DataPath>Объект.Описание</DataPath>
+															<Height>3</Height>
+															<AutoMaxHeight>false</AutoMaxHeight>
+															<VerticalStretch>false</VerticalStretch>
+															<MultiLine>true</MultiLine>
 															<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-															<ContextMenu name="ЗаказчикКонтекстноеМеню" id="11"/>
-															<ExtendedTooltip name="ЗаказчикРасширеннаяПодсказка" id="12"/>
-														</InputField>
-														<InputField name="Проект" id="7">
-															<DataPath>Объект.Проект</DataPath>
-															<EditMode>EnterOnInput</EditMode>
-															<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-															<ContextMenu name="ПроектКонтекстноеМеню" id="8"/>
-															<ExtendedTooltip name="ПроектРасширеннаяПодсказка" id="9"/>
-														</InputField>
-														<InputField name="ИзделиеЗаказчика" id="13">
-															<DataPath>Объект.ИзделиеЗаказчика</DataPath>
-															<EditMode>EnterOnInput</EditMode>
-															<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-															<ContextMenu name="ИзделиеЗаказчикаКонтекстноеМеню" id="14"/>
-															<ExtendedTooltip name="ИзделиеЗаказчикаРасширеннаяПодсказка" id="15"/>
-															<Events>
-																<Event name="StartChoice">ИзделиеЗаказчикаНачалоВыбора</Event>
-															</Events>
+															<ContextMenu name="ОписаниеКонтекстноеМеню" id="148"/>
+															<ExtendedTooltip name="ОписаниеРасширеннаяПодсказка" id="149"/>
 														</InputField>
 													</ChildItems>
 												</UsualGroup>
@@ -122,16 +197,6 @@
 													<ShowTitle>false</ShowTitle>
 													<ExtendedTooltip name="ГруппаКартинкиРасширеннаяПодсказка" id="60"/>
 												</UsualGroup>
-												<InputField name="Описание" id="147">
-													<DataPath>Объект.Описание</DataPath>
-													<Height>4</Height>
-													<AutoMaxHeight>false</AutoMaxHeight>
-													<VerticalStretch>false</VerticalStretch>
-													<MultiLine>true</MultiLine>
-													<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-													<ContextMenu name="ОписаниеКонтекстноеМеню" id="148"/>
-													<ExtendedTooltip name="ОписаниеРасширеннаяПодсказка" id="149"/>
-												</InputField>
 											</ChildItems>
 										</UsualGroup>
 									</ChildItems>
@@ -400,26 +465,6 @@
 				</Page>
 			</ChildItems>
 		</Pages>
-		<UsualGroup name="Группа13" id="136">
-			<Group>AlwaysHorizontal</Group>
-			<Representation>None</Representation>
-			<ShowTitle>false</ShowTitle>
-			<ExtendedTooltip name="Группа13РасширеннаяПодсказка" id="137"/>
-			<ChildItems>
-				<Button name="ЗаписатДокумент" id="138">
-					<Type>UsualButton</Type>
-					<CommandName>Form.Command.ЗаписатьДокумент</CommandName>
-					<BackColor>#FAFF0B</BackColor>
-					<ExtendedTooltip name="ЗаписатДокументРасширеннаяПодсказка" id="139"/>
-				</Button>
-				<Button name="Производство" id="140">
-					<Type>UsualButton</Type>
-					<CommandName>Form.Command.Производство</CommandName>
-					<BackColor>#0BFF2A</BackColor>
-					<ExtendedTooltip name="ПроизводствоРасширеннаяПодсказка" id="141"/>
-				</Button>
-			</ChildItems>
-		</UsualGroup>
 		<InputField name="Автор" id="19">
 			<DataPath>Объект.Автор</DataPath>
 			<Visible>false</Visible>
@@ -562,6 +607,36 @@
 				</v8:item>
 			</ToolTip>
 			<Action>Производство</Action>
+		</Command>
+		<Command name="Принять" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Принять</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Принять</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Принять</Action>
+		</Command>
+		<Command name="Дополнение" id="7">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дополнение</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Дополнение</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Дополнение</Action>
 		</Command>
 	</Commands>
 	<CommandInterface>

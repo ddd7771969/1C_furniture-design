@@ -67,6 +67,13 @@
 				<Event name="BeforeDeleteRow">ТаблицаТаймингаПередУдалением</Event>
 			</Events>
 			<ChildItems>
+				<InputField name="ТаблицаТаймингаАвтор" id="49">
+					<DataPath>ТаблицаТайминга.Автор</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ТаблицаТаймингаАвторКонтекстноеМеню" id="50"/>
+					<ExtendedTooltip name="ТаблицаТаймингаАвторРасширеннаяПодсказка" id="51"/>
+				</InputField>
 				<InputField name="ТаблицаТаймингаСтадияНаименование" id="46">
 					<DataPath>ТаблицаТайминга.СтадияНаименование</DataPath>
 					<ReadOnly>true</ReadOnly>
@@ -109,13 +116,6 @@
 					<Events>
 						<Event name="OnChange">ТаблицаТаймингаНормативПриИзменении</Event>
 					</Events>
-				</InputField>
-				<InputField name="ТаблицаТаймингаАвтор" id="49">
-					<DataPath>ТаблицаТайминга.Автор</DataPath>
-					<EditMode>EnterOnInput</EditMode>
-					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-					<ContextMenu name="ТаблицаТаймингаАвторКонтекстноеМеню" id="50"/>
-					<ExtendedTooltip name="ТаблицаТаймингаАвторРасширеннаяПодсказка" id="51"/>
 				</InputField>
 				<InputField name="ТаблицаТаймингаПлан" id="35">
 					<DataPath>ТаблицаТайминга.ПлановоеЗначение</DataPath>
