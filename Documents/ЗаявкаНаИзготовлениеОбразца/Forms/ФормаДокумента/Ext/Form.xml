@@ -272,6 +272,7 @@
 											<Events>
 												<Event name="BeforeAddRow">ФайлыПередНачаломДобавления</Event>
 												<Event name="BeforeDeleteRow">ФайлыПередУдалением</Event>
+												<Event name="OnActivateRow">ФайлыПриАктивизацииСтроки</Event>
 												<Event name="BeforeRowChange">ФайлыПередНачаломИзменения</Event>
 											</Events>
 											<ChildItems>
@@ -290,6 +291,19 @@
 												</InputField>
 											</ChildItems>
 										</Table>
+										<PDFDocumentField name="ПолеPDF" id="163">
+											<DataPath>ПолеPDF</DataPath>
+											<ContextMenu name="ПолеPDFКонтекстноеМеню" id="164"/>
+											<ExtendedTooltip name="ПолеPDFРасширеннаяПодсказка" id="165"/>
+											<ViewStatusAddition name="ПолеPDFСостояниеПросмотра" id="166">
+												<AdditionSource>
+													<Item>ПолеPDF</Item>
+													<Type>ViewStatusRepresentation</Type>
+												</AdditionSource>
+												<ContextMenu name="ПолеPDFСостояниеПросмотраКонтекстноеМеню" id="167"/>
+												<ExtendedTooltip name="ПолеPDFСостояниеПросмотраРасширеннаяПодсказка" id="168"/>
+											</ViewStatusAddition>
+										</PDFDocumentField>
 										<PictureField name="КартинкаФайла" id="144">
 											<DataPath>КартинкаФайла</DataPath>
 											<TitleLocation>None</TitleLocation>
@@ -485,6 +499,93 @@
 			<UseAlways>
 				<Field>Объект.RegisterRecords</Field>
 			</UseAlways>
+			<Columns>
+				<AdditionalColumns table="Объект.Файлы">
+					<Column name="Картинка" id="1">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Картинка</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:string</v8:Type>
+							<v8:StringQualifiers>
+								<v8:Length>0</v8:Length>
+								<v8:AllowedLength>Variable</v8:AllowedLength>
+							</v8:StringQualifiers>
+						</Type>
+					</Column>
+					<Column name="НовыйФайл" id="2">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Новый файл</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:boolean</v8:Type>
+						</Type>
+					</Column>
+					<Column name="Загружен" id="3">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Загружен</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:string</v8:Type>
+							<v8:StringQualifiers>
+								<v8:Length>0</v8:Length>
+								<v8:AllowedLength>Variable</v8:AllowedLength>
+							</v8:StringQualifiers>
+						</Type>
+					</Column>
+					<Column name="Расширение" id="4">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Расширение</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:string</v8:Type>
+							<v8:StringQualifiers>
+								<v8:Length>5</v8:Length>
+								<v8:AllowedLength>Variable</v8:AllowedLength>
+							</v8:StringQualifiers>
+						</Type>
+					</Column>
+					<Column name="Изменен" id="5">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Изменен</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:boolean</v8:Type>
+						</Type>
+					</Column>
+					<Column name="НачальныйИндексСтроки" id="6">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Начальный индекс строки</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>xs:decimal</v8:Type>
+							<v8:NumberQualifiers>
+								<v8:Digits>4</v8:Digits>
+								<v8:FractionDigits>0</v8:FractionDigits>
+								<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+							</v8:NumberQualifiers>
+						</Type>
+					</Column>
+				</AdditionalColumns>
+			</Columns>
 		</Attribute>
 		<Attribute name="КартинкаОбразца" id="2">
 			<Title>
@@ -524,11 +625,18 @@
 				</v8:item>
 			</Title>
 			<Type>
-				<v8:Type>xs:string</v8:Type>
-				<v8:StringQualifiers>
-					<v8:Length>0</v8:Length>
-					<v8:AllowedLength>Variable</v8:AllowedLength>
-				</v8:StringQualifiers>
+				<v8:Type>v8ui:Picture</v8:Type>
+			</Type>
+		</Attribute>
+		<Attribute name="ПолеPDF" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Поле PDF</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type xmlns:pdfdoc="http://v8.1c.ru/8.3/data/pdf">pdfdoc:PDFDocument</v8:Type>
 			</Type>
 		</Attribute>
 	</Attributes>
@@ -637,6 +745,21 @@
 				</v8:item>
 			</ToolTip>
 			<Action>Дополнение</Action>
+		</Command>
+		<Command name="ВыгрузитьФайл" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выгрузить файл</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выгрузить файл</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВыгрузитьФайл</Action>
 		</Command>
 	</Commands>
 	<CommandInterface>
