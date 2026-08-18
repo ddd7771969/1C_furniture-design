@@ -865,7 +865,6 @@
 			<SessionParameter>ТекущийПользователь</SessionParameter>
 			<SessionParameter>ТипыВладельцевНастроекПрав</SessionParameter>
 			<SessionParameter>УстановленныеРасширения</SessionParameter>
-			<Role>Messenger</Role>
 			<Role>Scrum</Role>
 			<Role>АдминистраторКанбан</Role>
 			<Role>АдминистраторСистемы</Role>
@@ -926,6 +925,8 @@
 			<Role>КорректировкаНормПроектирования</Role>
 			<Role>КорректировкаНормПроизводсва</Role>
 			<Role>Менеджер</Role>
+			<Role>Месседжер</Role>
+			<Role>МесседжерАдминистратор</Role>
 			<Role>НастройкаИОценкаПроизводительности</Role>
 			<Role>НастройкаСинхронизацииФайлов</Role>
 			<Role>НачальникМонтажа</Role>
@@ -1199,8 +1200,8 @@
 			<CommonModule>омКанбанПроизводство</CommonModule>
 			<CommonModule>омКанбанТЗ</CommonModule>
 			<CommonModule>омКартинкиНаКлиенте</CommonModule>
-			<CommonModule>омКартинкиНаСервереКлиенте</CommonModule>
 			<CommonModule>омКартинкиНаСервере</CommonModule>
+			<CommonModule>омКартинкиНаСервереКлиенте</CommonModule>
 			<CommonModule>омКомментарииНаКлиенте</CommonModule>
 			<CommonModule>омКомментарииНаСервере</CommonModule>
 			<CommonModule>омКомментарийКлиентСервер</CommonModule>
@@ -1209,6 +1210,7 @@
 			<CommonModule>омКомпозицииСервер</CommonModule>
 			<CommonModule>омКонструктор</CommonModule>
 			<CommonModule>омКонтрольПапки</CommonModule>
+			<CommonModule>омМесседжерНаСервере</CommonModule>
 			<CommonModule>омМесяц</CommonModule>
 			<CommonModule>омМонтажКлиент</CommonModule>
 			<CommonModule>омМонтажСервер</CommonModule>
@@ -1915,7 +1917,6 @@
 			<Catalog>ГруппыВнешнихПользователей</Catalog>
 			<Catalog>ГруппыДоступа</Catalog>
 			<Catalog>ГруппыИсполнителейЗадач</Catalog>
-			<Catalog>ГруппыМесседжера</Catalog>
 			<Catalog>ГруппыПользователей</Catalog>
 			<Catalog>ГруппыСообщений</Catalog>
 			<Catalog>ДанныеСотрудникаВPDM</Catalog>
@@ -1946,7 +1947,12 @@
 			<Catalog>МатериалыПроектов</Catalog>
 			<Catalog>МашиночитаемыеДоверенности</Catalog>
 			<Catalog>МашиночитаемыеДоверенностиПрисоединенныеФайлы</Catalog>
-			<Catalog>Меседжер</Catalog>
+			<Catalog>Месседжер</Catalog>
+			<Catalog>МесседжерCSS</Catalog>
+			<Catalog>МесседжерГруппы</Catalog>
+			<Catalog>МесседжерНастройки</Catalog>
+			<Catalog>МесседжерПрава</Catalog>
+			<Catalog>МесседжерСтраницы</Catalog>
 			<Catalog>Месяцы</Catalog>
 			<Catalog>НаборыДополнительныхРеквизитовИСведений</Catalog>
 			<Catalog>НазначениеАвтораДляЗадачи</Catalog>

@@ -17,15 +17,15 @@
 		<ChildObjects>
 			<URLTemplate uuid="4b94eafd-9ff8-4917-bc87-e8e57b17c52e">
 				<Properties>
-					<Name>authorization</Name>
+					<Name>request</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Authorization</v8:content>
+							<v8:content>request</v8:content>
 						</v8:item>
 					</Synonym>
 					<Comment/>
-					<Template>/authorization</Template>
+					<Template>/request</Template>
 				</Properties>
 				<ChildObjects>
 					<Method uuid="d9a4ddc5-a190-40a3-a09b-712742ea1b36">
@@ -39,7 +39,7 @@
 							</Synonym>
 							<Comment/>
 							<HTTPMethod>GET</HTTPMethod>
-							<Handler>authorizationcommand</Handler>
+							<Handler>command</Handler>
 						</Properties>
 					</Method>
 				</ChildObjects>
