@@ -307,6 +307,7 @@
 										<PictureField name="КартинкаФайла" id="144">
 											<DataPath>КартинкаФайла</DataPath>
 											<TitleLocation>None</TitleLocation>
+											<Zoomable>true</Zoomable>
 											<ContextMenu name="КартинкаФайлаКонтекстноеМеню" id="145"/>
 											<ExtendedTooltip name="КартинкаФайлаРасширеннаяПодсказка" id="146"/>
 										</PictureField>
@@ -535,11 +536,7 @@
 							</v8:item>
 						</Title>
 						<Type>
-							<v8:Type>xs:string</v8:Type>
-							<v8:StringQualifiers>
-								<v8:Length>0</v8:Length>
-								<v8:AllowedLength>Variable</v8:AllowedLength>
-							</v8:StringQualifiers>
+							<v8:Type>xs:boolean</v8:Type>
 						</Type>
 					</Column>
 					<Column name="Расширение" id="4">
@@ -625,7 +622,11 @@
 				</v8:item>
 			</Title>
 			<Type>
-				<v8:Type>v8ui:Picture</v8:Type>
+				<v8:Type>xs:string</v8:Type>
+				<v8:StringQualifiers>
+					<v8:Length>0</v8:Length>
+					<v8:AllowedLength>Variable</v8:AllowedLength>
+				</v8:StringQualifiers>
 			</Type>
 		</Attribute>
 		<Attribute name="ПолеPDF" id="5">
