@@ -51,10 +51,9 @@
 	</AutoCommandBar>
 	<Events>
 		<Event name="AfterWrite">ПослеЗаписи</Event>
-		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
 		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="BeforeWrite">ПередЗаписью</Event>
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
-		<Event name="OnClose">ПриЗакрытии</Event>
 	</Events>
 	<ChildItems>
 		<UsualGroup name="Группа7" id="75">
@@ -69,17 +68,6 @@
 					<ContextMenu name="ЗаявкаВыполненаКонтекстноеМеню" id="69"/>
 					<ExtendedTooltip name="ЗаявкаВыполненаРасширеннаяПодсказка" id="70"/>
 				</CheckBoxField>
-				<LabelDecoration name="ДекорацияНеобходимоЗаписать" id="65">
-					<TextColor>#0000FF</TextColor>
-					<Title formatted="false">
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Для добавления картинок необходимо записать Заявку.</v8:content>
-						</v8:item>
-					</Title>
-					<ContextMenu name="ДекорацияНеобходимоЗаписатьКонтекстноеМеню" id="66"/>
-					<ExtendedTooltip name="ДекорацияНеобходимоЗаписатьРасширеннаяПодсказка" id="67"/>
-				</LabelDecoration>
 			</ChildItems>
 		</UsualGroup>
 		<UsualGroup name="Группа12" id="101">
@@ -271,9 +259,9 @@
 											</SearchControlAddition>
 											<Events>
 												<Event name="BeforeAddRow">ФайлыПередНачаломДобавления</Event>
-												<Event name="BeforeDeleteRow">ФайлыПередУдалением</Event>
 												<Event name="OnActivateRow">ФайлыПриАктивизацииСтроки</Event>
 												<Event name="BeforeRowChange">ФайлыПередНачаломИзменения</Event>
+												<Event name="OnChange">ФайлыПриИзменении</Event>
 											</Events>
 											<ChildItems>
 												<LabelField name="ФайлыНомерСтроки" id="128">
@@ -293,6 +281,7 @@
 										</Table>
 										<PDFDocumentField name="ПолеPDF" id="163">
 											<DataPath>ПолеPDF</DataPath>
+											<TitleLocation>None</TitleLocation>
 											<ContextMenu name="ПолеPDFКонтекстноеМеню" id="164"/>
 											<ExtendedTooltip name="ПолеPDFРасширеннаяПодсказка" id="165"/>
 											<ViewStatusAddition name="ПолеPDFСостояниеПросмотра" id="166">
@@ -552,17 +541,6 @@
 								<v8:Length>5</v8:Length>
 								<v8:AllowedLength>Variable</v8:AllowedLength>
 							</v8:StringQualifiers>
-						</Type>
-					</Column>
-					<Column name="Изменен" id="5">
-						<Title>
-							<v8:item>
-								<v8:lang>ru</v8:lang>
-								<v8:content>Изменен</v8:content>
-							</v8:item>
-						</Title>
-						<Type>
-							<v8:Type>xs:boolean</v8:Type>
 						</Type>
 					</Column>
 					<Column name="НачальныйИндексСтроки" id="6">
