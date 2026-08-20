@@ -73,6 +73,48 @@
 					<ContextMenu name="ВыполненаБезКорректировкиКонтекстноеМеню" id="78"/>
 					<ExtendedTooltip name="ВыполненаБезКорректировкиРасширеннаяПодсказка" id="79"/>
 				</CheckBoxField>
+				<PictureDecoration name="ДекорацияНеВыполнен" id="87">
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Декорация не выполнен</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Задача не выполнена</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ToolTipRepresentation>Balloon</ToolTipRepresentation>
+					<Picture>
+						<xr:Ref>CommonPicture.СнятьПризнакРассмотреноУВзаимодействия</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</Picture>
+					<ContextMenu name="ДекорацияНеВыполненКонтекстноеМеню" id="88"/>
+					<ExtendedTooltip name="ДекорацияНеВыполненРасширеннаяПодсказка" id="89"/>
+				</PictureDecoration>
+				<PictureDecoration name="ДекорацияВыполнен" id="84">
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Декорация выполнен</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Задача выполнена</v8:content>
+						</v8:item>
+					</ToolTip>
+					<ToolTipRepresentation>Balloon</ToolTipRepresentation>
+					<Picture>
+						<xr:Ref>CommonPicture.Успешно</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</Picture>
+					<ContextMenu name="ДекорацияВыполненКонтекстноеМеню" id="85"/>
+					<ExtendedTooltip name="ДекорацияВыполненРасширеннаяПодсказка" id="86"/>
+				</PictureDecoration>
 			</ChildItems>
 		</UsualGroup>
 		<UsualGroup name="Группа2" id="38">
@@ -286,6 +328,17 @@
 					</Title>
 					<ContextMenu name="ДекорацияЗапущеныеЗаданияКонтекстноеМеню" id="71"/>
 					<ExtendedTooltip name="ДекорацияЗапущеныеЗаданияРасширеннаяПодсказка" id="72"/>
+				</LabelDecoration>
+				<LabelDecoration name="ДекорацияЗаполнитьИсполнителя" id="90">
+					<TextColor>#0A0AF6</TextColor>
+					<Title formatted="false">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Необходимо заполнить Исполнителя.</v8:content>
+						</v8:item>
+					</Title>
+					<ContextMenu name="ДекорацияЗаполнитьИсполнителяКонтекстноеМеню" id="91"/>
+					<ExtendedTooltip name="ДекорацияЗаполнитьИсполнителяРасширеннаяПодсказка" id="92"/>
 				</LabelDecoration>
 			</ChildItems>
 		</UsualGroup>
