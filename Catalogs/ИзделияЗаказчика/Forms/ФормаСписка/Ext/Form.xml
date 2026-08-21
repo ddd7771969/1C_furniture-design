@@ -85,16 +85,16 @@
 					<ContextMenu name="НомерПоПорядкуКонтекстноеМеню" id="29"/>
 					<ExtendedTooltip name="НомерПоПорядкуРасширеннаяПодсказка" id="30"/>
 				</LabelField>
-				<LabelField name="СделкаНомер" id="40">
-					<DataPath>Список.СделкаНомер</DataPath>
+				<LabelField name="ПроектНомер" id="40">
+					<DataPath>Список.ПроектНомер</DataPath>
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Номер сделки</v8:content>
+							<v8:content>Номер проекта</v8:content>
 						</v8:item>
 					</Title>
-					<ContextMenu name="СделкаНомерКонтекстноеМеню" id="41"/>
-					<ExtendedTooltip name="СделкаНомерРасширеннаяПодсказка" id="42"/>
+					<ContextMenu name="ПроектНомерКонтекстноеМеню" id="41"/>
+					<ExtendedTooltip name="ПроектНомерРасширеннаяПодсказка" id="42"/>
 				</LabelField>
 				<LabelField name="Помещения" id="37">
 					<DataPath>Список.Помещения</DataPath>
@@ -129,10 +129,20 @@
 			<Type>
 				<v8:Type>cfg:DynamicList</v8:Type>
 			</Type>
+			<View>
+				<xr:Common>true</xr:Common>
+				<xr:Value name="Role.Scrum">true</xr:Value>
+				<xr:Value name="Role.АдминистраторКанбан">true</xr:Value>
+				<xr:Value name="Role.АдминистраторСистемы">true</xr:Value>
+				<xr:Value name="Role.ГлавныйКонструктор">true</xr:Value>
+				<xr:Value name="Role.Дизайнер">true</xr:Value>
+				<xr:Value name="Role.Замерщик">true</xr:Value>
+				<xr:Value name="Role.Менеджер">true</xr:Value>
+			</View>
 			<MainAttribute>true</MainAttribute>
 			<Settings xsi:type="DynamicList">
 				<ManualQuery>true</ManualQuery>
-				<DynamicDataRead>false</DynamicDataRead>
+				<DynamicDataRead>true</DynamicDataRead>
 				<QueryText>ВЫБРАТЬ
 	СправочникИзделияЗаказчика.Ссылка КАК Ссылка,
 	СправочникИзделияЗаказчика.ПометкаУдаления КАК ПометкаУдаления,
@@ -146,11 +156,6 @@
 	СправочникИзделияЗаказчика.ПолноеНаименование КАК ПолноеНаименование,
 	СправочникИзделияЗаказчика.РазмерПоТЗ КАК РазмерПоТЗ,
 	СправочникИзделияЗаказчика.Проект КАК Проект,
-	СправочникИзделияЗаказчика.ИзделияЭлемент.(
-		Ссылка КАК Ссылка,
-		НомерСтроки КАК НомерСтроки,
-		ИзделиеЭлемент КАК ИзделиеЭлемент
-	) КАК ИзделияЭлемент,
 	СправочникИзделияЗаказчика.Предопределенный КАК Предопределенный,
 	СправочникИзделияЗаказчика.ИмяПредопределенныхДанных КАК ИмяПредопределенныхДанных,
 	ДанныеИзделияЗаказчика.Актуальность КАК Актуальность,
@@ -161,34 +166,14 @@
 			ТОГДА СправочникИзделияЗаказчика.Наименование
 		ИНАЧЕ ДанныеИзделияЗаказчика.НаименованиеСАртикулом
 	КОНЕЦ КАК Наименование,
-	СправочникИзделияЗаказчика.Проект.Номер КАК СделкаНомер
+	СправочникИзделияЗаказчика.Проект.Номер КАК ПроектНомер
 ИЗ
 	Справочник.ИзделияЗаказчика КАК СправочникИзделияЗаказчика
 		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ДанныеИзделияЗаказчика КАК ДанныеИзделияЗаказчика
 		ПО (ДанныеИзделияЗаказчика.ИзделиеЗаказчика = СправочникИзделияЗаказчика.Ссылка)</QueryText>
 				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>Код</dcssch:dataPath>
-					<dcssch:field>Код</dcssch:field>
-				</Field>
-				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>Родитель</dcssch:dataPath>
-					<dcssch:field>Родитель</dcssch:field>
-				</Field>
-				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>НомерПоПорядку</dcssch:dataPath>
-					<dcssch:field>НомерПоПорядку</dcssch:field>
-				</Field>
-				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>Количество</dcssch:dataPath>
-					<dcssch:field>Количество</dcssch:field>
-				</Field>
-				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>ИзделияЭлемент.ИзделиеЭлемент</dcssch:dataPath>
-					<dcssch:field>ИзделияЭлемент.ИзделиеЭлемент</dcssch:field>
-				</Field>
-				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>ИмяПредопределенныхДанных</dcssch:dataPath>
-					<dcssch:field>ИмяПредопределенныхДанных</dcssch:field>
+					<dcssch:dataPath>Комментарий</dcssch:dataPath>
+					<dcssch:field>Комментарий</dcssch:field>
 				</Field>
 				<Field xsi:type="dcssch:DataSetFieldField">
 					<dcssch:dataPath>Ссылка</dcssch:dataPath>
@@ -199,12 +184,32 @@
 					<dcssch:field>ПометкаУдаления</dcssch:field>
 				</Field>
 				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Код</dcssch:dataPath>
+					<dcssch:field>Код</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>РазмерПоТЗ</dcssch:dataPath>
+					<dcssch:field>РазмерПоТЗ</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Родитель</dcssch:dataPath>
+					<dcssch:field>Родитель</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
 					<dcssch:dataPath>ЭтоГруппа</dcssch:dataPath>
 					<dcssch:field>ЭтоГруппа</dcssch:field>
 				</Field>
 				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>Комментарий</dcssch:dataPath>
-					<dcssch:field>Комментарий</dcssch:field>
+					<dcssch:dataPath>Наименование</dcssch:dataPath>
+					<dcssch:field>Наименование</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ЕдиницаИзмерения</dcssch:dataPath>
+					<dcssch:field>ЕдиницаИзмерения</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Количество</dcssch:dataPath>
+					<dcssch:field>Количество</dcssch:field>
 				</Field>
 				<Field xsi:type="dcssch:DataSetFieldField">
 					<dcssch:dataPath>Описание</dcssch:dataPath>
@@ -215,56 +220,32 @@
 					<dcssch:field>ПолноеНаименование</dcssch:field>
 				</Field>
 				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>РазмерПоТЗ</dcssch:dataPath>
-					<dcssch:field>РазмерПоТЗ</dcssch:field>
-				</Field>
-				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>Сделка</dcssch:dataPath>
-					<dcssch:field>Сделка</dcssch:field>
-				</Field>
-				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>ИзделияЭлемент.Ссылка</dcssch:dataPath>
-					<dcssch:field>ИзделияЭлемент.Ссылка</dcssch:field>
-				</Field>
-				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>ИзделияЭлемент.НомерСтроки</dcssch:dataPath>
-					<dcssch:field>ИзделияЭлемент.НомерСтроки</dcssch:field>
-				</Field>
-				<Field xsi:type="dcssch:DataSetFieldNestedDataSet">
-					<dcssch:dataPath>ИзделияЭлемент</dcssch:dataPath>
-					<dcssch:field>ИзделияЭлемент</dcssch:field>
+					<dcssch:dataPath>Проект</dcssch:dataPath>
+					<dcssch:field>Проект</dcssch:field>
 				</Field>
 				<Field xsi:type="dcssch:DataSetFieldField">
 					<dcssch:dataPath>Предопределенный</dcssch:dataPath>
 					<dcssch:field>Предопределенный</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldNestedDataSet">
+					<dcssch:dataPath>Помещения</dcssch:dataPath>
+					<dcssch:field>Помещения</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ИмяПредопределенныхДанных</dcssch:dataPath>
+					<dcssch:field>ИмяПредопределенныхДанных</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>НомерПоПорядку</dcssch:dataPath>
+					<dcssch:field>НомерПоПорядку</dcssch:field>
 				</Field>
 				<Field xsi:type="dcssch:DataSetFieldField">
 					<dcssch:dataPath>Актуальность</dcssch:dataPath>
 					<dcssch:field>Актуальность</dcssch:field>
 				</Field>
 				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>Наименование</dcssch:dataPath>
-					<dcssch:field>Наименование</dcssch:field>
-					<dcssch:title xsi:type="v8:LocalStringType">
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Наименование</v8:content>
-						</v8:item>
-					</dcssch:title>
-				</Field>
-				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>ЕдиницаИзмерения</dcssch:dataPath>
-					<dcssch:field>ЕдиницаИзмерения</dcssch:field>
-				</Field>
-				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>Помещения</dcssch:dataPath>
-					<dcssch:field>Помещения</dcssch:field>
-					<dcssch:title xsi:type="v8:LocalStringType">
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Помещения</v8:content>
-						</v8:item>
-					</dcssch:title>
+					<dcssch:dataPath>ПроектНомер</dcssch:dataPath>
+					<dcssch:field>ПроектНомер</dcssch:field>
 				</Field>
 				<Field xsi:type="dcssch:DataSetFieldField">
 					<dcssch:dataPath>ЦенаВДоговоре</dcssch:dataPath>
@@ -285,8 +266,8 @@
 					</dcssch:title>
 				</Field>
 				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>СделкаНомер</dcssch:dataPath>
-					<dcssch:field>СделкаНомер</dcssch:field>
+					<dcssch:dataPath>ИзделияЭлемент</dcssch:dataPath>
+					<dcssch:field>ИзделияЭлемент</dcssch:field>
 				</Field>
 				<MainTable>Catalog.ИзделияЗаказчика</MainTable>
 				<ListSettings>
