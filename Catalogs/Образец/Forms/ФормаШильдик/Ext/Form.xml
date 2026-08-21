@@ -1,5 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<AutoSaveDataInSettings>Use</AutoSaveDataInSettings>
+	<SaveDataInSettings>UseList</SaveDataInSettings>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
 	<Events>
 		<Event name="OnOpen">ПриОткрытии</Event>
@@ -44,6 +46,9 @@
 							<CheckBoxType>Auto</CheckBoxType>
 							<ContextMenu name="ТекстНаШтрихКодеКонтекстноеМеню" id="13"/>
 							<ExtendedTooltip name="ТекстНаШтрихКодеРасширеннаяПодсказка" id="14"/>
+							<Events>
+								<Event name="OnChange">ТекстНаШтрихКодеПриИзменении</Event>
+							</Events>
 						</CheckBoxField>
 						<UsualGroup name="ГруппаНаименование" id="4">
 							<Title>
@@ -79,6 +84,9 @@
 											<CheckBoxType>Auto</CheckBoxType>
 											<ContextMenu name="НаименованиеКонтекстноеМеню" id="7"/>
 											<ExtendedTooltip name="НаименованиеРасширеннаяПодсказка" id="8"/>
+											<Events>
+												<Event name="OnChange">НаименованиеПриИзменении</Event>
+											</Events>
 										</CheckBoxField>
 										<InputField name="РазмерШрифтаНаименования" id="9">
 											<DataPath>РазмерШрифтаНаименования</DataPath>
@@ -88,10 +96,23 @@
 													<v8:content>Размер шрифта</v8:content>
 												</v8:item>
 											</Title>
+											<SpinButton>true</SpinButton>
 											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 											<ContextMenu name="РазмерШрифтаНаименованияКонтекстноеМеню" id="10"/>
 											<ExtendedTooltip name="РазмерШрифтаНаименованияРасширеннаяПодсказка" id="11"/>
+											<Events>
+												<Event name="OnChange">РазмерШрифтаНаименованияПриИзменении</Event>
+											</Events>
 										</InputField>
+										<CheckBoxField name="ПолужирныйНаименование" id="56">
+											<DataPath>ПолужирныйНаименование</DataPath>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="ПолужирныйНаименованиеКонтекстноеМеню" id="57"/>
+											<ExtendedTooltip name="ПолужирныйНаименованиеРасширеннаяПодсказка" id="58"/>
+											<Events>
+												<Event name="OnChange">ПолужирныйНаименованиеПриИзменении</Event>
+											</Events>
+										</CheckBoxField>
 									</ChildItems>
 								</UsualGroup>
 								<InputField name="ТекстНаименование" id="40">
@@ -99,6 +120,9 @@
 									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 									<ContextMenu name="ТекстНаименованиеКонтекстноеМеню" id="41"/>
 									<ExtendedTooltip name="ТекстНаименованиеРасширеннаяПодсказка" id="42"/>
+									<Events>
+										<Event name="OnChange">ТекстНаименованиеПриИзменении</Event>
+									</Events>
 								</InputField>
 							</ChildItems>
 						</UsualGroup>
@@ -119,11 +143,14 @@
 							<Representation>StrongSeparation</Representation>
 							<ExtendedTooltip name="ГруппаОбработкаРасширеннаяПодсказка" id="23"/>
 							<ChildItems>
-								<CheckBoxField name="Выводить" id="24">
+								<CheckBoxField name="Обработка" id="24">
 									<DataPath>Обработка</DataPath>
 									<CheckBoxType>Auto</CheckBoxType>
-									<ContextMenu name="ВыводитьКонтекстноеМеню" id="25"/>
-									<ExtendedTooltip name="ВыводитьРасширеннаяПодсказка" id="26"/>
+									<ContextMenu name="ОбработкаКонтекстноеМеню" id="25"/>
+									<ExtendedTooltip name="ОбработкаРасширеннаяПодсказка" id="26"/>
+									<Events>
+										<Event name="OnChange">ВыводитьПриИзменении</Event>
+									</Events>
 								</CheckBoxField>
 								<InputField name="РазмерШрифтаОбработка" id="27">
 									<DataPath>РазмерШрифтаОбработка</DataPath>
@@ -133,10 +160,23 @@
 											<v8:content>Размер шрифта</v8:content>
 										</v8:item>
 									</Title>
+									<SpinButton>true</SpinButton>
 									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 									<ContextMenu name="РазмерШрифтаОбработкаКонтекстноеМеню" id="28"/>
 									<ExtendedTooltip name="РазмерШрифтаОбработкаРасширеннаяПодсказка" id="29"/>
+									<Events>
+										<Event name="OnChange">РазмерШрифтаОбработкаПриИзменении</Event>
+									</Events>
 								</InputField>
+								<CheckBoxField name="ПолужирныйОбработка" id="53">
+									<DataPath>ПолужирныйОбработка</DataPath>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ПолужирныйОбработкаКонтекстноеМеню" id="54"/>
+									<ExtendedTooltip name="ПолужирныйОбработкаРасширеннаяПодсказка" id="55"/>
+									<Events>
+										<Event name="OnChange">ПолужирныйОбработкаПриИзменении</Event>
+									</Events>
+								</CheckBoxField>
 							</ChildItems>
 						</UsualGroup>
 						<UsualGroup name="ГруппаМатериалы" id="30">
@@ -167,6 +207,9 @@
 									<CheckBoxType>Auto</CheckBoxType>
 									<ContextMenu name="МетериалыКонтекстноеМеню" id="33"/>
 									<ExtendedTooltip name="МетериалыРасширеннаяПодсказка" id="34"/>
+									<Events>
+										<Event name="OnChange">МетериалыПриИзменении</Event>
+									</Events>
 								</CheckBoxField>
 								<InputField name="РазмерШрифтаМатериалы" id="35">
 									<DataPath>РазмерШрифтаМатериалы</DataPath>
@@ -176,20 +219,86 @@
 											<v8:content>Размер шрифта</v8:content>
 										</v8:item>
 									</Title>
+									<SpinButton>true</SpinButton>
 									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 									<ContextMenu name="РазмерШрифтаМатериалыКонтекстноеМеню" id="36"/>
 									<ExtendedTooltip name="РазмерШрифтаМатериалыРасширеннаяПодсказка" id="37"/>
+									<Events>
+										<Event name="OnChange">РазмерШрифтаМатериалыПриИзменении</Event>
+									</Events>
 								</InputField>
+								<CheckBoxField name="ПолужирныйМатериалы" id="59">
+									<DataPath>ПолужирныйМатериалы</DataPath>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ПолужирныйМатериалыКонтекстноеМеню" id="60"/>
+									<ExtendedTooltip name="ПолужирныйМатериалыРасширеннаяПодсказка" id="61"/>
+									<Events>
+										<Event name="OnChange">ПолужирныйМатериалыПриИзменении</Event>
+									</Events>
+								</CheckBoxField>
 							</ChildItems>
 						</UsualGroup>
 					</ChildItems>
 				</UsualGroup>
-				<SpreadSheetDocumentField name="Пример" id="19">
-					<DataPath>Пример</DataPath>
-					<TitleLocation>None</TitleLocation>
-					<ContextMenu name="ПримерКонтекстноеМеню" id="20"/>
-					<ExtendedTooltip name="ПримерРасширеннаяПодсказка" id="21"/>
-				</SpreadSheetDocumentField>
+				<UsualGroup name="Группа3" id="45">
+					<Group>Vertical</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="46"/>
+					<ChildItems>
+						<UsualGroup name="Группа4" id="51">
+							<Group>AlwaysHorizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа4РасширеннаяПодсказка" id="52"/>
+							<ChildItems>
+								<Button name="Печать" id="47">
+									<Type>UsualButton</Type>
+									<Representation>PictureAndText</Representation>
+									<CommandName>Form.Command.Печать</CommandName>
+									<Picture>
+										<xr:Ref>StdPicture.Print</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ExtendedTooltip name="ПечатьРасширеннаяПодсказка" id="48"/>
+								</Button>
+								<Button name="ПечатьСразуНаПринтер" id="49">
+									<Type>UsualButton</Type>
+									<Representation>Picture</Representation>
+									<Width>4</Width>
+									<CommandName>Form.Command.ПечатьСразуНаПринтер</CommandName>
+									<Picture>
+										<xr:Ref>StdPicture.PrintImmediately</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ExtendedTooltip name="ПечатьСразуНаПринтерРасширеннаяПодсказка" id="50"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
+						<SpreadSheetDocumentField name="Пример" id="19">
+							<DataPath>Пример</DataPath>
+							<TitleLocation>None</TitleLocation>
+							<ContextMenu name="ПримерКонтекстноеМеню" id="20"/>
+							<ExtendedTooltip name="ПримерРасширеннаяПодсказка" id="21"/>
+						</SpreadSheetDocumentField>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="ГруппаПараметрыПечати" id="43">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Параметры печати</v8:content>
+						</v8:item>
+					</Title>
+					<ToolTip>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Группа параметры печати</v8:content>
+						</v8:item>
+					</ToolTip>
+					<Group>Vertical</Group>
+					<ExtendedTooltip name="ГруппаПараметрыПечатиРасширеннаяПодсказка" id="44"/>
+				</UsualGroup>
 			</ChildItems>
 		</UsualGroup>
 	</ChildItems>
@@ -215,6 +324,9 @@
 			<Type>
 				<v8:Type>xs:boolean</v8:Type>
 			</Type>
+			<Save>
+				<Field>ТекстНаШтрихКоде</Field>
+			</Save>
 		</Attribute>
 		<Attribute name="Наименование" id="3">
 			<Title>
@@ -226,6 +338,9 @@
 			<Type>
 				<v8:Type>xs:boolean</v8:Type>
 			</Type>
+			<Save>
+				<Field>Наименование</Field>
+			</Save>
 		</Attribute>
 		<Attribute name="РазмерШрифтаНаименования" id="4">
 			<Title>
@@ -242,6 +357,9 @@
 					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
 				</v8:NumberQualifiers>
 			</Type>
+			<Save>
+				<Field>РазмерШрифтаНаименования</Field>
+			</Save>
 		</Attribute>
 		<Attribute name="Метериалы" id="5">
 			<Title>
@@ -253,6 +371,9 @@
 			<Type>
 				<v8:Type>xs:boolean</v8:Type>
 			</Type>
+			<Save>
+				<Field>Метериалы</Field>
+			</Save>
 		</Attribute>
 		<Attribute name="РазмерШрифтаМатериалы" id="6">
 			<Title>
@@ -269,6 +390,9 @@
 					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
 				</v8:NumberQualifiers>
 			</Type>
+			<Save>
+				<Field>РазмерШрифтаМатериалы</Field>
+			</Save>
 		</Attribute>
 		<Attribute name="Обработка" id="7">
 			<Title>
@@ -280,6 +404,9 @@
 			<Type>
 				<v8:Type>xs:boolean</v8:Type>
 			</Type>
+			<Save>
+				<Field>Обработка</Field>
+			</Save>
 		</Attribute>
 		<Attribute name="РазмерШрифтаОбработка" id="8">
 			<Title>
@@ -296,6 +423,9 @@
 					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
 				</v8:NumberQualifiers>
 			</Type>
+			<Save>
+				<Field>РазмерШрифтаОбработка</Field>
+			</Save>
 		</Attribute>
 		<Attribute name="Пример" id="9">
 			<Title>
@@ -323,5 +453,79 @@
 				</v8:StringQualifiers>
 			</Type>
 		</Attribute>
+		<Attribute name="ПолужирныйНаименование" id="11">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Полужирный</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<Save>
+				<Field>ПолужирныйНаименование</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ПолужирныйМатериалы" id="12">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Полужирный</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<Save>
+				<Field>ПолужирныйМатериалы</Field>
+			</Save>
+		</Attribute>
+		<Attribute name="ПолужирныйОбработка" id="13">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Полужирный</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<Save>
+				<Field>ПолужирныйОбработка</Field>
+			</Save>
+		</Attribute>
 	</Attributes>
+	<Commands>
+		<Command name="Печать" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Печать</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Печать</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Печать</Action>
+		</Command>
+		<Command name="ПечатьСразуНаПринтер" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Печать сразу на принтер</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Печать сразу на принтер</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПечатьСразуНаПринтер</Action>
+		</Command>
+	</Commands>
 </Form>
