@@ -41,15 +41,6 @@
 					<ShowTitle>false</ShowTitle>
 					<ExtendedTooltip name="ГруппаЛеваяРасширеннаяПодсказка" id="18"/>
 					<ChildItems>
-						<CheckBoxField name="ТекстНаШтрихКоде" id="12">
-							<DataPath>ТекстНаШтрихКоде</DataPath>
-							<CheckBoxType>Auto</CheckBoxType>
-							<ContextMenu name="ТекстНаШтрихКодеКонтекстноеМеню" id="13"/>
-							<ExtendedTooltip name="ТекстНаШтрихКодеРасширеннаяПодсказка" id="14"/>
-							<Events>
-								<Event name="OnChange">ТекстНаШтрихКодеПриИзменении</Event>
-							</Events>
-						</CheckBoxField>
 						<UsualGroup name="ГруппаНаименование" id="4">
 							<Title>
 								<v8:item>
@@ -126,6 +117,49 @@
 								</InputField>
 							</ChildItems>
 						</UsualGroup>
+						<UsualGroup name="ГруппаШтрихКод" id="62">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Штрих код</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа штрих код</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Group>AlwaysHorizontal</Group>
+							<Representation>NormalSeparation</Representation>
+							<ExtendedTooltip name="ГруппаШтрихКодРасширеннаяПодсказка" id="63"/>
+							<ChildItems>
+								<CheckBoxField name="ВыводитьШК" id="64">
+									<DataPath>ВыводитьШК</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Выводить</v8:content>
+										</v8:item>
+									</Title>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ВыводитьШККонтекстноеМеню" id="65"/>
+									<ExtendedTooltip name="ВыводитьШКРасширеннаяПодсказка" id="66"/>
+									<Events>
+										<Event name="OnChange">ВыводитьШКПриИзменении</Event>
+									</Events>
+								</CheckBoxField>
+								<CheckBoxField name="ТекстНаШтрихКоде" id="12">
+									<DataPath>ТекстНаШтрихКоде</DataPath>
+									<CheckBoxType>Auto</CheckBoxType>
+									<ContextMenu name="ТекстНаШтрихКодеКонтекстноеМеню" id="13"/>
+									<ExtendedTooltip name="ТекстНаШтрихКодеРасширеннаяПодсказка" id="14"/>
+									<Events>
+										<Event name="OnChange">ТекстНаШтрихКодеПриИзменении</Event>
+									</Events>
+								</CheckBoxField>
+							</ChildItems>
+						</UsualGroup>
 						<UsualGroup name="ГруппаОбработка" id="22">
 							<Title>
 								<v8:item>
@@ -145,6 +179,12 @@
 							<ChildItems>
 								<CheckBoxField name="Обработка" id="24">
 									<DataPath>Обработка</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Выводить</v8:content>
+										</v8:item>
+									</Title>
 									<CheckBoxType>Auto</CheckBoxType>
 									<ContextMenu name="ОбработкаКонтекстноеМеню" id="25"/>
 									<ExtendedTooltip name="ОбработкаРасширеннаяПодсказка" id="26"/>
@@ -261,17 +301,6 @@
 										<xr:LoadTransparent>true</xr:LoadTransparent>
 									</Picture>
 									<ExtendedTooltip name="ПечатьРасширеннаяПодсказка" id="48"/>
-								</Button>
-								<Button name="ПечатьСразуНаПринтер" id="49">
-									<Type>UsualButton</Type>
-									<Representation>Picture</Representation>
-									<Width>4</Width>
-									<CommandName>Form.Command.ПечатьСразуНаПринтер</CommandName>
-									<Picture>
-										<xr:Ref>StdPicture.PrintImmediately</xr:Ref>
-										<xr:LoadTransparent>true</xr:LoadTransparent>
-									</Picture>
-									<ExtendedTooltip name="ПечатьСразуНаПринтерРасширеннаяПодсказка" id="50"/>
 								</Button>
 							</ChildItems>
 						</UsualGroup>
@@ -495,6 +524,20 @@
 				<Field>ПолужирныйОбработка</Field>
 			</Save>
 		</Attribute>
+		<Attribute name="ВыводитьШК" id="14">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Выводить ШК</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:boolean</v8:Type>
+			</Type>
+			<Save>
+				<Field>ВыводитьШК</Field>
+			</Save>
+		</Attribute>
 	</Attributes>
 	<Commands>
 		<Command name="Печать" id="1">
@@ -511,21 +554,6 @@
 				</v8:item>
 			</ToolTip>
 			<Action>Печать</Action>
-		</Command>
-		<Command name="ПечатьСразуНаПринтер" id="2">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Печать сразу на принтер</v8:content>
-				</v8:item>
-			</Title>
-			<ToolTip>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Печать сразу на принтер</v8:content>
-				</v8:item>
-			</ToolTip>
-			<Action>ПечатьСразуНаПринтер</Action>
 		</Command>
 	</Commands>
 </Form>
