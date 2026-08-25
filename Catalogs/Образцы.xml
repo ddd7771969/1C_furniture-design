@@ -2,33 +2,33 @@
 <MetaDataObject xmlns="http://v8.1c.ru/8.3/MDClasses" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:cmi="http://v8.1c.ru/8.2/managed-application/cmi" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xen="http://v8.1c.ru/8.3/xcf/enums" xmlns:xpr="http://v8.1c.ru/8.3/xcf/predef" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
 	<Catalog uuid="1505465c-7326-448a-940e-748407bb69f8">
 		<InternalInfo>
-			<xr:GeneratedType name="CatalogObject.Образец" category="Object">
+			<xr:GeneratedType name="CatalogObject.Образцы" category="Object">
 				<xr:TypeId>1a541a39-76a6-4b98-8943-9f65e91693a3</xr:TypeId>
 				<xr:ValueId>47132a64-83b0-49ee-8169-9480b8d93296</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="CatalogRef.Образец" category="Ref">
+			<xr:GeneratedType name="CatalogRef.Образцы" category="Ref">
 				<xr:TypeId>9a1bbd25-faba-4288-9dfc-b66ea8b5ce5a</xr:TypeId>
 				<xr:ValueId>f5774940-89c6-4dab-bc13-b2cf24cc6db2</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="CatalogSelection.Образец" category="Selection">
+			<xr:GeneratedType name="CatalogSelection.Образцы" category="Selection">
 				<xr:TypeId>83f860fb-1012-4e8d-a0a4-35def0715462</xr:TypeId>
 				<xr:ValueId>c3f55273-e0dc-42f7-ab69-9f39d62198fd</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="CatalogList.Образец" category="List">
+			<xr:GeneratedType name="CatalogList.Образцы" category="List">
 				<xr:TypeId>db1947a6-3cdf-4757-82cf-cc5296659e8f</xr:TypeId>
 				<xr:ValueId>074b1a99-e98a-42d4-8819-ddf82865e533</xr:ValueId>
 			</xr:GeneratedType>
-			<xr:GeneratedType name="CatalogManager.Образец" category="Manager">
+			<xr:GeneratedType name="CatalogManager.Образцы" category="Manager">
 				<xr:TypeId>64dd03f3-936a-4acf-8bef-650ad6739f92</xr:TypeId>
 				<xr:ValueId>f042ddeb-1608-4044-ab1f-fe8b90e709d4</xr:ValueId>
 			</xr:GeneratedType>
 		</InternalInfo>
 		<Properties>
-			<Name>Образец</Name>
+			<Name>Образцы</Name>
 			<Synonym>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Образец</v8:content>
+					<v8:content>Образцы</v8:content>
 				</v8:item>
 			</Synonym>
 			<Comment/>
@@ -299,13 +299,13 @@
 			<QuickChoice>false</QuickChoice>
 			<ChoiceMode>BothWays</ChoiceMode>
 			<InputByString>
-				<xr:Field>Catalog.Образец.StandardAttribute.Description</xr:Field>
-				<xr:Field>Catalog.Образец.StandardAttribute.Code</xr:Field>
+				<xr:Field>Catalog.Образцы.StandardAttribute.Description</xr:Field>
+				<xr:Field>Catalog.Образцы.StandardAttribute.Code</xr:Field>
 			</InputByString>
 			<SearchStringModeOnInputByString>Begin</SearchStringModeOnInputByString>
 			<FullTextSearchOnInputByString>DontUse</FullTextSearchOnInputByString>
 			<ChoiceDataGetModeOnInputByString>Directly</ChoiceDataGetModeOnInputByString>
-			<DefaultObjectForm>Catalog.Образец.Form.ФормаЭлемента</DefaultObjectForm>
+			<DefaultObjectForm>Catalog.Образцы.Form.ФормаЭлемента</DefaultObjectForm>
 			<DefaultFolderForm/>
 			<DefaultListForm/>
 			<DefaultChoiceForm/>
@@ -320,7 +320,12 @@
 			<DataLockFields/>
 			<DataLockControlMode>Managed</DataLockControlMode>
 			<FullTextSearch>Use</FullTextSearch>
-			<ObjectPresentation/>
+			<ObjectPresentation>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Образец</v8:content>
+				</v8:item>
+			</ObjectPresentation>
 			<ExtendedObjectPresentation/>
 			<ListPresentation/>
 			<ExtendedListPresentation/>
@@ -418,11 +423,11 @@
 			</Attribute>
 			<TabularSection uuid="3789b48e-090d-4fb8-ac76-096064778b94">
 				<InternalInfo>
-					<xr:GeneratedType name="CatalogTabularSection.Образец.Материалы" category="TabularSection">
+					<xr:GeneratedType name="CatalogTabularSection.Образцы.Материалы" category="TabularSection">
 						<xr:TypeId>e125cf0d-26f1-42c0-92b1-e3189238b818</xr:TypeId>
 						<xr:ValueId>6ca0b30b-4394-4a77-add2-bc6e99f55a00</xr:ValueId>
 					</xr:GeneratedType>
-					<xr:GeneratedType name="CatalogTabularSectionRow.Образец.Материалы" category="TabularSectionRow">
+					<xr:GeneratedType name="CatalogTabularSectionRow.Образцы.Материалы" category="TabularSectionRow">
 						<xr:TypeId>8d1c1dcf-6a3c-4c47-a78b-277b6cec4ece</xr:TypeId>
 						<xr:ValueId>98285052-6f46-4e7e-a64e-de17f75fd483</xr:ValueId>
 					</xr:GeneratedType>
