@@ -39,6 +39,9 @@
 					<CheckBoxType>Auto</CheckBoxType>
 					<ContextMenu name="ВыводитьКартинкиКонтекстноеМеню" id="7"/>
 					<ExtendedTooltip name="ВыводитьКартинкиРасширеннаяПодсказка" id="8"/>
+					<Events>
+						<Event name="OnChange">ВыводитьКартинкиПриИзменении</Event>
+					</Events>
 				</CheckBoxField>
 				<CheckBoxField name="НеЗаполненые" id="9">
 					<DataPath>НеЗаполненые</DataPath>
