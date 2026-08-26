@@ -28,6 +28,9 @@
 					<ChooseType>false</ChooseType>
 					<ContextMenu name="ВариантНастройкиКонтекстноеМеню" id="83"/>
 					<ExtendedTooltip name="ВариантНастройкиРасширеннаяПодсказка" id="84"/>
+					<Events>
+						<Event name="OnChange">ВариантНастройкиПриИзменении</Event>
+					</Events>
 				</InputField>
 				<Button name="ДобавитьВариантНастройки" id="85">
 					<Type>UsualButton</Type>
@@ -38,6 +41,26 @@
 						<xr:LoadTransparent>true</xr:LoadTransparent>
 					</Picture>
 					<ExtendedTooltip name="ДобавитьВариантНастройкиРасширеннаяПодсказка" id="86"/>
+				</Button>
+				<Button name="СохранитьВариант" id="89">
+					<Type>UsualButton</Type>
+					<Representation>Picture</Representation>
+					<CommandName>Form.Command.СохранитьВариант</CommandName>
+					<Picture>
+						<xr:Ref>StdPicture.SaveFile</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</Picture>
+					<ExtendedTooltip name="СохранитьВариантРасширеннаяПодсказка" id="90"/>
+				</Button>
+				<Button name="УдалитьВариант" id="87">
+					<Type>UsualButton</Type>
+					<Representation>Picture</Representation>
+					<CommandName>Form.Command.УдалитьВариант</CommandName>
+					<Picture>
+						<xr:Ref>StdPicture.Delete</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</Picture>
+					<ExtendedTooltip name="УдалитьВариантРасширеннаяПодсказка" id="88"/>
 				</Button>
 			</ChildItems>
 		</UsualGroup>
@@ -663,6 +686,36 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ДобавитьВариантНастройки</Action>
+		</Command>
+		<Command name="УдалитьВариант" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить вариант</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Удалить вариант</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>УдалитьВариант</Action>
+		</Command>
+		<Command name="СохранитьВариант" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить вариант</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить вариант</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СохранитьВариант</Action>
 		</Command>
 	</Commands>
 </Form>
