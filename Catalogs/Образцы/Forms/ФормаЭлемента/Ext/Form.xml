@@ -4,17 +4,33 @@
 	<UseForFoldersAndItems>Items</UseForFoldersAndItems>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
 		<ChildItems>
-			<Button name="ФормаШильдик" id="69">
-				<Type>CommandBarButton</Type>
-				<Representation>PictureAndText</Representation>
-				<Enabled>false</Enabled>
-				<CommandName>Form.Command.Шильдик</CommandName>
-				<Picture>
-					<xr:Ref>StdPicture.Print</xr:Ref>
-					<xr:LoadTransparent>true</xr:LoadTransparent>
-				</Picture>
-				<ExtendedTooltip name="ФормаШильдикРасширеннаяПодсказка" id="70"/>
-			</Button>
+			<ButtonGroup name="ФормаГруппаШильдик" id="74">
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Шильдик</v8:content>
+					</v8:item>
+				</Title>
+				<ToolTip>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>Форма группа шильдик</v8:content>
+					</v8:item>
+				</ToolTip>
+				<ExtendedTooltip name="ФормаГруппаШильдикРасширеннаяПодсказка" id="75"/>
+				<ChildItems>
+					<Button name="ФормаПечатьШильдика" id="76">
+						<Type>CommandBarButton</Type>
+						<Representation>PictureAndText</Representation>
+						<CommandName>Form.Command.ПечатьШильдика</CommandName>
+						<Picture>
+							<xr:Ref>StdPicture.PrintImmediately</xr:Ref>
+							<xr:LoadTransparent>true</xr:LoadTransparent>
+						</Picture>
+						<ExtendedTooltip name="ФормаПечатьШильдикаРасширеннаяПодсказка" id="77"/>
+					</Button>
+				</ChildItems>
+			</ButtonGroup>
 		</ChildItems>
 	</AutoCommandBar>
 	<Events>
@@ -307,20 +323,20 @@
 		</Attribute>
 	</Attributes>
 	<Commands>
-		<Command name="Шильдик" id="1">
+		<Command name="ПечатьШильдика" id="2">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Шильдик</v8:content>
+					<v8:content>Печать шильдика</v8:content>
 				</v8:item>
 			</Title>
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Шильдик</v8:content>
+					<v8:content>Печать шильдика</v8:content>
 				</v8:item>
 			</ToolTip>
-			<Action>Шильдик</Action>
+			<Action>ПечатьШильдика</Action>
 		</Command>
 	</Commands>
 	<CommandInterface>
