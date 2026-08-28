@@ -232,13 +232,27 @@
 												</InputField>
 											</ChildItems>
 										</UsualGroup>
-										<InputField name="Исполнитель" id="25">
-											<DataPath>Объект.Исполнитель</DataPath>
-											<EditMode>EnterOnInput</EditMode>
-											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-											<ContextMenu name="ИсполнительКонтекстноеМеню" id="26"/>
-											<ExtendedTooltip name="ИсполнительРасширеннаяПодсказка" id="27"/>
-										</InputField>
+										<UsualGroup name="Группа8" id="111">
+											<Group>AlwaysHorizontal</Group>
+											<Representation>None</Representation>
+											<ShowTitle>false</ShowTitle>
+											<ExtendedTooltip name="Группа8РасширеннаяПодсказка" id="112"/>
+											<ChildItems>
+												<InputField name="Исполнитель" id="25">
+													<DataPath>Объект.Исполнитель</DataPath>
+													<EditMode>EnterOnInput</EditMode>
+													<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+													<ContextMenu name="ИсполнительКонтекстноеМеню" id="26"/>
+													<ExtendedTooltip name="ИсполнительРасширеннаяПодсказка" id="27"/>
+												</InputField>
+												<InputField name="НормаВремени_ПКД" id="113">
+													<DataPath>Объект.НормаВремени_ПКД</DataPath>
+													<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+													<ContextMenu name="НормаВремени_ПКДКонтекстноеМеню" id="114"/>
+													<ExtendedTooltip name="НормаВремени_ПКДРасширеннаяПодсказка" id="115"/>
+												</InputField>
+											</ChildItems>
+										</UsualGroup>
 										<UsualGroup name="Группа7" id="94">
 											<Group>AlwaysHorizontal</Group>
 											<Representation>None</Representation>
