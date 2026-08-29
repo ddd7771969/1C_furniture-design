@@ -245,11 +245,15 @@
 													<ContextMenu name="ИсполнительКонтекстноеМеню" id="26"/>
 													<ExtendedTooltip name="ИсполнительРасширеннаяПодсказка" id="27"/>
 												</InputField>
-												<InputField name="НормаВремени_ПКД" id="113">
-													<DataPath>Объект.НормаВремени_ПКД</DataPath>
+												<InputField name="ПланРазработкиВДнях" id="113">
+													<DataPath>Объект.ПланРазработкиВДнях</DataPath>
+													<SpinButton>true</SpinButton>
 													<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-													<ContextMenu name="НормаВремени_ПКДКонтекстноеМеню" id="114"/>
-													<ExtendedTooltip name="НормаВремени_ПКДРасширеннаяПодсказка" id="115"/>
+													<ContextMenu name="ПланРазработкиВДняхКонтекстноеМеню" id="114"/>
+													<ExtendedTooltip name="ПланРазработкиВДняхРасширеннаяПодсказка" id="115"/>
+													<Events>
+														<Event name="Tuning">НормаВремени_ПКДРегулирование</Event>
+													</Events>
 												</InputField>
 											</ChildItems>
 										</UsualGroup>
@@ -540,6 +544,28 @@
 				</v8:StringQualifiers>
 			</Type>
 		</Attribute>
+		<ConditionalAppearance>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ПланРазработкиВДнях</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Объект.ПланРазработкиВДнях</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:decimal">0</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветФона</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">#FAC1DB</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+		</ConditionalAppearance>
 	</Attributes>
 	<Commands>
 		<Command name="Принять" id="1">
