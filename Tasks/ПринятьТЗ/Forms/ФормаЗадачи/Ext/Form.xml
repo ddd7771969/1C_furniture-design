@@ -31,7 +31,6 @@
 		<Event name="NotificationProcessing">ОбработкаОповещения</Event>
 		<Event name="OnOpen">ПриОткрытии</Event>
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
-		<Event name="BeforeWriteAtServer">ПередЗаписьюНаСервере</Event>
 	</Events>
 	<ChildItems>
 		<UsualGroup name="Группа1" id="31">
@@ -341,41 +340,40 @@
 							<ShowTitle>false</ShowTitle>
 							<ExtendedTooltip name="ГруппаКомплектыРасширеннаяПодсказка" id="74"/>
 							<ChildItems>
-								<Table name="Комплекты" id="49">
-									<Representation>List</Representation>
+								<Table name="Комплекты" id="116">
 									<AutoInsertNewRow>true</AutoInsertNewRow>
 									<EnableStartDrag>true</EnableStartDrag>
 									<EnableDrag>true</EnableDrag>
-									<DataPath>Комплекты</DataPath>
+									<DataPath>Объект.Комплекты</DataPath>
 									<RowFilter xsi:nil="true"/>
-									<ContextMenu name="КомплектыКонтекстноеМеню" id="50"/>
-									<AutoCommandBar name="КомплектыКоманднаяПанель" id="51">
+									<ContextMenu name="КомплектыКонтекстноеМеню" id="117"/>
+									<AutoCommandBar name="КомплектыКоманднаяПанель" id="118">
 										<Autofill>false</Autofill>
 									</AutoCommandBar>
-									<ExtendedTooltip name="КомплектыРасширеннаяПодсказка" id="52"/>
-									<SearchStringAddition name="КомплектыСтрокаПоиска" id="53">
+									<ExtendedTooltip name="КомплектыРасширеннаяПодсказка" id="119"/>
+									<SearchStringAddition name="КомплектыСтрокаПоиска" id="120">
 										<AdditionSource>
 											<Item>Комплекты</Item>
 											<Type>SearchStringRepresentation</Type>
 										</AdditionSource>
-										<ContextMenu name="КомплектыСтрокаПоискаКонтекстноеМеню" id="54"/>
-										<ExtendedTooltip name="КомплектыСтрокаПоискаРасширеннаяПодсказка" id="55"/>
+										<ContextMenu name="КомплектыСтрокаПоискаКонтекстноеМеню" id="121"/>
+										<ExtendedTooltip name="КомплектыСтрокаПоискаРасширеннаяПодсказка" id="122"/>
 									</SearchStringAddition>
-									<ViewStatusAddition name="КомплектыСостояниеПросмотра" id="56">
+									<ViewStatusAddition name="КомплектыСостояниеПросмотра" id="123">
 										<AdditionSource>
 											<Item>Комплекты</Item>
 											<Type>ViewStatusRepresentation</Type>
 										</AdditionSource>
-										<ContextMenu name="КомплектыСостояниеПросмотраКонтекстноеМеню" id="57"/>
-										<ExtendedTooltip name="КомплектыСостояниеПросмотраРасширеннаяПодсказка" id="58"/>
+										<ContextMenu name="КомплектыСостояниеПросмотраКонтекстноеМеню" id="124"/>
+										<ExtendedTooltip name="КомплектыСостояниеПросмотраРасширеннаяПодсказка" id="125"/>
 									</ViewStatusAddition>
-									<SearchControlAddition name="КомплектыУправлениеПоиском" id="59">
+									<SearchControlAddition name="КомплектыУправлениеПоиском" id="126">
 										<AdditionSource>
 											<Item>Комплекты</Item>
 											<Type>SearchControl</Type>
 										</AdditionSource>
-										<ContextMenu name="КомплектыУправлениеПоискомКонтекстноеМеню" id="60"/>
-										<ExtendedTooltip name="КомплектыУправлениеПоискомРасширеннаяПодсказка" id="61"/>
+										<ContextMenu name="КомплектыУправлениеПоискомКонтекстноеМеню" id="127"/>
+										<ExtendedTooltip name="КомплектыУправлениеПоискомРасширеннаяПодсказка" id="128"/>
 									</SearchControlAddition>
 									<Events>
 										<Event name="BeforeAddRow">КомплектыПередНачаломДобавления</Event>
@@ -383,36 +381,33 @@
 										<Event name="BeforeRowChange">КомплектыПередНачаломИзменения</Event>
 									</Events>
 									<ChildItems>
-										<InputField name="КомплектыКомплект" id="62">
-											<DataPath>Комплекты.Комплект</DataPath>
+										<LabelField name="КомплектыНомерСтроки" id="129">
+											<DataPath>Объект.Комплекты.LineNumber</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ContextMenu name="КомплектыНомерСтрокиКонтекстноеМеню" id="130"/>
+											<ExtendedTooltip name="КомплектыНомерСтрокиРасширеннаяПодсказка" id="131"/>
+										</LabelField>
+										<InputField name="КомплектыКомплект" id="132">
+											<DataPath>Объект.Комплекты.Комплект</DataPath>
 											<EditMode>EnterOnInput</EditMode>
 											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-											<ContextMenu name="КомплектыКомплектКонтекстноеМеню" id="63"/>
-											<ExtendedTooltip name="КомплектыКомплектРасширеннаяПодсказка" id="64"/>
+											<ContextMenu name="КомплектыКомплектКонтекстноеМеню" id="133"/>
+											<ExtendedTooltip name="КомплектыКомплектРасширеннаяПодсказка" id="134"/>
 										</InputField>
-										<InputField name="КомплектыКонструктор" id="65">
-											<DataPath>Комплекты.Конструктор</DataPath>
-											<ReadOnly>true</ReadOnly>
+										<InputField name="КомплектыКонструктор" id="138">
+											<DataPath>Объект.Комплекты.Конструктор</DataPath>
 											<EditMode>EnterOnInput</EditMode>
 											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-											<ContextMenu name="КомплектыКонструкторКонтекстноеМеню" id="66"/>
-											<ExtendedTooltip name="КомплектыКонструкторРасширеннаяПодсказка" id="67"/>
+											<ContextMenu name="КомплектыКонструкторКонтекстноеМеню" id="139"/>
+											<ExtendedTooltip name="КомплектыКонструкторРасширеннаяПодсказка" id="140"/>
 										</InputField>
-										<InputField name="КомплектыПланРазработкиВДнях" id="99">
-											<DataPath>Комплекты.ПланРазработкиВДнях</DataPath>
+										<InputField name="КомплектыПланРазработкиВДнях" id="135">
+											<DataPath>Объект.Комплекты.ПланРазработкиВДнях</DataPath>
 											<EditMode>EnterOnInput</EditMode>
 											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-											<ContextMenu name="КомплектыПланРазработкиВДняхКонтекстноеМеню" id="100"/>
-											<ExtendedTooltip name="КомплектыПланРазработкиВДняхРасширеннаяПодсказка" id="101"/>
+											<ContextMenu name="КомплектыПланРазработкиВДняхКонтекстноеМеню" id="136"/>
+											<ExtendedTooltip name="КомплектыПланРазработкиВДняхРасширеннаяПодсказка" id="137"/>
 										</InputField>
-										<CheckBoxField name="КомплектыВыгруженВPDM" id="68">
-											<DataPath>Комплекты.ВыгруженВPDM</DataPath>
-											<ReadOnly>true</ReadOnly>
-											<EditMode>EnterOnInput</EditMode>
-											<CheckBoxType>Auto</CheckBoxType>
-											<ContextMenu name="КомплектыВыгруженВPDMКонтекстноеМеню" id="69"/>
-											<ExtendedTooltip name="КомплектыВыгруженВPDMРасширеннаяПодсказка" id="70"/>
-										</CheckBoxField>
 									</ChildItems>
 								</Table>
 							</ChildItems>
@@ -444,67 +439,20 @@
 			</Type>
 			<MainAttribute>true</MainAttribute>
 			<SavedData>true</SavedData>
-		</Attribute>
-		<Attribute name="Комплекты" id="2">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Комплекты</v8:content>
-				</v8:item>
-			</Title>
-			<Type>
-				<v8:Type>v8:ValueTable</v8:Type>
-			</Type>
 			<Columns>
-				<Column name="Комплект" id="1">
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Комплект</v8:content>
-						</v8:item>
-					</Title>
-					<Type>
-						<v8:Type>cfg:CatalogRef.ИзделияКомплект</v8:Type>
-					</Type>
-				</Column>
-				<Column name="Конструктор" id="2">
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Конструктор</v8:content>
-						</v8:item>
-					</Title>
-					<Type>
-						<v8:Type>cfg:CatalogRef.Сотрудники</v8:Type>
-					</Type>
-				</Column>
-				<Column name="ВыгруженВPDM" id="3">
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Выгружен в PDM</v8:content>
-						</v8:item>
-					</Title>
-					<Type>
-						<v8:Type>xs:boolean</v8:Type>
-					</Type>
-				</Column>
-				<Column name="ПланРазработкиВДнях" id="4">
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>План разработки в днях</v8:content>
-						</v8:item>
-					</Title>
-					<Type>
-						<v8:Type>xs:decimal</v8:Type>
-						<v8:NumberQualifiers>
-							<v8:Digits>3</v8:Digits>
-							<v8:FractionDigits>0</v8:FractionDigits>
-							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
-						</v8:NumberQualifiers>
-					</Type>
-				</Column>
+				<AdditionalColumns table="Объект.Комплекты">
+					<Column name="Конструктор" id="1">
+						<Title>
+							<v8:item>
+								<v8:lang>ru</v8:lang>
+								<v8:content>Конструктор</v8:content>
+							</v8:item>
+						</Title>
+						<Type>
+							<v8:Type>cfg:CatalogRef.Сотрудники</v8:Type>
+						</Type>
+					</Column>
+				</AdditionalColumns>
 			</Columns>
 		</Attribute>
 		<Attribute name="КонструкторКомпозиции" id="3">
@@ -680,6 +628,16 @@
 				<Type>Auto</Type>
 				<CommandGroup>FormNavigationPanelGoTo</CommandGroup>
 				<Index>3</Index>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>InformationRegister.ПлановоеЗначениеПроектирования.StandardCommand.OpenByValue.Задача</Command>
+				<Type>Auto</Type>
+				<CommandGroup>FormNavigationPanelGoTo</CommandGroup>
+				<Index>4</Index>
 				<DefaultVisible>false</DefaultVisible>
 				<Visible>
 					<xr:Common>false</xr:Common>
