@@ -121,12 +121,6 @@
 													<ContextMenu name="ОбъектТЗКонтекстноеМеню" id="11"/>
 													<ExtendedTooltip name="ОбъектТЗРасширеннаяПодсказка" id="12"/>
 												</InputField>
-												<LabelField name="Версия" id="16">
-													<DataPath>Объект.Версия</DataPath>
-													<EditMode>EnterOnInput</EditMode>
-													<ContextMenu name="ВерсияКонтекстноеМеню" id="17"/>
-													<ExtendedTooltip name="ВерсияРасширеннаяПодсказка" id="18"/>
-												</LabelField>
 											</ChildItems>
 										</UsualGroup>
 										<UsualGroup name="ГруппаКонструкторКомпозиции" id="78">
@@ -379,6 +373,7 @@
 										<Event name="BeforeAddRow">КомплектыПередНачаломДобавления</Event>
 										<Event name="BeforeDeleteRow">КомплектыПередУдалением</Event>
 										<Event name="BeforeRowChange">КомплектыПередНачаломИзменения</Event>
+										<Event name="OnChange">КомплектыПриИзменении</Event>
 									</Events>
 									<ChildItems>
 										<LabelField name="КомплектыНомерСтроки" id="129">
@@ -394,13 +389,6 @@
 											<ContextMenu name="КомплектыКомплектКонтекстноеМеню" id="133"/>
 											<ExtendedTooltip name="КомплектыКомплектРасширеннаяПодсказка" id="134"/>
 										</InputField>
-										<InputField name="КомплектыКонструктор" id="138">
-											<DataPath>Объект.Комплекты.Конструктор</DataPath>
-											<EditMode>EnterOnInput</EditMode>
-											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-											<ContextMenu name="КомплектыКонструкторКонтекстноеМеню" id="139"/>
-											<ExtendedTooltip name="КомплектыКонструкторРасширеннаяПодсказка" id="140"/>
-										</InputField>
 										<InputField name="КомплектыПланРазработкиВДнях" id="135">
 											<DataPath>Объект.Комплекты.ПланРазработкиВДнях</DataPath>
 											<EditMode>EnterOnInput</EditMode>
@@ -408,6 +396,21 @@
 											<ContextMenu name="КомплектыПланРазработкиВДняхКонтекстноеМеню" id="136"/>
 											<ExtendedTooltip name="КомплектыПланРазработкиВДняхРасширеннаяПодсказка" id="137"/>
 										</InputField>
+										<InputField name="КомплектыКонструктор" id="144">
+											<DataPath>Объект.Комплекты.Конструктор</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="КомплектыКонструкторКонтекстноеМеню" id="145"/>
+											<ExtendedTooltip name="КомплектыКонструкторРасширеннаяПодсказка" id="146"/>
+										</InputField>
+										<CheckBoxField name="КомплектыВыгруженВPDM" id="141">
+											<DataPath>Объект.Комплекты.ВыгруженВPDM</DataPath>
+											<ReadOnly>true</ReadOnly>
+											<EditMode>EnterOnInput</EditMode>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="КомплектыВыгруженВPDMКонтекстноеМеню" id="142"/>
+											<ExtendedTooltip name="КомплектыВыгруженВPDMРасширеннаяПодсказка" id="143"/>
+										</CheckBoxField>
 									</ChildItems>
 								</Table>
 							</ChildItems>
@@ -440,19 +443,7 @@
 			<MainAttribute>true</MainAttribute>
 			<SavedData>true</SavedData>
 			<Columns>
-				<AdditionalColumns table="Объект.Комплекты">
-					<Column name="Конструктор" id="1">
-						<Title>
-							<v8:item>
-								<v8:lang>ru</v8:lang>
-								<v8:content>Конструктор</v8:content>
-							</v8:item>
-						</Title>
-						<Type>
-							<v8:Type>cfg:CatalogRef.Сотрудники</v8:Type>
-						</Type>
-					</Column>
-				</AdditionalColumns>
+				<AdditionalColumns table="Объект.Комплекты"/>
 			</Columns>
 		</Attribute>
 		<Attribute name="КонструкторКомпозиции" id="3">
