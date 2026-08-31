@@ -1717,6 +1717,17 @@
 											<CommandName>Form.Command.ОткрытьРекламации</CommandName>
 											<ExtendedTooltip name="ОткрытьРекламацииРасширеннаяПодсказка" id="1595"/>
 										</Button>
+										<Button name="ОткрытьСотрудников" id="1622">
+											<Type>UsualButton</Type>
+											<CommandName>Form.Command.ОткрытьСотрудников</CommandName>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content>Сотрудники</v8:content>
+												</v8:item>
+											</Title>
+											<ExtendedTooltip name="ОткрытьСотрудниковРасширеннаяПодсказка" id="1623"/>
+										</Button>
 									</ChildItems>
 								</UsualGroup>
 								<Table name="ЗадачиВРаботеВедущийКонструктор" id="853">
@@ -5824,6 +5835,21 @@
 				</v8:item>
 			</ToolTip>
 			<Action>КомплектыКонтструктора</Action>
+		</Command>
+		<Command name="ОткрытьСотрудников" id="25">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть сотрудников</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Открыть сотрудников</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ОткрытьСотрудников</Action>
 		</Command>
 	</Commands>
 </Form>

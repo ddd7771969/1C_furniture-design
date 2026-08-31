@@ -112,18 +112,36 @@
 					<ShowTitle>false</ShowTitle>
 					<ExtendedTooltip name="Группа7РасширеннаяПодсказка" id="130"/>
 					<ChildItems>
-						<CheckBoxField name="СдельнаяОплата" id="126">
-							<DataPath>Объект.СдельнаяОплата</DataPath>
-							<CheckBoxType>Auto</CheckBoxType>
-							<ContextMenu name="СдельнаяОплатаКонтекстноеМеню" id="127"/>
-							<ExtendedTooltip name="СдельнаяОплатаРасширеннаяПодсказка" id="128"/>
-						</CheckBoxField>
 						<InputField name="Должность" id="131">
 							<DataPath>Объект.Должность</DataPath>
 							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 							<ContextMenu name="ДолжностьКонтекстноеМеню" id="132"/>
 							<ExtendedTooltip name="ДолжностьРасширеннаяПодсказка" id="133"/>
 						</InputField>
+						<UsualGroup name="Группа8" id="140">
+							<Group>AlwaysHorizontal</Group>
+							<Representation>None</Representation>
+							<ShowTitle>false</ShowTitle>
+							<ExtendedTooltip name="Группа8РасширеннаяПодсказка" id="141"/>
+							<ChildItems>
+								<InputField name="РежимРаботы" id="137">
+									<DataPath>РежимРаботы</DataPath>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<ContextMenu name="РежимРаботыКонтекстноеМеню" id="138"/>
+									<ExtendedTooltip name="РежимРаботыРасширеннаяПодсказка" id="139"/>
+								</InputField>
+								<Button name="ЗаписатьРежимРаботы" id="142">
+									<Type>UsualButton</Type>
+									<Representation>Picture</Representation>
+									<CommandName>Form.Command.ЗаписатьРежимРаботы</CommandName>
+									<Picture>
+										<xr:Ref>StdPicture.SaveFile</xr:Ref>
+										<xr:LoadTransparent>true</xr:LoadTransparent>
+									</Picture>
+									<ExtendedTooltip name="ЗаписатьРежимРаботыРасширеннаяПодсказка" id="143"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
 					</ChildItems>
 				</UsualGroup>
 			</ChildItems>
@@ -369,7 +387,35 @@
 				</Column>
 			</Columns>
 		</Attribute>
+		<Attribute name="РежимРаботы" id="6">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Режим работы</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>cfg:EnumRef.РежимыРаботы</v8:Type>
+			</Type>
+		</Attribute>
 	</Attributes>
+	<Commands>
+		<Command name="ЗаписатьРежимРаботы" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Записать режим работы</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Записать режим работы</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ЗаписатьРежимРаботы</Action>
+		</Command>
+	</Commands>
 	<CommandInterface>
 		<NavigationPanel>
 			<Item>

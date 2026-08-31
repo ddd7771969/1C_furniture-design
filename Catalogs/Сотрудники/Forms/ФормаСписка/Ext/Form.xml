@@ -91,6 +91,11 @@
 					<ContextMenu name="КодКонтекстноеМеню" id="20"/>
 					<ExtendedTooltip name="КодРасширеннаяПодсказка" id="21"/>
 				</LabelField>
+				<LabelField name="РежимРаботы" id="36">
+					<DataPath>Список.РежимРаботы</DataPath>
+					<ContextMenu name="РежимРаботыКонтекстноеМеню" id="37"/>
+					<ExtendedTooltip name="РежимРаботыРасширеннаяПодсказка" id="38"/>
+				</LabelField>
 				<CheckBoxField name="ВАрхиве" id="22">
 					<DataPath>Список.ВАрхиве</DataPath>
 					<CheckBoxType>Auto</CheckBoxType>
@@ -127,11 +132,14 @@
 	СправочникСотрудники.ИмяПредопределенныхДанных КАК ИмяПредопределенныхДанных,
 	ДанныеСотрудникаВPDM.UserID КАК UserID,
 	ДанныеСотрудникаВPDM.Enabled КАК Enabled,
-	ДанныеСотрудникаВPDM.Username КАК Username
+	ДанныеСотрудникаВPDM.Username КАК Username,
+	ДанныеСотрудниковСрезПоследних.РежимРаботы КАК РежимРаботы
 ИЗ
 	Справочник.Сотрудники КАК СправочникСотрудники
 		ЛЕВОЕ СОЕДИНЕНИЕ Справочник.ДанныеСотрудникаВPDM КАК ДанныеСотрудникаВPDM
-		ПО (ДанныеСотрудникаВPDM.Сотрудник = СправочникСотрудники.Ссылка)</QueryText>
+		ПО (ДанныеСотрудникаВPDM.Сотрудник = СправочникСотрудники.Ссылка)
+		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ДанныеСотрудников.СрезПоследних КАК ДанныеСотрудниковСрезПоследних
+		ПО ДанныеСотрудниковСрезПоследних.Сотрудник = СправочникСотрудники.Ссылка</QueryText>
 				<Field xsi:type="dcssch:DataSetFieldField">
 					<dcssch:dataPath>Наименование</dcssch:dataPath>
 					<dcssch:field>Наименование</dcssch:field>
@@ -185,12 +193,40 @@
 					<dcssch:field>Username</dcssch:field>
 				</Field>
 				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>ДополнительныеРеквизиты</dcssch:dataPath>
-					<dcssch:field>ДополнительныеРеквизиты</dcssch:field>
+					<dcssch:dataPath>Сотрудник</dcssch:dataPath>
+					<dcssch:field>Сотрудник</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>РежимРаботы</dcssch:dataPath>
+					<dcssch:field>РежимРаботы</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>НачалаПерерыва</dcssch:dataPath>
+					<dcssch:field>НачалаПерерыва</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Должность</dcssch:dataPath>
+					<dcssch:field>Должность</dcssch:field>
 				</Field>
 				<Field xsi:type="dcssch:DataSetFieldField">
 					<dcssch:dataPath>КонтактнаяИнформация</dcssch:dataPath>
 					<dcssch:field>КонтактнаяИнформация</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>НачалаРабочегоДня</dcssch:dataPath>
+					<dcssch:field>НачалаРабочегоДня</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ОкончаниеПерерыва</dcssch:dataPath>
+					<dcssch:field>ОкончаниеПерерыва</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ОкончаниеРабочегоДня</dcssch:dataPath>
+					<dcssch:field>ОкончаниеРабочегоДня</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ДополнительныеРеквизиты</dcssch:dataPath>
+					<dcssch:field>ДополнительныеРеквизиты</dcssch:field>
 				</Field>
 				<Field xsi:type="dcssch:DataSetFieldField">
 					<dcssch:dataPath>Родитель</dcssch:dataPath>
@@ -200,6 +236,23 @@
 					<dcssch:dataPath>ЭтоГруппа</dcssch:dataPath>
 					<dcssch:field>ЭтоГруппа</dcssch:field>
 				</Field>
+				<Parameter>
+					<dcssch:name>Период</dcssch:name>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Период</v8:content>
+						</v8:item>
+					</dcssch:title>
+					<dcssch:valueType>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>DateTime</v8:DateFractions>
+						</v8:DateQualifiers>
+					</dcssch:valueType>
+					<dcssch:value xsi:type="xs:dateTime">0001-01-01T00:00:00</dcssch:value>
+					<dcssch:useRestriction>false</dcssch:useRestriction>
+				</Parameter>
 				<MainTable>Catalog.Сотрудники</MainTable>
 				<ListSettings>
 					<dcsset:filter>
