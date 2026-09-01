@@ -1080,6 +1080,29 @@
 								</UsualGroup>
 							</ChildItems>
 						</UsualGroup>
+						<UsualGroup name="ГруппаГант" id="410">
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Гант</v8:content>
+								</v8:item>
+							</Title>
+							<ToolTip>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>Группа гант</v8:content>
+								</v8:item>
+							</ToolTip>
+							<Representation>StrongSeparation</Representation>
+							<ExtendedTooltip name="ГруппаГантРасширеннаяПодсказка" id="411"/>
+							<ChildItems>
+								<Button name="ПересчитатьДатыОкрнчания" id="412">
+									<Type>UsualButton</Type>
+									<CommandName>Form.Command.ПересчитатьДатыОкрнчания</CommandName>
+									<ExtendedTooltip name="ПересчитатьДатыОкрнчанияРасширеннаяПодсказка" id="413"/>
+								</Button>
+							</ChildItems>
+						</UsualGroup>
 					</ChildItems>
 				</Page>
 				<Page name="ГруппаДоступы" id="292">
@@ -2471,6 +2494,21 @@
 				</v8:item>
 			</ToolTip>
 			<Action>СоздатьНаОснованииВыгрузка</Action>
+		</Command>
+		<Command name="ПересчитатьДатыОкрнчания" id="8">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пересчитать даты окрнчания</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Пересчитать даты окрнчания</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ПересчитатьДатыОкрнчания</Action>
 		</Command>
 	</Commands>
 </Form>
