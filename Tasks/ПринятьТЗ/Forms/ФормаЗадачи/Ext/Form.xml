@@ -120,6 +120,9 @@
 													<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 													<ContextMenu name="ОбъектТЗКонтекстноеМеню" id="11"/>
 													<ExtendedTooltip name="ОбъектТЗРасширеннаяПодсказка" id="12"/>
+													<Events>
+														<Event name="OnChange">ОбъектТЗПриИзменении</Event>
+													</Events>
 												</InputField>
 											</ChildItems>
 										</UsualGroup>
