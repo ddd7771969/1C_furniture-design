@@ -86,7 +86,6 @@
 					<ExtendedTooltip name="ГруппаОсновнаяРасширеннаяПодсказка" id="192"/>
 					<ChildItems>
 						<UsualGroup name="Группа1" id="28">
-							<ReadOnly>true</ReadOnly>
 							<EnableContentChange>true</EnableContentChange>
 							<Group>AlwaysHorizontal</Group>
 							<Representation>None</Representation>
@@ -95,6 +94,7 @@
 							<ChildItems>
 								<InputField name="Наименование" id="4">
 									<DataPath>Объект.Description</DataPath>
+									<ReadOnly>true</ReadOnly>
 									<EditMode>EnterOnInput</EditMode>
 									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 									<ContextMenu name="НаименованиеКонтекстноеМеню" id="5"/>
@@ -108,10 +108,19 @@
 								</LabelField>
 								<InputField name="Номер" id="1">
 									<DataPath>Объект.Number</DataPath>
+									<ReadOnly>true</ReadOnly>
 									<EditMode>EnterOnInput</EditMode>
 									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 									<ContextMenu name="НомерКонтекстноеМеню" id="2"/>
 									<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="3"/>
+								</InputField>
+								<InputField name="НомерРКД" id="202">
+									<DataPath>НомерРКД</DataPath>
+									<SpinButton>true</SpinButton>
+									<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+									<MinValue xsi:type="xs:decimal">1</MinValue>
+									<ContextMenu name="НомерРКДКонтекстноеМеню" id="203"/>
+									<ExtendedTooltip name="НомерРКДРасширеннаяПодсказка" id="204"/>
 								</InputField>
 							</ChildItems>
 						</UsualGroup>
@@ -162,10 +171,10 @@
 													<CommandName>Form.Command.ДоработкаВедущийКонструктор</CommandName>
 													<ExtendedTooltip name="ДоработкаВедущийКонструкторРасширеннаяПодсказка" id="59"/>
 												</Button>
-												<Button name="Утвердить" id="81">
+												<Button name="УтвердитьВедущийКонструктор" id="81">
 													<Type>UsualButton</Type>
-													<CommandName>Form.Command.Утвердить</CommandName>
-													<ExtendedTooltip name="УтвердитьРасширеннаяПодсказка" id="82"/>
+													<CommandName>Form.Command.УтвердитьВедущийКонструктор</CommandName>
+													<ExtendedTooltip name="УтвердитьВедущийКонструкторРасширеннаяПодсказка" id="82"/>
 												</Button>
 											</ChildItems>
 										</UsualGroup>
@@ -1017,6 +1026,22 @@
 				</v8:NumberQualifiers>
 			</Type>
 		</Attribute>
+		<Attribute name="НомерРКД" id="19">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Номер РКД</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>3</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
 	</Attributes>
 	<Commands>
 		<Command name="История" id="1">
@@ -1124,7 +1149,7 @@
 			</ToolTip>
 			<Action>ДоработкаВедущийКонструктор</Action>
 		</Command>
-		<Command name="Утвердить" id="8">
+		<Command name="УтвердитьВедущийКонструктор" id="8">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -1134,7 +1159,7 @@
 			<ToolTip>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Утвердить</v8:content>
+					<v8:content>Утвердить ведущий конструктор</v8:content>
 				</v8:item>
 			</ToolTip>
 			<Action>Утвердить</Action>
