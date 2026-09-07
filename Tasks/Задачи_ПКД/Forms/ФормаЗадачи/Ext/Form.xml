@@ -181,6 +181,13 @@
 																	<ContextMenu name="НомерКонтекстноеМеню" id="2"/>
 																	<ExtendedTooltip name="НомерРасширеннаяПодсказка" id="3"/>
 																</InputField>
+																<InputField name="НомерПКД" id="482">
+																	<DataPath>НомерПКД</DataPath>
+																	<SpinButton>true</SpinButton>
+																	<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+																	<ContextMenu name="НомерПКДКонтекстноеМеню" id="483"/>
+																	<ExtendedTooltip name="НомерПКДРасширеннаяПодсказка" id="484"/>
+																</InputField>
 															</ChildItems>
 														</UsualGroup>
 														<UsualGroup name="Группа5" id="58">
@@ -2189,6 +2196,22 @@
 					<v8:Digits>4</v8:Digits>
 					<v8:FractionDigits>1</v8:FractionDigits>
 					<v8:AllowedSign>Any</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="НомерПКД" id="23">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Номер ПКД</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>3</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
 				</v8:NumberQualifiers>
 			</Type>
 		</Attribute>
