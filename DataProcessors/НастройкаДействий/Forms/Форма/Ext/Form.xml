@@ -1,6 +1,7 @@
 ﻿<?xml version="1.0" encoding="UTF-8"?>
 <Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
 		<ChildItems>
 			<Button name="ФормаСохранить" id="87">
 				<Type>CommandBarButton</Type>
@@ -16,7 +17,7 @@
 		</ChildItems>
 	</AutoCommandBar>
 	<Events>
-		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 	</Events>
 	<ChildItems>
 		<UsualGroup name="Группа1" id="1">
@@ -49,6 +50,8 @@
 							<ChildItems>
 								<Table name="ТаблицаКнопокПКД" id="7">
 									<Representation>List</Representation>
+									<ChangeRowSet>false</ChangeRowSet>
+									<ChangeRowOrder>false</ChangeRowOrder>
 									<SelectionMode>SingleRow</SelectionMode>
 									<AutoInsertNewRow>true</AutoInsertNewRow>
 									<DataPath>ТаблицаКнопокПКД</DataPath>
@@ -88,78 +91,13 @@
 										<Event name="OnChange">ТаблицаКнопокПКДПриИзменении</Event>
 									</Events>
 									<ChildItems>
-										<InputField name="ТаблицаКнопокПКДНаименованиеКнопки" id="20">
+										<InputField name="ТаблицаКнопокПКДНаименование" id="150">
 											<DataPath>ТаблицаКнопокПКД.Наименование</DataPath>
-											<ReadOnly>true</ReadOnly>
 											<EditMode>EnterOnInput</EditMode>
 											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-											<ContextMenu name="ТаблицаКнопокПКДНаименованиеКнопкиКонтекстноеМеню" id="21"/>
-											<ExtendedTooltip name="ТаблицаКнопокПКДНаименованиеКнопкиРасширеннаяПодсказка" id="22"/>
+											<ContextMenu name="ТаблицаКнопокПКДНаименованиеКонтекстноеМеню" id="151"/>
+											<ExtendedTooltip name="ТаблицаКнопокПКДНаименованиеРасширеннаяПодсказка" id="152"/>
 										</InputField>
-										<ColumnGroup name="ТаблицаКнопокПКДГруппа1" id="41">
-											<ExtendedTooltip name="ТаблицаКнопокПКДГруппа1РасширеннаяПодсказка" id="42"/>
-											<ChildItems>
-												<CheckBoxField name="ТаблицаКнопокПКДНомерПКДСогласованное" id="23">
-													<DataPath>ТаблицаКнопокПКД.НомерПКДСогласованное</DataPath>
-													<EditMode>EnterOnInput</EditMode>
-													<CheckBoxType>Auto</CheckBoxType>
-													<ContextMenu name="ТаблицаКнопокПКДНомерПКДСогласованноеКонтекстноеМеню" id="24"/>
-													<ExtendedTooltip name="ТаблицаКнопокПКДНомерПКДСогласованноеРасширеннаяПодсказка" id="25"/>
-												</CheckBoxField>
-												<CheckBoxField name="ТаблицаКнопокПКДНомерПКДНЕСогласованное" id="26">
-													<DataPath>ТаблицаКнопокПКД.НомерПКДНЕСогласованное</DataPath>
-													<EditMode>EnterOnInput</EditMode>
-													<CheckBoxType>Auto</CheckBoxType>
-													<ContextMenu name="ТаблицаКнопокПКДНомерПКДНЕСогласованноеКонтекстноеМеню" id="27"/>
-													<ExtendedTooltip name="ТаблицаКнопокПКДНомерПКДНЕСогласованноеРасширеннаяПодсказка" id="28"/>
-												</CheckBoxField>
-											</ChildItems>
-										</ColumnGroup>
-										<ColumnGroup name="ТаблицаКнопокПКДГруппа2" id="43">
-											<ExtendedTooltip name="ТаблицаКнопокПКДГруппа2РасширеннаяПодсказка" id="44"/>
-											<ChildItems>
-												<CheckBoxField name="ТаблицаКнопокПКДДоработка" id="29">
-													<DataPath>ТаблицаКнопокПКД.Доработка</DataPath>
-													<EditMode>EnterOnInput</EditMode>
-													<CheckBoxType>Auto</CheckBoxType>
-													<ContextMenu name="ТаблицаКнопокПКДДоработкаКонтекстноеМеню" id="30"/>
-													<ExtendedTooltip name="ТаблицаКнопокПКДДоработкаРасширеннаяПодсказка" id="31"/>
-												</CheckBoxField>
-												<CheckBoxField name="ТаблицаКнопокПКДИзменение" id="32">
-													<DataPath>ТаблицаКнопокПКД.Изменение</DataPath>
-													<EditMode>EnterOnInput</EditMode>
-													<CheckBoxType>Auto</CheckBoxType>
-													<ContextMenu name="ТаблицаКнопокПКДИзменениеКонтекстноеМеню" id="33"/>
-													<ExtendedTooltip name="ТаблицаКнопокПКДИзменениеРасширеннаяПодсказка" id="34"/>
-												</CheckBoxField>
-											</ChildItems>
-										</ColumnGroup>
-										<ColumnGroup name="ТаблицаКнопокПКДГруппа3" id="45">
-											<ExtendedTooltip name="ТаблицаКнопокПКДГруппа3РасширеннаяПодсказка" id="46"/>
-											<ChildItems>
-												<CheckBoxField name="ТаблицаКнопокПКДРедакция" id="35">
-													<DataPath>ТаблицаКнопокПКД.Редакция</DataPath>
-													<EditMode>EnterOnInput</EditMode>
-													<CheckBoxType>Auto</CheckBoxType>
-													<ContextMenu name="ТаблицаКнопокПКДРедакцияКонтекстноеМеню" id="36"/>
-													<ExtendedTooltip name="ТаблицаКнопокПКДРедакцияРасширеннаяПодсказка" id="37"/>
-												</CheckBoxField>
-												<CheckBoxField name="ТаблицаКнопокПКДРекламация" id="38">
-													<DataPath>ТаблицаКнопокПКД.Рекламация</DataPath>
-													<EditMode>EnterOnInput</EditMode>
-													<CheckBoxType>Auto</CheckBoxType>
-													<ContextMenu name="ТаблицаКнопокПКДРекламацияКонтекстноеМеню" id="39"/>
-													<ExtendedTooltip name="ТаблицаКнопокПКДРекламацияРасширеннаяПодсказка" id="40"/>
-												</CheckBoxField>
-											</ChildItems>
-										</ColumnGroup>
-										<CheckBoxField name="ТаблицаКнопокПКДСогласование" id="144">
-											<DataPath>ТаблицаКнопокПКД.Согласование</DataPath>
-											<EditMode>EnterOnInput</EditMode>
-											<CheckBoxType>Auto</CheckBoxType>
-											<ContextMenu name="ТаблицаКнопокПКДСогласованиеКонтекстноеМеню" id="145"/>
-											<ExtendedTooltip name="ТаблицаКнопокПКДСогласованиеРасширеннаяПодсказка" id="146"/>
-										</CheckBoxField>
 									</ChildItems>
 								</Table>
 							</ChildItems>
@@ -183,9 +121,10 @@
 							<ChildItems>
 								<Table name="ТаблицаКнопокРКД" id="47">
 									<Representation>List</Representation>
+									<ChangeRowSet>false</ChangeRowSet>
+									<ChangeRowOrder>false</ChangeRowOrder>
+									<SelectionMode>SingleRow</SelectionMode>
 									<AutoInsertNewRow>true</AutoInsertNewRow>
-									<EnableStartDrag>true</EnableStartDrag>
-									<EnableDrag>true</EnableDrag>
 									<DataPath>ТаблицаКнопокРКД</DataPath>
 									<RowFilter xsi:nil="true"/>
 									<ContextMenu name="ТаблицаКнопокРКДКонтекстноеМеню" id="48"/>
@@ -218,6 +157,8 @@
 										<ExtendedTooltip name="ТаблицаКнопокРКДУправлениеПоискомРасширеннаяПодсказка" id="59"/>
 									</SearchControlAddition>
 									<Events>
+										<Event name="BeforeAddRow">ТаблицаКнопокРКДПередНачаломДобавления</Event>
+										<Event name="BeforeDeleteRow">ТаблицаКнопокРКДПередУдалением</Event>
 										<Event name="OnChange">ТаблицаКнопокРКДПриИзменении</Event>
 									</Events>
 									<ChildItems>
@@ -231,60 +172,12 @@
 										</InputField>
 										<ColumnGroup name="ТаблицаКнопокРКДГруппа1" id="81">
 											<ExtendedTooltip name="ТаблицаКнопокРКДГруппа1РасширеннаяПодсказка" id="82"/>
-											<ChildItems>
-												<CheckBoxField name="ТаблицаКнопокРКДНомерРКДСогласованное" id="63">
-													<DataPath>ТаблицаКнопокРКД.НомерРКДСогласованное</DataPath>
-													<EditMode>EnterOnInput</EditMode>
-													<CheckBoxType>Auto</CheckBoxType>
-													<ContextMenu name="ТаблицаКнопокРКДНомерРКДСогласованноеКонтекстноеМеню" id="64"/>
-													<ExtendedTooltip name="ТаблицаКнопокРКДНомерРКДСогласованноеРасширеннаяПодсказка" id="65"/>
-												</CheckBoxField>
-												<CheckBoxField name="ТаблицаКнопокРКДНомерРКДНЕСогласованное" id="66">
-													<DataPath>ТаблицаКнопокРКД.НомерРКДНЕСогласованное</DataPath>
-													<EditMode>EnterOnInput</EditMode>
-													<CheckBoxType>Auto</CheckBoxType>
-													<ContextMenu name="ТаблицаКнопокРКДНомерРКДНЕСогласованноеКонтекстноеМеню" id="67"/>
-													<ExtendedTooltip name="ТаблицаКнопокРКДНомерРКДНЕСогласованноеРасширеннаяПодсказка" id="68"/>
-												</CheckBoxField>
-											</ChildItems>
 										</ColumnGroup>
 										<ColumnGroup name="ТаблицаКнопокРКДГруппа2" id="83">
 											<ExtendedTooltip name="ТаблицаКнопокРКДГруппа2РасширеннаяПодсказка" id="84"/>
-											<ChildItems>
-												<CheckBoxField name="ТаблицаКнопокРКДДоработка" id="69">
-													<DataPath>ТаблицаКнопокРКД.Доработка</DataPath>
-													<EditMode>EnterOnInput</EditMode>
-													<CheckBoxType>Auto</CheckBoxType>
-													<ContextMenu name="ТаблицаКнопокРКДДоработкаКонтекстноеМеню" id="70"/>
-													<ExtendedTooltip name="ТаблицаКнопокРКДДоработкаРасширеннаяПодсказка" id="71"/>
-												</CheckBoxField>
-												<CheckBoxField name="ТаблицаКнопокРКДИзменение" id="72">
-													<DataPath>ТаблицаКнопокРКД.Изменение</DataPath>
-													<EditMode>EnterOnInput</EditMode>
-													<CheckBoxType>Auto</CheckBoxType>
-													<ContextMenu name="ТаблицаКнопокРКДИзменениеКонтекстноеМеню" id="73"/>
-													<ExtendedTooltip name="ТаблицаКнопокРКДИзменениеРасширеннаяПодсказка" id="74"/>
-												</CheckBoxField>
-											</ChildItems>
 										</ColumnGroup>
 										<ColumnGroup name="ТаблицаКнопокРКДГруппа3" id="85">
 											<ExtendedTooltip name="ТаблицаКнопокРКДГруппа3РасширеннаяПодсказка" id="86"/>
-											<ChildItems>
-												<CheckBoxField name="ТаблицаКнопокРКДРедакция" id="75">
-													<DataPath>ТаблицаКнопокРКД.Редакция</DataPath>
-													<EditMode>EnterOnInput</EditMode>
-													<CheckBoxType>Auto</CheckBoxType>
-													<ContextMenu name="ТаблицаКнопокРКДРедакцияКонтекстноеМеню" id="76"/>
-													<ExtendedTooltip name="ТаблицаКнопокРКДРедакцияРасширеннаяПодсказка" id="77"/>
-												</CheckBoxField>
-												<CheckBoxField name="ТаблицаКнопокРКДРекламация" id="78">
-													<DataPath>ТаблицаКнопокРКД.Рекламация</DataPath>
-													<EditMode>EnterOnInput</EditMode>
-													<CheckBoxType>Auto</CheckBoxType>
-													<ContextMenu name="ТаблицаКнопокРКДРекламацияКонтекстноеМеню" id="79"/>
-													<ExtendedTooltip name="ТаблицаКнопокРКДРекламацияРасширеннаяПодсказка" id="80"/>
-												</CheckBoxField>
-											</ChildItems>
 										</ColumnGroup>
 									</ChildItems>
 								</Table>
@@ -310,9 +203,10 @@
 					<ChildItems>
 						<Table name="ТаблицаКнопокСостояния" id="93">
 							<Representation>List</Representation>
-							<AutoInsertNewRow>true</AutoInsertNewRow>
-							<EnableStartDrag>true</EnableStartDrag>
-							<EnableDrag>true</EnableDrag>
+							<CommandBarLocation>None</CommandBarLocation>
+							<ChangeRowSet>false</ChangeRowSet>
+							<ChangeRowOrder>false</ChangeRowOrder>
+							<SelectionMode>SingleRow</SelectionMode>
 							<DataPath>ТаблицаКнопокСостояния</DataPath>
 							<RowFilter xsi:nil="true"/>
 							<ContextMenu name="ТаблицаКнопокСостоянияКонтекстноеМеню" id="94"/>
@@ -344,6 +238,11 @@
 								<ContextMenu name="ТаблицаКнопокСостоянияУправлениеПоискомКонтекстноеМеню" id="104"/>
 								<ExtendedTooltip name="ТаблицаКнопокСостоянияУправлениеПоискомРасширеннаяПодсказка" id="105"/>
 							</SearchControlAddition>
+							<Events>
+								<Event name="BeforeAddRow">ТаблицаКнопокСостоянияПередНачаломДобавления</Event>
+								<Event name="BeforeDeleteRow">ТаблицаКнопокСостоянияПередУдалением</Event>
+								<Event name="OnChange">ТаблицаКнопокСостоянияПриИзменении</Event>
+							</Events>
 							<ChildItems>
 								<InputField name="ТаблицаКнопокСостоянияНаименованиеСостояния" id="106">
 									<DataPath>ТаблицаКнопокСостояния.Наименование</DataPath>
@@ -355,87 +254,16 @@
 								</InputField>
 								<ColumnGroup name="ТаблицаКнопокСостоянияГруппа1" id="136">
 									<ExtendedTooltip name="ТаблицаКнопокСостоянияГруппа1РасширеннаяПодсказка" id="137"/>
-									<ChildItems>
-										<CheckBoxField name="ТаблицаКнопокСостоянияНомерПКДСогласованное" id="109">
-											<DataPath>ТаблицаКнопокСостояния.НомерПКДСогласованное</DataPath>
-											<EditMode>EnterOnInput</EditMode>
-											<CheckBoxType>Auto</CheckBoxType>
-											<ContextMenu name="ТаблицаКнопокСостоянияНомерПКДСогласованноеКонтекстноеМеню" id="110"/>
-											<ExtendedTooltip name="ТаблицаКнопокСостоянияНомерПКДСогласованноеРасширеннаяПодсказка" id="111"/>
-										</CheckBoxField>
-										<CheckBoxField name="ТаблицаКнопокСостоянияНомерПКДНЕСогласованное" id="112">
-											<DataPath>ТаблицаКнопокСостояния.НомерПКДНЕСогласованное</DataPath>
-											<EditMode>EnterOnInput</EditMode>
-											<CheckBoxType>Auto</CheckBoxType>
-											<ContextMenu name="ТаблицаКнопокСостоянияНомерПКДНЕСогласованноеКонтекстноеМеню" id="113"/>
-											<ExtendedTooltip name="ТаблицаКнопокСостоянияНомерПКДНЕСогласованноеРасширеннаяПодсказка" id="114"/>
-										</CheckBoxField>
-									</ChildItems>
 								</ColumnGroup>
 								<ColumnGroup name="ТаблицаКнопокСостоянияГруппа2" id="138">
 									<ExtendedTooltip name="ТаблицаКнопокСостоянияГруппа2РасширеннаяПодсказка" id="139"/>
-									<ChildItems>
-										<CheckBoxField name="ТаблицаКнопокСостоянияНомерРКДСогласованное" id="130">
-											<DataPath>ТаблицаКнопокСостояния.НомерРКДСогласованное</DataPath>
-											<EditMode>EnterOnInput</EditMode>
-											<CheckBoxType>Auto</CheckBoxType>
-											<ContextMenu name="ТаблицаКнопокСостоянияНомерРКДСогласованноеКонтекстноеМеню" id="131"/>
-											<ExtendedTooltip name="ТаблицаКнопокСостоянияНомерРКДСогласованноеРасширеннаяПодсказка" id="132"/>
-										</CheckBoxField>
-										<CheckBoxField name="ТаблицаКнопокСостоянияНомерРКДНЕСогласованное" id="133">
-											<DataPath>ТаблицаКнопокСостояния.НомерРКДНЕСогласованное</DataPath>
-											<EditMode>EnterOnInput</EditMode>
-											<CheckBoxType>Auto</CheckBoxType>
-											<ContextMenu name="ТаблицаКнопокСостоянияНомерРКДНЕСогласованноеКонтекстноеМеню" id="134"/>
-											<ExtendedTooltip name="ТаблицаКнопокСостоянияНомерРКДНЕСогласованноеРасширеннаяПодсказка" id="135"/>
-										</CheckBoxField>
-									</ChildItems>
 								</ColumnGroup>
 								<ColumnGroup name="ТаблицаКнопокСостоянияГруппа3" id="140">
 									<ExtendedTooltip name="ТаблицаКнопокСостоянияГруппа3РасширеннаяПодсказка" id="141"/>
-									<ChildItems>
-										<CheckBoxField name="ТаблицаКнопокСостоянияДоработка" id="115">
-											<DataPath>ТаблицаКнопокСостояния.Доработка</DataPath>
-											<EditMode>EnterOnInput</EditMode>
-											<CheckBoxType>Auto</CheckBoxType>
-											<ContextMenu name="ТаблицаКнопокСостоянияДоработкаКонтекстноеМеню" id="116"/>
-											<ExtendedTooltip name="ТаблицаКнопокСостоянияДоработкаРасширеннаяПодсказка" id="117"/>
-										</CheckBoxField>
-										<CheckBoxField name="ТаблицаКнопокСостоянияИзменение" id="118">
-											<DataPath>ТаблицаКнопокСостояния.Изменение</DataPath>
-											<EditMode>EnterOnInput</EditMode>
-											<CheckBoxType>Auto</CheckBoxType>
-											<ContextMenu name="ТаблицаКнопокСостоянияИзменениеКонтекстноеМеню" id="119"/>
-											<ExtendedTooltip name="ТаблицаКнопокСостоянияИзменениеРасширеннаяПодсказка" id="120"/>
-										</CheckBoxField>
-									</ChildItems>
 								</ColumnGroup>
 								<ColumnGroup name="ТаблицаКнопокСостоянияГруппа4" id="142">
 									<ExtendedTooltip name="ТаблицаКнопокСостоянияГруппа4РасширеннаяПодсказка" id="143"/>
-									<ChildItems>
-										<CheckBoxField name="ТаблицаКнопокСостоянияРедакция" id="121">
-											<DataPath>ТаблицаКнопокСостояния.Редакция</DataPath>
-											<EditMode>EnterOnInput</EditMode>
-											<CheckBoxType>Auto</CheckBoxType>
-											<ContextMenu name="ТаблицаКнопокСостоянияРедакцияКонтекстноеМеню" id="122"/>
-											<ExtendedTooltip name="ТаблицаКнопокСостоянияРедакцияРасширеннаяПодсказка" id="123"/>
-										</CheckBoxField>
-										<CheckBoxField name="ТаблицаКнопокСостоянияРекламация" id="124">
-											<DataPath>ТаблицаКнопокСостояния.Рекламация</DataPath>
-											<EditMode>EnterOnInput</EditMode>
-											<CheckBoxType>Auto</CheckBoxType>
-											<ContextMenu name="ТаблицаКнопокСостоянияРекламацияКонтекстноеМеню" id="125"/>
-											<ExtendedTooltip name="ТаблицаКнопокСостоянияРекламацияРасширеннаяПодсказка" id="126"/>
-										</CheckBoxField>
-									</ChildItems>
 								</ColumnGroup>
-								<CheckBoxField name="ТаблицаКнопокСостоянияСогласование" id="147">
-									<DataPath>ТаблицаКнопокСостояния.Согласование</DataPath>
-									<EditMode>EnterOnInput</EditMode>
-									<CheckBoxType>Auto</CheckBoxType>
-									<ContextMenu name="ТаблицаКнопокСостоянияСогласованиеКонтекстноеМеню" id="148"/>
-									<ExtendedTooltip name="ТаблицаКнопокСостоянияСогласованиеРасширеннаяПодсказка" id="149"/>
-								</CheckBoxField>
 							</ChildItems>
 						</Table>
 					</ChildItems>
@@ -476,88 +304,11 @@
 						</v8:StringQualifiers>
 					</Type>
 				</Column>
-				<Column name="НомерПКДСогласованное" id="2">
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Номер ПКД согласованное</v8:content>
-						</v8:item>
-					</Title>
-					<Type>
-						<v8:Type>xs:boolean</v8:Type>
-					</Type>
-				</Column>
-				<Column name="НомерПКДНЕСогласованное" id="3">
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Номер ПКД не согласованное</v8:content>
-						</v8:item>
-					</Title>
-					<Type>
-						<v8:Type>xs:boolean</v8:Type>
-					</Type>
-				</Column>
-				<Column name="Доработка" id="4">
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Доработка</v8:content>
-						</v8:item>
-					</Title>
-					<Type>
-						<v8:Type>xs:boolean</v8:Type>
-					</Type>
-				</Column>
-				<Column name="Изменение" id="5">
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Изменение</v8:content>
-						</v8:item>
-					</Title>
-					<Type>
-						<v8:Type>xs:boolean</v8:Type>
-					</Type>
-				</Column>
-				<Column name="Редакция" id="6">
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Редакция</v8:content>
-						</v8:item>
-					</Title>
-					<Type>
-						<v8:Type>xs:boolean</v8:Type>
-					</Type>
-				</Column>
-				<Column name="Рекламация" id="7">
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Рекламация</v8:content>
-						</v8:item>
-					</Title>
-					<Type>
-						<v8:Type>xs:boolean</v8:Type>
-					</Type>
-				</Column>
-				<Column name="Изменена" id="8">
+				<Column name="Изменена" id="2">
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
 							<v8:content>Изменена</v8:content>
-						</v8:item>
-					</Title>
-					<Type>
-						<v8:Type>xs:boolean</v8:Type>
-					</Type>
-				</Column>
-				<Column name="Согласование" id="9">
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Согласование</v8:content>
 						</v8:item>
 					</Title>
 					<Type>
@@ -590,72 +341,6 @@
 							<v8:Length>0</v8:Length>
 							<v8:AllowedLength>Variable</v8:AllowedLength>
 						</v8:StringQualifiers>
-					</Type>
-				</Column>
-				<Column name="НомерРКДСогласованное" id="2">
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Номер РКД согласованное</v8:content>
-						</v8:item>
-					</Title>
-					<Type>
-						<v8:Type>xs:boolean</v8:Type>
-					</Type>
-				</Column>
-				<Column name="НомерРКДНЕСогласованное" id="3">
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Номер РКД не согласованное</v8:content>
-						</v8:item>
-					</Title>
-					<Type>
-						<v8:Type>xs:boolean</v8:Type>
-					</Type>
-				</Column>
-				<Column name="Доработка" id="4">
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Доработка</v8:content>
-						</v8:item>
-					</Title>
-					<Type>
-						<v8:Type>xs:boolean</v8:Type>
-					</Type>
-				</Column>
-				<Column name="Изменение" id="5">
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Изменение</v8:content>
-						</v8:item>
-					</Title>
-					<Type>
-						<v8:Type>xs:boolean</v8:Type>
-					</Type>
-				</Column>
-				<Column name="Редакция" id="6">
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Редакция</v8:content>
-						</v8:item>
-					</Title>
-					<Type>
-						<v8:Type>xs:boolean</v8:Type>
-					</Type>
-				</Column>
-				<Column name="Рекламация" id="7">
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Рекламация</v8:content>
-						</v8:item>
-					</Title>
-					<Type>
-						<v8:Type>xs:boolean</v8:Type>
 					</Type>
 				</Column>
 				<Column name="Изменена" id="8">
@@ -697,110 +382,11 @@
 						</v8:StringQualifiers>
 					</Type>
 				</Column>
-				<Column name="НомерПКДСогласованное" id="2">
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Номер ПКД согласованное</v8:content>
-						</v8:item>
-					</Title>
-					<Type>
-						<v8:Type>xs:boolean</v8:Type>
-					</Type>
-				</Column>
-				<Column name="НомерПКДНЕСогласованное" id="3">
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Номер ПКД не согласованное</v8:content>
-						</v8:item>
-					</Title>
-					<Type>
-						<v8:Type>xs:boolean</v8:Type>
-					</Type>
-				</Column>
-				<Column name="Доработка" id="4">
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Доработка</v8:content>
-						</v8:item>
-					</Title>
-					<Type>
-						<v8:Type>xs:boolean</v8:Type>
-					</Type>
-				</Column>
-				<Column name="Изменение" id="5">
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Изменение</v8:content>
-						</v8:item>
-					</Title>
-					<Type>
-						<v8:Type>xs:boolean</v8:Type>
-					</Type>
-				</Column>
-				<Column name="Редакция" id="6">
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Редакция</v8:content>
-						</v8:item>
-					</Title>
-					<Type>
-						<v8:Type>xs:boolean</v8:Type>
-					</Type>
-				</Column>
-				<Column name="Рекламация" id="7">
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Рекламация</v8:content>
-						</v8:item>
-					</Title>
-					<Type>
-						<v8:Type>xs:boolean</v8:Type>
-					</Type>
-				</Column>
 				<Column name="Изменена" id="8">
 					<Title>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
 							<v8:content>Изменена</v8:content>
-						</v8:item>
-					</Title>
-					<Type>
-						<v8:Type>xs:boolean</v8:Type>
-					</Type>
-				</Column>
-				<Column name="НомерРКДСогласованное" id="9">
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Номер РКД согласованное</v8:content>
-						</v8:item>
-					</Title>
-					<Type>
-						<v8:Type>xs:boolean</v8:Type>
-					</Type>
-				</Column>
-				<Column name="НомерРКДНЕСогласованное" id="10">
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Номер РКД не согласованное</v8:content>
-						</v8:item>
-					</Title>
-					<Type>
-						<v8:Type>xs:boolean</v8:Type>
-					</Type>
-				</Column>
-				<Column name="Согласование" id="11">
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Согласование</v8:content>
 						</v8:item>
 					</Title>
 					<Type>
