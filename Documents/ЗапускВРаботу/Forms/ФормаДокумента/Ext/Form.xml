@@ -411,23 +411,6 @@
 								<Event name="OnChange">КомплектыНормаВремени_ПКДПриИзменении</Event>
 							</Events>
 						</InputField>
-						<InputField name="КомплектыНормаДоработки_ПКД" id="173">
-							<DataPath>Объект.Комплекты.НормаДоработки_ПКД</DataPath>
-							<Visible>false</Visible>
-							<Title>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>t доработки</v8:content>
-								</v8:item>
-							</Title>
-							<EditMode>EnterOnInput</EditMode>
-							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-							<ContextMenu name="КомплектыНормаДоработки_ПКДКонтекстноеМеню" id="174"/>
-							<ExtendedTooltip name="КомплектыНормаДоработки_ПКДРасширеннаяПодсказка" id="175"/>
-							<Events>
-								<Event name="OnChange">КомплектыНормаДоработки_ПКДПриИзменении</Event>
-							</Events>
-						</InputField>
 						<InputField name="КомплектыДнейПКД" id="95">
 							<DataPath>Объект.Комплекты.ДнейПКД</DataPath>
 							<Visible>false</Visible>
@@ -485,23 +468,6 @@
 							<ExtendedTooltip name="КомплектыНормаВремени_РКДРасширеннаяПодсказка" id="70"/>
 							<Events>
 								<Event name="OnChange">КомплектыНормаВремени_РКДПриИзменении</Event>
-							</Events>
-						</InputField>
-						<InputField name="КомплектыНормаДоработки_РКД" id="176">
-							<DataPath>Объект.Комплекты.НормаДоработки_РКД</DataPath>
-							<Visible>false</Visible>
-							<Title>
-								<v8:item>
-									<v8:lang>ru</v8:lang>
-									<v8:content>t доработки</v8:content>
-								</v8:item>
-							</Title>
-							<EditMode>EnterOnInput</EditMode>
-							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-							<ContextMenu name="КомплектыНормаДоработки_РКДКонтекстноеМеню" id="177"/>
-							<ExtendedTooltip name="КомплектыНормаДоработки_РКДРасширеннаяПодсказка" id="178"/>
-							<Events>
-								<Event name="OnChange">КомплектыНормаДоработки_РКДПриИзменении</Event>
 							</Events>
 						</InputField>
 						<InputField name="КомплектыДнейРКД" id="116">
@@ -715,38 +681,6 @@
 						</Title>
 						<Type>
 							<v8:Type>cfg:CatalogRef.ГабаритныеЧертежи</v8:Type>
-						</Type>
-					</Column>
-					<Column name="НормаДоработки_ПКД" id="3">
-						<Title>
-							<v8:item>
-								<v8:lang>ru</v8:lang>
-								<v8:content>Норма времени ПКД</v8:content>
-							</v8:item>
-						</Title>
-						<Type>
-							<v8:Type>xs:decimal</v8:Type>
-							<v8:NumberQualifiers>
-								<v8:Digits>4</v8:Digits>
-								<v8:FractionDigits>1</v8:FractionDigits>
-								<v8:AllowedSign>Nonnegative</v8:AllowedSign>
-							</v8:NumberQualifiers>
-						</Type>
-					</Column>
-					<Column name="НормаДоработки_РКД" id="4">
-						<Title>
-							<v8:item>
-								<v8:lang>ru</v8:lang>
-								<v8:content>Норма доработки ПКД</v8:content>
-							</v8:item>
-						</Title>
-						<Type>
-							<v8:Type>xs:decimal</v8:Type>
-							<v8:NumberQualifiers>
-								<v8:Digits>4</v8:Digits>
-								<v8:FractionDigits>1</v8:FractionDigits>
-								<v8:AllowedSign>Nonnegative</v8:AllowedSign>
-							</v8:NumberQualifiers>
 						</Type>
 					</Column>
 					<Column name="БезГабаритногоЧертежа" id="5">
