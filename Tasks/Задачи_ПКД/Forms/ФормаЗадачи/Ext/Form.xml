@@ -787,6 +787,17 @@
 																	<CommandName>Form.Command.КорректировкаДизайнер</CommandName>
 																	<ExtendedTooltip name="КорректировкаДизайнерРасширеннаяПодсказка" id="109"/>
 																</Button>
+																<Button name="ИзменитьДизайнер" id="485">
+																	<Type>UsualButton</Type>
+																	<CommandName>Form.Command.ИзменитьДизайнер</CommandName>
+																	<Title>
+																		<v8:item>
+																			<v8:lang>ru</v8:lang>
+																			<v8:content>Изменить</v8:content>
+																		</v8:item>
+																	</Title>
+																	<ExtendedTooltip name="ИзменитьДизайнерРасширеннаяПодсказка" id="486"/>
+																</Button>
 																<Button name="ВнешнееСоглосование" id="114">
 																	<Type>UsualButton</Type>
 																	<CommandName>Form.Command.ВнешнееСоглосование</CommandName>
@@ -801,16 +812,6 @@
 																	<Type>UsualButton</Type>
 																	<CommandName>Form.Command.Согласовано</CommandName>
 																	<ExtendedTooltip name="СогласованоРасширеннаяПодсказка" id="113"/>
-																</Button>
-																<Button name="РекламацияДизайнер" id="182">
-																	<Type>UsualButton</Type>
-																	<CommandName>Form.Command.РекламацияДизайнер</CommandName>
-																	<ExtendedTooltip name="РекламацияДизайнерРасширеннаяПодсказка" id="183"/>
-																</Button>
-																<Button name="РедакцияДизайнер" id="180">
-																	<Type>UsualButton</Type>
-																	<CommandName>Form.Command.РедакцияДизайнер</CommandName>
-																	<ExtendedTooltip name="РедакцияДизайнерРасширеннаяПодсказка" id="181"/>
 																</Button>
 																<Button name="КонтрольКП" id="178">
 																	<Type>UsualButton</Type>
@@ -2525,36 +2526,6 @@
 			</ToolTip>
 			<Action>КонтрольКП</Action>
 		</Command>
-		<Command name="РедакцияДизайнер" id="21">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Редакция</v8:content>
-				</v8:item>
-			</Title>
-			<ToolTip>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Редакция дизайнер</v8:content>
-				</v8:item>
-			</ToolTip>
-			<Action>РедакцияДизайнер</Action>
-		</Command>
-		<Command name="РекламацияДизайнер" id="22">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Рекламация</v8:content>
-				</v8:item>
-			</Title>
-			<ToolTip>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Рекламация дизайнер</v8:content>
-				</v8:item>
-			</ToolTip>
-			<Action>РекламацияДизайнер</Action>
-		</Command>
 		<Command name="СогласованоБезИзменений" id="23">
 			<Title>
 				<v8:item>
@@ -2839,6 +2810,21 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ОбновитьДополнительныеЗадачи</Action>
+		</Command>
+		<Command name="ИзменитьДизайнер" id="16">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Изменить дизайнер</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Изменить дизайнер</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ИзменитьДизайнер</Action>
 		</Command>
 	</Commands>
 	<CommandInterface>

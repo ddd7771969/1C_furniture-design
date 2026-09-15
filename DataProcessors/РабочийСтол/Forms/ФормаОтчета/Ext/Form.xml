@@ -4085,7 +4085,7 @@
 ИЗ
 	Задача.Задачи_ПКД КАК Задачи_ПКД
 ГДЕ
-	Задачи_ПКД.ТипЗадачи = ЗНАЧЕНИЕ(Перечисление.ТипыЗадачКонструирования.ОжиданиеФиндиректором)
+	Задачи_ПКД.ТипЗадачи = ЗНАЧЕНИЕ(Перечисление.ТипыЗадачКонструирования.Финдиректор)
 	И ВЫБОР
 			КОГДА &amp;Исполнитель = ЗНАЧЕНИЕ(Справочник.Пользователи.ПустаяСсылка)
 				ТОГДА ИСТИНА
@@ -4099,6 +4099,22 @@
 	И НЕ Задачи_ПКД.Выполнена
 	И НЕ Задачи_ПКД.ОбобщеннаяЗадача</QueryText>
 				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ЧекЛист</dcssch:dataPath>
+					<dcssch:field>ЧекЛист</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Изменение</dcssch:dataPath>
+					<dcssch:field>Изменение</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Комментарии</dcssch:dataPath>
+					<dcssch:field>Комментарии</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Ссылка</dcssch:dataPath>
+					<dcssch:field>Ссылка</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
 					<dcssch:dataPath>Проект</dcssch:dataPath>
 					<dcssch:field>Проект</dcssch:field>
 				</Field>
@@ -4107,36 +4123,44 @@
 					<dcssch:field>Автор</dcssch:field>
 				</Field>
 				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>Ссылка</dcssch:dataPath>
-					<dcssch:field>Ссылка</dcssch:field>
+					<dcssch:dataPath>КоличествоНеВыполненыхВопросовЧекЛиста</dcssch:dataPath>
+					<dcssch:field>КоличествоНеВыполненыхВопросовЧекЛиста</dcssch:field>
 				</Field>
 				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>Наименование</dcssch:dataPath>
-					<dcssch:field>Наименование</dcssch:field>
+					<dcssch:dataPath>КороткаяСрочнаяЗадача</dcssch:dataPath>
+					<dcssch:field>КороткаяСрочнаяЗадача</dcssch:field>
 				</Field>
 				<Field xsi:type="dcssch:DataSetFieldField">
 					<dcssch:dataPath>ВерсияДанных</dcssch:dataPath>
 					<dcssch:field>ВерсияДанных</dcssch:field>
 				</Field>
 				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>ПометкаУдаления</dcssch:dataPath>
-					<dcssch:field>ПометкаУдаления</dcssch:field>
+					<dcssch:dataPath>Наименование</dcssch:dataPath>
+					<dcssch:field>Наименование</dcssch:field>
 				</Field>
 				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>Выполнена</dcssch:dataPath>
-					<dcssch:field>Выполнена</dcssch:field>
+					<dcssch:dataPath>ПодчиненыеЗадачи</dcssch:dataPath>
+					<dcssch:field>ПодчиненыеЗадачи</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ПометкаУдаления</dcssch:dataPath>
+					<dcssch:field>ПометкаУдаления</dcssch:field>
 				</Field>
 				<Field xsi:type="dcssch:DataSetFieldField">
 					<dcssch:dataPath>Номер</dcssch:dataPath>
 					<dcssch:field>Номер</dcssch:field>
 				</Field>
 				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>ДополнительноеСвойство</dcssch:dataPath>
-					<dcssch:field>ДополнительноеСвойство</dcssch:field>
-				</Field>
-				<Field xsi:type="dcssch:DataSetFieldField">
 					<dcssch:dataPath>Дата</dcssch:dataPath>
 					<dcssch:field>Дата</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Выполнена</dcssch:dataPath>
+					<dcssch:field>Выполнена</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ДополнительноеСвойство</dcssch:dataPath>
+					<dcssch:field>ДополнительноеСвойство</dcssch:field>
 				</Field>
 				<Field xsi:type="dcssch:DataSetFieldField">
 					<dcssch:dataPath>Комментарий</dcssch:dataPath>
@@ -4186,22 +4210,6 @@
 					<dcssch:dataPath>Наблюдатели</dcssch:dataPath>
 					<dcssch:field>Наблюдатели</dcssch:field>
 				</Field>
-				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>Заголовок</dcssch:dataPath>
-					<dcssch:field>Заголовок</dcssch:field>
-				</Field>
-				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>ЧекЛист</dcssch:dataPath>
-					<dcssch:field>ЧекЛист</dcssch:field>
-				</Field>
-				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>Изменение</dcssch:dataPath>
-					<dcssch:field>Изменение</dcssch:field>
-				</Field>
-				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>КоличествоНеВыполненыхВопросовЧекЛиста</dcssch:dataPath>
-					<dcssch:field>КоличествоНеВыполненыхВопросовЧекЛиста</dcssch:field>
-				</Field>
 				<Parameter>
 					<dcssch:name>Исполнитель</dcssch:name>
 					<dcssch:title xsi:type="v8:LocalStringType">
@@ -4236,6 +4244,7 @@
 						<dcsset:viewMode>Normal</dcsset:viewMode>
 						<dcsset:userSettingID>dfcece9d-5077-440b-b6b3-45a5cb4538eb</dcsset:userSettingID>
 					</dcsset:filter>
+					<dcsset:dataParameters/>
 					<dcsset:order>
 						<dcsset:viewMode>Normal</dcsset:viewMode>
 						<dcsset:userSettingID>88619765-ccb3-46c6-ac52-38e9c992ebd4</dcsset:userSettingID>
@@ -4299,7 +4308,7 @@
 		ЛЕВОЕ СОЕДИНЕНИЕ РегистрСведений.ВнешнееДействие.СрезПоследних КАК ВнешнееДействиеСрезПоследних
 		ПО (ВнешнееДействиеСрезПоследних.Объект = Задачи_ПКД.ОбъектТЗ)
 ГДЕ
-	Задачи_ПКД.ТипЗадачи = ЗНАЧЕНИЕ(Перечисление.ТипыЗадачКонструирования.ОжиданиеМенеджером)
+	Задачи_ПКД.ТипЗадачи = ЗНАЧЕНИЕ(Перечисление.ТипыЗадачКонструирования.Менеджер)
 	И ВЫБОР
 			КОГДА &amp;Исполнитель = ЗНАЧЕНИЕ(Справочник.Пользователи.ПустаяСсылка)
 				ТОГДА ИСТИНА
@@ -4314,6 +4323,22 @@
 	И НЕ Задачи_ПКД.ОбобщеннаяЗадача
 	И НЕ ДанныеКомплектаСрезПоследних.ТекущаяСтадия.ОграниченныйПоказ</QueryText>
 				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ЧекЛист</dcssch:dataPath>
+					<dcssch:field>ЧекЛист</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Изменение</dcssch:dataPath>
+					<dcssch:field>Изменение</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Комментарии</dcssch:dataPath>
+					<dcssch:field>Комментарии</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Ссылка</dcssch:dataPath>
+					<dcssch:field>Ссылка</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
 					<dcssch:dataPath>Проект</dcssch:dataPath>
 					<dcssch:field>Проект</dcssch:field>
 				</Field>
@@ -4322,36 +4347,48 @@
 					<dcssch:field>Автор</dcssch:field>
 				</Field>
 				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>Ссылка</dcssch:dataPath>
-					<dcssch:field>Ссылка</dcssch:field>
+					<dcssch:dataPath>КоличествоНеВыполненыхВопросовЧекЛиста</dcssch:dataPath>
+					<dcssch:field>КоличествоНеВыполненыхВопросовЧекЛиста</dcssch:field>
 				</Field>
 				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>Наименование</dcssch:dataPath>
-					<dcssch:field>Наименование</dcssch:field>
+					<dcssch:dataPath>КороткаяСрочнаяЗадача</dcssch:dataPath>
+					<dcssch:field>КороткаяСрочнаяЗадача</dcssch:field>
 				</Field>
 				<Field xsi:type="dcssch:DataSetFieldField">
 					<dcssch:dataPath>ВерсияДанных</dcssch:dataPath>
 					<dcssch:field>ВерсияДанных</dcssch:field>
 				</Field>
 				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>ПометкаУдаления</dcssch:dataPath>
-					<dcssch:field>ПометкаУдаления</dcssch:field>
+					<dcssch:dataPath>Наименование</dcssch:dataPath>
+					<dcssch:field>Наименование</dcssch:field>
 				</Field>
 				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>Выполнена</dcssch:dataPath>
-					<dcssch:field>Выполнена</dcssch:field>
+					<dcssch:dataPath>ПодчиненыеЗадачи</dcssch:dataPath>
+					<dcssch:field>ПодчиненыеЗадачи</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>ПометкаУдаления</dcssch:dataPath>
+					<dcssch:field>ПометкаУдаления</dcssch:field>
 				</Field>
 				<Field xsi:type="dcssch:DataSetFieldField">
 					<dcssch:dataPath>Номер</dcssch:dataPath>
 					<dcssch:field>Номер</dcssch:field>
 				</Field>
 				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Дата</dcssch:dataPath>
+					<dcssch:field>Дата</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Выполнена</dcssch:dataPath>
+					<dcssch:field>Выполнена</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
 					<dcssch:dataPath>ДополнительноеСвойство</dcssch:dataPath>
 					<dcssch:field>ДополнительноеСвойство</dcssch:field>
 				</Field>
 				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>Дата</dcssch:dataPath>
-					<dcssch:field>Дата</dcssch:field>
+					<dcssch:dataPath>Конструктор</dcssch:dataPath>
+					<dcssch:field>Конструктор</dcssch:field>
 				</Field>
 				<Field xsi:type="dcssch:DataSetFieldField">
 					<dcssch:dataPath>Комментарий</dcssch:dataPath>
@@ -4364,6 +4401,10 @@
 				<Field xsi:type="dcssch:DataSetFieldField">
 					<dcssch:dataPath>ОбобщеннаяЗадача</dcssch:dataPath>
 					<dcssch:field>ОбобщеннаяЗадача</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Комплект</dcssch:dataPath>
+					<dcssch:field>Комплект</dcssch:field>
 				</Field>
 				<Field xsi:type="dcssch:DataSetFieldField">
 					<dcssch:dataPath>ОбъектТЗ</dcssch:dataPath>
@@ -4402,32 +4443,12 @@
 					<dcssch:field>Наблюдатели</dcssch:field>
 				</Field>
 				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>Изменение</dcssch:dataPath>
-					<dcssch:field>Изменение</dcssch:field>
-				</Field>
-				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>Комплект</dcssch:dataPath>
-					<dcssch:field>Комплект</dcssch:field>
-				</Field>
-				<Field xsi:type="dcssch:DataSetFieldField">
 					<dcssch:dataPath>ТекущаяСтадия</dcssch:dataPath>
 					<dcssch:field>ТекущаяСтадия</dcssch:field>
 				</Field>
 				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>ЧекЛист</dcssch:dataPath>
-					<dcssch:field>ЧекЛист</dcssch:field>
-				</Field>
-				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>КоличествоНеВыполненыхВопросовЧекЛиста</dcssch:dataPath>
-					<dcssch:field>КоличествоНеВыполненыхВопросовЧекЛиста</dcssch:field>
-				</Field>
-				<Field xsi:type="dcssch:DataSetFieldField">
 					<dcssch:dataPath>ТекущаяСтадияПолноеНаименование</dcssch:dataPath>
 					<dcssch:field>ТекущаяСтадияПолноеНаименование</dcssch:field>
-				</Field>
-				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>Объект</dcssch:dataPath>
-					<dcssch:field>Объект</dcssch:field>
 				</Field>
 				<Field xsi:type="dcssch:DataSetFieldField">
 					<dcssch:dataPath>КонтрольнаяДата</dcssch:dataPath>
@@ -4444,10 +4465,6 @@
 					</dcssch:title>
 				</Field>
 				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>Конструктор</dcssch:dataPath>
-					<dcssch:field>Конструктор</dcssch:field>
-				</Field>
-				<Field xsi:type="dcssch:DataSetFieldField">
 					<dcssch:dataPath>НачалоДействия</dcssch:dataPath>
 					<dcssch:field>НачалоДействия</dcssch:field>
 					<dcssch:title xsi:type="v8:LocalStringType">
@@ -4458,9 +4475,26 @@
 					</dcssch:title>
 				</Field>
 				<Field xsi:type="dcssch:DataSetFieldField">
-					<dcssch:dataPath>КороткаяСрочнаяЗадача</dcssch:dataPath>
-					<dcssch:field>КороткаяСрочнаяЗадача</dcssch:field>
+					<dcssch:dataPath>Объект</dcssch:dataPath>
+					<dcssch:field>Объект</dcssch:field>
 				</Field>
+				<Parameter>
+					<dcssch:name>Период</dcssch:name>
+					<dcssch:title xsi:type="v8:LocalStringType">
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Период</v8:content>
+						</v8:item>
+					</dcssch:title>
+					<dcssch:valueType>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>DateTime</v8:DateFractions>
+						</v8:DateQualifiers>
+					</dcssch:valueType>
+					<dcssch:value xsi:type="xs:dateTime">0001-01-01T00:00:00</dcssch:value>
+					<dcssch:useRestriction>false</dcssch:useRestriction>
+				</Parameter>
 				<Parameter>
 					<dcssch:name>Исполнитель</dcssch:name>
 					<dcssch:title xsi:type="v8:LocalStringType">
@@ -4488,23 +4522,6 @@
 					</dcssch:valueType>
 					<dcssch:value xsi:nil="true"/>
 					<dcssch:useRestriction>true</dcssch:useRestriction>
-				</Parameter>
-				<Parameter>
-					<dcssch:name>Период</dcssch:name>
-					<dcssch:title xsi:type="v8:LocalStringType">
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Период</v8:content>
-						</v8:item>
-					</dcssch:title>
-					<dcssch:valueType>
-						<v8:Type>xs:dateTime</v8:Type>
-						<v8:DateQualifiers>
-							<v8:DateFractions>DateTime</v8:DateFractions>
-						</v8:DateQualifiers>
-					</dcssch:valueType>
-					<dcssch:value xsi:type="xs:dateTime">0001-01-01T00:00:00</dcssch:value>
-					<dcssch:useRestriction>false</dcssch:useRestriction>
 				</Parameter>
 				<MainTable>Task.Задачи_ПКД</MainTable>
 				<ListSettings>
