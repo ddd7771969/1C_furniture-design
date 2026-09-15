@@ -7,6 +7,7 @@
 	<Events>
 		<Event name="AfterWrite">ПослеЗаписи</Event>
 		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="BeforeWrite">ПередЗаписью</Event>
 		<Event name="BeforeWriteAtServer">ПередЗаписьюНаСервере</Event>
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 	</Events>
@@ -40,6 +41,7 @@
 			<ContextMenu name="ТипРекламацииКонтекстноеМеню" id="43"/>
 			<ExtendedTooltip name="ТипРекламацииРасширеннаяПодсказка" id="44"/>
 			<Events>
+				<Event name="OnChange">ТипРекламацииПриИзменении</Event>
 				<Event name="StartChoice">ТипРекламацииНачалоВыбора</Event>
 			</Events>
 		</InputField>
@@ -110,6 +112,7 @@
 		<InputField name="Причина" id="32">
 			<DataPath>Объект.Причина</DataPath>
 			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+			<QuickChoice>true</QuickChoice>
 			<ContextMenu name="ПричинаКонтекстноеМеню" id="33"/>
 			<ExtendedTooltip name="ПричинаРасширеннаяПодсказка" id="34"/>
 		</InputField>
@@ -198,5 +201,26 @@
 				<v8:Type>xs:boolean</v8:Type>
 			</Type>
 		</Attribute>
+		<ConditionalAppearance>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ТипРекламации</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">Объект.ТипРекламации</dcsset:left>
+						<dcsset:comparisonType>NotFilled</dcsset:comparisonType>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>ЦветФона</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Color">#ECD2D0</dcscor:value>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+		</ConditionalAppearance>
 	</Attributes>
 </Form>
