@@ -188,16 +188,21 @@
 			</Resource>
 			<Resource uuid="91988f32-75df-49a8-bb35-7900af7eb448">
 				<Properties>
-					<Name>СбросДоработки</Name>
+					<Name>СбросСчетчика</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Сброс доработки</v8:content>
+							<v8:content>Сброс счетчика</v8:content>
 						</v8:item>
 					</Synonym>
-					<Comment/>
+					<Comment>0 не изменяет,, 1 доработка, 2 корректировка, 3 изменение.</Comment>
 					<Type>
-						<v8:Type>xs:boolean</v8:Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>3</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
 					</Type>
 					<PasswordMode>false</PasswordMode>
 					<Format/>
@@ -344,16 +349,21 @@
 			</Resource>
 			<Resource uuid="e69b89b2-308b-4a87-bff7-44d499bea16b">
 				<Properties>
-					<Name>УвеличениеДоработки</Name>
+					<Name>УвеличениеСчетчика</Name>
 					<Synonym>
 						<v8:item>
 							<v8:lang>ru</v8:lang>
-							<v8:content>Увеличение доработки</v8:content>
+							<v8:content>Увеличение счетчика</v8:content>
 						</v8:item>
 					</Synonym>
-					<Comment/>
+					<Comment>0 не изменяет,, 1 доработка, 2 корректировка, 3 изменение.</Comment>
 					<Type>
-						<v8:Type>xs:boolean</v8:Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>1</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
 					</Type>
 					<PasswordMode>false</PasswordMode>
 					<Format/>
@@ -376,7 +386,7 @@
 					<ChoiceForm/>
 					<LinkByType/>
 					<ChoiceHistoryOnInput>Auto</ChoiceHistoryOnInput>
-					<Indexing>DontIndex</Indexing>
+					<Indexing>Index</Indexing>
 					<FullTextSearch>Use</FullTextSearch>
 					<DataHistory>Use</DataHistory>
 				</Properties>
