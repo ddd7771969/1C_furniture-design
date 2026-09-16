@@ -125,6 +125,11 @@
 						<Event name="OnChange">ВыводитьПроектПриИзменении</Event>
 					</Events>
 				</CheckBoxField>
+				<Button name="Легенда" id="47">
+					<Type>Hyperlink</Type>
+					<CommandName>Form.Command.Легенда</CommandName>
+					<ExtendedTooltip name="ЛегендаРасширеннаяПодсказка" id="48"/>
+				</Button>
 			</ChildItems>
 		</UsualGroup>
 		<GanttChartField name="Диаграмма" id="12">
@@ -312,6 +317,21 @@
 				</v8:item>
 			</ToolTip>
 			<Action>Обновить</Action>
+		</Command>
+		<Command name="Легенда" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Легенда</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Легенда</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Легенда</Action>
 		</Command>
 	</Commands>
 </Form>
