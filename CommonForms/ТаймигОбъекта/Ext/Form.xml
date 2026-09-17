@@ -20,7 +20,6 @@
 	</Events>
 	<ChildItems>
 		<UsualGroup name="Группа1" id="52">
-			<Visible>false</Visible>
 			<Group>AlwaysHorizontal</Group>
 			<Representation>None</Representation>
 			<ShowTitle>false</ShowTitle>
@@ -33,11 +32,11 @@
 					<ContextMenu name="ОбъектТаймингаКонтекстноеМеню" id="2"/>
 					<ExtendedTooltip name="ОбъектТаймингаРасширеннаяПодсказка" id="3"/>
 				</InputField>
-				<CheckBoxField name="Комплекта" id="54">
-					<DataPath>Комплекта</DataPath>
+				<CheckBoxField name="Комплект" id="54">
+					<DataPath>Комплект</DataPath>
 					<CheckBoxType>Auto</CheckBoxType>
-					<ContextMenu name="КомплектаКонтекстноеМеню" id="55"/>
-					<ExtendedTooltip name="КомплектаРасширеннаяПодсказка" id="56"/>
+					<ContextMenu name="КомплектКонтекстноеМеню" id="55"/>
+					<ExtendedTooltip name="КомплектРасширеннаяПодсказка" id="56"/>
 				</CheckBoxField>
 				<CheckBoxField name="ЗадачиТЗ" id="57">
 					<DataPath>ЗадачиТЗ</DataPath>
@@ -57,11 +56,11 @@
 					<ContextMenu name="ЗадачиРКДКонтекстноеМеню" id="67"/>
 					<ExtendedTooltip name="ЗадачиРКДРасширеннаяПодсказка" id="68"/>
 				</CheckBoxField>
-				<CheckBoxField name="ЗадачиПроизводства" id="63">
-					<DataPath>ЗадачиПроизводства</DataPath>
+				<CheckBoxField name="Производство" id="63">
+					<DataPath>Производство</DataPath>
 					<CheckBoxType>Auto</CheckBoxType>
-					<ContextMenu name="ЗадачиПроизводстваКонтекстноеМеню" id="64"/>
-					<ExtendedTooltip name="ЗадачиПроизводстваРасширеннаяПодсказка" id="65"/>
+					<ContextMenu name="ПроизводствоКонтекстноеМеню" id="64"/>
+					<ExtendedTooltip name="ПроизводствоРасширеннаяПодсказка" id="65"/>
 				</CheckBoxField>
 			</ChildItems>
 		</UsualGroup>
@@ -431,7 +430,7 @@
 				<v8:Type>xs:boolean</v8:Type>
 			</Type>
 		</Attribute>
-		<Attribute name="ЗадачиПроизводства" id="6">
+		<Attribute name="Производство" id="6">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
@@ -442,11 +441,11 @@
 				<v8:Type>xs:boolean</v8:Type>
 			</Type>
 		</Attribute>
-		<Attribute name="Комплекта" id="7">
+		<Attribute name="Комплект" id="7">
 			<Title>
 				<v8:item>
 					<v8:lang>ru</v8:lang>
-					<v8:content>Комплекта</v8:content>
+					<v8:content>Комплект</v8:content>
 				</v8:item>
 			</Title>
 			<Type>
