@@ -47,6 +47,9 @@
 					<CheckBoxType>Auto</CheckBoxType>
 					<ContextMenu name="ЗадачиТЗКонтекстноеМеню" id="58"/>
 					<ExtendedTooltip name="ЗадачиТЗРасширеннаяПодсказка" id="59"/>
+					<Events>
+						<Event name="OnChange">ЗадачиТЗПриИзменении</Event>
+					</Events>
 				</CheckBoxField>
 				<CheckBoxField name="ЗадачиПКД" id="60">
 					<DataPath>ЗадачиПКД</DataPath>
