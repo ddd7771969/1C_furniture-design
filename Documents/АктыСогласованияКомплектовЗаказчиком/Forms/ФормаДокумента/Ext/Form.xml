@@ -5,6 +5,8 @@
 	<RepostOnWrite>true</RepostOnWrite>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1"/>
 	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 		<Event name="OnWriteAtServer">ПриЗаписиНаСервере</Event>
 	</Events>
 	<ChildItems>
@@ -28,16 +30,30 @@
 				</LabelField>
 			</ChildItems>
 		</UsualGroup>
-		<InputField name="Проект" id="10">
-			<DataPath>Объект.Проект</DataPath>
-			<EditMode>EnterOnInput</EditMode>
-			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-			<ContextMenu name="ПроектКонтекстноеМеню" id="11"/>
-			<ExtendedTooltip name="ПроектРасширеннаяПодсказка" id="12"/>
-			<Events>
-				<Event name="OnChange">ПроектПриИзменении</Event>
-			</Events>
-		</InputField>
+		<UsualGroup name="Группа2" id="39">
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="Группа2РасширеннаяПодсказка" id="40"/>
+			<ChildItems>
+				<InputField name="Проект" id="10">
+					<DataPath>Объект.Проект</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ПроектКонтекстноеМеню" id="11"/>
+					<ExtendedTooltip name="ПроектРасширеннаяПодсказка" id="12"/>
+					<Events>
+						<Event name="OnChange">ПроектПриИзменении</Event>
+					</Events>
+				</InputField>
+				<InputField name="ДатаОтправки" id="41">
+					<DataPath>Объект.ДатаОтправки</DataPath>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ДатаОтправкиКонтекстноеМеню" id="42"/>
+					<ExtendedTooltip name="ДатаОтправкиРасширеннаяПодсказка" id="43"/>
+				</InputField>
+			</ChildItems>
+		</UsualGroup>
 		<Button name="Добавить" id="37">
 			<Type>UsualButton</Type>
 			<CommandName>Form.Command.Добавить</CommandName>
@@ -103,11 +119,35 @@
 					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 					<ContextMenu name="КомплектыДатаСогласованияКонтекстноеМеню" id="30"/>
 					<ExtendedTooltip name="КомплектыДатаСогласованияРасширеннаяПодсказка" id="31"/>
+					<Events>
+						<Event name="OnChange">КомплектыДатаСогласованияПриИзменении</Event>
+						<Event name="StartChoice">КомплектыДатаСогласованияНачалоВыбора</Event>
+					</Events>
+				</InputField>
+				<InputField name="КомплектыОтказ" id="44">
+					<DataPath>Объект.Комплекты.ДатаОтказа</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="КомплектыОтказКонтекстноеМеню" id="45"/>
+					<ExtendedTooltip name="КомплектыОтказРасширеннаяПодсказка" id="46"/>
+					<Events>
+						<Event name="OnChange">КомплектыОтказПриИзменении</Event>
+						<Event name="StartChoice">КомплектыОтказНачалоВыбора</Event>
+					</Events>
+				</InputField>
+				<InputField name="КомплектыАвтор" id="47">
+					<DataPath>Объект.Комплекты.Автор</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="КомплектыАвторКонтекстноеМеню" id="48"/>
+					<ExtendedTooltip name="КомплектыАвторРасширеннаяПодсказка" id="49"/>
 				</InputField>
 			</ChildItems>
 		</Table>
 		<InputField name="Автор" id="7">
 			<DataPath>Объект.Автор</DataPath>
+			<ReadOnly>true</ReadOnly>
 			<EditMode>EnterOnInput</EditMode>
 			<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 			<ContextMenu name="АвторКонтекстноеМеню" id="8"/>
@@ -117,7 +157,7 @@
 	<Attributes>
 		<Attribute name="Объект" id="1">
 			<Type>
-				<v8:Type>cfg:DocumentObject.СогласованиеКомплектовЗаказчиком</v8:Type>
+				<v8:Type>cfg:DocumentObject.АктыСогласованияКомплектовЗаказчиком</v8:Type>
 			</Type>
 			<MainAttribute>true</MainAttribute>
 			<SavedData>true</SavedData>
