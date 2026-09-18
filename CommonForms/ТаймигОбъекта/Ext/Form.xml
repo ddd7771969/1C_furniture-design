@@ -16,6 +16,7 @@
 		</ChildItems>
 	</AutoCommandBar>
 	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
 		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
 	</Events>
 	<ChildItems>
@@ -37,6 +38,9 @@
 					<CheckBoxType>Auto</CheckBoxType>
 					<ContextMenu name="КомплектКонтекстноеМеню" id="55"/>
 					<ExtendedTooltip name="КомплектРасширеннаяПодсказка" id="56"/>
+					<Events>
+						<Event name="OnChange">КомплектПриИзменении</Event>
+					</Events>
 				</CheckBoxField>
 				<CheckBoxField name="ЗадачиТЗ" id="57">
 					<DataPath>ЗадачиТЗ</DataPath>
@@ -49,18 +53,27 @@
 					<CheckBoxType>Auto</CheckBoxType>
 					<ContextMenu name="ЗадачиПКДКонтекстноеМеню" id="61"/>
 					<ExtendedTooltip name="ЗадачиПКДРасширеннаяПодсказка" id="62"/>
+					<Events>
+						<Event name="OnChange">ЗадачиПКДПриИзменении</Event>
+					</Events>
 				</CheckBoxField>
 				<CheckBoxField name="ЗадачиРКД" id="66">
 					<DataPath>ЗадачиРКД</DataPath>
 					<CheckBoxType>Auto</CheckBoxType>
 					<ContextMenu name="ЗадачиРКДКонтекстноеМеню" id="67"/>
 					<ExtendedTooltip name="ЗадачиРКДРасширеннаяПодсказка" id="68"/>
+					<Events>
+						<Event name="OnChange">ЗадачиРКДПриИзменении</Event>
+					</Events>
 				</CheckBoxField>
 				<CheckBoxField name="Производство" id="63">
 					<DataPath>Производство</DataPath>
 					<CheckBoxType>Auto</CheckBoxType>
 					<ContextMenu name="ПроизводствоКонтекстноеМеню" id="64"/>
 					<ExtendedTooltip name="ПроизводствоРасширеннаяПодсказка" id="65"/>
+					<Events>
+						<Event name="OnChange">ПроизводствоПриИзменении</Event>
+					</Events>
 				</CheckBoxField>
 			</ChildItems>
 		</UsualGroup>
