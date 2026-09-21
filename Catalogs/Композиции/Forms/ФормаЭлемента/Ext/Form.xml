@@ -47,6 +47,22 @@
 					</Button>
 				</ChildItems>
 			</Popup>
+			<Button name="ФормаТаймингЗадачи" id="145">
+				<Type>CommandBarButton</Type>
+				<Representation>PictureAndText</Representation>
+				<CommandName>Form.Command.ТаймингЗадачи</CommandName>
+				<Picture>
+					<xr:Ref>CommonPicture.ИсторияВерсий</xr:Ref>
+					<xr:LoadTransparent>true</xr:LoadTransparent>
+				</Picture>
+				<Title>
+					<v8:item>
+						<v8:lang>ru</v8:lang>
+						<v8:content>История</v8:content>
+					</v8:item>
+				</Title>
+				<ExtendedTooltip name="ФормаТаймингЗадачиРасширеннаяПодсказка" id="146"/>
+			</Button>
 		</ChildItems>
 	</AutoCommandBar>
 	<Events>
@@ -736,6 +752,21 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ЗаблокированныеФайлы</Action>
+		</Command>
+		<Command name="ТаймингЗадачи" id="9">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тайминг задачи</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Тайминг задачи</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ТаймингЗадачи</Action>
 		</Command>
 	</Commands>
 	<CommandInterface>
