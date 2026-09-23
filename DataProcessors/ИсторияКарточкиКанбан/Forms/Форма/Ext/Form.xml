@@ -103,6 +103,13 @@
 					<ContextMenu name="ТаймингКомплектаДополнительныеСведенияКонтекстноеМеню" id="30"/>
 					<ExtendedTooltip name="ТаймингКомплектаДополнительныеСведенияРасширеннаяПодсказка" id="31"/>
 				</InputField>
+				<InputField name="ТаймингКомплектаКомментарий" id="38">
+					<DataPath>ТаймингКомплекта.Комментарий</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ТаймингКомплектаКомментарийКонтекстноеМеню" id="39"/>
+					<ExtendedTooltip name="ТаймингКомплектаКомментарийРасширеннаяПодсказка" id="40"/>
+				</InputField>
 			</ChildItems>
 		</Table>
 	</ChildItems>
@@ -228,6 +235,21 @@
 						<v8:Type>xs:string</v8:Type>
 						<v8:StringQualifiers>
 							<v8:Length>36</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
+					</Type>
+				</Column>
+				<Column name="Комментарий" id="9">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Комментарий</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
 							<v8:AllowedLength>Variable</v8:AllowedLength>
 						</v8:StringQualifiers>
 					</Type>

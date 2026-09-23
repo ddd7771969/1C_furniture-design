@@ -225,6 +225,13 @@
 											<ContextMenu name="КолонкиИмяСобытияКонтекстноеМеню" id="156"/>
 											<ExtendedTooltip name="КолонкиИмяСобытияРасширеннаяПодсказка" id="157"/>
 										</InputField>
+										<CheckBoxField name="КолонкиТребуетсяКомментарий" id="318">
+											<DataPath>Колонки.ТребуетсяКомментарий</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="КолонкиТребуетсяКомментарийКонтекстноеМеню" id="319"/>
+											<ExtendedTooltip name="КолонкиТребуетсяКомментарийРасширеннаяПодсказка" id="320"/>
+										</CheckBoxField>
 									</ChildItems>
 								</Table>
 								<Table name="Дорожки" id="35">
@@ -1090,6 +1097,17 @@
 						<v8:item>
 							<v8:lang>ru</v8:lang>
 							<v8:content>В работе</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ТребуетсяКомментарий" id="13">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Требуется комментарий</v8:content>
 						</v8:item>
 					</Title>
 					<Type>
