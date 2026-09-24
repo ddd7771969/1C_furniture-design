@@ -1449,7 +1449,110 @@
 										</LabelField>
 									</ChildItems>
 								</Table>
+								<Table name="ПроверкаПКД" id="1624">
+									<Representation>List</Representation>
+									<TitleLocation>Top</TitleLocation>
+									<AutoInsertNewRow>true</AutoInsertNewRow>
+									<EnableStartDrag>true</EnableStartDrag>
+									<EnableDrag>true</EnableDrag>
+									<DataPath>ПроверкаПКД</DataPath>
+									<Title>
+										<v8:item>
+											<v8:lang>ru</v8:lang>
+											<v8:content>Проверка.ПКД</v8:content>
+										</v8:item>
+									</Title>
+									<TitleFont ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+									<RowFilter xsi:nil="true"/>
+									<ContextMenu name="ПроверкаПКДКонтекстноеМеню" id="1625"/>
+									<AutoCommandBar name="ПроверкаПКДКоманднаяПанель" id="1626"/>
+									<ExtendedTooltip name="ПроверкаПКДРасширеннаяПодсказка" id="1627"/>
+									<SearchStringAddition name="ПроверкаПКДСтрокаПоиска" id="1628">
+										<AdditionSource>
+											<Item>ПроверкаПКД</Item>
+											<Type>SearchStringRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ПроверкаПКДСтрокаПоискаКонтекстноеМеню" id="1629"/>
+										<ExtendedTooltip name="ПроверкаПКДСтрокаПоискаРасширеннаяПодсказка" id="1630"/>
+									</SearchStringAddition>
+									<ViewStatusAddition name="ПроверкаПКДСостояниеПросмотра" id="1631">
+										<AdditionSource>
+											<Item>ПроверкаПКД</Item>
+											<Type>ViewStatusRepresentation</Type>
+										</AdditionSource>
+										<ContextMenu name="ПроверкаПКДСостояниеПросмотраКонтекстноеМеню" id="1632"/>
+										<ExtendedTooltip name="ПроверкаПКДСостояниеПросмотраРасширеннаяПодсказка" id="1633"/>
+									</ViewStatusAddition>
+									<SearchControlAddition name="ПроверкаПКДУправлениеПоиском" id="1634">
+										<AdditionSource>
+											<Item>ПроверкаПКД</Item>
+											<Type>SearchControl</Type>
+										</AdditionSource>
+										<ContextMenu name="ПроверкаПКДУправлениеПоискомКонтекстноеМеню" id="1635"/>
+										<ExtendedTooltip name="ПроверкаПКДУправлениеПоискомРасширеннаяПодсказка" id="1636"/>
+									</SearchControlAddition>
+									<Events>
+										<Event name="BeforeAddRow">ПроверкаПКДПередНачаломДобавления</Event>
+										<Event name="BeforeDeleteRow">ПроверкаПКДПередУдалением</Event>
+										<Event name="BeforeRowChange">ПроверкаПКДПередНачаломИзменения</Event>
+									</Events>
+									<ChildItems>
+										<CheckBoxField name="ПроверкаПКДЕстьФайлы" id="1637">
+											<DataPath>ПроверкаПКД.ЕстьФайлы</DataPath>
+											<Title>
+												<v8:item>
+													<v8:lang>ru</v8:lang>
+													<v8:content> </v8:content>
+												</v8:item>
+											</Title>
+											<EditMode>EnterOnInput</EditMode>
+											<HeaderPicture>
+												<xr:Ref>StdPicture.Attach</xr:Ref>
+												<xr:LoadTransparent>true</xr:LoadTransparent>
+											</HeaderPicture>
+											<CheckBoxType>Auto</CheckBoxType>
+											<ContextMenu name="ПроверкаПКДЕстьФайлыКонтекстноеМеню" id="1638"/>
+											<ExtendedTooltip name="ПроверкаПКДЕстьФайлыРасширеннаяПодсказка" id="1639"/>
+										</CheckBoxField>
+										<InputField name="ПроверкаПКДНаименование" id="1655">
+											<DataPath>ПроверкаПКД.Наименование</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="ПроверкаПКДНаименованиеКонтекстноеМеню" id="1656"/>
+											<ExtendedTooltip name="ПроверкаПКДНаименованиеРасширеннаяПодсказка" id="1657"/>
+										</InputField>
+										<InputField name="ПроверкаПКДПредыдущаяСтадия" id="1643">
+											<DataPath>ПроверкаПКД.ПредыдущаяСтадия</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="ПроверкаПКДПредыдущаяСтадияКонтекстноеМеню" id="1644"/>
+											<ExtendedTooltip name="ПроверкаПКДПредыдущаяСтадияРасширеннаяПодсказка" id="1645"/>
+										</InputField>
+										<InputField name="ПроверкаПКДКонструктор" id="1646">
+											<DataPath>ПроверкаПКД.Конструктор</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="ПроверкаПКДКонструкторКонтекстноеМеню" id="1647"/>
+											<ExtendedTooltip name="ПроверкаПКДКонструкторРасширеннаяПодсказка" id="1648"/>
+										</InputField>
+										<InputField name="ПроверкаПКДИсполнитель" id="1649">
+											<DataPath>ПроверкаПКД.Исполнитель</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="ПроверкаПКДИсполнительКонтекстноеМеню" id="1650"/>
+											<ExtendedTooltip name="ПроверкаПКДИсполнительРасширеннаяПодсказка" id="1651"/>
+										</InputField>
+										<InputField name="ПроверкаПКДДата" id="1652">
+											<DataPath>ПроверкаПКД.Дата</DataPath>
+											<EditMode>EnterOnInput</EditMode>
+											<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+											<ContextMenu name="ПроверкаПКДДатаКонтекстноеМеню" id="1653"/>
+											<ExtendedTooltip name="ПроверкаПКДДатаРасширеннаяПодсказка" id="1654"/>
+										</InputField>
+									</ChildItems>
+								</Table>
 								<Table name="ПодтверждениеПКД" id="428">
+									<Visible>false</Visible>
 									<TitleLocation>Top</TitleLocation>
 									<AutoMaxHeight>false</AutoMaxHeight>
 									<HeightInTableRows>8</HeightInTableRows>
@@ -5371,6 +5474,103 @@
 							<v8:FractionDigits>0</v8:FractionDigits>
 							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
 						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ПроверкаПКД" id="5">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Проверка ПКД</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="ЕстьФайлы" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Есть файлы</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Ссылка" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Ссылка</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:TaskRef.Задачи_ПКД</v8:Type>
+					</Type>
+				</Column>
+				<Column name="ПредыдущаяСтадия" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Предыдущая стадия</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.СтадииКомплекта</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Конструктор" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Конструктор</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Пользователи</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Исполнитель" id="5">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Исполнитель</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Пользователи</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Дата" id="6">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Дата</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:dateTime</v8:Type>
+						<v8:DateQualifiers>
+							<v8:DateFractions>Date</v8:DateFractions>
+						</v8:DateQualifiers>
+					</Type>
+				</Column>
+				<Column name="Наименование" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Задача</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:string</v8:Type>
+						<v8:StringQualifiers>
+							<v8:Length>0</v8:Length>
+							<v8:AllowedLength>Variable</v8:AllowedLength>
+						</v8:StringQualifiers>
 					</Type>
 				</Column>
 			</Columns>
