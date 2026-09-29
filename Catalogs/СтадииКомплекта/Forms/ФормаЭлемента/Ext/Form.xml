@@ -107,70 +107,74 @@
 					<v8:content>Группа наименование</v8:content>
 				</v8:item>
 			</ToolTip>
-			<Group>AlwaysHorizontal</Group>
+			<Group>Vertical</Group>
 			<Representation>StrongSeparation</Representation>
 			<ExtendedTooltip name="ГруппаНаименованиеРасширеннаяПодсказка" id="79"/>
 			<ChildItems>
-				<CheckBoxField name="ВыводитьПервыйУровеньВНаименовании" id="80">
-					<DataPath>Объект.ВыводитьПервыйУровеньВНаименовании</DataPath>
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>1 уровень</v8:content>
-						</v8:item>
-					</Title>
-					<CheckBoxType>Auto</CheckBoxType>
-					<ContextMenu name="ВыводитьПервыйУровеньВНаименованииКонтекстноеМеню" id="81"/>
-					<ExtendedTooltip name="ВыводитьПервыйУровеньВНаименованииРасширеннаяПодсказка" id="82"/>
-				</CheckBoxField>
-				<CheckBoxField name="ВыводитьВторойУровеньВНаименовании" id="83">
-					<DataPath>Объект.ВыводитьВторойУровеньВНаименовании</DataPath>
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>2 Уровень</v8:content>
-						</v8:item>
-					</Title>
-					<CheckBoxType>Auto</CheckBoxType>
-					<ContextMenu name="ВыводитьВторойУровеньВНаименованииКонтекстноеМеню" id="84"/>
-					<ExtendedTooltip name="ВыводитьВторойУровеньВНаименованииРасширеннаяПодсказка" id="85"/>
-				</CheckBoxField>
-				<CheckBoxField name="ВыводитьТретийУровеньВНаименовании" id="86">
-					<DataPath>Объект.ВыводитьТретийУровеньВНаименовании</DataPath>
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>3 Уровень</v8:content>
-						</v8:item>
-					</Title>
-					<CheckBoxType>Auto</CheckBoxType>
-					<ContextMenu name="ВыводитьТретийУровеньВНаименованииКонтекстноеМеню" id="87"/>
-					<ExtendedTooltip name="ВыводитьТретийУровеньВНаименованииРасширеннаяПодсказка" id="88"/>
-				</CheckBoxField>
-				<CheckBoxField name="ВыводитьРекламациюУровеньВНаименовании" id="89">
-					<DataPath>Объект.ВыводитьРекламациюУровеньВНаименовании</DataPath>
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Рекламация</v8:content>
-						</v8:item>
-					</Title>
-					<CheckBoxType>Auto</CheckBoxType>
-					<ContextMenu name="ВыводитьРекламациюУровеньВНаименованииКонтекстноеМеню" id="90"/>
-					<ExtendedTooltip name="ВыводитьРекламациюУровеньВНаименованииРасширеннаяПодсказка" id="91"/>
-				</CheckBoxField>
-				<CheckBoxField name="ВыводитьДоработкуУровеньВНаименовании" id="92">
-					<DataPath>Объект.ВыводитьДоработкуУровеньВНаименовании</DataPath>
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Доработка</v8:content>
-						</v8:item>
-					</Title>
-					<CheckBoxType>Auto</CheckBoxType>
-					<ContextMenu name="ВыводитьДоработкуУровеньВНаименованииКонтекстноеМеню" id="93"/>
-					<ExtendedTooltip name="ВыводитьДоработкуУровеньВНаименованииРасширеннаяПодсказка" id="94"/>
-				</CheckBoxField>
+				<UsualGroup name="Группа3" id="92">
+					<Group>AlwaysHorizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа3РасширеннаяПодсказка" id="93"/>
+					<ChildItems>
+						<CheckBoxField name="ВыводитьПервыйУровеньВНаименовании" id="80">
+							<DataPath>Объект.ВыводитьПервыйУровеньВНаименовании</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>1 уровень (ПКД, РКД)</v8:content>
+								</v8:item>
+							</Title>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ВыводитьПервыйУровеньВНаименованииКонтекстноеМеню" id="81"/>
+							<ExtendedTooltip name="ВыводитьПервыйУровеньВНаименованииРасширеннаяПодсказка" id="82"/>
+						</CheckBoxField>
+						<CheckBoxField name="ВыводитьВторойУровеньВНаименовании" id="83">
+							<DataPath>Объект.ВыводитьВторойУровеньВНаименовании</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>2 Уровень (Разработка, Изменение, Ожидание ГЧ)</v8:content>
+								</v8:item>
+							</Title>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ВыводитьВторойУровеньВНаименованииКонтекстноеМеню" id="84"/>
+							<ExtendedTooltip name="ВыводитьВторойУровеньВНаименованииРасширеннаяПодсказка" id="85"/>
+						</CheckBoxField>
+					</ChildItems>
+				</UsualGroup>
+				<UsualGroup name="Группа4" id="94">
+					<Group>AlwaysHorizontal</Group>
+					<Representation>None</Representation>
+					<ShowTitle>false</ShowTitle>
+					<ExtendedTooltip name="Группа4РасширеннаяПодсказка" id="95"/>
+					<ChildItems>
+						<CheckBoxField name="ВыводитьТретийУровеньВНаименовании" id="86">
+							<DataPath>Объект.ВыводитьТретийУровеньВНаименовании</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>3 Уровень (Проверка. Контроль, Пауза)</v8:content>
+								</v8:item>
+							</Title>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ВыводитьТретийУровеньВНаименованииКонтекстноеМеню" id="87"/>
+							<ExtendedTooltip name="ВыводитьТретийУровеньВНаименованииРасширеннаяПодсказка" id="88"/>
+						</CheckBoxField>
+						<CheckBoxField name="ВыводитьЧетвертыйУровеньВНаименовании" id="89">
+							<DataPath>Объект.ВыводитьЧетвертыйУровеньВНаименовании</DataPath>
+							<Title>
+								<v8:item>
+									<v8:lang>ru</v8:lang>
+									<v8:content>4 Уровень (Рекламация, Доработка)</v8:content>
+								</v8:item>
+							</Title>
+							<CheckBoxType>Auto</CheckBoxType>
+							<ContextMenu name="ВыводитьЧетвертыйУровеньВНаименованииКонтекстноеМеню" id="90"/>
+							<ExtendedTooltip name="ВыводитьЧетвертыйУровеньВНаименованииРасширеннаяПодсказка" id="91"/>
+						</CheckBoxField>
+					</ChildItems>
+				</UsualGroup>
 			</ChildItems>
 		</UsualGroup>
 		<Table name="РеквизитыСтадии" id="25">
