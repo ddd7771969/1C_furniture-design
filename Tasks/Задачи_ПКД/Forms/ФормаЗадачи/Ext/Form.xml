@@ -36,6 +36,16 @@
 				</Picture>
 				<ExtendedTooltip name="ОткрытьФайлПДМРасширеннаяПодсказка" id="249"/>
 			</Button>
+			<Button name="ФормаВопросПоЗамеру" id="490">
+				<Type>CommandBarButton</Type>
+				<Representation>Picture</Representation>
+				<CommandName>Form.Command.ВопросПоЗамеру</CommandName>
+				<Picture>
+					<xr:Ref>CommonPicture.Замерщик50_50</xr:Ref>
+					<xr:LoadTransparent>true</xr:LoadTransparent>
+				</Picture>
+				<ExtendedTooltip name="ФормаВопросПоЗамеруРасширеннаяПодсказка" id="491"/>
+			</Button>
 			<Button name="ФормаСообщитьООшибке" id="384">
 				<Type>CommandBarButton</Type>
 				<Representation>Picture</Representation>
@@ -2831,6 +2841,21 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ИзменитьДизайнер</Action>
+		</Command>
+		<Command name="ВопросПоЗамеру" id="21">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вопрос по замеру</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Вопрос по замеру</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>ВопросПоЗамеру</Action>
 		</Command>
 	</Commands>
 	<CommandInterface>
