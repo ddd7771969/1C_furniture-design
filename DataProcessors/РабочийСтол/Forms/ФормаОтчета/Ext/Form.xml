@@ -836,6 +836,11 @@
 							<CommandName>Form.Command.ИзменениеЗаказчиком</CommandName>
 							<ExtendedTooltip name="КорректировкаЗаказчикомРасширеннаяПодсказка" id="1264"/>
 						</Button>
+						<Button name="СсылкаЗадачиПереносаФайловТЗ" id="1658">
+							<Type>Hyperlink</Type>
+							<CommandName>Form.Command.СсылкаЗадачиПереносаФайловТЗ</CommandName>
+							<ExtendedTooltip name="СсылкаЗадачиПереносаФайловТЗРасширеннаяПодсказка" id="1659"/>
+						</Button>
 					</ChildItems>
 				</UsualGroup>
 				<UsualGroup name="Группа11" id="1259">
@@ -6066,6 +6071,21 @@
 				</v8:item>
 			</ToolTip>
 			<Action>ОткрытьСотрудников</Action>
+		</Command>
+		<Command name="СсылкаЗадачиПереносаФайловТЗ" id="26">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ссылка задачи переноса файлов ТЗ</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Ссылка задачи переноса файлов ТЗ</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>СсылкаЗадачиПереносаФайловТЗ</Action>
 		</Command>
 	</Commands>
 </Form>
