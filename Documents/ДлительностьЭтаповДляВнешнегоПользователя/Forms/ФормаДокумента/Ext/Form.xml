@@ -31,6 +31,12 @@
 					<ContextMenu name="ДатаКонтекстноеМеню" id="5"/>
 					<ExtendedTooltip name="ДатаРасширеннаяПодсказка" id="6"/>
 				</InputField>
+				<CheckBoxField name="ПродолжительностьВДнях" id="146">
+					<DataPath>Объект.ПродолжительностьВДнях</DataPath>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="ПродолжительностьВДняхКонтекстноеМеню" id="147"/>
+					<ExtendedTooltip name="ПродолжительностьВДняхРасширеннаяПодсказка" id="148"/>
+				</CheckBoxField>
 			</ChildItems>
 		</UsualGroup>
 		<InputField name="Проект" id="7">
@@ -421,13 +427,6 @@
 						<Event name="StartChoice">ДеревоКомплектовКомплектНачалоВыбора</Event>
 					</Events>
 				</InputField>
-				<CheckBoxField name="ДеревоКомплектовПродолжительностьВДнях" id="161">
-					<DataPath>ДеревоКомплектов.ПродолжительностьВДнях</DataPath>
-					<EditMode>EnterOnInput</EditMode>
-					<CheckBoxType>Auto</CheckBoxType>
-					<ContextMenu name="ДеревоКомплектовПродолжительностьВДняхКонтекстноеМеню" id="162"/>
-					<ExtendedTooltip name="ДеревоКомплектовПродолжительностьВДняхРасширеннаяПодсказка" id="163"/>
-				</CheckBoxField>
 				<InputField name="ДеревоКомплектовПродолжительностьТЗ" id="141">
 					<DataPath>ДеревоКомплектов.ПродолжительностьТЗ</DataPath>
 					<EditMode>EnterOnInput</EditMode>
@@ -610,17 +609,6 @@
 						</v8:NumberQualifiers>
 					</Type>
 				</Column>
-				<Column name="ПродолжительностьВДнях" id="11">
-					<Title>
-						<v8:item>
-							<v8:lang>ru</v8:lang>
-							<v8:content>Продолжительность в днях</v8:content>
-						</v8:item>
-					</Title>
-					<Type>
-						<v8:Type>xs:boolean</v8:Type>
-					</Type>
-				</Column>
 			</Columns>
 		</Attribute>
 	</Attributes>
@@ -716,4 +704,27 @@
 			<Action>ПодписатьДизайнера</Action>
 		</Command>
 	</Commands>
+	<CommandInterface>
+		<NavigationPanel>
+			<Item>
+				<Command>InformationRegister.ПланКрайЭтапа.StandardCommand.OpenByValue.РегистраторРегистра</Command>
+				<Type>Auto</Type>
+				<CommandGroup>FormNavigationPanelGoTo</CommandGroup>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+			<Item>
+				<Command>InformationRegister.ПланПроектов.StandardCommand.OpenByValue.РегистраторРегистра</Command>
+				<Type>Auto</Type>
+				<CommandGroup>FormNavigationPanelGoTo</CommandGroup>
+				<Index>1</Index>
+				<DefaultVisible>false</DefaultVisible>
+				<Visible>
+					<xr:Common>false</xr:Common>
+				</Visible>
+			</Item>
+		</NavigationPanel>
+	</CommandInterface>
 </Form>
