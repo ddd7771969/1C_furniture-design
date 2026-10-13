@@ -24,25 +24,17 @@
 						<Event name="OnChange">ПроектПриИзменении</Event>
 					</Events>
 				</InputField>
-				<UsualGroup name="Группа4" id="100">
-					<Group>Vertical</Group>
-					<Representation>None</Representation>
-					<ShowTitle>false</ShowTitle>
-					<ExtendedTooltip name="Группа4РасширеннаяПодсказка" id="101"/>
-					<ChildItems>
-						<InputField name="ВыбранноеЗначение" id="31">
-							<DataPath>ВыбранноеЗначение</DataPath>
-							<ReadOnly>true</ReadOnly>
-							<TitleFont ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
-							<ChoiceButton>false</ChoiceButton>
-							<OpenButton>true</OpenButton>
-							<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
-							<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
-							<ContextMenu name="ВыбранноеЗначениеКонтекстноеМеню" id="32"/>
-							<ExtendedTooltip name="ВыбранноеЗначениеРасширеннаяПодсказка" id="33"/>
-						</InputField>
-					</ChildItems>
-				</UsualGroup>
+				<InputField name="ВыбранноеЗначение" id="31">
+					<DataPath>ВыбранноеЗначение</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<TitleFont ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+					<ChoiceButton>false</ChoiceButton>
+					<OpenButton>true</OpenButton>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+					<ContextMenu name="ВыбранноеЗначениеКонтекстноеМеню" id="32"/>
+					<ExtendedTooltip name="ВыбранноеЗначениеРасширеннаяПодсказка" id="33"/>
+				</InputField>
 				<Button name="ДобавитьИзменения" id="61">
 					<Type>UsualButton</Type>
 					<CommandName>Form.Command.ДобавитьИзменения</CommandName>
@@ -50,6 +42,18 @@
 				</Button>
 			</ChildItems>
 		</UsualGroup>
+		<LabelDecoration name="ДекорацияСтоп" id="125">
+			<TextColor>#EF1325</TextColor>
+			<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+			<Title formatted="false">
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Задачи на Стопе не попадают в отбор</v8:content>
+				</v8:item>
+			</Title>
+			<ContextMenu name="ДекорацияСтопКонтекстноеМеню" id="126"/>
+			<ExtendedTooltip name="ДекорацияСтопРасширеннаяПодсказка" id="127"/>
+		</LabelDecoration>
 		<Table name="ЗадачиПКД" id="9">
 			<Representation>List</Representation>
 			<TitleLocation>Left</TitleLocation>
