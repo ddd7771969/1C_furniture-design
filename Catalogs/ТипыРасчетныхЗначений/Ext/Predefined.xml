@@ -12,12 +12,6 @@
 				<Description>Дата согласования чертеже</Description>
 				<IsFolder>false</IsFolder>
 			</Item>
-			<Item id="92426c0f-716b-432b-99f6-31c9dabe0701">
-				<Name>ДоговорныеСроки</Name>
-				<Code>000000005</Code>
-				<Description>Договорные сроки</Description>
-				<IsFolder>false</IsFolder>
-			</Item>
 			<Item id="07ab516c-262c-4435-acf9-5e8e2e6c20fc">
 				<Name>НомерПомещения</Name>
 				<Code>000000002</Code>
@@ -28,6 +22,32 @@
 				<Name>ПлановыеДаты</Name>
 				<Code>000000006</Code>
 				<Description>Плановые даты</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+		</ChildItems>
+	</Item>
+	<Item id="6ff9cdda-8289-4d00-9125-ea8e0f47f721">
+		<Name>ПлановыеСроки</Name>
+		<Code>000000007</Code>
+		<Description>Плановые сроки</Description>
+		<IsFolder>true</IsFolder>
+		<ChildItems>
+			<Item id="92426c0f-716b-432b-99f6-31c9dabe0701">
+				<Name>СрокПроектирования</Name>
+				<Code>000000005</Code>
+				<Description>Срок проектирования (в не</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="9e196fcd-9dfd-4141-88e0-54cfb094c3f0">
+				<Name>СрокПроизводства</Name>
+				<Code>000000008</Code>
+				<Description>Срок производства (в нед.</Description>
+				<IsFolder>false</IsFolder>
+			</Item>
+			<Item id="64b93a24-19d0-4d59-876c-f365699db91c">
+				<Name>СрокМонтажа</Name>
+				<Code>000000009</Code>
+				<Description>Срок монтажа (в нед.)</Description>
 				<IsFolder>false</IsFolder>
 			</Item>
 		</ChildItems>
