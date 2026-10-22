@@ -79,6 +79,11 @@
 					<ContextMenu name="НомерПомещенияКонтекстноеМеню" id="23"/>
 					<ExtendedTooltip name="НомерПомещенияРасширеннаяПодсказка" id="24"/>
 				</LabelField>
+				<LabelField name="Приоритет" id="28">
+					<DataPath>Список.Приоритет</DataPath>
+					<ContextMenu name="ПриоритетКонтекстноеМеню" id="29"/>
+					<ExtendedTooltip name="ПриоритетРасширеннаяПодсказка" id="30"/>
+				</LabelField>
 				<LabelField name="Комментарий" id="25">
 					<DataPath>Список.Комментарий</DataPath>
 					<ContextMenu name="КомментарийКонтекстноеМеню" id="26"/>
@@ -108,10 +113,10 @@
 	СправочникПомещения.НомерПомещения КАК НомерПомещения,
 	СправочникПомещения.Проект КАК Проект,
 	СправочникПомещения.Предопределенный КАК Предопределенный,
-	СправочникПомещения.ИмяПредопределенныхДанных КАК ИмяПредопределенныхДанных
+	СправочникПомещения.ИмяПредопределенныхДанных КАК ИмяПредопределенныхДанных,
+	СправочникПомещения.Приоритет КАК Приоритет
 ИЗ
-	Справочник.Помещения КАК СправочникПомещения
-</QueryText>
+	Справочник.Помещения КАК СправочникПомещения</QueryText>
 				<Field xsi:type="dcssch:DataSetFieldField">
 					<dcssch:dataPath>СтатусПомещения</dcssch:dataPath>
 					<dcssch:field>СтатусПомещения</dcssch:field>
@@ -163,6 +168,10 @@
 				<Field xsi:type="dcssch:DataSetFieldField">
 					<dcssch:dataPath>Предопределенный</dcssch:dataPath>
 					<dcssch:field>Предопределенный</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Приоритет</dcssch:dataPath>
+					<dcssch:field>Приоритет</dcssch:field>
 				</Field>
 				<MainTable>Catalog.Помещения</MainTable>
 				<ListSettings>

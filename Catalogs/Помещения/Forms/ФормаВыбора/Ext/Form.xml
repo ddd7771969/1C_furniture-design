@@ -104,10 +104,10 @@
 					<ContextMenu name="НомерПомещенияКонтекстноеМеню" id="26"/>
 					<ExtendedTooltip name="НомерПомещенияРасширеннаяПодсказка" id="27"/>
 				</LabelField>
-				<LabelField name="ТекущаяСтадия" id="31">
-					<DataPath>~Список.ТекущаяСтадия</DataPath>
-					<ContextMenu name="ТекущаяСтадияКонтекстноеМеню" id="32"/>
-					<ExtendedTooltip name="ТекущаяСтадияРасширеннаяПодсказка" id="33"/>
+				<LabelField name="Приоритет" id="34">
+					<DataPath>Список.Приоритет</DataPath>
+					<ContextMenu name="ПриоритетКонтекстноеМеню" id="35"/>
+					<ExtendedTooltip name="ПриоритетРасширеннаяПодсказка" id="36"/>
 				</LabelField>
 			</ChildItems>
 		</Table>
@@ -133,7 +133,8 @@
 	СправочникПомещения.НомерПомещения КАК НомерПомещения,
 	СправочникПомещения.Проект КАК Проект,
 	СправочникПомещения.Предопределенный КАК Предопределенный,
-	СправочникПомещения.ИмяПредопределенныхДанных КАК ИмяПредопределенныхДанных
+	СправочникПомещения.ИмяПредопределенныхДанных КАК ИмяПредопределенныхДанных,
+	СправочникПомещения.Приоритет КАК Приоритет
 ИЗ
 	Справочник.Помещения КАК СправочникПомещения
 ГДЕ
@@ -203,6 +204,10 @@
 				<Field xsi:type="dcssch:DataSetFieldField">
 					<dcssch:dataPath>Предопределенный</dcssch:dataPath>
 					<dcssch:field>Предопределенный</dcssch:field>
+				</Field>
+				<Field xsi:type="dcssch:DataSetFieldField">
+					<dcssch:dataPath>Приоритет</dcssch:dataPath>
+					<dcssch:field>Приоритет</dcssch:field>
 				</Field>
 				<Parameter>
 					<dcssch:name>НеПоказыватьПомещения</dcssch:name>
