@@ -1,0 +1,326 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<Form xmlns="http://v8.1c.ru/8.3/xcf/logform" xmlns:app="http://v8.1c.ru/8.2/managed-application/core" xmlns:cfg="http://v8.1c.ru/8.1/data/enterprise/current-config" xmlns:dcscor="http://v8.1c.ru/8.1/data-composition-system/core" xmlns:dcssch="http://v8.1c.ru/8.1/data-composition-system/schema" xmlns:dcsset="http://v8.1c.ru/8.1/data-composition-system/settings" xmlns:ent="http://v8.1c.ru/8.1/data/enterprise" xmlns:lf="http://v8.1c.ru/8.2/managed-application/logform" xmlns:style="http://v8.1c.ru/8.1/data/ui/style" xmlns:sys="http://v8.1c.ru/8.1/data/ui/fonts/system" xmlns:v8="http://v8.1c.ru/8.1/data/core" xmlns:v8ui="http://v8.1c.ru/8.1/data/ui" xmlns:web="http://v8.1c.ru/8.1/data/ui/colors/web" xmlns:win="http://v8.1c.ru/8.1/data/ui/colors/windows" xmlns:xr="http://v8.1c.ru/8.3/xcf/readable" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="2.20">
+	<ReportFormType>Main</ReportFormType>
+	<AutoShowState>Auto</AutoShowState>
+	<ReportResultViewMode>Auto</ReportResultViewMode>
+	<ViewModeApplicationOnSetReportResult>Auto</ViewModeApplicationOnSetReportResult>
+	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
+		<Autofill>false</Autofill>
+	</AutoCommandBar>
+	<Events>
+		<Event name="OnOpen">ПриОткрытии</Event>
+		<Event name="OnCreateAtServer">ПриСозданииНаСервере</Event>
+	</Events>
+	<ChildItems>
+		<UsualGroup name="ГруппаЗаголовок" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа заголовок</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Группа заголовок</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Group>AlwaysHorizontal</Group>
+			<Representation>None</Representation>
+			<ShowTitle>false</ShowTitle>
+			<ExtendedTooltip name="ГруппаЗаголовокРасширеннаяПодсказка" id="5"/>
+			<ChildItems>
+				<Button name="Обновить" id="34">
+					<Type>UsualButton</Type>
+					<Representation>Picture</Representation>
+					<Width>3</Width>
+					<CommandName>Form.Command.Обновить</CommandName>
+					<Picture>
+						<xr:Ref>StdPicture.Refresh</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</Picture>
+					<ExtendedTooltip name="ОбновитьРасширеннаяПодсказка" id="35"/>
+				</Button>
+				<LabelField name="КоличествоКонструкторов" id="1">
+					<DataPath>КоличествоКонструкторов</DataPath>
+					<ContextMenu name="КоличествоКонструкторовКонтекстноеМеню" id="2"/>
+					<ExtendedTooltip name="КоличествоКонструкторовРасширеннаяПодсказка" id="3"/>
+				</LabelField>
+				<LabelField name="ИтогоКонструкторов" id="27">
+					<DataPath>ИтогоКонструкторов</DataPath>
+					<TitleFont ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+					<Font ref="style:NormalTextFont" bold="true" italic="false" underline="false" strikeout="false" kind="StyleItem" scale="100"/>
+					<ContextMenu name="ИтогоКонструкторовКонтекстноеМеню" id="28"/>
+					<ExtendedTooltip name="ИтогоКонструкторовРасширеннаяПодсказка" id="29"/>
+				</LabelField>
+				<Button name="Сохранить" id="6">
+					<Type>UsualButton</Type>
+					<Representation>PictureAndText</Representation>
+					<Enabled>false</Enabled>
+					<CommandName>Form.Command.Сохранить</CommandName>
+					<Picture>
+						<xr:Ref>StdPicture.Write</xr:Ref>
+						<xr:LoadTransparent>true</xr:LoadTransparent>
+					</Picture>
+					<ExtendedTooltip name="СохранитьРасширеннаяПодсказка" id="7"/>
+				</Button>
+			</ChildItems>
+		</UsualGroup>
+		<Table name="ДанныеПроектов" id="8">
+			<Representation>List</Representation>
+			<CommandBarLocation>Top</CommandBarLocation>
+			<ChangeRowSet>false</ChangeRowSet>
+			<DataPath>ДанныеПроектов</DataPath>
+			<CommandSet>
+				<ExcludedCommand>Add</ExcludedCommand>
+				<ExcludedCommand>CancelSearch</ExcludedCommand>
+				<ExcludedCommand>Change</ExcludedCommand>
+				<ExcludedCommand>Copy</ExcludedCommand>
+				<ExcludedCommand>CopyToClipboard</ExcludedCommand>
+				<ExcludedCommand>Delete</ExcludedCommand>
+				<ExcludedCommand>EndEdit</ExcludedCommand>
+				<ExcludedCommand>Find</ExcludedCommand>
+				<ExcludedCommand>FindByCurrentValue</ExcludedCommand>
+				<ExcludedCommand>OutputList</ExcludedCommand>
+				<ExcludedCommand>SearchEverywhere</ExcludedCommand>
+				<ExcludedCommand>SelectAll</ExcludedCommand>
+				<ExcludedCommand>ShowMultipleSelection</ExcludedCommand>
+				<ExcludedCommand>ShowRowRearrangement</ExcludedCommand>
+				<ExcludedCommand>SortListAsc</ExcludedCommand>
+				<ExcludedCommand>SortListDesc</ExcludedCommand>
+			</CommandSet>
+			<SearchStringLocation>None</SearchStringLocation>
+			<ViewStatusLocation>None</ViewStatusLocation>
+			<SearchControlLocation>None</SearchControlLocation>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="ДанныеПроектовКонтекстноеМеню" id="9"/>
+			<AutoCommandBar name="ДанныеПроектовКоманднаяПанель" id="10">
+				<Autofill>false</Autofill>
+				<ChildItems>
+					<Button name="ДанныеПроектовКнопка1" id="30">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Item.ДанныеПроектов.StandardCommand.MoveUp</CommandName>
+						<ExtendedTooltip name="ДанныеПроектовКнопка1РасширеннаяПодсказка" id="31"/>
+					</Button>
+					<Button name="ДанныеПроектовКнопка2" id="32">
+						<Type>CommandBarButton</Type>
+						<CommandName>Form.Item.ДанныеПроектов.StandardCommand.MoveDown</CommandName>
+						<ExtendedTooltip name="ДанныеПроектовКнопка2РасширеннаяПодсказка" id="33"/>
+					</Button>
+				</ChildItems>
+			</AutoCommandBar>
+			<ExtendedTooltip name="ДанныеПроектовРасширеннаяПодсказка" id="11"/>
+			<SearchStringAddition name="ДанныеПроектовСтрокаПоиска" id="12">
+				<Enabled>false</Enabled>
+				<AdditionSource>
+					<Item>ДанныеПроектов</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ДанныеПроектовСтрокаПоискаКонтекстноеМеню" id="13"/>
+				<ExtendedTooltip name="ДанныеПроектовСтрокаПоискаРасширеннаяПодсказка" id="14"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="ДанныеПроектовСостояниеПросмотра" id="15">
+				<AdditionSource>
+					<Item>ДанныеПроектов</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="ДанныеПроектовСостояниеПросмотраКонтекстноеМеню" id="16"/>
+				<ExtendedTooltip name="ДанныеПроектовСостояниеПросмотраРасширеннаяПодсказка" id="17"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="ДанныеПроектовУправлениеПоиском" id="18">
+				<AdditionSource>
+					<Item>ДанныеПроектов</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="ДанныеПроектовУправлениеПоискомКонтекстноеМеню" id="19"/>
+				<ExtendedTooltip name="ДанныеПроектовУправлениеПоискомРасширеннаяПодсказка" id="20"/>
+			</SearchControlAddition>
+			<Events>
+				<Event name="BeforeAddRow">ДанныеПроектовПередНачаломДобавления</Event>
+				<Event name="BeforeDeleteRow">ДанныеПроектовПередУдалением</Event>
+				<Event name="OnChange">ДанныеПроектовПриИзменении</Event>
+			</Events>
+			<ChildItems>
+				<InputField name="ДанныеПроектовПроект" id="21">
+					<DataPath>ДанныеПроектов.Проект</DataPath>
+					<ReadOnly>true</ReadOnly>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ДанныеПроектовПроектКонтекстноеМеню" id="22"/>
+					<ExtendedTooltip name="ДанныеПроектовПроектРасширеннаяПодсказка" id="23"/>
+				</InputField>
+				<InputField name="ДанныеПроектовКоличествоКонструкторов" id="24">
+					<DataPath>ДанныеПроектов.КоличествоКонструкторов</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="ДанныеПроектовКоличествоКонструкторовКонтекстноеМеню" id="25"/>
+					<ExtendedTooltip name="ДанныеПроектовКоличествоКонструкторовРасширеннаяПодсказка" id="26"/>
+				</InputField>
+			</ChildItems>
+		</Table>
+	</ChildItems>
+	<Attributes>
+		<Attribute name="Отчет" id="1">
+			<Type>
+				<v8:Type>cfg:ReportObject.РаспределениеКонструкторовПоПроектам</v8:Type>
+			</Type>
+			<MainAttribute>true</MainAttribute>
+			<UseAlways>
+				<Field>Отчет.SettingsComposer</Field>
+			</UseAlways>
+		</Attribute>
+		<Attribute name="КоличествоКонструкторов" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Количество конструкторов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>3</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<Attribute name="ДанныеПроектов" id="3">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Данные проектов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>v8:ValueTable</v8:Type>
+			</Type>
+			<Columns>
+				<Column name="Проект" id="1">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Проект</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>cfg:CatalogRef.Проекты</v8:Type>
+					</Type>
+				</Column>
+				<Column name="КоличествоКонструкторов" id="2">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Количество конструкторов</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>4</v8:Digits>
+							<v8:FractionDigits>1</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="Изменен" id="3">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Изменен</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
+					</Type>
+				</Column>
+				<Column name="Приоритет" id="4">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Приоритет</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:decimal</v8:Type>
+						<v8:NumberQualifiers>
+							<v8:Digits>3</v8:Digits>
+							<v8:FractionDigits>0</v8:FractionDigits>
+							<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+			</Columns>
+		</Attribute>
+		<Attribute name="ИтогоКонструкторов" id="4">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Итого конструкторов</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type>xs:decimal</v8:Type>
+				<v8:NumberQualifiers>
+					<v8:Digits>4</v8:Digits>
+					<v8:FractionDigits>0</v8:FractionDigits>
+					<v8:AllowedSign>Nonnegative</v8:AllowedSign>
+				</v8:NumberQualifiers>
+			</Type>
+		</Attribute>
+		<ConditionalAppearance>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ДанныеПроектов</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">ДанныеПроектов.Изменен</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">true</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Шрифт</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" bold="true" italic="false" underline="false" strikeout="false" kind="WindowsFont"/>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+		</ConditionalAppearance>
+	</Attributes>
+	<Commands>
+		<Command name="Сохранить" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Сохранить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Сохранить</Action>
+		</Command>
+		<Command name="Обновить" id="2">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Обновить</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Обновить</Action>
+		</Command>
+	</Commands>
+</Form>
