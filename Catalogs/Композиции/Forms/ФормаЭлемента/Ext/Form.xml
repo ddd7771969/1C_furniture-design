@@ -12,6 +12,7 @@
 			</Button>
 			<Button name="ФормаЗагрузитьТЗ" id="113">
 				<Type>CommandBarButton</Type>
+				<Enabled>false</Enabled>
 				<CommandName>Form.Command.ЗагрузитьТЗ</CommandName>
 				<ExtendedTooltip name="ФормаЗагрузитьТЗРасширеннаяПодсказка" id="114"/>
 			</Button>
@@ -244,12 +245,6 @@
 									<ContextMenu name="ДекорацияДлительноеОжиданиеКонтекстноеМеню" id="188"/>
 									<ExtendedTooltip name="ДекорацияДлительноеОжиданиеРасширеннаяПодсказка" id="189"/>
 								</PictureDecoration>
-								<Button name="ОткрытьПапкуТЗ" id="190">
-									<Type>Hyperlink</Type>
-									<Visible>false</Visible>
-									<CommandName>Form.Command.ОткрытьПапкуТЗ</CommandName>
-									<ExtendedTooltip name="ОткрытьПапкуТЗРасширеннаяПодсказка" id="191"/>
-								</Button>
 							</ChildItems>
 						</UsualGroup>
 						<UsualGroup name="Группа6" id="109">
@@ -267,6 +262,12 @@
 										<xr:LoadTransparent>true</xr:LoadTransparent>
 									</Picture>
 									<ExtendedTooltip name="ОткрытьФайлПДМРасширеннаяПодсказка" id="100"/>
+								</Button>
+								<Button name="ОткрытьПапкуТЗ" id="190">
+									<Type>Hyperlink</Type>
+									<Visible>false</Visible>
+									<CommandName>Form.Command.ОткрытьПапкуТЗ</CommandName>
+									<ExtendedTooltip name="ОткрытьПапкуТЗРасширеннаяПодсказка" id="191"/>
 								</Button>
 							</ChildItems>
 						</UsualGroup>
@@ -598,7 +599,7 @@
 									</ChildItems>
 								</Table>
 								<PDFDocumentField name="ПредставлениеТЗ" id="176">
-									<DataPath>46</DataPath>
+									<DataPath>ПредставлениеТЗ</DataPath>
 									<TitleLocation>None</TitleLocation>
 									<ContextMenu name="ПредставлениеТЗКонтекстноеМеню" id="177"/>
 									<ExtendedTooltip name="ПредставлениеТЗРасширеннаяПодсказка" id="178"/>
@@ -824,6 +825,39 @@
 				<v8:Type>v8:UUID</v8:Type>
 			</Type>
 		</Attribute>
+		<Attribute name="ПредставлениеТЗ" id="16">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Представление ТЗ</v8:content>
+				</v8:item>
+			</Title>
+			<Type>
+				<v8:Type xmlns:pdfdoc="http://v8.1c.ru/8.3/data/pdf">pdfdoc:PDFDocument</v8:Type>
+			</Type>
+		</Attribute>
+		<ConditionalAppearance>
+			<dcsset:item>
+				<dcsset:selection>
+					<dcsset:item>
+						<dcsset:field>ФайлыТЗ</dcsset:field>
+					</dcsset:item>
+				</dcsset:selection>
+				<dcsset:filter>
+					<dcsset:item xsi:type="dcsset:FilterItemComparison">
+						<dcsset:left xsi:type="dcscor:Field">ФайлыТЗ.ЕстьЛокально</dcsset:left>
+						<dcsset:comparisonType>Equal</dcsset:comparisonType>
+						<dcsset:right xsi:type="xs:boolean">false</dcsset:right>
+					</dcsset:item>
+				</dcsset:filter>
+				<dcsset:appearance>
+					<dcscor:item xsi:type="dcsset:SettingsParameterValue">
+						<dcscor:parameter>Шрифт</dcscor:parameter>
+						<dcscor:value xsi:type="v8ui:Font" ref="sys:DefaultGUIFont" bold="false" italic="true" underline="false" strikeout="false" kind="WindowsFont"/>
+					</dcscor:item>
+				</dcsset:appearance>
+			</dcsset:item>
+		</ConditionalAppearance>
 	</Attributes>
 	<Commands>
 		<Command name="ВыгрузитьВPDM" id="1">
