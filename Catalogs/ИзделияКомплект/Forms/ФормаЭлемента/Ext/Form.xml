@@ -179,14 +179,14 @@
 							<ContextMenu name="ДекорацияДлительноеОжиданиеКонтекстноеМеню" id="650"/>
 							<ExtendedTooltip name="ДекорацияДлительноеОжиданиеРасширеннаяПодсказка" id="651"/>
 						</PictureDecoration>
+						<Button name="ОткрытьПапкуТЗ" id="678">
+							<Type>Hyperlink</Type>
+							<Visible>false</Visible>
+							<CommandName>Form.Command.ОткрытьПапкуТЗ</CommandName>
+							<ExtendedTooltip name="ОткрытьПапкуТЗРасширеннаяПодсказка" id="679"/>
+						</Button>
 					</ChildItems>
 				</UsualGroup>
-				<Button name="ОткрытьПапкуТЗ" id="678">
-					<Type>Hyperlink</Type>
-					<Visible>false</Visible>
-					<CommandName>Form.Command.ОткрытьПапкуТЗ</CommandName>
-					<ExtendedTooltip name="ОткрытьПапкуТЗРасширеннаяПодсказка" id="679"/>
-				</Button>
 			</ChildItems>
 		</UsualGroup>
 		<Pages name="ГруппаСтраницы" id="596">
@@ -333,18 +333,6 @@
 											<Representation>None</Representation>
 											<ShowTitle>false</ShowTitle>
 											<ExtendedTooltip name="Группа18РасширеннаяПодсказка" id="475"/>
-											<ChildItems>
-												<Button name="ОткрытьТЗ" id="476">
-													<Type>UsualButton</Type>
-													<Representation>PictureAndText</Representation>
-													<CommandName>Form.Command.ОткрытьТЗ</CommandName>
-													<Picture>
-														<xr:Ref>StdPicture.OpenFile</xr:Ref>
-														<xr:LoadTransparent>true</xr:LoadTransparent>
-													</Picture>
-													<ExtendedTooltip name="ОткрытьТЗРасширеннаяПодсказка" id="477"/>
-												</Button>
-											</ChildItems>
 										</UsualGroup>
 									</ChildItems>
 								</UsualGroup>
@@ -2117,21 +2105,6 @@
 				</v8:item>
 			</ToolTip>
 			<Action>КонтрольРегистрации</Action>
-		</Command>
-		<Command name="ОткрытьТЗ" id="7">
-			<Title>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Открыть ТЗ</v8:content>
-				</v8:item>
-			</Title>
-			<ToolTip>
-				<v8:item>
-					<v8:lang>ru</v8:lang>
-					<v8:content>Открыть ТЗ</v8:content>
-				</v8:item>
-			</ToolTip>
-			<Action>ОткрытьТЗ</Action>
 		</Command>
 		<Command name="ЗагрузитьТЗ" id="10">
 			<Title>
