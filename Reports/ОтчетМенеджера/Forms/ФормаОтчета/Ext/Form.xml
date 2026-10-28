@@ -6,6 +6,18 @@
 	<ViewModeApplicationOnSetReportResult>Auto</ViewModeApplicationOnSetReportResult>
 	<AutoCommandBar name="ФормаКоманднаяПанель" id="-1">
 		<Autofill>false</Autofill>
+		<ChildItems>
+			<Button name="ФормаНастройки" id="1">
+				<Type>CommandBarButton</Type>
+				<Representation>Picture</Representation>
+				<CommandName>Form.Command.Настройки</CommandName>
+				<Picture>
+					<xr:Ref>StdPicture.ReportSettings</xr:Ref>
+					<xr:LoadTransparent>true</xr:LoadTransparent>
+				</Picture>
+				<ExtendedTooltip name="ФормаНастройкиРасширеннаяПодсказка" id="2"/>
+			</Button>
+		</ChildItems>
 	</AutoCommandBar>
 	<Attributes>
 		<Attribute name="Отчет" id="1">
@@ -24,4 +36,21 @@
 			</Type>
 		</Attribute>
 	</Attributes>
+	<Commands>
+		<Command name="Настройки" id="1">
+			<Title>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройки</v8:content>
+				</v8:item>
+			</Title>
+			<ToolTip>
+				<v8:item>
+					<v8:lang>ru</v8:lang>
+					<v8:content>Настройки</v8:content>
+				</v8:item>
+			</ToolTip>
+			<Action>Настройки</Action>
+		</Command>
+	</Commands>
 </Form>

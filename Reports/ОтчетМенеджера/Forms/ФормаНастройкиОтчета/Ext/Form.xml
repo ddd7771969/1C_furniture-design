@@ -16,6 +16,9 @@
 					<TextEdit>false</TextEdit>
 					<ContextMenu name="НаименованиеОтчетаКонтекстноеМеню" id="2"/>
 					<ExtendedTooltip name="НаименованиеОтчетаРасширеннаяПодсказка" id="3"/>
+					<Events>
+						<Event name="OnChange">НаименованиеОтчетаПриИзменении</Event>
+					</Events>
 				</InputField>
 				<Button name="ДобавитьНаименованиеОтчета" id="6">
 					<Type>UsualButton</Type>
@@ -201,6 +204,17 @@
 							<v8:FractionDigits>0</v8:FractionDigits>
 							<v8:AllowedSign>Any</v8:AllowedSign>
 						</v8:NumberQualifiers>
+					</Type>
+				</Column>
+				<Column name="Изменена" id="7">
+					<Title>
+						<v8:item>
+							<v8:lang>ru</v8:lang>
+							<v8:content>Изменена</v8:content>
+						</v8:item>
+					</Title>
+					<Type>
+						<v8:Type>xs:boolean</v8:Type>
 					</Type>
 				</Column>
 			</Columns>
