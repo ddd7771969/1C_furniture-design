@@ -84,6 +84,7 @@
 				<ExtendedTooltip name="КолонкиОтчетаУправлениеПоискомРасширеннаяПодсказка" id="20"/>
 			</SearchControlAddition>
 			<Events>
+				<Event name="OnActivateRow">КолонкиОтчетаПриАктивизацииСтроки</Event>
 				<Event name="OnChange">КолонкиОтчетаПриИзменении</Event>
 			</Events>
 			<ChildItems>
@@ -100,6 +101,13 @@
 					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
 					<ContextMenu name="КолонкиОтчетаТипРасчетногоЗначенияКонтекстноеМеню" id="31"/>
 					<ExtendedTooltip name="КолонкиОтчетаТипРасчетногоЗначенияРасширеннаяПодсказка" id="32"/>
+				</InputField>
+				<InputField name="КолонкиОтчетаТипКолонки" id="81">
+					<DataPath>КолонкиОтчета.ТипКолонки</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="КолонкиОтчетаТипКолонкиКонтекстноеМеню" id="82"/>
+					<ExtendedTooltip name="КолонкиОтчетаТипКолонкиРасширеннаяПодсказка" id="83"/>
 				</InputField>
 				<InputField name="КолонкиОтчетаСортировка" id="33">
 					<DataPath>КолонкиОтчета.Сортировка</DataPath>
@@ -121,6 +129,101 @@
 					<CheckBoxType>Auto</CheckBoxType>
 					<ContextMenu name="КолонкиОтчетаИзмененаКонтекстноеМеню" id="37"/>
 					<ExtendedTooltip name="КолонкиОтчетаИзмененаРасширеннаяПодсказка" id="38"/>
+				</CheckBoxField>
+			</ChildItems>
+		</Table>
+		<Table name="КолонкиОтчетаОбщие" id="44">
+			<Representation>List</Representation>
+			<AutoInsertNewRow>true</AutoInsertNewRow>
+			<EnableStartDrag>true</EnableStartDrag>
+			<EnableDrag>true</EnableDrag>
+			<DataPath>КолонкиОтчетаОбщие</DataPath>
+			<RowFilter xsi:nil="true"/>
+			<ContextMenu name="КолонкиОтчетаОбщиеКонтекстноеМеню" id="45"/>
+			<AutoCommandBar name="КолонкиОтчетаОбщиеКоманднаяПанель" id="46">
+				<Autofill>false</Autofill>
+			</AutoCommandBar>
+			<ExtendedTooltip name="КолонкиОтчетаОбщиеРасширеннаяПодсказка" id="47"/>
+			<SearchStringAddition name="КолонкиОтчетаОбщиеСтрокаПоиска" id="48">
+				<AdditionSource>
+					<Item>КолонкиОтчетаОбщие</Item>
+					<Type>SearchStringRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="КолонкиОтчетаОбщиеСтрокаПоискаКонтекстноеМеню" id="49"/>
+				<ExtendedTooltip name="КолонкиОтчетаОбщиеСтрокаПоискаРасширеннаяПодсказка" id="50"/>
+			</SearchStringAddition>
+			<ViewStatusAddition name="КолонкиОтчетаОбщиеСостояниеПросмотра" id="51">
+				<AdditionSource>
+					<Item>КолонкиОтчетаОбщие</Item>
+					<Type>ViewStatusRepresentation</Type>
+				</AdditionSource>
+				<ContextMenu name="КолонкиОтчетаОбщиеСостояниеПросмотраКонтекстноеМеню" id="52"/>
+				<ExtendedTooltip name="КолонкиОтчетаОбщиеСостояниеПросмотраРасширеннаяПодсказка" id="53"/>
+			</ViewStatusAddition>
+			<SearchControlAddition name="КолонкиОтчетаОбщиеУправлениеПоиском" id="54">
+				<AdditionSource>
+					<Item>КолонкиОтчетаОбщие</Item>
+					<Type>SearchControl</Type>
+				</AdditionSource>
+				<ContextMenu name="КолонкиОтчетаОбщиеУправлениеПоискомКонтекстноеМеню" id="55"/>
+				<ExtendedTooltip name="КолонкиОтчетаОбщиеУправлениеПоискомРасширеннаяПодсказка" id="56"/>
+			</SearchControlAddition>
+			<ChildItems>
+				<InputField name="КолонкиОтчетаОбщиеНаименованиеОтчета" id="57">
+					<DataPath>КолонкиОтчетаОбщие.НаименованиеОтчета</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="КолонкиОтчетаОбщиеНаименованиеОтчетаКонтекстноеМеню" id="58"/>
+					<ExtendedTooltip name="КолонкиОтчетаОбщиеНаименованиеОтчетаРасширеннаяПодсказка" id="59"/>
+				</InputField>
+				<InputField name="КолонкиОтчетаОбщиеНаименованиеКолонки" id="60">
+					<DataPath>КолонкиОтчетаОбщие.НаименованиеКолонки</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="КолонкиОтчетаОбщиеНаименованиеКолонкиКонтекстноеМеню" id="61"/>
+					<ExtendedTooltip name="КолонкиОтчетаОбщиеНаименованиеКолонкиРасширеннаяПодсказка" id="62"/>
+				</InputField>
+				<InputField name="КолонкиОтчетаОбщиеНомерКолонки" id="63">
+					<DataPath>КолонкиОтчетаОбщие.НомерКолонки</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="КолонкиОтчетаОбщиеНомерКолонкиКонтекстноеМеню" id="64"/>
+					<ExtendedTooltip name="КолонкиОтчетаОбщиеНомерКолонкиРасширеннаяПодсказка" id="65"/>
+				</InputField>
+				<InputField name="КолонкиОтчетаОбщиеТипРасчетногоЗначения" id="66">
+					<DataPath>КолонкиОтчетаОбщие.ТипРасчетногоЗначения</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="КолонкиОтчетаОбщиеТипРасчетногоЗначенияКонтекстноеМеню" id="67"/>
+					<ExtendedTooltip name="КолонкиОтчетаОбщиеТипРасчетногоЗначенияРасширеннаяПодсказка" id="68"/>
+				</InputField>
+				<InputField name="КолонкиОтчетаОбщиеТипКолонки" id="69">
+					<DataPath>КолонкиОтчетаОбщие.ТипКолонки</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="КолонкиОтчетаОбщиеТипКолонкиКонтекстноеМеню" id="70"/>
+					<ExtendedTooltip name="КолонкиОтчетаОбщиеТипКолонкиРасширеннаяПодсказка" id="71"/>
+				</InputField>
+				<InputField name="КолонкиОтчетаОбщиеСортировка" id="72">
+					<DataPath>КолонкиОтчетаОбщие.Сортировка</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
+					<ContextMenu name="КолонкиОтчетаОбщиеСортировкаКонтекстноеМеню" id="73"/>
+					<ExtendedTooltip name="КолонкиОтчетаОбщиеСортировкаРасширеннаяПодсказка" id="74"/>
+				</InputField>
+				<CheckBoxField name="КолонкиОтчетаОбщиеИзменена" id="75">
+					<DataPath>КолонкиОтчетаОбщие.Изменена</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="КолонкиОтчетаОбщиеИзмененаКонтекстноеМеню" id="76"/>
+					<ExtendedTooltip name="КолонкиОтчетаОбщиеИзмененаРасширеннаяПодсказка" id="77"/>
+				</CheckBoxField>
+				<CheckBoxField name="КолонкиОтчетаОбщиеПоказыватьРучныеЗначения" id="78">
+					<DataPath>КолонкиОтчетаОбщие.ПоказыватьРучныеЗначения</DataPath>
+					<EditMode>EnterOnInput</EditMode>
+					<CheckBoxType>Auto</CheckBoxType>
+					<ContextMenu name="КолонкиОтчетаОбщиеПоказыватьРучныеЗначенияКонтекстноеМеню" id="79"/>
+					<ExtendedTooltip name="КолонкиОтчетаОбщиеПоказыватьРучныеЗначенияРасширеннаяПодсказка" id="80"/>
 				</CheckBoxField>
 			</ChildItems>
 		</Table>
