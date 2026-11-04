@@ -9,6 +9,7 @@
 		<ChildItems>
 			<Button name="ФормаНастройки" id="1">
 				<Type>CommandBarButton</Type>
+				<Visible>false</Visible>
 				<Representation>Picture</Representation>
 				<CommandName>Form.Command.Настройки</CommandName>
 				<Picture>
@@ -41,6 +42,7 @@
 				</Button>
 				<InputField name="НаименованиеОтчета" id="3">
 					<DataPath>НаименованиеОтчета</DataPath>
+					<Visible>false</Visible>
 					<ReadOnly>true</ReadOnly>
 					<ListChoiceMode>true</ListChoiceMode>
 					<ExtendedEditMultipleValues>true</ExtendedEditMultipleValues>
