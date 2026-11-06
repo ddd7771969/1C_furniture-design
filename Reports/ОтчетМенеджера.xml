@@ -21,7 +21,7 @@
 			</Synonym>
 			<Comment/>
 			<UseStandardCommands>true</UseStandardCommands>
-			<DefaultForm>Report.ОтчетМенеджера.Form.ФормаОтчета</DefaultForm>
+			<DefaultForm>Report.ОтчетМенеджера.Form.ФормаОтчетаПоКомплектам</DefaultForm>
 			<AuxiliaryForm/>
 			<MainDataCompositionSchema/>
 			<DefaultSettingsForm/>
@@ -36,8 +36,10 @@
 		<ChildObjects>
 			<Form>ФормаОтчета</Form>
 			<Form>ФормаНастройкиОтчета</Form>
+			<Form>ФормаОтчетаПоКомплектам</Form>
 			<Template>Макет</Template>
 			<Template>МакетПоИзделиямЗаказчика</Template>
+			<Template>МакетПоКомплектам</Template>
 		</ChildObjects>
 	</Report>
 </MetaDataObject>
